@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- Scripts -->
+    <script src="../../js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+
+    <div class="content">
+        <div class="section">
+            <div class="title">
+                <h3 class="page-tit">증명서 발급안내</h3>
+                <p class="page-tit__desc">가천대 길병원에서 발급하는 증명서입니다.</p>
+            </div>
+
+            <ul class="tab">
+                <li><a href="javascript:;" class="on">증명서발급안내</a></li>
+                <li><a href="javascript:;">인터넷 사본 발급</a></li>
+                <li><a href="javascript:;">의무기록사본 발급안내</a></li>
+                <li><a href="javascript:;">영상자료 발급안내</a></li>
+                <li><a href="javascript:;">연말정산(소득공제서류)</a></li>
+            </ul>
+        
+            <div class="context cs-wrap">
+                <div class="context-title">사본발급 신청자별 필요구비서류 세부사항</div>
+                <div class="table-col">
+                    <table>
+                        <colgroup>
+                            <col style="width:52px">
+                            <col style="width:95px">
+                            <col style="width:195px">
+                            <col style="width:130px">
+                            <col style="width:100px">
+                            <col style="width:150px">
+                            <col style="width:100px">
+                            <col style="width:120px">
+                            <col>
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th colspan="3">사본발급 신청자</th>
+                                <th>신청자신분증<br>(사본포함)</th>
+                                <th>동의서</th>
+                                <th>가족관계증명서<br>(주민등록등본)</th>
+                                <th>위임장</th>
+                                <th>환자신분증</th>
+                                <th>추가 준비가 필요한 서류</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowspan="3">1</td>
+                                <td colspan="2" class="txt-left">환자본인</td>
+                                <td>O</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="txt-left"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="txt-left">환자의 친족<br>(배우자,직계존속·비속, 배우자의 직계존속)</td>
+                                <td>O</td>
+                                <td>O</td>
+                                <td>O</td>
+                                <td></td>
+                                <td>O</td>
+                                <td class="txt-left"></td class="txt-left">
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="txt-left">환자가 지정하는 대리인<br>(형제,자매, 보험회사 등)</td>
+                                <td>O</td>
+                                <td>O</td>
+                                <td></td>
+                                <td>O</td>
+                                <td>O</td>
+                                <td class="txt-left"></td>
+                            </tr>
+                            <tr>
+                                <td rowspan="4">2</td>
+                                <td rowspan="4" class="txt-left">환자의 친족 신청서</td>
+                                <td class="txt-left">환자가 사망한 경우</td class="txt-left">
+                                <td>O</td>
+                                <td></td>
+                                <td></td>
+                                <td>O</td>
+                                <td></td>
+                                <td class="txt-left">제적등본, 사망진단서, 시체검안서</td class="txt-left">
+                            </tr>
+                            <tr>
+                                <td class="txt-left">환자가 의식불명/ 중 증질환/부상 등 자필 성명 불가한 경우</td class="txt-left">
+                                <td>O</td>
+                                <td></td>
+                                <td></td>
+                                <td>O</td>
+                                <td></td>
+                                <td class="txt-left">진단서(의식불명, 중증의 질환) / 부상으로 자필서명을 할 수 없음을 확인하는 진단서</td class="txt-left">
+                            </tr>
+                            <tr>
+                                <td class="txt-left">환자가 의사무능력 자인경우</td class="txt-left">
+                                <td>O</td>
+                                <td></td>
+                                <td></td>
+                                <td>O</td>
+                                <td></td>
+                                <td class="txt-left">법원의 실종선고 결정문사본 / 행방불명 사실확인 서류</td class="txt-left">
+                            </tr>
+                            <tr>
+                                <td class="txt-left">환자가 의식불명/ 중증질환/부상 등 자필 성명 불가한 경우</td class="txt-left">
+                                <td>O</td>
+                                <td></td>
+                                <td></td>
+                                <td>O</td>
+                                <td></td>
+                                <td class="txt-left">법원의 금치산선고 결정사본 / 의사무능력자임을 증명하는 정신건강의학과 전문의 진단서</td class="txt-left">
+                            </tr>
+                            <tr>
+                                <td rowspan="3">3</td>
+                                <td colspan="2" class="txt-left">환자가 군복무, 해외체류, 수감 중인 경우</td>
+                                <td colspan="5" class="txt-left">상기①, ②의 경우에 따라 구비서류 제출</td>
+                                <td class="txt-left">군복무: 병적증명서 (동사무소 병무청발급)<br>해외체류: 사실확인증명서 (동사무소) / 재외국민등록부등본(외교통상부)<br>수감: 유치증명서, 수감증명서 등</td class="txt-left">
+                            </tr>
+                            <tr>
+                                <td rowspan="2" colspan="2" class="txt-left">환자가 타병원 재원중이며, 진료의 목적상 필요한 경우</td>
+                                <td colspan="5" class="txt-left">환자 친족 및 대리인 요청 시 상기①, ②의 경우에 따라 구비서류 제출</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" class="txt-left">타 병원 의사 요청사</td>
+                                <td class="txt-left">요청의사 신분증 사본 / 환자의 자필성명 동의서 /사본발급신청서</td class="txt-left">
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="info-text">* [별표] 의료기관의 제증명수수료 항목 및 금액에 관한 기준 (제 4조 제2항 관련)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="../../js/ui.js"></script>
+</body>
+</html>

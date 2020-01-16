@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- Scripts -->
+    <script src="../../js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<div class="wrap reserve-wrap">
+
+    <div class="content">
+        <div class="section">
+            <div class="title">
+                <h3 class="page-tit">진료예약</h3>
+                <p class="page-tit__desc">길병원 홈페이지에서 간편하게 진료예약을 해보세요.</p>
+            </div>
+
+            <ul class="step step04">
+                <li><span>STEP 1</span><P>환자정보 입력</P></li>
+                <li><span>STEP 2</span><P>진료과 선택</P></li>
+                <li><span>STEP 3</span><P>의료진 선택</P></li>
+                <li class="on"><span>STEP 4</span><P>날짜/시간 선택</P></li class="on">
+            </ul>
+            
+            <div class="reserve-context">
+                <div class="left-group">
+                    <div class="s-tit">원하시는 날짜와 예약 가능시간을 선택 해주세요.</div>
+                    <div class="choice-day">
+                        <div class="calendar-draw">
+                            <div class="calendar">
+                                <div class="calendar-tit">
+                                    <a href="javascript:;" class="prev">이전달</a>
+                                    <span class="title">
+                                        <div class="select-year">
+                                            <select>
+                                                <option>2020</option>
+                                            </select>
+                                        </div>
+                                        <div class="select-month">
+                                            <select>
+                                                <option>08</option>
+                                            </select>
+                                        </div>
+                                    </span>
+                                    <a href="javascript:;" class="next">다음달</a>
+                                </div>
+                                <table>
+                                    <colgroup>
+                                        <col style="width:88px;" span="7">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th class="sun">일</th>
+                                            <th>월</th>
+                                            <th>화</th>
+                                            <th>수</th>
+                                            <th>목</th>
+                                            <th>금</th>
+                                            <th>토</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="disable sun">26</td>
+                                            <td class="disable">27</td>
+                                            <td class="disable">28</td>
+                                            <td class="disable">29</td>
+                                            <td class="disable">30</td>
+                                            <td class="disable">31</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sun">2</td>
+                                            <td>3</td>
+                                            <td>4</td>
+                                            <td>5</td>
+                                            <td>6</td>
+                                            <td>7</td>
+                                            <td>8</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sun">9</td>
+                                            <td>10<span class="dot-wrap"><span class="dot-am"></span></span></td>
+                                            <td>11</td>
+                                            <td>12</td>
+                                            <td>13</td>
+                                            <td>14<span class="dot-wrap"><span class="dot-am"></span><span class="dot-pm"></span></span></td>
+                                            <td>15</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sun">16</td>
+                                            <td>17</td>
+                                            <td>18</td>
+                                            <td class="on">19</td>
+                                            <td>20</td>
+                                            <td>21</td>
+                                            <td>22</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sun">23</td>
+                                            <td>24</td>
+                                            <td>25</td>
+                                            <td class="active">26</td>
+                                            <td>27</td>
+                                            <td>28</td>
+                                            <td>29</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sun">30</td>
+                                            <td>31</td>
+                                            <td class="disable">1</td>
+                                            <td class="disable">2</td>
+                                            <td class="disable">3</td>
+                                            <td class="disable">4</td>
+                                            <td class="disable">5</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="choice-time">
+                            <div class="choice-time-group">
+                                <div class="time-tit"><span class="ico-am"></span>오전</div>
+                                <div class="time-list">
+                                    <a href="javascript:;">10:10</a>
+                                    <a href="javascript:;">11:10</a>
+                                </div>
+                            </div>
+                            <div class="choice-time-group">
+                                <div class="time-tit"><span class="ico-pm"></span>오후</div>
+                                <div class="time-list">
+                                    <a href="javascript:;">10:10</a>
+                                    <a href="javascript:;">11:10</a>
+                                    <a href="javascript:;" class="active">13:10</a>
+                                    <a href="javascript:;" class="disable">14:10</a>
+                                    <a href="javascript:;">15:10</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="medical-reserve-info">
+                    <span class="medical-reserve-tit">진료예약 정보</span>
+                    <table>
+                        <colgroup>
+                            <col style="width:105px">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>이름</th>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>환자번호</th>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>연락처</th>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>본인유무</th>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>진료과</th>
+                                <td><span class="txt-co-blue">가정의학과</span></td>
+                            </tr>
+                            <tr>
+                                <th>의료진</th>
+                                <td><span class="txt-co-blue">고기동</span></td>
+                            </tr>
+                            <tr>
+                                <th>진료날짜</th>
+                                <td><span class="txt-co-blue">2020년 8월 12일</span></td>
+                            </tr>
+                            <tr>
+                                <th>진료시간</th>
+                                <td><span class="txt-co-blue">15시 10분</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="reserve__btn-wrap">
+                <a href="javascript:;" class="btn-lg btn-gray"><span>이전</span></a>
+                <a href="RSV020105.html" class="btn-lg btn-blue"><span>다음</span></a>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="../../js/ui.js"></script>
+</body>
+</html>

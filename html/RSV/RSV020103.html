@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- Scripts -->
+    <script src="../../js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<div class="wrap reserve-wrap">
+
+    <div class="content">
+        <div class="section">
+            <div class="title">
+                <h3 class="page-tit">진료예약</h3>
+                <p class="page-tit__desc">길병원 홈페이지에서 간편하게 진료예약을 해보세요.</p>
+            </div>
+
+            <ul class="step step03">
+                <li><span>STEP 1</span><P>환자정보 입력</P></li>
+                <li><span>STEP 2</span><P>진료과 선택</P></li>
+                <li class="on"><span>STEP 3</span><P>의료진 선택</P></li class="on">
+                <li><span>STEP 4</span><P>날짜/시간 선택</P></li>
+            </ul>
+            
+            <div class="reserve-context">
+                <div class="left-group">
+                    <div class="s-tit">원하시는 진료를 선택 하세요.</div>
+                    <div class="medical-doctor">
+                        <ul>
+                            <li>
+                                <div class="checkbox"><input type="checkbox" id="c1"><label for="c1"></label></div>
+                                <div class="img-area"><img src="../../img/main/img.png" alt=""></div>
+                                <div class="info-text">
+                                    <span class="name">고기동</span>
+                                    <div class="medical-area">
+                                        <span class="text-tit">진료분야 : </span>
+                                        <span class="text">평생건강관리, 가정주치의, 가정의학과 일반진료, 생활습관 병관리</span>
+                                    </div>
+                                </div>
+                                <div class="schedule">
+                                    <table>
+                                        <colgroup>
+                                            <col style="width:80px">
+                                            <col span="6">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th>구분</th>
+                                                <th>월</th>
+                                                <th>화</th>
+                                                <th>수</th>
+                                                <th>목</th>
+                                                <th>금</th>
+                                                <th>토</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>오전</th>
+                                                <td></td>
+                                                <td><span class="on"></span></td>
+                                                <td></td>
+                                                <td><span class="on"></span></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th>오후</th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td><span class="on"></span></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="checkbox"><input type="checkbox" id="c2"><label for="c2"></label></div>
+                                <div class="img-area"><img src="../../img/main/img.png" alt=""></div>
+                                <div class="info-text">
+                                    <span class="name">고기동</span>
+                                    <div class="medical-area">
+                                        <span class="text-tit">진료분야 : </span>
+                                        <span class="text">평생건강관리, 가정주치의, 가정의학과 일반진료, 생활습관 병관리</span>
+                                    </div>
+                                </div>
+                                <div class="schedule">
+                                    <table>
+                                        <colgroup>
+                                            <col style="width:80px">
+                                            <col span="6">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th>구분</th>
+                                                <th>월</th>
+                                                <th>화</th>
+                                                <th>수</th>
+                                                <th>목</th>
+                                                <th>금</th>
+                                                <th>토</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>오전</th>
+                                                <td></td>
+                                                <td><span class="on"></span></td>
+                                                <td></td>
+                                                <td><span class="on"></span></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th>오후</th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td><span class="on"></span></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="checkbox"><input type="checkbox" id="c3"><label for="c3"></label></div>
+                                <div class="img-area"><img src="../../img/main/img.png" alt=""></div>
+                                <div class="info-text">
+                                    <span class="name">고기동</span>
+                                    <div class="medical-area">
+                                        <span class="text-tit">진료분야 : </span>
+                                        <span class="text">평생건강관리, 가정주치의, 가정의학과 일반진료, 생활습관 병관리</span>
+                                    </div>
+                                </div>
+                                <div class="schedule">
+                                    <table>
+                                        <colgroup>
+                                            <col style="width:80px">
+                                            <col span="6">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th>구분</th>
+                                                <th>월</th>
+                                                <th>화</th>
+                                                <th>수</th>
+                                                <th>목</th>
+                                                <th>금</th>
+                                                <th>토</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>오전</th>
+                                                <td></td>
+                                                <td><span class="on"></span></td>
+                                                <td></td>
+                                                <td><span class="on"></span></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th>오후</th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td><span class="on"></span></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="checkbox"><input type="checkbox" id="c4"><label for="c4"></label></div>
+                                <div class="img-area"><img src="../../img/main/img.png" alt=""></div>
+                                <div class="info-text">
+                                    <span class="name">고기동</span>
+                                    <span class="text-tit">진료분야 : </span>
+                                    <span class="text">평생건강관리, 가정주치의, 가정의학과 일반진료, 생활습관 병관리</span>
+                                </div>
+                                <div class="schedule">
+                                    <table>
+                                        <colgroup>
+                                            <col style="width:80px">
+                                            <col span="6">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th>구분</th>
+                                                <th>월</th>
+                                                <th>화</th>
+                                                <th>수</th>
+                                                <th>목</th>
+                                                <th>금</th>
+                                                <th>토</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>오전</th>
+                                                <td></td>
+                                                <td><span class="on"></span></td>
+                                                <td></td>
+                                                <td><span class="on"></span></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th>오후</th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td><span class="on"></span></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="medical-reserve-info">
+                    <span class="medical-reserve-tit">진료예약 정보</span>
+                    <table>
+                        <colgroup>
+                            <col style="width:105px">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>이름</th>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>환자번호</th>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>연락처</th>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>본인유무</th>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>진료과</th>
+                                <td><span class="txt-co-blue">가정의학과</span></td>
+                            </tr>
+                            <tr>
+                                <th>의료진</th>
+                                <td><span class="txt-co-blue">고기동</span></td>
+                            </tr>
+                            <tr>
+                                <th>진료날짜</th>
+                                <td><span class="txt-co-blue">2020년 8월 12일</span></td>
+                            </tr>
+                            <tr>
+                                <th>진료시간</th>
+                                <td><span class="txt-co-blue">15시 10분</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="reserve__btn-wrap">
+                <a href="javascript:;" class="btn-lg btn-gray"><span>이전</span></a>
+                <a href="RSV020104.html" class="btn-lg btn-blue"><span>다음</span></a>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="../../js/ui.js"></script>
+</body>
+</html>

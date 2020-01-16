@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- Scripts -->
+    <script src="../../js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+
+    <div class="content">
+        <div class="section">
+            <div class="title">
+                <h3 class="page-tit">비급여 진료비</h3>
+                <p class="page-tit__desc">길병원에서 제공하는 비급여 진료비에 대한 안내 입니다.</p>
+            </div>
+
+            <ul class="tab">
+                <li><a href="javascript:;" class="on">행위료</a></li>
+                <li><a href="javascript:;">치료재료대</a></li>
+                <li><a href="javascript:;">약제비</a></li>
+                <li><a href="javascript:;">제증명 수수료</a></li>
+            </ul>
+        
+            <div class="search-area">
+                <div class="search-sort">
+                    <select>
+                        <option>선택해주세요</option>
+                    </select>
+                </div>
+                <div class="search-input">
+                    <input type="text" placeholder="검색어 입력">
+                    <button class="btn-search">검색</button>
+                </div>
+            </div>
+
+            <div class="context cs-wrap">
+                <div class="context-title">사본발급 신청자별 필요구비서류 세부사항</div>
+                <div class="table-col">
+                    <table>
+                        <colgroup>
+                            <col style="width:135px">
+                            <col style="width:165px">
+                            <col style="width:105px">
+                            <col style="width:85px">
+                            <col style="width:165px">
+                            <col style="width:120px">
+                            <col style="width:120px">
+                            <col style="width:135px">
+                            <col style="width:120px">
+                            <col>
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th rowspan="2">분류</th>
+                                <th colspan="2">항목</th>
+                                <th colspan="6">가격정보(원)</th>
+                                <th rowspan="2">특이사항</th>
+                            </tr>
+                            <tr>
+                                <th>명칭</th>
+                                <th>코드</th>
+                                <th>구분</th>
+                                <th>비용</th>
+                                <th>최저비용</th>
+                                <th>최대비용</th>
+                                <th>치료재료대<br>포함여부</th>
+                                <th>약제비<br>포함여부</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>초음파_흉부</td>
+                                <td>갑상선, 부갑상선 <br>초음파 도플러</td>
+                                <td>EB 414</td>
+                                <td>-</td>
+                                <td class="txt-right">110,000</td>
+                                <td class="txt-right">0</td>
+                                <td class="txt-right">0</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>초음파_흉부</td>
+                                <td>OMFS FEEE(1)</td>
+                                <td>EB 414</td>
+                                <td>-</td>
+                                <td class="txt-right">110,000</td>
+                                <td class="txt-right">0</td>
+                                <td class="txt-right">0</td>
+                                <td>N</td>
+                                <td>N</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>초음파_흉부</td>
+                                <td>OMFS FEEE(1)</td>
+                                <td>EB 414</td>
+                                <td>-</td>
+                                <td class="txt-right">110,000</td>
+                                <td class="txt-right">0</td>
+                                <td class="txt-right">0</td>
+                                <td>N</td>
+                                <td>N</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>초음파_흉부</td>
+                                <td>OMFS FEEE(1)</td>
+                                <td>EB 414</td>
+                                <td>-</td>
+                                <td class="txt-right">110,000</td>
+                                <td class="txt-right">0</td>
+                                <td class="txt-right">0</td>
+                                <td>N</td>
+                                <td>N</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>초음파_흉부</td>
+                                <td>OMFS FEEE(1)</td>
+                                <td>EB 414</td>
+                                <td>-</td>
+                                <td class="txt-right">110,000</td>
+                                <td class="txt-right">0</td>
+                                <td class="txt-right">0</td>
+                                <td>N</td>
+                                <td>N</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>초음파_흉부</td>
+                                <td>OMFS FEEE(1)</td>
+                                <td>EB 414</td>
+                                <td>-</td>
+                                <td class="txt-right">110,000</td>
+                                <td class="txt-right">0</td>
+                                <td class="txt-right">0</td>
+                                <td>N</td>
+                                <td>N</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>초음파_흉부</td>
+                                <td>OMFS FEEE(1)</td>
+                                <td>EB 414</td>
+                                <td>-</td>
+                                <td class="txt-right">110,000</td>
+                                <td class="txt-right">0</td>
+                                <td class="txt-right">0</td>
+                                <td>N</td>
+                                <td>N</td>
+                                <td>-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="paging">
+                    <a href="javascript:;" class="first"></a>
+                    <a href="javascript:;" class="prev"></a>
+                    <strong>1</strong>
+                    <a href="javascript:;">2</a>
+                    <a href="javascript:;">3</a>
+                    <a href="javascript:;">4</a>
+                    <a href="javascript:;">5</a>
+                    <a href="javascript:;">6</a>
+                    <a href="javascript:;">7</a>
+                    <a href="javascript:;">8</a>
+                    <a href="javascript:;">9</a>
+                    <a href="javascript:;">10</a>
+                    <a href="javascript:;" class="next"></a>
+                    <a href="javascript:;" class="last"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="../../js/ui.js"></script>
+</body>
+</html>

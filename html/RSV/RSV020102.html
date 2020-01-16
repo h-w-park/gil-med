@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- Scripts -->
+    <script src="../../js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<div class="wrap reserve-wrap">
+
+    <div class="content">
+        <div class="section">
+            <div class="title">
+                <h3 class="page-tit">진료예약</h3>
+                <p class="page-tit__desc">길병원 홈페이지에서 간편하게 진료예약을 해보세요.</p>
+            </div>
+
+            <ul class="step step02">
+                <li><span>STEP 1</span><P>환자정보 입력</P></li>
+                <li class="on"><span>STEP 2</span><P>진료과 선택</P></li>
+                <li><span>STEP 3</span><P>의료진 선택</P></li>
+                <li><span>STEP 4</span><P>날짜/시간 선택</P></li>
+            </ul>
+            
+            <div class="reserve-context">
+                <div class="left-group">
+                    <div class="s-tit">원하시는 진료를 선택 하세요.</div>
+                    <div class="choice-wrap">
+                        <div class="sort-list">
+                            <div class="slider-box">
+                                <div class="slide-draw">
+                                    <a href="javascript:;" class="on">ㄱ</a>
+                                    <a href="javascript:;">ㄴ</a>
+                                    <a href="javascript:;">ㄷ</a>
+                                    <a href="javascript:;">ㄹ</a>
+                                    <a href="javascript:;">ㅁ</a>
+                                    <a href="javascript:;">ㅂ</a>
+                                    <a href="javascript:;">ㅅ</a>
+                                    <a href="javascript:;">ㅇ</a>
+                                    <a href="javascript:;">ㅈ</a>
+                                    <a href="javascript:;">ㅊ</a>
+                                    <a href="javascript:;">ㅋ</a>
+                                    <a href="javascript:;">ㅌ</a>
+                                    <a href="javascript:;">ㅍ</a>
+                                    <a href="javascript:;">ㅎ</a>
+                                </div>
+                            </div>
+                            <div class="controls">
+                                <a href="javascript:;" class="prev"></a>
+                                <a href="javascript:;" class="next"></a>
+                            </div>
+                        </div>
+                        <div class="sort-list-detail">
+                            <div class="scroll-box">
+                                <ul>
+                                    <li class="on">
+                                        <span>ㄱ</span>
+                                        <a href="javascript:;" class="on">가정의학과</a>
+                                        <a href="javascript:;">감염내과</a>
+                                        <a href="javascript:;">관절류마티스내과</a>
+                                    </li>
+                                    <li>
+                                        <span>ㄴ</span>
+                                        <a href="javascript:;">내문비</a>
+                                    </li>
+                                    <li>
+                                        <span>ㄴ</span>
+                                        <a href="javascript:;">내문비</a>
+                                    </li>
+                                    <li>
+                                        <span>ㄴ</span>
+                                        <a href="javascript:;">내문비</a>
+                                    </li>
+                                    <li>
+                                        <span>ㄴ</span>
+                                        <a href="javascript:;">내문비</a>
+                                    </li>
+                                    <li>
+                                        <span>ㄴ</span>
+                                        <a href="javascript:;">내문비</a>
+                                    </li>
+                                    <li>
+                                        <span>ㄴ</span>
+                                        <a href="javascript:;">내문비</a>
+                                    </li>
+                                    <li>
+                                        <span>ㄴ</span>
+                                        <a href="javascript:;">내문비</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="medical-reserve-info">
+                    <span class="medical-reserve-tit">진료예약 정보</span>
+                    <table>
+                        <colgroup>
+                            <col style="width:105px">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>이름</th>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>환자번호</th>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>연락처</th>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>본인유무</th>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>진료과</th>
+                                <td><span class="txt-co-blue">가정의학과</span></td>
+                            </tr>
+                            <tr>
+                                <th>의료진</th>
+                                <td><span class="txt-co-blue">고기동</span></td>
+                            </tr>
+                            <tr>
+                                <th>진료날짜</th>
+                                <td><span class="txt-co-blue">2020년 8월 12일</span></td>
+                            </tr>
+                            <tr>
+                                <th>진료시간</th>
+                                <td><span class="txt-co-blue">15시 10분</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <script>
+            $(function(){
+                $('.sort-list a').on('click',function(){
+                    $(this).addClass('on').siblings('a').removeClass('on');
+                });
+                $('.sort-list .next').on('click',function(){
+                    $('.slide-draw').animate({
+                        top : '-147'
+                    });
+                    $('.sort-list .next').css('display','none');
+                    $('.sort-list .prev').css('display','inline-block');
+                    $('.sort-list .prev').on('click',function(){
+                        $('.slide-draw').animate({
+                            top : '0'
+                        });
+                        $('.sort-list .prev').css('display','none');
+                        $('.sort-list .next').css('display','inline-block');
+                    });
+                });
+            });
+            </script>
+            <div class="reserve__btn-wrap">
+                <a href="javascript:;" class="btn-lg btn-gray"><span>이전</span></a>
+                <a href="RSV020103.html" class="btn-lg btn-blue"><span>다음</span></a>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="../../js/ui.js"></script>
+</body>
+</html>

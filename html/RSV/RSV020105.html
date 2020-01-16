@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- Scripts -->
+    <script src="../../js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<div class="wrap reserve-wrap">
+
+    <div class="content">
+        <div class="section">
+            <div class="title">
+                <h3 class="page-tit">진료예약</h3>
+                <p class="page-tit__desc">길병원 홈페이지에서 간편하게 진료예약을 해보세요.</p>
+            </div>
+
+            <div class="step-complate">진료예약 신청이 완료 되었습니다.</div>
+            
+            <div class="reserve-context">
+                <div class="s-tit txt-left">진료 예약 의료진 정보</div>
+                <div class="left-group">
+                    <div class="doctor-info">
+                        <div class="thumb"><img src="../../img/temp/@doctor.jpg" alt=""></div>
+                        <div class="infomation">
+                            <span class="name">고기동</span>
+                            <a href="javascript:;" class="doctor-like">관심 의료진</a>
+                            <div class="medical-area">
+                                <span class="text-tit">진료분야 : </span>
+                                <span class="text">평생건강관리, 가정주치의, 가정의학과 일반진료, 생활습관 병관리</span>
+                            </div>
+                            <div class="schedule">
+                                <table>
+                                    <colgroup>
+                                        <col style="width:80px">
+                                        <col span="6">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>구분</th>
+                                            <th>월</th>
+                                            <th>화</th>
+                                            <th>수</th>
+                                            <th>목</th>
+                                            <th>금</th>
+                                            <th>토</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th>오전</th>
+                                            <td></td>
+                                            <td><span class="on"></span></td>
+                                            <td></td>
+                                            <td><span class="on"></span></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <th>오후</th>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td><span class="on"></span></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="notice-box">
+                        <strong>주의사항</strong>
+                        <ul class="dot-list">
+                            <li>진료예약 후 방문하지 않으시면, 다른 환자분의 예약 가능일이 늦어집니다. 방문이 어려우신 경우 예약을 변경하시거나 취소하여 주시기 바랍니다.</li>
+                            <li>입력하신 주민등록번호는 의료법에 의해 진료예약의 목적으로만 활용되며, 홈페이지에 저장되지 않습니다.</li>
+                            <li class="lined">본 원은 상급종합병원(3차병원)으로 1차,2차(병,의원)에서 발급한 진료의뢰서나 진료소견이 기재된 건강검진 결과서를 진료당일에 지참해야 국민건강보험(의료보험)적용을 받으실 수 있습니다. 의료급여 환자인 경우 2차 종합의료 기관에서 요양급여(진료)의뢰서를 발급받아 제출하시기 바랍니다.</li>
+                            <li class="lined">가정의학과, 치과, 재활의학과(장애인 복지법에 의한 장애인 치료, 운동치료 등의 재활의학과 진료시) 혈우병 환자,분만,응급환자의 응급실 진료시에는 진료의뢰서가 필요하지 않습니다. </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="medical-reserve-info">
+                    <span class="medical-reserve-tit">진료예약 정보</span>
+                    <table>
+                        <colgroup>
+                            <col style="width:105px">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>이름</th>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>환자번호</th>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>연락처</th>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>본인유무</th>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>진료과</th>
+                                <td><span class="txt-co-blue">가정의학과</span></td>
+                            </tr>
+                            <tr>
+                                <th>의료진</th>
+                                <td><span class="txt-co-blue">고기동</span></td>
+                            </tr>
+                            <tr>
+                                <th>진료날짜</th>
+                                <td><span class="txt-co-blue">2020년 8월 12일</span></td>
+                            </tr>
+                            <tr>
+                                <th>진료시간</th>
+                                <td><span class="txt-co-blue">15시 10분</span></td>
+                            </tr>
+                            <tr>
+                                <th>진료처</th>
+                                <td>7층</td>
+                            </tr>
+                            <tr>
+                                <th>준비사항</th>
+                                <td>-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="reserve__btn-wrap">
+                <a href="javascript:;" class="btn-lg btn-gray"><span>이전</span></a>
+                <a href="javascript:;" class="btn-lg btn-blue"><span>다음</span></a>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="../../js/ui.js"></script>
+</body>
+</html>

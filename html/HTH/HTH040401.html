@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- Scripts -->
+    <script src="../../js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+
+    <div class="content">
+        <div class="section">
+            <div class="title">
+                <h3 class="page-tit">언론보도</h3>
+                <p class="page-tit__desc">대한민국 언론에 노출된 길병원 소식을 모아보세요.</p>
+            </div>
+
+            <div class="context">
+                <div class="table-row">
+                    <table>
+                        <colgroup>
+                            <col style="width:200px">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>제목</th>
+                                <td><input type="text" class="inp-text" style="width:100%"></td>
+                            </tr>
+                            <tr>
+                                <th>언론사</th>
+                                <td><input type="text" class="inp-text" style="width:100%"></td>
+                            </tr>
+                            <tr>
+                                <th>링크</th>
+                                <td><input type="text" class="inp-text" style="width:100%"></td>
+                            </tr>
+                            <tr>
+                                <th>내용</th>
+                                <td>
+                                    <div class="editor"></div>    
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>썸네일 이미지</th>
+                                <td>
+                                    <div class="inp-file">
+                                        <label for="f1">찾아보기</label>
+                                        <input type="file" id="f1">
+                                    </div>
+                                    <span class="info-txt">(최대 5MB, 파일형식 jpg/png/gif 만 가능)</span>
+                                    <div class="file-list">
+                                        <div class="file-list__item">
+                                            <a href="javascript:;" class="del"><img src="../../img/icon/del.jpg" alt=""></a>
+                                            <span class="root">c:\My Documents\thumbnail_img.jpg</span>
+                                            <span class="byte">512.12KB</span>
+                                        </div>
+                                        <div class="file-list__item">
+                                            <a href="javascript:;" class="del"><img src="../../img/icon/del.jpg" alt=""></a>
+                                            <span class="root">c:\My Documents\thumbnail_img.jpg</span>
+                                            <span class="byte">512.12KB</span>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="btn-wrap">
+                <a href="javascript:;" class="btn-lg btn-gray"><span>삭제</span></a>
+                <a href="javascript:;" class="btn-lg btn-white"><span>수정</span></a>
+                <a href="javascript:;" class="btn-lg btn-blue"><span>등록</span></a>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="../../js/ui.js"></script>
+</body>
+</html>

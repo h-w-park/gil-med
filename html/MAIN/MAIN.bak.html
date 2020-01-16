@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/main.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="../../js/main.js"></script>
+</head>
+<body>
+
+
+<div class="main__wrap">
+	<section>w1</section>
+	<section>21</section>
+	<section>31</section>
+	<section>41</section>
+</div>
+
+
+<div class="wrap">
+    <div class="main-section01">
+        <div class="section01-menu">
+            <a href="javascript:;" class="menu01 on"><i></i><span>전화상담예약</span></a>
+            <a href="javascript:;" class="menu02"><i></i><span>회원예약</span></a>
+            <a href="javascript:;" class="menu03"><i></i><span>비회원예약</span></a>
+            <a href="javascript:;" class="menu04"><i></i><span>증명서발급</span></a>
+        </div>
+        <div class="menu01-wrap">
+            <div class="main-section__title">
+                <strong>전화상담예약</strong>
+                <p>우리병원은 처음이신가요?<br>원활한 예약을 위해 전문 상담사가 연락드립니다</p>
+            </div>
+            <div class="tell-reserve">
+                <input type="number" placeholder="전화번호를 입력하세요">
+                <button>요청하기</button>
+            </div>
+        </div>
+        <div class="menu02-wrap">
+            <!-- 회원 로그인 -->
+            <div class="main-step01">
+                <div class="main-section__title">
+                    <strong>회원예약</strong>
+                    <p>원활한 예약을 위해 아이디와 비밀번호를 입력해주세요</p>
+                </div>
+                <div class="main-section__login">
+                    <input type="text" placeholder="아이디를 입력하세요" class="inp-text">
+                    <input type="password" placeholder="비밀번호를 입력하세요" class="inp-text">
+                    <a href="javascript:;" class="btn-login"><span>로그인</span></a>
+                </div>
+            </div>
+            <!-- //회원 로그인 -->
+            <!-- 예약 step01 -->
+            <div class="main-step02">
+                <div class="main-section__title">
+                    <strong>회원예약</strong>
+                </div>
+                <div class="reserve-wrap">
+                    <div class="reserve-left">
+                        <div class="medical-list">
+                            <div class="slider-box">
+                                <div class="slide-draw">
+                                    <a href="javascript:;" class="on">ㄱ</a>
+                                    <a href="javascript:;">ㄴ</a>
+                                    <a href="javascript:;">ㄷ</a>
+                                    <a href="javascript:;">ㄹ</a>
+                                    <a href="javascript:;">ㅁ</a>
+                                    <a href="javascript:;">ㅂ</a>
+                                    <a href="javascript:;">ㅅ</a>
+                                    <a href="javascript:;">ㅇ</a>
+                                    <a href="javascript:;">ㅈ</a>
+                                    <a href="javascript:;">ㅊ</a>
+                                    <a href="javascript:;">ㅋ</a>
+                                    <a href="javascript:;">ㅌ</a>
+                                    <a href="javascript:;">ㅍ</a>
+                                    <a href="javascript:;">ㅎ</a>
+                                </div>
+                            </div>
+                            <div class="controls">
+                                <a href="javascript:;" class="prev"></a>
+                                <a href="javascript:;" class="next"></a>
+                            </div>
+                        </div>
+                        <div class="medical-list-detail">
+                            <div class="scroll-box">
+                                <ul>
+                                    <li class="active">
+                                        <span>ㄱ</span>
+                                        <a href="javascript:;" class="on">가정의학과</a>
+                                        <a href="javascript:;">감염내과</a>
+                                        <a href="javascript:;">관절류마티스내과</a>
+                                    </li>
+                                    <li>
+                                        <span>ㄴ</span>
+                                        <a href="javascript:;">내문비</a>
+                                    </li>
+                                    <li>
+                                        <span>ㄴ</span>
+                                        <a href="javascript:;">내문비</a>
+                                    </li>
+                                    <li>
+                                        <span>ㄴ</span>
+                                        <a href="javascript:;">내문비</a>
+                                    </li>
+                                    <li>
+                                        <span>ㄴ</span>
+                                        <a href="javascript:;">내문비</a>
+                                    </li>
+                                    <li>
+                                        <span>ㄴ</span>
+                                        <a href="javascript:;">내문비</a>
+                                    </li>
+                                    <li>
+                                        <span>ㄴ</span>
+                                        <a href="javascript:;">내문비</a>
+                                    </li>
+                                    <li>
+                                        <span>ㄴ</span>
+                                        <a href="javascript:;">내문비</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="medical-reserve-info">
+                        <span class="medical-reserve-tit">진료예약 정보</span>
+                        <table>
+                            <tcody>
+                                <tr>
+                                    <th>진료과</th>
+                                    <td>가정의학과</td>
+                                </tr>
+                            </tcody>
+                        </table>
+                        <a href="javascript:;">디음</a>
+                    </div>
+                </div>
+            </div>
+            <!-- //예약 step01 -->
+            <!-- 예약 step02 -->
+            <div class="main-step03">
+                <div class="main-section__title">
+                    <strong>회원예약</strong>
+                </div>
+                <div class="reserve-wrap">
+                    <div class="reserve-left">
+                        <div class="reserve-step-complate"><span>01</span>가정의학과</div>
+                        <div class="medical-doctor">
+                            <div class="scroll-content">
+                                <ul>
+                                    <li>
+                                        <div class="checkbox"><input type="checkbox" id="c1"><label for="c1"></label></div>
+                                        <div class="img-area"><img src="../../img/main/img.png" alt=""></div>
+                                        <div class="info-text">
+                                            <span class="name">고기동</span>
+                                            <span class="text-tit">진료분야</span>
+                                            <span class="text">평생건강관리, 가정주치의, 가정의학과 일반진료, 생활습관 병관리</span>
+                                        </div>
+                                        <div class="schedule">
+                                            <table>
+                                                <colgroup>
+                                                    <col style="width:55px">
+                                                    <col span="6" style="width:38px;">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th>구분</th>
+                                                        <th>월</th>
+                                                        <th>화</th>
+                                                        <th>수</th>
+                                                        <th>목</th>
+                                                        <th>금</th>
+                                                        <th>토</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>오전</th>
+                                                        <td></td>
+                                                        <td><span class="on"></span></td>
+                                                        <td></td>
+                                                        <td><span class="on"></span></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>오후</th>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td><span class="on"></span></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="checkbox"><input type="checkbox" id="c2"><label for="c2"></label></div>
+                                        <div class="img-area"><img src="../../img/main/img.png" alt=""></div>
+                                        <div class="info-text">
+                                            <span class="name">고기동</span>
+                                            <span class="text-tit">진료분야</span>
+                                            <span class="text">평생건강관리, 가정주치의, 가정의학과 일반진료, 생활습관 병관리</span>
+                                        </div>
+                                        <div class="schedule">
+                                            <table>
+                                                <colgroup>
+                                                    <col style="width:55px">
+                                                    <col span="6" style="width:38px;">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th>구분</th>
+                                                        <th>월</th>
+                                                        <th>화</th>
+                                                        <th>수</th>
+                                                        <th>목</th>
+                                                        <th>금</th>
+                                                        <th>토</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>오전</th>
+                                                        <td></td>
+                                                        <td><span class="on"></span></td>
+                                                        <td></td>
+                                                        <td><span class="on"></span></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>오후</th>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td><span class="on"></span></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="checkbox"><input type="checkbox" id="c3"><label for="c3"></label></div>
+                                        <div class="img-area"><img src="../../img/main/img.png" alt=""></div>
+                                        <div class="info-text">
+                                            <span class="name">고기동</span>
+                                            <span class="text-tit">진료분야</span>
+                                            <span class="text">평생건강관리, 가정주치의, 가정의학과 일반진료, 생활습관 병관리</span>
+                                        </div>
+                                        <div class="schedule">
+                                            <table>
+                                                <colgroup>
+                                                    <col style="width:55px">
+                                                    <col span="6" style="width:38px;">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th>구분</th>
+                                                        <th>월</th>
+                                                        <th>화</th>
+                                                        <th>수</th>
+                                                        <th>목</th>
+                                                        <th>금</th>
+                                                        <th>토</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>오전</th>
+                                                        <td></td>
+                                                        <td><span class="on"></span></td>
+                                                        <td></td>
+                                                        <td><span class="on"></span></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>오후</th>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td><span class="on"></span></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="medical-reserve-info">
+                        <span class="medical-reserve-tit">진료예약 정보</span>
+                        <table>
+                            <tcody>
+                                <tr>
+                                    <th>진료과</th>
+                                    <td>가정의학과</td>
+                                </tr>
+                                <tr>
+                                    <th>의료진</th>
+                                    <td>고기동</td>
+                                </tr>
+                            </tcody>
+                        </table>
+                        <a href="javascript:;">디음</a>
+                    </div>
+                </div>
+            </div>
+            <!-- //예약 step02 -->
+            <!-- 예약 step03 -->
+            <div class="main-step04">
+                <div class="main-section__title">
+                    <strong>회원예약</strong>
+                </div>
+                <div class="reserve-wrap">
+                    <div class="reserve-left">
+                        <div class="reserve-step-complate"><span>01</span>가정의학과</div>
+                        <div class="reserve-step-complate"><span>02</span>홍길동</div>
+                        <div class="choice-day">
+                            <div class="calendar-draw">
+                                <div class="calendar-tit">
+                                    <a href="javascript:;" class="prev">이전달</a>
+                                    <span class="title"><span>2020년</span><span>2월</span></span>
+                                    <a href="javascript:;" class="next">다음달</a>
+                                </div>
+                                <div class="calendar">
+                                    <table>
+                                        <colgroup>
+                                            <col style="width:45px;" span="7">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th>일</th>
+                                                <th>월</th>
+                                                <th>화</th>
+                                                <th>수</th>
+                                                <th>목</th>
+                                                <th>금</th>
+                                                <th>토</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="disable">26</td>
+                                                <td class="disable">27</td>
+                                                <td class="disable">28</td>
+                                                <td class="disable">29</td>
+                                                <td class="disable">30</td>
+                                                <td class="disable">31</td>
+                                                <td>1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>3</td>
+                                                <td>4</td>
+                                                <td>5</td>
+                                                <td>6</td>
+                                                <td>7</td>
+                                                <td>8</td>
+                                            </tr>
+                                            <tr>
+                                                <td>9</td>
+                                                <td>10<span class="dot-wrap"><span class="dot-am"></span></span></td>
+                                                <td>11</td>
+                                                <td>12</td>
+                                                <td>13</td>
+                                                <td>14<span class="dot-wrap"><span class="dot-am"></span><span class="dot-pm"></span></span></td>
+                                                <td>15</td>
+                                            </tr>
+                                            <tr>
+                                                <td>16</td>
+                                                <td>17</td>
+                                                <td>18</td>
+                                                <td class="on">19</td>
+                                                <td>20</td>
+                                                <td>21</td>
+                                                <td>22</td>
+                                            </tr>
+                                            <tr>
+                                                <td>23</td>
+                                                <td>24</td>
+                                                <td>25</td>
+                                                <td class="archive">26<span class="dot-wrap"><span class="dot-pm"></span></span></td>
+                                                <td>27</td>
+                                                <td>28</td>
+                                                <td>29</td>
+                                            </tr>
+                                            <tr>
+                                                <td>30</td>
+                                                <td>31</td>
+                                                <td class="disable">1</td>
+                                                <td class="disable">2</td>
+                                                <td class="disable">3</td>
+                                                <td class="disable">4</td>
+                                                <td class="disable">5</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="choice-time">
+                                <div class="time-tit time-am">오전</div>
+                                <div class="time-list">
+                                    <a href="javascript:;">10:10</a>
+                                    <a href="javascript:;">11:10</a>
+                                </div>
+                                <div class="time-tit time-pm">오후</div>
+                                <div class="time-list">
+                                    <a href="javascript:;">10:10</a>
+                                    <a href="javascript:;">11:10</a>
+                                    <a href="javascript:;" class="active">13:10</a>
+                                    <a href="javascript:;" class="disable">14:10</a>
+                                    <a href="javascript:;" class="bg">15:10</a>
+                                    <a href="javascript:;"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="medical-reserve-info">
+                        <span class="medical-reserve-tit">진료예약 정보</span>
+                        <table>
+                            <tcody>
+                                <tr>
+                                    <th>진료과</th>
+                                    <td>가정의학과</td>
+                                </tr>
+                                <tr>
+                                    <th>의료진</th>
+                                    <td>고기동</td>
+                                </tr>
+                                <tr>
+                                    <th>진료날짜</th>
+                                    <td>2020년 8월 12일</td>
+                                </tr>
+                                <tr>
+                                    <th>진료시간</th>
+                                    <td>15시 10분</td>
+                                </tr>
+                            </tcody>
+                        </table>
+                        <a href="javascript:;">다음</a>
+                    </div>
+                </div>
+            </div>
+            <!-- //예약 step03 -->
+            <!-- 예약 완료 -->
+            <div class="main-step05">
+                <div class="main-section__title">
+                    <strong>회원예약</strong>
+                    <p>예약이 완료되었습니다.</p>
+                </div>
+                <div class="reserve-complate">
+                    <div class="left">
+                        <span class="img"><img src="../../img/main/img.png" alt=""></span>
+                        <span class="name"><span>가정의학과</span><strong>고기동</strong></span>
+                        <p><strong>진료분야</strong>대사 증후군 및 심혈관 통합관리, 노인의학, 금연</p>
+                    </div>
+                    <div class="right">
+                        <table>
+                            <colgroup>
+                                <col style="width:113px">
+                                <col style="width:180px">
+                                <col style="width:113px">
+                                <col style="width:180px">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>이름</th>
+                                    <td>홍길동</td>
+                                    <th>의료진</th>
+                                    <td>고기동</td>
+                                </tr>
+                                <tr>
+                                    <th>환자번호</th>
+                                    <td>123123</td>
+                                    <th>진료날짜</th>
+                                    <td>2020년 8월</td>
+                                </tr>
+                                <tr>
+                                    <th>진료과</th>
+                                    <td>가정의학과</td>
+                                    <th>진료시간</th>
+                                    <td>15시 10분</td>
+                                </tr>
+                                <tr>
+                                    <th>진료처</th>
+                                    <td colspan="3">7층 (안내)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="reserve-state"><span>예약하신 내용을 확인해 주세요. 자세한 내용은 [예약현황] 버튼을 눌러주세요</span><a href="javascript:;">예약현황 바로가기</a></div>
+                </div>
+            </div>
+            <!-- //예약 완료 -->
+
+        </div>
+    </div>
+    <div class="main-section02">
+        <div class="main-tit">길병원 BEST 의료진</div>
+        <div class="doctor-slider">
+            <div class="slide-box slide swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" data-swiper-autoplay="2000">
+                        <span class="doctor-slide__item-tit">가정의학과</span>
+                        <span class="doctor-slide__item-name">홍길동 교수</span>
+                        <p>역류성 식도역 / 역류성 식도역 / 역류성 식도역 / 역류성 식도역 / 역류성 식도역 / 역류성 식도역 / 역류성 식도역</p>
+                        <a herf="javascript:;" class="btn-more"><span><img src="../../img/main/btn_more1.png" alt=""></span></a>
+                        <span class="img"><img src="../../img/main/img_doctor.png" alt=""></span>
+                    </div>
+                    <div class="swiper-slide" data-swiper-autoplay="2000">
+                        <span class="doctor-slide__item-tit">가정의학과</span>
+                        <span class="doctor-slide__item-name">홍길동 교수</span>
+                        <p>역류성 식도역 / 역류성 식도역 / 역류성 식도역 / 역류성 식도역 / 역류성 식도역 / 역류성 식도역 / 역류성 식도역</p>
+                        <a herf="javascript:;" class="btn-more"><span><img src="../../img/main/btn_more1.png" alt=""></span></a>
+                        <span class="img"><img src="../../img/main/img_doctor.png" alt=""></span>
+                    </div>
+                    <div class="swiper-slide swiper-slide-active" data-swiper-autoplay="2000">
+                        <span class="doctor-slide__item-tit">가정의학과</span>
+                        <span class="doctor-slide__item-name">홍길동 교수</span>
+                        <p>역류성 식도역 / 역류성 식도역 / 역류성 식도역 / 역류성 식도역 / 역류성 식도역 / 역류성 식도역 / 역류성 식도역</p>
+                        <a herf="javascript:;" class="btn-more"><span><img src="../../img/main/btn_more1.png" alt=""></span></a>
+                        <span class="img"><img src="../../img/main/img_doctor.png" alt=""></span>
+                    </div>
+                    <div class="swiper-slide" data-swiper-autoplay="2000">
+                        <span class="doctor-slide__item-tit">가정의학과</span>
+                        <span class="doctor-slide__item-name">홍길동 교수</span>
+                        <p>역류성 식도역 / 역류성 식도역 / 역류성 식도역 / 역류성 식도역 / 역류성 식도역 / 역류성 식도역 / 역류성 식도역</p>
+                        <a herf="javascript:;" class="btn-more"><span><img src="../../img/main/btn_more1.png" alt=""></span></a>
+                        <span class="img"><img src="../../img/main/img_doctor.png" alt=""></span>
+                    </div>
+                    <div class="swiper-slide" data-swiper-autoplay="2000">
+                        <span class="doctor-slide__item-tit">가정의학과</span>
+                        <span class="doctor-slide__item-name">홍길동 교수</span>
+                        <p>역류성 식도역 / 역류성 식도역 / 역류성 식도역 / 역류성 식도역 / 역류성 식도역 / 역류성 식도역 / 역류성 식도역</p>
+                        <a herf="javascript:;" class="btn-more"><span><img src="../../img/main/btn_more1.png" alt=""></span></a>
+                        <span class="img"><img src="../../img/main/img_doctor.png" alt=""></span>
+                    </div>
+                    <div class="swiper-slide" data-swiper-autoplay="2000">
+                        <span class="doctor-slide__item-tit">가정의학과</span>
+                        <span class="doctor-slide__item-name">홍길동 교수</span>
+                        <p>역류성 식도역 / 역류성 식도역 / 역류성 식도역 / 역류성 식도역 / 역류성 식도역 / 역류성 식도역 / 역류성 식도역</p>
+                        <a herf="javascript:;" class="btn-more"><span><img src="../../img/main/btn_more1.png" alt=""></span></a>
+                        <span class="img"><img src="../../img/main/img_doctor.png" alt=""></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-section03">
+        <div class="main-tit">길병원 포커스</div>
+        <div class="focus-wrap">
+            <div class="focus-on">
+                <div class="focus-num">focus 01</div>
+                <div class="focus-img"><img src="../../img/main/img_ov.png" alt=""></div>
+                <div class="focus-tit"><a href="javascript:;">길병원, AI로봇 이용 인공슬관절치환술 첫 성공</a></div>
+                <div class="focus-text">가천대 길병원(원장 김양우)이 정형외과 인공지능 ‘나비오(NAVIO)' 로봇을 도입해하여 무릎 퇴행성관절염을 앓던 70대 환자에게 인공관절 치환술을 성공적으로 수행했다.</div>
+                <a href="javascript:;" class="btn-more">더보기</a>
+            </div>
+            <div class="focus-list">
+                <div class="focus-title">
+                    <span class="tit">주요기사</span>
+                    <div class="focus-paging">
+                        <a href="javascript:;" class="prev ov">이전</a>
+                        <span class="page"><strong>1</strong> / 2</span>
+                        <a href="javascript:;" class="next">다음</a>
+                    </div>
+                </div>
+                <div class="focus-item">
+                    <div class="focus-num">focus 01</div>
+                    <div class="focus-img"><img src="../../img/main/img_ov.png" alt=""></div>
+                    <div class="focus-tit"><a href="javascript:;">길병원, AI로봇 이용 인공슬관절치환술 첫 성공</a></div>
+                    <div class="focus-text">가천대 길병원(원장 김양우)이 정형외과 인공지능 ‘나비오(NAVIO)' 로봇을 도입해하여 무릎 퇴행성관절염을 앓던 70대 환자에게 인공관절 치환술을 성공적으로 수행했다.</div>
+                    <a href="javascript:;" class="btn-more">더보기</a>
+                </div>
+                <div class="focus-item">
+                    <div class="focus-num">focus 01</div>
+                    <div class="focus-img"><img src="../../img/main/img_ov.png" alt=""></div>
+                    <div class="focus-tit"><a href="javascript:;">길병원, AI로봇 이용 인공슬관절치환술 첫 성공</a></div>
+                    <div class="focus-text">가천대 길병원(원장 김양우)이 정형외과 인공지능 ‘나비오(NAVIO)' 로봇을 도입해하여 무릎 퇴행성관절염을 앓던 70대 환자에게 인공관절 치환술을 성공적으로 수행했다.</div>
+                    <a href="javascript:;" class="btn-more">더보기</a>
+                </div>
+                <div class="focus-item focus-item-active">
+                    <div class="focus-num">focus 01</div>
+                    <div class="focus-img"><img src="../../img/main/img_ov.png" alt=""></div>
+                    <div class="focus-tit"><a href="javascript:;">길병원, AI로봇 이용 인공슬관절치환술 첫 성공</a></div>
+                    <div class="focus-text">가천대 길병원(원장 김양우)이 정형외과 인공지능 ‘나비오(NAVIO)' 로봇을 도입해하여 무릎 퇴행성관절염을 앓던 70대 환자에게 인공관절 치환술을 성공적으로 수행했다.</div>
+                    <a href="javascript:;" class="btn-more">더보기</a>
+                </div>
+                <div class="focus-item">
+                    <div class="focus-num">focus 01</div>
+                    <div class="focus-img"><img src="../../img/main/img_ov.png" alt=""></div>
+                    <div class="focus-tit"><a href="javascript:;">길병원, AI로봇 이용 인공슬관절치환술 첫 성공</a></div>
+                    <div class="focus-text">가천대 길병원(원장 김양우)이 정형외과 인공지능 ‘나비오(NAVIO)' 로봇을 도입해하여 무릎 퇴행성관절염을 앓던 70대 환자에게 인공관절 치환술을 성공적으로 수행했다.</div>
+                    <a href="javascript:;" class="btn-more">더보기</a>
+                </div>
+                <div class="focus-item">
+                    <div class="focus-num">focus 01</div>
+                    <div class="focus-img"><img src="../../img/main/img_ov.png" alt=""></div>
+                    <div class="focus-tit"><a href="javascript:;">길병원, AI로봇 이용 인공슬관절치환술 첫 성공</a></div>
+                    <div class="focus-text">가천대 길병원(원장 김양우)이 정형외과 인공지능 ‘나비오(NAVIO)' 로봇을 도입해하여 무릎 퇴행성관절염을 앓던 70대 환자에게 인공관절 치환술을 성공적으로 수행했다.</div>
+                    <a href="javascript:;" class="btn-more">더보기</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-section04">
+        <div class="main-tit">건강백과 &amp; 의학정보</div>
+        <div class="main-section__menu">
+            <div href="javascript:;" class="main-section__menu-item01">
+                <span class="tit">축농증</span>
+                <div class="active-layer">
+                    <p class="text">축농증 내시경술 이란 무엇인가요?<br>축농증은 콧속 내부와 얼굴 뼈 안의 공간 부비동 과의 연결통로가 막혀서 ...</p>
+                    <a href="javascript:;" class="btn-more"><img src="../../img/main/btn_more.png" alt=""></a>
+                </div>
+            </div>
+            <div href="javascript:;" class="main-section__menu-itme02">
+                <span class="tit">축농증</span>
+                <div class="active-layer">
+                    <p class="text">축농증 내시경술 이란 무엇인가요?<br>축농증은 콧속 내부와 얼굴 뼈 안의 공간 부비동 과의 연결통로가 막혀서 ...</p>
+                    <a href="javascript:;" class="btn-more"><img src="../../img/main/btn_more.png" alt=""></a>
+                </div>
+            </div>
+            <div href="javascript:;" class="main-section__menu-itme03">
+                <span class="tit">축농증</span>
+                <div class="active-layer">
+                    <p class="text">축농증 내시경술 이란 무엇인가요?<br>축농증은 콧속 내부와 얼굴 뼈 안의 공간 부비동 과의 연결통로가 막혀서 ...</p>
+                    <a href="javascript:;" class="btn-more"><img src="../../img/main/btn_more.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="slider-wrap">
+            <div class="slider-logo">
+                <div class="slider-draw">
+                    <div class="slide-logo">
+                        <a href="javascript:;" class="slide-logo__item"><img src="../../img/main/com_logo.png" alt=""></a>
+                        <a href="javascript:;" class="slide-logo__item"><img src="../../img/main/com_logo.png" alt=""></a>
+                        <a href="javascript:;" class="slide-logo__item"><img src="../../img/main/com_logo.png" alt=""></a>
+                        <a href="javascript:;" class="slide-logo__item"><img src="../../img/main/com_logo.png" alt=""></a>
+                        <a href="javascript:;" class="slide-logo__item"><img src="../../img/main/com_logo.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-paging">
+        <a href="javacsript:;" class="on"><span>01</span></a>
+        <a href="javacsript:;"><span>02</span></a>
+        <a href="javacsript:;"><span>03</span></a>
+        <a href="javacsript:;"><span>04</span></a>
+    </div>
+</div>
+</body>
+</html>
