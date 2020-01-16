@@ -1,3 +1,5 @@
+
+
 $(function() {
     $('.doctor-like').on('click',function(){
         $(this).toggleClass('on');
@@ -8,6 +10,9 @@ $(function() {
         $(this).closest('.popup').hide();
         $('.dimm').hide();
     });
+
+	/*길병원포커스 메인*/
+	$(".news .contents").dotdotdot();
 
 	$('.doctor').slick({
 		
@@ -28,6 +33,8 @@ $(function() {
 		  autoplay: true,
 		  autoplaySpeed: 2000
 	});
+
+
 
 	$(window).on('scroll',function(){
         var scrX = $(window).scrollLeft()

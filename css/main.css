@@ -251,9 +251,21 @@ a.btn_more {padding-right:20px; text-decoration:underline; color:#fff; font-weig
 .doctor .doctor_list.slick-center span {width: 710px ; height: 440px; background: url('../img/main/bg_doctor_over.png') 50% 50%; border-radius:0%;}
 .doctor .doctor_list.slick-center span img {width: 250px; position: absolute; bottom:0; right:30px;}
 
+
+/*길병원 포커스*/
 .focus {margin:70px auto 0;width:1400px;height:520px; overflow:hidden;}
 .focus:after {content:""; clear: both;display: block; float: none;}
 .focus .focus__wrap {width: 782px; height: 520px; float: left;} 
+
+.focus .focus__wrap .news {position: relative;}
+.focus .focus__wrap .news .num ,
+.focus .focus__wrap .news .title ,
+.focus .focus__wrap .news .contents{position: absolute; z-index:4; color:#fff; top:315px; width: calc(100% - 130px); margin-left: 65px;}
+.focus .focus__wrap .news .num {font-family: Lato; text-transform:uppercase; font-weight: 600; letter-spacing:0.1em;}
+.focus .focus__wrap .news .title {top:344px; font-size:32px; font-weight: 600;   white-space: nowrap;  overflow: hidden;  text-overflow: ellipsis; }
+.focus .focus__wrap .news .contents {top:400px; height: 54px; line-height: 1.6; font-size:18px; text-align: justify;}
+.focus .focus__wrap .news .more {position: absolute; top:435px; right:65px; background: url('../img/main/btn_news_more.png'); width: 54px; height: 19px; overflow:hidden; display: block; text-indent:-9999px;}
+
 .focus .focus__wrap_nav {width: 618px; height: 520px; float: right; background:#333;}
 .focus .focus__wrap_nav .slick-list {overflow:visible;}	
 .focus .focus__wrap_nav .title {width: 100%; position: relative; background: #333;}
@@ -263,7 +275,6 @@ a.btn_more {padding-right:20px; text-decoration:underline; color:#fff; font-weig
 .focus .focus__wrap_nav .slick-slider .slick-list li span {display: block; white-space: nowrap;  overflow: hidden; text-overflow: ellipsis; }
 .focus .focus__wrap_nav .slick-slider li.slick-current {background:#67a62e;  }
 .focus .focus__wrap_nav .slick-slider li.slick-current:after {position:absolute; content:""; top:-2px; left:-34px; width: 0;   height: 0; border-top: 45px solid transparent; border-bottom: 45px solid transparent;  border-right:34px solid #67a62e; } 
-
 
 .focus .focus__wrap_nav .slick-dots {position: absolute; top: -47px; right: 102px;z-index:3;}
 .focus .focus__wrap_nav .slick-arrow {position: absolute; top:-45px; right:64px;  z-index:3; width:13px;height:20px;background:url(../img/main/paging_arr.png) no-repeat 0 0;text-indent:-999em;} 
@@ -276,32 +287,7 @@ a.btn_more {padding-right:20px; text-decoration:underline; color:#fff; font-weig
 .focus .focus__wrap_nav .slick-dots li.slick-active:after {content:" / 2"; color:#ddd; font-size:15px; font-family: Lato;} 
 
 .main-tit{display:block;text-align:center;color:#222;font-size:60px;font-weight:500;letter-spacing:-4px;}
-.focus-wrap{margin:70px auto 0;width:1400px;height:520px;background:#333; display: none;}
-.focus-list{width:618px;float:right;}
-.focus-title{height:90px;position:relative;}
-.focus-title .tit{font-size:20px;color:#fff;opacity:0.6;line-height:90px;padding-left:64px;}
-.focus-title .focus-paging{position:absolute;top:30px;right:65px;color:#888;font-size:20px;line-height:20px;padding:0 35px;}
-.focus-title .focus-paging .page strong{display:inline-block;color:#Fff;}
-.focus-title .prev{width:13px;height:20px;background:url(../img/main/paging_arr.png) no-repeat 0 0;text-indent:-999em;position:absolute;top:0;left:0;transform:rotate(-180deg);}
-.focus-title .next{width:13px;height:20px;background:url(../img/main/paging_arr.png) no-repeat 0 0;text-indent:-999em;position:absolute;top:0;right:0;}
-.focus-title .prev.ov{background-position:0 -20px;transform:rotate(-180deg);}
-.focus-title .next.ov{background-position:0 -20px;}
-.focus-item .focus-img{display:none;}
-.focus-item .focus-num{display:none;}
-.focus-item .focus-text{display:none;}
-.focus-item .btn-more{display:none;}
-.focus-item{border-top:1px solid #ddd;height:86px;line-height:86px;padding-left:64px;position:relative;}
-.focus-item .focus-tit a{position:relative;z-index:10;}
-.focus-item .focus-tit a{color:#fff;font-size:24px;}
-.focus-item-active:after{background:url(../img/main/bg_over.png) no-repeat 0 50%;width:653px;height:86px;content:"";position:absolute;top:0;left:-34px;z-index:5;}
-.focus-on{width:781px;overflow:hidden;height:520px;float:left;position:relative;}
-.focus-on .focus-num{padding-left:63px;position:absolute;top:316px;font-weight:500;color:#fff;font-size:16px;}
-.focus-on .focus-tit{padding-left:63px;position:absolute;top:343px;font-size:34px;font-weight:500;color:#fff;letter-spacing:-4px;}
-.focus-on .focus-tit a{color:#fff;}
-.focus-on .focus-text{padding-left:63px;color:#eef1f4;font-size:18px;line-height:32px;display:-webkit-box;text-overflow:ellipsis;-webkit-box-orient:vertical;-webkit-line-clamp:2;white-space:normal;word-break:break-all;height:64px;position:absolute;top:392px;width:635px;}
-.focus-on .btn-more{background:url(../img/main/bg_more.png) no-repeat 100% 100%;padding:0 17px 5px 0;font-size:14px;color:#eef1f4;position:absolute;right:85px;bottom:67px;box-sizing:border-box;}
 
-.main-tit{display:block;text-align:center;color:#222;font-size:60px;font-weight:500;letter-spacing:-4px; font-weight: 800;}
 .rsv__wrap .main-tit {color:#fff; font-size:48px;}
 .main-section__menu{margin:80px auto 0;font-size:0;width:1400px;}
 .main-section__menu > div{display:inline-block;width:440px;height:520px;overflow:hidden;border-radius:60px;background:url(../img/main/main_img01.png) no-repeat;position:relative;box-shadow:10px 0 15px rgba(0,0,0,0.15);}
@@ -340,12 +326,12 @@ a.btn_more {padding-right:20px; text-decoration:underline; color:#fff; font-weig
 	body {overflow-x:visible  !important;}
 
 	.rsv__wrap {width: ;}
+
 	/* Section 01 */
 	.section01-menu {width: 990px;}
 	.section01-menu a {width: 180px; height: 180px; margin: 0 30px;}
 	.section01-menu a.slick-current i,  
 	.section01-menu a i {width: 105px; height: 80px;  background-size:cover;  }
-	
 	.section01-menu a:nth-child(2) i,
 	.section01-menu a.slick-current:nth-child(2) i{background-position: 0 -95px;}
 	.section01-menu a:nth-child(3) i,
@@ -353,23 +339,12 @@ a.btn_more {padding-right:20px; text-decoration:underline; color:#fff; font-weig
 	.section01-menu a:nth-child(4) i,
 	.section01-menu a.slick-current:nth-child(4) i{background-position: 0 -265px;}
 	.section01-menu span {font-size:21px;}
-
 	.section01-menu a.slick-current {border-radius:45px; width: 240px;}
 
-
 	/* Section 03 */
-	.focus-wrap {width: 1000px;}
-	.focus-on {width: 43%;}
-	.focus-on .focus-num {top:196px; padding-left: 43px;}
-	.focus-on .focus-tit {top:225px; padding-left: 43px; width: calc(100% - 90px); }
-	.focus-on .focus-text {top:332px; width: calc(100% - 90px); padding-left: 43px; overflow:hidden;}
-	.focus-on .btn-more {right:90px;}
-
-	.focus-list {width: 57%;}
-	.focus-img {text-align: center;}
-	.focus-img img {height: 520px;}
-	.focus-item-active:after {width: calc(100% + 34px);}
-
+	.focus {width: 1100px;} 
+	.focus .focus__wrap {width: 600px;}
+	.focus .focus__wrap_nav {width: 500px;}
 
 	/* Section 04 */
 	.main-section__menu {width: 1100px;}
