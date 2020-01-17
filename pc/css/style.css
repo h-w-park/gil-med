@@ -34,6 +34,22 @@
 .table-row .group + .group{margin-top:20px;}
 .table-row .editor{height:500px;}
 
+.table-row.list {margin-top: 40px;}
+.table-row.list table tbody th {padding: 30px 20px; background: #fff;}
+.table-row.list table tbody th img {width: 232px; height: 145px;}
+.table-row.list table tbody td {padding: 30px 20px;}
+.table-row.list table tbody td .title {font-size:22px; width: 100%; max-width:920px; height: 26px; line-height: 21px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;  font-weight: 400;}
+.table-row.list table tbody td .news {font-size:18px; width: 100%; max-width:920px; height: 36px; line-height: 36px;white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.table-row.list table tbody td dl {margin-top: 4px;}
+.table-row.list table tbody td dl:after {content:""; clear: both;display: block; float: none;}
+.table-row.list table tbody td dl dt,
+.table-row.list table tbody td dl dd {float: left; height: 28px; line-height: 28px; padding-left: 22px; color:#888;font-size:18px; position: relative;  }
+.table-row.list table tbody td dl dt:after,
+.table-row.list table tbody td dl dd:after {display:block; position: absolute; left:0; top:4px ; content:""; width: 20px; height: 20px;background-image:url('../img/common/icon.png'); background-position: 0 -200px;}
+.table-row.list table tbody td dl dd {margin-left: 30px;}
+.table-row.list table tbody td dl dd:after {background-position:-20px -200px;}
+.table-row.list table tbody td a {display: inline-block; border:1px solid #004e96; color:#004e96;text-align: center; width: 108px; height: 34px; line-height: 34px; margin-top: 16px; font-weight: 400;}
+
 .context-title + .table-col{margin-top:25px;}
 .table-col{margin-top:40px;}
 .table-col table{width:100%;border-top:2px solid #000;}
@@ -489,3 +505,65 @@ select::-ms-expand{display:none;}
 .popup .context{padding-top:20px;}
 .popup .context p{text-align:center;font-size:18px;color:#000;line-height:30px;}
 
+
+
+.HTH {background: #f5f5f5;}
+.HTH .hth_main:after {content:""; clear: both;display: block; float: none;}
+.HTH .hth_main .left,
+.HTH .hth_main .right {width: calc(50% - 12px); float: left;}
+.HTH .hth_main .right {margin-left: 24px;}
+.HTH .hth_main .col-12 {width: 100%;}
+.HTH .hth_main .col-12:after {content:""; clear: both;display: block; float: none;}
+.HTH .hth_main .col-6 {width: calc(50% - 12px); float: left;}
+.HTH .hth_main .col-6.ml {float: right;}
+.HTH .hth_main .box h4 {margin : 37px 0 15px; font-size:24px; position: relative; color:#333;}
+.HTH .hth_main .box h4 a {font-size:20px; position: relative; top:-2px; left:20px; color:#888;}
+.HTH .hth_main .box .news01,
+.HTH .hth_main .box .news02,  
+.HTH .hth_main .box .news03,
+.HTH .hth_main .box .news04 {border:1px solid #ddd; box-sizing:border-box;} 
+
+
+.HTH .hth_main .box .news01 {height: 400px; overflow:hidden; position: relative;}
+.HTH .hth_main .box .news01:hover {cursor:pointer;}
+.HTH .hth_main .box .news01 .img img {width: 100%; height: 400px;}
+.HTH .hth_main .box .news01 .dim {position: absolute; width: 100%; height:200px; bottom:0; background: rgb(0,0,0);
+background: linear-gradient(0deg, rgba(0,0,0,0.5746673669467788) 0%, rgba(0,212,255,0) 100%);}
+.HTH .hth_main .box .news01 .contents {position: absolute; bottom:40px; left:40px; width: calc(100% - 80px);}
+.HTH .hth_main .box .news01 .contents .title {font-size:28px; color:#fff; font-weight: 600; margin-bottom:20px ; overflow:hidden; height:80px; line-height: 1.4;}
+.HTH .hth_main .box .news01 .contents .date {color:#fff; font-family: Lato; letter-spacing: 0.01em; font-size:16px;}
+
+.HTH .hth_main .box .news02 {height: 345px; background: #fff; overflow:hidden;}
+.HTH .hth_main .box .news02 .img img {width: 100%; height: 225px;}
+.HTH .hth_main .box .news02 .contents {padding: 30px 20px;}
+.HTH .hth_main .box .news02 .contents .title a {font-size:24px; display: block;width: 260px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; height: 26px; line-height: 1em;}
+.HTH .hth_main .box .news02 .contents > a {font-size:14px; font-weight: 400; color:#666; margin-top: 14px; display: block; position: relative;}
+.HTH .hth_main .box .news02 .contents > a:after {content:" >"; font-family: 돋움; font-size:14px; font-weight:bold;position:relative; margin-left:8px; } 
+
+
+.HTH .hth_main .box .news03 {background: #fff; padding: 32px ;}
+.HTH .hth_main .box .news03 table {width: 100%;}
+.HTH .hth_main .box .news03 table tr th {font-size:18px; font-weight: 300; padding: 8px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 430px; text-align: left;}
+.HTH .hth_main .box .news03 table tr td {font-size:18px; font-weight: 400; font-family: Lato; font-size:16px; width: 105px; text-align: right;  padding: 8px;}
+
+.HTH .hth_main .box .news04 {height: 660px; background: #fff;}
+.HTH .hth_main .box .news04 .date {font-family: Lato;color:#888; }
+.HTH .hth_main .box .news04 .big .img img {width: 100%; height: 225px;}
+.HTH .hth_main .box .news04 .big .wp {padding: 35px 25px;}
+.HTH .hth_main .box .news04 .big .title {font-size:26px; height:64px; overflow:hidden;}
+.HTH .hth_main .box .news04 .big .detail {font-size:16px; height:44px; line-height: 22px;     overflow: hidden;  }
+.HTH .hth_main .box .news04 .big .date {font-size:16px; margin-top: 7px;}
+.HTH .hth_main .box .news04 .small {padding: 0 25px ;}
+.HTH .hth_main .box .news04 .small dl:after {content:""; clear: both;display: block; float: none;}
+.HTH .hth_main .box .news04 .small dl dt {float: left; width: 94px;}
+.HTH .hth_main .box .news04 .small dl dt .img img {width: 80px ;height: 60px;}
+.HTH .hth_main .box .news04 .small dl dd {width: calc(100% - 94px); float: right;}
+.HTH .hth_main .box .news04 .small dl dd {padding: 0; margin: 0;}
+.HTH .hth_main .box .news04 .small dl dd .title {   height: 44px; line-height: 22px; overflow:hidden;  display: block;  }
+.HTH .hth_main .box .news04 .small .title {font-size:16px;}
+.HTH .hth_main .box .news04 .small .date { letter-spacing: 0.01em; margin-top: 8px; color:#888;}
+.HTH .hth_main .box .news04 .small ul li { margin-top: 18px;}
+.HTH .hth_main .box .news04 .small ul li .title {width: 240px;  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+
+.HTH .hth_main .box .news05 {height: 140px; background:#004e96; margin-top: 24px;}
+ 

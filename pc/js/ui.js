@@ -13,6 +13,6 @@ $(function() {
 	$(window).on('scroll',function(){
         var scrX = $(window).scrollLeft()
         $('header').css('left','-'+scrX+'px')
-    });
-    $( "#accordion" ).accordion();
+    });  
+
 });
