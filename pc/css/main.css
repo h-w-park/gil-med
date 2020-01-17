@@ -271,7 +271,7 @@ a.btn_more {padding-right:20px; text-decoration:underline; color:#fff; font-weig
 .focus .focus__wrap_nav .title {width: 100%; position: relative; background: #333;}
 .focus .focus__wrap_nav h4 {font-weight:500; width: 100%;background: #333; position: absolute; z-index:2;font-size:20px; height: 80px;  line-height: 80px; padding-left:64px; color:rgba(255,255,255,.6); border-bottom:1px solid rgba(255,255,255,.2);box-sizing:border-box;}
 .focus .focus__wrap_nav .slick-slider {position: relative; top: 81px;}
-.focus .focus__wrap_nav .slick-slider .slick-list li {font-size:24px;color:#fff; line-height:86px;padding-left:64px; border-bottom:1px solid rgba(255,255,255,.2); position: relative; cursor:pointer;  }
+.focus .focus__wrap_nav .slick-slider .slick-list li {font-size:24px;color:#fff; line-height:86px;padding :0 50px 0 64px; border-bottom:1px solid rgba(255,255,255,.2); position: relative; cursor:pointer;  }
 .focus .focus__wrap_nav .slick-slider .slick-list li span {display: block; white-space: nowrap;  overflow: hidden; text-overflow: ellipsis; }
 .focus .focus__wrap_nav .slick-slider li.slick-current {background:#67a62e;  }
 .focus .focus__wrap_nav .slick-slider li.slick-current:after {position:absolute; content:""; top:-2px; left:-34px; width: 0;   height: 0; border-top: 45px solid transparent; border-bottom: 45px solid transparent;  border-right:34px solid #67a62e; } 
