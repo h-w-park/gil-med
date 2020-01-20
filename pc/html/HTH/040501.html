@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- Scripts -->
+    <script src="../../js/jquery-2.2.3.min.js"></script>
+    <script src="../../js/jquery-ui.js"></script>
+    <script src="../../js/dotdotdot.js"></script>
+</head>
+<body>
+<div class="wrap">
+
+    <div class="content ">
+        <div class="section"> 
+            <div class="title">
+                <h3 class="page-tit">정기건강교실</h3>
+                <p class="page-tit__desc">건강정보를 한눈에 보실 수 있습니다.</p>
+            </div>
+
+            <ul class="tab">
+                <li><a href="javascript:;">당뇨의 원인 및 증상</a></li>
+                <li><a href="javascript:;">당뇨의 합병증</a></li>
+                <li><a href="javascript:;" class="on">당뇨검사</a></li>
+                <li><a href="javascript:;">당뇨 건강관리방법</a></li>
+                <li><a href="javascript:;">당뇨치료요법</a></li>
+            </ul>
+            
+			<div class="tab_sub">
+				<ul>
+					<li><a href="#tab1">혈당검사</a></li>
+					<li><a href="#tab2">소변<br>케톤검사</a></li>
+				</ul>
+				<div id="tab1">
+					<div class="context-title">혈당검사</div>
+					<p class="contexts">정기적 혈당 검사 치료 초기에는 1~2주에 한번씩 혈당 검사를 실시하고, 혈당이 잘 조절되면 1~2개월에 한번으로 간격을 넓힙니다. 병원에서 혈당 검사하는 날에는 아래와 같은 사항을 잘 숙지하셔서 정확한 검사가 되도록 하십시오. 10~12시간 공복 상태로 아침에 병원에 오셔서 채혈합니다.</p>
+					<div class="context-title">주의사항</div>
+					<ul class="contexts">
+						<li>공복 유지 시 보리차나 생수는 드셔도 되나, 그 외 음식물은 드시면 안됩니다.</li>
+						<li>인슐린 주사나 경구혈당강하제를 드시는 분은 약을 준비해 가지고 오셔서 공복 혈당 채혈 후 평소대로 주사를 맞거나 약을 복용하십시오.</li>
+						<li>집에서 미리 인슐린 주사를 맞거나 약을 드시고 오시면 저혈당의 위험이 있고, 검사 일에 식사 전 공복 혈당 채혈 후 주사나 약을 복용하지 않으면  식후 검사 결과가 정확하지 않습니다. 길게길게길게길게길게길게길게길게길게길게길게길게</li>
+						<li>인슐린 주사나 약복용 20~30분 후에 아침식사를 하십시오.</li>
+						<li>식사 2시간 후(식사가 시작된 2시간 후)에 다시 채혈을 하면 정확한 검사를 받을 수 있습니다.</li>
+					</ul>
+					<div class="context-title">당화 혈색소(병원)</div>
+					<p class="contexts">당화 혈색소는 측정 이전 1~2개월 동안의 전반적인 혈당 조절 상태를 나타내는 것으로 2~3개월마다 당화혈색소를 측정하여 전반적인 혈당 조절 정도를 평가해야 합니다. 당화혈색소를 7% 미만으로 유지하면, 만성 합병증을 대폭 줄일 수 있습니다.</p>
+					<div class="context-title">자가혈당 측정(집)</div>
+					<p class="contexts">자가혈당 측정기란 집에서 손쉽게 혈당을 측정할 수 있는 기계로 인슐린 주사를 맞거나, 임신 중일 때, 혈당조절이 불안정 할 때는 꼭 하는 것이 좋습니다. 일반적으로 매 식사시간 전과 자기 전 예를 들면, 아침식사 전 7시, 점심식사 전 11시 저녁 식사 전 5시 자기 전 10시로 하루 4차례 정도 측정하는 것을 권하나, 당뇨병 조절방법이나 목표에 따라 달라질 수 있습니다. 자가 혈당 측정을 하는 경우라도, 1~2개월에 한번씩은 병원에서 재혈검사를 동시에 시행해야 합니다.  </p>
+					<div class="context-title">합병증을 알기 위한 검사는 얼마나 자주 하는 것이 좋습니까?</div>
+					<p class="contexts">당뇨병으로 진단되면 혈당 검사뿐 아니라 아래와 같은 검사를 정기적으로 실시하여 합병증의 발생과 진행 정도를 평가하여 당뇨병 관리에서 반영되어야 합니다. </p>
+
+					<div class="context-box">
+						<div class="box">
+							<ul class="contexts">
+								<li>신체검사</li>
+								<li>맥박</li>
+								<li>지각신경</li>
+								<li>특수검사</li>
+								<li>눈의 망막증</li>
+								<li>신장 합병증</li>
+								<li>동맥경화증의 유발요소 확인</li>
+								<li>대혈관 합병증 확인</li>
+							</ul>
+						</div>
+						<div class="box">
+							<ul class="contexts">
+								<li>혈압</li>
+								<li>촉지 경동맥 및 하지 동맥 (동맥 경화증에 의한 혈류  장애를 측정) 신경 검사</li>
+								<li>체지방 분석</li>
+								<li>안저검사 및 안저촬영</li>
+								<li>미세 단백뇨 검사</li>
+								<li>혈중 콜레스테롤 및 중성지방</li>
+								<li>심전도, 심부하검사 및 뇌혈관 검사</li>
+							</ul>
+						</div>
+					</div>
+					<p class="contexts">위의 검사들은 이상이 없더라도 최소 6개월에서 1년 간격으로는 시행되어야 하며, 이상이 발견될 시에는 더 자주 확인하여야 합니다. </p>
+
+
+
+				</div>
+				<div id="tab2">22</div> 
+			</div>
+
+        </div>
+    </div>
+
+</div>
+<script>
+
+$(function() {
+	$(".tab_sub").tabs();
+});
+</script>
+</body>
+</html>
