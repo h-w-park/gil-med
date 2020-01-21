@@ -1,4 +1,4 @@
-@charset "utf-8";
+@charset "utf-8"; 
 /* style */
 .dot-txt{position:relative;padding-left:13px;color:#333;}
 .dot-txt:after{background:#5d5d5d;width:1px;height:1px;content:"";position:absolute;top:7px;left:3px;}
