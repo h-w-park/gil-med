@@ -151,7 +151,7 @@ header .gnb_wp .gnb .call ul li:nth-child(2) a:before {background-position:-24px
 header .gnb_wp .gnb .call ul li:nth-child(3) a:before {background-position:-48px 0;}
 header .gnb_wp .gnb .nav_wp {float: left; border-left: 1px solid #eee;}
 header .gnb_wp .gnb .nav_wp > ul {float: left; width: 200px; height: 445px; padding-top: 24px;border-right:1px solid #eee; box-sizing:border-box;}
-header .gnb_wp .gnb .nav_wp > ul li {height: 44px; line-height: 44px;margin-left: 55px;}
+header .gnb_wp .gnb .nav_wp > ul li {height: 44px; line-height: 44px;margin-left: 48px;}
 header .gnb_wp .gnb .nav_wp > ul li a {font-size:16px; font-weight: 400; transition:all 0.3s; border-bottom:2px solid #fff; display: block;}
 header .gnb_wp .gnb .nav_wp > ul li a:hover span {color:#004e96; font-weight: 600; border-bottom:2px solid #004e96;}
 header .gnb_wp .gnb .rsv {float: left; width: 515px; height: 445px;background: #f9f9f9;}
