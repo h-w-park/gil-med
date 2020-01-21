@@ -79,15 +79,16 @@ img{display:block;}
 .inner {width: 1400px; margin: 0 auto;}
 .inner:after {clear: both; display: block; content:"";}
 
-header {position: fixed; z-index:99999; height: 94px; width: 100%; max-width:1920px; }
+header {position: relative;height: 94px; width: 100%; max-width:1920px; box-sizing:border-box;}
 header:after {display: block; clear: both;content:"";}
 header > .inner {width:100%;  }
 header h1 {float: left; margin: 38px 0 0 50px;}
 header h1 a {display: block;width:189px; height: 40px; background:url('../img/main/logo_w.png'); text-indent:-9999px; overflow:hidden;}
-header .nav {height: 94px; overflow:hidden; float: left; width: 775px; margin-left: 290px;}
-header .nav ul li {float: left; line-height: 20px; padding: 42px 35px 0;}
-header .nav ul li a {display: block; font-size:20px; color:#fff;}
-header .util {width: 445px; float: right; margin-right: 50px; margin-top: 12px;}
+header .nav {height: 94px; overflow:hidden; float: left; width: 1005px; margin-left: 147px;}
+header .nav ul li {float: left; line-height: 20px; }
+header .nav ul li a {display: block; font-size:20px;width: 200px; text-align: center;height: 20px; padding: 42px 0 28px; color:#fff; transition: all .3s; border-bottom:4px solid rgba(0,0,0,0); font-weight: 600;}
+header .nav ul li a:hover {border-bottom:4px solid rgba(255,255,255,255);}
+header .util {width: 345px; float: right; margin-right: 50px; margin-top: 12px;}
 header .util a {font-size:14px; color:#fff;}
 header .etc {text-align: right;}
 header .etc:after {clear: both; display: block; content:"";}
@@ -108,20 +109,21 @@ header ul.info_h li:last-child {padding:0 0 0 10px;}
 
 header .member {margin-top: 8px; height: 28px;}
 header .member ul.user {float: left;}
-header .member ul.user li {float: left; height: 28px; line-height: 28px; padding: 0 14px; position: relative;}
+header .member ul.user li {float: left; height: 28px; line-height: 28px; padding: 0 10px; position: relative;}
 header .member ul.user li a {}
-header .member ul.user li:first-child {padding: 0; margin-right: 14px;}
+header .member ul.user li:first-child {padding: 0; margin-right: 6px;}
 header .member ul.user li:first-child a {display:block; width: 78px;  color:#fff; border-radius:14px; text-align: center; background:#67a62e ;}
 header .member ul.user li:before {content:""; position: absolute; left:0; top:10px; width:1px; height: 9px; background:#ddd;}
 header .member ul.user li:first-child:before,
 header .member ul.user li:nth-child(2):before {content:""; position: absolute; left:0; top:5px; width:0px; height: 0px; background:none;}
 
-header .member ul.user li.lang a {padding:0 23px 0 0; position: relative;}
-header .member ul.user li.lang a:after {content:""; width: 10px; height: 18px;position: absolute; background: url('../img/icon/set_white.png'); background-position:-40px -20px; margin: 5px 0 0 11px;}
+header .member ul.user li.lang a {padding:0 20px 0 0; position: relative;}
+header .member ul.user li.lang a:after {content:""; width: 10px; height: 18px;position: absolute; background: url('../img/icon/set_white.png'); background-position:-40px -20px; margin: 5px 0 0 8px;}
 
-header .member .search {width: 18px; height: 18px; background: url('../img/icon/set_white.png'); background-position:-22px -20px; margin-top: 5px; margin-left: 27px;}
-header .member .navAll {width: 22px; height: 18px; background: url('../img/icon/set_white.png'); background-position:0px -20px; margin-top: 5px; margin-left: 31px;}
-
+header .member .search {width: 18px; height: 18px; background: url('../img/icon/set_white.png'); background-position:-22px -20px; margin-top: 5px; margin-left: 17px;}
+/*header .member .navAll {width: 22px; height: 18px; background: url('../img/icon/set_white.png'); background-position:0px -20px; margin-top: 5px; margin-left: 31px;}*/
+ 
+header.bk {background: #fff;border-bottom:1px solid #eee;}
 header.bk h1 a {background:url('../img/main/logo.png');}
 header.bk ul.sns li a,
 header.bk .member ul.user li.lang a:after,
@@ -129,6 +131,42 @@ header.bk .member .search,
 header.bk .member .navAll {background-image:url('../img/icon/set_black.png');}
 header.bk .nav ul li a,
 header.bk .util a {color:#333;}
+
+header.bk .nav ul li a.active {color:#004e96; border-bottom:4px solid #004e96;}
+header.bk .nav ul li a:hover {border-bottom:4px solid #004e96;}
+
+header .gnb_wp {width: 100%; height: 0px; background: #fff; overflow:hidden;-webkit-box-shadow: 10px 10px 13px -5px rgba(0,0,0,0.1);-moz-box-shadow: 10px 10px 13px -5px rgba(0,0,0,0.1);box-shadow: 10px 10px 13px -5px rgba(0,0,0,0.1);}
+header .gnb_wp:after,
+header .gnb_wp .gnb:after, 
+header .gnb_wp .gnb .nav_wp:after {float:none; display:block; clear:both; content:"";}
+header .gnb_wp .gnb {width: 1920px; height: 445px; margin: 0 auto; overflow:hidden;}
+header .gnb_wp .gnb .call {float: left; width: 278px; margin-left: 108px;}
+header .gnb_wp .gnb .call .recap {font-size:16px; font-weight: 600; color:#333; margin-top: 42px;}
+header .gnb_wp .gnb .call .recap strong {font-size:42px; font-family: Lato; display: block;color:#004e96;}
+header .gnb_wp .gnb .call ul {margin-top: 12px;}
+header .gnb_wp .gnb .call ul li {font-size:18px; line-height: 44px; position: relative;}
+header .gnb_wp .gnb .call ul li a {font-size:18px; position: relative; padding-left: 28px;}
+header .gnb_wp .gnb .call ul li a:before {content:""; display: block; position: absolute;width: 24px; height: 24px;background-image:url('../img/icon/gnb_call.png'); background-repeat:no-repeat;left:0; top:2px;}
+header .gnb_wp .gnb .call ul li:nth-child(2) a:before {background-position:-24px 0;}
+header .gnb_wp .gnb .call ul li:nth-child(3) a:before {background-position:-48px 0;}
+header .gnb_wp .gnb .nav_wp {float: left; border-left: 1px solid #eee;}
+header .gnb_wp .gnb .nav_wp > ul {float: left; width: 200px; height: 445px; padding-top: 24px;border-right:1px solid #eee; box-sizing:border-box;}
+header .gnb_wp .gnb .nav_wp > ul li {height: 44px; line-height: 44px;margin-left: 48px;}
+header .gnb_wp .gnb .nav_wp > ul li a {font-size:16px; font-weight: 400; transition:all 0.3s; border-bottom:2px solid #fff; display: block;}
+header .gnb_wp .gnb .nav_wp > ul li a:hover span {color:#004e96; font-weight: 600; border-bottom:2px solid #004e96;}
+header .gnb_wp .gnb .rsv {float: left; width: 515px; height: 445px;background: #f9f9f9;}
+header .gnb_wp .gnb .rsv .inner {width: 335px; margin: 0 auto; }
+header .gnb_wp .gnb .rsv p {font-size:22px; font-weight: 600; text-align: center; color:#333; margin : 42px 0 17px;}
+header .gnb_wp .gnb .rsv .inp-text {width: 100%; border:0; height: 48px; font-size:16px; box-sizing:border-box ; padding-left: 10px;} 
+header .gnb_wp .gnb .rsv .inp-text label {font-size:16px;}
+header .gnb_wp .gnb .rsv .inp-text + .inp-text {margin-left: 0px; margin-top: 12px;}
+header .gnb_wp .gnb .rsv button {display: block;width: 192px; height: 56px; line-height: 56px;background: #67a62e; color:#fff; margin: 0 auto; border-radius:28px; font-size:20px; font-weight: 800; letter-spacing: -0.04em; margin-top: 30px;} 
+header .gnb_wp .gnb .rsv .check {  width: 310px; margin: 30px auto 0;}
+header .gnb_wp .gnb .rsv .inp-checkbox a {font-size:14px; font-weight: 600;text-decoration: underline; color:#333; position: absolute; right:0;}
+header .gnb_wp .gnb .rsv .inp-checkbox a:after {content:">";}
+header .gnb_wp .gnb .rsv .inp-checkbox input[type=checkbox]:not(old) + label {padding-left: 30px; font-size:16px; cursor:pointer;}
+header .gnb_wp .gnb .rsv .inp-checkbox input[type=checkbox]:not(old) + label:after {width:20px ;height: 20px; background: #fff; border:1px solid #eee; top:7px;}
+header .gnb_wp .gnb .rsv .inp-checkbox input[type=checkbox]:not(old):checked + label:after {background-image:url('../img/main/gnb_chk.png'); background-repeat:no-repeat; background-position:50% 50%; background-color: #67a62e;}
 
 .footer .util {background: #3c4044; height: 40px; padding-top: 20px;}
 .footer .util > .inner {width: 660px;}
@@ -183,16 +221,22 @@ header.bk .util a {color:#333;}
 	header {left:50%; margin-left: -960px;}
 }
 
+@media only screen and (max-width: 1880px) {
+	header > .inner {width: 1440px;}
+	header {min-width:1440px;}
+	header h1 {margin: 38px 0 0 20px;}
+	header .util {margin-right: 20px;}
+	header .nav {width: 805px;margin-left: 20px;}
+	header .nav ul li a {width: 160px;font-size:18px;} 
+	header .gnb_wp .gnb .call {display: none;}
+	header .gnb_wp .gnb {width: 1207px; position: relative; left:50%; margin-left: -492px;}
+	header .gnb_wp .gnb .nav_wp > ul {width: 160px;}
+	header .gnb_wp .gnb .nav_wp > ul li {margin-left: 32px;}
+	header .gnb_wp .gnb .rsv {width: 406px;}
+	header .gnb_wp .gnb .rsv .inner {width: 310px;}
+}
 
 @media only screen and (max-width: 1890px) {
-	header .nav {margin-left: 6%; width: 585px;}
-	header .nav ul li {padding: 42px 20px 0 ;}
-	header .nav ul li a {font-size:18px;}
 }
 
-
-@media only screen and (max-width: 1440px) {
-	header {width:1440px;}
-	header .nav {display: none;}
-	
-}
+ 
