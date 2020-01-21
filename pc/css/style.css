@@ -92,12 +92,12 @@
 .front .page-tit{font-size:40px;font-weight:500;color:#fff;line-height:1;}
 .front .page-tit__desc{font-size:16px;color:#dfdfdf;margin-top:25px;line-height:1;}
 
-.section > .title{padding:46px 0 0;height:170px;box-sizing:border-box;text-align:center;}
+.section > .title{padding:48px 0 48px;height:auto;box-sizing:border-box;text-align:center;}
 .section > .title .page-tit{font-size:40px;font-weight:500;color:#000;line-height:1;}
-.section > .title .page-tit__desc{font-size:16px;color:#333;margin-top:25px;line-height:1;}
+.section > .title .page-tit__desc{font-size:16px;color:#333;margin:26px 0 0;line-height:1; font-weight: 600;}
 
 /* content */
-.content .section{width:1272px;margin:0 auto;padding:50px 0 180px;}
+.content .section{width:1272px;margin:0 auto;padding:48px 0 180px;}
 
 /* tab */
 .tab{overflow:hidden;}
@@ -167,7 +167,7 @@ select::-ms-expand{display:none;}
 .board-view .board-view-content p{margin-top:20px;font-size:18px;color:#333;line-height:30px;}
 
 /* 진료과/의료진 */
-.medical-list{overflow:hidden;margin-top:50px;}
+.medical-list{overflow:hidden;margin-top:48px;}
 .medical-list li{width:192px;height:192px;float:left;margin:0 24px 24px 0;}
 .medical-list li .active-menu{display:none;}
 .medical-list li .tit{text-align:center;font-size:20px;display:block;padding-top:133px;line-height:1;}
@@ -572,7 +572,7 @@ background: linear-gradient(0deg, rgba(0,0,0,0.5746673669467788) 0%, rgba(0,212,
 .HTH .hth_main .box .news05 .img {position: absolute; right:30px; bottom:0px;}
 
 
-.tab_sub {margin: 65px auto;}
+.tab_sub {margin: 48px auto;}
 .tab_sub > ul {display: table; margin: 0 auto;}
 .tab_sub > ul li { float: left; vertical-align: middle;margin: 0 10px;} 
 .tab_sub > ul li a {display: table-cell; vertical-align: middle; width: 130px; height: 130px; text-align: center; border-radius:50%; border:1px solid #ddd; font-size:18px; color:#333; }
