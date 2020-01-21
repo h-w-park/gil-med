@@ -16,6 +16,7 @@
         .guide-section{padding:20px;}
         .guide-tit span{font-size:25px;margin-bottom:20px;line-height:1.2;position:relative;display:inline-block;font-weight:bold;color:#333;}
         .guide-tit span:after{width:100%;height:5px;background:#ffea00;content:"";position:absolute;bottom:0;left:0;opacity:0.4;}
+        .guide-section .agree + .table-row{margin-top:10px;}
     </style>
 </head>
 <body>
@@ -26,10 +27,122 @@
         <a href="javascript:;" class="btn-mid btn-gray"><span>중간 버튼</span></a>
         <a href="javascript:;" class="btn-sm btn-white"><span>작은 버튼</span></a>
     </div>
+
     <div class="guide-section">
         <div class="guide-tit"><span>checkbox</span></div>
-        <span class="inp-checkbox"><input type="checkbox" id="c1"
+        <div class="agree"><div class="inp-checkbox"><input type="checkbox" id="c1"><label for="c1">고유식별 수집 및 이용안내 동의</label></div></div>
+        <div class="table-row">
+            <table>
+                <colgroup>
+                    <col style="width:160px">
+                    <col>
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th>본인유무 <span class="txt-co-red">*</span></th>
+                        <td>
+                            <span class="inp-radio">
+                                <input type="radio" name="rdo1" id="rdo1-1">
+                                <label for="rdo1-1">본인</label>
+                            </span>
+                            <span class="inp-radio">
+                                <input type="radio" name="rdo1" id="rdo1-2">
+                                <label for="rdo1-2">대리인</label>
+                            </span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
+
+    <div class="guide-section">
+        <div class="guide-tit"><span>table</span></div>
+        <div class="table-row">
+            <table>
+                <colgroup>
+                    <col style="width:160px">
+                    <col>
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th>이름 <span class="txt-co-red">*</span></th>
+                        <td><input type="text" class="inp-text" placeholder="이름 입력"></td>
+                    </tr>
+                    <tr>
+                        <th>주민등록번호 <span class="txt-co-red">*</span></th>
+                        <td><input type="text" class="inp-text" placeholder="앞 6자리 입력"><span class="space">-</span><input type="text" class="inp-text" placeholder="뒤 7자리 입력"></td>
+                    </tr>
+                    <tr>
+                        <th>휴대폰 <span class="txt-co-red">*</span></th>
+                        <td>
+                            <div class="inp-tell">
+                                <div class="select-box">
+                                    <select>
+                                        <option>010</option>
+                                    </select>
+                                </div><span class="space">-</span> 
+                                <input type="number" class="inp-text" style="width:124px"><span class="space">-</span> 
+                                <input type="number" class="inp-text" style="width:124px">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>이메일</th>
+                        <td>
+                            <div class="inp-email">
+                                <input type="text" class="inp-text" placeholder="이메일 입력">
+                                <span class="space">@</span>
+                                <input type="text" class="inp-text" placeholder="직접입력">
+                                <div class="select-box" style="width:220px;">
+                                    <select>
+                                        <option>직접입력</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="guide-section">
+        <div class="guide-tit"><span>tab</span></div>
+        <ul class="tab">
+            <li><a href="javascript:;" class="on">의료진소개/진료시간</a></li>
+            <li><a href="javascript:;">진료과소개</a></li>
+            <li><a href="javascript:;">진료과 위치</a></li>
+            <li><a href="javascript:;">특화진료영역</a></li>
+        </ul>
+    </div>
+
+    <div class="guide-section">
+        <div class="guide-tit"><span>paging</span></div>
+        <div class="paging">
+            <a href="javascript:;" class="first"></a>
+            <a href="javascript:;" class="prev"></a>
+            <strong>1</strong>
+            <a href="javascript:;">2</a>
+            <a href="javascript:;">3</a>
+            <a href="javascript:;">4</a>
+            <a href="javascript:;">5</a>
+            <a href="javascript:;">6</a>
+            <a href="javascript:;">7</a>
+            <a href="javascript:;">8</a>
+            <a href="javascript:;">9</a>
+            <a href="javascript:;">10</a>
+            <a href="javascript:;" class="next"></a>
+            <a href="javascript:;" class="last"></a>
+        </div>
+    </div>
+
+
+
+
+
+
+
 </div>
 
 <script src="../../js/ui.js"></script>
