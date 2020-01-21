@@ -164,7 +164,7 @@ header .gnb_wp .gnb .rsv button {display: block;width: 192px; height: 56px; line
 header .gnb_wp .gnb .rsv .check {  width: 310px; margin: 30px auto 0;}
 header .gnb_wp .gnb .rsv .inp-checkbox a {font-size:14px; font-weight: 600;text-decoration: underline; color:#333; position: absolute; right:0;}
 header .gnb_wp .gnb .rsv .inp-checkbox a:after {content:">";}
-header .gnb_wp .gnb .rsv .inp-checkbox input[type=checkbox]:not(old) + label {padding-left: 30px; font-size:16px;}
+header .gnb_wp .gnb .rsv .inp-checkbox input[type=checkbox]:not(old) + label {padding-left: 30px; font-size:16px; cursor:pointer;}
 header .gnb_wp .gnb .rsv .inp-checkbox input[type=checkbox]:not(old) + label:after {width:20px ;height: 20px; background: #fff; border:1px solid #eee; top:7px;}
 header .gnb_wp .gnb .rsv .inp-checkbox input[type=checkbox]:not(old):checked + label:after {background-image:url('../img/main/gnb_chk.png'); background-repeat:no-repeat; background-position:50% 50%; background-color: #67a62e;}
 

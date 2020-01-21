@@ -9,8 +9,8 @@ $(function() {
 		scrollBar: false,
 		easing: 'easeInOutCubic',
 		afterLoad: function(anchorLink, index){
-			if(index == 0){	
-				$('#menu, header').stop(true,true).removeClass("bk", 500);
+			if(index == 1){	
+				$('#menu, header').removeClass("bk", 500);
 				$(".nav li a").hover(function(e){
 					e.preventDefault(); 
 					$('header').addClass("bk", 500);
@@ -22,7 +22,7 @@ $(function() {
 				}, function(){
 					$('header').removeClass("bk", 500);
 				});
-			}else if(index > 1){
+			}else if(index >= 2){
 				$('#menu, header').addClass("bk", 500);
 			}
 		}
