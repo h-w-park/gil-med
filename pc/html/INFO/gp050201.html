@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- Scripts -->
+    <script src="../../js/jquery-2.2.3.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+
+    <div class="content">
+        <div class="section">
+            <div class="title">
+                <h3 class="page-tit">외래안내</h3>
+                <p class="page-tit__desc">병원 외래방문 시 필요한 정보를 알 수 있습니다.</p>
+            </div>
+
+            
+            <div class="context">
+                <div class="content-section">
+                    <h5 class="content-tit">접수시간</h5>
+                    <div class="text-wrap">
+                        <ul>
+                        	<li>평일 오전 8:30 ~ 오후 5:00</li>
+                        	<li>토요일 오전 8:30 ~ 오후 12:00</li>
+                        </ul>
+						<small class="c_grey dis_lb fs_16">※ 대리인 진료 예약시 환자 본인, 대리인 모두 실명인증이 필요합니다.</small>
+                    </div>
+                </div>
+                <div class="content-section">
+                    <h5 class="content-tit">관련클리닉</h5>
+                    <div class="text-wrap">
+						<div class="table-row type2">
+							<table>
+								<tbody>
+									<tr>
+										<th class="f_lato">STEP<strong>01</strong></th>
+										<td>
+											<h6>2차 의료기관 진료의뢰서 발급</h6>
+											<p>(진료의뢰서 또는 건강 검진결과서, 신분증 지참)</p>
+										</td>
+									</tr>
+									<tr>
+										<th class="f_lato">STEP<strong>02</strong></th>
+										<td>
+											<dl>
+												<dd>
+													<h6>초진</h6>
+													<ul>
+														<li>본관 : 처음오신 분 창구</li>
+														<li>각 센터 : 원무 팀 접수 창구</li>
+													</ul>
+												</dd>
+												<dd>
+													<h6>재진</h6>
+													진료과에 위치한 각 층 원무창구
+												</dd>
+												<dd>
+													<h6>진료 예약하신 분</h6>
+													<ul>
+														<li>본관 : 진료과에 위치한 각 층 원무창구</li>
+														<li>각 센터 : 원무팀 접수 창구</li>
+													</ul>
+												</dd>
+											</dl>
+										</td>
+									</tr>
+									<tr>
+										<th class="f_lato">STEP<strong>03</strong></th>
+										<td>
+											<h6>진료</h6>
+											<p>해당 과의 의료진에게 문진 또는 검사를 통한 진료</p>
+										</td>
+									</tr>
+									<tr>
+										<th class="f_lato">STEP<strong>04</strong></th>
+										<td>
+											<h6>수납</h6>
+											<p>진료 받은 내역 및 처방에 대한 결제 
+</p>
+										</td>
+									</tr>
+									<tr>
+										<th class="f_lato">STEP<strong>05</strong></th>
+										<td>
+											<h6>검사실, 약국</h6>
+											<p>해당 처방 검사 및 약국 내 제약 처방</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+                    </div>
+                </div>
+                <div class="content-section">
+                    <h5 class="content-tit">요양급여(진료)<br>의뢰서</h5>
+                    <div class="text-wrap">
+                        <p class="text">가천대 길병원은 의료전달체계가 필요한 종합전문요양기관으로 1, 2차 (병, 의원)에서 발급한 진료의뢰서나 진료소견이 기재된 건강검진결과서를 진료 당일 지참하여야 국민건강보험(의료보험)적용을 받으실 수 있습니다. 의료급여 환자인 경우 2차 종합의료 기관에서 요양급여(진료) 의뢰서를 발급받아 제출 하셔야 의료급여 적용을 받을 수 있습니다.</p>
+						<div class="table-row type2">
+							<table>
+								<tbody>
+									<tr>
+										<th>진료의뢰서를 지참하지 않아도<br>되는 경우</th>
+										<td>
+											<ul>
+												<li>가정의학과 진료 시</li>
+												<li>재활의학과 (장애인 복지법에 의한 장애인 작업 치료, 운동치료 등의 재활의학과 진료 시)</li>
+												<li>치과 진료 시</li>
+												<li>혈우병환자, 분만, 응급환자의 응급실 진료 </li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<th>서류의 유효기간	</th>
+										<td>
+											<ul>
+												<li>진료의뢰서는 발행일로부터 7일 이내 유효합니다.</li>
+												<li>진료의뢰서 미지참시 7일 이내 제출하시면 보험혜택을 받을 수 있습니다.</li>
+												<li>건강검진결과서(건강검진결과표)는 발급일로부터 60일 이내 만 유효 합니다.</li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<th>진료의뢰서의 진료 범위</th>
+										<td>
+											진료의뢰서에 기재된 진료과에만 유효하며, 합병증 등을 제외한 다른 상병을 진료 받고자 할 때는 다시 요양급여 진료의뢰서를 제출하셔야 합니다.
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="../../js/ui.js"></script>
+</body>
+</html>

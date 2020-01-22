@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- Scripts -->
+    <script src="../../js/jquery-2.2.3.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+
+    <div class="content">
+        <div class="section">
+            <div class="title">
+                <h3 class="page-tit">예약안내</h3>
+                <p class="page-tit__desc">병원 외래방문 시 필요한 정보를 알 수 있습니다.</p>
+            </div>
+
+            <ul class="tab">
+                <li><a href="javascript:;">전화예약</a></li>
+                <li><a href="javascript:;">인터넷예약</a></li>
+                <li><a href="javascript:;" class="on">FAX 예약</a></li>
+                <li><a href="javascript:;">방문예약</a></li>
+                <li><a href="javascript:;">진료협력센터 예약</a></li>
+            </ul>
+
+            
+            <div class="context">
+                <div class="content-section">
+                    <h5 class="content-tit">FAX 예약<br>안내</h5>
+                    <div class="text-wrap">
+						<div class="table-col mt_0 col2">
+							<table>
+								<thead>
+									<tr>
+										<th>예약시간 <small>(24시간 가능)</small></th>
+										<th>예약변경</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<ul>
+												<li>평일 오후 5:00   /  토요일 오후 12:00  
+												
+													<small>※ 위 시간 이후에 신청하신 예약은 익일 오전 또는 월요일 오전에 예약담당자가 직접 전화로 예약을 진행해 드립니다.</small>
+												</li>
+												<li>예약시 최소 진료일 하루전에 예약 하셔야 합니다.</li>
+												<li>환자의 성명, 주소, 전화번호, 희망진료과를 기재하여 보내주시면 예약담당자가 전화를 드려 예약해 드립니다.</li>
+											</ul>
+										</td>
+										<td class="fs_18">
+											최소 1일전까지 인터넷 예약 예약현황보기에서 변경하시면 됩니다.
+										</td>
+									</tr>
+								</tbody>
+								<thead>
+									<tr>
+										<th colspan="2">수납방법</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td colspan="2" class="fs_18 ta_l pl_20">예약 시 후불제로 진료일 당일 납부하시면 됩니다.</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="rsv-alert-wrap">
+							<dl>
+								<dt>
+									<strong>주의사항</strong>
+									<ul>
+										<li>예약을 하지 않으신 경우에는 외래진료절차에 따라 당일 진료를 보실 수 있습니다.</li>
+										<li>예약된 환자의 진료가 우선이므로 대기시간이 필요합니다.</li>
+										<li>대기시간은 당일 진료과 예약 상황에 따라 차이가 있습니다.</li>
+									</ul>
+								</dt>
+								<dd>
+									<div class="num">
+										<strong>FAX예약</strong>
+										<span>032-460-3051</span>
+									</div>
+									<figure>
+										<img src="../../img/common/img_rsv_fax.png" alt="FAX예약 아이콘">
+									</figure>
+								</dd>
+							</dl>
+						</div>
+                    </div>
+                </div>
+                <div class="content-section">
+                    <h5 class="content-tit">예약후 내방<br>당일절차</h5>
+                    <div class="text-wrap">
+						<div class="table-row type2">
+							<table>
+								<tbody>
+									<tr>
+										<th class="row s">STEP<strong>01</strong></th>
+										<td>
+											예약한 진료과로 직접 방문
+										</td>
+									</tr>
+									<tr>
+										<th class="row s">STEP<strong>02</strong></th>
+										<td>
+											해당 진료과 간호사에게 진료예약증 또는 환자본인 신분증 제시 후 진료
+										</td>
+									</tr>
+									<tr>
+										<th class="row s">STEP<strong>03</strong></th>
+										<td>
+											진료 후 외래 수납창구 방문하여 진찰료 납부
+										</td>
+									</tr>
+									<tr>
+										<th class="row s">STEP<strong>04</strong></th>
+										<td>
+											진찰료 납부 후 처방전 및 계산서와 다음 진료일 예약증 발급
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="../../js/ui.js"></script>
+</body>
+</html>

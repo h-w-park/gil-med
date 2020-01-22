@@ -9,8 +9,19 @@ $(function() {
 		scrollBar: false,
 		easing: 'easeInOutCubic',
 		afterLoad: function(anchorLink, index){
-			if(index == 1){	
+			if (index == 2){
+				console.log("222222222222");
+				$('#menu, header').addClass("bk", 500);
+				$(".gnb_wp").hover(function(){
+				}, function(){
+					$('header').addClass("bk", 500);
+				});
+			}else if(index == 1){	
 				$('#menu, header').removeClass("bk", 500);
+				$(".gnb_wp").hover(function(){
+				}, function(){
+					$('header').removeClass("bk", 500);
+				});
 				$(".nav li a").hover(function(e){
 					e.preventDefault(); 
 					$('header').addClass("bk", 500);
@@ -18,11 +29,7 @@ $(function() {
 				// Animation complete. 
 				});
 
-				$(".gnb_wp").hover(function(){
-				}, function(){
-					$('header').removeClass("bk", 500);
-				});
-			}else if(index >= 2){
+			}else if(index > 1){
 				$('#menu, header').addClass("bk", 500);
 			}
 		}

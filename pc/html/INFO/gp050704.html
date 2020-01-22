@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- Scripts -->
+    <script src="../../js/jquery-2.2.3.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+
+    <div class="content">
+        <div class="section">
+            <div class="title">
+                <h3 class="page-tit">입/퇴원 안내</h3>
+                <p class="page-tit__desc">입/퇴원 정보를 제공하고 있습니다.</p>
+            </div>
+
+            <ul class="tab">
+                <li><a href="javascript:;" >입원준비</a></li>
+                <li><a href="javascript:;">간호·간병 통합서비스</a></li>
+                <li><a href="javascript:;">입원안내</a></li>
+                <li><a href="javascript:;" class="on">병실안내</a></li>
+                <li><a href="javascript:;">퇴원안내</a></li>
+            </ul>
+
+            
+            <div class="context">
+ 
+                <div class="content-section">
+                    <h5 class="content-tit">병실 지정제 </h5>
+                    <div class="text-wrap"> 
+						<p class="text">환자의 감염 및 안전사고 예방을 위하여 병실 내 침상 이동은 제한합니다.</p>
+						<figure><img src="https://via.placeholder.com/1032x270.png" alt=""></figure>
+                    </div>
+                </div>
+
+                <div class="content-section">
+                    <h5 class="content-tit">귀중품 관리 </h5>
+                    <div class="text-wrap"> 
+						<ul class="mt_0">
+							<li>조용한 병실환경을 유지 위해 다음사항을 지켜 주십시오</li>
+							<li> 그 외 병실 사용 시 사용되어야 하는 개인 물품은 보관함에 비밀번호 4자리를 설정 후 보관 해 주시기 바랍니다. </li>
+						</ul>
+						<figure><img src="https://via.placeholder.com/1032x270.png" alt=""></figure>
+                    </div>
+                </div>
+				
+                <div class="content-section">
+                    <h5 class="content-tit">휴대폰 에티켓</h5>
+                    <div class="text-wrap"> 
+						<p class="text">조용한 병실환경을 유지 위해 다음사항을 지켜 주십시오</p>
+						<figure><img src="https://via.placeholder.com/1032x270.png" alt=""></figure>
+                    </div>
+                </div>
+
+                <div class="content-section">
+                    <h5 class="content-tit">낙상 예방 활동 <br>안내</h5>
+                    <div class="text-wrap"> 
+						<ul class="mt_0">
+							<li>낙상으로 인하여 <strong>치명적인 결과(골절,마비,뇌출혈,사망 등)</strong>가 발생할 수 있습니다.</li>
+							<li>보호자가 바뀌는 경우 미리 간호사실에 알려 환자의 <strong>낙상 예방을 위한 교육</strong>을 받도록 하십시오. </li>
+						</ul>
+						<div class="table-row type2 mt_20">
+							<table>
+								<tbody>
+									<tr>
+										<th class="row">
+											<figure><img src="https://via.placeholder.com/100x100" alt=""></figure>
+											<p>침대에서</p>
+										</th>
+										<td>
+											<ul>
+												<li>침상 난간을 항상 올려주십시오.</li>
+												<li>침상 난간 위로 넘어다니거나, 침상 위에 서 있는 등의 위험한 행동을 삼가해 주십시오.</li>
+												<li>침대 바퀴는 항상 잠가 놓아 움직이지 않도록 합니다</li>
+												<li>수면 중간에 침대 밖으로 이동할 경우 잠이 깬 후 에 이동합니다.</li>
+												<li>어지러운 증상이 있을 경우에는 침상에서 갑자기 일어나지 마십시오.</li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<th class="row">
+											<figure><img src="https://via.placeholder.com/100x100" alt=""></figure>
+											<p>도보 이동 시</p>
+										</th>
+										<td>
+											<ul>
+												<li>수액과 연결된 정맥 주사 연결선들을 정리한 후 이동합니다.</li>
+												<li>수면제, 혈압약, 인슐린 등을 복용하는 경우 어지러움이 있을 수 있으니 이동 시  도움을받도록  합니다.</li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<th class="row">
+											<figure><img src="https://via.placeholder.com/100x100" alt=""></figure>
+											<p>휠체어 이동 시</p>
+										</th>
+										<td>
+											<ul>
+												<li>휠체어나 침대로 옮길 때에는 반드시 바퀴를 잠근 후에 이동하여 미끄러지지 않도록 합니다.</li>
+												<li>휠체어나 보행기구 사용 중 위험한 행동은 하지 않도록 주의하십시오.</li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<th class="row">
+											<figure><img src="https://via.placeholder.com/100x100" alt=""></figure>
+											<p>이동 시</p>
+										</th>
+										<td>
+											<ul>
+												<li>필요한 물건은 침상 가까이 두며, 잡으려다 균형을 잃지 않도록 주의해야 합니다.</li>
+												<li>신발은 바닥이 미끄럽지 않고 발에 맞는 것 을 신어야 합니다.</li>
+												<li>취침 전 배뇨를 한 후 수면을 취하도록 합니다.</li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="../../js/ui.js"></script>
+</body>
+</html>

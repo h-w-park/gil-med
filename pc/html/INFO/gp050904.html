@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- Scripts -->
+    <script src="../../js/jquery-2.2.3.min.js"></script>
+    <script src="../../js/jquery-ui.js"></script>
+</head>
+<body>
+<div class="wrap">
+
+    <div class="content">
+        <div class="section">
+            <div class="title">
+                <h3 class="page-tit">가정간호 서비스</h3>
+                <p class="page-tit__desc">병원 외래방문 시 필요한 정보를 알 수 있습니다.</p>
+            </div>
+
+            <ul class="tab">
+                <li><a href="javascript:;">가정간호 소개</a></li>
+                <li><a href="javascript:;">가정간호 대상 및 지역</a></li>
+                <li><a href="javascript:;">신청절차 및 비용</a></li>
+                <li><a href="javascript:;" class="on">Q&A</a></li>
+            </ul>
+
+            
+            <div class="context">
+
+ 
+				<div id="qna" class="qna-wrap">
+					<h6>가정간호 신청은 전화로 가능한가요?</h6>
+					<div>
+						<p>전화 신청만으로 가정간호 등록을 할 수 없습니다.가정간호는 담당의사 처방이 포함된 가정간호의뢰서와 보호자의 동의서가 필요하게 되므로 환자나 보호자의 병원 방문이 반드시 필요합니다.</p>
+					</div>
+
+					<h6>가정에서도 병원에서 받는 모든 처치가 이루어질 수 있나요?</h6>
+					<div>
+						<p>복수천자, 항암요법, 수혈 등 의료인의 면밀한 관찰이 요구되는 처치는 집에서 이루어 질 수가 없습니다. 이러한 처치는 만일의 경우를 대비한 준비가 필요하므로 병원에서만 시행이 가능합니다.</p>
+					</div>
+
+					<h6>가정간호는 원할 때 마다 방문을 해 줄 수 있나요?</h6>
+					<div>
+						<p>가정간호는 응급으로 이루어지는 것이 아닌 계획에 의해 방문이 이루어집니다. 계획에 따라 방문하여 체계적으로 환자의 상태를 관찰하게 되므로 원할 때 마다 방문할 수 없으며, 필요시 전화상담은 가능합니다. 단 환자의 상태가 변하여 문제가 발생한 경우에는 담당간호사와 상의하여 방문일정을 조정할 수 있으며, 응급상황의경우는 응급실로 내원하여야 합니다.</p>
+					</div>
+
+					<h6>보호자 없이 환자만 있어도 가정간호가 가능한가요?</h6>
+					<div>
+						<p>원칙적으로 보호자 없이 환자만 있는 가정은 가정간호 방문 대상이 아닙니다.   </p>
+					</div>
+
+					<h6>의뢰용품들은 어디서 공급을 해주나요?</h6>
+					<div>
+						<p>보험적용이 되는 물품이거나 병원에 있는 물품은 가정방문 시 가져가서 사용이 가능하며 방문 후 사용한 물품에 대해 청구를 하게 됩니다. 그러나 다른 물품(거즈, 소독액, 흡인기, 썩션 튜브, 장루 물품 등)들은 의료기 상사나 인터넷을 통해 구입할 수 있습니다. </p>
+					</div>
+				</div>
+
+
+
+            </div>
+        </div>
+    </div>
+</div> 
+<script >
+
+$(function() {
+    $( "#qna" ).accordion();
+});
+</script>
+</body>
+</html>

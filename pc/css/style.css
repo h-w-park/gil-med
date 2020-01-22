@@ -94,7 +94,7 @@
 
 .section > .title{padding:48px 0 48px;height:auto;box-sizing:border-box;text-align:center;}
 .section > .title .page-tit{font-size:40px;font-weight:500;color:#000;line-height:1;}
-.section > .title .page-tit__desc{font-size:16px;color:#333;margin:26px 0 0;line-height:1; font-weight: 600;}
+.section > .title .page-tit__desc{font-size:16px;color:#333;margin:26px 0 0;line-height:1; font-weight: 400;}
 
 /* content */
 .content .section{width:1272px;margin:0 auto;padding:48px 0 180px;}
