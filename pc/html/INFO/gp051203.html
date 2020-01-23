@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- Scripts -->
+    <script src="../../js/jquery-2.2.3.min.js"></script>
+    <script src="../../js/jquery-ui.js"></script>
+    <script src="../../js/dotdotdot.js"></script>
+</head>
+<body>
+<div class="wrap">
+
+    <div class="content ">
+        <div class="section"> 
+            <div class="title">
+                <h3 class="page-tit">층별안내</h3>
+                <p class="page-tit__desc">길병원 층별 안내도입니다.</p>
+            </div>
+ 
+            
+            <div class="search-area">
+                <div class="search-sort">
+                    <select>
+                        <option>검색</option>
+                    </select>
+                </div>
+                <div class="search-input">
+                    <input type="text" placeholder="검색어 입력">
+                    <button class="btn-search">검색</button>
+                </div>
+            </div>
+            
+            
+            <div class="context">
+				
+				<div class="floor-wrap">
+					<ul>
+						<li><a href="#bd_1"><figure><img src="https://via.placeholder.com/72x72.png" alt=""></figure><span>본관</span></a></li>
+						<li><a href="#bd_2"><figure><img src="https://via.placeholder.com/72x72.png" alt=""></figure><span>암센터</span></a></li>
+						<li><a href="#bd_3"><figure><img src="https://via.placeholder.com/72x72.png" alt=""></figure><span>인공지능병원</span></a></li>
+						<li><a href="#bd_4"><figure><img src="https://via.placeholder.com/72x72.png" alt=""></figure><span>국민검진센터</span></a></li>
+						<li><a href="#bd_5"><figure><img src="https://via.placeholder.com/72x72.png" alt=""></figure><span>여성전문센터</span></a></li>
+						<li><a href="#bd_6"><figure><img src="https://via.placeholder.com/72x72.png" alt=""></figure><span>뇌과학연구원</span></a></li>
+						<li><a href="#bd_7"><figure><img src="https://via.placeholder.com/72x72.png" alt=""></figure><span>치과병원</span></a></li>
+						<li><a href="#bd_8"><figure><img src="https://via.placeholder.com/72x72.png" alt=""></figure><span>응급의료센터</span></a></li>
+						<li><a href="#bd_9"><figure><img src="https://via.placeholder.com/72x72.png" alt=""></figure><span>신장센터</span></a></li>
+						<li><a href="#bd_10"><figure><img src="https://via.placeholder.com/72x72.png" alt=""></figure><span>지하통로안내</span></a></li>
+					</ul>
+					<div id="bd_1" class="bd-wrap">
+						<div class="floor-detail-wrap">
+							<ul>
+								<li><a href="#center_f_11"><span>11F</span></a></li>
+								<li><a href="#center_f_10"><span>10F</span></a></li>
+								<li><a href="#center_f_9"><span>9F</span></a></li>
+								<li><a href="#center_f_8"><span>8F</span></a></li>
+								<li><a href="#center_f_7"><span>7F</span></a></li>
+								<li><a href="#center_f_6"><span>6F</span></a></li>
+								<li><a href="#center_f_5"><span>5F</span></a></li>
+								<li><a href="#center_f_4"><span>4F</span></a></li>
+								<li><a href="#center_f_3"><span>3F</span></a></li>
+								<li><a href="#center_f_2"><span>2F</span></a></li>
+								<li><a href="#center_f_1"><span>1F</span></a></li>
+							</ul>
+							<div id="center_f_11" class="in_floor">
+								<ul>
+									<li class="active"><a href=""><span>이비인후과3</span></a></li>
+									<li><a href=""><span>가정의학과</span></a></li>
+									<li><a href=""><span>정형외과</span></a></li>
+									<li><a href=""><span>정형외과</span></a></li>
+									<li><a href=""><span>MRI</span></a></li>
+									<li><a href=""><span>CT</span></a></li>
+									<li><a href=""><span>산부인과</span></a></li>
+									<li><a href=""><span>내과</span></a></li>
+									<li><a href=""><span>외과</span></a></li>
+								</ul>
+							</div>
+							<div id="center_f_10" class="in_floor">
+								<ul>
+									<li class="active"><a href=""><span>이비인후과1</span></a></li>
+									<li><a href=""><span>가정의학과</span></a></li>
+									<li><a href=""><span>정형외과</span></a></li>
+									<li><a href=""><span>정형외과</span></a></li>
+									<li><a href=""><span>MRI</span></a></li>
+									<li><a href=""><span>CT</span></a></li>
+									<li><a href=""><span>산부인과</span></a></li>
+									<li><a href=""><span>내과</span></a></li>
+									<li><a href=""><span>외과</span></a></li>
+								</ul>
+							</div>
+							<div id="center_f_9" class="in_floor">
+								<ul>
+									<li class="active"><a href=""><span>이비인후과2</span></a></li>
+									<li><a href=""><span>가정의학과</span></a></li>
+									<li><a href=""><span>정형외과</span></a></li>
+									<li><a href=""><span>정형외과</span></a></li>
+									<li><a href=""><span>MRI</span></a></li>
+									<li><a href=""><span>CT</span></a></li>
+									<li><a href=""><span>산부인과</span></a></li>
+									<li><a href=""><span>내과</span></a></li>
+									<li><a href=""><span>외과</span></a></li>
+								</ul>
+							</div>
+							<div id="center_f_8" class="in_floor">12</div>
+							<div id="center_f_7" class="in_floor">12</div>
+							<div id="center_f_6" class="in_floor">12</div>
+							<div id="center_f_5" class="in_floor">12</div>
+							<div id="center_f_4" class="in_floor">12</div>
+							<div id="center_f_3" class="in_floor">12</div>
+							<div id="center_f_2" class="in_floor">12</div>
+							<div id="center_f_1" class="in_floor">12</div>
+						</div>
+					</div>
+					<div id="bd_2" class="bd-wrap"> 12</div>
+					<div id="bd_3" class="bd-wrap"> 13</div>
+					<div id="bd_4" class="bd-wrap"> 14</div>
+					<div id="bd_5" class="bd-wrap"> 15</div>
+					<div id="bd_6" class="bd-wrap"> 16</div>
+					<div id="bd_7" class="bd-wrap"> 17</div>
+					<div id="bd_8" class="bd-wrap"> 18</div>
+					<div id="bd_9" class="bd-wrap"> 19</div>
+					<div id="bd_10" class="bd-wrap"> 1g</div>
+				</div>
+
+			</div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+	$(function() {
+		$(".floor-wrap, .floor-detail-wrap").tabs();
+	});
+</script>
+</body>
+</html>

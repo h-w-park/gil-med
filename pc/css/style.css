@@ -155,7 +155,7 @@ select::-ms-expand{display:none;}
 .board-view .badge{display:inline-block;width:80px;height:80px;color:#fff;text-align:center;background:#fcaf15;margin-right:25px;position:absolute;top:30px;left:25px;line-height:80px;font-size:18px;}
 .board-view .board-view-title .title{max-width:1120px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;padding-left:105px;font-size:24px;color:#333;font-weight:400;margin-bottom:20px;}
 .board-view .board-view-title .date{margin-left:105px;color:#888;padding-left:21px;position: relative;font-size:18px;}
-.board-view .board-view-title .date:after{width:15px;height:14px;background:url(../img/icon/date.jpg) no-repeat 0 0;content:"";position:absolute;top:8px;left:0;}
+.board-view .board-view-title .date:after{width:15px;height:14px;background:url(../img/icon/date.jpg) no-repeat 0 0;content:"";position:absolute;top:5px;left:0;}
 .board-view .board-view-title .whiter{display:inline-block;padding-left:21px;position:relative;font-size:18px;color:#888;margin-left:30px;}
 .board-view .board-view-title .whiter:after{width:16px;height:14px;background:url(../img/icon/whiter.jpg) no-repeat 0 0;content:"";position:absolute;top:4px;left:0;}
 .board-view .board-view-title .blank{position:absolute;right:28px;bottom:34px;color:#333;font-size:18px;padding-right:28px;line-height:24px;}

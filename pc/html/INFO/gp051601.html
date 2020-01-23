@@ -12,70 +12,74 @@
     <link rel="stylesheet" href="../../css/style.css">
     <!-- Scripts -->
     <script src="../../js/jquery-2.2.3.min.js"></script>
+    <script src="../../js/jquery-ui.js"></script>
+    <script src="../../js/dotdotdot.js"></script>
 </head>
 <body>
 <div class="wrap">
 
-    <div class="content">
-        <div class="section">
+    <div class="content ">
+        <div class="section"> 
             <div class="title">
                 <h3 class="page-tit">공지사항</h3>
-                <p class="page-tit__desc">길병원의 다양한 소식을 보실 수 있습니다.</p>
-            </div>
-
+                <p class="page-tit__desc">병원 주요 소식을 안내하는 공간입니다.</p>
+            </div> 
+            
             <div class="context">
-                <div class="table-row">
-                    <table>
-                        <colgroup>
-                            <col style="width:200px">
-                            <col>
-                        </colgroup>
-                        <tbody>
-                            <tr>
-                                <th>제목</th>
-                                <td><input type="text" class="inp-text" style="width:100%"></td>
-                            </tr>
-                            <tr>
-                                <th>내용</th>
-                                <td>
-                                    <div class="editor"></div>    
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>썸네일 이미지</th>
-                                <td>
-                                    <div class="inp-file">
-                                        <label for="f1">찾아보기</label>
-                                        <input type="file" id="f1">
-                                    </div>
-                                    <span class="info-txt">(최대 5MB, 파일형식 jpg/png/gif 만 가능)</span>
-                                    <div class="file-list">
-                                        <div class="file-list__item">
-                                            <a href="javascript:;" class="del"><img src="../../img/icon/del.jpg" alt=""></a>
-                                            <span class="root">c:\My Documents\thumbnail_img.jpg</span>
-                                            <span class="byte">512.12KB</span>
-                                        </div>
-                                        <div class="file-list__item">
-                                            <a href="javascript:;" class="del"><img src="../../img/icon/del.jpg" alt=""></a>
-                                            <span class="root">c:\My Documents\thumbnail_img.jpg</span>
-                                            <span class="byte">512.12KB</span>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <div class="btn-wrap">
-                <a href="javascript:;" class="btn-lg btn-gray"><span>삭제</span></a>
-                <a href="javascript:;" class="btn-lg btn-white"><span>수정</span></a>
-                <a href="javascript:;" class="btn-lg btn-blue"><span>등록</span></a>
-            </div>
+				<div class="table-col notice">
+
+					<table>
+						<colgroup>
+							<col width="180px">
+							<col width="*">
+							<col width="180px">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>번호</th>
+								<th>제목</th>
+								<th>작성일</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>12</td>
+								<td><strong>제목</strong></td>
+								<td>2019-12-08</td>
+							</tr>
+							<tr>
+								<td>12</td>
+								<td>제목제목제목제목제목</td>
+								<td>2019-12-08</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				
+				<div class="paging">
+					<a href="javascript:;" class="first"></a>
+					<a href="javascript:;" class="prev"></a>
+					<strong>1</strong>
+					<a href="javascript:;">2</a>
+					<a href="javascript:;">3</a>
+					<a href="javascript:;">4</a>
+					<a href="javascript:;">5</a>
+					<a href="javascript:;">6</a>
+					<a href="javascript:;">7</a>
+					<a href="javascript:;">8</a>
+					<a href="javascript:;">9</a>
+					<a href="javascript:;">10</a>
+					<a href="javascript:;" class="next"></a>
+					<a href="javascript:;" class="last"></a>
+				</div>
+
+
+			</div>
         </div>
     </div>
 
 </div>
-<script src="../../js/ui.js"></script>
+
 </body>
 </html>
