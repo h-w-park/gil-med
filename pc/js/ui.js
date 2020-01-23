@@ -28,7 +28,7 @@ $(document).ready(function() {
 	//
 	}, function(){
 		$( this ).animate({
-		 height: "0"
+			height: "0"
 		}, 150, function() {
 		// Animation complete.
 		});

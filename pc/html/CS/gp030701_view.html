@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- Scripts -->
+    <script src="../../js/jquery-2.2.3.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+
+    <div class="content">
+        <div class="section">
+            <div class="title">
+                <h3 class="page-tit">문의내역</h3>
+                <p class="page-tit__desc">고객님께서 작성하신게시글을  조회해 보실 수 있습니다.</p>
+            </div>
+            
+            <div class="context cs-wrap">
+                <div class="table-row">
+                    <table>
+                        <colgroup>
+                            <col style="width:140px">
+                            <col style="width:176px">
+                            <col style="width:140px">
+                            <col style="width:218px">
+                            <col style="width:140px">
+                            <col style="width:157px">
+                            <col style="width:140px">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>문의</th>
+                                <td>진료과 문의</td>
+                                <th>진료과</th>
+                                <td>가정의학과</td>
+                                <th>작성일</th>
+                                <td>2020-03-02</td>
+                                <th>진행상태</th>
+                                <td>접수완료</td>
+                            </tr>
+                            <tr>
+                                <th>제목</th>
+                                <td colspan="3">아프고 어지러운데 이것은 감기증상인가요?</td>
+                                <th>작성자</th>
+                                <td colspan="3">홍길동</td>
+                            </tr>
+                            <tr>
+                                <td colspan="8" class="view-context">
+                                    머리가 아파요
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>딥뱐</th>
+                                <td>진료과 문의</td>
+                                <th>진료과</th>
+                                <td>가정의학과</td>
+                                <th>작성일</th>
+                                <td>2020-03-02</td>
+                                <th>작성자</th>
+                                <td>한규철</td>
+                            </tr>
+                            <tr>
+                                <td colspan="8">
+                                    <div class="answer-box">
+                                        <div class="answer-text">
+                                            안녕하세요.<br>
+                                            가정의학과 한규철 교수 의료진입니다.<br><br>
+
+                                            문의하신 질환은 감기증상으로 보여집니다. 빠른 시일내로 치료를 위해 내원 하시기 바랍니다.<br>
+                                            감사합니다.
+                                        </div>
+                                        <div class="doctor-info-wrap">
+                                            <div class="thumb"><img src="../../img/temp/@doctor.jpg" alt=""></div>
+                                            <div class="infomation">
+                                                <p class="desc">회원님의 답변을 작성한 의료진입니다.</p>
+                                                <span class="name">고기동</span>
+                                                <a href="javascript:;" class="doctor-like on">관심 의료진</a>
+                                                <a href="javascript:;" class="reserve">진료예약</a>
+                                                <p class="text">진료분야 : 평생건강관리, 가정주치의, 가정의학과, 일반진료, 생활습관 병관리</p>
+                                                <div class="schedule">
+                                                    <table>
+                                                        <colgroup>
+                                                            <col style="width:60px">
+                                                            <col span="6">
+                                                        </colgroup>
+                                                        <thead>
+                                                            <tr>
+                                                                <th>구분</th>
+                                                                <th>월</th>
+                                                                <th>화</th>
+                                                                <th>수</th>
+                                                                <th>목</th>
+                                                                <th>금</th>
+                                                                <th>토</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <th>오전</th>
+                                                                <td></td>
+                                                                <td><span class="on"></span></td>
+                                                                <td></td>
+                                                                <td><span class="on"></span></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>오후</th>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td><span class="on"></span></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="btn-right">
+                    <a href="javascript:;" class="btn-mid btn-white-gray">수정</a>
+                    <a href="javascript:;" class="btn-mid btn-gray">삭제</a>
+                    <a href="javascript:;" class="btn-mid btn-blue">답변하기</a>
+                    <a href="javascript:;" class="btn-mid btn-white">목록</a>
+                </div>
+                <div class="btn-wrap">
+                    <a href="javascript:;" class="btn-lg btn-gray">삭제</a>
+                    <a href="javascript:;" class="btn-lg btn-white-gray">수정</a>
+                    <a href="javascript:;" class="btn-lg btn-white">목록</a>
+                </div>
+                <div class="answer-wrap">
+                    <div class="context-title">답변등록</div>
+                    <div class="table-row">
+                        <table>
+                            <colgroup>
+                                <col style="width:200px">
+                                <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>제목</th>
+                                    <td><input type="text" class="inp-text" style="width:100%"></td>
+                                </tr>
+                                <tr>
+                                    <th>내용</th>
+                                    <td>
+                                        <textarea class="inquery-text"></textarea>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="btn-wrap">
+                        <a href="javascript:;" class="btn-lg btn-gray">취소</a>
+                        <a href="javascript:;" class="btn-lg btn-blue">확인</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="../../js/ui.js"></script>
+</body>
+</html>

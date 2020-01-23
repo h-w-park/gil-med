@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- Scripts -->
+    <script src="../../js/jquery-2.2.3.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+
+    <div class="content" style="height:1000px;">
+    </div>
+
+    <div class="popup">
+        <div class="popup-tit">환자가 미성년자인 경우</div>
+        <div class="popup-content">
+            <div class="table-col" style="width:700px;">
+                <table>
+                    <colgroup>
+                        <col style="width:20%px">
+                        <col style="width:30%">
+                        <col>
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>구분</th>
+                            <th>환자나이</th>
+                            <th>구비서류</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="3">환자본인</td>
+                            <td>만 17세 이상<br>(주민등록증 발급자)</td>
+                            <td class="txt-left">
+                                <ul class="dot-list">
+                                    <li>본인신분증</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>만 14세이상 ~ 17세 미만<br>(주민등록증 미발급자)</td>
+                            <td class="txt-left">
+                                <ul class="dot-list">
+                                    <li>환자본인 학생증 (강제규정 아님)</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>만 14세 미만</td>
+                            <td class="txt-left">
+                                <ul class="dot-list">
+                                    <li>부모님 신분증</li>
+                                    <li>가족관계증명서류</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">친족</td rowspan="3">
+                            <td></td>
+                            <td class="txt-left">
+                                <ul class="dot-list">
+                                    <li>환자 신분증</li>
+                                    <li>신청인 신분증</li>
+                                    <li>환자 자필서명 동의서</li>
+                                    <li>환자 자필서명 위임장</li>  
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>만 14세이상 ~ 17세 미만<br>(주민등록증 미발급자)</td>
+                            <td class="txt-left">
+                                <ul class="dot-list">
+                                    <li>환자본인 학생증 (강제규정 아님)</li>
+                                    <li>신청인 신분증</li>
+                                    <li>환자 자필서명 동의서</li>
+                                    <li>환자 자필서명 위임장</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>만 14세 미만</td>
+                            <td class="txt-left">
+                                <ul class="dot-list">
+                                    <li>부모님 신분증</li>
+                                    <li>가족관계증명서류</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">대리인</td rowspan="3">
+                            <td>만 17세 이상<br>(주민등록증 발급자)</td>
+                            <td class="txt-left">
+                                <ul class="dot-list">
+                                    <li>환자 신분증</li>
+                                    <li>신청인 신분증</li>
+                                    <li>환자 자필서명 동의서</li>
+                                    <li>환자 자필서명 위임장</li>                                    
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>만 14세이상 ~ 17세 미만<br>(주민등록증 미발급자)</td>
+                            <td class="txt-left">
+                                <ul class="dot-list">
+                                    <li>환자본인 학생증 (강제규정 아님)</li>
+                                    <li>신청인 신분증</li>
+                                    <li>환자 자필서명 동의서</li>
+                                    <li>환자 자필서명 위임장</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>만 14세 미만</td>
+                            <td class="txt-left">
+                                <ul class="dot-list">
+                                    <li>부모님 신분증· 신청인 신분증</li>
+                                    <li>부모님 자필서명 동의서</li>
+                                    <li>부모님 자필서명 위임장</li>
+                                    <li>가족관계증명서류(부모님 여부 확인용)</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="btn-area">
+                    <a href="javascript:;" class="btn-gray btn-mid"><span>닫기</span></a>
+                </div>
+            </div>
+            <button class="popup-close"><img src="../../img/common/btn_close.png" alt=""></button>
+        </div>
+    </div>
+    <div class="dimm"></div>
+</div>
+<script src="../../js/ui.js"></script>
+</body>
+</html>

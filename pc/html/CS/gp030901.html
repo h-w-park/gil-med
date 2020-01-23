@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../css/common.css">
     <link rel="stylesheet" href="../../css/style.css">
     <!-- Scripts -->
-    <script src="../../js/jquery-3.3.1.min.js"></script>
+    <script src="../../js/jquery-2.2.3.min.js"></script>
 </head>
 <body>
 <div class="wrap">
@@ -32,6 +32,84 @@
             </ul>
         
             <div class="context cs-wrap">
+                <div class="context-title">발급절차</div>
+                <div class="context-title-sm">외래환자의 경우</div>
+                <ul class="dash-list">
+                    <li>최초 증명서 발급은 담당 교수의 진료가 있는 날에만 가능 합니다.</li>
+                    <li>병사용 진단서(병무청 제출용)와 연령 감정서는 반명함판(3*4cm) 2매 지참</li>
+                </ul>
+                <ul class="step-list">
+                    <li>
+                        <span class="tit">STEP<strong>01</strong></span>
+                        <span class="text">원무팀 접수</span>
+                    </li>
+                    <li>
+                        <span class="tit">STEP<strong>02</strong></span>
+                        <span class="text">진료과 신청</span>
+                    </li>
+                    <li>
+                        <span class="tit">STEP<strong>03</strong></span>
+                        <span class="text">원무팀 외래창구<br>퇴원계/ 제증명 수납</span>
+                    </li>
+                </ul>
+
+                <div class="context-title-sm">재원환자의 경우</div>
+                <ul class="step-list">
+                    <li>
+                        <span class="tit">STEP<strong>01</strong></span>
+                        <span class="text">원무팀 외래창구<br>퇴원계/ 제증명 수납</span>
+                    </li>
+                    <li>
+                        <span class="tit">STEP<strong>02</strong></span>
+                        <span class="text">증명서 발급<br>(해당 주치의)</span>
+                    </li>
+                    <li>
+                        <span class="tit">STEP<strong>03</strong></span>
+                        <span class="text">직인 날인 및 발급<br>병동 원무팀 및 1층 퇴원계<br>(제증명) 창구 수납</span>
+                    </li>
+                </ul>
+
+                <div class="context-title">사본발급 필요구비서류 세부사항 (근거: 의료법 제 21조, 시행규칙 제 13조의 2)</div>
+                <div class="table-col table-font18">
+                    <table>
+                        <colgroup>
+                            <col style="width:50%" span="2">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>회원예약</th>
+                                <th>비회원예약</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>환자본인</td>
+                                <td>사진있는 신분증</td>
+                            </tr>
+                            <tr>
+                                <td>친족<br>(배우자, 직계존속, 직계 비속, 배우자의 직계존속)</td>
+                                <td class="txt-left">
+                                    <il class="dot-list">
+                                        <li>신청자의 사진있는 신분증 또는 사본</li>
+                                        <li>친족관계증명서(가족관계서류, 주민등록등본 등 친족임을 입증하는 서류)</li>
+                                        <li>환자가 자필 서명한 동의서</li>
+                                        <li>환자가 사진있는 신분증 또는 사본</li>
+                                        <li>형제, 자매는 (환자 대리인) 자격으로만 발급 가능</li>
+                                    </il>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>환자가 미성년자일 경우</td>
+                                <td><a href="javascript:;" class="link-view"><span>내용보기</span></a></td>
+                            </tr>
+                            <tr>
+                                <td>환자 동의를 받을 수 없는 경우</td>
+                                <td><a href="javascript:;" class="link-view"><span>내용보기</span></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>            
+
                 <div class="context-title">사본발급 신청자별 필요구비서류 세부사항</div>
                 <div class="table-col">
                     <table>
@@ -141,7 +219,146 @@
                             </tr>
                         </tbody>
                     </table>
-                    <p class="info-text">* [별표] 의료기관의 제증명수수료 항목 및 금액에 관한 기준 (제 4조 제2항 관련)</p>
+                    <p class="blick-txt">[별표] 의료기관의 제증명수수료 항목 및 금액에 관한 기준 (제 4조 제2항 관련)</p>
+
+                    <div class="context-title">제증명 및 의무기록 발급 수수료 안내</div>
+                    <ul class="dot-list">
+                        <li>제증명 발급비용은 진찰료와는 별도로 부감하셔야 합니다.</li>
+                        <li>제증명 재발급은 진료없이 원무팀 창구에서 발급 가능합니다. (구비서류 미지참시 사본발급 불가)</li>
+                    </ul>
+                    <p clsss="info-text">* 의무기록 보관 관련 의료법 시행규칙 15조에 의거하여 보존기간은 3년으로 보존기한이 지난 증명서는 재발행 신청을 할 수 없습니다.</p>
+                    <div class="table-col">
+                        <table>
+                            <colgroup>
+                                <col style="width:25%" span="4">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>증명서(수가명)</th>
+                                    <th>일반수가</th>
+                                    <th>증명서(수가명)</th>
+                                    <th>일반수가</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>일반진단서</td>
+                                    <td>20,000원</td>
+                                    <td>소견서</td>
+                                    <td>10,000원</td>
+                                </tr>
+                                <tr>
+                                    <td>영문진단서</td>
+                                    <td>20,000원</td>
+                                    <td>수술확인서</td>
+                                    <td>10,000원</td>
+                                </tr>
+                                <tr>
+                                    <td>병사용진단서</td>
+                                    <td>20,000원</td>
+                                    <td>통원확인서</td>
+                                    <td>3,000원</td>
+                                </tr>
+                                <tr>
+                                    <td>장애진단서</td>
+                                    <td>15,000원/40,000원</td>
+                                    <td>입원확인서</td>
+                                    <td>3,000원</td>
+                                </tr>
+                                <tr>
+                                    <td>후유장애진단서</td>
+                                    <td>100,000원</td>
+                                    <td>진료확인서</td>
+                                    <td>3,000원</td>
+                                </tr>
+                                <tr>
+                                    <td>상해진단서(3주미만)</td>
+                                    <td>100,000원</td>
+                                    <td>향후치료비추정서(천만원미만)</td>
+                                    <td>50,000원</td>
+                                </tr>
+                                <tr>
+                                    <td>상해진단서(3주이상)</td>
+                                    <td>150,000원</td>
+                                    <td>향후치료비추정서(천만원이상)</td>
+                                    <td>100,000원</td>
+                                </tr>
+                                <tr>
+                                    <td>근로능력평가용 진단서</td>
+                                    <td>10,000원</td>
+                                    <td>통원기간/입원기간확인서</td>
+                                    <td>무료</td>
+                                </tr>
+                                <tr>
+                                    <td>사망진단서</td>
+                                    <td>10,000원</td>
+                                    <td>보장구처방전/검수확인서</td>
+                                    <td>무료</td>
+                                </tr>
+                                <tr>
+                                    <td>사체검안서</td>
+                                    <td>30,000원</td>
+                                    <td>의료급여연장승인신청서</td>
+                                    <td>무료</td>
+                                </tr>
+                                <tr>
+                                    <td>사산(사태)증명서</td>
+                                    <td>10,000원</td>
+                                    <td>산소치료처방전</td>
+                                    <td>무료</td>
+                                </tr>
+                                <tr>
+                                    <td>출생증명서</td>
+                                    <td>3,000원</td>
+                                    <td>장애인증명서(연말정산)</td>
+                                    <td>무료</td>
+                                </tr>
+                                <tr>
+                                    <td>국민연금장애진단서</td>
+                                    <td>15,000원</td>
+                                    <td>상급병실사용확인서</td>
+                                    <td>무료</td>
+                                </tr>
+                                <tr>
+                                    <td>진료기록영상(필름)</td>
+                                    <td>5,000원</td>
+                                    <td>진료기록사본(1~5매)</td>
+                                    <td>1,000원</td>
+                                </tr>
+                                <tr>
+                                    <td>진료기록영상(CD)</td>
+                                    <td>10,000원</td>
+                                    <td>진료기록사본(6매 이상)</td>
+                                    <td>100원</td>
+                                </tr>
+                                <tr>
+                                    <td>진료기록영상(DVD)</td>
+                                    <td>20,000원</td>
+                                    <td>제증명서 사본</td>
+                                    <td>1,000원</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="notice-area">
+                        <ul class="dot-list">
+                            <li>모든 제증명 서류의 재발행 비용은 1,000원이며, 재발행 가능기간은 3년 입니다.</li>
+                            <li>보장구 처방전, 보장구 검수확인서, 의료급여일수 연장 신청서, 산소치료 처방전, 장애인 증명서 등은 재발행이 불가능 합니다.</li>
+                        </ul>
+                    </div>
+                    <div class="down-area">
+                        <div class="context-title">양식 다운로드</div>
+                        <div class="down-group">
+                            <div class="context-title-sm">동의서</div>
+                            <a href="javascript:;" class="btn-down"><span>한글양식 다운로드</span></a>
+                            <a href="javascript:;" class="btn-down"><span>워드양식 다운로드</span></a>
+                        </div>
+                        <div class="down-group">
+                            <div class="context-title-sm">위임장</div>
+                            <a href="javascript:;" class="btn-down"><span>한글양식 다운로드</span></a>
+                            <a href="javascript:;" class="btn-down"><span>워드양식 다운로드</span></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

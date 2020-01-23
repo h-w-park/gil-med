@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- Scripts -->
+    <script src="../../js/jquery-2.2.3.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+
+    <div class="content">
+        <div class="section">
+            <div class="title">
+                <h3 class="page-tit">관심의료진</h3>
+                <p class="page-tit__desc">고객님이 추가 하신 저희 병원 의료진입니다.</p>
+            </div>
+
+            <div class="context">
+                <ul class="doctor-list">
+                    <li class="doctor-none">
+                        <img src="../../img/common/doctor_none.jpg" alt="">
+                        <p>관심의료진이 없습니다.<br>관심 의료진을 등록하세요.</p>
+                        <a href="javascript:;" class="btn-mid btn-blue">등록하기</a>
+                    </li>
+                    <li>
+                        <div class="thumb"><img src="../../img/temp/@doctor.jpg" alt=""></div>
+                        <div class="infomation">
+                            <span class="name">고기동</span>
+                            <a href="javascript:;" class="doctor-like on">관심 의료진</a>
+                            <p class="text">진료분야 : 평생건강관리, 가정주치의, 가정의학과, 일반진료, 생활습관 병관리</p>
+                            <div class="schedule">
+                                <table>
+                                    <colgroup>
+                                        <col style="width:55px">
+                                        <col style="width:45px" span="5">
+                                        <col>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>구분</th>
+                                            <th>월</th>
+                                            <th>화</th>
+                                            <th>수</th>
+                                            <th>목</th>
+                                            <th>금</th>
+                                            <th>토</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th>오전</th>
+                                            <td></td>
+                                            <td><span class="on"></span></td>
+                                            <td></td>
+                                            <td><span class="on"></span></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <th>오후</th>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td><span class="on"></span></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <a href="javascript:;" class="reserve">진료예약</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="thumb"><img src="../../img/temp/@doctor.jpg" alt=""></div>
+                        <div class="infomation">
+                            <span class="name">고기동</span>
+                            <a href="javascript:;" class="doctor-like on">관심 의료진</a>
+                            <p class="text">진료분야 : 평생건강관리, 가정주치의, 가정의학과, 일반진료, 생활습관 병관리</p>
+                            <div class="schedule">
+                                <table>
+                                    <colgroup>
+                                        <col style="width:55px">
+                                        <col style="width:45px" span="5">
+                                        <col>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>구분</th>
+                                            <th>월</th>
+                                            <th>화</th>
+                                            <th>수</th>
+                                            <th>목</th>
+                                            <th>금</th>
+                                            <th>토</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th>오전</th>
+                                            <td></td>
+                                            <td><span class="on"></span></td>
+                                            <td></td>
+                                            <td><span class="on"></span></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <th>오후</th>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td><span class="on"></span></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <a href="javascript:;" class="reserve">진료예약</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="thumb"><img src="../../img/temp/@doctor.jpg" alt=""></div>
+                        <div class="infomation">
+                            <span class="name">고기동</span>
+                            <a href="javascript:;" class="doctor-like on">관심 의료진</a>
+                            <p class="text">진료분야 : 평생건강관리, 가정주치의, 가정의학과, 일반진료, 생활습관 병관리</p>
+                            <div class="schedule">
+                                <table>
+                                    <colgroup>
+                                        <col style="width:55px">
+                                        <col style="width:45px" span="5">
+                                        <col>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>구분</th>
+                                            <th>월</th>
+                                            <th>화</th>
+                                            <th>수</th>
+                                            <th>목</th>
+                                            <th>금</th>
+                                            <th>토</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th>오전</th>
+                                            <td></td>
+                                            <td><span class="on"></span></td>
+                                            <td></td>
+                                            <td><span class="on"></span></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <th>오후</th>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td><span class="on"></span></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <a href="javascript:;" class="reserve">진료예약</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="thumb"><img src="../../img/temp/@doctor.jpg" alt=""></div>
+                        <div class="infomation">
+                            <span class="name">고기동</span>
+                            <a href="javascript:;" class="doctor-like on">관심 의료진</a>
+                            <p class="text">진료분야 : 평생건강관리, 가정주치의, 가정의학과, 일반진료, 생활습관 병관리</p>
+                            <div class="schedule">
+                                <table>
+                                    <colgroup>
+                                        <col style="width:55px">
+                                        <col style="width:45px" span="5">
+                                        <col>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>구분</th>
+                                            <th>월</th>
+                                            <th>화</th>
+                                            <th>수</th>
+                                            <th>목</th>
+                                            <th>금</th>
+                                            <th>토</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th>오전</th>
+                                            <td></td>
+                                            <td><span class="on"></span></td>
+                                            <td></td>
+                                            <td><span class="on"></span></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <th>오후</th>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td><span class="on"></span></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <a href="javascript:;" class="reserve">진료예약</a>
+                        </div>
+                    </li>
+                </ul>
+                <p class="blick-txt"> ※ 관심의료진 삭제는 ♥ 버튼을 다시 눌러 주시기 바랍니다.</p>
+                <p class="blick-txt">진료일정은 전문의의 사정에 따라 변경될 수 있습니다. <strong>예약문의 (1577-2299)</strong></p>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="../../js/ui.js"></script>
+</body>
+</html>

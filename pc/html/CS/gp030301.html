@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- Scripts -->
+    <script src="../../js/jquery-2.2.3.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+
+    <div class="content">
+        <div class="section">
+            <div class="title">
+                <h3 class="page-tit">예약현황</h3>
+                <p class="page-tit__desc">병원에서 운영하는 당뇨건강교실을 만나 보실 수 있습니다.</p>
+            </div>
+
+            <div class="reserve-context reserve-state">
+                <div class="left-group">
+                    <div class="choice-day">
+                        <div class="calendar-draw">
+                            <div class="calendar">
+                                <div class="calendar-tit">
+                                    <a href="javascript:;" class="prev">이전달</a>
+                                    <span class="title">
+                                        <div class="select-year">
+                                            <select>
+                                                <option>2020</option>
+                                            </select>
+                                        </div>
+                                        <div class="select-month">
+                                            <select>
+                                                <option>08</option>
+                                            </select>
+                                        </div>
+                                    </span>
+                                    <a href="javascript:;" class="next">다음달</a>
+                                </div>
+                                <table>
+                                    <colgroup>
+                                        <col style="width:88px;" span="7">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th class="sun">일</th>
+                                            <th>월</th>
+                                            <th>화</th>
+                                            <th>수</th>
+                                            <th>목</th>
+                                            <th>금</th>
+                                            <th>토</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="disable sun">26</td>
+                                            <td class="disable">27</td>
+                                            <td class="disable">28</td>
+                                            <td class="disable">29</td>
+                                            <td class="disable">30</td>
+                                            <td class="disable">31</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sun">2</td>
+                                            <td>3</td>
+                                            <td>4</td>
+                                            <td>5</td>
+                                            <td>6</td>
+                                            <td>7</td>
+                                            <td>8</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sun">9</td>
+                                            <td>10<span class="dot-wrap"><span class="dot-am"></span></span></td>
+                                            <td class="off"><span>11</span></td>
+                                            <td>12</td>
+                                            <td>13</td>
+                                            <td>14<span class="dot-wrap"><span class="dot-am"></span><span class="dot-pm"></span></span></td>
+                                            <td>15</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sun">16</td>
+                                            <td>17</td>
+                                            <td>18</td>
+                                            <td class="on"><span>19</span></td>
+                                            <td>20</td>
+                                            <td>21</td>
+                                            <td>22</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sun">23</td>
+                                            <td>24</td>
+                                            <td>25</td>
+                                            <td class="active"><span>26</span></td>
+                                            <td>27</td>
+                                            <td>28</td>
+                                            <td>29</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sun">30</td>
+                                            <td>31</td>
+                                            <td class="disable">1</td>
+                                            <td class="disable">2</td>
+                                            <td class="disable">3</td>
+                                            <td class="disable">4</td>
+                                            <td class="disable">5</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="medical-reserve-info">
+                    <span class="medical-reserve-tit">진료예약 정보</span>
+                    <table>
+                        <colgroup>
+                            <col style="width:105px">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>이름</th>
+                                <td>홍길동</td>
+                            </tr>
+                            <tr>
+                                <th>환자번호</th>
+                                <td>12314124</td>
+                            </tr>
+                            <tr>
+                                <th>연락처</th>
+                                <td>010-2323-0232</td>
+                            </tr>
+                            <tr>
+                                <th>본인유무</th>
+                                <td>본인/대리</td>
+                            </tr>
+                            <tr>
+                                <th>진료과</th>
+                                <td>가정의학과</td>
+                            </tr>
+                            <tr>
+                                <th>의료진</th>
+                                <td>고기동</td>
+                            </tr>
+                            <tr>
+                                <th>진료날짜</th>
+                                <td>2020년 08월 12일</td>
+                            </tr>
+                            <tr>
+                                <th>진료시간</th>
+                                <td>15시 10분</td>
+                            </tr>
+                            <tr>
+                                <th>진료처</th>
+                                <td>7층 (안내)</td>
+                            </tr>
+                            <tr>
+                                <th>예약변경</th>
+                                <td>변경/취소/불가</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="../../js/ui.js"></script>
+</body>
+</html>

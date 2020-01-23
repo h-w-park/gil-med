@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- Scripts -->
+    <script src="../../js/jquery-2.2.3.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+
+    <div class="content" style="height:1000px;">
+    </div>
+
+    <div class="popup">
+        <div class="popup-tit">환자가 미성년자인 경우</div>
+        <div class="popup-content">
+            <div class="table-col" style="width:700px;">
+                <table>
+                    <colgroup>
+                        <col style="width:30%">
+                        <col>
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>구분</th>
+                            <th>구비서류</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>환자가 사망한 경우</td>
+                            <td class="txt-left">
+                                <ul class="dot-list">
+                                    <li>신청자의 신분증 또는 사본</li>
+                                    <li>가족관계증명서, 주민등록표 등본 등 친족관계를 확인할 수 있는 서류</li>
+                                    <li>가족관계증명서, 제적등본, 사망진단서 등 사망사실을 확인할 수 있는 서류</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>환자가 의식불명 또는 <br>의식불명은 아니지만 <br>중증의 질환 · 부상으로 <br>자필서명이 불가한 경우</td>
+                            <td class="txt-left">
+                                <ul class="dot-list">
+                                    <li>신청자의 신분증 또는 사본</li>
+                                    <li>가족관계증명서, 주민등록표 등본 등 친족관계를 확인할 수 있는 서류</li>
+                                    <li>환자가 의실붕명 또는 중증의 질환 · 부상으로 자필서명을 할 수 없음을 확인할 수 있는 진단서</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>환자가 행방불명인 경우</td>
+                            <td class="txt-left">
+                                <ul class="dot-list">
+                                    <li>신청자의 신분증 또는 사본</li>
+                                    <li>가족관계증명서, 주민등록표 등본 등 친족관계를 확인할 수 있는 서류</li>
+                                    <li>주민동록표 등본, 법원의 실종선고 결정문 사본 등 행방불명 사실을 확인할 수 있는 서류</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>환자가 의사 <br>무능력자인 경우</td>
+                            <td class="txt-left">
+                                <ul class="dot-list">
+                                    <li>신청자의 신분증 또는 사본</li>
+                                    <li>가족관계증명서, 주민등록표 등본 등 친족관계를 확인할 수 있는 서류</li>
+                                    <li>법원의 금치산 선고 결정문 사본 또는 의사무능력자임을 증명하는 정신건강의학과 전문의의 진단서</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="btn-area">
+                    <a href="javascript:;" class="btn-gray btn-mid"><span>닫기</span></a>
+                </div>
+            </div>
+            <button class="popup-close"><img src="../../img/common/btn_close.png" alt=""></button>
+        </div>
+    </div>
+    <div class="dimm"></div>
+</div>
+<script src="../../js/ui.js"></script>
+</body>
+</html>
