@@ -888,8 +888,8 @@ box-shadow: -7px -11px 20px -1px rgba(0,0,0,0.11);}
 .children-confirm .inp-checkbox{margin-top:15px;margin-bottom:25px;}
 
 .join-context .inp-addr .inp-text + .inp-text{margin-left:0;margin-top:15px;}
-.join-context td .blick-txt{font-size:16px;color:#666;line-height:25px;margin-top:0;margin-left:50px;}
-.join-context td .agree + .agree{margin-top:10px;}
+.join-context .newsletter .blick-txt{font-size:16px;color:#666;line-height:25px;margin-top:0;margin-left:50px;}
+.join-context .newsletter .agree + .agree{margin-top:10px;}
 
 .join-complete{background:url(../img/etc/join_complete.jpg) no-repeat 50% 218px;text-align:center;}
 .join-complete .title{font-size:34px;color:#000;font-weight:400;padding-top:137px;margin-bottom:247px;}
