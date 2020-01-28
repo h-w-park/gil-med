@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- Scripts -->
+    <script src="../../js/jquery-2.2.3.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+
+    <div class="content">
+        <div class="section">
+            <div class="title">
+                <h3 class="page-tit">예약안내</h3>
+                <p class="page-tit__desc">병원 외래방문 시 필요한 정보를 알 수 있습니다.</p>
+            </div>
+
+            <ul class="tab">
+                <li><a href="javascript:;">전화예약</a></li>
+                <li><a href="javascript:;" class="on">인터넷예약</a></li>
+                <li><a href="javascript:;">FAX 예약</a></li>
+                <li><a href="javascript:;">방문예약</a></li>
+                <li><a href="javascript:;">진료협력센터 예약</a></li>
+            </ul>
+
+            
+            <div class="context">
+                <div class="content-section">
+                    <h5 class="content-tit">인터넷 예약<br>안내</h5>
+                    <div class="text-wrap">
+						<div class="table-col mt_0 col2">
+							<table>
+								<thead>
+									<tr>
+										<th>회원예약</th>
+										<th>비회원예약</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<ul>
+												<li>길병원 홈페이지에 로그인 하신 후 회원으로 예약을 하실 수 있습니다.</li>
+												<li>예약방법 : 로그인 → 진료예약 → 회원예약 메뉴 선택</li>
+											</ul>
+											<small>※ 회원 예약은 로그인 후 이용 가능합니다.</small>
+										</td>
+										<td>
+											<ul>
+												<li>길병원 홈페이지에 가입하지 않으신 고객님을 위한 서비스입니다.</li>
+												<li>예약방법 : 진료예약 → 비회원 예약 메뉴 선택</li>
+											</ul>
+											<small>※ 비회원 예약을 진행하시려면 <strong>실명인증</strong> 및 <strong>개인정보 동의</strong> 등의 절차를 걸쳐예약이 가능합니다.</small>
+										</td>
+									</tr>
+								</tbody>
+								<thead>
+									<tr>
+										<th>대리예약</th>
+										<th>예약확인</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<ul>
+												<li>길병원 인터넷 예약에서는 회원 / 비회원의 대리예약이 가능합니다.</li>
+												<li>대리예약방법 : 로그인 → 환자정보 입력 (Step1)에서 본인유무 선택 시 대리인 선택</li>
+											</ul>
+											<small>※ 대리인 예약은 로그인 후 이용 가능 합니다.</small>
+										</td>
+										<td>
+											<ul>
+												<li>회원 : 로그인 후 <strong>마이페이지</strong>에서 예약 확인이 가능합니다.</li>
+												<li>비회원 : <strong>진료예약</strong> 메뉴에서 예약 확인이 가능합니다.</li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+
+							<div class="rsv-alert-wrap">
+								<dl>
+									<dt>
+										<strong>주의사항</strong>
+										<ul>
+											<li>예약을 하지 않으신 경우에는 외래진료절차에 따라 당일 진료를 보실 수 있습니다.</li>
+											<li>예약된 환자의 진료가 우선이므로 대기시간이 필요합니다.</li>
+											<li>대기시간은 당일 진료과 예약 상황에 따라 차이가 있습니다.</li>
+										</ul>
+									</dt>
+									<dd>
+										<div class="num">
+											<strong>인터넷 예약</strong>
+											<a href="" class="btn btnS blue-o">바로가기</a>
+										</div>
+										<figure><img src="../../img/common/img_rsv_int.png" alt=""></figure>
+										
+									</dd>
+								</dl>
+							</div>
+						 </div>
+                    </div>
+                </div>
+                <div class="content-section">
+                    <h5 class="content-tit">예약 후 내방<br>당일 절차</h5>
+                    <div class="text-wrap">
+						<div class="table-row type2">
+							<table>
+								<tbody>
+									<tr>
+										<th class="row s">STEP<strong>01</strong></th>
+										<td>
+											예약한 진료과로 직접 방문
+										</td>
+									</tr>
+									<tr>
+										<th class="row s">STEP<strong>02</strong></th>
+										<td>
+											해당 진료과 간호사에게 진료예약증 또는 환자본인 신분증 제시 후 진료
+										</td>
+									</tr>
+									<tr>
+										<th class="row s">STEP<strong>03</strong></th>
+										<td>
+											진료 후 외래 수납창구 방문하여 진찰료 납부
+										</td>
+									</tr>
+									<tr>
+										<th class="row s">STEP<strong>04</strong></th>
+										<td>
+											진찰료 납부 후 처방전 및 계산서와 다음 진료일 예약증 발급
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="../../js/ui.js"></script>
+</body>
+</html>

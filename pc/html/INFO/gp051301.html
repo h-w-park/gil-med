@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- Scripts -->
+    <script src="../../js/jquery-2.2.3.min.js"></script>
+    <script src="../../js/jquery-ui.js"></script>
+    <script src="../../js/dotdotdot.js"></script>
+</head>
+<body>
+<div class="wrap">
+
+    <div class="content ">
+        <div class="section"> 
+            <div class="title">
+                <h3 class="page-tit">찾아 오시는길</h3>
+                <p class="page-tit__desc">병원  찾아 오시는 길 입니다.</p>
+            </div>
+ 
+             
+            
+            <div class="context">
+				
+                <div class="content-section pb_70">
+					<div id="map">
+						<!-- * 카카오맵 - 지도퍼가기 -->
+						<!-- 1. 지도 노드 -->
+						<div id="daumRoughmapContainer1579755024384" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+						<!--
+							2. 설치 스크립트
+							* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+						-->
+						<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+						<!-- 3. 실행 스크립트 -->
+						<script charset="UTF-8">
+							new daum.roughmap.Lander({
+								"timestamp" : "1579755024384",
+								"key" : "wqmw",
+								"mapWidth" : "1272",
+								"mapHeight" : "360"
+							}).render();
+						</script>
+
+						<ul>
+							<li><a href="">다음 지도 상세보기</a></li>
+							<li><a href="">네이버 지도 상세보기</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="context-title">버스 이용 시</div>
+
+				<div class="table-col map">
+					<table>
+						<colgroup>
+							<col width="310px">
+							<col>
+						</colgroup>
+						<thead>
+							<tr>
+								<th>버스구분</th>
+								<th>버스번호</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<figure class="fl"><img src="https://via.placeholder.com/48x48.png" alt=""></figure> 
+									<span>간선</span>
+								</td>
+								<td>11, 22, 33, 34, 42, 45, 82, 111-2, 700-1</td>
+							</tr>
+							<tr>
+								<td>
+									<figure><img src="https://via.placeholder.com/48x48.png" alt=""></figure> <span>급행간선</span>
+								</td>
+								<td>903, 907</td>
+							</tr>
+							<tr>
+								<td>
+									<figure><img src="https://via.placeholder.com/48x48.png" alt=""></figure> <span>좌석</span>
+								</td>
+								<td>103, 303, 304, 800</td>
+							</tr>
+							<tr>
+								<td>
+									<figure><img src="https://via.placeholder.com/48x48.png" alt=""></figure> <span>지선·마을버스</span>
+								</td>
+								<td>532, 532A, 532B, 534, 536, 537, 566</td>
+							</tr>
+							<tr>
+								<td rowspan="2"  class="ta_l">
+									<figure><img src="https://via.placeholder.com/48x48.png" alt=""></figure> <span>광역버스</span>
+								</td>
+								<td>1300 (동막역 ↔ 서울역) : 구월 팬더아파트 하차 (도보 3분)</td>
+							</tr>
+							<tr>
+								<td>1400 (인천종합터미널 ↔ 서울역)</td>
+							</tr>
+							<tr>
+								<td>
+									<figure><img src="https://via.placeholder.com/48x48.png" alt=""></figure> <span>인천종합터미널 → 길병원</span>
+								</td>
+								<td>11, 22, 34, 42, 82, 103, 534, 537, 800, 700-1, 903</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="context-title">지하철 이용 시</div>
+				<div class="table-col map">
+					<table>
+						<colgroup>
+							<col width="310px">
+							<col>
+						</colgroup>
+						<thead>
+							<tr>
+								<th>지하철 호선</th>
+								<th>공공 장소별</th>
+								<th>이용수단</th>
+								<th>소요시간</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<figure class="fl"><img src="https://via.placeholder.com/48x48.png" alt=""></figure> 
+									<span>지하철 1호선</span>
+								</td>
+								<td>석천사거리역 4번출구</td>
+								<td>버스 : 11, 22, 34, 42, 82, 103, 534, 537, 800, 700-1, 903</td>
+								<td>10 ~ 15분</td>
+							</tr>
+							<tr>
+								<td>
+									<figure class="fl"><img src="https://via.placeholder.com/48x48.png" alt=""></figure> 
+									<span>인천지하철 1호선</span>
+								</td>
+								<td>인천지하철 1호선</td>
+								<td>903, 907</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>
+									<figure class="fl"><img src="https://via.placeholder.com/48x48.png" alt=""></figure> 
+									<span>인천지하철 2호선</span>
+								</td>
+								<td>인천지하철 2호선</td>
+								<td>103, 303, 304, 800</td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+
+
+			</div>
+
+
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
