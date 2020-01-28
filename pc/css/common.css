@@ -76,6 +76,15 @@ img{display:block;}
 
 
 
+/* Slick Slider */ .slick-slider { position: relative;display: block; box-sizing: border-box;-webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;-webkit-touch-callout: none; -khtml-user-select: none; -ms-touch-action: pan-y; touch-action: pan-y; -webkit-tap-highlight-color: transparent; }.slick-list { position: relative;display: block; overflow: hidden;margin: 0; padding: 0; } .slick-list:focus { outline: none; } .slick-list.dragging { cursor: pointer; cursor: hand; }
+.slick-slider .slick-track, .slick-slider .slick-list { -webkit-transform: translate3d(0, 0, 0); -moz-transform: translate3d(0, 0, 0); -ms-transform: translate3d(0, 0, 0); -o-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
+.slick-track { position: relative; top: 0; left: 0;display: block; margin-left: auto; margin-right: auto; } .slick-track:before, .slick-track:after { display: table;content: ''; } .slick-track:after { clear: both; } .slick-loading .slick-track { visibility: hidden; }
+.slick-slide { display: none; float: left;height: 100%; min-height: 1px; } [dir='rtl'] .slick-slide { float: right; } .slick-slide img { display: block; } .slick-slide.slick-loading img { display: none; } .slick-slide.dragging img { pointer-events: none; } .slick-initialized .slick-slide { display: block; } .slick-loading .slick-slide { visibility: hidden; } .slick-vertical .slick-slide { display: block;
+height: auto;border: 1px solid transparent; float: none;} .slick-arrow.slick-hidden { display: none; }
+
+
+
+
 .inner {width: 1400px; margin: 0 auto;}
 .inner:after {clear: both; display: block; content:"";}
 
@@ -88,7 +97,7 @@ header .nav {height: 94px; overflow:hidden; float: left; width: 1005px; margin-l
 header .nav ul li {float: left; line-height: 20px; }
 header .nav ul li a {display: block; font-size:20px;width: 200px; text-align: center;height: 20px; padding: 42px 0 28px; color:#fff; transition: all .3s; border-bottom:4px solid rgba(0,0,0,0); font-weight: 600;}
 header .nav ul li a:hover {border-bottom:4px solid rgba(255,255,255,255);}
-header .util {width: 345px; float: right; margin-right: 50px; margin-top: 12px;}
+header .util {width: 350px; float: right; margin-right: 50px; margin-top: 12px;}
 header .util a {font-size:14px; color:#fff;}
 header .etc {text-align: right;}
 header .etc:after {clear: both; display: block; content:"";}
@@ -573,4 +582,8 @@ figure {margin: 0; padding: 0;}
 .dp_order ul li:last-child:after {display: none;}
 .dp_order ul li a.active {color:#004e96; font-weight: 600;}
 .dp_order ul li {display: inline-block; padding: 0 22px; font-size:20px;}
+
+
+
+.history-wrap .slider div ul li {display: inline-block;margin-right: 20px;} 
 /* style.css로 이동 ============================*/
