@@ -189,12 +189,12 @@ header .gnb_wp .gnb .rsv .inp-checkbox input[type=checkbox]:not(old):checked + l
 
 
 .inp-radio + .inp-radio{margin-left:40px;}
-.inp-radio input[type=radio]:not(old){margin:0;padding:0;opacity:0;} 
+.inp-radio input[type=radio]:not(old){margin:0;padding:0;opacity:0;z-index:-999;position:absolute;} 
 .inp-radio input[type=radio]:not(old) + label{display:inline-block;padding-left:50px;position:relative;}
 .inp-radio input[type=radio]:not(old) + label:after{display:inline-block;width:34px;height:34px;background:url(../img/common/icon.png) no-repeat -54px 0;position:absolute;top:8px;left:0;content:""}
 .inp-radio input[type=radio]:not(old):checked + label:after{background:url(../img/common/icon.png) no-repeat 0 0;}
-.inp-checkbox{font-size:18px;color:#333;line-height:34px; position: relative;}
-.inp-checkbox input[type=checkbox]:not(old){margin:0 0 0 -10px;padding:0;opacity:0;} 
+.inp-checkbox{font-size:18px;color:#333;line-height:34px;position: relative;}
+.inp-checkbox input[type=checkbox]:not(old){margin:0;padding:0;opacity:0;z-index:-999;position:absolute;}
 .inp-checkbox input[type=checkbox]:not(old) + label{display:inline-block;padding-left:50px;position:relative;}
 .inp-checkbox input[type=checkbox]:not(old) + label:after{display:inline-block;width:34px;height:34px;background:url(../img/common/icon.png) no-repeat -54px -54px;position:absolute;top:0;left:0;content:""}
 .inp-checkbox input[type=checkbox]:not(old):checked + label:after{background:url(../img/common/icon.png) no-repeat 0  -54px;}
