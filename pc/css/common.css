@@ -583,6 +583,27 @@ figure {margin: 0; padding: 0;}
 .dp_order ul li {display: inline-block; padding: 0 22px; font-size:20px;}
 
 
+.timeline {margin-top: 50px;}
+.timeline dl dt {width: 104px; line-height: 104px; height: 104px; background: #004e96; border-radius:50%; color:#fff; font-size:22px; text-align: center; display: block; position: relative; left:50%; margin-left: -52px;}
+.timeline dl dd { position: relative; left:50%; }
+.timeline dl dd ul {border-left:1px solid #eee; padding:44px 0;}
+.timeline dl dd ul li {margin-bottom: 36px; position: relative; width: 50%;}
+.timeline dl dd ul li:after {content:""; clear: both;display: block; float: none;}
+.timeline dl dd ul li:before {content:""; width:15px; height: 15px; background: #fff; border:1px solid #ddd; display: block; position: absolute; left:-9px; top:6px;  border-radius:50%;}
+.timeline dl dd ul li:last-child {margin-bottom: 0px;}
+.timeline dl dd > ul li span,
+.timeline dl dd > ul li p  {font-size:20px; line-height: 28px; display: block; position: relative;}
+.timeline dl dd > ul li span {float: left;color: #004e96; width: 95px; text-align: right;}
+.timeline dl dd > ul li span:before {content:""; width:30px; height: 1px; background: #ddd; display: block; position: absolute; left:8px; top:14px;}
+.timeline dl dd > ul li span:after {content:""; width:11px; height: 11px; background: #004e96; display: block; position: absolute; left:39px; top:9px;  border-radius:50%;}
+.timeline dl dd > ul li p {float: right; color:#222; width: calc(100% - 125px);}
 
-.history-wrap .slider div ul li {display: inline-block;margin-right: 20px;} 
+
+.timeline dl dd > ul li:nth-child(even) { left:-50%;}
+.timeline dl dd > ul li:nth-child(even):before {left:calc(100% - 9px);}
+.timeline dl dd > ul li:nth-child(even) span {float: right; text-align: left;}
+.timeline dl dd > ul li:nth-child(even) span:before {left:calc(100% - 38px);}
+.timeline dl dd > ul li:nth-child(even) span:after {    left: 46px;}
+.timeline dl dd > ul li:nth-child(even) p {text-align: right; float: left;}
+.timeline dl dd:last-child > ul {padding: 44px 0 0;}
 /* style.css로 이동 ============================*/
