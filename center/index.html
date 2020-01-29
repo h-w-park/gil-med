@@ -1,0 +1,298 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text./html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>작업페이지 목록</title>
+	<style type="text/css">
+	body{background:none;padding:0;margin:20px;min-width:900px;}
+	* {font-family:"나눔고딕","NanumGothic",sans-serif !important;font-size:12px;}
+	h1{font-size:180% !important;margin-bottom:10px;}
+	table{width:100%;table-layout:fixed;border-left:1px solid #ccc;border-top:1px solid #ccc;}
+	table thead th, table tfoot th{text-align:center;background:#e9e9e9;}
+	table thead th, table tfoot th,table tbody td{border-right:1px solid #ccc;border-bottom:1px solid #ccc;padding:7px;}
+	table tbody td{padding:8px 5px;white-space:break-all;}
+	table tbody td.align_center{text-align:center;}
+	table tbody tr:hover td{background:#f7f7f7;}
+	tr.done td, tr.done td a, span.done{background:#6396EC !important;color:#fff !important;}
+	tr.delete td, tr.delete:hover td, span.delete{background:orange; text-decoration:line-through;}
+	tr.board td, tr.board:hover td{background:#fbfbad;}
+	td.colspan{background:#f7f7f7;}
+	span.done,
+	span.delete{display:inline-block;padding:3px 10px;}
+	.work-status{padding:20px 0;}
+	.work-status ul{overflow:hidden;}
+	.work-status .tit {display: block; font-weight: bold;margin-bottom:4px;}
+	.work-status .status1 {float:left;}
+	.work-status .status2 {float:left; margin:0 10px 0 50px}
+	.work-status .status2 > span{margin-right:5px;}
+	.work-status .num{position:absolute;top:50px;right:30px;font-size:14px;}
+	p.modify{text-decoration:underline;}
+	div.common_modify{border:1px solid #e2e2e2;background:#fff;padding:10px;margin-bottom:10px;font-size:14px;background:#6396EC !important;color:#fff !important;}
+	/* tab nav */
+	.tab_nav{margin:0 0 0;border-bottom:1px solid #ddd;position:relative;}
+	.tab_nav ul{display:inline-block;margin:0;padding:0;}
+	.tab_nav ul li{display: inline-block;}
+	.ie7 .tab_nav ul, .lte7 .tab_nav ul li{display:inline;zoom:1;}
+	.tab_nav ul li a{display: inline-block;margin-bottom: -1px; padding: 8px 12px; border: 1px solid transparent; border-bottom: 0; font-size: 14px; color: #666; text-decoration: none;}
+	.tab_nav ul li.current a{border-color: #ddd;border-radius: 3px 3px 0 0; background-color: white; color: #333; font-weight: bold;}
+	.tab_nav .tab_nav_last{position:absolute;top:0;right:0;}
+	.tab_nav .count{position: relative; top: -1px; margin: 0 0 0 5px; padding: 1px 5px 2px 5px; font-size: 10px; font-weight: bold; color: #666; background: #e5e5e5; border-radius: 10px; font:11px verdana, sans-serif; line-height:1.25;}
+	.ie6 .tab_nav ul{}
+	.ie6 .tab_nav ul li{float:left;}
+	.ie6 .tab_nav .tab_nav_last ul{float:right;}
+	.tab_contents_wrap{background:#fff;padding:10px;}
+	.hide{display:none;}
+	.source_download{margin:10px 0;list-style-type:disc;margin-left:10px;padding-left:10px;}
+	table tr td:nth-child(1),table tr td:nth-child(8),table tr td:nth-child(9),table tr td:nth-child(10){text-align:center;}
+	.site-wrap{position: relative;}
+	.site-work-list{}
+	.site-work-list ul{overflow:hidden;}
+	.site-work-list ul li{padding:5 10px;}
+	.site-work-list ul li a{font-size:14px;color:#000;}
+
+	select.workerList { 
+		width: 100%;
+    	height: 26px;
+	}
+
+	/* 작업 현황 icon */
+	.status {display:inline-block;padding:4px 6px;border-radius: 3px;background: #6396EC;color:#fff;text-align: center;font-size: 12px;}
+	.complate {background: #1a4da0}
+	.modify {background: #ce1818}
+	.ing {background: #429642}
+
+	/* modal */
+	.modal{display:none;position:fixed;top: 0;left: 0;right:0;bottom:0;width:100%;height:100%;z-index:10000;background:rgba(0,0,0,0.75);}
+	.modal.on{display:block;top:0;left:0;}
+	.modal .modal-layer{display:none;position:relative;width:450px;padding:0 20px;border:1px solid #55565a;background:#fff;position:absolute;left:50%;top:50%;z-index:10000;-webkit-transform: translate(-50%,-50%);-ms-transform: translate(-50%,-50%);transform: translate(-50%,-50%);}
+	.modal .modal-layer.m-width{width:688px;}
+	.modal .modal-layer .modal-header{padding:15px 22px 16px 0;border-bottom:1px solid #333333;}
+	.modal .modal-layer .modal-header .tit{font-size:18px;color:#000000;margin:0}
+	.modal .modal-layer .modal-close{position:absolute;width:20px;height:20px;top:20px;right:20px;z-index:10;}
+	.modal .modal-layer .modal-close:before {display: block;content: '';width:20px;height: 1px;background: #000;transform: rotate(43deg);position: absolute;top: 7px;left: 0;}
+	.modal .modal-layer .modal-close:after {display: block;content: '';width:20px;height: 1px;background: #000;transform: rotate(132deg);position: absolute;top: 7px;left: 0;}
+	.modal .modal-layer .modal-close{cursor:pointer;}
+	.modal .modal-layer .modal-close a{display:block;width:20px;height:20px;background:url("../images/common/btn-modal-close.png") 0 0 no-repeat;text-indent:-9999px;}
+	.modal .modal-layer .modal-body{position:relative;padding:20px 0;}
+	.modal .modal-layer .modal-footer{text-align:center;padding-bottom:40px;}
+	.modal .modal-layer .modal-footer a{margin:0;}
+	</style>
+	
+    <script src="js/jquery-2.2.3.min.js"></script>
+	<script>
+	$(document).ready(function(){
+		var lnk = "";
+		$("thead tr th:first-child, tfoot tr th:first-child").before("<th>번호</th>");
+
+		$(".tab_contents_wrap").each(function(){
+			
+			$("tbody tr", $(this)).each(function(index){
+				$("td:first-child", $(this)).before("<td>"+ (index+1) +"</td>");
+				var href = $("td:nth-child(7) a", $(this)).prop("text") || ''
+				if(href != ""){
+					$("td:nth-child(7) a", $(this)).prop({
+						"href" : href + "?v="+$.now(),
+						"target" : "_blank"
+					});
+				}			
+				
+				var target = $(this).find($("#tab_1_contents td:last-child"));
+				target.each(function(){
+					if($(this).text() == "완료"){
+						$(this).html("<span class='status complate'>완료</span>")
+					}else if($(this).text() == "수정"){
+						$(this).html("<span class='status modify'>수정</span>")
+					}else if($(this).text() == "진행"){
+						$(this).html("<span class='status ing'>진행</span>")
+					}else if($(this).text() == "삭제"){
+						$(this).parents('tr').addClass('delete')
+					}else {
+						$(this).html("대기");
+					}
+				});
+				
+			});
+
+
+			$(".work-list").each(function(){
+				var person;
+				$(this).find("select").change(function() {
+					person = $(this).find("option:selected").text();
+					var worker = $(this).closest(".work-list").find(".worker");
+					worker.each(function(){
+						var workerName = $(this).text();
+						if(workerName == person) {
+							$(this).parent().show();
+						} else{
+							$(this).parent().hide();
+						}
+					});
+					if(person == "담당자") worker.parent().show();
+				});
+			});
+		});
+
+		// $(".tab_contents_wrap").addClass("hide");
+		// $(".tab_contents_wrap").eq(0).removeClass("hide");
+
+		$(".tab_nav li").click(function(e){
+			e.preventDefault();
+			var idx = $(this).index(".tab_nav li");
+			$(".tab_nav li").removeClass("current").eq(idx).addClass("current");
+			$(".tab_contents_wrap").addClass("hide");
+			$(".tab_contents_wrap").eq(idx).removeClass("hide");
+		});
+
+		$("#done_count").html($("#tab_1_contents table tr td .complate").length + '/' + $("#tab_1_contents table tbody tr:not(.delete)").length);
+		$("#done_count2").html($("#tab_2_contents table tr td .complate").length + '/' + $("#tab_2_contents table tbody tr:not(.delete)").length);
+
+		var totalHits = $('#tab_1_contents tbody tr').length;
+		$('.work-status .num .total_hits').html(totalHits);
+		var complateHits = $('#tab_1_contents tbody .complate').length;
+		$('.work-status .num .complate_hits').html(complateHits);
+
+	});
+	</script>
+</head>
+<body>
+	
+	<h1>길병원 작업페이지 목록</h1>
+
+	<div class="site-wrap">
+	
+		<div class="work-status">
+			<ul>
+				<li class="status1">
+					<span class="tit">현황 1</span>
+					<span class="done">완료</span>
+					<span class="delete">삭제</span>
+				</li>
+				<li class="status2">
+					<span class="tit">현황 2</span>
+					작업완료 : <span class="status complate">완료</span>
+					/ 작업 중 : <span class="status ing">진행</span>
+					/ 완료 후 수정 : <span class="status modify">수정</span>
+					/&nbsp;&nbsp; 대기 : 작업 대기&nbsp;
+				</li>
+			</ul>
+			<div class="num">완료 : <span class="complate_hits"></span> / 총 : <span class="total_hits"></span>
+		</div>
+	</div>
+	<div class="tab_contents_wrap work-list">
+		<table cellspacing="0" cellpadding="0">
+			<colgroup>
+				<col width="60px">
+				<col width="100px">
+				<col width="150px">
+				<col width="150px">
+				<col width="150px">
+				<col width="*">
+				<col width="250px">
+				<col width="90px">
+				<col width="150px"> 
+			</colgroup>
+			<thead>
+				<tr>
+					<th>1Depth</th>
+					<th>2Depth</th>
+					<th>3Depth</th>
+					<th>4Depth</th>
+					<th>경로</th>
+					<th>참고</th>
+					<th>등록일</th>
+					<th>수정일</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>layout</td>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+					<td><a href="html/layout/layout.html" target="_blank">html/layout/layout.html</a></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>guide</td>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+					<td><a href="html/layout/guide.html" target="_blank">html/layout/guide.html</a></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+		
+	<div id="tab_1_contents" class="tab_contents_wrap work-list">
+		<table cellspacing="0" cellpadding="0">
+			<colgroup>
+				<col width="60px">
+				<col width="100px">
+				<col width="150px">
+				<col width="150px">
+				<col width="150px">
+				<col width="*">
+				<col width="250px">
+				<col width="110px">
+				<col width="150px">
+				<col width="90px"> 
+			</colgroup>
+			<thead>
+				<tr>
+					<th>1Depth</th>
+					<th>2Depth</th>
+					<th>3Depth</th>
+					<th>4Depth</th>
+					<th>경로</th>
+					<th>참고</th>
+					<th>등록일</th>
+					<th>수정일</th>
+					<th>상태</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>MAIN</td>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+					<td><a href="html/00/grc000000.html" target="_blank">html/00/grc000000.html</a></td>
+					<td>-</td>
+					<td>01/13</td>
+					<td></td>
+					<td>진행</td>
+				</tr>
+				<tr>
+					<td>진료과/의료진</td>
+					<td>진료과</td>
+					<td>-</td>
+					<td>-</td>
+					<td><a href="html/MDC/MDC010200.html" target="_blank">html/MDC/MDC010200.html</a></td>
+					<td>-</td>
+					<td>01/13</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>학생검진신청</td>
+					<td>-</td>
+					<td><a href="html/MDC/MDC010200P.html" target="_blank">html/MDC/MDC010200P.html</a></td>
+					<td>popup</td>
+					<td>01/13</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+</body>
+</html>

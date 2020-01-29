@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- Scripts -->
+    <script src="../../js/jquery-2.2.3.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+
+    <div class="content">
+        <div class="section">
+            <div class="title">
+                <h3 class="page-tit">진료예약확인</h3>
+                <p class="page-tit__desc"> </p>
+            </div>
+            
+            <div class="context">
+
+                <div class="info-section">
+					<ul  class="mt_0">
+						<li>진료의뢰 확인시간 : 평일 08:00~17:00, 토요일 08:00~12:00</li>
+						<li>협력병∙의원 전용전화 : (진료의뢰) 032-460-3977 (응급실) 032-460-9119</li>
+					</ul>
+                </div>
+
+
+				<div class="search-area mt_48">
+					<div class="search-tab">
+						<ul>
+							<li class="active"><a href="">3개월</a></li>
+							<li><a href="">6개월</a></li>
+							<li><a href="">1년</a></li>
+						</ul>
+					</div>
+					<div class="search-sort">
+						<select>
+							<option>구분</option>
+						</select>
+					</div>
+					<div class="search-sort">
+						<select>
+							<option>진료과</option>
+						</select>
+					</div>
+					<div class="search-input"> 
+						<button class="btn-search">검색</button>
+					</div>
+				</div>
+				
+
+				
+				<div class="table-col">
+					<table>
+						<colgroup>
+							<col>
+						</colgroup>
+						<thead>
+							<tr>
+								<th>등록번호</th>
+								<th>환자명</th>
+								<th>생년월일</th>
+								<th>성별</th>
+								<th>진료과</th>
+								<th>의료진</th>
+								<th>진료일자</th>
+								<th>회신동의여부</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>2020-01-20</td>
+								<td>홍길동</td>
+								<td>1986-04-15</td>
+								<td>남</td>
+								<td>가정의학과</td>
+								<td>성춘향</td>
+								<td>2020-01-22</td>
+								<td><span class="status y">Y</span></td>
+							</tr>
+							<tr>
+								<td>2020-01-20</td>
+								<td>성춘향</td>
+								<td>1986-04-15</td>
+								<td>남</td>
+								<td>가정의학과</td>
+								<td>홍길동</td>
+								<td>2020-01-22</td>
+								<td><span class="status n">N</span></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="../../js/ui.js"></script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- Scripts -->
+    <script src="../../js/jquery-2.2.3.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+
+    <div class="content">
+        <div class="section">
+            <div class="title">
+                <h3 class="page-tit">로그인 없는 진료의뢰</h3>
+                <p class="page-tit__desc">회원가입이나 로그인 없이 이용이 가능한 진료의뢰입니다.</p>
+            </div>
+            
+            <div class="context">
+
+                <div class="info-section">
+					<p class="text">아래에 작성해주신 진료의뢰내용의 연락처로 전화하여 진료예약을 완료합니다.  진료회신 내용, 진료결과 확인은 회원 본인 인증시 가능합니다.(단, 환자가 진료정보제공 동의한 경우) 의료급여 환자의 경우는 상급종합병원 진료를 위하여 병원급 의료기관에서 발급된 진료의뢰서가 필요합니다. </p>
+                   
+					<ul>
+						<li>진료의뢰 확인시간 : 평일 08:00~17:00, 토요일 08:00~12:00</li>
+						<li>협력병∙의원 전용전화 : (진료의뢰) 032-460-3977 (응급실) 032-460-9119</li>
+					</ul>
+                </div>
+
+				
+				<div class="in-table-tit">진료의뢰내용</div>
+				<div class="table-row">
+					<div class="table-must">필수입력항목<span class="txt-co-red">*</span></div>
+					<table>
+						<colgroup>
+							<col style="width:203px">
+							<col style="width:430px">
+							<col style="width:203px">
+							<col style="width:430px">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>환자이름 <span class="txt-co-red">*</span></th>
+								<td><input type="text" class="inp-text" placeholder="이름 입력" style="width:368px"></td> 
+								<th>주민등록번호 <span class="txt-co-red">*</span></th>
+								<td><input type="text" class="inp-text" placeholder="앞 6자리 입력" style="width:165px"><span class="space">-</span><input type="text" class="inp-text" placeholder="뒤 7자리 입력" style="width:165px"></td>
+							</tr>
+							<tr>
+								<th>휴대폰 <span class="txt-co-red">*</span></th>
+								<td>
+									<div class="inp-tell">
+										<div class="select-box">
+											<select>
+												<option>010</option>
+											</select>
+										</div>
+										<span class="space">-</span> 
+										<input type="number" class="inp-text" style="width:110px"><span class="space">-</span> 
+										<input type="number" class="inp-text" style="width:110px">
+									</div>
+								</td>
+								<th>심층진찰여부</th>
+								<td>
+									<span class="inp-radio"><input type="radio" name="rdo1" id="rdo1-1"><label for="rdo1-1">N</label></span>
+									<span class="inp-radio"><input type="radio" name="rdo1" id="rdo1-2"><label for="rdo1-2">Y</label></span>
+								</td>
+							</tr>
+							<tr>
+								<th>희망진료과목</th>
+								<td>
+									<input type="number" class="inp-text" placeholder="희망진료과목 입력" style="width:368px">
+								</td>
+								<th>희망진료의사명</th>
+								<td>
+									<input type="number" class="inp-text" placeholder="희망진료의사명 입력" style="width:368px">
+								</td>
+							</tr>
+							<tr>
+								<th>상태 및 내용 <span class="txt-co-red">*</span></th>
+								<td colspan="3">
+									<div class="select-box mb_10" style="width:800px;">
+										<select>
+											<option>상태 및 내용 선택</option>
+										</select>
+									</div>
+									<div class="textarea"><textarea name="" id=""placeholder="상태 및 내용 입력"  ></textarea></div>
+								</td>
+							</tr>
+							<tr>
+								<th class="lh_18">진료협력센터 <br>전달 메모</th>
+								<td colspan="3">
+									<div class="textarea"><textarea name="" id=""placeholder="진료협력센터에 전달할 메모 입력"  ></textarea></div>
+								</td>
+							</tr>
+							<tr>
+								<th>회신서 수령여부</th>
+								<td colspan="3" class="pv_30 pl_20">
+									<div class="inp-checkbox">
+										<input type="checkbox" id="c6" tabindex="0"><label for="c6">회신을 원하시면 출력하신 후에 동의서에 사인을 하여 주시기 바랍니다.</label> 
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+
+				<div class="in-table-tit">의료기관</div>
+				<div class="table-row">
+					<div class="table-must">필수입력항목<span class="txt-co-red">*</span></div>
+					<table>
+						<colgroup>
+							<col style="width:203px">
+							<col style="width:430px">
+							<col style="width:203px">
+							<col style="width:430px">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>입력의사명 <span class="txt-co-red">*</span></th>
+								<td><input type="text" class="inp-text" placeholder="이름 입력" style="width:368px"></td> 
+								<th>의사면허번호 <span class="txt-co-red">*</span></th>
+								<td><input type="text" class="inp-text" placeholder="이름 입력" style="width:368px"></td> 
+							</tr>
+							<tr>
+								<th>병원명 <span class="txt-co-red">*</span></th>
+								<td><input type="text" class="inp-text" placeholder="이름 입력" style="width:368px"></td> 
+								<th>병원전화번호 <span class="txt-co-red">*</span></th> 
+								<td>
+									<div class="inp-tell">
+										<div class="select-box">
+											<select>
+												<option>02</option>
+											</select>
+										</div>
+										<span class="space">-</span> 
+										<input type="number" class="inp-text" style="width:110px"><span class="space">-</span> 
+										<input type="number" class="inp-text" style="width:110px">
+									</div>
+								</td> 
+							</tr>
+							<tr>
+								<th>예약현황 SMS회신</th>
+								<td>
+									<span class="inp-radio"><input type="radio" name="rdo1" id="rdo1-1"><label for="rdo1-1">N</label></span>
+									<span class="inp-radio"><input type="radio" name="rdo1" id="rdo1-2"><label for="rdo1-2">Y</label></span>
+								</td>
+								<th>휴대폰 <span class="txt-co-red">*</span></th> 
+								<td>
+									<div class="inp-tell">
+										<div class="select-box">
+											<select>
+												<option>010</option>
+											</select>
+										</div>
+										<span class="space">-</span> 
+										<input type="number" class="inp-text" style="width:110px"><span class="space">-</span> 
+										<input type="number" class="inp-text" style="width:110px">
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th>개인정보수집동의 <span class="txt-co-red">*</span></th>
+								<td colspan="3" class="pv_30 pl_20">
+									<div class="inp-checkbox">
+										<input type="checkbox" id="c6" tabindex="0"><label for="c6">간편진료의뢰를 위해 개인정보 수집에 동의합니다.</label> 
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<small class="info">※  작성하신 정보는 환자의뢰 목적 이외의 용도로 사용하지 않습니다. <br>※  접수하신 내역은 [진료예약확인]메뉴에서 조회 및 출력하실 수 있습니다.</small>
+				</div>
+
+				<div class="btn-area ta_c mt_48">
+					<a href="javascript:;" class="btn-blue btn-lg"><span>진료의뢰</span></a>
+				</div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="../../js/ui.js"></script>
+</body>
+</html>
