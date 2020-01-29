@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+/* font */
+@font-face {
+    font-family:'NotoSansKR';
+    font-weight:300;
+    src: local(※),
+        url('../font/NotoSansKR-Light.woff2') format('woff2'),
+        url('../font/NotoSansKR-Light.woff') format('woff');
+}
+@font-face {
+    font-family:'NotoSansKR';
+    font-weight:400;
+    src: local(※),
+        url('../font/NotoSansKR-Regular.woff2') format('woff2'),
+        url('../font/NotoSansKR-Regular.woff') format('woff');
+}
+@font-face {
+    font-family:'NotoSansKR';
+    font-weight:500;
+    src: local(※),
+        url('../font/NotoSansKR-Medium.woff2') format('woff2'),
+        url('../font/NotoSansKR-Medium.woff') format('woff');
+}
+@font-face {
+    font-family:'NotoSansKR';
+    font-weight:700;
+    src: local(※),
+        url('../font/NotoSansKR-Bold.woff2') format('woff2'),
+        url('../font/NotoSansKR-Bold.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(../font/LatoLatin-Regular.woff) format('woff');
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(../font/LatoLatin-Bold.woff) format('woff');
+  text-rendering: optimizeLegibility;
+}
+
+/* reset */
+body{font-family:Lato, "NotoSansKR", '맑은고딕', Malgun Gothic, Dotum, "돋움", verdana, sans-serif;font-size:13px; color:#666; width:100%; height:100%;letter-spacing:-1px;line-height:1.2;font-weight:300;}
+body, ul, ol, li, dt, dl, dd, div, h1, h2, h3, h4, h5, h6, p, form, fieldset, blockquote, iframe, input, object, table, tr, th, td, img{margin:0;padding:0; vertical-align:top; border:none;}
+ul, ol, li{list-style:none}
+hr{display:none}
+em{font-style:normal}
+fieldset, img{border:none;}
+legend, caption{display:none}
+table { border-collapse: collapse;}
+.blind{overflow:hidden;position:absolute;left:-1000%;top:0;width:0;height:0;font-size:0;line-height:0;}
+
+/* Link Css */
+a{cursor:pointer; overflow:hidden;color:#666;text-decoration:none}
+a:link,  a:visited,  a:active {text-decoration:none}
+a:hover{text-decoration:none;}
+address {font-style:normal;}
+button{cursor:pointer; border:none; background:none; padding:0; margin:0 auto;}
+
+/* Blind */
+.blind{position:absolute;width:0;height:0;font-size:1px;text-indent:-9999px;overflow:hidden;}
+
+/* block */
+img{display:block;}
+:focus { outline: none; }
+
+
+/* Slick Slider */ .slick-slider { position: relative;display: block; box-sizing: border-box;-webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;-webkit-touch-callout: none; -khtml-user-select: none; -ms-touch-action: pan-y; touch-action: pan-y; -webkit-tap-highlight-color: transparent; }.slick-list { position: relative;display: block; overflow: hidden;margin: 0; padding: 0; } .slick-list:focus { outline: none; } .slick-list.dragging { cursor: pointer; cursor: hand; }
+.slick-slider .slick-track, .slick-slider .slick-list { -webkit-transform: translate3d(0, 0, 0); -moz-transform: translate3d(0, 0, 0); -ms-transform: translate3d(0, 0, 0); -o-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
+.slick-track { position: relative; top: 0; left: 0;display: block; margin-left: auto; margin-right: auto; } .slick-track:before, .slick-track:after { display: table;content: ''; } .slick-track:after { clear: both; } .slick-loading .slick-track { visibility: hidden; }
+.slick-slide { display: none; float: left;height: 100%; min-height: 1px; } [dir='rtl'] .slick-slide { float: right; } .slick-slide img { display: block; } .slick-slide.slick-loading img { display: none; } .slick-slide.dragging img { pointer-events: none; } .slick-initialized .slick-slide { display: block; } .slick-loading .slick-slide { visibility: hidden; } .slick-vertical .slick-slide { display: block;
+height: auto;border: 1px solid transparent; float: none;} .slick-arrow.slick-hidden { display: none; }
+
+/* layout */
+.content{width:1200px;margin:0 auto;padding:95px 0 200px;}
+.section{margin-top:-1px;}
