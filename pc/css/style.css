@@ -374,7 +374,7 @@ select::-ms-expand{display:none;}
 .relate-list li:last-child{margin-right:0;}
 .relate-list li span{text-align:center;display:table-cell;vertical-align:middle;}
 
-.doctor-profile{background:url(../img/bg/bg_profile.jpg) no-repeat 50% 0;color:#fff;position:relative;}
+.doctor-profile{background:url(../img/bg/bg_profile.jpg) #577b9d no-repeat 50% 0;color:#fff;position:relative;}
 .doctor-profile .context{margin-top:-20px}
 .doctor-profile .title{padding-top:26px;}
 .doctor-profile .title .page-tit{color:#fff;}
@@ -390,6 +390,8 @@ select::-ms-expand{display:none;}
 .doctor-profile .text-wrap .text{color:#fff;}
 .doctor-profile .text-list + .section-tit{margin-top:30px;}
 .doctor-profile .text-list + .text-list{margin-top:20px;}
+.doctor-profile .text-list li,
+.doctor-profile .text-wrap > a {color:#fff;}
 .doctor-profile .doctor-like{height:32px;border-radius:16px;background:#fff;font-size:16px;color:#666;display:inline-block;padding:0 20px 0 50px;line-height:32px;position:relative;}
 .doctor-profile .doctor-like:after{width:17px;height:14px;background:url(../img/icon/doctor_like.jpg) no-repeat 0 0;content:"";position:absolute;top:10px;left:26px;}
 .doctor-profile .doctor-like.on:after{background-position:0 -14px;}
