@@ -65,7 +65,7 @@
 .table-must-area{text-align:right;font-size:15px;margin-bottom:15px;}
 .table-row > table{border-top:2px solid #000;color:#333;width:100%}
 .table-row > table tbody th{background:#f9f9f9;text-align:left;padding:15px 0 0 25px;color:#333;font-size:18px;line-height:50px;font-weight:400;border-bottom:1px solid #ddd;}
-.table-row > table tbody td{border-bottom:1px solid #ddd;padding:15px 24px;line-height:50px;font-size:18px;color:#333;}
+.table-row > table tbody td{border-bottom:1px solid #ddd;padding:15px 0 15px 16px ;line-height:50px;font-size:18px;color:#333;}
 .table-row span.info-txt{display:inline-block;margin-left:15px;color:#888;}
 .table-row p.info-txt{margin-top:8px;line-height:1;}
 .table-row .dot-txt.info-txt{font-size:14px;color:#888;}
@@ -660,12 +660,12 @@ select::-ms-expand{display:none;}
 .popup .table-must{position:absolute;top:-32px; height: 28px; line-height: 28px;right:0; font-size:16px; display:inline-block;}
 .popup .table-must .txt-co-red{display:inline-block; margin-left:5px; font-size:20px;}
 .popup .table-row .form{width:640px;}
-.popup .table-row .inp-radio{display:inline-block;margin-right:55px}
+.popup .table-row .inp-radio{display:inline-block;margin-right:55px; height: 34px; line-height: 34px;}
 .popup .table-row input:disabled{background:#fff;}
 .popup .table-row .ico-calendar{display:inline-block;margin:0 25px 0 15px;vertical-align:middle;}
 .popup .dot-blue{display:inline-block;width:12px;height:12px;border-radius:6px;background:#004e96;margin-right:8px;}
 .popup .dot-gray{display:inline-block;width:12px;height:12px;border-radius:6px;background:#aaa;margin:0 8px 0 15px;}
-.popup .info-text{font-size:16px;}
+.popup .info-text{font-size:16px; line-height: 50px; display: inline-block; height: 50px;}
 .popup .btn-area{margin-top:45px;text-align:center;}
 .popup .context{padding-top:20px;}
 .popup .context p{text-align:center;font-size:18px;color:#000;line-height:30px;}
