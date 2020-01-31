@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- Scripts -->
+    <script src="../../js/jquery-2.2.3.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+
+    <div class="content">
+        <div class="section">
+            <div class="title">
+                <h3 class="page-tit">회원정보수정</h3>
+                <p class="page-tit__desc">고객님의 정보를 수정 가능하십니다.</p>
+            </div>
+
+            <ul class="tab">
+                <li><a href="javascript:;">개인정보수정</a></li>
+                <li><a href="javascript:;" class="on">비밀번호 변경</a></li>
+                <li><a href="javascript:;">회원탈퇴</a></li>
+            </ul>
+        
+            <div class="context cs-wrap">
+                <div class="table-must-area txt-co-red"><span>*</span> 필수입력 항목</div>
+                <div class="table-row">
+                    <table>
+                        <colgroup>
+                            <col style="width:185px">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>현재 비밀번호 <span class="txt-co-red">*</span></th>
+                                <td>
+                                    <input type="password" class="inp-text ">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>새 비밀번호  <span class="txt-co-red">*</span></th>
+                                <td>
+                                    <input type="password" class="inp-text ">
+									<span class="dis_ib ml_12">특수문자, 영문, 숫자 조합의 8~12자 이내</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>새 비밀번호  확인 <span class="txt-co-red">*</span></th>
+                                <td>
+                                    <input type="password" class="inp-text " > 
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="btn-wrap">
+                    <a href="javascript:;" class="btn-lg btn-gray"><span>취소</span></a>
+                    <a href="javascript:;" class="btn-lg btn-blue"><span>확인</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="../../js/ui.js"></script>
+</body>
+</html>

@@ -2,7 +2,7 @@
 /* style */
 .dot-txt{position:relative;padding-left:13px;color:#333;}
 .dot-txt:after{background:#5d5d5d;width:1px;height:1px;content:"";position:absolute;top:7px;left:3px;}
-.blick-txt{position:relative;padding-left:18px;color:#888;margin-top:20px;}
+.blick-txt{position:relative;padding-left:18px;color:#888;margin-top:20px; font-size:18px;}
 .blick-txt:after{content:"※";position:absolute;top:0;left:0;}
 .blick-txt strong{color:#333;}
 .doctor-list + .blick-txt{margin-top:-4px;}
@@ -123,9 +123,10 @@
 /* input */
 .inp-text{height:50px;line-height:50px;box-sizing:border-box;border:1px solid #ddd;padding-left:25px;font-size:18px;}
 .inp-text + .inp-text{margin-left:25px;}
-.inp-text.inp-readonly{background:#f9f9f9;color:#666;}
-.select-box{display:inline-block;min-width:100px;}
-.select-box select{height:50px;-webkit-appearance:none;-moz-appearance:none;-o-appearance:none;appearance:none;background:#fff url(../img/common/ico_select_table.png) no-repeat 100% 0;border:1px solid #ddd;box-sizing:border-box;font-size:18px;padding-left:24px;width:100%;border-radius:0;}
+.inp-text:read-only,.inp-text:disabled, .select-box select:disabled,
+.inp-text.inp-readonly{background-color:#f9f9f9;color:#666;}
+.select-box{display:inline-block;min-width:100px; position: relative;}
+.select-box select{height:50px; position: absolute;-webkit-appearance:none;-moz-appearance:none;-o-appearance:none;appearance:none;background:#fff url(../img/common/ico_select_table.png) no-repeat 100% 0;border:1px solid #ddd;box-sizing:border-box;font-size:18px;padding-left:24px;width:100%;border-radius:0;}
 .inp-tell .space,
 .inp-email .space{padding:0 8px}
 .inp-email .select-box{margin-left:10px;position:relative;top:-1px;}
@@ -135,6 +136,7 @@
 .inp-password .inp-text{display:block;}
 .inp-password .inp-text + .inp-text{margin-left:0;margin-top:15px;}
 .inp-password .info-txt{font-size:14px;}
+.inp-radio {height: 34px; line-height: 34px; display: inline-block;}
 input.inp-confirm{border:1px solid #ff4949;}
 input.inp-confirm::placeholder{color:#ff4949;}
 input.inp-confirm::-webkit-input-placeholder{color:#ff4949;}
@@ -667,7 +669,7 @@ select::-ms-expand{display:none;}
 .popup .dot-gray{display:inline-block;width:12px;height:12px;border-radius:6px;background:#aaa;margin:0 8px 0 15px;}
 .popup .info-text{font-size:16px; line-height: 50px; display: inline-block; height: 50px;}
 .popup .btn-area{margin-top:45px;text-align:center;}
-.popup .context{padding-top:20px;}
+.popup .context{padding-top:32px;}
 .popup .context p{text-align:center;font-size:18px;color:#000;line-height:30px;}
 .popup .popup-content td,
 .popup .popup-content li{font-size:18px !important;line-height:26px;}

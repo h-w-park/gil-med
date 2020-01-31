@@ -60,6 +60,7 @@ legend, caption{display:none}
 table { border-collapse: collapse;}
 .blind{overflow:hidden;position:absolute;left:-1000%;top:0;width:0;height:0;font-size:0;line-height:0;}
 
+select, input, textarea {font-family: Lato, "NotoSansKR";}
 /* Link Css */
 a{cursor:pointer; overflow:hidden;color:#666;text-decoration:none}
 a:link,  a:visited,  a:active {text-decoration:none}
@@ -248,6 +249,7 @@ figure {margin: 0; padding: 0;}
 }
 
 
+.ml_12 {margin-left: 12px  !important;}
 
 .mt_0 {margin-top: 0px !important;}
 .mt_10 {margin-top: 10px !important;}
@@ -285,6 +287,7 @@ figure {margin: 0; padding: 0;}
 .fs_16 {font-size:16px !important;}
 .fs_18 {font-size:18px !important;}
 .fs_20 {font-size:20px !important;}
+.fs_24 {font-size:24px !important;}
 .fs_34 {font-size:34px !important;}
 
 .dis_ib {display: inline-block;}
