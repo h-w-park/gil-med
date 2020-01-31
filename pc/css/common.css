@@ -255,7 +255,9 @@ figure {margin: 0; padding: 0;}
 .mt_24 {margin-top: 24px !important;}
 .mt_45 {margin-top: 45px !important;}
 .mt_48 {margin-top: 48px !important;}
+.mt_70 {margin-top: 70px !important;}
 
+.mb_0 {margin-bottom: 0px !important;}
 .mb_20 {margin-bottom: 20px !important;}
 .mb_70 {margin-bottom: 70px !important;}
 
@@ -335,10 +337,10 @@ figure {margin: 0; padding: 0;}
 
 .table-col.col2 tr td {width: 50%;}
 .table-col tbody tr td ul {padding: 0 24px;}
-.table-col tbody tr td ul li {text-align: left; padding-left: 11px; margin-bottom: 8px; font-size:18px; color: #333;}
+.table-col tbody tr td ul li {text-align: left; padding-left: 11px; margin-bottom: 8px; font-size:18px; color: #333; position: relative;}
 .table-col tbody tr td ul li > strong {color:#444; font-weight: 600;}
 .table-col tbody tr td small > strong  {color:#666; font-weight: 600;}
-.table-col tbody tr td ul li:before {content:"·"; display: inline-block; position: relative; left:-10px;}
+.table-col tbody tr td ul li:before {content:"·"; display: inline-block; left: 0px; position: absolute;}
 .table-col tbody tr td small {font-size:16px; text-align: left; display: block; padding-left: 24px; line-height: 1.6; color:#888; position: relative;}
 .table-col tbody tr td ul li > small {padding-left: 0; left:-10px;}
 
@@ -355,6 +357,9 @@ figure {margin: 0; padding: 0;}
 .table-row.type2 table tr td dl dd > ul {margin-top: 10px;}
 .table-row.type2 table tr td dl dd > ul li {text-align: left; padding-left: 11px; margin-bottom: 8px; font-size:17px; color: #333; line-height: 1.4; margin-bottom: 3px;}
 .table-row.type2 table tr td dl dd > ul li:before {content:"·"; display: inline-block; position: relative; left:-10px;}
+
+.cList li {text-align: left; padding-left: 11px; margin-bottom: 8px; font-size:17px; color: #333; line-height: 1.4; margin-bottom: 3px;}
+.cList li:before {content:"·"; display: inline-block; position: relative; left:-10px;}
 
 .table-row.type2 table tr td dl:after {float:none; display:block; clear:both; content:"";}
 .table-row.type2 table tr td dl {margin: 10px 0;}
@@ -399,6 +404,7 @@ figure {margin: 0; padding: 0;}
 .context.bt {border-top:1px solid #ddd;}
 .text-wrap > ul {margin-top: 14px;}
 .text-wrap > ul li {font-size:18px; margin-bottom: 10px; padding-left: 11px; color:#333;}
+.text-wrap > ul li small {font-size:16px; display: block; padding-left: 4px; color:#888; margin-top: 7px;}
 .text-wrap > ul li:before {content:"·"; display: inline-block; position: relative; left:-10px;}
 
 .table-row table tbody th {}
@@ -431,8 +437,10 @@ figure {margin: 0; padding: 0;}
 .nurse-icon-wrap li span {display: block; font-size:20px;position: absolute; bottom:40px; text-align: center; width: 100%;}
 
 .qna-wrap {margin-top: 48px;}
-.qna-wrap h6 {font-size:20px; padding: 24px 0; color:#000; font-weight: 400; border-bottom:1px solid #ddd; cursor:pointer; transition:all 0.3s;}
-.qna-wrap h6.ui-state-active {background: #4171a8; color:#fff;}
+.qna-wrap h6 {font-size:20px; padding: 24px 0; position: relative; color:#000; font-weight: 400; border-bottom:1px solid #ddd; cursor:pointer; transition:all 0.3s;}
+.qna-wrap h6:after {content:""; display: block; position: absolute; background: url('../img/icon/i_qna_arr.png'); background-position:0 -11px; width: 20px; height: 11px; right:30px; top:31px;}
+.qna-wrap h6.ui-state-active {background-color: #4171a8; color:#fff;}
+.qna-wrap h6.ui-state-active:after {background-position: 0 0;}
 .qna-wrap h6:before {content:"Q"; display: inline-block; font-size:18px; position: relative; top:-2px; padding:0 24px 0 22px ;}
 .qna-wrap > div {border-bottom:1px solid #ddd; padding: 36px 0;}
 .qna-wrap > div p {font-size: 18px; position: relative; padding: 0 65px; line-height: 1.6;}
@@ -553,9 +561,12 @@ figure {margin: 0; padding: 0;}
 .board-post dl dt {padding-left: 24px; width: 70px; color:#888888;}
 .board-post dl dd {width: 1175px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
 
-.table-col.map tbody tr td:first-child {padding-left: 24px;}
-.table-col.map tbody tr td figure {width: 48px; float: left; margin-right: 12px;}
-.table-col.map tbody tr td span {float: left; height: 48px; line-height: 48px;}
+.table-col.map tbody tr td:first-child > figure {width: 48px; float: left; margin-right: 12px; margin-left: 48px; }
+.table-col.map tbody tr td > span {float: left; height: 48px; line-height: 48px;}
+.table-col.map tbody tr td > ul li strong {color:#004e96; display: inline-block; padding-right: 10px;}
+.table-col.map tbody tr td > ul.split li:after {float:none; display:block; clear:both; content:"";}
+.table-col.map tbody tr td > ul.split li strong {float: left; width: 75px; }
+.table-col.map tbody tr td > ul.split li span {float: left; width: calc(100% - 90px);}
 
 #map:after {float:none; display:block; clear:both; content:"";}
 #map ul {float: right; margin-top: 24px;}

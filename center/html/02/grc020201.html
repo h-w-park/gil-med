@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- Scripts -->
+    <script src="../../js/jquery-2.2.3.min.js"></script>
+    <script src="../../js/jquery-ui.js"></script>
+</head>
+<body>
+<div class="wrap">
+
+    <div class="content">
+        <div class="section">
+            <div class="title">
+                <h3 class="page-tit">진료결과 상세조회</h3>
+                <p class="page-tit__desc"> </p>
+            </div>
+            
+            <div class="context">
+
+				<div class="search-area">
+					<div class="search-tab">
+						<ul>
+							<li class="active"><a href="">3개월</a></li>
+							<li><a href="">6개월</a></li>
+							<li><a href="">1년</a></li>
+						</ul>
+					</div>
+					<div class="search-input cal">
+						<input type="text" placeholder="환자명" style="width:164px;">
+					</div>  
+					<div class="search-input cal">
+						<input type="text" placeholder="생년월일" style="width:164px;">
+					</div> 
+
+					<div class="search-input"> 
+						<button class="btn-search">검색</button>
+					</div>
+				</div>
+
+			
+				<ul class="tab mt_48">
+					<li><a href="#" class="on">검사</a></li>
+					<li><a href="#">수술기록</a></li>
+					<li><a href="#">투약내역</a></li>
+					<li><a href="#">회신서</a></li>
+				</ul>
+
+
+				
+				<div class="tab_sub">
+					<ul>
+						<li><a href="#tab1">박애</a></li>
+						<li><a href="#tab2">봉사</a></li>
+						<li><a href="#tab3">애국</a></li>
+						<li><a href="#tab4">가천길<br>재단</a></li>
+					</ul>
+
+					<div id="tab1">
+					</div>
+					<div id="tab2">
+					</div>
+					<div id="tab3">
+					</div>
+					<div id="tab4">
+					</div>
+				</div>
+				
+				<div class="table-col">
+					<table>
+						<colgroup>
+							<col>
+						</colgroup>
+						<thead>
+							<tr>
+								<th>접수일</th>
+								<th>검사명</th>
+								<th>검사결과</th>
+								<th>직전결과</th>
+								<th>참고치</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>2020-01-20</td>
+								<td>Hb</td>
+								<td>9.6</td>
+								<td>10.1</td>
+								<td>13~17g/dL</td>
+							</tr>
+							<tr>
+								<td>2020-01-20</td>
+								<td>Hb</td>
+								<td>9.6</td>
+								<td>10.1</td>
+								<td>13~17g/dL</td>
+							</tr>
+							<tr>
+								<td>2020-01-20</td>
+								<td>Hb</td>
+								<td>9.6</td>
+								<td>10.1</td>
+								<td>13~17g/dL</td>
+							</tr>
+							<tr>
+								<td>2020-01-20</td>
+								<td>Hb</td>
+								<td>9.6</td>
+								<td>10.1</td>
+								<td>13~17g/dL</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div class="paging">
+					<a href="javascript:;" class="first"></a>
+					<a href="javascript:;" class="prev"></a>
+					<strong>1</strong>
+					<a href="javascript:;">2</a>
+					<a href="javascript:;">3</a>
+					<a href="javascript:;">4</a>
+					<a href="javascript:;">5</a>
+					<a href="javascript:;">6</a>
+					<a href="javascript:;">7</a>
+					<a href="javascript:;">8</a>
+					<a href="javascript:;">9</a>
+					<a href="javascript:;">10</a>
+					<a href="javascript:;" class="next"></a>
+					<a href="javascript:;" class="last"></a>
+				</div>
+
+
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="../../js/ui.js"></script>
+</body>
+</html>

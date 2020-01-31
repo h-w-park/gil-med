@@ -59,7 +59,7 @@ fieldset, img{border:none;}
 legend, caption{display:none}
 table { border-collapse: collapse;}
 .blind{overflow:hidden;position:absolute;left:-1000%;top:0;width:0;height:0;font-size:0;line-height:0;}
-input, select {font-family:Lato, "NotoSansKR", '맑은고딕', Malgun Gothic, Dotum, "돋움", verdana, sans-serif;}
+input, select, button {font-family:Lato, "NotoSansKR", '맑은고딕', Malgun Gothic, Dotum, "돋움", verdana, sans-serif;}
 /* Link Css */
 a{cursor:pointer; overflow:hidden;color:#666;text-decoration:none}
 a:link,  a:visited,  a:active {text-decoration:none}
@@ -174,18 +174,26 @@ figure {margin: 0; padding: 0;}
 @media only screen and (max-width: 1890px) {
 }
 
+.w_50 {width: 50%;}
 
-
+.m_0 {margin: 0 auto;}
 .mt_0 {margin-top: 0px !important;}
+.mt_8 {margin-top: 8px !important;}
 .mt_10 {margin-top: 10px !important;}
 .mt_20 {margin-top: 20px !important;}
 .mt_24 {margin-top: 24px !important;}
 .mt_45 {margin-top: 45px !important;}
 .mt_48 {margin-top: 48px !important;}
-
+ 
 .mb_10 {margin-bottom: 10px !important;}
 .mb_20 {margin-bottom: 20px !important;}
 .mb_70 {margin-bottom: 70px !important;}
+
+.mr_10 {margin-right: 10px !important;}
+.mr_20 {margin-right: 20px !important;}
+.mr_30 {margin-right: 30px !important;}
+
+.ml_30 {margin-left: 30px !important;}
 
 .c_blue {color:#004e96;}
 .c_grey {color:#888;}
@@ -195,6 +203,7 @@ figure {margin: 0; padding: 0;}
 .pv_20 {padding: 0 20px !important;}
 .pv_30 {padding: 30px 0 !important;}
 .pl_20 {padding-left: 20px !important;}
+.pl_24 {padding-left: 24px !important;}
 .pb_70 {padding-bottom: 70px !important;}
 
 
@@ -206,6 +215,7 @@ figure {margin: 0; padding: 0;}
 .lh_14 {line-height: 1.4 !important;}
 .lh_16 {line-height: 1.6 !important;}
 .lh_18 {line-height: 1.8 !important;}
+.lh__34 {line-height: 34px !important;}
 
 .va_m {vertical-align: middle;}
 

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- Scripts -->
+    <script src="../../js/jquery-2.2.3.min.js"></script>
+    <script src="../../js/jquery-ui.js"></script>
+</head>
+<body>
+<div class="wrap">
+
+    <div class="front" style="background:url(../../img/bg/medical01.jpg) no-repeat 50% 0">
+        <h3 class="page-tit">진료과</h3>
+        <p class="page-tit__desc">병원 내 모든 진료과를 한눈에 보실 수 있습니다.</p>
+    </div>
+    <div class="content">
+
+        <div class="section">
+            <ul class="tab">
+                <li><a href="javascript:;" class="on">진료과소개</a></li>
+                <li><a href="javascript:;">센터</a></li>
+                <li><a href="javascript:;">클리닉</a></li>
+            </ul>
+            
+            <div class="context">
+                <ul class="medical-list medical01">
+                    <li class="list01">
+                        <span class="tit">가정의학과</span>
+                        <div class="active-menu">
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon01.png" alt="의료진"><span class="txt">의료진</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon02.png" alt="위치"><span class="txt">위치</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon03.png" alt="예약"><span class="txt">예약</span></a>
+                        </div>
+                    </li>
+                    <li class="list02">
+                        <span class="tit">감염내과</span>
+                        <div class="active-menu">
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon01.png" alt="의료진"><span class="txt">의료진</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon02.png" alt="위치"><span class="txt">위치</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon03.png" alt="예약"><span class="txt">예약</span></a>
+                        </div>
+                    </li>
+                    <li class="list03">
+                        <span class="tit">내분비대사내과</span>
+                        <div class="active-menu">
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon01.png" alt="의료진"><span class="txt">의료진</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon02.png" alt="위치"><span class="txt">위치</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon03.png" alt="예약"><span class="txt">예약</span></a>
+                        </div>
+                    </li>
+                    <li class="list04">
+                        <span class="tit">관절류마티스내과</span>
+                        <div class="active-menu">
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon01.png" alt="의료진"><span class="txt">의료진</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon02.png" alt="위치"><span class="txt">위치</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon03.png" alt="예약"><span class="txt">예약</span></a>
+                        </div>
+                    </li>
+                    <li class="list05">
+                        <span class="tit">방사선종양학과</span>
+                        <div class="active-menu">
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon01.png" alt="의료진"><span class="txt">의료진</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon02.png" alt="위치"><span class="txt">위치</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon03.png" alt="예약"><span class="txt">예약</span></a>
+                        </div>
+                    </li>
+                    <li class="list06">
+                        <span class="tit">비뇨의학과</span>
+                        <div class="active-menu">
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon01.png" alt="의료진"><span class="txt">의료진</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon02.png" alt="위치"><span class="txt">위치</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon03.png" alt="예약"><span class="txt">예약</span></a>
+                        </div>
+                    </li>
+                    <li class="list07">
+                        <span class="tit">산부인과</span>
+                        <div class="active-menu">
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon01.png" alt="의료진"><span class="txt">의료진</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon02.png" alt="위치"><span class="txt">위치</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon03.png" alt="예약"><span class="txt">예약</span></a>
+                        </div>
+                    </li>
+                    <li class="list08">
+                        <span class="tit">성형외과</span>
+                        <div class="active-menu">
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon01.png" alt="의료진"><span class="txt">의료진</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon02.png" alt="위치"><span class="txt">위치</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon03.png" alt="예약"><span class="txt">예약</span></a>
+                        </div>
+                    </li>
+                    <li class="list09">
+                        <span class="tit">소아심장과</span>
+                        <div class="active-menu">
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon01.png" alt="의료진"><span class="txt">의료진</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon02.png" alt="위치"><span class="txt">위치</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon03.png" alt="예약"><span class="txt">예약</span></a>
+                        </div>
+                    </li>
+                    <li class="list10">
+                        <span class="tit">소아청소년과</span>
+                        <div class="active-menu">
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon01.png" alt="의료진"><span class="txt">의료진</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon02.png" alt="위치"><span class="txt">위치</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon03.png" alt="예약"><span class="txt">예약</span></a>
+                        </div>
+                    </li>
+                    <li class="list11">
+                        <span class="tit">소화기내과</span>
+                        <div class="active-menu">
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon01.png" alt="의료진"><span class="txt">의료진</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon02.png" alt="위치"><span class="txt">위치</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon03.png" alt="예약"><span class="txt">예약</span></a>
+                        </div>
+                    </li>
+                    <li class="list12">
+                        <span class="tit">신경과</span>
+                        <div class="active-menu">
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon01.png" alt="의료진"><span class="txt">의료진</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon02.png" alt="위치"><span class="txt">위치</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon03.png" alt="예약"><span class="txt">예약</span></a>
+                        </div>
+                    </li>
+                    <li class="list13">
+                        <span class="tit">신경외과</span>
+                        <div class="active-menu">
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon01.png" alt="의료진"><span class="txt">의료진</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon02.png" alt="위치"><span class="txt">위치</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon03.png" alt="예약"><span class="txt">예약</span></a>
+                        </div>
+                    </li>
+                    <li class="list14">
+                        <span class="tit">신장내과</span>
+                        <div class="active-menu">
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon01.png" alt="의료진"><span class="txt">의료진</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon02.png" alt="위치"><span class="txt">위치</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon03.png" alt="예약"><span class="txt">예약</span></a>
+                        </div>
+                    </li>
+                    <li class="list15">
+                        <span class="tit">심장내과</span>
+                        <div class="active-menu">
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon01.png" alt="의료진"><span class="txt">의료진</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon02.png" alt="위치"><span class="txt">위치</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon03.png" alt="예약"><span class="txt">예약</span></a>
+                        </div>
+                    </li>
+                    <li class="list16">
+                        <span class="tit">안과</span>
+                        <div class="active-menu">
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon01.png" alt="의료진"><span class="txt">의료진</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon02.png" alt="위치"><span class="txt">위치</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon03.png" alt="예약"><span class="txt">예약</span></a>
+                        </div>
+                    </li>
+                    <li class="list17">
+                        <span class="tit">외과</span>
+                        <div class="active-menu">
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon01.png" alt="의료진"><span class="txt">의료진</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon02.png" alt="위치"><span class="txt">위치</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon03.png" alt="예약"><span class="txt">예약</span></a>
+                        </div>
+                    </li>
+                    <li class="list18">
+                        <span class="tit">외상외과</span>
+                        <div class="active-menu">
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon01.png" alt="의료진"><span class="txt">의료진</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon02.png" alt="위치"><span class="txt">위치</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon03.png" alt="예약"><span class="txt">예약</span></a>
+                        </div>
+                    </li>
+                    <li class="list19">
+                        <span class="tit">이비인후과</span>
+                        <div class="active-menu">
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon01.png" alt="의료진"><span class="txt">의료진</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon02.png" alt="위치"><span class="txt">위치</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon03.png" alt="예약"><span class="txt">예약</span></a>
+                        </div>
+                    </li>
+                    <li class="list20"
+                    ><span class="tit">재활의학과</span>
+                    <div class="active-menu">
+                        <a href="javascript:;"><img src="../../img/icon/mdc_over_icon01.png" alt="의료진"><span class="txt">의료진</span></a>
+                        <a href="javascript:;"><img src="../../img/icon/mdc_over_icon02.png" alt="위치"><span class="txt">위치</span></a>
+                        <a href="javascript:;"><img src="../../img/icon/mdc_over_icon03.png" alt="예약"><span class="txt">예약</span></a>
+                    </div>
+                    </li>
+                    <li class="list21">
+                        <span class="tit">정신의학과</span>
+                        <div class="active-menu">
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon01.png" alt="의료진"><span class="txt">의료진</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon02.png" alt="위치"><span class="txt">위치</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon03.png" alt="예약"><span class="txt">예약</span></a>
+                        </div>
+                    </li>
+                    <li class="list22">
+                        <span class="tit">정형외과</span>
+                        <div class="active-menu">
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon01.png" alt="의료진"><span class="txt">의료진</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon02.png" alt="위치"><span class="txt">위치</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon03.png" alt="예약"><span class="txt">예약</span></a>
+                        </div>
+                    </li>
+                    <li class="list23">
+                        <span class="tit">종양내과</span>
+                        <div class="active-menu">
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon01.png" alt="의료진"><span class="txt">의료진</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon02.png" alt="위치"><span class="txt">위치</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon03.png" alt="예약"><span class="txt">예약</span></a>
+                        </div>
+                    </li>
+                    <li class="list24">
+                        <span class="tit">치과</span>
+                        <div class="active-menu">
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon01.png" alt="의료진"><span class="txt">의료진</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon02.png" alt="위치"><span class="txt">위치</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon03.png" alt="예약"><span class="txt">예약</span></a>
+                        </div>
+                    </li>
+                    <li class="list25">
+                        <span class="tit">피부과</span>
+                        <div class="active-menu">
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon01.png" alt="의료진"><span class="txt">의료진</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon02.png" alt="위치"><span class="txt">위치</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon03.png" alt="예약"><span class="txt">예약</span></a>
+                        </div>
+                    </li>
+                    <li class="list26">
+                        <span class="tit">혈액내과</span>
+                        <div class="active-menu">
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon01.png" alt="의료진"><span class="txt">의료진</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon02.png" alt="위치"><span class="txt">위치</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon03.png" alt="예약"><span class="txt">예약</span></a>
+                        </div>
+                    </li>
+                    <li class="list27">
+                        <span class="tit">호흡기알레르기내과</span>
+                        <div class="active-menu">
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon01.png" alt="의료진"><span class="txt">의료진</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon02.png" alt="위치"><span class="txt">위치</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon03.png" alt="예약"><span class="txt">예약</span></a>
+                        </div>
+                    </li>
+                    <li class="list28">
+                        <span class="tit">혈관외과</span>
+                        <div class="active-menu">
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon01.png" alt="의료진"><span class="txt">의료진</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon02.png" alt="위치"><span class="txt">위치</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon03.png" alt="예약"><span class="txt">예약</span></a>
+                        </div>
+                    </li>
+                    <li class="list29">
+                        <span class="tit">흉부외과</span>
+                        <div class="active-menu">
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon01.png" alt="의료진"><span class="txt">의료진</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon02.png" alt="위치"><span class="txt">위치</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon03.png" alt="예약"><span class="txt">예약</span></a>
+                        </div>
+                    </li>
+                    <li class="list30">
+                        <span class="tit">마취통증의학과</span>
+                        <div class="active-menu">
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon01.png" alt="의료진"><span class="txt">의료진</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon02.png" alt="위치"><span class="txt">위치</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon03.png" alt="예약"><span class="txt">예약</span></a>
+                        </div>
+                    </li>
+                    <li class="list31">
+                        <span class="tit">병리과</span>
+                        <div class="active-menu">
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon01.png" alt="의료진"><span class="txt">의료진</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon02.png" alt="위치"><span class="txt">위치</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon03.png" alt="예약"><span class="txt">예약</span></a>
+                        </div>
+                    </li>
+                    <li class="list32">
+                        <span class="tit">영상의학과</span>
+                        <div class="active-menu">
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon01.png" alt="의료진"><span class="txt">의료진</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon02.png" alt="위치"><span class="txt">위치</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon03.png" alt="예약"><span class="txt">예약</span></a>
+                        </div>
+                    </li>
+                    <li class="list33">
+                        <span class="tit">응급의학과</span>
+                        <div class="active-menu">
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon01.png" alt="의료진"><span class="txt">의료진</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon02.png" alt="위치"><span class="txt">위치</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon03.png" alt="예약"><span class="txt">예약</span></a>
+                        </div>
+                    </li>
+                    <li class="list34">
+                        <span class="tit">진단검사의학과</span>
+                        <div class="active-menu">
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon01.png" alt="의료진"><span class="txt">의료진</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon02.png" alt="위치"><span class="txt">위치</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon03.png" alt="예약"><span class="txt">예약</span></a>
+                        </div>
+                    </li>
+                    <li class="list35">
+                        <span class="tit">직업환경의학과</span>
+                        <div class="active-menu">
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon01.png" alt="의료진"><span class="txt">의료진</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon02.png" alt="위치"><span class="txt">위치</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon03.png" alt="예약"><span class="txt">예약</span></a>
+                        </div>
+                    </li>
+                    <li class="list36">
+                        <span class="tit">핵의학과</span>
+                        <div class="active-menu">
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon01.png" alt="의료진"><span class="txt">의료진</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon02.png" alt="위치"><span class="txt">위치</span></a>
+                            <a href="javascript:;"><img src="../../img/icon/mdc_over_icon03.png" alt="예약"><span class="txt">예약</span></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup">
+        <div class="popup-tit">알림</div>
+        <div class="popup-content">
+            <div class="context">
+                <p>예약건이 존재합니다.<br>나의 예약조회에서 확인하시겠습니까?</p>
+                </table>
+                <div class="btn-area">
+                    <a href="javascript:;" class="btn-gray btn-sm"><span>취소</span></a>
+                    <a href="javascript:;" class="btn-blue btn-sm"><span>확인</span></a>
+                    <!--<a href="javascript:;" class="btn-white btn-sm"><span>수정</span></a>--> 
+                </div>
+            </div>
+            <button class="popup-close"><img src="../../img/common/btn_close.png" alt=""></button>
+        </div>
+    </div>
+    <div class="dimm"></div>
+
+</div>
+<script src="../../js/ui.js"></script>
+</body>
+</html>

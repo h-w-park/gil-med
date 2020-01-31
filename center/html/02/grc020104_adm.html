@@ -19,17 +19,16 @@
     <div class="content">
         <div class="section">
             <div class="title">
-                <h3 class="page-tit">진료결과 조회</h3>
-                <p class="page-tit__desc"> </p>
+                <h3 class="page-tit">진료예약확인</h3>
+                <p class="page-tit__desc">의뢰한 환자의 예약상태를 조회하실 수 있습니다.</p>
             </div>
             
             <div class="context">
 
                 <div class="info-section">
 					<ul  class="mt_0">
-						<li>진료결과는 진료일부터 최대 1년간 조회 가능합니다.</li>
-						<li>진료정보제공 동의한 경우에만 확인이 가능합니다. (회원 가입 후 병원이 변경된 경우 마이정보에서 회원정보 수정 후 조회하시기 바랍니다.)</li>
-						<li>회원가입 후 소속병원이 변경된 경우 마이정보에서 회원정보 수정 후 조회하시기 바랍니다.</li>
+						<li>의뢰한 환자의 예약상태를 조회하실 수 있습니다.</li>
+						<li>조회기간은 최대 1년 입니다.</li>
 					</ul>
                 </div>
 
@@ -51,7 +50,6 @@
 					</div> 
 
 					<div class="search-input"> 
-						<input type="text" placeholder="환자명 또는 등록번호로 조회" style="width:264px;">
 						<button class="btn-search">검색</button>
 					</div>
 				</div>
@@ -59,20 +57,19 @@
 
 				
 				<div class="table-col">
+					<p class="ta_r mb_20"><button class="btn_download">Excel 다운로드 <i></i></button></p>
+					
 					<table>
-						<colgroup>
-							<col>
-						</colgroup>
+						
 						<thead>
 							<tr>
-								<th>등록번호</th>
+								<th>접수일자</th>
 								<th>환자명</th>
 								<th>생년월일</th>
 								<th>성별</th>
-								<th>진료과</th>
-								<th>의료진</th>
-								<th>진료일자</th>
-								<th>회신동의여부</th>
+								<th>진행상태</th>
+								<th>의뢰요청</th>
+								<th>의뢰서</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -81,20 +78,18 @@
 								<td>홍길동</td>
 								<td>1986-04-15</td>
 								<td>남</td>
-								<td>가정의학과</td>
-								<td>성춘향</td>
-								<td>2020-01-22</td>
-								<td><span class="status y">Y</span></td>
+								<td>의뢰요청</td>
+								<td><strong class="doc"> 가정의학과 홍길동 교수</strong> <small class="date">2020-01-22</small></td>
+								<td><button class="btn_lookup">의뢰서 조회</button></td>
 							</tr>
 							<tr>
 								<td>2020-01-20</td>
-								<td>성춘향</td>
+								<td>홍길동</td>
 								<td>1986-04-15</td>
 								<td>남</td>
-								<td>가정의학과</td>
-								<td>홍길동</td>
-								<td>2020-01-22</td>
-								<td><span class="status n">N</span></td>
+								<td>의뢰요청</td>
+								<td><strong class="doc"> 가정의학과 홍길동 교수</strong> <small class="date">2020-01-22</small></td>
+								<td><button class="btn_lookup">의뢰서 조회</button></td>
 							</tr>
 						</tbody>
 					</table>

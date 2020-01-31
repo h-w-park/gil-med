@@ -119,9 +119,11 @@
 .table-col .link-view span{padding:0 2px 10px;background:url(../img/cs/line.jpg) repeat-x 0 100%;display:inline-block;}
 
 /* input */
-.inp-text{height:50px;line-height:50px;box-sizing:border-box;border:1px solid #ddd;padding-left:25px;font-size:18px;}
+.inp-text{height:50px;line-height:50px;box-sizing:border-box;border:1px solid #ddd;padding-left:25px;font-size:18px;} 
 .inp-text + .inp-text{margin-left:25px;}
-.inp-text.inp-readonly{background:#f9f9f9;color:#666;}
+.inp-text:read-only,
+.select-box.readonly select,
+.inp-text.inp-readonly{background-color:#f9f9f9;color:#666;}
 .select-box{display:inline-block;min-width:100px;}
 .select-box select{height:50px;-webkit-appearance:none;-moz-appearance:none;-o-appearance:none;appearance:none;background:#fff url(../img/common/ico_select_table.png) no-repeat 100% 0;border:1px solid #ddd;box-sizing:border-box;font-size:18px;padding-left:24px;width:100%;border-radius:0;}
 .inp-tell .space,
@@ -188,6 +190,8 @@ select::-ms-expand{display:none;}
 .search-area > *{display:inline-block;text-align:left;margin:0 6px;}
 .search-area .search-sort select{width:174px;height:60px;-webkit-appearance:none;-moz-appearance:none;-o-appearance:none;appearance:none;background:#fff url(../img/common/ico_select03.png) no-repeat 100% 0;border:1px solid #ddd;box-sizing:border-box;padding-left:22px;font-size:18px;}
 .search-area .search-input input{width:413px;box-sizing:border-box;border:1px solid #ddd;border-right:none;font-size:18px;padding-left:22px;height:60px;line-height:60px;}
+.search-area .search-input.cal input {border-right: 1px solid #ddd;}
+.search-area span.space {font-size:18px; line-height: 60px;}
 .search-area ::-webkit-input-placeholder{color:#666;}
 .search-area :-ms-input-placeholder{color:#666;}
 .search-area ::placeholder{color:#666;}
@@ -927,7 +931,7 @@ box-shadow: -7px -11px 20px -1px rgba(0,0,0,0.11);}
 .search-area .search-tab ul {display: table; border:1px solid #000;}
 .search-area .search-tab ul li { display: table-cell;  border-right: 1px solid #000; text-align: center;}
 .search-area .search-tab ul li:last-child {border-right: 0px;}
-.search-area .search-tab ul li a {background: #fff; height: 60px; min-width:130px; display: block; color:#000;}
+.search-area .search-tab ul li a {background: #fff; height: 58px; line-height: 58px; min-width:130px; display: block; color:#000; font-size:18px;}
 .search-area .search-tab ul li.active a {background: #004e96; color:#fff;}
 
 .info-section {border-top:1px solid #eee; padding-top: 42px;}
@@ -946,6 +950,13 @@ box-shadow: -7px -11px 20px -1px rgba(0,0,0,0.11);}
 .table-row table + small.info {font-size:16px; color: #888; line-height: 1.5; margin-top: 8px; display: block;}
 
 .table-col tr:hover td {background: #fafcfe;}
+.table-col tr td strong.doc,
+.table-col tr td small.date {display: block; text-align: center; font-size:16px;}
+.table-col tr td strong.doc {font-weight: 600; color: #333;}
 span.status {display: inline-block; width: 28px; height: 28px; line-height: 28px; border-radius:50%; color:#fff; text-align: center; font-size:14px;}
 span.status.y {background: #7fc241;}
 span.status.n {background: #9ca6b0;}
+
+.btn_download {width: 178px; height: 36px; border:1px solid #000; color:#000; line-height: 36px;}
+.btn_download i {display: inline-block; width: 16px; height: 16px;line-height: 16px; position: relative; background: url('../img/common/i_down.png'); margin-left: 5px; margin-top: 3px;}
+.btn_lookup {color: #fff; width: 104px; height:32px ; line-height: 32px; text-align: center; display: inline-block; border-radius:16px; font-size:16px; background:#909eab ;}

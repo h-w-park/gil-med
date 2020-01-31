@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- Scripts -->
+    <script src="../../js/jquery-2.2.3.min.js"></script>
+    <script src="../../js/jquery-ui.js"></script>
+</head>
+<body>
+<div class="wrap">
+
+    <div class="popup">
+        <div class="popup-tit">실명인증</div>
+        <div class="popup-content">
+            <div class="context">
+              
+				
+				<div class="rules-wrap">
+					<div class="rules-tit mt_0">고유식별번호 수집 ・ 이용에 동의합니다. (필수) </div>
+					<div class="rules" style="height:170px;">
+						<strong>[개인정보 수집 이용에 대한 안내]</strong>
+						<p>가천대 길병원(이하'병원'이라 함)귀하의 개인정보보호를 매우 중요시하며, [개인정보보호법 및 정보통신망 이용촉진 등에 관한 법률]을 준수하고 있습니다. 병원은 개인정보처리방침을 통하여 귀하께서 제공하시는 개인정보가 어떠한 용도와 방식으로 이용되고 있으며 개인정보보호를 위해 어떠한 조치가 취해지고 있는지 알려드립니다.</p>
+						<strong>[수집이용목적]</strong>
+					</div>
+					<div class="agree"><div class="inp-checkbox"><input type="checkbox" id="c1"><label for="c1">고유식별 수집 및 이용안내 동의</label></div></div>
+				</div>
+
+                <div class="table-row type2 mt_70">
+					<div class="table-must">필수입력항목<span class="txt-co-red">*</span></div>
+					<table class="form">
+						<colgroup>
+							<col style="width:180px;">
+							<col>
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>이름 <span class="txt-co-red">*</span></th>
+								<td><input type="text" class="inp-text" placeholder="이름입력"></td>
+							</tr>
+							<tr>
+								<th>환자 주민등록번호 <span class="txt-co-red">*</span></th>
+                                    <td><input type="text" class="inp-text" placeholder="앞 6자리 입력" style="width:180px"><span class="space">-</span><input type="text" class="inp-text" placeholder="뒤 7자리 입력" style="width:180px"></td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="btn-area">
+						<a href="javascript:;" class="btn-gray btn-mid"><span>닫기</span></a>
+						<a href="javascript:;" class="btn-blue btn-mid"><span>확인</span></a>
+					</div>
+				</div>
+
+            </div>
+            <button class="popup-close"><img src="../../img/common/btn_close.png" alt=""></button>
+        </div>
+    </div>
+    <div class="dimm"></div>
+
+</div>
+<script src="../../js/ui.js"></script>
+</body>
+</html>

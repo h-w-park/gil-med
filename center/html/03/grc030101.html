@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- Scripts -->
+    <script src="../../js/jquery-2.2.3.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+
+    <div class="content">
+        <div class="section">
+            <div class="title">
+                <h3 class="page-tit">협력 병(의)원 체결 신청서</h3>
+                <p class="page-tit__desc"> </p>
+            </div>
+            
+            <div class="context">
+
+				<div class="in-table-tit mt_0">주차장 규모</div>
+				<div class="table-row">
+					<div class="table-must">필수입력항목<span class="txt-co-red">*</span></div>
+					<table>
+						<colgroup>
+							<col style="width:203px">
+							<col style="width:430px">
+							<col style="width:203px">
+							<col style="width:430px">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>요양기관번호 <span class="txt-co-red">*</span></th>
+								<td><input type="text" class="inp-text" placeholder="요양기관번호 입력" style="width:368px"></td> 
+								<th>병원명 <span class="txt-co-red">*</span></th>
+								<td><input type="text" class="inp-text" placeholder="병원명 입력" style="width:368px"></td> 
+							</tr>
+							<tr>
+								<th>대표자 <span class="txt-co-red">*</span></th>
+								<td><input type="text" class="inp-text" placeholder="대표자 입력" style="width:368px"></td> 
+								<th>진료과목  <span class="txt-co-red">*</span></th>
+								<td><input type="text" class="inp-text" placeholder="진료과목 입력" style="width:368px"></td> 
+							</tr>
+							<tr>
+								<th>병원주소  <span class="txt-co-red">*</span></th>
+								<td colspan="3">
+									<input type="number" class="inp-text" placeholder="주소 입력" style="">
+								</td>
+							</tr>
+							<tr>
+								<th>전화번호  <span class="txt-co-red">*</span></th>
+								<td>
+									<div class="inp-tell">
+										<div class="select-box">
+											<select>
+												<option>010</option>
+											</select>
+										</div>
+										<span class="space">-</span> 
+										<input type="number" class="inp-text" style="width:110px"><span class="space">-</span> 
+										<input type="number" class="inp-text" style="width:110px">
+									</div>
+								</td>
+								<th>FAX번호  <span class="txt-co-red">*</span></th>
+								<td colspan="3">
+									<div class="inp-tell">
+										<div class="select-box">
+											<select>
+												<option>010</option>
+											</select>
+										</div>
+										<span class="space">-</span> 
+										<input type="number" class="inp-text" style="width:110px"><span class="space">-</span> 
+										<input type="number" class="inp-text" style="width:110px">
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th>병원구분  <span class="txt-co-red">*</span></th>
+								<td colspan="3" class="pv_30 pl_24 lh__34">
+									<div class="inp-checkbox dis_ib mr_30">
+										<input type="checkbox" id="c6" tabindex="0"><label for="c6">상급종합</label> 
+									</div>
+									<div class="inp-checkbox dis_ib mr_30">
+										<input type="checkbox" id="c6" tabindex="0"><label for="c6">종합</label> 
+									</div>
+									<div class="inp-checkbox dis_ib mr_30">
+										<input type="checkbox" id="c6" tabindex="0"><label for="c6">병원</label> 
+									</div>
+									<div class="inp-checkbox dis_ib mr_30">
+										<input type="checkbox" id="c6" tabindex="0"><label for="c6">재활</label> 
+									</div>
+									<div class="inp-checkbox dis_ib mr_30">
+										<input type="checkbox" id="c6" tabindex="0"><label for="c6">요양</label> 
+									</div>
+									<div class="inp-checkbox dis_ib mr_30">
+										<input type="checkbox" id="c6" tabindex="0"><label for="c6">한방</label> 
+									</div>
+									<div class="inp-checkbox dis_ib mr_30">
+										<input type="checkbox" id="c6" tabindex="0"><label for="c6">의원</label> 
+									</div>
+									<div class="inp-checkbox dis_ib">
+										<input type="checkbox" id="c6" tabindex="0"><label for="c6">한의원</label> 
+									</div>
+								</td>
+							</tr>
+
+							<tr>
+								<th>허가신고일 <span class="txt-co-red">*</span></th>
+								<td><input type="text" class="inp-text" placeholder="허가신고일 입력" style="width:368px"></td> 
+								<th>홈페이지 <span class="txt-co-red">*</span></th>
+								<td><input type="text" class="inp-text" placeholder="홈페이지 입력" style="width:368px"></td> 
+							</tr>
+
+							<tr>
+								<th>병상 수  <span class="txt-co-red">*</span></th>
+								<td colspan="3" >
+									<input type="text" class="inp-text" placeholder="숫자만 입력" style="width:368px">
+									<div class="inp-checkbox dis_ib ml_30 mr_30 mt_8">
+										<input type="checkbox" id="c6" tabindex="0"><label for="c6">인공신장실</label> 
+									</div>
+									<div class="inp-checkbox dis_ib mr_30 mt_8">
+										<input type="checkbox" id="c6" tabindex="0"><label for="c6">중환자실</label> 
+									</div>
+									<div class="inp-checkbox dis_ib mr_30 mt_8">
+										<input type="checkbox" id="c6" tabindex="0"><label for="c6">격리병실</label> 
+									</div>
+									<div class="inp-checkbox dis_ib mt_8">
+										<input type="checkbox" id="c6" tabindex="0"><label for="c6">1인실</label> 
+									</div>
+								</td> 
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div class="in-table-tit">처치가능 항목 및 시설</div>
+				<div class="table-row">
+					<table>
+						<tbody>
+							<tr>
+								<td>
+									<div class="inp-checkbox dis_ib  mr_30 mt_8">
+										<input type="checkbox" id="c6" tabindex="0"><label for="c6">혈액투석기</label> 
+									</div>
+									<div class="inp-checkbox dis_ib mr_30 mt_8">
+										<input type="checkbox" id="c6" tabindex="0"><label for="c6">Ventilator</label> 
+									</div>
+									<div class="inp-checkbox dis_ib mr_30 mt_8">
+										<input type="checkbox" id="c6" tabindex="0"><label for="c6">CPM</label> 
+									</div>
+									<div class="inp-checkbox dis_ib mr_30 mt_8">
+										<input type="checkbox" id="c6" tabindex="0"><label for="c6">보봐스</label> 
+									</div>
+									<div class="inp-checkbox dis_ib mr_30 mt_8">
+										<input type="checkbox" id="c6" tabindex="0"><label for="c6">소아재활</label> 
+									</div>
+									<div class="inp-checkbox dis_ib mr_30 mt_8">
+										<input type="checkbox" id="c6" tabindex="0"><label for="c6">엠블런스</label> 
+									</div>
+									<div class="inp-checkbox dis_ib mr_30 mt_8">
+										<input type="checkbox" id="c6" tabindex="0"><label for="c6">엘리베이터</label> 
+									</div>
+									<div class="inp-checkbox dis_ib mr_30 mt_8">
+										<input type="checkbox" id="c6" tabindex="0"><label for="c6">장애인 화장실</label> 
+									</div>
+									<div class="inp-checkbox dis_ib mr_30 mt_8">
+										<input type="checkbox" id="c6" tabindex="0"><label for="c6">자동차보험</label> 
+									</div>
+									<div class="inp-checkbox dis_ib mt_8">
+										<input type="checkbox" id="c6" tabindex="0"><label for="c6">산재보험</label> 
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div class="in-table-tit">간병시스템 (재활, 요양 병원)</div>
+				<div class="table-row">
+					<table>
+						<colgroup>
+							<col style="width:203px">
+							<col style="width:430px">
+							<col style="width:203px">
+							<col style="width:430px">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>보호자 간병  <span class="txt-co-red">*</span></th>
+								<td>
+									<span class="inp-radio"><input type="radio" name="rdo1" id="rdo1-1"><label for="rdo1-1">유</label></span>
+									<span class="inp-radio"><input type="radio" name="rdo1" id="rdo1-2"><label for="rdo1-2">무</label></span>
+								</td>
+								<th>공동간병 <span class="txt-co-red">*</span></th>
+								<td>
+									<span class="inp-radio"><input type="radio" name="rdo2" id="rdo2-1"><label for="rdo2-1">유</label></span>
+									<span class="inp-radio"><input type="radio" name="rdo2" id="rdo2-2"><label for="rdo2-2">무</label></span>
+								</td>
+							</tr>
+							<tr>
+								<th>간호간병통합 서비스  <span class="txt-co-red">*</span></th>
+								<td colspan="3">
+									<span class="inp-radio"><input type="radio" name="rdo3" id="rdo3-1"><label for="rdo3-1">유</label></span>
+									<span class="inp-radio"><input type="radio" name="rdo3" id="rdo3-2"><label for="rdo3-2">무</label></span>
+								</td>
+							</tr>
+
+						</tbody>
+					</table>
+					<small class="info">※  작성하신 정보는 환자의뢰 목적 이외의 용도로 사용하지 않습니다. <br>※  접수하신 내역은 [진료예약확인]메뉴에서 조회 및 출력하실 수 있습니다.</small>
+				</div>
+
+
+				<div class="in-table-tit">실무담당자</div>
+				<div class="table-row">
+					<table>
+						<colgroup>
+							<col style="width:203px">
+							<col style="width:430px">
+							<col style="width:203px">
+							<col style="width:430px">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>이름 <span class="txt-co-red">*</span></th>
+								<td><input type="text" class="inp-text" placeholder="이름 입력" style="width:368px"></td> 
+								<th>부서(직급)  <span class="txt-co-red">*</span></th>
+								<td><input type="text" class="inp-text" placeholder="부서 및 직급 입력" style="width:368px"></td> 
+							</tr>
+							<tr>
+								<th>휴대폰  <span class="txt-co-red">*</span></th>
+								<td colspan="3">
+									<div class="inp-tell">
+										<div class="select-box">
+											<select>
+												<option>010</option>
+											</select>
+										</div>
+										<span class="space">-</span> 
+										<input type="number" class="inp-text" style="width:110px"><span class="space">-</span> 
+										<input type="number" class="inp-text" style="width:110px">
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+
+
+				<div class="in-table-tit">기타 사항</div>
+				<div class="table-row">
+					<table>
+						<colgroup>
+							<col style="width:203px">
+							<col style="width:430px">
+							<col style="width:203px">
+							<col style="width:430px">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>내용 작성 <span class="txt-co-red">*</span></th>
+								<td colspan="3">
+									<div class="textarea"><textarea name="" id=""placeholder="추가 내용이 있으시면 작성하여 주시기 바랍니다."  ></textarea></div>
+								</td> 
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div class="btn-area ta_c mt_48">
+					<a href="javascript:;" class="btn-gray btn-lg"><span>취소</span></a>
+					<a href="javascript:;" class="btn-blue btn-lg"><span>신청</span></a>
+				</div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="../../js/ui.js"></script>
+</body>
+</html>
