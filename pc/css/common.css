@@ -255,6 +255,7 @@ figure {margin: 0; padding: 0;}
 .mt_10 {margin-top: 10px !important;}
 .mt_20 {margin-top: 20px !important;}
 .mt_24 {margin-top: 24px !important;}
+.mt_40 {margin-top: 40px !important;}
 .mt_45 {margin-top: 45px !important;}
 .mt_48 {margin-top: 48px !important;}
 .mt_70 {margin-top: 70px !important;}
@@ -379,7 +380,7 @@ figure {margin: 0; padding: 0;}
 .rsv-alert-wrap {margin: 24px 0 0;}
 .rsv-alert-wrap:after {float:none; display:block; clear:both; content:"";}
 .rsv-alert-wrap dl dt {float: left; width: 44%;}
-.rsv-alert-wrap dl dt strong {display: block; font-size:16px; margin-bottom: 10px;}
+.rsv-alert-wrap dl dt strong {display: block; font-size:18px; margin-bottom: 10px;}
 .rsv-alert-wrap dl dt ul li {font-size:16px; margin-bottom: 5px;padding-left: 11px; color:#333;}
 .rsv-alert-wrap dl dt ul li:before {content:"·"; display: inline-block; position: relative; left:-10px;}
 
@@ -393,7 +394,7 @@ figure {margin: 0; padding: 0;}
 .rsv-alert-wrap dl dd .num strong {margin-top: 7px;}
 .rsv-alert-wrap dl dd .num span {margin-left: 15px; font-weight: 600;}
 .rsv-alert-wrap dl dd .num a {margin-left: 15px;}
-.rsv-alert-wrap dl dd figure {position: absolute; right:10px; top:15px;}
+.rsv-alert-wrap dl dd figure {position: absolute; right:10px; top:50%; margin-top: -34px;}
 
 .rsv-alert-wrap dl dt.w100 {float: none; width: 100%;}
 .rsv-alert-wrap dl dt.w100 + dd,
@@ -401,8 +402,6 @@ figure {margin: 0; padding: 0;}
 .rsv-alert-wrap dl dt.w100 + dd{float: left;}
 .rsv-alert-wrap dl dt.w100 + dd .num,
 .rsv-alert-wrap dl dt.w100 + dd + dd .num {top:28px;}
-.rsv-alert-wrap dl dt.w100 + dd figure,
-.rsv-alert-wrap dl dt.w100 + dd + dd figure {top:3px;}
 
 .context.bt {border-top:1px solid #ddd;}
 .text-wrap > ul {margin-top: 14px;}
@@ -413,10 +412,14 @@ figure {margin: 0; padding: 0;}
 .table-row table tbody th {}
 .table-row table tbody td {vertical-align: middle;}
 .table-row table tbody td > ul {padding: 15px 0;}
+.table-row table tbody td > strong {display: block; line-height: 32px; margin-bottom: 6px;}
 .table-row table tbody td > strong + ul {padding: 0;}
-.table-row table tbody td > ul li {font-size:18px; margin-bottom: 10px; padding-left: 11px; color:#333; line-height: 32px;}
+.table-row table tbody td > strong + ul li {line-height: 1.6;}
+.table-row table tbody td > ul li {font-size:18px; margin-bottom: 5px; padding-left: 11px; color:#333; line-height: 32px; position: relative;}
 .table-row table tbody td > ul li:last-child {margin-bottom: 0px;}
-.table-row table tbody td > ul li:before {content:"·"; display: inline-block; position: relative; left:-10px;}
+.table-row table tbody td > ul li:before {content:"·"; display: inline-block; position: absolute; left: 0px; line-height: 19px;}
+.table-row table tbody td > ul.fs_16 li {font-size:16px;}
+.table-row table tbody td > ul.fs_16 li:before {}
 
 .list-wrap {background:#f9f9f9; padding: 44px 32px; margin-top: 32px;}
 .list-wrap ul {margin-top: 22px;}

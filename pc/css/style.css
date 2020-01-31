@@ -65,7 +65,7 @@
 .table-must-area{text-align:right;font-size:15px;margin-bottom:15px;}
 .table-row > table{border-top:2px solid #000;color:#333;width:100%}
 .table-row > table tbody th{background:#f9f9f9;text-align:left;padding:15px 0 0 25px;color:#333;font-size:18px;line-height:50px;font-weight:400;border-bottom:1px solid #ddd;}
-.table-row > table tbody td{border-bottom:1px solid #ddd;padding:15px 0 15px 16px ;line-height:50px;font-size:18px;color:#333;}
+.table-row > table tbody td{border-bottom:1px solid #ddd;padding:15px 15px 15px 16px ;line-height:50px;font-size:18px;color:#333;}
 .table-row span.info-txt{display:inline-block;margin-left:15px;color:#888;}
 .table-row p.info-txt{margin-top:8px;line-height:1;}
 .table-row .dot-txt.info-txt{font-size:14px;color:#888;}
@@ -126,7 +126,7 @@
 .inp-text:read-only,.inp-text:disabled, .select-box select:disabled,
 .inp-text.inp-readonly{background-color:#f9f9f9;color:#666;}
 .select-box{display:inline-block;min-width:100px; position: relative;}
-.select-box select{height:50px; position: absolute;-webkit-appearance:none;-moz-appearance:none;-o-appearance:none;appearance:none;background:#fff url(../img/common/ico_select_table.png) no-repeat 100% 0;border:1px solid #ddd;box-sizing:border-box;font-size:18px;padding-left:24px;width:100%;border-radius:0;}
+.select-box select{height:50px; position: absolute;-webkit-appearance:none;-moz-appearance:none;-o-appearance:none;appearance:none;background:#fff url(../img/common/ico_select_table.png) no-repeat 100% 0;border:1px solid #ddd;box-sizing:border-box;font-size:18px;padding-left:24px;width:100%;border-radius:0;left:0;}
 .inp-tell .space,
 .inp-email .space{padding:0 8px}
 .inp-email .select-box{margin-left:10px;position:relative;top:-1px;}
@@ -159,7 +159,7 @@ input.inp-confirm:-ms-input-placeholder{color:#ff4949;}
 
 .section > .title{padding:48px 0 48px;height:auto;box-sizing:border-box;text-align:center;}
 .section > .title .page-tit{font-size:40px;font-weight:500;color:#000;line-height:1;}
-.section > .title .page-tit__desc{font-size:16px;color:#333;margin:26px 0 0;line-height:1;font-weight:400;}
+.section > .title .page-tit__desc{font-size:16px;color:#333;margin:24px 0 0;line-height:1.4;font-weight:400;}
 
 /* content */
 .content .section{width:1272px;margin:0 auto;padding:48px 0 180px;}
@@ -197,7 +197,7 @@ select::-ms-expand{display:none;}
 .search-area ::placeholder{color:#666;}
 .search-area .btn-search{text-indent:-99999em;background:url(../img/common/icon.png) no-repeat -162px -54px;width:60px;height:60px;}
 .search-area .search-sort + .btn-search{margin-left:-6px;}
-.tab + .search-area{margin-top:70px;}
+.tab + .search-area{margin-top:48px;}
 
 /* paging */
 .paging{text-align:center;margin-top:60px;}
@@ -516,7 +516,7 @@ select::-ms-expand{display:none;}
 .reserve-context .left-group .choice-day .next{width:58px;height:58px;background:url(../img/icon/calendar_arr.jpg) no-repeat 0 0;text-indent:-99999em;position:absolute;right:30px;top:0;transform:rotate(-180deg);}
 .reserve-context .left-group .choice-day .select-year{display:inline-block;position:relative;}
 .reserve-context .left-group .choice-day .select-month{display:inline-block;position:relative;}
-.reserve-context .left-group .choice-day .select-year select{height:50px;-webkit-appearance:none;-moz-appearance:none;-o-appearance:none;appearance:none;background:#fff url(../img/icon/calendar_arr2.jpg) no-repeat 100% 50%;border:none;box-sizing:border-box;font-size:18px;padding-right:60px;width:100%;border-radius:0;font-size:32px;color:#333;font-weight:500;width:132px;box-sizing:border-box;}
+.reserve-context .left-group .choice-day .select-year select{height:50px;-webkit-appearance:none;-moz-appearance:none;-o-appearance:none;appearance:none;background:#fff url(../img/icon/calendar_arr2.jpg) no-repeat 100% 50%;border:none;box-sizing:border-box;font-size:18px;padding-right:60px;width:100%;border-radius:0;font-size:32px;color:#333;font-weight:500;width:137px;box-sizing:border-box;}
 .reserve-context .left-group .choice-day .select-year:after{content:"년";font-size:22px;color:#333;position:absolute;top:13px;right:30px;}
 .reserve-context .left-group .choice-day .select-month select{height:50px;-webkit-appearance:none;-moz-appearance:none;-o-appearance:none;appearance:none;background:#fff url(../img/icon/calendar_arr2.jpg) no-repeat 100% 50%;border:none;box-sizing:border-box;font-size:18px;padding-right:60px;width:100%;border-radius:0;font-size:32px;color:#333;font-weight:500;margin-left:45px;width:100px;box-sizing:border-box;}
 .reserve-context .left-group .choice-day .select-month:after{content:"월";font-size:22px;color:#333;position:absolute;top:13px;right:30px;}
@@ -829,7 +829,7 @@ box-shadow: -7px -11px 20px -1px rgba(0,0,0,0.11);}
 .popup-content.bestDoc .list {width: 536px;position: relative; z-index:1; }
 .popup-content.bestDoc .list table {border-top:1px solid #333; width: 100%;}
 .popup-content.bestDoc .list table th,
-.popup-content.bestDoc .list table td {font-weight: 300;border-bottom:1px solid #333; padding: 20px 0 20px 20px;  font-size:18px;}
+.popup-content.bestDoc .list table td {font-weight: 300;border-bottom:1px solid #333; padding: 20px 0 20px 20px; height: 24px; line-height: 24px; font-size:18px;}
 .popup-content.bestDoc .list table th {font-weight: 600;   color:#333; width: 200px;width: 56px;display: block; float: left;}
 .popup-content.bestDoc .list table td {white-space: nowrap; overflow: hidden; text-overflow: ellipsis;   width: 440px; display: block;}
 .popup-content.bestDoc .list table td a {color:#000;}
@@ -908,7 +908,7 @@ box-shadow: -7px -11px 20px -1px rgba(0,0,0,0.11);}
 
 .context > .in-table-tit {font-size:26px;font-weight: 600; color: #000; margin-bottom: 18px; margin-top: 54px;} 
 
-
+.recap_sel span {height: 50px; line-height: 50px; font-size:18px; display: inline-block; margin-right: 12px;}
 
 
 
