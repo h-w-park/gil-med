@@ -894,8 +894,6 @@ box-shadow:-7px -11px 20px -1px rgba(0,0,0,0.11);}
 .join-complete .s-title{font-size:24px;color:#333;font-weight:400;}
 .join-complete p{margin:15px 0 60px;font-size:20px;line-height:30px;color:#333;}
 
-.context > .in-table-tit{font-size:26px;font-weight:600;color:#000;margin-bottom:18px;margin-top:54px;} 
-
 /* 로그인 관련 */
 .member-context{background:#fff;height:796px;box-sizing:border-box;padding:127px 96px;}
 .member-context .confirm-list{margin:0 -12px;}
@@ -936,6 +934,10 @@ box-shadow:-7px -11px 20px -1px rgba(0,0,0,0.11);}
 .accordion-rules > div > ul > li{font-weight:400;}
 .accordion-rules > div > ul > li > ul{margin:6px 0 9px;}
 .accordion-rules > div > ul > li > ul > li{font-weight:300}
+
+.context > .in-table-tit{font-size:26px;font-weight:600;color:#000;margin-bottom:18px;margin-top:54px;} 
+
+.recap_sel span {height: 50px; line-height: 50px; font-size:18px; display: inline-block; margin-right: 12px;}
 
 /* popup */
 /* 기본 */
