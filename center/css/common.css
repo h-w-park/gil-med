@@ -184,6 +184,7 @@ figure {margin: 0; padding: 0;}
 .mt_24 {margin-top: 24px !important;}
 .mt_45 {margin-top: 45px !important;}
 .mt_48 {margin-top: 48px !important;}
+.mt_70 {margin-top: 70px !important;}
  
 .mb_10 {margin-bottom: 10px !important;}
 .mb_20 {margin-bottom: 20px !important;}
@@ -194,6 +195,7 @@ figure {margin: 0; padding: 0;}
 .mr_30 {margin-right: 30px !important;}
 
 .ml_30 {margin-left: 30px !important;}
+.ml_48 {margin-left: 48px !important;}
 
 .c_blue {color:#004e96;}
 .c_grey {color:#888;}

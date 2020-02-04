@@ -327,7 +327,7 @@ figure {margin: 0; padding: 0;}
 .INFO_main > ul > li > a > span {display: block; text-align: center; font-size:26px; font-weight: 600; color:#333;}
  
 .INFO_main > ul > li .hid_m {position: absolute; width: 100%; height: 100%; background-color: #004e96; left:0; top:0; color:#fff; transition:all 0.3s; opacity:0;}
-.INFO_main > ul > li .hid_m:after {position: absolute;background-image:url('../img/icon/info_hos.png'); background-repeat:no-repeat; width: 190px; height: 190px;content:""; display: inline-block; right: -15px;  bottom: -34px; }
+.INFO_main > ul > li .hid_m:after {position: absolute;background-image:url('../img/icon/info_gh_in.png'); background-repeat:no-repeat; width: 190px; height: 190px;content:""; display: inline-block; right: -15px;  bottom: -34px; }
 .INFO_main > ul > li .hid_m h3 {display: inline-block; position: relative;color:#fff; font-size:34px; font-weight: 400; text-align: center; margin: 70px auto 20px; transform: translate(-50%, 0); left:50%;}
 .INFO_main > ul > li .hid_m h3 a {color: #fff;}
 .INFO_main > ul > li .hid_m h3:before {background: url('../img/common/bubble.png'); width: 64px; height: 50px; position: absolute; display: block; content:""; left:-40px; top:-30px;}
@@ -366,6 +366,23 @@ figure {margin: 0; padding: 0;}
 .INFO_main.cs > ul > li.doc > a p {position: absolute; padding-left: 56px;}
 .INFO_main.cs > ul > li.doc > a span {top:98px;}
 .INFO_main.cs > ul > li.doc > a p {top:138px; font-size:18px; line-height: 1.6;}
+
+.INFO_main.cs > ul > li .hid_m:after {background-image:url('../img/icon/info_cs_in.png'); width: 160px; height: 160px;}
+.INFO_main.cs > ul > li .hid_m.b2:after {background-position:-160px 0;}
+.INFO_main.cs > ul > li .hid_m.b3:after {background-position:-320px 0;}
+.INFO_main.cs > ul > li .hid_m.b4:after {background-position:-480px 0;}
+.INFO_main.cs > ul > li .hid_m.b6:after {background-position:-640px 0;}
+.INFO_main.cs > ul > li .hid_m.b7:after {background-position:-800px 0;}
+
+.INFO_main.cs > ul > li.doc .hid_m:after {background-image:url('../img/icon/info_cs_doc_in.png'); width: 232px; height: 249px; background-position:0 0 ; bottom:-10px;}
+.INFO_main.cs > ul > li.doc .hid_m h3 {position: absolute; left: 150px; margin: 140px 0 0;}
+
+.INFO_main.cs > ul > li .hid_m.b1 h3,
+.INFO_main.cs > ul > li .hid_m.b2 h3 { margin:135px auto 20px ;}
+.INFO_main.cs > ul > li .hid_m.b3 h3,
+.INFO_main.cs > ul > li .hid_m.b4 h3 { margin:60px auto 20px ;}
+.INFO_main.cs > ul > li .hid_m.b6 h3,
+.INFO_main.cs > ul > li .hid_m.b7 h3 { margin:50px auto 20px ;}
 
 .INFO_main.cs > ul > li {width: 300px; height: 300px;}
 .INFO_main.cs > ul > li:nth-child(3n) {margin-right: 24px;}
@@ -549,7 +566,6 @@ figure {margin: 0; padding: 0;}
 .tab_sub_dep2 > ul li a {display: inline-block; padding: 4px 0;}
 .tab_sub_dep2 > ul li:after {content:"";  width: 1px ; height: 10px ; background: #888; display: block; position: absolute; right:0; top:5px;}
 .tab_sub_dep2 > ul li:last-child:after {display: none;}
-
 .tab_sub_dep2 > ul li.ui-tabs-active a {border-bottom:1px solid #333; font-weight: 600; color:#000;}
 
 .tab_contents:after {float:none; display:block; clear:both; content:"";}
