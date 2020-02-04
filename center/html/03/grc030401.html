@@ -124,7 +124,7 @@
 				</div>
 
 				<div class="in-table-tit">경력</div>
-				<div class="table-row">
+				<div class="table-row career">
 					<table>
 						<colgroup>
 							<col style="width:203px">
@@ -141,11 +141,18 @@
 									<input type="text" class="inp-text" placeholder="종료일 입력" style="width:168px">
 								</td> 
 								<th>근무기관명</th>
-								<td><input type="text" class="inp-text" placeholder="근무기관 입력" style="width:368px"></td> 
+								<td>
+									<input type="text" class="inp-text" placeholder="근무기관 입력" style="width:348px">
+									<div class="btn-career-minus"><button></button></div>
+								</td> 
 							</tr>
 						</tbody>
 					</table>
 				</div>
+
+				<div class="in-table-info"><div class="btn-career-plus"><span>경력 추가하기</span> <button>+</button></div></div>
+
+
 
 				<div class="in-table-tit">기타 사항</div>
 				<div class="table-row">
@@ -193,6 +200,18 @@
     </div>
 
 </div>
-<script src="../../js/ui.js"></script>
+
+<script>
+	$(document).ready(function(){
+        $(".btn-career-plus").click(function(){
+            var markup = "<tr> <th>근무기간  <span class='txt-co-red'>*</span></th> <td> <input type='text' class='inp-text' placeholder='시작일 입력' style='width:168px'> <div class='space'>~</div> <input type='text' class='inp-text' placeholder='종료일 입력' style='width:168px'> </td> <th>근무기관명</th> <td> <input type='text' class='inp-text' placeholder='근무기관 입력' style='width:348px'> <div class='btn-career-minus'><button></button></div> </td> </tr>";
+            $(".career table tbody").append(markup);
+        });
+		$("body").on("click", ".btn-career-minus", function(){
+			$(this).parents("tr").remove();
+		});
+
+	});    
+</script>
 </body>
 </html>

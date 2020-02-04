@@ -126,7 +126,7 @@ height: auto;border: 1px solid transparent; float: none;} .slick-arrow.slick-hid
 .inp-radio + .inp-radio{margin-left:40px;}
 .inp-radio input[type=radio]:not(old){margin:0;padding:0;opacity:0;z-index:-999;position:absolute;} 
 .inp-radio input[type=radio]:not(old) + label{display:inline-block;padding-left:50px;position:relative;}
-.inp-radio input[type=radio]:not(old) + label:after{display:inline-block;width:34px;height:34px;background:url(../img/common/icon.png) no-repeat -54px 0;position:absolute;top:8px;left:0;content:""}
+.inp-radio input[type=radio]:not(old) + label:after{display:inline-block;width:34px;height:34px;background:url(../img/common/icon.png) no-repeat -54px 0;position:absolute;top:0px;left:0;content:""}
 .inp-radio input[type=radio]:not(old):checked + label:after{background:url(../img/common/icon.png) no-repeat 0 0;}
 .inp-checkbox{font-size:18px;color:#333;line-height:34px;position: relative;}
 .inp-checkbox input[type=checkbox]:not(old){margin:0;padding:0;opacity:0;z-index:-999;position:absolute;}
@@ -139,9 +139,11 @@ height: auto;border: 1px solid transparent; float: none;} .slick-arrow.slick-hid
 .checkbox input[type=checkbox]:not(old) + label:after{display:inline-block;width:34px;height:34px;background:url(../img/common/icon.png) no-repeat -54px -54px;position:absolute;top:0;left:0;content:""}
 .checkbox input[type=checkbox]:not(old):checked + label:after{background:url(../img/common/icon.png) no-repeat 0  -54px;}
 
+.inp-checkbox.solo {width: 34px; height: 34px; display: inline-block;}
+.inp-checkbox.solo input[type=checkbox]:not(old) + label {padding-left: 0; position: absolute;}
+.inp-checkbox.solo input[type=checkbox]:not(old) + label:after {left:-17px;}
+
 figure {margin: 0; padding: 0;}
-
-
 
 .no-list {width: 100%; padding: 120px 0 ; font-size:20px; text-align: center;}
 .medical07.medical-list li:hover .active-menu a img {margin: 0 auto;}
@@ -194,6 +196,8 @@ figure {margin: 0; padding: 0;}
 .mr_20 {margin-right: 20px !important;}
 .mr_30 {margin-right: 30px !important;}
 
+.ml_12 {margin-left: 12px !important;}
+.ml_20 {margin-left: 20px !important;}
 .ml_30 {margin-left: 30px !important;}
 .ml_48 {margin-left: 48px !important;}
 
@@ -204,10 +208,11 @@ figure {margin: 0; padding: 0;}
 .p_0 {padding: 0px !important;}
 .pv_20 {padding: 0 20px !important;}
 .pv_30 {padding: 30px 0 !important;}
+.pl_10 {padding-left: 10px !important;}
 .pl_20 {padding-left: 20px !important;}
 .pl_24 {padding-left: 24px !important;}
 .pb_70 {padding-bottom: 70px !important;}
-
+.pr_20 {padding-right: 20px !important;}
 
 .ta_l {text-align: left !important;}
 .ta_c {text-align: center !important;}
@@ -224,6 +229,8 @@ figure {margin: 0; padding: 0;}
 .fs_16 {font-size:16px !important;}
 .fs_18 {font-size:18px !important;}
 .fs_20 {font-size:20px !important;}
+.fs_24 {font-size:24px !important;}
+.fs_26 {font-size:26px !important;}
 .fs_34 {font-size:34px !important;}
 
 .dis_ib {display: inline-block;}
@@ -235,6 +242,9 @@ figure {margin: 0; padding: 0;}
  
 
 .btn {display: inline-block; box-sizing:border-box; text-align: center;}
-.btnS {height: 36px; line-height: 34px; min-width:110px; font-size:16px; font-weight: 600;}
+.btnS {height: 36px; line-height: 34px; min-width:110px; font-size:16px; font-weight: 600; padding:0 20px;}
 .btn.blue-o {color:#004e96; border:1px solid #004e96;}
  
+
+.btn.wtn {padding:0 45px 0 20px;background: url('../img/icon/wtn.png'); background-repeat:no-repeat; background-position: right 20px top 8px;}
+.btn.download {padding:0 45px 0 20px;background: url('../img/icon/download.png'); background-repeat:no-repeat; background-position: right 20px top 8px;}

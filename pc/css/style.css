@@ -939,7 +939,7 @@ box-shadow:-7px -11px 20px -1px rgba(0,0,0,0.11);}
 .confirm-list .confirm-list__item.member-confirm .form .select-box select{background-position:105% -5px;padding-left:20px;font-size:16px;}
 .confirm-list .confirm-list__item.member-confirm .form .inp-tell .space{padding:0 5px;display:inline-block;}
 .confirm-list .confirm-num{margin:14px 0 32px;}
-.confirm-list .btn-text-arr{background:url(../img/icon/blick_arr_blue.jpg) no-repeat 100% 0;padding-right:14px;font-size:16px;color:#004e96;font-weight:400;}
+.confirm-list .btn-text-arr{background:url(../img/icon/blick_arr_blue.jpg) no-repeat 100% 0; background-position: right 0 top 3px;padding-right:14px;font-size:16px;color:#004e96;font-weight:400;}
 
 .confirm-result{text-align:center;}
 .confirm-result .stitle-group .title{font-size:26px;color:#000;font-weight:400;}

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- Scripts -->
+    <script src="../../js/jquery-2.2.3.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+
+    <div class="content">
+        <div class="section">
+            <div class="title">
+                <h3 class="page-tit">일요검진</h3>
+                <p class="page-tit__desc"> </p>
+            </div>
+            
+            <div class="context">
+				<h4 class="fs_26 c_bk">협력 병·의원 원장님과 가족을 위한 일요검진</h4>
+				<p class="text mt_10">협력병, 의원 원장님들의 건강증진을 위하여 매년 2회 일요검진을 시행하고 있습니다.  <br> 신청을 원하시는 원장님과 가족분들께서는 신청서를 작성하시면 확인 후 신청서에 남겨주신 번호로 연락 드리도록 하겠습니다.</p>
+
+				<div class="info-sunday">
+					<ul class="cList ">
+						<li>대상 : 협력 병·의원 원장님과 가족</li>
+						<li>일자 : 년 2회 (2월중, 10월중) 세부일정은 춯루 공지예정</li>
+						<li>혜택 : 모든 검사 40% 감액, 선택검사 1종 무료 검진</li>
+						<li>신청방법 : 온라인신청 및 신청서 다운로드 후 팩스 또는 메일 발송</li>
+						<li>문      의 : 건강증진센터 오전(08:00~13:30) Tel.1577-2299→2→1
+				     <span>오후(13:30~17:00) Tel.032-460-3475</span></li>
+					</ul>
+					<ul class="cList ">
+						<li>팩스번호 : 건강증진센터 Fax.032-460-3248</li>
+						<li>메일주소 : <a href="mailto:hpc@gilhospital.com"> hpc@gilhospital.com</a></li>
+						<li>담 당 자 : 진료협력센터대외매니저 유미 <br> <span>Tel. 032-460-3975 / Mobile. 010-5283-9725</span></li>
+					</ul>
+				</div>
+
+
+				<div class="table-col">
+					<table>
+						<colgroup>
+							<col width="80px">
+							<col width="100px">
+							<col width="140px">
+							<col width="120px">
+							<col>
+							<col width="260px">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>NO</th>
+								<th colspan="2">검사항목</th>
+								<th>추가비용</th>
+								<th>검사항목의 필요성</th>
+								<th>비고</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td rowspan="3">1</td>
+								<td rowspan="3">PET-CT</td>
+								<td>뇌+토르소</td>
+								<td>130만원</td>
+								<td rowspan="3"> <p class="text ta_l pv_20">1) PET는 해부학적 변화가 일어나기 전 단게인 대사이상을 정확하게 찾아내어 암의 조기진단이 가능 <br> 2) 질환의 진행정도, 악성여부, 효율적인 치료방법결정에 유용한 검사로 신경계 질환(치매, 뇌혈관질환진단에 용이함</p></td>
+								<td rowspan="3">동위원소비용 30만원 선납 <br>2-3일전 취소 시 환불불가</td>
+							</tr>
+							<tr>
+								<td>토르소(몸통)</td>
+								<td>110만원</td>
+							</tr>
+							<tr>
+								<td>뇌</td>
+								<td>55만원</td>
+							</tr>
+							<tr>
+								<td rowspan="3">2</td>
+								<td rowspan="3">MRI (3.0T)</td>
+								<td>뇌</td>
+								<td>74만원</td>
+								<td rowspan="3"><p class="text ta_l pv_20">인체 장기의 병적인 모양, 종양의 위치, 림프절비대 등에 대한 진단을 내리기 위해 시행하는 방사선학적 검사방법으로 다방향 촬영이 가능한 초음파검사와 신진대사를 알수 있는 동위원소검사의 장점을 모두 가진 검사방법</p></td>
+								<td rowspan="3"></td>
+							</tr>
+							<tr>
+								<td>요추(허리)</td>
+								<td>74만원</td>
+							</tr>
+							<tr>
+								<td>경추(목)</td>
+								<td>74만원</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td colspan="2">뇌 MRI+MRA(뇌혈관조영술)</td>
+								<td>110만원</td>
+								<td><p class="text ta_l pv_20">고혈압, 두통, 뇌졸중 등 뇌혈관질환의 진단에 유용함</p></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td rowspan="8">4</td>
+								<td rowspan="8">MDCT</td>
+								<td>뇌</td>
+								<td>10만원</td>
+								<td><p class="text ta_l pv_20">만성두통, 피로, 현기증 등이 있는분 뇌경색, 뇌종괴 등을 진단하는데 유용함</p></td>
+								<td rowspan="8">*조영제CT <br> 2가지 동시 진행 불가 <br> (조영제CT간, 관상동맥, 복부) </td>
+							</tr>
+							<tr>
+								<td>폐</td>
+								<td>13만원</td>
+								<td><p class="text ta_l pv_20">암 및 폐질환의 가족력이 있거나, 석면 등의 위험한 작업장 근무자에게 권유, 조기폐암 진단에 유용함</p></td>
+							</tr>
+							<tr>
+								<td>간</td>
+								<td>25만원</td>
+								<td><p class="text ta_l pv_20">간암, 간 내에 종양과 같은 국소 질환(간농양, 단순낭종 등)이나 미만성 질환(지방간, 간경변)을 진단하는데 유용함.</p></td>
+							</tr>
+							<tr>
+								<td>경추(목)</td>
+								<td>13만원</td>
+								<td><p class="text ta_l pv_20">목뼈 부위의 퇴행성 변화로, 노화에 의해 척수강 주위의 인대나 척추관이 좁아지는 현상이나 관절염 등 진단하는데 유용함</p></td>
+							</tr>
+							<tr>
+								<td>요추(허리)</td>
+								<td>13만원</td>
+								<td><p class="text ta_l pv_20">심한 요통, 골다공증 환자, 엉치, 허벅지, 종아리의 당기고 저리는 통증이 있을 경우. 허리 뼈의 골절 및 탈구, 추간원판 탈출증, 추간원판 협착증, 종괴 등을 알수 있다.</p></td>
+							</tr>
+							<tr>
+								<td>심장(칼슘<br>스코어링 CT)</td>
+								<td>25만원</td>
+								<td><p class="text ta_l pv_20">고혈압, 심장질환의 가족력이 있는 분  <br>심혈관질환의 조기발견 및 예방목적</p></td>
+							</tr>
+							<tr>
+								<td>관상동맥</td>
+								<td>25만원</td>
+								<td><p class="text ta_l pv_20">심장근육에 피를 공급하는 관상동맥의 해부학적 모양과 협착여부를 동영상으로 촬영하는 진단기법으로 관상동맥의 질환이나 협심증, 심근경색 등을 진단하는데 유용함.</p></td>
+							</tr>
+							<tr>
+								<td>복부</td>
+								<td>74만원</td>
+								<td > <p class="text ta_l pv_20">간, 신장, 담낭, 췌장, 비장의 염증, 궤양, 암 등의 진단에 유용함.</p></td>
+							</tr>
+							<tr>
+								<td rowspan="6">6</td>
+								<td rowspan="6">초음파</td>
+								<td>전립선</td>
+								<td>15만원</td>
+								<td><p class="text ta_l pv_20">전립선비대증, 암, 기타 전립선 질환검사 (저녁식후 금식, 관장(돌코락스)필요)</p></td>
+								<td >화,수,목만 검사 가능</td>
+							</tr>
+							<tr>
+								<td>갑상선</td>
+								<td>17만원</td>
+								<td><p class="text ta_l pv_20">갑상선결절, 부종, 종양, 암 등을 진단하는 검사</p></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>유방</td>
+								<td>17만원</td>
+								<td><p class="text ta_l pv_20">유방의 결절, 물혹, 암진단 등에 유용</p></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>부인과</td>
+								<td>8만원</td>
+								<td><p class="text ta_l pv_20">자궁, 난소 외 기타 부속장기 검사</p></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>심장</td>
+								<td>22만원</td>
+								<td><p class="text ta_l pv_20">심근경색증, 협심증, 심장판막증, 심근병 등의 진단</p></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>경동맥</td>
+								<td>19만원</td>
+								<td><p class="text ta_l pv_20">고혈압, 당뇨, 고지혈증, 장기간흡연으로 인한 위험도를 예측하는데 유용함</p></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td rowspan="2">7</td>
+								<td rowspan="2">부인과</td>
+								<td>액상자궁세포검사</td>
+								<td>6만원</td>
+								<td rowspan="2"><p class="text ta_l pv_20">자궁경부암으로 발전될 위험도를 Type 별로 빠르고 정밀하게 예측해 내는 검사</p></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>HPV-DNA (인유두종바이러스검사)</td>
+								<td>10만원</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>8</td>
+								<td colspan="2">골밀도 촬영(BMD)</td>
+								<td>5만원</td>
+								<td><p class="text ta_l pv_20">골다공증, 골감소증, 골소실정도 확인</p></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>9</td>
+								<td colspan="2">동맥경화도검사</td>
+								<td>6만원</td>
+								<td><p class="text ta_l pv_20">동맥경화협착검사</p></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>10</td>
+								<td colspan="2">스트레스검사</td>
+								<td>3만원</td>
+								<td><p class="text ta_l pv_20">심장의 반응속도 및 민감도를 측정하여 스트레스 수치 확인</p></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>11</td>
+								<td rowspan="7">기능의학</td>
+								<td>90종 음식<br>알레르기</td>
+								<td>25만원</td>
+								<td><p class="text ta_l pv_20">혈액검사로 한국인이 섭취하는 음식물 알러지를 간단하게 검사실시 정확한 진단으로 예방과 치료에 유용한 검사</p></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>12</td>
+								<td>유기산 검사</td>
+								<td>25만원</td>
+								<td><p class="text ta_l pv_20">지방산대사, 탄수화물대사에너지 생성 대사, 장내세군, 신경내분비 물질 의 균형상태화 미세영양 결핍 상태, 독성 물질 노출상태 등을 확인 하여 질병 진단 및 원인을 파악하여 질병을 예방하고 삶의 질을 향상</p></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>13</td>
+								<td>노화검사<br>(텔로미어)</td>
+								<td>30만원</td>
+								<td><p class="text ta_l pv_20">자신의 노화상태가 얼마나 빠르게 진행되는지를 파악하여 건강한 생 활습관 시작을 위한 동기부여 지표로 활용</p></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>14</td>
+								<td>장내세균</td>
+								<td>18만원</td>
+								<td><p class="text ta_l pv_20">유익균과 유해균의 양을 분석하여 장내세균의 구성을 확인하고 식습 관 개선을 통한 장내 환경의 변화를 모니터링하는 맞춤서비스</p></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>15</td>
+								<td>NK면역세포<br>검사</td>
+								<td>만원</td>
+								<td><p class="text ta_l pv_20">면역세모 중 유일하게 암세포의 발생을 가장먼저 감지하며 암세포를 공격하여 파괴, 외부에서 침입한 병원균이나 바이러스 등에 저항하는 면역세포중의 하나로 활성도 수치 확인 검사 </p></td>
+								<td>(토요일, 공휴일전날 검사불가)</td>
+							</tr>
+							<tr>
+								<td>16</td>
+								<td>활성산소 항산화</td>
+								<td>7만원</td>
+								<td><p class="text ta_l pv_20">몸안의 독소 활성산소를 제거하는 황산화 능력을 확인</p></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>17</td>
+								<td>모발<br>미네랄검사</td>
+								<td>만원</td>
+								<td><p class="text ta_l pv_20">모발에 축적된 미네랄을 분석하여 영양불균형으로 인한 각종질환 및 중금속 오염정도를 파악하여 질병예방 및 건강을 증진시키는데 유용한 검사</p></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>20</td>
+								<td rowspan="2">갱년기</td>
+								<td>여성</td>
+								<td>3만원</td>
+								<td>여성호르몬</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>12</td>
+								<td>남성</td>
+								<td>8만원</td>
+								<td>남성호르몬</td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				
+
+				<div class="btn-area ta_c mt_48">
+					<a href="javascript:;" class="btn-blue btn-lg"><span>신청내역 확인하기</span></a>
+					<a href="javascript:;" class="btn-blue btn-lg"><span>신청하기</span></a>
+					<a href="javascript:;" class="btn-blue btn-lg"><span>신청서 다운로드</span></a>
+					<a href="javascript:;" class="btn-white btn-lg"><span>신청자 보기</span></a>
+				</div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="../../js/ui.js"></script>
+</body>
+</html>
