@@ -112,7 +112,7 @@ height: auto;border: 1px solid transparent; float: none;} .slick-arrow.slick-hid
 .footer .util ul li a {color:#fff; font-size:16px;}
 
 .footer .info {background: #32363a; padding: 30px 0;}
-.footer .info .info_more {float: left; width: calc(100% - 396px);}
+.footer .info .info_more {float: left; width: calc(100% - 420px);}
 .footer .info .info_more ul li {float: left; padding: 0 18px; position: relative;}
 .footer .info .info_more ul:after {clear: both; display: block; content:"";}
 .footer .info .info_more ul li:first-child {padding: 0 18px 0 0 ;}
@@ -120,7 +120,9 @@ height: auto;border: 1px solid transparent; float: none;} .slick-arrow.slick-hid
 .footer .info .info_more ul li a {color:rgba(255,255,255,.6);}
 .footer .info .info_more address  {margin-top: 28px; color:#fff;}
 .footer .info .info_more small {margin-top: 14px; color:rgba(255,255,255,.6); display: block; letter-spacing: 0.1em;} 
-.footer .info .info_site {float: right; width: 396px;}
+.footer .info .info_site{float:right;width:416px;text-align:right;}
+.footer .info .info_site select{border:1px solid #707375;width:188px;height:34px;box-sizing:border-box;padding-left:21px;color:#bfc0c0;-webkit-appearance:none;-moz-appearance:none;-o-appearance:none;appearance:none;background:#32363a url(../img/icon/ico_select.png) no-repeat 100% 0;}
+.footer .info .info_site select + select{margin-left:18px;}
 
 
 .inp-radio + .inp-radio{margin-left:40px;}
