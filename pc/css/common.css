@@ -783,6 +783,7 @@ figure {margin: 0; padding: 0;}
 .sitemap-wrap .depth-2 dl dd ul li a:hover {border-bottom:1px solid #000;}
 
 .policy_box h3 {color: #000; font-size:24px; margin-top: 40px;}
+.policy_box h4 {color: #000; font-size:20px; margin-top: 24px;}
 .policy_box .text {font-size:18px; line-height: 1.4; margin-top: 7px;}
 .policy_box p strong {color: #333; font-size:18px; margin-top: 14px; display: block;}
 .policy_box .oList {padding-left: 20px; margin-top: 6px;}
