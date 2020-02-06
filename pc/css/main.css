@@ -1,6 +1,6 @@
 @charset "utf-8";
 body {width: 100%; min-width:1440px;  }
-header {position: fixed; z-index:99999; }
+header {position: fixed; z-index:500; }
 .footer {height: auto;}
 
 
@@ -322,6 +322,8 @@ a.btn_more {padding-right:20px; text-decoration:underline; color:#fff; font-weig
 .gnb_wrap ul {float: left;margin-right: 30px;}
 .gnb_wrap .close {position: absolute; right:30px; top:30px; color:#fff;}
 
+.dimm,
+.popup {display: none;}
 
 
 @media only screen and (max-width: 1440px) {

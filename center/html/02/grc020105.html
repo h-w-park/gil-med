@@ -26,15 +26,15 @@
             <div class="context"> 
 
                 <div class="info-section">
-					<p class="text">회원가입이나 로그인 없이 이용이 가능한 진료의뢰입니다. <br> 아래에 작성해주신 진료의뢰내용의 연락처로 전화하여 진료예약을 완료합니다. <br> 진료회신 내용, 진료결과 확인은 회원 본인 인증시 가능합니다.(단, 환자가 진료정보제공 동의한 경우) <br> 의료급여 환자의 경우는 상급종합병원 진료를 위하여 병원급 의료기관에서 발급된 진료의뢰서가 필요합니다. </p>
-                   
+					<p class="text">회원가입이나 로그인 없이 이용이 가능한 진료의뢰입니다. <br> 아래에 작성해주신 진료의뢰내용의 연락처로 전화하여 진료예약을 완료합니다.<br> 진료회신 내용, 진료결과 확인은 회원 본인 인증시 가능합니다.(단, 환자가 진료정보제공 동의한 경우)<br> 의료급여 환자의 경우는 상급종합병원 진료를 위하여 병원급 의료기관에서 발급된 진료의뢰서가 필요합니다. </p>
 					<ul>
 						<li><strong>진료의뢰 확인시간 : 평일 08:00~17:00, 토요일 08:00~12:00</strong></li>
 						<li><strong>협력병∙의원 전용전화 : (진료의뢰) 032-460-3977 (응급실) 032-460-9119</strong></li>
 					</ul>
                 </div>
 
-
+				
+				
 				<div class="in-table-tit">진료의뢰내용</div>
 				<div class="table-row">
 					<div class="table-must">필수입력항목<span class="txt-co-red">*</span></div>
@@ -47,25 +47,26 @@
 						</colgroup>
 						<tbody>
 							<tr>
-								<th>예약번호 </th>
-								<td><input type="text" class="inp-text" value="G2468461" style="width:368px" readonly></td> 
+								<th>예약번호 <span class="txt-co-red">*</span></th>
+								<td><input type="text" class="inp-text" placeholder="" value="1234567" style="width:368px" readonly></td> 
 								<th>병원명 <span class="txt-co-red">*</span></th>
-								<td><input type="text" class="inp-text"value="가나다병원"  style="width:368px" readonly></td> 
+								<td><input type="text" class="inp-text" placeholder="" value="가나다병원"  style="width:368px" readonly></td> 
 							</tr>
 							<tr>
-								<th>입력의사명 </th>
-								<td><input type="text" class="inp-text" value="홍길동"  style="width:368px" readonly></td> 
+								<th>입력의사명 <span class="txt-co-red">*</span></th>
+								<td><input type="text" class="inp-text" placeholder="" value="홍길동"  style="width:368px" readonly></td> 
 								<th>의사면허번호 <span class="txt-co-red">*</span></th>
-								<td><input type="text" class="inp-text" value="123456"  style="width:368px" readonly></td> 
+								<td><input type="text" class="inp-text" placeholder="" value="fdsf1251354"  style="width:368px" readonly></td> 
 							</tr>
+
 							<tr>
-								<th>환자 이름 <span class="txt-co-red">*</span></th>
-								<td><input type="text" class="inp-text" value="홍길동" style="width:368px" readonly></td> 
+								<th>환자 이름  <span class="txt-co-red">*</span></th>
+								<td><input type="text" class="inp-text" placeholder=""  value="홍길동" style="width:368px" readonly></td> 
 								<th>주민등록번호 <span class="txt-co-red">*</span></th>
-								<td><input type="text" class="inp-text"  value="0000000" style="width:165px" readonly><span class="space">-</span><input type="text" class="inp-text" value="0000000" style="width:165px" readonly></td>
+								<td><input type="text" class="inp-text" placeholder="앞 6자리 입력" style="width:168px" readonly><span class="space">-</span><input type="text" class="inp-text" placeholder="뒤 7자리 입력" style="width:168px" readonly></td>
 							</tr>
 							<tr>
-								<th>휴대폰 <span class="txt-co-red">*</span></th> 
+								<th>휴대폰 <span class="txt-co-red">*</span></th>
 								<td>
 									<div class="inp-tell">
 										<div class="select-box">
@@ -74,8 +75,8 @@
 											</select>
 										</div>
 										<span class="space">-</span> 
-										<input type="number" class="inp-text" style="width:110px"><span class="space">-</span> 
-										<input type="number" class="inp-text" style="width:110px">
+										<input type="number" class="inp-text" style="width:105px"><span class="space">-</span> 
+										<input type="number" class="inp-text" style="width:105px">
 									</div>
 								</td>
 								<th>심층진찰여부</th>
@@ -87,15 +88,15 @@
 							<tr>
 								<th>희망진료과목</th>
 								<td>
-									<input type="text" class="inp-text" placeholder="희망진료과목 입력" style="width:368px">
+									<input type="number" class="inp-text" placeholder="희망진료과목 입력" style="width:368px">
 								</td>
 								<th>희망진료의사명</th>
 								<td>
-									<input type="text" class="inp-text" placeholder="희망진료의사명 입력" style="width:368px">
+									<input type="number" class="inp-text" placeholder="희망진료의사명 입력" style="width:368px">
 								</td>
 							</tr>
 							<tr>
-								<th>상태 및 내용 <span class="txt-co-red">*</span></th>
+								<th>상태 및 내용 </th>
 								<td colspan="3">
 									<div class="select-box mb_10" style="width:800px;">
 										<select>
@@ -123,7 +124,6 @@
 					</table>
 				</div>
 
-
 				<div class="in-table-tit">의료기관</div>
 				<div class="table-row">
 					<div class="table-must">필수입력항목<span class="txt-co-red">*</span></div>
@@ -135,29 +135,28 @@
 							<col style="width:430px">
 						</colgroup>
 						<tbody>
-							
 							<tr>
-								<th>입력의사명 </th>
-								<td><input type="text" class="inp-text" value="홍길동"  style="width:368px" readonly></td> 
+								<th>입력의사명 <span class="txt-co-red">*</span></th>
+								<td><input type="text" class="inp-text" placeholder="이름 입력" style="width:368px" readonly></td> 
 								<th>의사면허번호 <span class="txt-co-red">*</span></th>
-								<td><input type="text" class="inp-text" value="123456"  style="width:368px" readonly></td> 
+								<td><input type="text" class="inp-text" placeholder="이름 입력" style="width:368px" readonly></td> 
 							</tr>
 							<tr>
 								<th>병원명 <span class="txt-co-red">*</span></th>
-								<td><input type="text" class="inp-text"value="가나다병원"  style="width:368px" readonly></td> 
-								<th>병원전화번호 <span class="txt-co-red">*</span></th>
+								<td><input type="text" class="inp-text" placeholder="이름 입력" style="width:368px" readonly></td> 
+								<th>병원전화번호 <span class="txt-co-red">*</span></th> 
 								<td>
 									<div class="inp-tell">
-										<div class="select-box readonly">
+										<div class="select-box">
 											<select>
-												<option>010</option>
+												<option>02</option>
 											</select>
 										</div>
 										<span class="space">-</span> 
-										<input type="number" class="inp-text" style="width:110px" readonly><span class="space">-</span> 
-										<input type="number" class="inp-text" style="width:110px" readonly>
+										<input type="number" class="inp-text" style="width:105px" readonly><span class="space">-</span> 
+										<input type="number" class="inp-text" style="width:105px" readonly>
 									</div>
-								</td>
+								</td> 
 							</tr>
 							<tr>
 								<th>예약현황 SMS회신</th>
@@ -168,14 +167,14 @@
 								<th>휴대폰 <span class="txt-co-red">*</span></th> 
 								<td>
 									<div class="inp-tell">
-										<div class="select-box readonly">
+										<div class="select-box">
 											<select>
 												<option>010</option>
 											</select>
 										</div>
 										<span class="space">-</span> 
-										<input type="number" class="inp-text" style="width:110px" readonly><span class="space">-</span> 
-										<input type="number" class="inp-text" style="width:110px" readonly>
+										<input type="number" class="inp-text" style="width:105px" readonly><span class="space">-</span> 
+										<input type="number" class="inp-text" style="width:105px" readonly>
 									</div>
 								</td>
 							</tr>
@@ -189,17 +188,15 @@
 							</tr>
 						</tbody>
 					</table>
-					<small class="info">※  작성하신 정보는 환자의뢰 목적 이외의 용도로 사용하지 않습니다. <br>※  접수하신 내역은 [진료예약확인]메뉴에서 조회 및 출력하실 수 있습니다.</small>
+					<small class="info">※  작성하신 정보는 환자의뢰 목적 이외의 용도로 사용하지 않습니다. </small>
 				</div>
 
 				<div class="btn-area ta_c mt_48">
 					<a href="javascript:;" class="btn-gray btn-lg"><span>의뢰취소</span></a>
-					<a href="javascript:;" class="btn-blue btn-lg"><span>의뢰서 수정</span></a>
+					<a href="javascript:;" class="btn-grey btn-lg"><span>의뢰서 수정</span></a>
 					<a href="javascript:;" class="btn-blue btn-lg"><span>의뢰서 출력</span></a>
 					<a href="javascript:;" class="btn-white btn-lg"><span>목록</span></a>
 				</div>
-
-
 
             </div>
         </div>

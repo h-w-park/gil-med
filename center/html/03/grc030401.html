@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- Scripts -->
+    <script src="../../js/jquery-2.2.3.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+
+    <div class="content">
+        <div class="section">
+            <div class="title">
+                <h3 class="page-tit">외래교수 신청서</h3>
+                <p class="page-tit__desc"> </p>
+            </div>
+            
+            <div class="context">
+
+				<div class="in-table-tit mt_0">고객정보</div>
+				<div class="table-row">
+					<div class="table-must">필수입력항목<span class="txt-co-red">*</span></div>
+					<table>
+						<colgroup>
+							<col style="width:203px">
+							<col style="width:430px">
+							<col style="width:203px">
+							<col style="width:430px">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>이름 <span class="txt-co-red">*</span></th>
+								<td><input type="text" class="inp-text" placeholder="이름 입력" style="width:368px"></td> 
+								<th>주민등록번호 <span class="txt-co-red">*</span></th>
+								<td><input type="text" class="inp-text" placeholder="앞 6자리 입력" style="width:168px"><span class="space">-</span><input type="text" class="inp-text" placeholder="뒤 7자리 입력" style="width:168px"></td>
+							</tr>
+							<tr>
+								<th>이메일 <span class="txt-co-red">*</span></th>
+								<td><input type="text" class="inp-text" placeholder="이메일 입력" style="width:368px"></td> 
+								<th>성별  <span class="txt-co-red">*</span></th>
+								<td>
+									<span class="inp-radio"><input type="radio" name="rdo1" id="rdo1-1"><label for="rdo1-1">남</label></span>
+									<span class="inp-radio"><input type="radio" name="rdo1" id="rdo1-2"><label for="rdo1-2">여</label></span>
+								</td>
+							</tr>
+							<tr>
+								<th>주소  <span class="txt-co-red">*</span></th>
+								<td colspan="3">
+									<input type="number" class="inp-text" placeholder="주소 입력" style="width:368px"> <a href="javascript:;" class="btn-blue btn-sm"><span>우편번호</span></a>
+									<p><input type="number" class="inp-text" placeholder="상세주소 입력" style="width: 1005px;"></p>
+								</td>
+							</tr>
+							<tr>
+								<th>병원명  <span class="txt-co-red">*</span></th>
+								<td><input type="text" class="inp-text" placeholder="이름 입력" style="width:368px"></td> 
+								<th>보직명  <span class="txt-co-red">*</span></th>
+								<td><input type="text" class="inp-text" placeholder="이름 입력" style="width:368px"></td> 
+							</tr>
+							<tr>
+								<th>병원 전화번호  <span class="txt-co-red">*</span></th>
+								<td >
+									<div class="inp-tell">
+										<div class="select-box">
+											<select>
+												<option>010</option>
+											</select>
+										</div>
+										<span class="space">-</span> 
+										<input type="number" class="inp-text" style="width:105px"><span class="space">-</span> 
+										<input type="number" class="inp-text" style="width:105px">
+									</div>
+								</td>
+								<th>FAX번호  <span class="txt-co-red">*</span></th>
+								<td colspan="3">
+									<div class="inp-tell">
+										<div class="select-box">
+											<select>
+												<option>010</option>
+											</select>
+										</div>
+										<span class="space">-</span> 
+										<input type="number" class="inp-text" style="width:105px"><span class="space">-</span> 
+										<input type="number" class="inp-text" style="width:105px">
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div class="in-table-tit">학력</div>
+				<div class="table-row">
+					<table>
+						<colgroup>
+							<col style="width:203px">
+							<col style="width:430px">
+							<col style="width:203px">
+							<col style="width:430px">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>학사  <span class="txt-co-red">*</span></th>
+								<td><input type="text" class="inp-text" placeholder="학사 입력" style="width:368px"></td> 
+								<th>석사</th>
+								<td><input type="text" class="inp-text" placeholder="석사 입력" style="width:368px"></td> 
+							</tr>
+							<tr>
+								<th>박사</th>
+								<td><input type="text" class="inp-text" placeholder="박사 입력" style="width:368px"></td> 
+								<th>세부 전공과목   <span class="txt-co-red">*</span></th>
+								<td><input type="text" class="inp-text" placeholder="전공 과목 입력" style="width:368px"></td> 
+							</tr>
+
+						</tbody>
+					</table>
+				</div>
+
+				<div class="in-table-tit">경력</div>
+				<div class="table-row career">
+					<table>
+						<colgroup>
+							<col style="width:203px">
+							<col style="width:430px">
+							<col style="width:203px">
+							<col style="width:430px">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>근무기간  <span class="txt-co-red">*</span></th>
+								<td>
+									<input type="text" class="inp-text" placeholder="시작일 입력" style="width:168px">
+									<div class="space">~</div>
+									<input type="text" class="inp-text" placeholder="종료일 입력" style="width:168px">
+								</td> 
+								<th>근무기관명</th>
+								<td>
+									<input type="text" class="inp-text" placeholder="근무기관 입력" style="width:348px">
+									<div class="btn-career-minus"><button></button></div>
+								</td> 
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div class="in-table-info"><div class="btn-career-plus"><span>경력 추가하기</span> <button>+</button></div></div>
+
+
+
+				<div class="in-table-tit">기타 사항</div>
+				<div class="table-row">
+					<table>
+						<colgroup>
+							<col style="width:203px">
+							<col style="width:430px">
+							<col style="width:203px">
+							<col style="width:430px">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>의사면허번호 <span class="txt-co-red">*</span></th>
+								<td><input type="text" class="inp-text" placeholder="면허번호 입력" style="width:368px"></td> 
+								<th>전문의 면허번호 <span class="txt-co-red">*</span></th>
+								<td><input type="text" class="inp-text" placeholder="전문의 번호 입력" style="width:368px"></td> 
+							</tr>
+							<tr>
+								<th>임용기간 </th>
+								<td colspan="3">
+									
+									<input type="text" class="inp-text" placeholder="시작일 입력" style="width:168px">
+									<div class="space">~</div>
+									<input type="text" class="inp-text" placeholder="종료일 입력" style="width:168px">
+								</td> 
+							</tr>
+							<tr>
+								<th>추가 입력란  <span class="txt-co-red">*</span></th>
+								<td colspan="3">
+									<div class="textarea"><textarea name="" id=""placeholder="경력사항 추가 또는 보충사항이 있으면 기록해 주시기 바랍니다."  ></textarea></div>
+								</td> 
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<p class="ta_c fs_18 mt_45">※  위 기재사항은 사실과 일치함을 확인하며, 본인은 귀 대학교의 외래교수임용을 신청합니다.</p>
+				<div class="btn-area ta_c mt_48">
+					<a href="javascript:;" class="btn-gray btn-lg"><span>취소</span></a>
+					<a href="javascript:;" class="btn-blue btn-lg"><span>신청</span></a>
+				</div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+	$(document).ready(function(){
+        $(".btn-career-plus").click(function(){
+            var markup = "<tr> <th>근무기간  <span class='txt-co-red'>*</span></th> <td> <input type='text' class='inp-text' placeholder='시작일 입력' style='width:168px'> <div class='space'>~</div> <input type='text' class='inp-text' placeholder='종료일 입력' style='width:168px'> </td> <th>근무기관명</th> <td> <input type='text' class='inp-text' placeholder='근무기관 입력' style='width:348px'> <div class='btn-career-minus'><button></button></div> </td> </tr>";
+            $(".career table tbody").append(markup);
+        });
+		$("body").on("click", ".btn-career-minus", function(){
+			$(this).parents("tr").remove();
+		});
+
+	});    
+</script>
+</body>
+</html>

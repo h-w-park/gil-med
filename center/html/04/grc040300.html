@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- Scripts -->
+    <script src="../../js/jquery-2.2.3.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+
+    <div class="content">
+        <div class="section">
+            <div class="title">
+                <h3 class="page-tit">공지사항</h3>
+                <p class="page-tit__desc"></p>
+            </div>
+            
+            
+            <ul class="tab">
+                <li><a href="javascript:;">진료의뢰회송시범사업</a></li>
+                <li><a href="javascript:;">국가진료정보교류사업</a></li>
+                <li><a href="javascript:;" class="on">심층진찰 시범사업</a></li>
+                <li><a href="javascript:;">제안사항</a></li>
+            </ul>
+            <div class="context">
+                
+                <div class="content-section  bt_1">
+                    <h5 class="content-tit">심층진찰<br>시범사업이란?</h5>
+                    <div class="text-wrap">
+						<p class="text">중증·희귀난치 질환 중심으로 충분한 진료시간 동안 의료 서비스 및 환자 만족도를 높이기 위한 정부 시범사업 입니다.</p>
+                    </div>
+                </div>
+
+                <div class="content-section">
+                    <h5 class="content-tit">심층진찰 <br>대상자</h5>
+                    <div class="text-wrap">
+						<p class="text">1단계 의료기관 (의원, 병원, 종합병원)에서 의뢰된 중증, 희귀난치질환의 진단 및 치료를 위해 의뢰된 환자 그 외 진단이 어려운 초진 환자 <br>* 시범사업 관련 동의서 작성 필수 </p>
+                    </div>
+                </div>		
+
+                <div class="content-section  bt_1">
+                    <h5 class="content-tit">심층진찰  <br>이용안내</h5>
+                    <div class="text-wrap">
+						<figure><img src="../../img/common/img_not5.jpg" alt=""></figure>
+                    </div>
+                </div>
+
+                <div class="content-section">
+                    <h5 class="content-tit">진료예약</h5>
+                    <div class="text-wrap">
+						<p class="text">1단계 의료기관 (의원, 병원, 종합병원)의 요양급여회송서(진료의뢰서)를 지참 후 진료협력센터를 통하여 예약</p>
+						<ul class="cList mt_10">
+							<li>진료협력센터 T.032-460-8212, FAX.032-469-7900</li>
+							<li>협력병원 및 의사 T.032-460-9000</li>
+						</ul>
+                    </div>
+                </div>		
+
+                <div class="content-section">
+                    <h5 class="content-tit">심층진찰 <br>의료진 안내</h5>
+                    <div class="text-wrap">
+						<div class="table-col mt_0">
+							<table>
+								<colgroup>
+									<col width="190px">
+									<col width="150px">
+									<col width="*">
+									<col width="150px">
+								</colgroup>
+								<thead>
+									<tr>
+										<th>진료과</th>
+										<th>교수</th>
+										<th>주요기능</th>
+										<th>심층진찰시간</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>피부과</td>
+										<td>노주영</td>
+										<td class="pl_20">
+											<ul class="cList">
+												<li>건선</li>
+												<li>자가면역성 수포성 질환(만성,재발 수포)</li>
+											</ul>
+										</td>
+										<td>화 오전 <br>목 오전</td>
+									</tr>
+									<tr>
+										<td>척추센터</td>
+										<td>이상구</td>
+										<td class="pl_20">
+											<ul class="cList">
+												<li>척추종양</li>
+												<li>후종인대골화증</li>
+											</ul>
+										</td>
+										<td> 수 오전 <br>금 오전 </td>
+									</tr>
+									<tr>
+										<td rowspan="2">혈액내과</td>
+										<td>박진희</td>
+										<td rowspan="2" class="pl_20">
+											<ul class="cList">
+												<li>백혈병</li>
+												<li>골수형성이상증후군</li>
+												<li>재생불량빈혈</li>
+												<li>혈구감소증 및 증가증</li>
+												<li>희귀혈액질환</li>
+											</ul>
+										</td>
+										<td>월 오후 <br>목 오후 </td>
+									</tr>
+									<tr>
+										<td>김혁</td>
+										<td>수 오전 <br>금 오전 </td>
+									</tr>
+									<tr>
+										<td rowspan="2">폐센터</td>
+										<td>정성환</td>
+										<td class="pl_20">
+											<ul class="cList">
+												<li>폐섬유화증</li>
+											</ul>
+										</td>
+										<td> 월 오후 </td>
+									</tr>
+									<tr> 
+										<td>강신명</td>
+										<td class="pl_20">
+											<ul class="cList">
+												<li>폐암</li>
+											</ul>
+										</td>
+										<td> 월 오전 / 화 오후 <br>금 오전 </td>
+									</tr>
+									<tr>
+										<td>산부인과</td>
+										<td>전승주</td>
+										<td class="pl_20">
+											<ul class="cList">
+												<li>고프로락틴혈증</li>
+												<li>터너증후군</li>
+											</ul>
+										</td>
+										<td> 금 오전 </td>
+									</tr>
+									<tr>
+										<td>심장내과</td>
+										<td>신미승</td>
+										<td class="pl_20">
+											<ul class="cList">
+												<li>심근병증 (호흡곤란, 심비대)</li>
+											</ul>
+										</td>
+										<td>화 오후<br>목 오전</td>
+									</tr>
+									<tr>
+										<td>이비인후과</td>
+										<td>김동영</td>
+										<td class="pl_20">
+											<ul class="cList">
+												<li>두경부암</li>
+												<li>경부결핵</li>
+											</ul>
+										</td>
+										<td>월 오후 / 화 오후<br>목 오후 / 금 오전</td>
+									</tr>
+									<tr>
+										<td rowspan="2">류마티스내과</td>
+										<td>서미령</td>
+										<td  rowspan="2" class="pl_20">
+											<ul class="cList">
+												<li>류마티스관절염</li>
+												<li>강직성척추염</li>
+												<li>전신성 류마티스 질환 <br>(전신성홍반성루푸스, 전신경과증, 전신혈관염,  베체트, 기타 희귀류마티스 <br>질환 및 자가면역질환 등)</li>
+											</ul>
+										</td>
+										<td>화 오전 <br>금 오후 </td>
+									</tr>
+									<tr> 
+										<td>백한주</td>
+										<td>월 오후</td>
+									</tr>
+									<tr>
+										<td rowspan="2">신경과</td>
+										<td>성영희</td>
+										<td rowspan="2" class="pl_20">
+											<ul class="cList">
+												<li>파킨슨병</li>
+												<li>루게릭</li>
+												<li>중증근무력증</li>
+											</ul>
+										</td>
+										<td> 월 오후<br>
+금 오후
+</td>
+									</tr>
+									<tr>
+										<td>이광우</td>
+										<td> 월 오후
+</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+                    </div>
+                </div>	
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="../../js/ui.js"></script>
+</body>
+</html>

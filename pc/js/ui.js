@@ -1,13 +1,46 @@
+function history(){
+	$("a[href^='#']").click(function(e) {
+		e.preventDefault();
+		var position1 = $(".timeline").offset().top;
+		var position2 = $($(this).attr("href")).offset().top;
+		var position3 = position2 - position1;
+		var content = $(".timeline dl");
+		$(content).animate({
+			top: -position3
+		}, 500 );
+	});  
+}
+
+
+function popup(){
+	
+    $('.popup-close, .pop-close').on('click',function(e){
+		e.preventDefault();
+        $(this).closest('.popup').hide();
+        $('.dimm').hide();
+    });
+	$(".pop a[href^='#']").click(function(e) {
+		e.preventDefault();
+		var popup = $($(this).attr("href"));
+		var dim = $('.dimm');
+		$(popup ).show();
+        $('.dimm').show();
+
+	});
+
+}
+
+
+
 $(document).ready(function() {
+
+	popup();
+
     $('.doctor-like').on('click',function(){
         $(this).toggleClass('on');
     })
     var $winHei = $('body').height();
     $('.dimm').css('height',$winHei+'px');
-    $('.popup-close').on('click',function(){
-        $(this).closest('.popup').hide();
-        $('.dimm').hide();
-    });
 
 	$(window).on('scroll',function(){
         var scrX = $(window).scrollLeft()

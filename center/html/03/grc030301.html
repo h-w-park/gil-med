@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- Scripts -->
+    <script src="../../js/jquery-2.2.3.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+
+    <div class="content">
+        <div class="section">
+            <div class="title">
+                <h3 class="page-tit">일요검진</h3>
+                <p class="page-tit__desc"> </p>
+            </div>
+            
+            <div class="context">
+				<div class="in-table-tit mt_0">검진자 정보</div>
+				<div class="table-row">
+					<table>
+						<colgroup>
+							<col style="width:203px">
+							<col style="width:430px">
+							<col style="width:203px">
+							<col style="width:430px">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>병원명 <span class="txt-co-red">*</span></th>
+								<td><input type="text" class="inp-text" placeholder="병원명 입력" style="width:368px"></td> 
+								<th>의사명 <span class="txt-co-red">*</span></th>
+								<td><input type="text" class="inp-text" placeholder="이름 입력" style="width:368px"></td> 
+							</tr>
+							<tr>
+								<th>관계 <span class="txt-co-red">*</span></th>
+								<td>
+									<div class="select-box" style="width: 368px;">
+										<select>
+											<option>010</option>
+										</select>
+									</div>
+								</td> 
+								<th>수진자 성명 <span class="txt-co-red">*</span></th>
+								<td><input type="text" class="inp-text" placeholder="이름 입력" style="width:368px"></td> 
+							</tr>
+							<tr>
+								<th>전화번호  <span class="txt-co-red">*</span></th>
+								<td colspan="3">
+									<div class="inp-tell">
+										<div class="select-box">
+											<select>
+												<option>010</option>
+											</select>
+										</div>
+										<span class="space">-</span> 
+										<input type="number" class="inp-text" style="width:110px"><span class="space">-</span> 
+										<input type="number" class="inp-text" style="width:110px">
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th>주소  <span class="txt-co-red">*</span></th>
+								<td colspan="3">
+									<input type="number" class="inp-text" placeholder="준비물 수령지" style="width:368px"> <a href="javascript:;" class="btn-blue btn-sm"><span>우편번호</span></a>
+									<p><input type="number" class="inp-text" placeholder="상세주소 입력" style="width: 1005px;"></p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+		
+				<div class="in-table-tit ">검사 항목</div>
+				<div class="table-col">
+					<table>
+						<colgroup>
+							<col width="100px">
+							<col width="160px">
+							<col width="*">
+							<col width="340px">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>선택</th>
+								<th>부위</th>
+								<th>검사항목</th>
+								<th>금액(원)</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><div class="inp-checkbox solo"> <input type="checkbox" id="c6" tabindex="0"><label for="c6"> </label> </div></td>
+								<td>전신</td>
+								<td>PET-CT</td>
+								<td class="ta_r pr_20">780,000</td>
+							</tr>
+							<tr>
+								<td><div class="inp-checkbox solo"> <input type="checkbox" id="c6" tabindex="0"><label for="c6"> </label> </div></td>
+								<td>몸통</td>
+								<td>PET-CT</td>
+								<td class="ta_r pr_20">660,000</td>
+							</tr>
+							<tr>
+								<td><div class="inp-checkbox solo"> <input type="checkbox" id="c6" tabindex="0"><label for="c6"> </label> </div></td>
+								<td rowspan="5">뇌</td>
+								<td>PET-CT</td>
+								<td class="ta_r pr_20">330,000</td>
+							</tr>
+							<tr>
+								<td><div class="inp-checkbox solo"> <input type="checkbox" id="c6" tabindex="0"><label for="c6"> </label> </div></td>
+								<td>뇌 MRI</td>
+								<td class="ta_r pr_20">444,000</td>
+							</tr>
+							<tr>
+								<td><div class="inp-checkbox solo"> <input type="checkbox" id="c6" tabindex="0"><label for="c6"> </label> </div></td>
+								<td>뇌 MRI + MRA</td>
+								<td class="ta_r pr_20">660,000</td>
+							</tr>
+							<tr>
+								<td><div class="inp-checkbox solo"> <input type="checkbox" id="c6" tabindex="0"><label for="c6"> </label> </div></td>
+								<td>뇌 CT</td>
+								<td class="ta_r pr_20">60,000</td>
+							</tr>
+							<tr>
+								<td><div class="inp-checkbox solo"> <input type="checkbox" id="c6" tabindex="0"><label for="c6"> </label> </div></td>
+								<td>치매유전자검사</td>
+								<td class="ta_r pr_20">90,000</td>
+							</tr>
+							<tr>
+								<td><div class="inp-checkbox solo"> <input type="checkbox" id="c6" tabindex="0"><label for="c6"> </label> </div></td>
+								<td rowspan="4">소화기계</td>
+								<td>위내시경</td>
+								<td class="ta_r pr_20">42,000</td>
+							</tr>
+							<tr>
+								<td><div class="inp-checkbox solo"> <input type="checkbox" id="c6" tabindex="0"><label for="c6"> </label> </div></td>
+								<td>대장내시경</td>
+								<td class="ta_r pr_20">60,000</td>
+							</tr>
+							<tr>
+								<td><div class="inp-checkbox solo"> <input type="checkbox" id="c6" tabindex="0"><label for="c6"> </label> </div></td>
+								<td>수면</td>
+								<td class="ta_r pr_20">60,000</td>
+							</tr>
+							<tr>
+								<td><div class="inp-checkbox solo"> <input type="checkbox" id="c6" tabindex="0"><label for="c6"> </label> </div></td>
+								<td>수면 위대장</td>
+								<td class="ta_r pr_20">192,000</td>
+							</tr>
+							<tr>
+								<td><div class="inp-checkbox solo"> <input type="checkbox" id="c6" tabindex="0"><label for="c6"> </label> </div></td>
+								<td>폐</td>
+								<td>폐 CT</td>
+								<td class="ta_r pr_20">78,000</td>
+							</tr>
+							<tr>
+								<td><div class="inp-checkbox solo"> <input type="checkbox" id="c6" tabindex="0"><label for="c6"> </label> </div></td>
+								<td rowspan="2">심장, 관상동맥</td>
+								<td>심장관상동맥조영 CT</td>
+								<td class="ta_r pr_20">150,000</td>
+							</tr>
+							<tr>
+								<td><div class="inp-checkbox solo"> <input type="checkbox" id="c6" tabindex="0"><label for="c6"> </label> </div></td>
+								<td>심장초음파</td>
+								<td class="ta_r pr_20">132,000</td>
+							</tr>
+							<tr>
+								<td><div class="inp-checkbox solo"> <input type="checkbox" id="c6" tabindex="0"><label for="c6"> </label> </div></td>
+								<td>췌장</td>
+								<td>췌장CT</td>
+								<td class="ta_r pr_20">150,000</td>
+							</tr>
+							<tr>
+								<td><div class="inp-checkbox solo"> <input type="checkbox" id="c6" tabindex="0"><label for="c6"> </label> </div></td>
+								<td rowspan="2">복부</td>
+								<td>복부CT</td>
+								<td class="ta_r pr_20">150,000</td>
+							</tr>
+							<tr>
+								<td><div class="inp-checkbox solo"> <input type="checkbox" id="c6" tabindex="0"><label for="c6"> </label> </div></td>
+								<td>복부초음파</td>
+								<td class="ta_r pr_20">72,000</td>
+							</tr>
+							<tr>
+								<td><div class="inp-checkbox solo"> <input type="checkbox" id="c6" tabindex="0"><label for="c6"> </label> </div></td>
+								<td>전립선</td>
+								<td>전립선 초음파</td>
+								<td class="ta_r pr_20">90,000</td>
+							</tr>
+							<tr>
+								<td><div class="inp-checkbox solo"> <input type="checkbox" id="c6" tabindex="0"><label for="c6"> </label> </div></td>
+								<td>갑상선</td>
+								<td>갑상선 초음파</td>
+								<td class="ta_r pr_20">102,000</td>
+							</tr>
+							<tr>
+								<td><div class="inp-checkbox solo"> <input type="checkbox" id="c6" tabindex="0"><label for="c6"> </label> </div></td>
+								<td rowspan="2">유방</td>
+								<td>유방초음파</td>
+								<td class="ta_r pr_20">102,000</td>
+							</tr>
+							<tr>
+								<td><div class="inp-checkbox solo"> <input type="checkbox" id="c6" tabindex="0"><label for="c6"> </label> </div></td>
+								<td>유방촬영</td>
+								<td class="ta_r pr_20">30,000</td>
+							</tr>
+							<tr>
+								<td><div class="inp-checkbox solo"> <input type="checkbox" id="c6" tabindex="0"><label for="c6"> </label> </div></td>
+								<td>골반</td>
+								<td>부인과 초음파</td>
+								<td class="ta_r pr_20">48,000</td>
+							</tr>
+							<tr>
+								<td><div class="inp-checkbox solo"> <input type="checkbox" id="c6" tabindex="0"><label for="c6"> </label> </div></td>
+								<td>경동맥</td>
+								<td>경동맥 초음파</td>
+								<td class="ta_r pr_20">114,000</td>
+							</tr>
+							<tr>
+								<td><div class="inp-checkbox solo"> <input type="checkbox" id="c6" tabindex="0"><label for="c6"> </label> </div></td>
+								<td rowspan="2">자궁경부</td>
+								<td>액상 자궁세포검사</td>
+								<td class="ta_r pr_20">36,000</td>
+							</tr>
+							<tr>
+								<td><div class="inp-checkbox solo"> <input type="checkbox" id="c6" tabindex="0"><label for="c6"> </label> </div></td>
+								<td>인유두종 바이러스</td>
+								<td class="ta_r pr_20">60,000</td>
+							</tr>
+							<tr>
+								<td><div class="inp-checkbox solo"> <input type="checkbox" id="c6" tabindex="0"><label for="c6"> </label> </div></td>
+								<td rowspan="2">요추</td>
+								<td>요추 MRI</td>
+								<td class="ta_r pr_20">444,000</td>
+							</tr>
+							<tr>
+								<td><div class="inp-checkbox solo"> <input type="checkbox" id="c6" tabindex="0"><label for="c6"> </label> </div></td>
+								<td>요추 CT</td>
+								<td class="ta_r pr_20">78,000</td>
+							</tr>
+							<tr>
+								<td><div class="inp-checkbox solo"> <input type="checkbox" id="c6" tabindex="0"><label for="c6"> </label> </div></td>
+								<td rowspan="2">경추</td>
+								<td>요추 MRI</td>
+								<td class="ta_r pr_20">444,000</td>
+							</tr>
+							<tr>
+								<td><div class="inp-checkbox solo"> <input type="checkbox" id="c6" tabindex="0"><label for="c6"> </label> </div></td>
+								<td>요추 CT</td>
+								<td class="ta_r pr_20">78,000</td>
+							</tr>
+							<tr>
+								<td><div class="inp-checkbox solo"> <input type="checkbox" id="c6" tabindex="0"><label for="c6"> </label> </div></td>
+								<td>동맥</td>
+								<td>동맥경화도 검사</td>
+								<td class="ta_r pr_20">36,000</td>
+							</tr>
+							<tr>
+								<td><div class="inp-checkbox solo"> <input type="checkbox" id="c6" tabindex="0"><label for="c6"> </label> </div></td>
+								<td>항노화 & 기능의학</td>
+								<td>스트레스 검사</td>
+								<td class="ta_r pr_20">18,000</td>
+							</tr>
+							<tr>
+								<td><div class="inp-checkbox solo"> <input type="checkbox" id="c6" tabindex="0"><label for="c6"> </label> </div></td>
+								<td rowspan="2">호르몬 (갱년기)</td>
+								<td>여성 호르몬</td>
+								<td class="ta_r pr_20">18,000</td>
+							</tr>
+							<tr>
+								<td><div class="inp-checkbox solo"> <input type="checkbox" id="c6" tabindex="0"><label for="c6"> </label> </div></td>
+								<td>남성 호르몬</td>
+								<td class="ta_r pr_20">48,000</td>
+							</tr>
+							<tr>
+								<td><div class="inp-checkbox solo"> <input type="checkbox" id="c6" tabindex="0"><label for="c6"> </label> </div></td>
+								<td rowspan="2">혈액</td>
+								<td>종양표지자</td>
+								<td class="ta_r pr_20">540,000</td>
+							</tr>
+							<tr>
+								<td><div class="inp-checkbox solo"> <input type="checkbox" id="c6" tabindex="0"><label for="c6"> </label> </div></td>
+								<td>핼액종합검사</td>
+								<td class="ta_r pr_20">180,000</td>
+							</tr>
+							<tr>
+								<td><div class="inp-checkbox solo"> <input type="checkbox" id="c6" tabindex="0"><label for="c6"> </label> </div></td>
+								<td>택1</td>
+								<td colspan="2">
+									<div class="inp-checkbox dis_ib mr_30"> <input type="checkbox" id="c6" tabindex="0"><label for="c6">골밀도 </label> </div>
+									<div class="inp-checkbox dis_ib mr_30"> <input type="checkbox" id="c6" tabindex="0"><label for="c6">동맥경화 </label> </div>
+									<div class="inp-checkbox dis_ib"> <input type="checkbox" id="c6" tabindex="0"><label for="c6">스트레스 </label> </div>
+
+									<small class="dis_b c_grey mt_10">*골밀도촬영, 동맥경화도검사, 스트레스검사 중 1가지 검사를 Free로 진행해 드립니다.</small>
+								</td>
+							</tr>
+							<tr>
+								<td><div class="inp-checkbox solo"> <input type="checkbox" id="c6" tabindex="0"><label for="c6"> </label> </div></td>
+								<td colspan="2">할성산소 – 황산화</td>
+								<td class="ta_r pr_20">70,000</td>
+							</tr>
+							<tr>
+								<td><div class="inp-checkbox solo"> <input type="checkbox" id="c6" tabindex="0"><label for="c6"> </label> </div></td>
+								<td colspan="2">90종 음식알레르기</td>
+								<td class="ta_r pr_20">250,000</td>
+							</tr>
+							<tr>
+								<td><div class="inp-checkbox solo"> <input type="checkbox" id="c6" tabindex="0"><label for="c6"> </label> </div></td>
+								<td colspan="2">모발미네랄</td>
+								<td class="ta_r pr_20">140,000</td>
+							</tr>
+							<tr>
+								<td><div class="inp-checkbox solo"> <input type="checkbox" id="c6" tabindex="0"><label for="c6"> </label> </div></td>
+								<td colspan="2">노화검사(텔로미어)</td>
+								<td class="ta_r pr_20">300,000</td>
+							</tr>
+							<tr>
+								<td><div class="inp-checkbox solo"> <input type="checkbox" id="c6" tabindex="0"><label for="c6"> </label> </div></td>
+								<td colspan="2">장내세균</td>
+								<td class="ta_r pr_20">180,000</td>
+							</tr>
+							<tr>
+								<td><div class="inp-checkbox solo"> <input type="checkbox" id="c6" tabindex="0"><label for="c6"> </label> </div></td>
+								<td colspan="2">유기산검사</td>
+								<td class="ta_r pr_20">250,000</td>
+							</tr>
+							<tr>
+								<td><div class="inp-checkbox solo"> <input type="checkbox" id="c6" tabindex="0"><label for="c6"> </label> </div></td>
+								<td colspan="2">암 유전자 검사</td>
+								<td class="ta_r pr_20">5종 140,000 <br> 11종 300,000</td>
+							</tr>
+							<tr>
+								<td><div class="inp-checkbox solo"> <input type="checkbox" id="c6" tabindex="0"><label for="c6"> </label> </div></td>
+								<td colspan="2">면역세포검사</td>
+								<td class="ta_r pr_20">140,000</td>
+							</tr>
+							<tr class="cell-bottom">
+								<td colspan="2">합계</td>
+								<td colspan="2"><strong>3,000,000(원)</strong></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+            </div>
+
+			<div class="btn-area ta_c mt_48">
+				<a href="javascript:;" class="btn-blue btn-lg"><span>검사신청</span></a>
+			</div>
+			<div class="btn-area ta_c mt_48">
+				<a href="javascript:;" class="btn-gray btn-lg"><span>삭제</span></a>
+				<a href="javascript:;" class="btn-blue btn-lg"><span>수정</span></a>
+			</div>
+        </div>
+    </div>
+
+</div>
+<script src="../../js/ui.js"></script>
+</body>
+</html>

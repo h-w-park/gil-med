@@ -19,37 +19,79 @@
     <div class="content">
         <div class="section">
             <div class="title">
-                <h3 class="page-tit">진료예약확인</h3>
+                <h3 class="page-tit">의뢰서 조회</h3>
                 <p class="page-tit__desc">의뢰한 환자의 예약상태를 조회하실 수 있습니다.</p>
             </div>
             
             <div class="context"> 
 
-				<div class="table-row w_50 m_0">
+
+                <div class="info-section">
+					<ul  class="mt_0">
+						<li>의뢰한 환자의 예약상태를 조회하실 수 있습니다.</li>
+						<li>조회기간은 최대 1년 입니다.</li>
+					</ul>
+                </div>
+
+				<div class="search-area mt_48">
+					<div class="search-tab">
+						<ul>
+							<li class="active"><a href="">3개월</a></li>
+							<li><a href="">6개월</a></li>
+							<li><a href="">1년</a></li>
+						</ul>
+					</div>
+					<div class="search-input cal ml_48">
+						<input type="text" placeholder="2019-09-11" style="width:164px;">
+					</div> 
+					<span class="space">~</span>
+					<div class="search-input cal">
+						<input type="text" placeholder="2019-09-30" style="width:164px;">
+					</div> 
+
+					<div class="search-input"> 
+						<button class="btn-search">검색</button>
+					</div>
+				</div>
+				
+				
+				<div class="table-col">
+					<p class="ta_r mb_20"><button class="btn_download">Excel 다운로드 <i></i></button></p>
+					
 					<table>
-						<colgroup>
-							<col>
-						</colgroup>
+						
+						<thead>
+							<tr>
+								<th>접수일자</th>
+								<th>환자명</th>
+								<th>생년월일</th>
+								<th>성별</th>
+								<th>진행상태</th>
+								<th>의뢰요청</th>
+								<th>의뢰서</th>
+							</tr>
+						</thead>
 						<tbody>
 							<tr>
-								<th>의사명</th>
-								<td><input type="text" class="inp-text" placeholder="의사명 입력" style="width:100%"></td> 
+								<td>2020-01-20</td>
+								<td>홍길동</td>
+								<td>1986-04-15</td>
+								<td>남</td>
+								<td>의뢰요청</td>
+								<td><strong class="doc"> 가정의학과 홍길동 교수</strong> <small class="date">2020-01-22</small></td>
+								<td><button class="btn_lookup">의뢰서 조회</button></td>
 							</tr>
 							<tr>
-								<th>면허번호</th>
-								<td><input type="text" class="inp-text" placeholder="면허번호 입력" style="width:100%"></td> 
-							</tr>
-							<tr>
-								<th>환자명</th>
-								<td><input type="text" class="inp-text" placeholder="환자명 입력" style="width:100%"></td> 
+								<td>2020-01-20</td>
+								<td>홍길동</td>
+								<td>1986-04-15</td>
+								<td>남</td>
+								<td>의뢰요청</td>
+								<td><strong class="doc"> 가정의학과 홍길동 교수</strong> <small class="date">2020-01-22</small></td>
+								<td><button class="btn_lookup">의뢰서 조회</button></td>
 							</tr>
 						</tbody>
 					</table>
-					
-					<div class="btn-area ta_c mt_48">
-						<a href="javascript:;" class="btn-blue btn-lg"><span>조회</span></a>
-					</div>
-
 				</div>
 
 

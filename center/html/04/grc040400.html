@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- Scripts -->
+    <script src="../../js/jquery-2.2.3.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+
+    <div class="content">
+        <div class="section">
+            <div class="title">
+                <h3 class="page-tit">공지사항</h3>
+                <p class="page-tit__desc"></p>
+            </div>
+            
+            <ul class="tab">
+                <li><a href="javascript:;">진료의뢰회송시범사업</a></li>
+                <li><a href="javascript:;">국가진료정보교류사업</a></li>
+                <li><a href="javascript:;">심층진찰 시범사업</a></li>
+                <li><a href="javascript:;" class="on">제안사항</a></li>
+            </ul>
+
+            <div class="context">
+				
+				<div class="table-row mt_70">
+					<div class="table-must">필수입력항목<span class="txt-co-red">*</span></div>
+					<table>
+						<colgroup>
+							<col style="width:203px">
+							<col style="width:430px">
+							<col style="width:203px">
+							<col style="width:430px">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>이름 <span class="txt-co-red">*</span></th>
+								<td><input type="text" class="inp-text" placeholder="이름 입력" style="width:368px"></td> 
+								<th>휴대폰 <span class="txt-co-red">*</span></th>
+								<td>
+									<div class="inp-tell">
+										<div class="select-box">
+											<select>
+												<option>010</option>
+											</select>
+										</div>
+										<span class="space">-</span> 
+										<input type="number" class="inp-text" style="width:105px"><span class="space">-</span> 
+										<input type="number" class="inp-text" style="width:105px">
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th>이메일 <span class="txt-co-red">*</span></th>
+								<td colspan="3"><input type="text" class="inp-text" placeholder="이메일 입력" style="width:368px"></td> 
+							</tr>
+							<tr>
+								<th>제목 <span class="txt-co-red">*</span></th>
+								<td colspan="3"><input type="text" class="inp-text" placeholder="제목 입력" style="width:1005px"></td> 
+							</tr>
+							<tr>
+								<th>제안사항 <span class="txt-co-red">*</span></th>
+								<td colspan="3">
+									<div class="textarea"><textarea name="" id=""placeholder="상태 및 내용 입력"  ></textarea></div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div class="btn-area ta_c mt_48">
+					<a href="javascript:;" class="btn-blue btn-lg"><span>제안하기</span></a>
+				</div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="../../js/ui.js"></script>
+</body>
+</html>
