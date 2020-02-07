@@ -874,9 +874,16 @@ tr.cell-bottom td strong {display: block; text-align: right; padding-right: 20px
 .map_hospital {margin : 48px 0 40px;}
 .map_hospital:after {float:none; display:block; clear:both; content:"";}
 .map_hospital dt,
-.map_hospital dd {float: left;}
-.map_hospital dt {width: 345px; margin-left: 210px; margin-right: 115px;}
+.map_hospital dd {float: left; position: relative;}
+.map_hospital dd { display: table;}
+.map_hospital dd figure { position: absolute; display:table-cell; text-align: center;vertical-align: middle; background: #fff; width: 100%; height: 100%;}
+.map_hospital dd figure.active img {z-index:2;}
+.map_hospital dd figure img {  z-index:0;}
+.map_hospital dt {width: 345px; margin-left: 210px; margin-right: 67px;}
+.map_hospital dd {width: 650px; height:450px;}
+
 .career table td {position: relative;}
+
 .in-table-info {position: relative; margin-top: 12px; height: 50px;}
 .in-table-info .btn-career-plus {position: absolute; right:0;   height: 50px; line-height: 50px; top:0;}
 .in-table-info .btn-career-plus span {display: inline-block;  height: 50px; line-height: 50px; font-size:16px; color: #004e96; float: left; margin-right: 7px; font-weight: 500;}

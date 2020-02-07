@@ -954,6 +954,7 @@ box-shadow: -7px -11px 20px -1px rgba(0,0,0,0.11);}
 
 .recap_sel span {height: 50px; line-height: 50px; font-size:18px; display: inline-block; margin-right: 12px;}
 
+<<<<<<< HEAD
 /* 병원소개 */
 .greeting-box{margin-top:450px;padding:96px 110px 0 110px;}
 .greeting-box h5{font-size:36px;line-height:50px;color:#000;font-weight:300;margin-bottom:50px;}
@@ -984,6 +985,8 @@ box-shadow: -7px -11px 20px -1px rgba(0,0,0,0.11);}
 .front-mission .title:after{width:1px;height:30px;background:#fff;content:"";position:absolute;bottom:0;left:50%;}
 .front-mission .title-desc{font-size:22px;line-height:34px;color:#fff;}
 
+=======
+>>>>>>> 2e3bf10feb91c79fc9fc4e46e9a20123647c353c
 
 /* 병원안내 > 병원정보 */
 
@@ -1018,3 +1021,7 @@ box-shadow: 10px 20px 33px 6px rgba(0,0,0,0.1);}
 .gil-info-wrap .detail dl dt h5 span {color: #004e96;}
 .gil-info-wrap .detail dl dt p {font-size:19px; line-height: 1.9; margin-top: 30px; color: #000;}
 
+<<<<<<< HEAD
+=======
+.
+>>>>>>> 2e3bf10feb91c79fc9fc4e46e9a20123647c353c
