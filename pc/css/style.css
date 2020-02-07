@@ -979,3 +979,39 @@ box-shadow:-7px -11px 20px -1px rgba(0,0,0,0.11);}
 .context > .in-table-tit{font-size:26px;font-weight:600;color:#000;margin-bottom:18px;margin-top:54px;} 
 
 .recap_sel span {height: 50px; line-height: 50px; font-size:18px; display: inline-block; margin-right: 12px;}
+
+
+/* 병원안내 > 병원정보 */
+
+.gil-info-wrap .title {height: 450px; background-image:url('../img/bg/info-title.jpg'); background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover;}
+.gil-info-wrap .title h4 {font-size:46px; letter-spacing: -0.04em; padding-top: 125px; margin-bottom: 12px; text-align: center; font-weight: 500; color: #000;}
+.gil-info-wrap .title p {font-size:22px;text-align: center; position: relative; padding-top:70px ; line-height: 1.5;}
+.gil-info-wrap .title p:before {content:"";width: 1px; height: 30px; background: #000; display: block; position: absolute; left:50%; top:15px;}
+
+.gil-info-wrap .detail {width: 1272px; margin: 150px auto 0px;}
+.gil-info-wrap .detail dl {margin-bottom: 150px;}
+.gil-info-wrap .detail dl:after {float:none; display:block; clear:both; content:"";}
+.gil-info-wrap .detail dl dd,
+.gil-info-wrap .detail dl dt {float: left; width: 600px;}
+.gil-info-wrap .detail dl dd {float: right; position: relative;}
+.gil-info-wrap .detail dl dd figure {-webkit-box-shadow: 10px 20px 33px 6px rgba(0,0,0,0.1);
+-moz-box-shadow: 10px 20px 33px 6px rgba(0,0,0,0.1);
+box-shadow: 10px 20px 33px 6px rgba(0,0,0,0.1);}
+.gil-info-wrap .detail dl:nth-child(even) dt {float: right;}
+.gil-info-wrap .detail dl:nth-child(even) dd {float: left;}
+
+
+.gil-info-wrap .detail dl dd:after {content:"";  position: absolute; z-index:-1;}
+
+.gil-info-wrap .detail dl:nth-child(1) dd:after {width: 150px; height: 370px; background:#4070a7 ; right:-60px; top:-80px;}
+.gil-info-wrap .detail dl:nth-child(2) dd:after {width: 315px; height: 100px; background:#9ca6b0 ; left:-70px; top:50px;}
+.gil-info-wrap .detail dl:nth-child(3) dd:after {width: 497px; height: 343px; background:#4171a8 ; right:-40px; top:110px;}
+.gil-info-wrap .detail dl:nth-child(4) dd:after {width: 772px; height: 190px; background:#9ca6b0 ; left:-320px; top:280px;}
+
+.gil-info-wrap .detail dl dt h5 {font-size:36px;  font-weight: 500; color: #000;}
+.gil-info-wrap .detail dl dt small {font-size:26px; display: block; position: relative; padding-bottom: 30px; margin-top: 8px;}
+.gil-info-wrap .detail dl dt small:after {content:"";width: 30px; height: 1px; background: #000; display: block; position: absolute; bottom:0px;}
+.gil-info-wrap .detail dl dt h5 span {color: #004e96;}
+.gil-info-wrap .detail dl dt p {font-size:19px; line-height: 1.9; margin-top: 30px; color: #000;}
+
+.
