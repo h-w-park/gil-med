@@ -46,8 +46,25 @@
 
             <div class="context">
  				<dl class="map_hospital">
- 					<dt><a href=""><img src="../../img/map/seoul.png" usemap="#map_korea"  alt=""></a></dt>
- 					<dd><a href=""><img src="../../img/map/seoul/ys.png" usemap="#map_incheon"   alt=""></a></dd>
+ 					<dt><img src="../../img/map/seoul.png" usemap="#maps" id="level1" alt=""></dt>
+ 					<dd class="level2">
+						<figure class="seoul active" style="z-index:2;"><img src="../../img/map/seoul/first.png" usemap="#map_seoul" alt=""></figure>
+						<figure class="busan"><img src="../../img/map/busan/first.png" usemap="#map_busan" alt=""></figure>
+						<figure class="chungbuk"><img src="../../img/map/chungbuk/first.png" usemap="#map_chungbuk" alt=""></figure>
+						<figure class="chungnam"><img src="../../img/map/chungnam/first.png" usemap="#map_chungnam" alt=""></figure>
+						<figure class="daegu"><img src="../../img/map/daegu/first.png" usemap="#map_daegu" alt=""></figure>
+						<figure class="daejeon"><img src="../../img/map/daejeon/first.png" usemap="#map_daejeon" alt=""></figure>
+						<figure class="gwangju"><img src="../../img/map/gwangju/first.png" usemap="#map_gwangju" alt=""></figure>
+						<figure class="gyeongbuk"><img src="../../img/map/gyeongbuk/first.png" usemap="#map_gyeongbuk" alt=""></figure>
+						<figure class="gyeonggi"><img src="../../img/map/gyeonggi/first.png" usemap="#map_gyeonggi" alt=""></figure>
+						<figure class="gyeongnam"><img src="../../img/map/gyeongnam/first.png" usemap="#map_gyeongnam" alt=""></figure>
+						<figure class="incheon"><img src="../../img/map/incheon/first.png" usemap="#map_incheon" alt=""></figure>
+						<figure class="jeju"><img src="../../img/map/jeju/first.png" usemap="#map_jeju" alt=""></figure>
+						<figure class="jeonbuk"><img src="../../img/map/jeonbuk/first.png" usemap="#map_jeonbuk" alt=""></figure>
+						<figure class="jeonnam"><img src="../../img/map/jeonnam/first.png" usemap="#map_jeonnam" alt=""></figure>
+						<figure class="kangwon"><img src="../../img/map/kangwon/first.png" usemap="#map_kangwon" alt=""></figure>
+						<figure class="ulsan"><img src="../../img/map/ulsan/first.png" usemap="#map_ulsan" alt=""></figure>
+					</dd>
  				</dl>
 				<div class="table-col ">
 					<table>
@@ -99,27 +116,316 @@
     </div>
 
 
-<map name="map_korea" id="map_korea">
-	<area  alt="인천광역시" title="" href="인천광역시" shape="rect" coords="9,89,89,117" style="outline:none;" target="_self"     />
-	<area  alt="서울특별시" title="" href="서울특별시" shape="rect" coords="79,47,159,75" style="outline:none;" target="_self"     />
-	<area  alt="강원도" title="" href="강원도" shape="rect" coords="185,63,232,91" style="outline:none;" target="_self"     />
-	<area  alt="충청북도" title="" href="충청북도" shape="rect" coords="138,137,203,165" style="outline:none;" target="_self"     />
-	<area  alt="경상북도" title="" href="경상북도" shape="rect" coords="203,165,268,193" style="outline:none;" target="_self"     />
-	<area  alt="경상남도" title="" href="경상남도" shape="rect" coords="149,270,214,298" style="outline:none;" target="_self"     />
-	<area  alt="전라북도" title="" href="전라북도" shape="rect" coords="76,239,141,267" style="outline:none;" target="_self"     />
-	<area  alt="충청남도" title="" href="충청남도" shape="rect" coords="48,153,113,181" style="outline:none;" target="_self"     />
-	<area  alt="경기도" title="" href="경기도" shape="rect" coords="93,117,148,143" style="outline:none;" target="_self"     />
-	<area  alt="제주도" title="" href="제주도" shape="rect" coords="70,372,125,398" style="outline:none;" target="_self"     />
-	<area  alt="전라남도" title="" href="전라남도" shape="rect" coords="50,334,119,360" style="outline:none;" target="_self"     />
-	<area  alt="광주광역시" title="" href="광주광역시" shape="rect" coords="83,304,163,330" style="outline:none;" target="_self"     />
-	<area  alt="부산광역시" title="" href="부산광역시" shape="rect" coords="228,297,313,324" style="outline:none;" target="_self"     />
-	<area  alt="울산광역시" title="" href="울산광역시" shape="rect" coords="265,264,336,285" style="outline:none;" target="_self"     />
-	<area  alt="대구광역시" title="" href="대구광역시" shape="rect" coords="203,213,278,243" style="outline:none;" target="_self"     />
-	<area  alt="대전광역시" title="" href="대전광역시" shape="rect" coords="56,193,131,214" style="outline:none;" target="_self"     />
-	<area shape="rect" coords="345,416,347,418" alt="Image Map" style="outline:none;" title="Image Map" href="index.php?aff=mapped_users_0" />
+<map name="maps" id="maps">
+	<area  alt="인천광역시" title="인천광역시" href="#incheon" shape="rect" coords="9,89,89,117" style="outline:none;" target="_self"     />
+	<area  alt="서울특별시" title="서울특별시" href="#seoul" shape="rect" coords="79,47,159,75" style="outline:none;" target="_self"     />
+	<area  alt="강원도" title="강원도" href="#kangwon" shape="rect" coords="185,63,232,91" style="outline:none;" target="_self"     />
+	<area  alt="충청북도" title="충청북도" href="#chungbuk" shape="rect" coords="138,137,203,165" style="outline:none;" target="_self"     />
+	<area  alt="경상북도" title="경상북도" href="#gyeongbuk" shape="rect" coords="203,165,268,193" style="outline:none;" target="_self"     />
+	<area  alt="경상남도" title="경상남도" href="#gyeongnam" shape="rect" coords="149,270,214,298" style="outline:none;" target="_self"     />
+	<area  alt="전라북도" title="전라북도" href="#jeonbuk" shape="rect" coords="76,239,141,267" style="outline:none;" target="_self"     />
+	<area  alt="충청남도" title="충청남도" href="#chungnam" shape="rect" coords="48,153,113,181" style="outline:none;" target="_self"     />
+	<area  alt="경기도" title="경기도" href="#gyeonggi" shape="rect" coords="93,117,148,143" style="outline:none;" target="_self"     />
+	<area  alt="제주도" title="제주도" href="#jeju" shape="rect" coords="70,372,125,398" style="outline:none;" target="_self"     />
+	<area  alt="전라남도" title="전라남도" href="#jeonnam" shape="rect" coords="50,334,119,360" style="outline:none;" target="_self"     />
+	<area  alt="광주광역시" title="광주광역시" href="#gwangju" shape="rect" coords="83,304,163,330" style="outline:none;" target="_self"     />
+	<area  alt="부산광역시" title="부산광역시" href="#busan" shape="rect" coords="228,297,313,324" style="outline:none;" target="_self"     />
+	<area  alt="울산광역시" title="울산광역시" href="#ulsan" shape="rect" coords="265,264,336,285" style="outline:none;" target="_self"     />
+	<area  alt="대구광역시" title="대구광역시" href="#daegu" shape="rect" coords="203,213,278,243" style="outline:none;" target="_self"     />
+	<area  alt="대전광역시" title="대전광역시" href="#daejeon" shape="rect" coords="56,193,131,214" style="outline:none;" target="_self"     />
 </map>
+
+
+<map name="map_seoul" id="map_seoul" class="mapSm">
+	<area shape="rect" coords="306,40,347,63" href="#db" alt="도봉">
+	<area shape="rect" coords="357,58,403,78" href="#nw" alt="노원">
+	<area shape="rect" coords="172,112,220,131" href="#up" alt="은평">
+	<area shape="rect" coords="270,90,317,107" href="#gb" alt="강북">
+	<area shape="rect" coords="41,208,91,225" href="#gs" alt="강서">
+	<area shape="rect" coords="168,185,226,202" href="#sdm" alt="서대">
+	<area shape="rect" coords="240,178,279,191" href="#first" alt="종로">
+	<area shape="rect" coords="283,149,329,163" href="#sb" alt="성북">
+	<area shape="rect" coords="316,174,373,192" href="#ddm" alt="동대문">
+	<area shape="rect" coords="373,148,418,165" href="#jr" alt="중랑">
+	<area shape="rect" coords="150,213,194,227" href="#mp" alt="마포">
+	<area shape="rect" coords="270,207,294,220" href="#j" alt="중">
+	<area shape="rect" coords="312,219,351,232" href="#sd" alt="성동">
+	<area shape="rect" coords="367,228,403,243" href="#qj" alt="광진">
+	<area shape="rect" coords="442,216,485,238" href="#gd" alt="강동">
+	<area shape="rect" coords="239,249,280,266" href="#ys" alt="용산">
+	<area shape="rect" coords="91,270,129,288" href="#yc" alt="양천">
+	<area shape="rect" coords="143,267,202,282" href="#ydp" alt="영등포">
+	<area shape="rect" coords="195,288,237,305" href="#dj" alt="동작">
+	<area shape="rect" coords="274,322,322,344" href="#sc" alt="서초">
+	<area shape="rect" coords="337,311,377,333" href="#gn" alt="강남">
+	<area shape="rect" coords="400,292,446,307" href="#sp" alt="송파">
+	<area shape="rect" coords="66,307,113,325" href="#gr" alt="구로">
+	<area shape="rect" coords="125,351,174,371" href="#gc" alt="금천">
+	<area shape="rect" coords="193,342,241,360" href="#ga" alt="관악">
+</map>
+
+
+<map name="map_incheon"  id="map_incheon" class="mapSm"> 
+	<area shape="rect" coords="183,85,239,116" href="#gh" alt="강화">
+	<area shape="rect" coords="323,146,362,166" href="#s" alt="서구">
+	<area shape="rect" coords="377,183,429,211" href="#gy" alt="계양">
+	<area shape="rect" coords="48,212,91,233" href="#wj" alt="옹진">
+	<area shape="rect" coords="180,265,218,287" href="#first" alt="중구">
+	<area shape="rect" coords="306,260,334,283" href="#d" alt="동구">
+	<area shape="rect" coords="373,248,416,271" href="#bp" alt="부평">
+	<area shape="rect" coords="329,287,364,310" href="#n" alt="남구">
+	<area shape="rect" coords="376,309,429,333" href="#nd" alt="남동">
+	<area shape="rect" coords="299,342,345,361" href="#ys" alt="연수">
+</map>
+
+<map name="map_busan"  id="map_busan" class="mapSm">
+	<area shape="rect" coords="293,83,341,105" href="#gj" alt="기장">
+	<area shape="rect" coords="213,128,264,148" href="#kj" alt="금정">
+	<area shape="rect" coords="167,151,207,178" href="#b" alt="북구">
+	<area shape="rect" coords="212,170,255,190" href="#dl" alt="동래">
+	<area shape="rect" coords="220,197,262,210" href="#yj" alt="연제">
+	<area shape="rect" coords="273,193,330,211" href="#hwd" alt="해운대">
+	<area shape="rect" coords="240,218,281,234" href="#sy" alt="수영">
+	<area shape="rect" coords="184,215,237,229" href="#bsj" alt="부산진구">
+	<area shape="rect" coords="197,251,224,265" href="#d" alt="동구">
+	<area shape="rect" coords="235,254,264,270" href="#n" alt="남구">
+	<area shape="rect" coords="205,294,247,313" href="#yd" alt="영도구">
+	<area shape="rect" coords="140,234,180,247" href="#ss" alt="사상구">
+	<area shape="rect" coords="169,254,190,269" href="#first" alt="서구">
+	<area shape="rect" coords="183,276,212,291" href="#j" alt="중구">
+	<area shape="rect" coords="125,287,168,303" href="#sh" alt="시하">
+	<area shape="rect" coords="62,264,104,279" href="#gs" alt="강서">
+</map>
+
+
+<map name="map_chungbuk"  id="map_chungbuk" class="mapSm">
+	<area shape="rect" coords="139,67,190,95" href="#chungju" alt="충주">
+	<area shape="rect" coords="220,81,275,108" href="#first" alt="제천">
+	<area shape="rect" coords="283,76,330,96" href="#dy" alt="단양">
+	<area shape="rect" coords="60,89,106,109" href="#es" alt="음성">
+	<area shape="rect" coords="26,118,69,141" href="#jc" alt="진천">
+	<area shape="rect" coords="66,147,114,167" href="#jp" alt="증평">
+	<area shape="rect" coords="131,148,178,167" href="#gs" alt="괴산">
+	<area shape="rect" coords="25,187,74,212" href="#cj" alt="청주">
+	<area shape="rect" coords="29,222,76,247" href="#cw" alt="청원">
+	<area shape="rect" coords="102,235,146,259" href="#be" alt="보은">
+	<area shape="rect" coords="77,291,132,315" href="#oc" alt="옥천">
+	<area shape="rect" coords="121,345,172,368" href="#yd" alt="영동">
+</map>
+
+<map name="map_chungnam"  id="map_chungnam" class="mapSm">
+	<area shape="rect" coords="131,49,187,73" href="#dj" alt="당진">
+	<area shape="rect" coords="91,104,132,125" href="#ss" alt="서산">
+	<area shape="rect" coords="14,98,69,125" href="#ta" alt="태안">
+	<area shape="rect" coords="228,95,287,115" href="#as" alt="아산">
+	<area shape="rect" coords="315,84,363,105" href="#ca" alt="천안">
+	<area shape="rect" coords="188,139,238,161" href="#ys" alt="예산">
+	<area shape="rect" coords="126,179,174,199" href="#hs" alt="홍성">
+	<area shape="rect" coords="320,163,368,186" href="#sj" alt="세종">
+	<area shape="rect" coords="258,202,305,222" href="#first" alt="공주">
+	<area shape="rect" coords="195,230,242,250" href="#cy" alt="청양">
+	<area shape="rect" coords="128,268,170,290" href="#br" alt="보령">
+	<area shape="rect" coords="206,306,254,327" href="#py" alt="부여">
+	<area shape="rect" coords="322,283,376,305" href="#gr" alt="계룡">
+	<area shape="rect" coords="161,353,212,376" href="#sc" alt="서천">
+	<area shape="rect" coords="288,325,338,344" href="#ns" alt="논산">
+	<area shape="rect" coords="394,353,446,372" href="#gs" alt="금산">
+</map>
+
+<map name="map_daegu"  id="map_daegu" class="mapSm">
+  <area shape="rect" coords="141,69,176,91" href="#b" alt="북">
+  <area shape="rect" coords="221,67,255,86" href="#d" alt="동">
+  <area shape="rect" coords="49,109,100,133" href="#first" alt="달성">
+  <area shape="rect" coords="128,118,159,138" href="#s" alt="서">
+  <area shape="rect" coords="165,124,195,145" href="#j" alt="중">
+  <area shape="rect" coords="98,159,148,176" href="#ds" alt="달서">
+  <area shape="rect" coords="155,154,183,174" href="#n" alt="남">
+  <area shape="rect" coords="200,149,254,171" href="#ss" alt="수성">
+  <area shape="rect" coords="81,235,128,260" href="#d" alt="달">
+</map>
+
+<map name="map_daejeon"  id="map_daejeon" class="mapSm">
+  <area shape="rect" coords="73,144,123,163" href="#us" alt="유성">
+  <area shape="rect" coords="214,91,267,108" href="#dd" alt="대덕">
+  <area shape="rect" coords="88,302,122,325" href="#s" alt="서구">
+  <area shape="rect" coords="169,249,216,277" href="#first" alt="중구">
+  <area shape="rect" coords="255,210,294,230" href="#d" alt="동">
+</map>
+
+<map name="map_gwangju"  id="map_gwangju" class="mapSm">
+  <area shape="rect" coords="126,150,178,175" href="#first" alt="광산">
+  <area shape="rect" coords="356,96,384,114" href="#b" alt="북">
+  <area shape="rect" coords="278,204,308,224" href="#s" alt="서">
+  <area shape="rect" coords="292,272,324,293" href="#n" alt="남">
+  <area shape="rect" coords="411,238,457,256" href="#d" alt="동">
+</map>
+
+<map name="map_gyeongnam"  id="map_gyeongnam" class="mapSm">
+  <area shape="rect" coords="74,55,121,75" href="#gc" alt="거창">
+  <area shape="rect" coords="25,116,68,131" href="#hy" alt="함양">
+  <area shape="rect" coords="136,114,185,131" href="#hc" alt="합천">
+  <area shape="rect" coords="230,125,278,144" href="#cn" alt="창녕">
+  <area shape="rect" coords="315,138,360,154" href="#my" alt="밀양">
+  <area shape="rect" coords="388,160,432,184" href="#ys" alt="양산">
+  <area shape="rect" coords="73,173,114,197" href="#sc" alt="산청">
+  <area shape="rect" coords="176,160,223,179" href="#ur" alt="의령">
+  <area shape="rect" coords="213,199,262,218" href="#ha" alt="함안">
+  <area shape="rect" coords="336,202,386,221" href="#gh" alt="김해">
+  <area shape="rect" coords="43,255,91,270" href="#hd" alt="하동">
+  <area shape="rect" coords="137,228,179,245" href="#first" alt="진주">
+  <area shape="rect" coords="278,226,319,244" href="#cw" alt="창원">
+  <area shape="rect" coords="124,282,166,299" href="#sc" alt="사천">
+  <area shape="rect" coords="192,287,233,305" href="#gs" alt="고성">
+  <area shape="rect" coords="77,367,120,383" href="#nh" alt="남해">
+  <area shape="rect" coords="211,326,261,347" href="#ty" alt="통영">
+  <area shape="rect" coords="285,329,331,350" href="#gj" alt="거제">
+</map>
+
+<map name="map_gyeongbuk"  id="map_gyeongbuk" class="mapSm">
+  <area shape="rect" coords="276,39,325,60" href="#uj" alt="울진">
+  <area shape="rect" coords="205,49,250,70" href="#bh" alt="봉화">
+  <area shape="rect" coords="142,70,187,92" href="#yj" alt="영주">
+  <area shape="rect" coords="59,111,101,130" href="#mg" alt="문경">
+  <area shape="rect" coords="117,119,159,137" href="#yecheon" alt="예천">
+  <area shape="rect" coords="251,108,295,134" href="#yy" alt="영양">
+  <area shape="rect" coords="358,92,408,112" href="#ue" alt="울릉">
+  <area shape="rect" coords="429,122,458,147" href="#dd" alt="독도">
+  <area shape="rect" coords="179,134,227,156" href="#ad" alt="안동">
+  <area shape="rect" coords="44,179,85,202" href="#sangju" alt="상주">
+  <area shape="rect" coords="153,187,200,211"  href="#us" alt="의성">
+  <area shape="rect" coords="241,187,292,207"  href="#cs" alt="청송">
+  <area shape="rect" coords="286,165,337,182"  href="#yd" alt="영덕">
+  <area shape="rect" coords="39,261,87,282"  href="#gc" alt="김천">
+  <area shape="rect" coords="104,227,151,249"  href="#gm" alt="구미">
+  <area shape="rect" coords="166,240,209,263"  href="#first" alt="군위">
+  <area shape="rect" coords="275,231,325,255"  href="#ph" alt="포항">
+  <area shape="rect" coords="75,302,125,321"  href="#sj" alt="성주">
+  <area shape="rect" coords="120,275,170,299"  href="#cg" alt="칠곡">
+  <area shape="rect" coords="218,269,266,292"  href="#yc" alt="영천">
+  <area shape="rect" coords="89,344,136,367"  href="#gr" alt="고령">
+  <area shape="rect" coords="180,320,227,343"  href="#gs" alt="경산">
+  <area shape="rect" coords="272,317,324,339"  href="#gj" alt="경주">
+  <area shape="rect" coords="180,361,228,383"  href="#cd" alt="청도">
+</map>
+
+
+<map name="map_gyeonggi"  id="map_gyeonggi" class="mapSm">
+  <area shape="rect" coords="133,51,177,69" href="#yc" alt="연천">
+  <area shape="rect" coords="193,76,236,94" href="#pc" alt="포천">
+  <area shape="rect" coords="154,96,212,114" href="#ddc" alt="동두천">
+  <area shape="rect" coords="84,119,129,135" href="#pj" alt="파주">
+  <area shape="rect" coords="141,125,182,144" href="#yj" alt="양주">
+  <area shape="rect" coords="232,127,276,145" href="#gapyeong" alt="가평">
+  <area shape="rect" coords="41,161,87,180" href="#gimpo" alt="김포">
+  <area shape="rect" coords="95,170,141,189" href="#first" alt="고양">
+  <area shape="rect" coords="145,154,201,171" href="#ujb" alt="의정부">
+  <area shape="rect" coords="193,173,246,189" href="#nyj" alt="남양주">
+  <area shape="rect" coords="116,200,155,216" href="#gm" alt="광명">
+  <area shape="rect" coords="69,220,110,237" href="#bc" alt="부천">
+  <area shape="rect" coords="138,220,178,234" href="#ay" alt="안양">
+  <area shape="rect" coords="185,217,231,236" href="#hn" alt="하남">
+  <area shape="rect" coords="269,219,313,238" href="#yp" alt="양평">
+  <area shape="rect" coords="6,264,47,280" href="#uw" alt="의왕">
+  <area shape="rect" coords="69,250,110,267" href="#sh" alt="시흥">
+  <area shape="rect" coords="155,241,193,254" href="#gc" alt="과천">
+  <area shape="rect" coords="168,261,208,277" href="#sn" alt="성남">
+  <area shape="rect" coords="213,251,261,268" href="#gj" alt="광주">
+  <area shape="rect" coords="289,272,334,289" href="#yeoju" alt="여주">
+  <area shape="rect" coords="3,284,46,300" href="#gp" alt="군포">
+  <area shape="rect" coords="134,287,179,305" href="#sw" alt="수원">
+  <area shape="rect" coords="4,307,46,321" href="#as" alt="안산">
+  <area shape="rect" coords="84,311,135,332" href="#hs" alt="화성">
+  <area shape="rect" coords="140,325,184,341" href="#os" alt="오산">
+  <area shape="rect" coords="188,303,234,322" href="#yi" alt="용인">
+  <area shape="rect" coords="248,304,290,323" href="#ic" alt="이천">
+  <area shape="rect" coords="126,373,171,394" href="#pt" alt="평택">
+  <area shape="rect" coords="203,361,247,378" href="#ansung" alt="안성">
+</map>
+
+<map name="map_jeonbuk"  id="map_jeonbuk" class="mapSm">
+  <area shape="rect" coords="97,87,149,110" href="#first" alt="군산">
+  <area shape="rect" coords="188,62,237,83" href="#iks" alt="익산">
+  <area shape="rect" coords="266,87,318,106" href="#wj" alt="완주">
+  <area shape="rect" coords="450,101,496,120" href="#mj" alt="무주">
+  <area shape="rect" coords="150,153,195,174" href="#gj" alt="김제">
+  <area shape="rect" coords="230,148,275,172" href="#jj" alt="전주">
+  <area shape="rect" coords="342,151,384,174" href="#ja" alt="진안">
+  <area shape="rect" coords="57,224,106,243" href="#ba" alt="부안">
+  <area shape="rect" coords="157,251,197,274" href="#ju" alt="정읍">
+  <area shape="rect" coords="270,263,321,283" href="#is" alt="임실">
+  <area shape="rect" coords="386,228,435,248" href="#js" alt="장수">
+  <area shape="rect" coords="351,334,401,356" href="#nw" alt="남원">
+  <area shape="rect" coords="235,346,284,367" href="#sc" alt="순창">
+  <area shape="rect" coords="40,333,87,356" href="#gc" alt="고창">
+</map>
+
+
+<map name="map_jeonnam"  id="map_jeonnam" class="mapSm">
+  <area shape="rect" coords="129,63,179,87" href="#yg" alt="영광">
+  <area shape="rect" coords="207,49,254,73" href="#js" alt="장성">
+  <area shape="rect" coords="273,57,316,77" href="#dy" alt="담양">
+  <area shape="rect" coords="333,71,384,92" href="#gs" alt="곡성">
+  <area shape="rect" coords="407,76,455,97" href="#gr" alt="구례">
+  <area shape="rect" coords="148,114,197,136" href="#hp" alt="함평">
+  <area shape="rect" coords="201,153,249,177" href="#first" alt="나주">
+  <area shape="rect" coords="274,150,323,172" href="#hs" alt="화순">
+  <area shape="rect" coords="372,162,419,181" href="#sc" alt="순천">
+  <area shape="rect" coords="444,143,496,163" href="#gy" alt="광양">
+  <area shape="rect" coords="16,188,59,208" href="#sa" alt="신안">
+  <area shape="rect" coords="123,179,170,202" href="#ma" alt="무안">
+  <area shape="rect" coords="117,216,166,235" href="#mp" alt="목포">
+  <area shape="rect" coords="177,221,222,239" href="#ya" alt="영암">
+  <area shape="rect" coords="252,231,298,249" href="#jh" alt="장흥">
+  <area shape="rect" coords="317,218,361,236" href="#bs" alt="보성">
+  <area shape="rect" coords="447,225,496,246" href="#ys" alt="여수">
+  <area shape="rect" coords="215,266,262,290" href="#gj" alt="강진">
+  <area shape="rect" coords="76,341,121,359" href="#jd" alt="진도">
+  <area shape="rect" coords="158,315,208,332" href="#hn" alt="해남">
+  <area shape="rect" coords="342,292,388,316" href="#gh" alt="고흥">
+  <area shape="rect" coords="206,375,248,396" href="#wd" alt="완도">
+</map>
+
+
+<map name="map_kangwon"  id="map_kangwon" class="mapSm">
+  <area shape="rect" coords="38,66,92,95" href="#cw" alt="철원">
+  <area shape="rect" coords="102,96,153,118" href="#hwacheon" alt="화천">
+  <area shape="rect" coords="167,89,216,108" href="#yg" alt="양구">
+  <area shape="rect" coords="249,51,295,71" href="#gs" alt="고성">
+  <area shape="rect" coords="268,102,318,123" href="#sokcho" alt="속초">
+  <area shape="rect" coords="109,163,154,184" href="#cc" alt="춘천">
+  <area shape="rect" coords="216,133,264,153" href="#ij" alt="인제">
+  <area shape="rect" coords="286,144,327,165" href="#yy" alt="양양">
+  <area shape="rect" coords="164,201,213,222" href="#hc" alt="홍천">
+  <area shape="rect" coords="327,217,383,244" href="#gn" alt="강릉">
+  <area shape="rect" coords="130,314,182,335" href="#wj" alt="원주">
+  <area shape="rect" coords="177,262,221,283" href="#hs" alt="횡성">
+  <area shape="rect" coords="244,264,286,285" href="#first" alt="평창">
+  <area shape="rect" coords="372,279,416,304" href="#dh" alt="동해">
+  <area shape="rect" coords="243,353,291,373" href="#yw" alt="영월">
+  <area shape="rect" coords="296,312,340,327" href="#js" alt="정선">
+  <area shape="rect" coords="382,338,426,360" href="#sc" alt="삼척">
+  <area shape="rect" coords="346,370,392,391" href="#tb" alt="태백">
+</map>
+
+<map name="map_ulsan"  id="map_ulsan" class="mapSm">
+  <area shape="rect" coords="130,146,177,169" href="#uj" alt="울주">
+  <area shape="rect" coords="330,98,361,117" href="#b" alt="북구">
+  <area shape="rect" coords="276,138,308,162" href="#first" alt="중구">
+  <area shape="rect" coords="303,193,332,212" href="#n" alt="남구">
+  <area shape="rect" coords="371,199,405,219" href="#d" alt="동구">
+</map>
+
+
+<map name="map_jeju" id="map_jeju" class="mapSm">
+  <area shape="rect" coords="231,83,280,107" href="#jj" alt="제주">
+  <area shape="rect" coords="278,170,346,200" href="#sgp" alt="서귀포">
+</map>
+
 
 </div>
 <script src="../../js/ui.js"></script>
+<script>
+maps();
+</script>
 </body>
 </html>
