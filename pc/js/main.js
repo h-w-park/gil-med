@@ -17,16 +17,31 @@ $(function() {
 		verticalCentered: false,
 		scrollBar: false,
 		easing: 'easeInOutCubic',
+
+		onLeave: function(origin, destination, direction){
+			var leavingSection = this;
+
+			if(origin.index == 1 && direction =='down'){
+				console.log("Going to section 2!");
+			}
+
+			else if(origin.index == 2 && direction == 'up'){
+				console.log("Going to section 1!");
+			}
+		},
+
 		afterLoad: function(anchorLink, index){
 			if (index == 2){
-				console.log("222222222222");
-				$('#menu, header').addClass("bk", 500);
+				$('#menu, header, .sticky').addClass("bk", 500);
 				$(".gnb_wp").hover(function(){
 				}, function(){
 					$('header').addClass("bk", 500);
 				});
-			}else if(index == 1){	
-				$('#menu, header').removeClass("bk", 500);
+
+			}else if(index == 1){
+				
+				$('#menu, header, .sticky').removeClass("bk", 500);
+				
 				$(".gnb_wp").hover(function(){
 				}, function(){
 					$('header').removeClass("bk", 500);

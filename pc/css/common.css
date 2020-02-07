@@ -176,13 +176,15 @@ header .gnb_wp .gnb .rsv .inp-checkbox input[type=checkbox]:not(old) + label {pa
 header .gnb_wp .gnb .rsv .inp-checkbox input[type=checkbox]:not(old) + label:after {width:20px ;height: 20px; background: #fff; border:1px solid #eee; top:7px;}
 header .gnb_wp .gnb .rsv .inp-checkbox input[type=checkbox]:not(old):checked + label:after {background-image:url('../img/main/gnb_chk.png'); background-repeat:no-repeat; background-position:50% 50%; background-color: #67a62e;}
 
-.footer .util {background: #3c4044; height: 40px; padding-top: 20px;}
-.footer .util > .inner {width: 660px;}
-.footer .util .title {float: left; font-size:16px; color:#fff; font-weight: 600;}
-.footer .util ul {float: left; margin-left: 18px;}
-.footer .util ul li {float: left; position: relative; padding: 0 18px;}
-.footer .util ul li:before {content:""; position: absolute; left:0; top:5px; width:1px; height: 9px; background:#e0e0e0;}
-.footer .util ul li a {color:#fff; font-size:16px;}
+.sticky {position: fixed; bottom: 0; width: 100%; opacity: 0%;}
+.sticky.bk {opacity: 100%;}
+.quickMenu {background: #3c4044; height: 40px; padding-top: 20px;}
+.quickMenu > .inner {width: 660px;}
+.quickMenu .title {float: left; font-size:16px; color:#fff; font-weight: 600;}
+.quickMenu ul {float: left; margin-left: 18px;}
+.quickMenu ul li {float: left; position: relative; padding: 0 18px;}
+.quickMenu ul li:before {content:""; position: absolute; left:0; top:5px; width:1px; height: 9px; background:#e0e0e0;}
+.quickMenu ul li a {color:#fff; font-size:16px;}
 
 .footer .info {background: #32363a; padding: 30px 0;}
 .footer .info .info_more {float: left; width: calc(100% - 420px);}

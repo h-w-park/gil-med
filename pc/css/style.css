@@ -117,9 +117,10 @@
 .tab_sub .table-col{margin-top:45px;}
 .table-col > table{width:100%;border-top:2px solid #000;}
 .table-col > table thead th{background:#f9f9f9;border-bottom:1px solid #ddd;font-weight:400px;font-size:20px;color:#333;line-height:32px;border-left:1px solid #ddd;padding:19px 0;vertical-align:middle;}
-.table-col > table thead tr th:first-child{border-left:none;}
-.table-col > table tbody td{font-size:20px;line-height:30px;text-align:center;border-bottom:1px solid #ddd;border-left:1px solid #ddd;padding:20px 0;vertical-align:middle;}
-.table-col > table tbody tr td:first-child{border-left:none;}
+
+.table-col > table tbody td{font-size:20px;line-height:30px;text-align:center;border-bottom:1px solid #ddd;border-right:1px solid #ddd;padding:20px 0;vertical-align:middle;}
+.table-col > table thead tr th:first-child,
+.table-col > table tbody tr td:last-child{border-right:none;}
 .table-col > table tbody th{background:#f9f9f9;border-bottom:1px solid #ddd;font-weight:400px;font-size:20px;color:#333;line-height:32px;border-left:1px solid #ddd;padding:19px 0;vertical-align:middle;}
 .table-col > table tbody th:first-child{border-left:none;}
 .table-col > table tbody td strong{font-weight:400;}
@@ -374,7 +375,7 @@ select::-ms-expand{display:none;}
 .doctor-list li .infomation .schedule tbody tr + tr td{border-top:1px solid #f6f6f6;}
 .doctor-list li .infomation .schedule tbody td{height:32px;line-height:32px;text-align:center;}
 .doctor-list li .infomation .schedule tbody td span.on{display:inline-block;width:10px;height:10px;background:#fdc75b;border-radius:5px;}
-.doctor-list li .infomation .reserve{position:absolute;top:54px;right:40px;font-size:15px;color:#004e96;padding-right:14px;} 
+.doctor-list li .infomation .reserve{position:absolute;top:54px;right:40px;font-size:15px;color:#004e96;padding-right:14px;font-weight: 600;} 
 .doctor-list li .infomation .reserve:after{width:8px;height:14px;content:"";background:url(../img/icon/icon_.png) no-repeat -210px -124px;position:absolute;top:2px;right:0;}
 .title + .context .doctor-list{margin-top:0;}
 
@@ -994,9 +995,7 @@ box-shadow:-7px -11px 20px -1px rgba(0,0,0,0.11);}
 .gil-info-wrap .detail dl dd,
 .gil-info-wrap .detail dl dt {float: left; width: 600px;}
 .gil-info-wrap .detail dl dd {float: right; position: relative;}
-.gil-info-wrap .detail dl dd figure {-webkit-box-shadow: 10px 20px 33px 6px rgba(0,0,0,0.1);
--moz-box-shadow: 10px 20px 33px 6px rgba(0,0,0,0.1);
-box-shadow: 10px 20px 33px 6px rgba(0,0,0,0.1);}
+.gil-info-wrap .detail dl dd figure {-webkit-box-shadow: 10px 20px 33px 6px rgba(0,0,0,0.1); -moz-box-shadow: 10px 20px 33px 6px rgba(0,0,0,0.1); box-shadow: 10px 20px 33px 6px rgba(0,0,0,0.1);}
 .gil-info-wrap .detail dl:nth-child(even) dt {float: right;}
 .gil-info-wrap .detail dl:nth-child(even) dd {float: left;}
 
@@ -1014,4 +1013,18 @@ box-shadow: 10px 20px 33px 6px rgba(0,0,0,0.1);}
 .gil-info-wrap .detail dl dt h5 span {color: #004e96;}
 .gil-info-wrap .detail dl dt p {font-size:19px; line-height: 1.9; margin-top: 30px; color: #000;}
 
-.
+.total-serach-wrap .title {border-top:1px solid #ddd; border-bottom: 1px solid #ddd; padding: 64px 0; }
+.total-serach-wrap .title figure {display:block; margin: 0 auto 25px; width: 140px; height: 140px; background: #f9f9f9; border-radius:50%; box-sizing:border-box; padding-top: 30px;}
+.total-serach-wrap .title figure img {margin:0 auto 0;}
+.total-serach-wrap.noList .title {padding:160px 0 ;} 
+.total-serach-wrap .title p {text-align: center; font-size:28px; font-weight: 500; color: #000;}
+.total-serach-wrap .title p span {color: #67a62e;}
+.total-serach-wrap .detail > dl > dd {border-bottom: 1px solid #ddd; padding: 60px 0;}
+.total-serach-wrap .detail > dl > dd h5 {font-size:26px; color: #000; }
+.total-serach-wrap .detail > dl > dd h5 span {color: #67a62e;}
+.total-serach-wrap .detail > dl > dd > ul.news-list > li {border-bottom: 1px solid #ddd; padding: 25px 0; font-size:20px; line-height: 1.6;}
+.total-serach-wrap .detail > dl > dd > ul.news-list > li:last-child {border-bottom: 0; padding-bottom: 0;}
+.total-serach-wrap .detail > dl > dd > ul.news-list > li .util:after {content:"";  position: absolute; z-index:-1;}
+.total-serach-wrap .detail > dl > dd > ul.news-list > li .util {height: 32px; margin-top: 8px;}
+.total-serach-wrap .detail > dl > dd > ul.news-list > li .util .cate {float: left; font-size:18px;}
+.total-serach-wrap .detail > dl > dd > ul.news-list > li .util .more {float: right; display: inline-block; font-size:18px; color: #000; font-weight: 600; padding-right: 20px; background-image:url('../img/icon/blick_arr2.jpg'); background-repeat:no-repeat; background-position:right 0 top 8px ;} 

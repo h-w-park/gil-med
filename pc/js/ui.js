@@ -30,23 +30,8 @@ function popup(){
 
 }
 
-
-
-$(document).ready(function() {
-
-	popup();
-
-    $('.doctor-like').on('click',function(){
-        $(this).toggleClass('on');
-    })
-    var $winHei = $('body').height();
-    $('.dimm').css('height',$winHei+'px');
-
-	$(window).on('scroll',function(){
-        var scrX = $(window).scrollLeft()
-        $('header').css('left','-'+scrX+'px')
-    });  
-
+function headerOn(){
+	
 	$(".nav li a").hover(function(e){
 		e.preventDefault();
 		$( ".gnb_wp" ).animate({
@@ -56,9 +41,7 @@ $(document).ready(function() {
 		});
 	});
 
-
-	$(".gnb_wp").hover(function(){
-	//
+	$(".gnb_wp").hover(function(){ 
 	}, function(){
 		$( this ).animate({
 			height: "0"
@@ -94,4 +77,21 @@ $(document).ready(function() {
 	}, function(){ 
 			$(".nav ul li a").removeClass("active");
 	});
+}
+
+$(document).ready(function() {
+
+	popup();
+/*
+    $('.doctor-like').on('click',function(){
+        $(this).toggleClass('on');
+    })
+    var $winHei = $('body').height();
+    $('.dimm').css('height',$winHei+'px');
+
+	$(window).on('scroll',function(){
+        var scrX = $(window).scrollLeft()
+        $('header').css('left','-'+scrX+'px')
+    });  */
+
   });
