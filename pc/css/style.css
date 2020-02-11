@@ -444,6 +444,16 @@ select::-ms-expand{display:none;}
 .table-story table tr th, 
 .table-story table tr td {font-size:18px; line-height: 32px;}
 .table-story table tr th {padding-right: 24px; font-weight: 400; text-align: left;}
+.section-thesis {min-height: 100vh; background: #30597e; padding-bottom: 120px;}
+.section-thesis h5 {font-size:44px; text-align: center; font-weight: 400; padding-top: 78px;}
+.section-thesis .thesis {width: 1272px; margin: 0 auto; border-top: 1px solid #ddd; padding-top: 70px; margin-top: 35px;}
+.section-thesis .thesis table th {width: 230px; font-size:34px; font-weight: 300; text-align: left;}
+.section-thesis .thesis table td {font-size:18px; line-height: 1.6; padding-bottom: 48px; font-weight: 100;}
+.section-thesis .thesis + .btn-thesis-more {display:  block; width: 240px; height: 48px; line-height: 48px; border:1px solid #fff; color: #fff; margin: 0 auto; text-align: center; font-size:18px;}
+.section-thesis .thesis + .btn-thesis-more:after {content:"▼"; font-size:9px; position: relative; top:-4px; left:8px;}
+.section-thesis .thesis + .btn-thesis-more.open:after {content:"▲";}
+.section-thesis .thesis tr.hold {display: none;}
+.section-thesis .thesis tr.hold.open {display: table-row;}
 /* reserve-wrap */
 .reserve-wrap .content{background:url(../img/bg/bg_reserve.jpg) no-repeat 50% 0;height:1440px;}
 .reserve-main{width:1056px;margin:0 auto;background:#fff;box-sizing:border-box;padding:65px 105px;border:1px solid #ddd;}

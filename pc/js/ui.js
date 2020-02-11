@@ -109,6 +109,7 @@ function scr(){
 
 
 function career(){
+	//학력 더보기
 	var btn = $(".btn-more");
 	btn.on("click", function(){
 		$(this).toggleClass("open").prev(".career").toggleClass("open");
@@ -118,10 +119,32 @@ function career(){
 			btn.innerHTML = "더보기";
 		}
 	});
+
+	//논문 더보기
+	var btn2 = $(".btn-thesis-more");
+	var rLg = $('.thesis table tr:gt(4)');
+	rLg.addClass("hold");
+	btn2.on("click", function(){
+		$(this).toggleClass("open");
+		$(".thesis .hold").toggleClass("open");
+		if (this.innerHTML === "접기") {
+			this.innerHTML = "더보기";
+		} else {
+			this.innerHTML = "접기";
+		}
+	});
 }
 
 function doc(){
 	
+	var content = $("html, body");
+	setTimeout(function(){ 
+		$(content).animate({
+			scrollTop: 0
+		}, 500 );
+	}, 100);
+
+
 	$(window).scroll(function () {
 		
 		var doc = $(".doctor-img"),
@@ -138,11 +161,8 @@ function doc(){
 		//console.log("whole : " + whole + ", bottom : " + bottom + " wb :" + wb );
 
 		var body = $("html, body");
-
 		var val = stopH + stopP,
 			val2 = val - 1100;
-		
-		//console.log(val, val2);
 
 		var $this = $(this);
 		body.css({'overflow-x' : 'hidden'});
