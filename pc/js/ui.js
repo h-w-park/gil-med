@@ -112,15 +112,49 @@ function career(){
 	var btn = $(".btn-more");
 	btn.on("click", function(){
 		$(this).toggleClass("open").prev(".career").toggleClass("open");
-  if (btn.innerHTML === "더보기") {
-    btn.innerHTML = "접기";
-  } else {
-    btn.innerHTML = "더보기";
-  }
+		if (btn.innerHTML === "더보기") {
+			btn.innerHTML = "접기";
+		} else {
+			btn.innerHTML = "더보기";
+		}
 	});
-
 }
 
+function doc(){
+	
+	$(window).scroll(function () {
+		
+		var doc = $(".doctor-img"),
+			docH = doc.height(),
+			docP = doc.offset().top;
+
+		var stop = $(".stopDoc"),
+			stopH = stop.height(),
+			stopP = stop.offset().top;
+
+		var whole = $(".section").height();
+			bottom = $(".content-section").last().height();
+			wb = whole - bottom;
+		//console.log("whole : " + whole + ", bottom : " + bottom + " wb :" + wb );
+
+		var body = $("html, body");
+
+		var val = stopH + stopP,
+			val2 = val - 1100;
+		
+		//console.log(val, val2);
+
+		var $this = $(this);
+		body.css({'overflow-x' : 'hidden'});
+		if ($this.scrollTop() > val2) {
+			$(doc).addClass("here").css({'bottom' : bottom,'top' : '','right' : '-555px'});
+		} else {
+		   $(doc).removeClass('here').css({'bottom' : bottom,'top' : '-90px','left' : '50%','margin-left' : '15px'});
+		}
+	});
+
+
+}
 
 $(document).ready(function() {
 
@@ -130,10 +164,11 @@ $(document).ready(function() {
 		scrollButtons:{enable:false},
 		theme:"minimal-dark"
 	});
-/*
+
     $('.doctor-like').on('click',function(){
         $(this).toggleClass('on');
     })
+/*
     var $winHei = $('body').height();
     $('.dimm').css('height',$winHei+'px');
 
