@@ -25,9 +25,9 @@
             </div>
 
             <ul class="tab">
-                <li><a href="javascript:;">진료내역</a></li>
-                <li><a href="javascript:;" class="on">검사내역</a></li>
-                <li><a href="javascript:;">처방내역</a></li>
+                <li><a href="gp030401.html">진료내역</a></li>
+                <li><a href="gp030402.html" class="on">검사내역</a></li>
+                <li><a href="gp030403.html">처방내역</a></li>
             </ul>
 
             <div class="context cs-wrap">
@@ -61,13 +61,6 @@
                                         <td><a href="javascript:;" class="txt-md">관절류마티스내과</a></td>
                                         <td>홍길동</td>
                                     </tr>
-									<tr class="accordion">
-										<tr>
-											<td>1</td>
-											<td>2</td>
-											<td>3</td>
-										</tr>
-									</tr>
                                     <tr>
                                         <td>2019-11-2222</td>
                                         <td><a href="javascript:;" class="txt-md">관절류마티스내과</a></td>
@@ -242,18 +235,6 @@
 <script>
 $(function() {
 	$(".tab_sub").tabs();
-
-	$(function() {
-		var $research = $('.research');
-		$research.find("tr").not('.accordion').css("height", "0");
-		$research.find("tr").eq(0).css("height", "50px");
-		
-		$research.find(".accordion").click(function(){
-			$research.find('.accordion').not(this).siblings().fadeOut(500);
-			$(this).siblings().fadeToggle(500);
-		}).eq(0).trigger('click');
-	});
-
 });
 </script>
 </body>

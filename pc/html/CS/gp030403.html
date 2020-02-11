@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="../../css/style.css">
     <!-- Scripts -->
     <script src="../../js/jquery-2.2.3.min.js"></script>
-    <script src="../../js/jquery-ui.js"></script>
-    <script src="../../js/dotdotdot.js"></script>
+    <script src="../../js/jquery-ui.js"></script> 
+    <script src="../../js/ui.js"></script> 
 </head>
 <body>
 <div class="wrap">
@@ -26,213 +26,99 @@
             </div>
 
             <ul class="tab">
-                <li><a href="javascript:;">진료내역</a></li>
-                <li><a href="javascript:;">검사내역</a></li>
-                <li><a href="javascript:;" class="on">처방내역</a></li>
+                <li><a href="gp030401.html">진료내역</a></li>
+                <li><a href="gp030402.html">검사내역</a></li>
+                <li><a href="gp030403.html" class="on">처방내역</a></li>
             </ul>
 
             <div class="context cs-wrap">
                 
-                <div class="tab_sub">
-                    <ul>
-                        <li><a href="#tab1">외래</a></li>
-                        <li><a href="#tab2">입원</a></li>
-                        <li><a href="#tab3">응급</a></li>
-                    </ul>
-                    <div id="tab1">
-                        <div class="table-col">
-                            <table>
-                                <colgroup>
-                                    <col style="width:30%">
-                                    <col>
-                                    <col style="width:30%">
-                                </colgroup>
-                                <thead>
-                                    <tr>
-                                        <th>입원일자</th>
-                                        <th>진료과</th>
-                                        <th>주치의</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>2019-11-11</td>
-                                        <td><a href="javascript:;" class="txt-md">관절류마티스내과</a></td>
-                                        <td>홍길동</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2019-11-11</td>
-                                        <td><a href="javascript:;" class="txt-md">관절류마티스내과</a></td>
-                                        <td>홍길동</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2019-11-11</td>
-                                        <td><a href="javascript:;" class="txt-md">관절류마티스내과</a></td>
-                                        <td>홍길동</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2019-11-11</td>
-                                        <td><a href="javascript:;" class="txt-md">관절류마티스내과</a></td>
-                                        <td>홍길동</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2019-11-11</td>
-                                        <td><a href="javascript:;" class="txt-md">관절류마티스내과</a></td>
-                                        <td>홍길동</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2019-11-11</td>
-                                        <td><a href="javascript:;" class="txt-md">관절류마티스내과</a></td>
-                                        <td>홍길동</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2019-11-11</td>
-                                        <td><a href="javascript:;" class="txt-md">관절류마티스내과</a></td>
-                                        <td>홍길동</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2019-11-11</td>
-                                        <td><a href="javascript:;" class="txt-md">관절류마티스내과</a></td>
-                                        <td>홍길동</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2019-11-11</td>
-                                        <td><a href="javascript:;" class="txt-md">관절류마티스내과</a></td>
-                                        <td>홍길동</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2019-11-11</td>
-                                        <td><a href="javascript:;" class="txt-md">관절류마티스내과</a></td>
-                                        <td>홍길동</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="paging">
-                            <a href="javascript:;" class="first"></a>
-                            <a href="javascript:;" class="prev"></a>
-                            <strong>1</strong>
-                            <a href="javascript:;">2</a>
-                            <a href="javascript:;">3</a>
-                            <a href="javascript:;">4</a>
-                            <a href="javascript:;">5</a>
-                            <a href="javascript:;">6</a>
-                            <a href="javascript:;">7</a>
-                            <a href="javascript:;">8</a>
-                            <a href="javascript:;">9</a>
-                            <a href="javascript:;">10</a>
-                            <a href="javascript:;" class="next"></a>
-                            <a href="javascript:;" class="last"></a>
-                        </div>
-                    </div>
+				<div class="table-col">
+					<table class="fold-table">
+						<colgroup>
+							<col style="width:15%">
+							<col>
+							<col style="width:30%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>처방</th>
+								<th>처방과</th>
+								<th>처방의</th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="view">
+								<td>2020-01-20</td>
+								<td>가정의학과</td>
+								<td>홍길동</td>
+								<td><span class="arr"></span></td>
+							</tr>
+							<tr class="fold">
+								<td></td>
+								<td colspan="3">
+									<div class="fold-content">
+										<table>
+											<thead>
+												<tr>
+													<th>처방약품의 명칭</th>
+													<th>1회  투여량</th>
+													<th>1일 투여 횟수</th>
+													<th>총 투약 일수</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>발탄 플러스정 80/12.5mg(내복) 1정</td>
+													<td>1</td>
+													<td>1</td>
+													<td>60</td>
+												</tr>
+												<tr>
+													<td>셉드린정</td>
+													<td>0.333</td>
+													<td>3</td>
+													<td>30</td>
+												</tr>
+												<tr>
+													<td>대원이프로벤정</td>
+													<td>0.45</td>
+													<td>4</td>
+													<td>30</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="paging">
+					<a href="javascript:;" class="first"></a>
+					<a href="javascript:;" class="prev"></a>
+					<strong>1</strong>
+					<a href="javascript:;">2</a>
+					<a href="javascript:;">3</a>
+					<a href="javascript:;">4</a>
+					<a href="javascript:;">5</a>
+					<a href="javascript:;">6</a>
+					<a href="javascript:;">7</a>
+					<a href="javascript:;">8</a>
+					<a href="javascript:;">9</a>
+					<a href="javascript:;">10</a>
+					<a href="javascript:;" class="next"></a>
+					<a href="javascript:;" class="last"></a>
+				</div>
 
-                    <div id="tab2">
-                        <div class="table-col">
-                            <table>
-                                <colgroup>
-                                    <col style="width:25%" span="4">
-                                </colgroup>
-                                <thead>
-                                    <tr>
-                                        <th>입원일자</th>
-                                        <th>퇴원일자</th>
-                                        <th>진료과</th>
-                                        <th>주치의</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>2019-11-11</td>
-                                        <td>2019-11-11</td>
-                                        <td><a href="javascript:;" class="txt-md">관절류마티스내과</a></td>
-                                        <td>홍길동</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2019-11-11</td>
-                                        <td>2019-11-11</td>
-                                        <td><a href="javascript:;" class="txt-md">관절류마티스내과</a></td>
-                                        <td>홍길동</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2019-11-11</td>
-                                        <td>2019-11-11</td>
-                                        <td><a href="javascript:;" class="txt-md">관절류마티스내과</a></td>
-                                        <td>홍길동</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2019-11-11</td>
-                                        <td>2019-11-11</td>
-                                        <td><a href="javascript:;" class="txt-md">관절류마티스내과</a></td>
-                                        <td>홍길동</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2019-11-11</td>
-                                        <td>2019-11-11</td>
-                                        <td><a href="javascript:;" class="txt-md">관절류마티스내과</a></td>
-                                        <td>홍길동</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2019-11-11</td>
-                                        <td>2019-11-11</td>
-                                        <td><a href="javascript:;" class="txt-md">관절류마티스내과</a></td>
-                                        <td>홍길동</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2019-11-11</td>
-                                        <td>2019-11-11</td>
-                                        <td><a href="javascript:;" class="txt-md">관절류마티스내과</a></td>
-                                        <td>홍길동</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2019-11-11</td>
-                                        <td>2019-11-11</td>
-                                        <td><a href="javascript:;" class="txt-md">관절류마티스내과</a></td>
-                                        <td>홍길동</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2019-11-11</td>
-                                        <td>2019-11-11</td>
-                                        <td><a href="javascript:;" class="txt-md">관절류마티스내과</a></td>
-                                        <td>홍길동</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2019-11-11</td>
-                                        <td>2019-11-11</td>
-                                        <td><a href="javascript:;" class="txt-md">관절류마티스내과</a></td>
-                                        <td>홍길동</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="paging">
-                            <a href="javascript:;" class="first"></a>
-                            <a href="javascript:;" class="prev"></a>
-                            <strong>1</strong>
-                            <a href="javascript:;">2</a>
-                            <a href="javascript:;">3</a>
-                            <a href="javascript:;">4</a>
-                            <a href="javascript:;">5</a>
-                            <a href="javascript:;">6</a>
-                            <a href="javascript:;">7</a>
-                            <a href="javascript:;">8</a>
-                            <a href="javascript:;">9</a>
-                            <a href="javascript:;">10</a>
-                            <a href="javascript:;" class="next"></a>
-                            <a href="javascript:;" class="last"></a>
-                        </div>
-                    </div>
-
-                    <div id="tab3">333</div> 
-                </div>
             </div>
         </div>
     </div>
 
-</div>
 <script>
-$(function() {
-	$(".tab_sub").tabs();
-});
+fold();
 </script>
+</div> 
 </body>
 </html>
