@@ -9,12 +9,15 @@
 //# sourceMappingURL=jquery.fullpage.min.js.map
 
 
+
 $(function() {
-	$('#fullpage-wrap').fullpage({
+	headerOn();
+
+	$('#gil').fullpage({
 		anchors: ['intro', 'doctors', 'focus', 'info', 'footer' ],
 		menu: '#menu',
 		slidesNavigation: true,				
-		verticalCentered: false,
+		verticalCentered: true,
 		scrollBar: false,
 		easing: 'easeInOutCubic',
 
@@ -59,7 +62,46 @@ $(function() {
 		}
 	});
 
+	/*메인 : 길병원 의료진*/
+	$('.doctor').slick({
+        dots: true,
+        centerMode: true,
+		centerPadding: '-320px',
+        slidesToScroll: 5,
+        infinite: true,
+        variableWidth: true
+	});
 
+
+	/*메인 : 하단 로고*/
+	$('.slide-logo').slick({
+		//centerMode: true,
+		centerPadding: '120px',
+		variableWidth: true,
+		infinite: true,
+		variableWidth: true,
+		autoplay: true,
+		autoplaySpeed: 2000
+	}); 
+
+	 $('.focus__wrap').slick({
+	  asNavFor: '.focus__wrap_nav > ul',
+	  slidesToShow: 1,
+	  slidesToScroll: 1,
+	  arrows: false,
+	  fade: true,
+	  centerMode: false,
+	  draggable: false
+	});
+
+	$('.focus__wrap_nav > ul').slick({
+		asNavFor: '.focus__wrap',
+		dots: true, 
+		vertical: true,
+		focusOnSelect: true,
+		slidesToShow: 5,
+		slidesToScroll: 5
+	});
 
 	 $('.rsv__wrap').slick({
 	  asNavFor: '.rsv__wrap_nav',
@@ -71,6 +113,7 @@ $(function() {
 
 	  //fade: true,
 	});
+
 	$('.rsv__wrap_nav').slick({
 		asNavFor: '.rsv__wrap',
 		infinite: true,
@@ -84,49 +127,7 @@ $(function() {
 		variableWidth: true
 	});
 
-	 $('.focus__wrap').slick({
-	  asNavFor: '.focus__wrap_nav > ul',
-	  slidesToShow: 1,
-	  slidesToScroll: 1,
-	  arrows: false,
-	  fade: true,
-	  centerMode: false,
-	  draggable: false
-	});
-	$('.focus__wrap_nav > ul').slick({
-		asNavFor: '.focus__wrap',
-		dots: true, 
-		vertical: true,
-		focusOnSelect: true,
-		slidesToShow: 5,
-		slidesToScroll: 5
-	});
-
-
-
-
 	/*메인 : 길병원포커스*/
 	$(".news .contents").dotdotdot();
-
-	/*메인 : 길병원 의료진*/
-	$('.doctor').slick({
-        dots: true,
-        centerMode: true,
-		centerPadding: '-320px',
-        slidesToScroll: 5,
-        infinite: true,
-        variableWidth: true
-	});
-
-	/*메인 : 하단 로고*/
-	$('.slide-logo').slick({
-		//centerMode: true,
-		centerPadding: '120px',
-		variableWidth: true,
-		infinite: true,
-		variableWidth: true,
-		autoplay: true,
-		autoplaySpeed: 2000
-	}); 
 
 });

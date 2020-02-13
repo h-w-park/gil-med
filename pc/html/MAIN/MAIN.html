@@ -14,6 +14,7 @@
 	<script type="text/javascript" src="../../js/fullpage.min.js"></script>
 	<script type="text/javascript" src="../../js/slick.min.js"></script>  
 	<script type="text/javascript" src="../../js/ui.js"></script>  
+	<script type="text/javascript" src="../../js/main.js"></script>  
 	<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -22,7 +23,7 @@
 <body>
 	<header>
 		<div class="inner">
-			<h1><a href="">길병원</a></h1>
+			<h1><a href="">가천대길병원</a></h1>
 			<div class="nav">
 				<ul>
 					<li><a href="../MDC/gp010100.html">진료과/의료진</a></li>
@@ -140,7 +141,7 @@
 	</header>
 
 <main>
-		<div id="fullpage-wrap2">
+		<div id="gil">
 			<div class="section" id="section0">
 
 
@@ -989,132 +990,15 @@
 					</div>
 				</div>
 			</div>
-			</div>
 		</div>
+	</div>
 		
-
-
+	<ul id="menu">
+		<li data-menuanchor="intro" class="active"><a href="#intro"><strong>01</strong></a></li>
+		<li data-menuanchor="doctors"><a href="#doctors"><strong>02</strong></a></li>
+		<li data-menuanchor="focus"><a href="#focus"><strong>03</strong></a></li>
+		<li data-menuanchor="info"><a href="#info"><strong>04</strong></a></li>
+	</ul>
 </main>
-<script>
-
-$(function() {
-	headerOn();
-
-	$('#fullpage-wrap2').fullpage({
-		anchors: ['intro', 'doctors', 'focus', 'info', 'footer' ],
-		menu: '#menu',
-		slidesNavigation: true,				
-		verticalCentered: true,
-		scrollBar: false,
-		easing: 'easeInOutCubic',
-
-		onLeave: function(origin, destination, direction){
-			var leavingSection = this;
-
-			if(origin.index == 1 && direction =='down'){
-				console.log("Going to section 2!");
-			}
-
-			else if(origin.index == 2 && direction == 'up'){
-				console.log("Going to section 1!");
-			}
-		},
-
-		afterLoad: function(anchorLink, index){
-			if (index == 2){
-				$('#menu, header, .sticky').addClass("bk", 500);
-				$(".gnb_wp").hover(function(){
-				}, function(){
-					$('header').addClass("bk", 500);
-				});
-
-			}else if(index == 1){
-				
-				$('#menu, header, .sticky').removeClass("bk", 500);
-				
-				$(".gnb_wp").hover(function(){
-				}, function(){
-					$('header').removeClass("bk", 500);
-				});
-				$(".nav li a").hover(function(e){
-					e.preventDefault(); 
-					$('header').addClass("bk", 500);
-				} , function() {
-				// Animation complete. 
-				});
-
-			}else if(index > 1){
-				$('#menu, header').addClass("bk", 500);
-			}
-		}
-	});
-
-	/*메인 : 길병원 의료진*/
-	$('.doctor').slick({
-        dots: true,
-        centerMode: true,
-		centerPadding: '-320px',
-        slidesToScroll: 5,
-        infinite: true,
-        variableWidth: true
-	});
-
-
-	/*메인 : 하단 로고*/
-	$('.slide-logo').slick({
-		//centerMode: true,
-		centerPadding: '120px',
-		variableWidth: true,
-		infinite: true,
-		variableWidth: true,
-		autoplay: true,
-		autoplaySpeed: 2000
-	}); 
-
-	 $('.focus__wrap').slick({
-	  asNavFor: '.focus__wrap_nav > ul',
-	  slidesToShow: 1,
-	  slidesToScroll: 1,
-	  arrows: false,
-	  fade: true,
-	  centerMode: false,
-	  draggable: false
-	});
-	$('.focus__wrap_nav > ul').slick({
-		asNavFor: '.focus__wrap',
-		dots: true, 
-		vertical: true,
-		focusOnSelect: true,
-		slidesToShow: 5,
-		slidesToScroll: 5
-	});
-
-
-
-
-	 $('.rsv__wrap').slick({
-	  asNavFor: '.rsv__wrap_nav',
-	  slidesToShow: 1,
-	  slidesToScroll: 1,
-	  arrows: false,
-	  centerMode: true,
-	  draggable: false
-
-	  //fade: true,
-	});
-	$('.rsv__wrap_nav').slick({
-		asNavFor: '.rsv__wrap',
-		infinite: true,
-		slidesToShow: 4,
-		slidesToScroll: 1,
-		dots: false, 
-		arrows: false,
-		focusOnSelect: true,
-		draggable: false,
-		swipe: false,
-		variableWidth: true
-	});
-});
-</script>
 </body>
 

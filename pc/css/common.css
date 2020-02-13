@@ -87,7 +87,7 @@ img{display:block;}
 height: auto;border: 1px solid transparent; float: none;} .slick-arrow.slick-hidden { display: none; }
 
  
-.inner {width: 1400px; margin: 0 auto;}
+.inner {width: 1272px; margin: 0 auto;}
 .inner:after {clear: both; display: block; content:"";}
 
 header {position: relative;height: 94px; width: 100%; max-width:1920px; box-sizing:border-box;}
@@ -294,6 +294,7 @@ figure {margin: 0; padding: 0;}
 .fs_18 {font-size:18px !important;}
 .fs_20 {font-size:20px !important;}
 .fs_24 {font-size:24px !important;}
+.fs_30 {font-size:30px !important;}
 .fs_34 {font-size:34px !important;}
 
 .dis_ib {display: inline-block;}
