@@ -53,7 +53,7 @@ body {width: 100%;}
 
 
 /* reset */
-body{font-family:Lato, "NotoSansKR", '맑은고딕', Malgun Gothic, Dotum, "돋움", verdana, sans-serif;font-size:1rem; color:#666; width:100%; height:100%;letter-spacing:-1px;line-height:1.2;font-weight:300; }
+body{font-family:Lato, "NotoSansKR", '맑은고딕', Malgun Gothic, Dotum, "돋움", verdana, sans-serif;font-size:16px; color:#666; width:100%; height:100%;letter-spacing:-1px;line-height:1.2;font-weight:300; }
 body, ul, ol, li, dt, dl, dd, div, h1, h2, h3, h4, h5, h6, p, form, fieldset, blockquote, iframe, input, object, table, tr, th, td, img{margin:0;padding:0; vertical-align:top; border:none;}
 ul, ol, li{list-style:none}
 hr{display:none}
@@ -162,6 +162,8 @@ img{display:block;}
 .btn-wrap{text-align:center;}
 .btn-right{text-align:right;margin-top:25px;margin-right:-6px;}
 
+header.sub {}
+
 section > .title {margin: 5.625rem 0 0 ; height: 11.88rem;}
 section > .title h2 {text-align: center; font-size:3rem; color: #000;}
 section > .title p {text-align: center; font-size:1.5rem; color: #333; font-weight: 400;line-height: 1.4; min-height:1.5rem; margin-top: 1.625rem  ;}
@@ -170,3 +172,8 @@ section > .title p {text-align: center; font-size:1.5rem; color: #333; font-weig
 .form table tr td {padding-bottom: 1.5rem ;}
 .form table input {width: 100%;}
 .ui-input-text input {height:5rem ; line-height: 5rem; width: 100%; font-size:1.75rem; padding: 0 0 0 1rem; border:1px solid #ddd;}
+
+
+@media only screen and (max-width: 640px) { 
+ 
+}
