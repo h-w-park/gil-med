@@ -1,13 +1,12 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8"><meta name="viewport" content="width=640, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no ,target-densitydpi=medium-dpi">
+	<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no ,target-densitydpi=medium-dpi">
 	<meta name="apple-mobile-web-app-status-bar-style" content="default">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<title>길병원 모바일</title>  
 	<link rel="stylesheet" href="../../css/common.css">
-	<link rel="stylesheet" href="../../css/main.css"> 
-	<link rel="stylesheet" href="../../css/jquery.mobile-1.4.5.min.css"> 
+	<link rel="stylesheet" href="../../css/ui.css">  
 	<script src="../../js/jquery.js"></script>
 	<script src="../../js/jquery.mobile-1.4.5.min.js"></script>
 </head>
@@ -27,28 +26,134 @@
 			</div>
 		</header>
 
+
+		<!-- 기본 폼 -->
 		<section>
 			<div class="title">
 				<h2>로그인</h2>
 				<p>길병원의 다양한 정보와  <br>맞춤 서비스를 이용하시려면 로그인이 필요합니다.</p>
 			</div>
-			<div class="form">
-				<form action="">
-					<table>
-						<tr>
-							<td><input type="text" placeholder="아이디"></td>
-						</tr>
-						<tr>
-							<td><input type="password" placeholder="비밀번호"></td>
-						</tr>
-					</table>
-					<div class="btn-wrap">
-						<button class="btn btnL blue">로그인</button>
+			<div class="contents">
+				내용이 들어갑니다.
+			</div>
+		</section>
+		<!-- e. 기본 폼 -->
+
+
+
+
+		<section>
+			<div class="title">
+				<h2>로그인</h2>
+				<p>길병원의 다양한 정보와  <br>맞춤 서비스를 이용하시려면 로그인이 필요합니다.</p>
+			</div>
+			<div class="contents">
+
+				<div class="login">
+					<div class="inner">
+						<div class="form">
+							<form action="">
+								<table>
+									<tr>
+										<td><input type="text" placeholder="아이디" class="box"></td>
+									</tr>
+									<tr>
+										<td><input type="password" placeholder="비밀번호" class="box"></td>
+									</tr>
+								</table>
+								<div class="btn-wrap">
+									<button class="btn btnL blue">로그인</button>
+								</div>
+							</form>
+						</div>
+						<div class="snsLogin">
+							<ul>
+								<li><a href=""><i></i>페이스북 계정 로그인</a></li>
+								<li><a href=""><i></i>네이버 계정 로그인</a></li>
+								<li><a href=""><i></i>카카오 계정 로그인</a></li>
+							</ul>
+						</div>
+						<div class="util">
+							<ul>
+								<li><a href="">회원가입</a></li>
+								<li><a href="">아이디 찾기</a></li>
+								<li><a href="">비밀번호 찾기</a></li>
+							</ul>
+						</div>
 					</div>
-				</form>
+				</div>
+
+				<div class="rsv">
+					<div class="step cl">
+						<h3>STEP 1. 환자정보 입력</h3>
+						<ul>
+							<li class="on">1</li>
+							<li>2</li>
+							<li>3</li>
+							<li>4</li>
+						</ul>
+					</div>
+					<div class="inner">
+						<p class="ta_r mt_30"><small>필수입력 항목 <i class="required"></i></small></p>
+						<div class="form">
+							<form action="">
+								<dl>
+									<dt>본인유무 <i class="required"></i></dt>
+									<dd>
+										<input type="radio" name="v2" id="v2a" value="on" checked="checked">
+								        <label for="v2a">본인</label>
+								        <input type="radio" name="v2" id="v2b" value="off">
+								        <label for="v2b">대리인</label>
+									</dd>
+									<dt>이름 <i class="required"></i></dt>
+									<dd><input type="text" placeholder="이름" class="normal"></dd>
+									<dt>주민등록번호 <i class="required"></i></dt>
+									<dd>
+										<div class="secNum">
+											<input type="number" placeholder="앞 6자리 입력" class="normal">
+											<span class="space">-</span>
+											<input type="number" placeholder="뒤 7자리 입력" class="normal">
+										</div>
+									</dd>
+									<dt>휴대폰 <i class="required"></i></dt>
+									<dd>
+										<div class="phNum">
+											 <select name="select" id="" data-mini="false">
+										        <option value="1">010</option>
+										        <option value="2">010</option>
+										        <option value="3">026</option>
+										        <option value="4">031</option>
+										    </select>
+											<input type="number" placeholder="나머지 번호입력" class="normal">
+										</div>
+									</dd>
+									<dt>이메일</dt>
+									<dd>
+										<div class="eMail">
+											<input type="number" placeholder="앞 6자리 입력" class="normal">
+											<span class="space">@</span>
+											<input type="number" placeholder="뒤 7자리 입력" class="normal">
+										</div>
+										 <select name="select" id="" data-mini="false">
+									        <option value="1">직접입력</option>
+									        <option value="2">010</option>
+									        <option value="3">026</option>
+									        <option value="4">031</option>
+									    </select>
+
+									</dd>
+								</dl>
+							</form>
+						</div>
+					</div>
+				</div>
+
 			</div>
 		</section>
 
-	</div>
+
+
+
+	</div><!-- e. mobile -->
 </body>
 </html>
