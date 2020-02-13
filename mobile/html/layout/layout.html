@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="../../css/common.css">
 	<link rel="stylesheet" href="../../css/ui.css">  
 	<script src="../../js/jquery.js"></script>
-	<script src="../../js/jquery.mobile-1.4.5.min.js"></script>
+	<script src="../../js/jquery.mobile-1.4.5.js"></script>
 </head>
 <body>
 	<div class="mobile" data-role="page">	
@@ -83,6 +83,8 @@
 					</div>
 				</div>
 
+
+
 				<div class="rsv">
 					<div class="step cl">
 						<h3>STEP 1. 환자정보 입력</h3>
@@ -140,13 +142,34 @@
 									        <option value="3">026</option>
 									        <option value="4">031</option>
 									    </select>
-
 									</dd>
 								</dl>
 							</form>
 						</div>
 					</div>
-				</div>
+					
+					<hr>
+
+					<div class="inner">
+						<div class="form">
+							<form action="">
+								<dl>
+									<dd>
+										<input type="radio" name="v3" id="v3a" value="on" checked="checked">
+								        <label for="v3a">Active</label>
+								        <input type="radio" name="v3" id="v3b" value="off">
+								        <label for="v3b">Normal</label>
+								        <input type="radio" name="v3" id="v3c" value="off" disabled >
+								        <label for="v3c">Disabled</label>
+									</dd>
+									<dd>
+									</dd>
+								</dl>
+							</form>
+						</div>
+					</div>
+
+				</div><!-- e. rsv -->
 
 			</div>
 		</section>
