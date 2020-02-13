@@ -1,31 +1,33 @@
-<!doctype html>
-<html lang="en">
+
+<!DOCTYPE html>
+<html>
 <head>
-	<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no ,target-densitydpi=medium-dpi">
-	<meta name="apple-mobile-web-app-status-bar-style" content="default">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<title>길병원 모바일</title>  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Panel styling - jQuery Mobile Demos</title>
+	<link rel="shortcut icon" href="../favicon.ico">
 	<link rel="stylesheet" href="../../css/common.css">
 	<link rel="stylesheet" href="../../css/ui.css">  
 	<script src="../../js/jquery.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
 	<script src="../../js/jquery.mobile-1.4.5.js"></script>
+	<script src="../../js/ui.js"></script>
 </head>
 <body>
-	<div class="mobile" data-role="page">	
 
-				
-		<div data-role="panel" id="nav-panel">
-			<a href="#nav-panel" data-rel="close">Close panel</a>
-			내용
-		</div><!-- /panel -->
+<div data-role="page" id="mobile" class="mobile">
 
-		<header class="sub">
-			<div class="inner">
-				<a href="" class="prev">이전</a>
-				<a  href="#nav-panel" data-icon="bars" data-iconpos="notext">메뉴</a>
-			</div>
-		</header>
 
+    <div data-role="header">
+        <h1><a href="#">가천대길병원</a></h1>
+        <a href="#nav" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false"  class="right menu">메뉴</a>
+        <a href="#" class="left login">로그인</a>
+    </div><!-- /header -->
+
+
+
+    <div role="main" class="ui-content">
+		
 
 		<!-- 기본 폼 -->
 		<section>
@@ -38,10 +40,7 @@
 			</div>
 		</section>
 		<!-- e. 기본 폼 -->
-
-
-
-
+		
 		<section>
 			<div class="title">
 				<h2>로그인</h2>
@@ -83,6 +82,165 @@
 					</div>
 				</div>
 
+				<div class="mdc">
+					<div class="inner">
+						<h2> <br> <br> <br> <br> <br> <br> <br> <br> <br>탭 2~3개 케이스</h2>
+						<div data-role="tabs"> 
+							<div data-role="navbar"> 
+								<ul> 
+									<li><a href="#tab11" data-ajax="false">의료진소개 / <br> 진료시간 </a></li> 
+									<li><a href="#tab21" data-ajax="false">진료과 소개</a></li> 
+									<li><a href="#tab31" data-ajax="false">진료과 위치</a></li> 
+								</ul> 
+							</div> 
+							<div id="tab11" class="ui-body-d ui-content"> 
+								<p class="fs_12 mt_24 lh_16">※ 진료일정은 전문의의 사정에 따라 변경될 수 있습니다.  <br><strong> 예약문의 (1577-2299)</strong> </p>
+								<div class="doctor">
+									<ul>
+										<li>
+											<dl>
+												<dt>
+													<figure><img src="https://via.placeholder.com/90x115.png" alt=""></figure>
+													<div class="title">
+														<i class="doctor-like"></i>
+														<h3><strong>강성윤</strong>조교수</h3>
+														<p>진료분야: 천식 및 만성기도 <br>질환‚ 만성기침‚ 알레르기질환 </p>
+													</div>
+												</dt>
+												<dd>
+													<div class="table-col mt_12">
+														<table>
+															<thead>
+																<tr>
+																	<th>구분</th>
+																	<th>월</th>
+																	<th>화</th>
+																	<th>수</th>
+																	<th>목</th>
+																	<th>금</th>
+																	<th>토</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td><strong>오전</strong></td>
+																	<td></td>
+																	<td><span class="occupy"></span></td>
+																	<td></td>
+																	<td></td>
+																	<td></td>
+																	<td></td>
+																</tr>
+																<tr>
+																	<td><strong>오후</strong></td>
+																	<td></td>
+																	<td></td>
+																	<td><span class="occupy"></span></td>
+																	<td></td>
+																	<td><span class="occupy"></span></td>
+																	<td></td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+													<div class="btn-wrap mt_12">
+														<a href="" class="btn btnXL blue">진료예약</a>
+													</div>
+												</dd>
+											</dl>
+										</li>
+										<li>
+											<dl>
+												<dt>
+													<figure><img src="https://via.placeholder.com/90x115.png" alt=""></figure>
+													<div class="title">
+														<i class="doctor-like"></i>
+														<h3><strong>강성윤</strong>조교수</h3>
+														<p>진료분야: 천식 및 만성기도 <br>질환‚ 만성기침‚ 알레르기질환 </p>
+													</div>
+												</dt>
+												<dd>
+													<div class="table-col mt_12">
+														<table>
+															<thead>
+																<tr>
+																	<th>구분</th>
+																	<th>월</th>
+																	<th>화</th>
+																	<th>수</th>
+																	<th>목</th>
+																	<th>금</th>
+																	<th>토</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td><strong>오전</strong></td>
+																	<td></td>
+																	<td><span class="occupy"></span></td>
+																	<td></td>
+																	<td></td>
+																	<td></td>
+																	<td></td>
+																</tr>
+																<tr>
+																	<td><strong>오후</strong></td>
+																	<td></td>
+																	<td></td>
+																	<td><span class="occupy"></span></td>
+																	<td></td>
+																	<td><span class="occupy"></span></td>
+																	<td></td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+													<div class="btn-wrap mt_12">
+														<a href="" class="btn btnXL blue">진료예약</a>
+													</div>
+												</dd>
+											</dl>
+										</li>
+									</ul>
+								</div>
+
+							</div> 
+							<div id="tab21"> 
+							ㅌㅊㅋㅌㅊㅌ
+							</div> 
+							<div id="tab31"> 
+							ㅌㅊㅋㅌㅊㅌ
+							</div>   
+						</div>
+
+
+						<h2> <br> <br> <br>  탭 3개이상 expand 클래스 - <small>스크롤 유지를 위해 탭안에 더미 이미지를 넣습니다</small></h2>
+						<div data-role="tabs"> 
+							<div data-role="navbar" class="expand"> 
+								<ul> 
+									<li><a href="#tab1" data-ajax="false"> <img src="../../img/icon/i_1x1.png" alt=""> 의료진소개 / <br> 진료시간 </a></li> 
+									<li><a href="#tab2" data-ajax="false"> <img src="../../img/icon/i_1x1.png" alt=""> 진료과 소개</a></li> 
+									<li><a href="#tab3" data-ajax="false"> <img src="../../img/icon/i_1x1.png" alt=""> 진료과 위치</a></li> 
+									<li><a href="#tab4" data-ajax="false"> <img src="../../img/icon/i_1x1.png" alt=""> 진료과 위치</a></li> 
+								</ul> 
+							</div> 
+							<div id="tab1" class="ui-body-d ui-content"> 
+								<h1>First tab contents</h1> 
+							</div> 
+							<div id="tab2"> 
+							ㅌㅊㅋㅌㅊㅌ
+							</div> 
+							<div id="tab3"> 
+							ㅌㅊㅋㅌㅊㅌ
+							</div> 
+							<div id="tab4"> 
+							ㅌㅊㅋㅌㅊㅌ
+							</div> 
+						</div>
+					</div>
+				</div>
+
+
 
 
 				<div class="rsv">
@@ -96,6 +254,7 @@
 						</ul>
 					</div>
 					<div class="inner">
+						
 						<p class="ta_r mt_30"><small>필수입력 항목 <i class="required"></i></small></p>
 						<div class="form">
 							<form action="">
@@ -132,23 +291,42 @@
 									<dt>이메일</dt>
 									<dd>
 										<div class="eMail">
-											<input type="number" placeholder="앞 6자리 입력" class="normal">
+											<input type="text" placeholder="아이디 입력" class="normal">
 											<span class="space">@</span>
-											<input type="number" placeholder="뒤 7자리 입력" class="normal">
+											<input type="text" placeholder="이메일 입력" class="normal">
 										</div>
 										 <select name="select" id="" data-mini="false">
 									        <option value="1">직접입력</option>
-									        <option value="2">010</option>
-									        <option value="3">026</option>
-									        <option value="4">031</option>
+									        <option value="2">gmail.com</option>
+									        <option value="3">naver.com</option>
+									        <option value="4">daum.net</option>
 									    </select>
 									</dd>
 								</dl>
 							</form>
 						</div>
 					</div>
+
+					<hr><!-- // 구분선 -->
 					
-					<hr>
+					<div class="inner">
+						<div class="form">
+							<form action="">
+								<dl>
+									<dt>예약일 선택 <i class="required"></i></dt>
+									<dd>
+										<div class="rsv_yn">
+											<span class="y"></span>예약가능
+											<span class="n"></span>예약불가
+										</div>
+										<div id="datepicker"></div>
+									</dd>
+								</dl>
+							</form>
+						</div>
+					</div>
+					
+					<hr><!-- // 구분선 -->
 
 					<div class="inner">
 						<div class="form">
@@ -163,13 +341,27 @@
 								        <label for="v3c">Disabled</label>
 									</dd>
 									<dd>
+										<input type="checkbox" name="v4" id="v41">
+								        <label for="v41">Active</label>
+								        <input type="checkbox" name="v4" id="v42">
+								        <label for="v42">Normal</label>
+								        <input type="checkbox" name="v4" id="v43" disabled>
+								        <label for="v43">Disabled</label>
 									</dd>
 								</dl>
 							</form>
 						</div>
 					</div>
 
+					<hr><!-- // 구분선 -->
+
+					<div class="btn-wrap col-2">
+						<a href="" class="btn btnXL grey">취소</a>
+						<a href="" class="btn btnXL blue">예약</a>
+					</div>
+
 				</div><!-- e. rsv -->
+
 
 			</div>
 		</section>
@@ -177,6 +369,27 @@
 
 
 
-	</div><!-- e. mobile -->
+
+
+    </div><!-- /content -->
+
+	<div data-role="panel" id="nav" data-position="right">
+		<ul data-role="listview">
+			<li><a href="#" data-rel="close">닫기버튼</a></li>
+			<li data-role="list-divider">Categories</li>
+			<li data-role="collapsible" data-inset="false" data-iconpos="right">
+				<h3>Bikes</h3>
+				<ul data-role="listview">
+					<li><a href="#">Road</a></li>
+					<li><a href="#">ATB</a></li>
+					<li><a href="#">Fixed Gear</a></li>
+					<li><a href="#">Cruiser</a></li>
+				</ul>
+			</li><!-- /collapsible -->
+		</ul>
+	</div><!-- /panel -->
+
+</div><!-- /page -->
+
 </body>
 </html>
