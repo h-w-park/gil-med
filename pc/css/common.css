@@ -195,6 +195,7 @@ header .gnb_wp .gnb .rsv .inp-checkbox input[type=checkbox]:not(old):checked + l
 .footer .info .info_more ul:after {clear: both; display: block; content:"";}
 .footer .info .info_more ul li:first-child {padding: 0 18px 0 0 ;}
 .footer .info .info_more ul li:before {content:""; position: absolute; left:0; top:3px; width:1px; height: 9px; background:rgba(255,255,255,.2);}
+.footer .info .info_more ul li:first-child:before {display: none;}
 .footer .info .info_more ul li a {color:rgba(255,255,255,.6);}
 .footer .info .info_more address  {margin-top: 28px; color:#fff;}
 .footer .info .info_more small {margin-top: 14px; color:rgba(255,255,255,.6); display: block; letter-spacing: 0.1em;} 
@@ -333,7 +334,8 @@ figure {margin: 0; padding: 0;}
 /* popup */
 /* 기본 */
 .dimm{width:100vw;height:100vh !important;background:rgba(0,0,0,0.7);position:fixed;top:0;left:0;z-index:10000;}
-.popup{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);background:#fff;z-index:10001;max-height:800px;overflow-y:auto;}
+.popup{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);background:#fff;z-index:10001;max-height:800px;overflow-y:auto; 
+}
 .popup .popup-tit{height:55px;line-height:55px;border-bottom:1px solid #ddd;padding-left:23px;color:#333;font-size:22px;font-weight:500;}
 .popup .popup-close{position:absolute;top:20px;right:24px;}
 .popup .popup-content{padding:30px 80px 60px;}

@@ -68,6 +68,8 @@ $(function() {
         centerMode: true,
 		centerPadding: '-320px',
         slidesToScroll: 5,
+		autoplay: true,
+		autoplaySpeed: 2000,
         infinite: true,
         variableWidth: true
 	});

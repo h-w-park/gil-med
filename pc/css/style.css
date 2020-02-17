@@ -496,9 +496,9 @@ select::-ms-expand{display:none;}
 .reserve__btn-wrap{margin-top:60px;text-align:center;}
 .reserve-context .table-row table{width:100%;}
 .reserve-context .in-table-tit{margin:40px 0 15px;font-size:18px;}
-.reserve-context .left-group{float:left;padding:65px 95px;width:947px;box-sizing:border-box;}
+.reserve-context .left-group{float:left;padding:65px 95px;width:847px;box-sizing:border-box;}
 .reserve-context .left-group .scroll-content{overflow-y:auto;height:100%;}
-.reserve-context .medical-reserve-info{width:323px;float:right;height:796px;box-sizing:border-box;border-left:1px solid #ddd;padding:65px 40px;}
+.reserve-context .medical-reserve-info{width:423px;float:right;height:796px;box-sizing:border-box;border-left:1px solid #ddd;padding:65px 40px;}
 .reserve-context .medical-reserve-tit{font-size:24px;color:#000;font-weight:400;padding-bottom:33px;border-bottom:2px solid #666;display:block;}
 .reserve-context .medical-reserve-info table{width:100%;}
 .reserve-context .medical-reserve-info th{height:48px;line-height:48px;text-align:left;font-size:16px;color:#333;font-weight:normal;border-bottom:1px solid #ddd;}
@@ -669,8 +669,8 @@ select::-ms-expand{display:none;}
 
 /* 고객의소리 */
 .cs-voice{font-size:0;margin:0 -12px;}
-.cs-voice > a{display:inline-block;width:624px;height:240px;box-sizing:border-box;background:#fbfcfd url(../img/cs/cs_icon01.jpg) no-repeat 71px 59px;margin:0 12px;padding:69px 0 0 58px;}
-.cs-voice .voice02{background:#fbfcfd url(../img/cs/cs_icon02.jpg) no-repeat 71px 59px;}
+.cs-voice > a{display:inline-block;width:624px;height:240px;box-sizing:border-box;background:#f3f7fc url(../img/cs/cs_icon01.png) no-repeat 71px 59px;margin:0 12px;padding:69px 0 0 58px;}
+.cs-voice .voice02{background:#f3f7fc url(../img/cs/cs_icon02.png) no-repeat 71px 59px;}
 .cs-voice > a .tit{font-size:28px;color:#333;font-weight:400;}
 .cs-voice > a .text{font-size:20px;color:#333;margin-top:7px;display:block;}
 
@@ -829,7 +829,7 @@ a.news_more span {font-size:10px; position: relative; display: inline-block; top
 .join-wrap .content{background:url(../img/bg/bg_reserve.jpg) no-repeat 50% 0;height:1440px;}
 .join-context{background:#fff;height:796px;margin-top:25px;box-sizing:border-box;border:1px solid #ddd;position:relative;overflow:hidden;}
 .join-context.scroll{overflow-y:auto;}
-.join-context > .scroll-content{overflow-y:auto;height:100%;margin:60px 60px 60px 95px;}
+.join-context .scroll-content{overflow-y:auto;height:100%;margin:60px 60px 60px 95px;}
 .join-context.scroll > .scroll-content{overflow-y:unset;}
 .join-step01-context{padding:87px 215px 0 215px;}
 .join-step02-context{padding:65px 95px;}
@@ -870,7 +870,6 @@ a.news_more span {font-size:10px; position: relative; display: inline-block; top
 .confirm-list .confirm-list__item:hover .btn-join{background:#004e96;border:1px solid #004e96;color:#fff;}
 .confirm-list.active{margin:0 -12px 35px;}
 .confirm-list.active .confirm-list__item{width:527px;}
-.confirm-list.active .confirm-list__item:nth-child(1){background:none;}
 .confirm-list.active .inp-tell{margin-top:75px;margin-bottom:55px;}
 .confirm-list.active .inp-tell select,
 .confirm-list.active .inp-tell input{height:40px;line-height:40px;}
@@ -910,7 +909,7 @@ a.news_more span {font-size:10px; position: relative; display: inline-block; top
 .confirm-list .confirm-list__item.member-confirm .form table{width:100%}
 .confirm-list .confirm-list__item.member-confirm .form th{font-size:16px;color:#333;text-align:left;vertical-align:middle;font-weight:normal;}
 .confirm-list .confirm-list__item.member-confirm .form  td{padding:7px 0;}
-.confirm-list .confirm-list__item.member-confirm .form .inp-text{height:40px;font-size:16px;padding-left:20px;width:100%;} 
+.confirm-list .confirm-list__item.member-confirm .form .inp-text{height:40px;line-height: 40px;font-size:16px;padding-left:20px;width:100%;} 
 .confirm-list .confirm-list__item.member-confirm .form .select-box{width:95px;min-width:95px;}
 .confirm-list .confirm-list__item.member-confirm .form .select-box select{width:95px;height:40px;}
 .confirm-list .confirm-list__item.member-confirm .form .select-box select{background-position:105% -5px;padding-left:20px;font-size:16px;}
@@ -971,7 +970,7 @@ a.news_more span {font-size:10px; position: relative; display: inline-block; top
 .accordion-rules > div > ul > li > ul > li{font-weight:300}
 
 .context {position: relative;}
-.context > .in-table-tit{font-size:26px;font-weight:600;color:#000;margin-bottom:18px;margin-top:54px;} 
+.in-table-tit{font-size:26px;font-weight:600;color:#000;margin-bottom:18px;margin-top:54px;} 
 
 .recap_sel span {height: 50px; line-height: 50px; font-size:18px; display: inline-block; margin-right: 12px;}
 
@@ -1032,7 +1031,7 @@ a.news_more span {font-size:10px; position: relative; display: inline-block; top
 .gil-info-wrap .detail dl dt h5 span {color: #004e96;}
 .gil-info-wrap .detail dl dt p {font-size:19px; line-height: 1.9; margin-top: 30px; color: #000;}
 
-.total-serach-wrap .title {border-top:1px solid #ddd; border-bottom: 1px solid #ddd; padding: 64px 0; }
+.total-serach-wrap .title {border-top:1px solid #ddd;  padding: 64px 0; }
 .total-serach-wrap .title figure {display:block; margin: 0 auto 25px; width: 140px; height: 140px; background: #f9f9f9; border-radius:50%; box-sizing:border-box; padding-top: 30px;}
 .total-serach-wrap .title figure img {margin:0 auto 0;}
 .total-serach-wrap.noList .title {padding:160px 0 ;} 
