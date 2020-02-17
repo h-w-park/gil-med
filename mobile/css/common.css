@@ -323,12 +323,13 @@ table tbody td strong {font-weight: 500; color: #000;}
 .mobile {width: 100%; max-width:480px; min-height: 100vh;  margin: 0 auto; background: #fff; overflow: hidden; position: relative;}
 .footer {margin-top: 6.25rem;}
 
-.ui-header {position: fixed; padding: 0 1rem; border-bottom: 1px solid #ddd; height: 2.625rem; width: 100%; box-sizing: border-box;  background: #fff; z-index:2;}
+.ui-header {position: fixed; padding: 0 1rem; border-bottom: 1px solid #ddd; height: 2.625rem;  box-sizing: border-box;  background: #fff; z-index:2; min-width: 480px;}
 .ui-header h1 {padding-top:0.75rem ;position: absolute; lefT:50%; margin-left: -3.1rem; background: url(../img/common/logo.png); background-size:100%; background-repeat:no-repeat; background-position:left 0 bottom 0;}
 .ui-header h1 a { width:6.19rem; height: 1.313rem; overflow: hidden; text-indent: 999px; display: block; }
 .ui-header > a {font-size:0.625rem; font-weight: 500; margin-top: 0.5rem;}
 .ui-header > a:before {content:"";width: 1.063rem; height: 1.063rem; background: url('../img/icon/i_header.png') no-repeat; display: block; background-size: 300%; margin: 0 auto;}
 .ui-header > a.menu:before { background-position:right 0 top 0;}
+.ui-header > a.prev:before { background-position:left 50% top 0;}
 .ui-header .left {float: left; }
 .ui-header .right {float: right;}
 .ui-content > section {padding-top: 2.625rem;}
@@ -355,3 +356,15 @@ form > table {width: 100%;}
 form > table tr td {padding-bottom: .75rem ;}
 
 .inner {padding: 0 1rem;}
+
+footer {background: #32363a; margin-top: 6.25rem;}
+footer .util {  text-align: center;}
+footer .util:first-child { border-bottom: 0.0625rem solid rgba(255,255,255,.1)}
+footer .util ul li {display: inline-block;  height: 2.5rem; line-height: 2.5rem; position: relative; padding: 0 0.5rem;}
+footer .util ul li:after {content:""; display: block; position: absolute; right:-0.15rem; width: 0.0625rem; height: 0.6875rem; background: rgba(255,255,255,.1); top:1rem;}
+footer .util ul li:last-child:after {display: none;}
+footer .util ul li a {color: rgba(255,255,255,.6); font-size: 0.6875rem; }
+
+footer .util address {font-size:0.8125rem; display: block; margin-bottom: 0.8rem;}
+footer .call {background: #282b2e; text-align: center; font-size:0.8125rem; color:rgba(255,255,255,.4); height: 3.125rem; line-height:  3.125rem;}
+footer .call strong {font-size:1rem; display: inline-block; margin-left: 0.5rem;} 
