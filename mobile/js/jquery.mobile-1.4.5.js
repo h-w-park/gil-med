@@ -1499,7 +1499,7 @@ $.mobile.widget = $.Widget;
 			// Force text visibility if the second argument was supplied, or
 			// if the text was explicitly set in the object args
 			this.element.attr("class", loaderClass +
-				"  ui-body-" + theme +
+				" ui-corner-all ui-body-" + theme +
 				" ui-loader-" + ( textVisible || msgText || theme.text ? "verbose" : "default" ) +
 				( loadSettings.textonly || textonly ? " ui-loader-textonly" : "" ) );
 
@@ -6587,7 +6587,7 @@ $.widget( "mobile.page", $.mobile.page, {
 					// ARIA role
 					"role" : "dialog",
 					"class" : "ui-dialog-contain ui-overlay-shadow" +
-						( this.options.corners ? " " : "" )
+						( this.options.corners ? " ui-corner-all" : "" )
 				}));
 		}
 	},
@@ -6597,7 +6597,7 @@ $.widget( "mobile.page", $.mobile.page, {
 			currentOpts = this.options;
 
 		if ( options.corners !== undefined ) {
-			this._inner.toggleClass( "", !!options.corners );
+			this._inner.toggleClass( "ui-corner-all", !!options.corners );
 		}
 
 		if ( options.overlayTheme !== undefined ) {
@@ -6653,7 +6653,7 @@ $.widget( "mobile.page", $.mobile.page, {
 			dst = this._inner.find( ":jqmData(role='header')" ).first();
 			btn = $( "<a></a>", {
 					"href": "#",
-					"class": "ui-btn  ui-icon-delete ui-btn-icon-notext ui-btn-" + location
+					"class": "ui-btn ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-" + location
 				})
 				.attr( "data-" + $.mobile.ns + "rel", "back" )
 				.text( text || this.options.closeBtnText || "" )
@@ -6722,7 +6722,7 @@ $.widget( "mobile.dialog", {
 				// ARIA role
 				"role" : "dialog",
 				"class" : "ui-dialog-contain ui-overlay-shadow" +
-					( !!opts.corners ? " " : "" )
+					( !!opts.corners ? " ui-corner-all" : "" )
 			}));
 
 		$.extend( this, {
@@ -6746,7 +6746,7 @@ $.widget( "mobile.dialog", {
 			currentOpts = this.options;
 
 		if ( options.corners !== undefined ) {
-			this._inner.toggleClass( "", !!options.corners );
+			this._inner.toggleClass( "ui-corner-all", !!options.corners );
 		}
 
 		if ( options.overlayTheme !== undefined ) {
@@ -6794,7 +6794,7 @@ $.widget( "mobile.dialog", {
 			btn = $( "<a></a>", {
 					"role": "button",
 					"href": "#",
-					"class": "ui-btn  ui-icon-delete ui-btn-icon-notext ui-btn-" + location
+					"class": "ui-btn ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-" + location
 				})
 				.text( text || this.options.closeBtnText || "" )
 				.prependTo( dst );
@@ -6931,7 +6931,7 @@ $.widget( "mobile.collapsible", {
 
 		elem.addClass( "ui-collapsible " +
 			( opts.inset ? "ui-collapsible-inset " : "" ) +
-			( opts.inset && opts.corners ? " " : "" ) +
+			( opts.inset && opts.corners ? "ui-corner-all " : "" ) +
 			( contentThemeClass ? "ui-collapsible-themed-content " : "" ) );
 		ui.originalHeading = elem.children( this.options.heading ).first(),
 		ui.content = elem
@@ -7079,7 +7079,7 @@ $.widget( "mobile.collapsible", {
 		}
 
 		if ( hasCorners !== undefined ) {
-			elem.toggleClass( "", hasCorners );
+			elem.toggleClass( "ui-corner-all", hasCorners );
 		}
 
 		if ( opts.mini !== undefined ) {
@@ -7149,7 +7149,7 @@ $.widget( "mobile.collapsible", {
 		ui.content.contents().unwrap();
 		this.element
 			.removeClass( "ui-collapsible ui-collapsible-collapsed " +
-				"ui-collapsible-themed-content ui-collapsible-inset " );
+				"ui-collapsible-themed-content ui-collapsible-inset ui-corner-all" );
 	}
 });
 
@@ -7256,7 +7256,7 @@ $.widget( "mobile.collapsibleset", $.extend( {
 		if ( !opts.enhanced ) {
 			elem.addClass( "ui-collapsible-set " +
 				this._themeClassFromOption( "ui-group-theme-", opts.theme ) + " " +
-				( opts.corners && opts.inset ? " " : "" ) );
+				( opts.corners && opts.inset ? "ui-corner-all " : "" ) );
 			this.element.find( $.mobile.collapsible.initSelector ).collapsible();
 		}
 
@@ -7298,7 +7298,7 @@ $.widget( "mobile.collapsibleset", $.extend( {
 		}
 
 		if ( hasCorners !== undefined ) {
-			elem.toggleClass( "", hasCorners );
+			elem.toggleClass( "ui-corner-all", hasCorners );
 		}
 
 		ret = this._super( options );
@@ -7311,7 +7311,7 @@ $.widget( "mobile.collapsibleset", $.extend( {
 
 		this._removeFirstLastClasses( el.children( childCollapsiblesSelector ) );
 		el
-			.removeClass( "ui-collapsible-set  " +
+			.removeClass( "ui-collapsible-set ui-corner-all " +
 				this._themeClassFromOption( "ui-group-theme-", this.options.theme ) )
 			.children( ":mobile-collapsible" )
 			.collapsible( "destroy" );
@@ -7479,7 +7479,7 @@ $.widget( "mobile.listview", $.extend( {
 		listviewClasses += t.options.inset ? " ui-listview-inset" : "";
 
 		if ( !!t.options.inset ) {
-			listviewClasses += t.options.corners ? " " : "";
+			listviewClasses += t.options.corners ? " ui-corner-all" : "";
 			listviewClasses += t.options.shadow ? " ui-shadow" : "";
 		}
 
@@ -7881,7 +7881,7 @@ $.widget( "mobile.checkboxradio", $.extend( {
 	},
 
 	_enhance: function() {
-		this.label.addClass( "ui-btn ");
+		this.label.addClass( "ui-btn ui-corner-all");
 
 		if ( this.labelIsParent ) {
 			this.input.add( this.label ).wrapAll( this._wrapper() );
@@ -8182,7 +8182,7 @@ $.widget( "mobile.button", {
 		return $("<div class='ui-btn ui-input-btn" +
 			( options.wrapperClass ? " " + options.wrapperClass : "" ) +
 			( options.theme ? " ui-btn-" + options.theme : "" ) +
-			( options.corners ? " " : "" ) +
+			( options.corners ? " ui-corner-all" : "" ) +
 			( options.shadow ? " ui-shadow" : "" ) +
 			( options.inline ? " ui-btn-inline" : "" ) +
 			( options.mini ? " ui-mini" : "" ) +
@@ -8215,7 +8215,7 @@ $.widget( "mobile.button", {
 				.addClass( "ui-btn-" + options.theme );
 		}
 		if ( options.corners !== undefined ) {
-			outer.toggleClass( "", options.corners );
+			outer.toggleClass( "ui-corner-all", options.corners );
 		}
 		if ( options.shadow !== undefined ) {
 			outer.toggleClass( "ui-shadow", options.shadow );
@@ -8377,9 +8377,9 @@ $.widget( "mobile.textinput", {
 			elementClasses.push( "ui-input-text" );
 		}
 
-		//if ( this.isTextarea || this.isRange ) {
-		//	elementClasses.push( "ui-shadow-inset" );
-		//}
+		if ( this.isTextarea || this.isRange ) {
+			elementClasses.push( "ui-shadow-inset" );
+		}
 
 		//"search" and "text" input widgets
 		if ( this.inputNeedsWrap ) {
@@ -8401,7 +8401,7 @@ $.widget( "mobile.textinput", {
 
 		classes.push( "ui-body-" + ( ( options.theme === null ) ? "inherit" : options.theme ) );
 		if ( options.corners ) {
-			classes.push( "" );
+			classes.push( "ui-corner-all" );
 		}
 		if ( options.mini ) {
 			classes.push( "ui-mini" );
@@ -8420,7 +8420,7 @@ $.widget( "mobile.textinput", {
 		return $( "<div class='" +
 			( this.isSearch ? "ui-input-search " : "ui-input-text " ) +
 			this.classes.join( " " ) + " " +
-			" '></div>" );
+			"ui-shadow-inset'></div>" );
 	},
 
 	_autoCorrect: function() {
@@ -8514,7 +8514,7 @@ $.widget( "mobile.slider", $.extend( {
 			control = this.element,
 			trackTheme = this.options.trackTheme || $.mobile.getAttribute( control[ 0 ], "theme" ),
 			trackThemeClass = trackTheme ? " ui-bar-" + trackTheme : " ui-bar-inherit",
-			cornerClass = ( this.options.corners || control.jqmData( "corners" ) ) ? " " : "",
+			cornerClass = ( this.options.corners || control.jqmData( "corners" ) ) ? " ui-corner-all" : "",
 			miniClass = ( this.options.mini || control.jqmData( "mini" ) ) ? " ui-mini" : "",
 			cType = control[ 0 ].nodeName.toLowerCase(),
 			isToggleSwitch = ( cType === "select" ),
@@ -8867,7 +8867,7 @@ $.widget( "mobile.slider", $.extend( {
 			themeClass =  theme ? " ui-btn-" + theme : "",
 			trackTheme = this.options.trackTheme || parentTheme,
 			trackThemeClass = trackTheme ? " ui-bar-" + trackTheme : " ui-bar-inherit",
-			cornerClass = this.options.corners ? " " : "",
+			cornerClass = this.options.corners ? " ui-corner-all" : "",
 			miniClass = this.options.mini ? " ui-mini" : "",
 			left, width, data, tol,
 			pxStep, percent,
@@ -9052,10 +9052,10 @@ $.widget( "mobile.slider", $.extend( {
 	},
 
 	_setCorners: function( value ) {
-		this.slider.toggleClass( " ", value );
+		this.slider.toggleClass( "ui-corner-all", value );
 
 		if ( !this.isToggleSwitch ) {
-			this.control.toggleClass( " ", value );
+			this.control.toggleClass( "ui-corner-all", value );
 		}
 	},
 
@@ -9080,7 +9080,7 @@ var popup;
 function getPopup() {
 	if ( !popup ) {
 		popup = $( "<div></div>", {
-			"class": "ui-slider-popup ui-shadow "
+			"class": "ui-slider-popup ui-shadow ui-corner-all"
 		});
 	}
 	return popup.clone();
@@ -9311,7 +9311,7 @@ $.widget( "mobile.flipswitch", $.extend({
 							.eq( 1 )
 							.is( ":selected" ) ) ? "ui-flipswitch-active" : "" ) +
 					( element.is(":disabled") ? " ui-state-disabled": "") +
-					( options.corners ? " ": "" ) +
+					( options.corners ? " ui-corner-all": "" ) +
 					( options.mini ? " ui-mini": "" ) )
 				.append( on, off );
 
@@ -9386,7 +9386,7 @@ $.widget( "mobile.flipswitch", $.extend({
 			this.widget().toggleClass( "ui-mini", options.mini );
 		}
 		if ( options.corners !== undefined ) {
-			this.widget().toggleClass( "", options.corners );
+			this.widget().toggleClass( "ui-corner-all", options.corners );
 		}
 
 		this._super( options );
@@ -9694,7 +9694,7 @@ $.widget( "mobile.flipswitch", $.extend({
 
 		clearButton: function() {
 			return $( "<a href='#' tabindex='-1' aria-hidden='true' " +
-				"class='ui-input-clear ui-btn ui-icon-delete ui-btn-icon-notext '>" +
+				"class='ui-input-clear ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all'>" +
 				"</a>" )
 					.attr( "title", this.options.clearBtnText )
 					.text( this.options.clearBtnText );
@@ -10058,7 +10058,7 @@ $.widget( "mobile.selectmenu", $.extend( {
 					( options.icon ? ( " ui-icon-" + options.icon + " ui-btn-icon-" + iconpos +
 					( options.iconshadow ? " ui-shadow-icon" : "" ) ) :	"" ) + /* TODO: Remove in 1.5. */
 					( options.theme ? " ui-btn-" + options.theme : "" ) +
-					( options.corners ? " " : "" ) +
+					( options.corners ? " ui-corner-all" : "" ) +
 					( options.shadow ? " ui-shadow" : "" ) );
 
 		this.setButtonText();
@@ -10194,7 +10194,7 @@ $.widget( "mobile.selectmenu", $.extend( {
 			} else {
 
 				// Set the contents to &nbsp; which we write as &#160; to be XHTML compliant - see gh-6699
-				span.html( "&#160;" );
+				//span.html( "&#160;" );
 			}
 
 			// TODO possibly aggregate multiple select option classes
@@ -10425,7 +10425,7 @@ $.widget( "mobile.popup", {
 			.addClass( "ui-popup " +
 				this._themeClassFromOption( "ui-body-", currentOptions.theme ) + " " +
 				( currentOptions.shadow ? "ui-overlay-shadow " : "" ) +
-				( currentOptions.corners ? " " : "" ) )
+				( currentOptions.corners ? "ui-corner-all " : "" ) )
 			.appendTo( ui.container );
 
 		return ui;
@@ -10618,7 +10618,7 @@ $.widget( "mobile.popup", {
 		}
 
 		if ( newOptions.corners !== undefined ) {
-			theElement.toggleClass( "", newOptions.corners );
+			theElement.toggleClass( "ui-corner-all", newOptions.corners );
 		}
 
 		if ( newOptions.transition !== undefined ) {
@@ -11046,7 +11046,7 @@ $.widget( "mobile.popup", {
 			// will cause an infinite recursion - #5244
 			.detach()
 			.insertAfter( this._ui.placeholder )
-			.removeClass( "ui-popup ui-overlay-shadow  ui-body-inherit" );
+			.removeClass( "ui-popup ui-overlay-shadow ui-corner-all ui-body-inherit" );
 		this._ui.screen.remove();
 		this._ui.container.remove();
 		this._ui.placeholder.remove();
@@ -11439,7 +11439,7 @@ $.widget( "mobile.selectmenu", $.mobile.selectmenu, {
 				"role": "button",
 				"text": o.closeText,
 				"href": "#",
-				"class": "ui-btn  ui-btn-left ui-btn-icon-notext ui-icon-delete"
+				"class": "ui-btn ui-corner-all ui-btn-left ui-btn-icon-notext ui-icon-delete"
 			}).appendTo( header );
 		}
 
@@ -11824,7 +11824,7 @@ $.widget( "mobile.selectmenu", $.mobile.selectmenu, {
 // Map classes to buttonMarkup boolean options - used in classNameToOptions()
 var reverseBoolOptionMap = {
 		"ui-shadow" : "shadow",
-		"" : "corners",
+		"ui-corner-all" : "corners",
 		"ui-btn-inline" : "inline",
 		"ui-shadow-icon" : "iconshadow", /* TODO: Remove in 1.5 */
 		"ui-mini" : "mini"
@@ -11875,7 +11875,7 @@ function optionsToClasses( options, existingClasses ) {
 		classes.push( "ui-shadow" );
 	}
 	if ( options.corners ) {
-		classes.push( "" );
+		classes.push( "ui-corner-all" );
 	}
 	if ( options.mini ) {
 		classes.push( "ui-mini" );
@@ -12135,7 +12135,7 @@ $.widget( "mobile.controlgroup", $.extend( {
 						"ui-controlgroup-" +
 							( opts.type === "horizontal" ? "horizontal" : "vertical" ) + " " +
 						this._themeClassFromOption( opts.theme ) + " " +
-						( opts.corners ? " " : "" ) +
+						( opts.corners ? "ui-corner-all " : "" ) +
 						( opts.mini ? "ui-mini " : "" ) )
 					.wrapInner( "<div " +
 						"class='ui-controlgroup-controls " +
@@ -12175,7 +12175,7 @@ $.widget( "mobile.controlgroup", $.extend( {
 		}
 
 		if ( options.corners !== undefined ) {
-			elem.toggleClass( "", options.corners );
+			elem.toggleClass( "ui-corner-all", options.corners );
 		}
 
 		if ( options.mini !== undefined ) {
@@ -12230,7 +12230,7 @@ $.widget( "mobile.controlgroup", $.extend( {
 		ui = this._ui;
 		buttons = this.element
 			.removeClass( "ui-controlgroup " +
-				"ui-controlgroup-horizontal ui-controlgroup-vertical  ui-mini " +
+				"ui-controlgroup-horizontal ui-controlgroup-vertical ui-corner-all ui-mini " +
 				this._themeClassFromOption( opts.theme ) )
 			.find( ".ui-btn" )
 			.not( ".ui-slider-handle" );
@@ -12379,7 +12379,7 @@ $.widget( "mobile.controlgroup", $.extend( {
 				if ( !backButton.attached ) {
 					this.backButton = backButton.element = ( backButton.element ||
 						$( "<a role='button' href='javascript:void(0);' " +
-							"class='ui-btn  ui-shadow ui-btn-left " +
+							"class='ui-btn ui-corner-all ui-shadow ui-btn-left " +
 								( theme ? "ui-btn-" + theme + " " : "" ) +
 								"ui-toolbar-back-btn ui-icon-carat-l ui-btn-icon-left' " +
 							"data-" + $.mobile.ns + "rel='back'>" + options.backBtnText +
@@ -12413,7 +12413,7 @@ $.widget( "mobile.controlgroup", $.extend( {
 
 			if ( this.role === "header" ) {
 				this.element.children( "a, button" )
-					.removeClass( "ui-btn-left ui-btn-right ui-btn ui-shadow " );
+					.removeClass( "ui-btn-left ui-btn-right ui-btn ui-shadow ui-corner-all" );
 				if ( this.backButton) {
 					this.backButton.remove();
 				}
@@ -13762,7 +13762,7 @@ $.widget( "mobile.table", $.mobile.table, {
 		menuButton = $( "<a href='#" + id + "' " +
 			"class='" + opts.classes.columnBtn + " ui-btn " +
 			"ui-btn-" + ( opts.columnBtnTheme || "a" ) +
-			"  ui-shadow ui-mini' " +
+			" ui-corner-all ui-shadow ui-mini' " +
 			"data-" + ns + "rel='popup'>" + opts.columnBtnText + "</a>" );
 		popup = $( "<div class='" + opts.classes.popup + "' id='" + id + "'></div>" );
 		menu = $( "<fieldset></fieldset>" ).controlgroup();
@@ -14447,7 +14447,7 @@ $.widget( "ui.tabs", {
 		this.running = false;
 
 		this.element
-			.addClass( "ui-tabs ui-widget ui-widget-content " )
+			.addClass( "ui-tabs ui-widget ui-widget-content ui-corner-all" )
 			.toggleClass( "ui-tabs-collapsible", options.collapsible )
 			// Prevent users from focusing disabled tabs via click
 			.delegate( ".ui-tabs-nav > li", "mousedown" + this.eventNamespace, function( event ) {
@@ -14769,7 +14769,7 @@ $.widget( "ui.tabs", {
 		var that = this;
 
 		this.tablist = this._getList()
-			.addClass( "ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header " )
+			.addClass( "ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" )
 			.attr( "role", "tablist" );
 
 		this.tabs = this.tablist.find( "> li:has(a[href])" )
@@ -15073,10 +15073,10 @@ $.widget( "ui.tabs", {
 			this.xhr.abort();
 		}
 
-		this.element.removeClass( "ui-tabs ui-widget ui-widget-content  ui-tabs-collapsible" );
+		this.element.removeClass( "ui-tabs ui-widget ui-widget-content ui-corner-all ui-tabs-collapsible" );
 
 		this.tablist
-			.removeClass( "ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header " )
+			.removeClass( "ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" )
 			.removeAttr( "role" );
 
 		this.anchors

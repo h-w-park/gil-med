@@ -262,17 +262,25 @@ img{display:block;margin:0;padding:0;}
 	.ui-datepicker-header .ui-datepicker-title select:first-child option:after {content:"년"; display: inline-block;}
 
 
+/* Accordion */
+.ui-accordion-header-icon {display: none;}
+.ui-collapsible-heading-status {display: none;}
+.ui-collapsible-themed-content .ui-collapsible-content {  }
 
-.ui-accordion .ui-accordion-header {
-	display: block;
-	cursor: pointer;
-	position: relative;
-}
-.ui-accordion .ui-accordion-content {
-	padding: 1em 0;
-	border-top: 0;
-	height: auto;
-}
+.ui-collapsible-content { border-bottom:1px solid #ddd; font-size:0.8125rem; display: block; margin: 0; padding: 1em  .5em; }
+.ui-collapsible-content p {margin-bottom: 0.1875rem; line-height: 1.4;}
+.ui-collapsible-content p:last-child {margin-bottom: 0;}
+.ui-collapsible-content-collapsed { display: none; }
+
+.ui-collapsible-set > .ui-collapsible.ui-corner-all { -webkit-border-radius: 0; border-radius: 0; }
+
+.ui-collapsible-themed-content > .ui-collapsible-heading {font-size:0.9375rem;  height: 2.75rem;line-height: 2.75rem; border-bottom: 1px solid #ddd; background: #fbfcfd; position: relative;}
+.ui-collapsible-themed-content > .ui-collapsible-heading a {margin-left: 0.5rem;}
+.ui-collapsible-themed-content > .ui-collapsible-heading:after {content:"" ; display: block; position: absolute; right:1rem ; top:1.1rem;width: 0.875rem; height: 0.5rem; background: url('../img/icon/i_arr_accordion.png');background-size:100%; background-position:left 0 bottom 0;}
+.ui-collapsible-themed-content:not(.ui-collapsible-collapsed) > .ui-collapsible-heading { background: #4171a8;}
+.ui-collapsible-themed-content:not(.ui-collapsible-collapsed) > .ui-collapsible-heading:after { background-position:left 0 top 0;}
+.ui-collapsible-themed-content:not(.ui-collapsible-collapsed) > .ui-collapsible-heading a {color: #fff; font-weight: 500; }
+
 
 
 /* table */
@@ -312,10 +320,10 @@ table tbody td strong {font-weight: 500; color: #000;}
 
 
 /* wrap */
-.mobile {width: 100%; max-width:480px; min-height: 100vh;  margin: 0 auto; background: #fff;}
+.mobile {width: 100%; max-width:480px; min-height: 100vh;  margin: 0 auto; background: #fff; overflow: hidden; position: relative;}
 .footer {margin-top: 6.25rem;}
 
-.ui-header {position: relative;padding:0 1rem; border-bottom:1px solid #ddd; height: 2.625rem ;}
+.ui-header {position: fixed; padding: 0 1rem; border-bottom: 1px solid #ddd; height: 2.625rem; width: 100%; box-sizing: border-box;  background: #fff; z-index:2;}
 .ui-header h1 {padding-top:0.75rem ;position: absolute; lefT:50%; margin-left: -3.1rem; background: url(../img/common/logo.png); background-size:100%; background-repeat:no-repeat; background-position:left 0 bottom 0;}
 .ui-header h1 a { width:6.19rem; height: 1.313rem; overflow: hidden; text-indent: 999px; display: block; }
 .ui-header > a {font-size:0.625rem; font-weight: 500; margin-top: 0.5rem;}
@@ -323,8 +331,9 @@ table tbody td strong {font-weight: 500; color: #000;}
 .ui-header > a.menu:before { background-position:right 0 top 0;}
 .ui-header .left {float: left; }
 .ui-header .right {float: right;}
+.ui-content > section {padding-top: 2.625rem;}
 
-#mobile #nav.ui-panel { width: 17em; }
+#mobile #nav.ui-panel { width: 17em; position: absolute;}
 #mobile #nav.ui-panel-closed { width: 0; } #mobile .ui-panel-page-content-position-left, .ui-panel-dismiss-open.ui-panel-dismiss-position-left { left: 15em; right: -15em; }
 #mobile .ui-panel-animate.ui-panel-page-content-position-left.ui-panel-page-content-display-reveal { left: 0; right: 0; -webkit-transform: translate3d(15em,0,0); -moz-transform: translate3d(15em,0,0); transform: translate3d(15em,0,0); }
 .ui-listview > li .ui-collapsible-heading {margin: 0;	    }

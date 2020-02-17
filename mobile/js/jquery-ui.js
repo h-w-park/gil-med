@@ -4423,7 +4423,7 @@ var widgetsAccordion = $.widget( "ui.accordion", {
 			.removeUniqueId();
 
 		if ( this.options.heightStyle !== "content" ) {
-			contents.css( "height", "" );
+			//contents.css( "height", "" );
 		}
 	},
 
