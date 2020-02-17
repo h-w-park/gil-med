@@ -14,6 +14,7 @@
 .login .snsLogin ul li a i:after {content:""; display: block;width:1.5rem; height:1.5rem;background: url('../img/icon/i_snsLogin.png') no-repeat; margin: 0.5625rem auto 0;}
 .login .snsLogin ul li:nth-child(2) a i:after {background-position:-24px 0 ;}
 .login .snsLogin ul li:nth-child(3) a i:after {background-position:-48px 0 ;}
+.login .snsLogin ul li:nth-child(3) a i {border-right: 1px solid rgba(0,0,0,.1);}
 
 .login .util {margin-top: 1.75rem;}
 .login .util ul {display: table; width: 100%; table-layout: fixed;}
@@ -54,8 +55,8 @@ span.occupy {width: 0.75rem; height: 0.75rem; background: #fdc75b;display: inlin
 .doctor ul li dl dd {}
 
 
-
-
+h3.contents__title {font-size:0.9375rem; color: #000; margin:  1.75rem auto  1rem ;}
+.contents__text p {font-size:0.8125rem; margin-bottom: 0.75rem; line-height: 1.6;}
 
 
 

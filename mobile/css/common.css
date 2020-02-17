@@ -53,7 +53,7 @@
 body{font-family:Lato, "NotoSansKR", '맑은고딕', Malgun Gothic, Dotum, "돋움", verdana, sans-serif;font-size:16px; color:#666; width:100%; height:100%;letter-spacing:-1px;line-height:1.2;font-weight:300; background: #eee; overflow-x:hidden;}
 body, ul, ol, li, dt, dl, dd, div, h1, h2, h3, h4, h5, h6, p, form, fieldset, blockquote, iframe, input, object, table, tr, th, td, img{margin:0;padding:0; vertical-align:top; border:none;}
 ul, ol, li{list-style:none}
-hr{display:block; width: 100%; border:0.25rem solid #f5f5f5; margin: 2.25rem 0 ; box-sizing:border-box;}
+hr{display: block; width: calc(100% + 2rem); border: 0.25rem solid #f5f5f5; margin: 2.25rem 0; box-sizing: border-box; position: relative; left: -1rem;}
 em{font-style:normal}
 fieldset, img{border:none;}
 legend, caption{display:none}
@@ -208,7 +208,7 @@ img{display:block;margin:0;padding:0;}
 	.ui-radio.ui-state-disabled  label:before {border:0.5rem solid #ddd;}
 
 	/* select */
-	.ui-select {position:relative;height: 2.25rem;line-height: 2.25rem;  border-bottom:1px solid #eee; }
+	.ui-select {position:relative;height: 2.25rem;line-height: 2.25rem;  border-bottom:1px solid #eee; box-sizing:border-box;}
 	.ui-select .ui-btn>span:not(.ui-li-count) {display: block; text-overflow: ellipsis; overflow: hidden!important; white-space: nowrap; font-size: .875rem; padding-left: 0.5rem;}
 	.ui-select .ui-btn select {position: absolute;top: 0;left: 0; width: 100%; min-height: 1.5em; min-height: 100%; height: 3em; max-height: 100%; outline: 0; -webkit-border-radius: inherit; border-radius: inherit; -webkit-appearance: none; -moz-appearance: none; cursor: pointer; filter: Alpha(Opacity=0); opacity: 0; z-index: 2;}
 	.ui-select .ui-icon-carat-d {background: url('../img/icon/i_sel_arr_down.png') no-repeat; background-size:0.5rem; background-position:right 0.5625rem top  0.9375rem;}
@@ -228,8 +228,17 @@ img{display:block;margin:0;padding:0;}
 	.eMail .ui-input-text {float: left; width: calc(50% - 0.5625rem );}
 	.eMail .space {float: left; width: 1.125rem; display: inline-block; text-align: center; height: 2.25rem; line-height: 2.25rem;}
 
+	/*학교*/
+	.scName:after,
+	.scNum:after {content:""; clear: both;display: block; float: none;}
+	.scName .ui-input-text {width:60%; float: left;}
+	.scName .ui-select {width: calc( 40% - 1rem); float: right;}
+	.scNum {margin-top: 1rem;}
+	.scNum .ui-input-text {width: 3.75rem; float:left;}
+	.scNum label {float: left; width:  3.75rem; height: 2.25rem; line-height: 2.25rem; font-size: 0.875rem;}
+
 	/* 캘린더 */
-	.hasDatepicker { margin-top: 1.875rem;}
+	.hasDatepicker { margin-top: 1.5rem;}
 	.ui-datepicker-calendar {width: 100%;}
 	.ui-datepicker-calendar thead tr th:first-child,
 	.ui-datepicker-calendar tbody tr td:first-child a {color: #ff4949;}
@@ -243,13 +252,27 @@ img{display:block;margin:0;padding:0;}
 
 	.ui-datepicker-header {padding:0 2.813rem;}
 	.ui-datepicker-header:after {content:""; clear: both;display: block; float: none;}
-	.ui-datepicker-header > a{width: 1.875rem; height: 1.875rem; border:1px solid #ddd; display: block;float: left; box-sizing:border-box; text-indent: -999px; overflow: hidden;}
+	.ui-datepicker-header > a {width: 1.875rem; height: 1.875rem; border:1px solid #ddd; display: block;float: left; box-sizing:border-box; text-indent: -999px; overflow: hidden; background: url('../img/icon/i_arr_cal.png') no-repeat; background-position: 50% 50%; background-size:20%;} 
+	.ui-datepicker-header > a.ui-datepicker-prev { -ms-transform: rotate(180deg);   transform: rotate(180deg);}
 	.ui-datepicker-header > a.ui-datepicker-next {float: right;}
-	.ui-datepicker-header .ui-datepicker-title {padding: 0  1.875rem;}
-	.ui-datepicker-header .ui-datepicker-title select {background: #fff; font-size: 1rem; height: 1.875rem; line-height: 1.875rem;  border:none;}
+	.ui-datepicker-header > a.ui-state-disabled {background-color: #eee;}
+	.ui-datepicker-header .ui-datepicker-title {width:8.125rem; margin: 0 auto;}
+	.ui-datepicker-header .ui-datepicker-title select {background: #fff; font-size: 1rem; height: 1.875rem; line-height: 1.875rem;  border:none; margin-right: 1rem;}
+	.ui-datepicker-header .ui-datepicker-title select:last-child {margin-right: 0;}
+	.ui-datepicker-header .ui-datepicker-title select:first-child option:after {content:"년"; display: inline-block;}
 
 
 
+.ui-accordion .ui-accordion-header {
+	display: block;
+	cursor: pointer;
+	position: relative;
+}
+.ui-accordion .ui-accordion-content {
+	padding: 1em 0;
+	border-top: 0;
+	height: auto;
+}
 
 
 /* table */
