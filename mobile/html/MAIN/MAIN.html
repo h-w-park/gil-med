@@ -1,146 +1,186 @@
+
 <!DOCTYPE html>
 <html>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="../../css/jquery.mobile-1.4.5.min.css">
-<link rel="stylesheet" href="mob.css">
-<script src="../../js/jquery.js"></script>
-<script src="../../js/jquery.mobile-1.4.5.min.js"></script>
-<script src="mob.js"></script>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>가천대길병원</title>
+	<link rel="stylesheet" href="../../css/common.css">
+	<link rel="stylesheet" href="../../css/main.css">  
+	<script src="../../js/jquery.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.mobile-1.4.5.js"></script>
+	<script src="../../js/main.js"></script>
+</head>
 <body>
 
-<!-- Content here -->
+<div data-role="page" id="mobile" class="mobile">
+
+
+    <div data-role="header" class="wh">
+        <h1><a href="#">가천대길병원</a></h1>
+        <a href="#nav" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false"  class="right menu">메뉴</a>
+        <a href="#" class="left login">로그인</a>
+    </div><!-- /header -->
+
+
+
+    <div role="main" class="ui-content main">
+		
+		
+		<section>
+			<div class="main">
+				
+				<figure class="visual">
+					<ul>
+						<li><img src="../../img/main/gil.png" alt=""></li>
+						<li><img src="../../img/main/gil.png" alt=""></li>
+						<li><img src="../../img/main/gil.png" alt=""></li>
+						<li><img src="../../img/main/gil.png" alt=""></li>
+					</ul>
+				</figure>
+				<div class="banner__rsv">
+					<a href="">이름, 전화번호만으로 <strong>빠르게 <br>진료 예약</strong>을 해보세요</a>
+				</div>
+
+				<!-- <div class="banner__rsv login">
+					<a href="">안녕하세요! <strong>홍길동</strong>님, <br>간편하게 <strong>모바일로 예약</strong> 해보세요</a>
+				</div> -->
+
+				<div class="inner">
+				
+					<div class="link__quick">
+						<ul>
+							<li><a href=""><i></i>회원 모바일 예약</a></li>
+							<li><a href=""><i></i>비회원 예약</a></li>
+							<li><a href=""><i></i>예약확인</a></li>
+							<li><a href=""><i></i>진료 일정표</a></li>
+							<li><a href=""><i></i>찾아오시는 길</a></li>
+							<li><a href=""><i></i>병원소식</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="roll__doctor">
+					<h2>길병원 BEST 의료진</h2>
+					<ul>
+						<li>
+							<a href="">
+								<div class="title">가정의학과 <small>홍길동 교수</small></div>
+								<img src="../../img/main/doc.png" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<div class="title">가정의학과 <small>홍길동 교수</small></div>
+								<img src="../../img/main/doc.png" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<div class="title">가정의학과 <small>홍길동 교수</small></div>
+								<img src="../../img/main/doc.png" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<div class="title">가정의학과 <small>홍길동 교수</small></div>
+								<img src="../../img/main/doc.png" alt="">
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="roll__focus">
+					<ul>
+						<li>
+							<a href="">
+								<div class="title">
+									<small>Focus 01</small>
+									<p>길병원, AI로봇 이용 인공슬관절치환술 첫 성공</p>
+								</div>
+							</a>
+							<figure><img src="../../img/main/focus.png" alt=""></figure>
+						</li>
+						<li>
+							<a href="">
+								<div class="title">
+									<small>Focus 02</small>
+									<p>길병원, AI로봇 이용 인공슬관절치환술 첫 성공</p>
+								</div>
+							</a>
+							<figure><img src="../../img/main/focus.png" alt=""></figure>
+						</li>
+						<li>
+							<a href="">
+								<div class="title">
+									<small>Focus 01</small>
+									<p>길병원, AI로봇 이용 인공슬관절치환술 첫 성공</p>
+								</div>
+							</a>
+							<figure><img src="../../img/main/focus.png" alt=""></figure>
+						</li>
+						<li>
+							<a href="">
+								<div class="title">
+									<small>Focus 02</small>
+									<p>길병원, AI로봇 이용 인공슬관절치환술 첫 성공</p>
+								</div>
+							</a>
+							<figure><img src="../../img/main/focus.png" alt=""></figure>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="util">
+				<ul>
+					<li><a href="">개인정보취급방침</a></li>
+					<li><a href="">병원윤리강령</a></li>
+					<li><a href="">환자의권리보호존중</a></li>
+				</ul>
+			</div>
+			<div class="util">
+				<div class="rules">
+					<ul>
+						<li><a href="">이용약관</a></li>
+						<li><a href="">이메일 무단수집거부  </a></li>
+						<li><a href="">사이트맵</a></li>
+					</ul>
+				</div>
+				<address>
+					21565 (신) 인천광역시 남동구 남동대로 774번길 21(구월동)<br>
+					<small>Copyright(c) 2019 Gachon University Gil Medical Center. <br> All rights reserved </small>
+				</address>
+			</div>
+			<div class="call">
+				예약문의 대표전화
+				<strong>1577-2299</strong>
+			</div>
+		</footer>
+
+
+    </div><!-- /content -->
+
+	<div data-role="panel" id="nav" data-position="left" data-display="overlay">
+		<ul data-role="listview">
+			<li><a href="#" data-rel="close">닫기버튼</a></li>
+			<li data-role="list-divider">Categories</li>
+			<li data-role="collapsible" data-inset="false" data-iconpos="right">
+				<h3>Bikes</h3>
+				<ul data-role="listview">
+					<li><a href="#">Road</a></li>
+					<li><a href="#">ATB</a></li>
+					<li><a href="#">Fixed Gear</a></li>
+					<li><a href="#">Cruiser</a></li>
+				</ul>
+			</li><!-- /collapsible -->
+		</ul>
+	</div><!-- /panel -->
+
+</div><!-- /page -->
 
 </body>
-<div data-role="page" id="demo-page" data-url="demo-page">
-    <div data-role="header">
-        <h1>Listview Autodivider Linkbar</h1>
-        <a href="#" class="jqm-search-link ui-shadow ui-btn ui-btn-icon-notext ui-corner-all ui-icon-search ui-nodisc-icon ui-alt-icon ui-btn-right">Search</a>
-    </div><!-- /header -->
-    <div role="main" class="ui-content">
-        <div id="sorter">
-            <ul data-role="listview">
-                <li><span>ㄱ</span></li>
-                <li><span>B</span></li>
-                <li><span>C</span></li>
-                <li><span>D</span></li>
-                <li><span>E</span></li>
-                <li><span>F</span></li>
-                <li><span>G</span></li>
-                <li><span>H</span></li>
-                <li><span>I</span></li>
-                <li><span>J</span></li>
-                <li><span>K</span></li>
-                <li><span>L</span></li>
-                <li><span>M</span></li>
-                <li><span>N</span></li>
-                <li><span>O</span></li>
-                <li><span>P</span></li>
-                <li><span>Q</span></li>
-                <li><span>R</span></li>
-                <li><span>S</span></li>
-                <li><span>T</span></li>
-                <li><span>U</span></li>
-                <li><span>V</span></li>
-                <li><span>W</span></li>
-                <li><span>X</span></li>
-                <li><span>Y</span></li>
-                <li><span>Z</span></li>
-            </ul>
-        </div><!-- /sorter -->
-        <ul data-role="listview" data-autodividers="true" id="sortedList">
-            <li>ㄱ<a href="#">가가</a></li>
-            <li>ㄱ<a href="#">가가우</a></li>
-            <li>ㄱ<a href="#">고고</a></li>
-            <li><a href="#">Alice</a></li>
-            <li><a href="#">Andrew</a></li>
-            <li><a href="#">Anna</a></li>
-            <li><a href="#">Anthony</a></li>
-            <li><a href="#">Audrey</a></li>
-            <li><a href="#">Benjamin</a></li>
-            <li><a href="#">Brandon</a></li>
-            <li><a href="#">Brody</a></li>
-            <li><a href="#">Caleb</a></li>
-            <li><a href="#">Cameron</a></li>
-            <li><a href="#">Charlotte</a></li>
-            <li><a href="#">Chloe</a></li>
-            <li><a href="#">Christopher</a></li>
-            <li><a href="#">Claire</a></li>
-            <li><a href="#">Colin</a></li>
-            <li><a href="#">Damien</a></li>
-            <li><a href="#">Daniel</a></li>
-            <li><a href="#">David</a></li>
-            <li><a href="#">Dominic</a></li>
-            <li><a href="#">Dylan</a></li>
-            <li><a href="#">Edward</a></li>
-            <li><a href="#">Elizabeth</a></li>
-            <li><a href="#">Elliot</a></li>
-            <li><a href="#">Emily</a></li>
-            <li><a href="#">Emma</a></li>
-            <li><a href="#">Ethan</a></li>
-            <li><a href="#">Eva</a></li>
-            <li><a href="#">Finn</a></li>
-            <li><a href="#">Gabriel</a></li>
-            <li><a href="#">Gavin</a></li>
-            <li><a href="#">Grace</a></li>
-            <li><a href="#">Hannah</a></li>
-            <li><a href="#">Harry</a></li>
-            <li><a href="#">Henry</a></li>
-            <li><a href="#">Ian</a></li>
-            <li><a href="#">Isaac</a></li>
-            <li><a href="#">Isabel</a></li>
-            <li><a href="#">Jack</a></li>
-            <li><a href="#">Jackson</a></li>
-            <li><a href="#">Jacob</a></li>
-            <li><a href="#">James</a></li>
-            <li><a href="#">Jason</a></li>
-            <li><a href="#">John</a></li>
-            <li><a href="#">Jonah</a></li>
-            <li><a href="#">Jonathan</a></li>
-            <li><a href="#">Julia</a></li>
-            <li><a href="#">Kylie</a></li>
-            <li><a href="#">Lauren</a></li>
-            <li><a href="#">Leah</a></li>
-            <li><a href="#">Liam</a></li>
-            <li><a href="#">Lillian</a></li>
-            <li><a href="#">Lucy</a></li>
-            <li><a href="#">Luke</a></li>
-            <li><a href="#">Lydia</a></li>
-            <li><a href="#">Madeline</a></li>
-            <li><a href="#">Mason</a></li>
-            <li><a href="#">Matthew</a></li>
-            <li><a href="#">Megan</a></li>
-            <li><a href="#">Michael</a></li>
-            <li><a href="#">Natalie</a></li>
-            <li><a href="#">Nathan</a></li>
-            <li><a href="#">Nicholas</a></li>
-            <li><a href="#">Noah</a></li>
-            <li><a href="#">Norah</a></li>
-            <li><a href="#">Oliver</a></li>
-            <li><a href="#">Olivia</a></li>
-            <li><a href="#">Owen</a></li>
-            <li><a href="#">Paige</a></li>
-            <li><a href="#">Ruby</a></li>
-            <li><a href="#">Ryan</a></li>
-            <li><a href="#">Samuel</a></li>
-            <li><a href="#">Sarah</a></li>
-            <li><a href="#">Scarlett</a></li>
-            <li><a href="#">Sebastian</a></li>
-            <li><a href="#">Seth</a></li>
-            <li><a href="#">Sophie</a></li>
-            <li><a href="#">Thomas</a></li>
-            <li><a href="#">Tristan</a></li>
-            <li><a href="#">Tyler</a></li>
-            <li><a href="#">Violet</a></li>
-            <li><a href="#">Vivienne</a></li>
-            <li><a href="#">William</a></li>
-            <li><a href="#">Xavier</a></li>
-            <li><a href="#">Zachary</a></li>
-            <li><a href="#">Zoe</a></li>
-        </ul><!-- /listview -->
-    </div><!-- /content -->
-    <div data-role="footer">
-        <h4>Footer</h4>
-    </div><!-- /footer -->
-</div>
-
 </html>
