@@ -10,7 +10,7 @@
 */
 
 /* Panel */
-.ui-panel { width: 17em; min-height: 100%; max-height: none; border-width: 0; 
+.ui-panel { width: 17em; min-height: 100%; max-height: none; border-width: 0;
 position: absolute; top: 0; display: block; }
 .ui-panel-closed {
 	width: 0;
@@ -34,7 +34,7 @@ position: absolute; top: 0; display: block; }
 .ui-panel-display-overlay {
 	z-index: 1001; /* Fixed toolbars have z-index 1000 */
 }
-.ui-panel-inner { 
+.ui-panel-inner {
 }
 /* Container, page and wrapper */
 .ui-panel-page-container {
@@ -221,7 +221,7 @@ position: absolute; top: 0; display: block; }
 		margin-left: 17em;
 	}
 	.ui-responsive-panel .ui-panel-page-content-open {
-		width: auto;	
+		width: auto;
 	}
 	.ui-responsive-panel .ui-panel-dismiss-display-push,
 	.ui-responsive-panel.ui-page-active ~ .ui-panel-dismiss-display-push {
@@ -295,4 +295,169 @@ position: absolute; top: 0; display: block; }
 }
 .ui-loader-fakefix {
 	position: absolute;
+}
+
+
+
+
+.ui-dialog {
+	 background: none !important; /* this is to ensure that dialog theming does not apply (by default at least) on the page div */
+}
+.ui-dialog-contain {
+	width: 92.5%;
+	max-width: 500px;
+	margin: 10% auto 1em auto;
+	padding: 0;
+	position: relative;
+	top: -1em;
+}
+.ui-dialog-contain > .ui-header,
+.ui-dialog-contain > .ui-content,
+.ui-dialog-contain > .ui-footer {
+	display: block;
+	position: relative;
+	width: auto;
+	margin: 0;
+}
+.ui-dialog-contain > .ui-header {
+	overflow: hidden;
+	z-index: 10;
+	padding: 0;
+	border-top-width: 0;
+}
+.ui-dialog-contain > .ui-footer {
+	z-index: 10;
+	padding: 0 1em;
+	border-bottom-width: 0;
+}
+.ui-popup-open .ui-header-fixed,
+.ui-popup-open .ui-footer-fixed {
+	position: absolute !important; /* See issues #4816, #4844 and #4874 and popup.js */
+}
+.ui-popup-screen {
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 1px;
+	position: absolute;
+	filter: Alpha(Opacity=0);
+	opacity: 0;
+	z-index: -1;
+}
+.ui-popup-screen.in {
+	opacity: 0.5;
+	filter: Alpha(Opacity=50);
+}
+.ui-popup-screen.out {
+	opacity: 0;
+	filter: Alpha(Opacity=0);
+}
+.ui-popup-container {
+	z-index: 1100;
+	display: inline-block;
+	position: absolute;
+	width:100vw !important;
+	max-width:100vw !important;
+	top:0 !important;
+	padding: 0;
+	outline: 0;
+}
+.ui-popup {
+	position: relative;
+}
+.ui-popup.ui-body-inherit {
+	border-width: 0px;
+}
+.ui-popup-hidden {
+	left: 0;
+	top: 0;
+	position: absolute !important;
+	visibility: hidden;
+}
+.ui-popup-truncate {
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(1px,1px,1px,1px);
+}
+.ui-popup.ui-content,
+.ui-popup .ui-content {
+	overflow: visible;
+}
+.ui-popup > .ui-header {
+	border-top-width: 0;
+}
+.ui-popup > .ui-footer {
+	border-bottom-width: 0;
+}
+.ui-popup > p,
+.ui-popup > h1,
+.ui-popup > h2,
+.ui-popup > h3,
+.ui-popup > h4,
+.ui-popup > h5,
+.ui-popup > h6 {
+	margin: .5em .4375em;
+}
+.ui-popup > span {
+	display: block;
+	margin: .5em .4375em;
+}
+.ui-popup-container .ui-content > p,
+.ui-popup-container .ui-content > h1,
+.ui-popup-container .ui-content > h2,
+.ui-popup-container .ui-content > h3,
+.ui-popup-container .ui-content > h4,
+.ui-popup-container .ui-content > h5,
+.ui-popup-container .ui-content > h6 {
+	margin: .5em 0;
+}
+.ui-popup-container .ui-content > span {
+	margin: 0;
+}
+.ui-popup-container .ui-content > p:first-child,
+.ui-popup-container .ui-content > h1:first-child,
+.ui-popup-container .ui-content > h2:first-child,
+.ui-popup-container .ui-content > h3:first-child,
+.ui-popup-container .ui-content > h4:first-child,
+.ui-popup-container .ui-content > h5:first-child,
+.ui-popup-container .ui-content > h6:first-child {
+	margin-top: 0;
+}
+.ui-popup-container .ui-content > p:last-child,
+.ui-popup-container .ui-content > h1:last-child,
+.ui-popup-container .ui-content > h2:last-child,
+.ui-popup-container .ui-content > h3:last-child,
+.ui-popup-container .ui-content > h4:last-child,
+.ui-popup-container .ui-content > h5:last-child,
+.ui-popup-container .ui-content > h6:last-child {
+	margin-bottom: 0;
+}
+.ui-popup > img {
+	max-width: 100%;
+	max-height: 100%;
+	vertical-align: middle;
+}
+.ui-popup:not(.ui-content) > img:only-child,
+.ui-popup:not(.ui-content) > .ui-btn-left:first-child + img:last-child,
+.ui-popup:not(.ui-content) > .ui-btn-right:first-child + img:last-child {
+	-webkit-border-radius: inherit;
+	border-radius: inherit;
+}
+.ui-popup iframe {
+	vertical-align: middle;
+}
+.ui-popup > .ui-btn-left,
+.ui-popup > .ui-btn-right {
+	position: absolute;
+	top: 5px;
+	margin: 0;
+	z-index: 1101;
+}
+.ui-popup > .ui-btn-left {
+	left: 5px;
+}
+.ui-popup > .ui-btn-right {
+	right: 5px;
 }

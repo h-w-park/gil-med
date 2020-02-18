@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("jquery.mobile-1.4.5.min.css");
+@import url("jquery-ui.min.css");
 
 
 /* font */
@@ -111,7 +112,8 @@ height: auto;border: 1px solid transparent; float: none;} .slick-arrow.slick-hid
 .c_red {color: #df0000 !important;}
 
 .p_0 {padding: 0px !important;}
-.pv_20 {padding: 0 1.25rem !important;}
+.ph_20 {padding: 0 1.25rem !important;}
+.pv_12 {padding: 0.75rem 0 !important;}
 .pl_20 {padding-left: 1.25rem !important;}
 .pb_0 {padding-bottom: 0px !important;}
 .pb_70 {padding-bottom: 4.375rem !important;}
@@ -143,7 +145,8 @@ height: auto;border: 1px solid transparent; float: none;} .slick-arrow.slick-hid
 .fl {float: left;}
 .fr {float: right;}
 .fw_4 {font-weight: 400 !important;}
- 
+.fw_5 {font-weight: 500 !important;}
+
 .ov_hidden {overflow: hidden !important;}
 .cl:after {content:""; clear: both;display: block; float: none;}
 
@@ -152,8 +155,8 @@ height: auto;border: 1px solid transparent; float: none;} .slick-arrow.slick-hid
 /* button */
 .btn {display: inline-block; box-sizing:border-box; text-align: center;}
 .btnXS {height: 1.875rem; line-height: 1.875rem; min-width:50px; font-size:14px; font-weight: 600;}
-.btnS {height: 36px; line-height: 34px; min-width:110px; font-size:1rem; font-weight: 600;}
-.btnM {height: 36px; line-height: 34px; min-width:110px; font-size:1rem; font-weight: 600;}
+.btnS {height: 2.25rem;font-size: .75rem; line-height: 2.25rem; min-width:110px;  font-weight: 600;}
+.btnM {height: 36px; line-height: 34px; min-width:110px; font-size:0.875rem; font-weight: 600;}
 .btnL {height: 2.5rem; line-height: 2.5rem; font-size:1rem; width: 100%; font-weight: 500;}
 .btnXL {height: 2.813rem; line-height: 2.813rem; font-size:1rem;  width: 100%; font-weight: 400;}
 
@@ -164,7 +167,6 @@ height: auto;border: 1px solid transparent; float: none;} .slick-arrow.slick-hid
 .btn.grey-o {color:#999; border:1px solid #888;}
 .btn.btnXL.blue {border:1px solid #003363;}
 
- 
 .btn-table.btn-blue{background:#004e96;color:#fff;padding:0 1.875rem;display:inline-block;height:50px;line-height:50px;}
 .btn-table.btn-table-single{margin-left:22px;}
 .btn-wrap{text-align:center;}
@@ -179,14 +181,19 @@ height: auto;border: 1px solid transparent; float: none;} .slick-arrow.slick-hid
 	.ui-input-text input[type="number"].normal,
 	.ui-input-text input[type="email"].normal {transition:all 0.3s;height: 2.25rem; width: 100%; line-height: 2.25rem; font-size:.875rem; border-bottom:1px solid #eee;padding-left: 0.5rem;}
 	.ui-input-text.ui-focus input.normal {border-bottom:1px solid #004e96; color: #000;}
+    .ui-input-text.ui-state-disabled input {color:#aaa;}
+	.ui-input-text input.normal.error {border-bottom: 1px solid #ff0000; }
+    span.error {color: #ff0000; font-size: .875rem; margin-left: 0.5rem; margin-top: 0.2rem}
+
+
 		/* 박스형 */
 	.ui-input-text input[type="text"].box,
 	.ui-input-text input[type="password"].box,
 	.ui-input-text input.box {height:2.5rem ; line-height: 2.25rem; width: 100%; font-size:.875rem; padding-left: 0.5rem; border:1px solid #ddd;}
 
-	/* tabs */ 
-	.ui-navbar ul.ui-tabs-nav {display: table; table-layout: fixed; width: 100%;} 
-	.ui-navbar ul.ui-tabs-nav li { display: table-cell;  vertical-align: middle; height: 3.375rem; border:1px solid #ddd; border-right: none;}
+	/* tabs */
+	.ui-navbar ul.ui-tabs-nav {display: table; table-layout: fixed; width: 100%;}
+	.ui-navbar ul.ui-tabs-nav li { display: table-cell; width: 100%; vertical-align: middle; height: 3.375rem; border:1px solid #ddd; border-right: none;}
 	.ui-navbar ul.ui-tabs-nav li:last-child {border-right: 1px solid #ddd;}
 	.ui-navbar ul.ui-tabs-nav li a {display: block;text-align: center; line-height: 1.4; font-size:0.875rem;}
 	.ui-navbar ul.ui-tabs-nav li.ui-state-active {background: #004e96; color: #fff;}
@@ -201,7 +208,7 @@ height: auto;border: 1px solid transparent; float: none;} .slick-arrow.slick-hid
 	/*checkBox*/
 	.ui-checkbox {display: inline-block; height: 1.5rem; line-height: 1.5rem; position: relative; width: auto;}
 	.ui-checkbox input {width: 0; height: 0; visibility: hidden; position: absolute; left:0; top:0;}
-	.ui-checkbox label {padding-left: 2rem; position: relative; font-size:0.8125rem;display: inline-block;}
+	.ui-checkbox label {padding-left: 2rem; position: relative; font-size:0.8125rem;display: inline-block;font-weight: 400;}
 	.ui-checkbox label:before {content:"";position: absolute; width: 1.5rem; height: 1.5rem; display: block; left:0;top:0; box-sizing:border-box; border:1px solid #aaa; background-image:url('../img/icon/i_check.png'); background-repeat:no-repeat; background-position:50% 50%; background-size:0.625rem;}
 	.ui-checkbox label.ui-checkbox-on:before {background-color: #004e96; border:1px solid #004e96;}
 	.ui-checkbox.ui-state-disabled label:before {background-color: #ddd; border:1px solid #ddd; }
@@ -218,7 +225,7 @@ height: auto;border: 1px solid transparent; float: none;} .slick-arrow.slick-hid
 	.ui-select {position:relative;height: 2.25rem;line-height: 2.25rem;  border-bottom:1px solid #eee; box-sizing:border-box;}
 	.ui-select .ui-btn>span:not(.ui-li-count) {display: block; text-overflow: ellipsis; overflow: hidden!important; white-space: nowrap; font-size: .875rem; padding-left: 0.5rem;}
 	.ui-select .ui-btn select {position: absolute;top: 0;left: 0; width: 100%; min-height: 1.5em; min-height: 100%; height: 3em; max-height: 100%; outline: 0; -webkit-border-radius: inherit; border-radius: inherit; -webkit-appearance: none; -moz-appearance: none; cursor: pointer; filter: Alpha(Opacity=0); opacity: 0; z-index: 2;}
-	.ui-select .ui-icon-carat-d {background: url('../img/icon/i_sel_arr_down.png') no-repeat; background-size:0.5rem; background-position:right 0.5625rem top  0.9375rem;}
+	.ui-select .ui-icon-carat-d {background: url('../img/icon/i_sel_arr_down.png') no-repeat; background-size:0.5rem; background-position:right 0.5625rem top 0.9375rem;}
 
 	/*주민번호*/
 	.eMail:after,
@@ -235,6 +242,9 @@ height: auto;border: 1px solid transparent; float: none;} .slick-arrow.slick-hid
 	.eMail .ui-input-text {float: left; width: calc(50% - 0.5625rem );}
 	.eMail .space {float: left; width: 1.125rem; display: inline-block; text-align: center; height: 2.25rem; line-height: 2.25rem;}
 
+    /* textarea */
+    .ui-textinput-autogrow {border: 1px solid #ddd; width: 100%; min-height: 3rem; padding: 1rem; }
+
 	/*학교*/
 	.scName:after,
 	.scNum:after {content:""; clear: both;display: block; float: none;}
@@ -244,22 +254,29 @@ height: auto;border: 1px solid transparent; float: none;} .slick-arrow.slick-hid
 	.scNum .ui-input-text {width: 3.75rem; float:left;}
 	.scNum label {float: left; width:  3.75rem; height: 2.25rem; line-height: 2.25rem; font-size: 0.875rem;}
 
+    /* 주소 */
+    .mAdd:after {content:""; clear: both;display: block; float: none;}
+    .mAdd .ui-input-text {float: left; width: calc(70% - 1rem );}
+    .mAdd button {float: right; width: 30%;}
+    .mAdd + .ui-input-text,
+    .mAdd + .ui-input-text + .ui-input-text {margin-top: 1rem}
+
 	/* 캘린더 */
-	.hasDatepicker { margin-top: 1.5rem;}
+	.hasDatepicker {}
 	.ui-datepicker-calendar {width: 100%;}
 	.ui-datepicker-calendar thead tr th:first-child,
 	.ui-datepicker-calendar tbody tr td:first-child a {color: #ff4949;}
 	.ui-datepicker-calendar th {padding: 0.5rem 0;}
-	.ui-datepicker-calendar th, 
+	.ui-datepicker-calendar th,
 	.ui-datepicker-calendar td {text-align: center; font-size:0.8125rem; height: 1.75rem;}
-	.ui-datepicker-calendar tbody td a {height:1.563rem ; width:1.625rem; line-height: 1.563rem; text-align: center; margin: 0 auto;display: block;} 
+	.ui-datepicker-calendar tbody td a {height:1.563rem ; width:1.625rem; line-height: 1.563rem; text-align: center; margin: 0 auto;display: block;}
 	.ui-datepicker-calendar tbody td a.ui-state-active { color: #fff;background: url(../img/icon/i_cal_on.png)no-repeat;background-size:100%;}
 	.ui-datepicker-calendar tbody td.ui-state-disabled span {display: block; margin: 0 auto; color: #bbb; height:1.563rem ; width:1.625rem; line-height: 1.563rem;}
 	.ui-datepicker-calendar tbody tr td:first-child a.ui-state-active {color: #fff;}
 
 	.ui-datepicker-header {padding:0 2.813rem;}
 	.ui-datepicker-header:after {content:""; clear: both;display: block; float: none;}
-	.ui-datepicker-header > a {width: 1.875rem; height: 1.875rem; border:1px solid #ddd; display: block;float: left; box-sizing:border-box; text-indent: -999px; overflow: hidden; background: url('../img/icon/i_arr_cal.png') no-repeat; background-position: 50% 50%; background-size:20%;} 
+	.ui-datepicker-header > a {width: 1.875rem; height: 1.875rem; border:1px solid #ddd; display: block;float: left; box-sizing:border-box; text-indent: -999px; overflow: hidden; background: url('../img/icon/i_arr_cal.png') no-repeat; background-position: 50% 50%; background-size:20%;}
 	.ui-datepicker-header > a.ui-datepicker-prev { -ms-transform: rotate(180deg);   transform: rotate(180deg);}
 	.ui-datepicker-header > a.ui-datepicker-next {float: right;}
 	.ui-datepicker-header > a.ui-state-disabled {background-color: #eee;}
@@ -286,8 +303,14 @@ height: auto;border: 1px solid transparent; float: none;} .slick-arrow.slick-hid
 .accordion .ui-collapsible:not(.ui-collapsible-collapsed) > .ui-collapsible-heading:after { background-position:left 0 top 0;}
 .accordion .ui-collapsible:not(.ui-collapsible-collapsed) > .ui-collapsible-heading a {color: #fff; font-weight: 500; }
 
+/* 전체 popup */
+.ui-popup-screen {background: #fff; }
+.ui-popup-container {background: #fff; height:100vh;}
+.ui-popup-container .ui-popup.ui-content {box-sizing: border-box; height: 100vh; position: relative;}
+.ui-popup-container .ui-popup.ui-content .btn-wrap.col-2 {position: absolute; bottom: 0;width: 100%;}
+
 /* Notice */
-.
+
 
 
 /* table */
@@ -301,6 +324,13 @@ table tbody td strong {font-weight: 500; color: #000;}
 .table-row > table td {}
 .table-row > table th:first-child,
 .table-row > table td:first-child {border-left: none;}
+
+.table-col > table{width:100%;}
+.table-col > table thead th{background:#f9f9f9;font-weight:500; color:#333; padding:.75rem 0; text-align: center;vertical-align:middle; font-size:0.75rem;}
+.table-col > table tbody td{text-align:center;padding:.75rem 0;vertical-align:middle;border-bottom:1px solid #ddd;font-size:0.6875rem;}
+.table-col > table thead tr th:last-child,
+.table-col > table tbody tr td:last-child{border-right:none;}
+.table-col > table tbody td strong{font-weight:400;}
 
 .dot-list {margin-top: 1rem;}
 .dot-list li {position: relative; padding-left: 0.5rem; font-size:0.75rem; margin-bottom: 0.5rem;}
@@ -320,6 +350,7 @@ table tbody td strong {font-weight: 500; color: #000;}
 .ui-header .left {float: left; }
 .ui-header .right {float: right;}
 .ui-content > section {padding-top: 2.625rem;}
+.ui-content.ui-popup > section {padding-top: 0rem;}
 
 #nav.ui-panel { width: 17em; position: absolute; z-index:10; background: #fff;}
 #nav.ui-panel-closed { width: 0; } #mobile .ui-panel-page-content-position-left, .ui-panel-dismiss-open.ui-panel-dismiss-position-left { left: 15em; right: -15em; }
@@ -354,11 +385,9 @@ footer .util ul li a {color: rgba(255,255,255,.6); font-size: 0.6875rem; }
 
 footer .util address {font-size:0.8125rem; display: block; margin-bottom: 0.8rem;}
 footer .call {background: #282b2e; text-align: center; font-size:0.8125rem; color:rgba(255,255,255,.4); height: 3.125rem; line-height:  3.125rem;}
-footer .call strong {font-size:1rem; display: inline-block; margin-left: 0.5rem;} 
+footer .call strong {font-size:1rem; display: inline-block; margin-left: 0.5rem;}
 
 /* gnb */
-
-
 #nav .ui-panel-inner {height: 100vh; position: relative;}
 #nav .ui-panel-inner .box__mypage {background: #004e96;}
 #nav .ui-panel-inner .box__mypage .util ul {padding:0.75rem 0.75rem 0;}
@@ -404,4 +433,3 @@ footer .call strong {font-size:1rem; display: inline-block; margin-left: 0.5rem;
 #nav .scroll__wrap .ui-collapsible:not(.ui-collapsible-collapsed) > .ui-collapsible-heading {  }
 #nav .scroll__wrap .ui-collapsible:not(.ui-collapsible-collapsed) > .ui-collapsible-heading:after { background-position:left 0 top 0;}
 #nav .scroll__wrap .ui-collapsible:not(.ui-collapsible-collapsed) > .ui-collapsible-heading a {color: #004e96; font-weight: 600; }
-

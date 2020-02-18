@@ -1,5 +1,14 @@
 @charset "UTF-8";
 
+
+
+h3.contents__title {font-size:0.9375rem; color: #000; padding:1.75rem 0 1rem ;}
+h4.contents__title {font-size:0.875rem; color: #000; padding:1.75rem 0 0.5rem ;}
+hr + h3.contents__title {padding: 0 0 1rem;}
+.contents__text p {font-size:0.8125rem; margin-bottom: 0.75rem; line-height: 1.6;}
+
+
+
 /* 로그인 */
 .login .snsLogin {margin-top: 1.875rem; padding-top: 1.875rem; border-top: 1px solid #ddd;}
 .login .snsLogin ul li {height: 2.813rem; line-height: 2.813rem; margin-bottom: 0.75rem ; position: relative;}
@@ -31,8 +40,16 @@
 
 /* 예약 - form */
 .form dl dt {font-size:0.8125rem; font-weight: 500; color: #000; padding-bottom:0.875rem ; margin-top: 1.875rem;}
+.form dl dt.policy {border:1px solid #ddd; margin-top: 0.5rem;}
+.form dl dt.policy .title {padding: 1rem; position: relative;}
+.form dl dt.policy .title:after {content:""; clear: both;display: block; float: none;}
+.form dl dt.policy .title h2 {font-size: 0.875rem; float: left; width: calc(100% - 4rem); line-height: 1.6}
+.form dl dt.policy .title a {line-height: 1.6; float: right; width: 4rem; display: block; text-indent: -9999px; overflow: hidden;}
+.form dl dt.policy .title a:after {content: ""; position: absolute; top: 50%; margin-top: -0.4375rem; right:1rem; width: 0.5rem; display: block; height: 0.875rem; background: url('../img/icon/i_arr_cal.png') no-repeat; background-size: cover;}
+.form dl dt.policy .chk {border-top: 1px solid #ddd; padding:1rem 1rem 0; }
+
 i.required {width: 0.375rem; height: 0.375rem; background: url('../img/icon/i_required.png') no-repeat; display: inline-block; position: relative;top:-0.625rem;}
-.rsv_yn {font-size: 0.6875rem; text-align: right; position: relative;}
+.rsv_yn {font-size: 0.6875rem; text-align: right; position: relative; margin-bottom: 1.5rem;}
 .rsv_yn span {width: 0.6875rem; height: 0.6875rem; display: inline-block; border-radius:50%; margin-right: 0.25rem; position: relative; top:0.125rem;}
 .rsv_yn span.y {background: #004e96;}
 .rsv_yn span.n {background: #ddd; margin-left:0.75rem ;}
@@ -54,11 +71,6 @@ span.occupy {width: 0.75rem; height: 0.75rem; background: #fdc75b;display: inlin
 .doctor ul li dl dd {}
 
 
-h3.contents__title {font-size:0.9375rem; color: #000; padding:1.75rem 0 1rem ;}
-hr + h3.contents__title {padding: 0 0 1rem;}
-.contents__text p {font-size:0.8125rem; margin-bottom: 0.75rem; line-height: 1.6;}
-
-
 
 /* CS */
 .contents > .cs {border-top: 1px solid #ddd;}
@@ -67,5 +79,3 @@ hr + h3.contents__title {padding: 0 0 1rem;}
 .link__cs  ul li figure {padding-bottom: 0.5rem;}
 .link__cs  ul li figure img {width: 50%; margin: 0 auto;}
 .link__cs  ul li:nth-child(even) {float: right;}
-
-
