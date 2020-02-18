@@ -1,7 +1,4 @@
 $(document).ready(function() {
-	
-	$( "#accordion" ).accordion();
-
 
 	$("#datepicker").datepicker({
 		changeYear: true,

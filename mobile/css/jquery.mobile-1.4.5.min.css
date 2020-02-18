@@ -34,8 +34,7 @@ position: absolute; top: 0; display: block; }
 .ui-panel-display-overlay {
 	z-index: 1001; /* Fixed toolbars have z-index 1000 */
 }
-.ui-panel-inner {
-	padding: 1em;
+.ui-panel-inner { 
 }
 /* Container, page and wrapper */
 .ui-panel-page-container {

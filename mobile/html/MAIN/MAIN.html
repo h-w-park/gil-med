@@ -165,19 +165,74 @@
     </div><!-- /content -->
 
 	<div data-role="panel" id="nav" data-position="left" data-display="overlay">
-		<ul data-role="listview">
-			<li><a href="#" data-rel="close">닫기버튼</a></li>
-			<li data-role="list-divider">Categories</li>
-			<li data-role="collapsible" data-inset="false" data-iconpos="right">
-				<h3>Bikes</h3>
-				<ul data-role="listview">
-					<li><a href="#">Road</a></li>
-					<li><a href="#">ATB</a></li>
-					<li><a href="#">Fixed Gear</a></li>
-					<li><a href="#">Cruiser</a></li>
+		<div class="box__mypage">
+			<div class="util">
+				<ul>
+					<li><a href="#">로그아웃</a></li>
+					<li><a href="#" data-rel="close">닫기</a></li>
 				</ul>
-			</li><!-- /collapsible -->
-		</ul>
+				<dl>
+					<dt><h2>안녕하세요, <strong>김환자</strong>님 <br>가천대 길병원입니다.</h2></dt>
+					<dd><a href=""><i></i>마이페이지</a></dd>
+				</dl>
+			</div>
+			<div class="link">
+				<ul>
+					<li><a href="">건강매거진</a></li>
+					<li><a href="">진료예약</a></li>
+					<li><a href="">예약조회</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="scroll__wrap">
+			<ul data-role="collapsibleset">
+				<li data-role="collapsible" data-inset="false"  data-collapsed="false">
+					<h3>진료예약</h3>
+					<ul data-role="listview">
+						<li><a href="#">회원대리예약</a></li>
+					</ul>
+				</li>
+				<li data-role="collapsible" data-inset="false">
+					<h3>진료과/의료진</h3>
+					<ul data-role="listview">
+						<li><a href="#">진료과 소개</a></li>
+						<li><a href="#">센터 소개</a></li>
+						<li><a href="#">클리닉 소개</a></li>
+					</ul>
+				</li>
+				<li data-role="collapsible" data-inset="false">
+					<h3>병원안내</h3>
+					<ul data-role="listview">
+						<li><a href="#">외래안내</a></li>
+						<li><a href="#">예약안내</a></li>
+						<li><a href="#">외국인 예약안내</a></li>
+						<li><a href="#">주차안내</a></li>
+						<li><a href="#">심층진찰안내</a></li>
+						<li><a href="#">입/퇴원안내</a></li>
+						<li><a href="#">층별안내</a></li>
+						<li><a href="#">찾아오시는 길</a></li>
+						<li><a href="">원내 전화번호</a></li>
+						<li><a href="">편의시설</a></li>
+						<li><a href="">공지사항</a></li>
+					</ul>
+				</li>
+				<li data-role="collapsible" data-inset="false">
+					<h3>병원소개</h3>
+					<ul data-role="listview">
+						<li><a href="#">병원장 인사말</a></li>
+						<li><a href="#">Mission & Vision</a></li>
+						<li><a href="#">병원 정보</a></li>
+						<li><a href="#">병원 연혁</a></li>
+						<li><a href="#">의료 성과</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="call">
+			<span>예약문의 대표전화</span>
+			<i></i>
+			<strong>1577-2299</strong>
+		</div>
 	</div><!-- /panel -->
 
 </div><!-- /page -->

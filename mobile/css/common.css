@@ -270,23 +270,20 @@ height: auto;border: 1px solid transparent; float: none;} .slick-arrow.slick-hid
 
 
 /* Accordion */
-.ui-accordion-header-icon {display: none;}
-.ui-collapsible-heading-status {display: none;}
-.ui-collapsible-themed-content .ui-collapsible-content {  }
-
-.ui-collapsible-content { border-bottom:1px solid #ddd; font-size:0.8125rem; display: block; margin: 0; padding: 1em  .5em; }
-.ui-collapsible-content p {margin-bottom: 0.1875rem; line-height: 1.4;}
-.ui-collapsible-content p:last-child {margin-bottom: 0;}
-.ui-collapsible-content-collapsed { display: none; }
-
-.ui-collapsible-set > .ui-collapsible.ui-corner-all { -webkit-border-radius: 0; border-radius: 0; }
-
-.ui-collapsible-themed-content > .ui-collapsible-heading {font-size:0.9375rem;  height: 2.75rem;line-height: 2.75rem; border-bottom: 1px solid #ddd; background: #fbfcfd; position: relative;}
-.ui-collapsible-themed-content > .ui-collapsible-heading a {margin-left: 0.5rem;}
-.ui-collapsible-themed-content > .ui-collapsible-heading:after {content:"" ; display: block; position: absolute; right:1rem ; top:1.1rem;width: 0.875rem; height: 0.5rem; background: url('../img/icon/i_arr_accordion.png');background-size:100%; background-position:left 0 bottom 0;}
-.ui-collapsible-themed-content:not(.ui-collapsible-collapsed) > .ui-collapsible-heading { background: #4171a8;}
-.ui-collapsible-themed-content:not(.ui-collapsible-collapsed) > .ui-collapsible-heading:after { background-position:left 0 top 0;}
-.ui-collapsible-themed-content:not(.ui-collapsible-collapsed) > .ui-collapsible-heading a {color: #fff; font-weight: 500; }
+.accordion .ui-accordion-header-icon {display: none;}
+.accordion .ui-collapsible-heading-status {display: none;}
+.accordion .ui-collapsible .ui-collapsible-content {  }
+.accordion .ui-collapsible-content { border-bottom:1px solid #ddd; font-size:0.8125rem; display: block; margin: 0; padding: 1em  .5em; }
+.accordion .ui-collapsible-content p {margin-bottom: 0.1875rem; line-height: 1.4;}
+.accordion .ui-collapsible-content p:last-child {margin-bottom: 0;}
+.accordion .ui-collapsible-content-collapsed { display: none; }
+.accordion .ui-collapsible-set > .ui-collapsible.ui-corner-all { -webkit-border-radius: 0; border-radius: 0; }
+.accordion .ui-collapsible > .ui-collapsible-heading {font-size:0.9375rem;  height: 2.75rem;line-height: 2.75rem; border-bottom: 1px solid #ddd; background: #fbfcfd; position: relative;}
+.accordion .ui-collapsible > .ui-collapsible-heading a {margin-left: 0.5rem;}
+.accordion .ui-collapsible > .ui-collapsible-heading:after {content:"" ; display: block; position: absolute; right:1rem ; top:1.1rem;width: 0.875rem; height: 0.5rem; background: url('../img/icon/i_arr_accordion.png');background-size:100%; background-position:left 0 bottom 0;}
+.accordion .ui-collapsible:not(.ui-collapsible-collapsed) > .ui-collapsible-heading { background: #4171a8;}
+.accordion .ui-collapsible:not(.ui-collapsible-collapsed) > .ui-collapsible-heading:after { background-position:left 0 top 0;}
+.accordion .ui-collapsible:not(.ui-collapsible-collapsed) > .ui-collapsible-heading a {color: #fff; font-weight: 500; }
 
 
 
@@ -341,8 +338,8 @@ table tbody td strong {font-weight: 500; color: #000;}
 .ui-header .right {float: right;}
 .ui-content > section {padding-top: 2.625rem;}
 
-#mobile #nav.ui-panel { width: 17em; position: absolute; z-index:6; background: #fff;}
-#mobile #nav.ui-panel-closed { width: 0; } #mobile .ui-panel-page-content-position-left, .ui-panel-dismiss-open.ui-panel-dismiss-position-left { left: 15em; right: -15em; }
+#nav.ui-panel { width: 17em; position: absolute; z-index:10; background: #fff;}
+#nav.ui-panel-closed { width: 0; } #mobile .ui-panel-page-content-position-left, .ui-panel-dismiss-open.ui-panel-dismiss-position-left { left: 15em; right: -15em; }
 #mobile .ui-panel-animate.ui-panel-page-content-position-left.ui-panel-page-content-display-reveal { left: 0; right: 0; -webkit-transform: translate3d(15em,0,0); -moz-transform: translate3d(15em,0,0); transform: translate3d(15em,0,0); }
 .ui-listview > li .ui-collapsible-heading {margin: 0;	    }
 .ui-collapsible.ui-li-static {   padding: 0; border: none !important;	    }
@@ -375,3 +372,56 @@ footer .util ul li a {color: rgba(255,255,255,.6); font-size: 0.6875rem; }
 footer .util address {font-size:0.8125rem; display: block; margin-bottom: 0.8rem;}
 footer .call {background: #282b2e; text-align: center; font-size:0.8125rem; color:rgba(255,255,255,.4); height: 3.125rem; line-height:  3.125rem;}
 footer .call strong {font-size:1rem; display: inline-block; margin-left: 0.5rem;} 
+
+/* gnb */
+
+#nav .ui-panel-inner {height: 100vh; position: relative;}
+#nav .ui-panel-inner .box__mypage {background: #004e96;}
+#nav .ui-panel-inner .box__mypage .util ul {padding:0.75rem 0.75rem 0;}
+#nav .ui-panel-inner .box__mypage .util ul li {float: left;}
+#nav .ui-panel-inner .box__mypage .util ul li a {font-size:0.625rem; color: #fff;}
+#nav .ui-panel-inner .box__mypage .util ul li a:before  {content: ""; width: 1.063rem; height: 1.063rem; background: url(../img/icon/i_mypage.png) no-repeat; display: block; background-size: 200%; margin: 0 auto;}
+#nav .ui-panel-inner .box__mypage .util ul li:last-child {float: right;}
+#nav .ui-panel-inner .box__mypage .util ul li:last-child  a:before {background-position: right 0 top 0;}
+#nav .ui-panel-inner .box__mypage .util ul:after,
+#nav .ui-panel-inner .box__mypage .util dl:after {content:""; clear: both;display: block; float: none;}
+#nav .ui-panel-inner .box__mypage .util dl {padding:1.5rem 0.75rem 0;}
+#nav .ui-panel-inner .box__mypage .util dl dt {float: left; }
+#nav .ui-panel-inner .box__mypage .util dl dt h2 {color: #fff; font-weight:300; font-size:1.125rem; line-height: 1.7;}
+#nav .ui-panel-inner .box__mypage .util dl dt h2 strong {font-weight: 500;}
+#nav .ui-panel-inner .box__mypage .util dl dd {float: right;}
+#nav .ui-panel-inner .box__mypage .util dl dd a {display: block; color: #fff; font-size:0.625rem;text-align: center;}
+#nav .ui-panel-inner .box__mypage .util dl dd a i {width: 2.25rem; height: 2.25rem; background-color: #67a62e; background-image:url('../img/icon/i_star.png'); background-repeat: no-repeat; background-size:58%; background-position:50% 50%;display: block; margin: 0 auto;border-radius:50%; margin-bottom: 0.3rem;}
+#nav .ui-panel-inner .box__mypage .util:after {content:""; clear: both;display: block; float: none;}
+#nav .ui-panel-inner .box__mypage .link {margin-top: 1.3rem;}
+#nav .ui-panel-inner .box__mypage .link ul {display: table; width: 100%; table-layout: fixed;}
+#nav .ui-panel-inner .box__mypage .link ul li {display: table-cell; width: 33.33%; text-align: center;background: #003c74; border-right: 1px solid #004e96;}
+#nav .ui-panel-inner .box__mypage .link ul li a {color: #fff; display: block; font-size:0.8125rem; height: 2.75rem;line-height: 2.75rem; font-weight: 300;}
+#nav .ui-panel-inner .call {position: absolute; width: 100%;bottom:0px; height: 3rem; line-height: 3rem; background:#59616d ; color: #fff; text-align: center; font-size:0.75rem;}
+#nav .ui-panel-inner .call span,
+#nav .ui-panel-inner .call strong {display: inline-block;height: 0.75rem; line-height: 0.75rem;;}
+#nav .ui-panel-inner .call strong  {font-size:0.9375rem;}
+#nav .ui-panel-inner .call i {display: inline-block; width: 0.75rem; height: 0.75rem; background: url('../img/icon/i_call.png') no-repeat ; background-size:contain; margin-left: 0.5rem;}
+
+#nav .scroll__wrap {overflow-y:auto;}
+#nav .scroll__wrap > ul {padding: 1rem;}
+#nav .scroll__wrap .ui-accordion-header-icon,
+#nav .scroll__wrap .ui-collapsible-heading-status {display: none;}
+
+#nav .scroll__wrap > ul > li.ui-collapsible .ui-collapsible-content {padding: 1rem;}
+#nav .scroll__wrap > ul > li.ui-collapsible li {line-height: 1.7;}
+#nav .scroll__wrap > ul > li.ui-collapsible li a {font-size:0.875rem;}
+#nav .scroll__wrap > ul > li.ui-collapsible li:before {content: '- ';}
+#nav .scroll__wrap .ui-collapsible-content-collapsed { display: none; }
+#nav .scroll__wrap .ui-collapsible-set > .ui-collapsible.ui-corner-all { -webkit-border-radius: 0; border-radius: 0; }
+#nav .scroll__wrap .ui-collapsible > .ui-collapsible-heading {font-size:0.9375rem;  height: 2.75rem;line-height: 2.75rem; border-bottom: 1px solid #ddd; background: #fbfcfd; position: relative;}
+#nav .scroll__wrap .ui-collapsible > .ui-collapsible-heading a {margin-left: 0.5rem; font-weight: 500; }
+#nav .scroll__wrap .ui-collapsible > .ui-collapsible-heading a:before {content: ''; float: left; display: inline-block; width: 1.5rem; height: 1.5rem; background:url('../img/icon/i_nav.png')no-repeat; background-size:cover; margin-left: 0.5rem; margin-top: 0.65rem;}
+#nav .scroll__wrap .ui-collapsible:nth-child(2) > .ui-collapsible-heading a:before {background-position:33% -100%;}
+#nav .scroll__wrap .ui-collapsible:nth-child(3) > .ui-collapsible-heading a:before {background-position:66% -100%;}
+#nav .scroll__wrap .ui-collapsible:nth-child(4) > .ui-collapsible-heading a:before {background-position:99% -100%;}
+#nav .scroll__wrap .ui-collapsible > .ui-collapsible-heading:after {content:"" ; display: block; position: absolute; right:1rem ; top:1.1rem;width: 0.875rem; height: 0.5rem; background: url('../img/icon/i_arr_nav.png');background-size:100%; background-position:left 0 bottom 0;}
+#nav .scroll__wrap .ui-collapsible:not(.ui-collapsible-collapsed) > .ui-collapsible-heading {  }
+#nav .scroll__wrap .ui-collapsible:not(.ui-collapsible-collapsed) > .ui-collapsible-heading:after { background-position:left 0 top 0;}
+#nav .scroll__wrap .ui-collapsible:not(.ui-collapsible-collapsed) > .ui-collapsible-heading a {color: #004e96; font-weight: 600; }
+
