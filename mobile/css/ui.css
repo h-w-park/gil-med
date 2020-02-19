@@ -67,13 +67,55 @@ i.required {width: 0.375rem; height: 0.375rem; background: url('../img/icon/i_re
 .tab__med .ui-tabs-panel > ul li {width: 50%; float: left; height: 10.63rem; border-left: 1px solid #ddd; border-bottom: 1px solid #ddd; box-sizing:border-box;}
 .tab__med .ui-tabs-panel > ul li:nth-child(odd) {border-left: none;} 
 .tab__med .ui-tabs-panel > ul li h3 {text-align: center; font-size: 0.875rem; color: #222; margin-top: 1.5rem ;}
-.tab__med .ui-tabs-panel > ul li i {width: 3rem; height: 3rem; display: block; margin: 0.5rem auto ; background: url('../img/icon/i_med.png') no-repeat; background-size:1000%;}
+.tab__med .ui-tabs-panel > ul li i {width: 3rem; height: 3rem; display: block; margin: 0.3rem auto 0.5rem; background-image: url('../img/icon/i_med.png'); background-repeat: no-repeat; background-size:1000%;}
 .tab__med .ui-tabs-panel > ul li .info {text-align: center;}
 .tab__med .ui-tabs-panel > ul li .info a {display: inline-block; font-size:0.75rem; width: 2rem; margin: 0 0.25rem;}
-.tab__med .ui-tabs-panel > ul li .info a:before {content: ''; display: block; position: relative; margin: 0 auto; width: 1.75rem; height: 1.75rem; border-radius:50%; border:1px solid #ddd; margin-bottom: 0.5rem;}
-.tab__med .ui-tabs-panel > ul li i.med1-1 {background-position: 0 0;}
-.tab__med .ui-tabs-panel > ul li i.med1-2 {background-position: -3rem 0;}
-.tab__med .ui-tabs-panel > ul li i.med1-3 {background-position: -6rem 0;}
+.tab__med .ui-tabs-panel > ul li .info a:before {content: ''; display: block; position: relative; margin: 0 auto; width: 1.75rem; height: 1.75rem; border-radius:50%; border:1px solid #ddd; margin-bottom: 0.5rem; background-image: url('../img/icon/i_link_doc.png'); background-repeat:no-repeat; background-size:64%; background-position:50% 50%;}
+.tab__med .ui-tabs-panel > ul li .info a:nth-child(2):before {background-image: url('../img/icon/i_link_loc.png');}
+.tab__med .ui-tabs-panel > ul li .info a:nth-child(3):before {background-image: url('../img/icon/i_link_cal.png');}
+
+i.med1-1 {background-position: 0 0;}
+i.med1-2 {background-position: -3rem 0;}
+i.med1-3 {background-position: -6rem 0;}
+
+i.med2-1 {background-position: 0 -3rem;}
+
+i.med6-1 {background-position: 0 -6rem;}
+i.med6-2 {background-position: -3rem -6rem;}
+i.med6-3 {background-position: -6rem -6rem;}
+
+i.med7-1 {background-position: 0 -9rem;}
+i.med7-2 {background-position: -3rem -9rem;}
+i.med7-3 {background-position: -6rem -9rem;}
+i.med7-4 {background-position: -9rem -9rem;}
+i.med7-5 {background-position: -12rem -9rem;}
+i.med7-6 {background-position: -15rem -9rem;}
+i.med7-7 {background-position: -18rem -9rem;}
+i.med7-8 {background-position: -21rem -9rem;}
+i.med7-9 {background-position: -24rem -9rem;}
+
+i.med8-1 {background-position: 0 -12rem;}
+i.med8-2 {background-position: -3rem -12rem;}
+i.med8-3 {background-position: -6rem -12rem;}
+i.med8-4 {background-position: -9rem -12rem;}
+i.med8-5 {background-position: -12rem -12rem;}
+i.med8-6 {background-position: -15rem -12rem;}
+
+i.med9-1 {background-position: 0 -15rem;}
+i.med9-2 {background-position: -3rem -15rem;}
+i.med9-3 {background-position: -6rem -15rem;}
+i.med9-4 {background-position: -9rem -15rem;}
+i.med9-5 {background-position: -12rem -15rem;}
+i.med9-6 {background-position: -15rem -15rem;}
+
+i.med10-1 {background-position: 0 -18rem;}
+i.med13-1 {background-position: -3rem -18rem;}
+
+i.med14-1 {background-position: 0 -21rem;}
+i.med14-2 {background-position: -3rem -21rem;}
+i.med14-3 {background-position: -6rem -21rem;}
+i.med14-4 {background-position: -9rem -21rem;}
+i.med14-5 {background-position: -12rem -21rem;}
 
 /* 의료진 */
 span.occupy {width: 0.75rem; height: 0.75rem; background: #fdc75b;display: inline-block; border-radius:50%;}

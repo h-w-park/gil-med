@@ -93,11 +93,24 @@ height: auto;border: 1px solid transparent; float: none;} .slick-arrow.slick-hid
 .header > .inner {width: 1272px;}
 .header h1 {float: left; margin-top:36px ;}
 .header h1 a {display: block; width: 274px; height: 28px; text-indent: -9999px; overflow:hidden; background: url('../img/common/logo.png');}
-.header .nav {float: left; width: 690px; margin-left: 120px; margin-top: 40px;}
-.header .nav ul li {float: left; margin-right: 105px;}
-.header .nav ul li:last-child {margin-right: 0px;}
-.header .nav ul li a {color:#333; font-size:20px; font-weight: 600; transition:all 0.3s;}
-.header .nav ul li a:hover {color:#004e96;}
+.header .nav {float: left; width: 800px; margin-left: 60px; position: relative; height: 93px;}
+.header .nav > ul:after {float:none; display:block; clear:both; content:"";}
+.header .nav > ul li {float: left; width: 200px; text-align: center; height: 90px; line-height: 90px; border-bottom: 4px solid #fff; transition:all 0.3s;}
+.header .nav > ul li:last-child {margin-right: 0px;}
+.header .nav > ul li a {color:#333; font-size:20px; font-weight: 600; transition:all 0.3s;}
+.header .nav > ul li.active {border-bottom: 4px solid #004e96;}
+.header .nav > ul li.active a {color: #004e96;}
+.header .nav > ul li a:hover {color:#004e96;}
+.header .nav .gnb {height: 0; transition:all 0.3s; overflow: hidden; background: #fff; position: absolute; margin-top: 0px; z-index: 3; }
+.header .nav .gnb:after {float:none; display:block; clear:both; content:"";}
+.header .nav .gnb ul {width: 158px; float: left; padding: 30px 0 0 40px; border-right: 1px solid #ddd; height: 218px;}
+.header .nav .gnb ul:last-child {border-right: 0px;}
+.header .nav .gnb ul li {margin-bottom: 8px; line-height: 1.4;}
+.header .nav .gnb ul li a {font-size:16px; font-weight: 500; color: #000;}
+.header .nav .gnb ul li:hover a {color: #004e96; border-bottom: 2px solid #004e96;}
+
+.header .nav:hover .gnb {height: 215px;border:1px solid #ddd;}
+
 .header .util {float: right; width: 135px; margin-top: 47px;}
 .header .util ul li {float: left; padding: 0 15px; position: relative;}
 .header .util ul li:last-child {padding-right: 0px;}

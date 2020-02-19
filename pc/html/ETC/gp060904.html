@@ -12,12 +12,13 @@
     <link rel="stylesheet" href="../../css/style.css">
     <!-- Scripts -->
     <script src="../../js/jquery-2.2.3.min.js"></script>
+    <script src="../../js/skrollr.min.js"></script>
 </head>
 <body>
 <div class="wrap">
 
     <div class="content">
-        <div class="section">
+        <div class="section pb_0">
             <div class="title">
                 <h3 class="page-tit">	병원소개</h3>
                 <p class="page-tit__desc">병원 외래방문 시 필요한 정보를 알 수 있습니다.</p>
@@ -31,283 +32,339 @@
                 <li><a href="gp060905.html">의료 성과</a></li>
             </ul>
 
-            
             <div class="context">
-				<div class="timeline">
-					<dl>
-						<dt>2019</dt>
-						<dd>
-							<ul>
-								<li><span>9월</span><p>가천의대 6년제 의학교육 시스템 우즈베키스탄에 전수 <br>(아크파메드라인병원 부속 의대 개교)</p></li>
-								<li><span>6월</span><p>왓슨 포 지노믹스(Watson For Genomics) 도입 </p></li>
-								<li><span>3월</span><p>전국 지자체 최초 인천시 ‘닥터-카’ 도입</p></li>
-								<li><span>1월</span><p>권역 난임·우울 상담센터 개소</p></li>
-							</ul>
-						</dd>
-						<dt>2018</dt>
-						<dd>
-							<ul>
-								<li><span>12월</span><p>11.74T MRI 마그넷 제작완료</p></li>
-								<li><span>9월</span><p>고위험산모·신생아 통합치료센터 개소</p></li>
-								<li><span>4월</span><p>길병원 뇌질환센터 준공</p></li>
-								<li><span>2월</span><p>응급의료기관 평가 최우수 기관 선정</p></li>
-							</ul>
-						</dd>
-						<dt>2017</dt>
-						<dd>
-							<ul>
-								<li><span>12월</span><p>정보보호관리체계(ISMS) 인증 획득</p></li>
-								<li><span>11월</span><p>가상현실치료센터 설립</p></li>
-								<li><span>8월</span><p>국내 첫 외국인환자 유치 우수의료기관 지정 <br>복막전이·재발암 클리닉 개소</p></li>
-								<li><span>7월</span><p>의료기기 트레이닝센터 개소</p></li>
-								<li><span>3월</span><p>고위험 산모·신생아 통합치료센터 선정</p></li>
-							</ul>
-						</dd>
-						<dt>2016</dt>
-						<dd>
-							<ul>
-								<li><span>12월</span><p>음압병동 개소</p></li>
-								<li><span>12월</span><p>인공지능 암센터 개소</p></li>
-								<li><span>11월</span><p>가천 브레인밸리 기공식</p></li>
-								<li><span>8월</span><p>11.74T MRI 마그넷 발주 및 PET-MRI 제품화 계약 체결</p></li>
-								<li><span>1월</span><p>가천뇌건강센터 개소</p></li>
-							</ul>
-						</dd>
-						<dt>2015</dt>
-						<dd>
-							<ul>
-								<li><span>8월</span><p>안티에이징센터 개소</p></li>
-								<li><span>1월</span><p>여성암센터 개소식</p></li>
-							</ul>
-						</dd>
-						<dt>2014</dt>
-						<dd>
-							<ul>
-								<li><span>12월</span><p>아시아올림픽평의회(OCA) 공식지정병원 선정</p></li>
-								<li><span>11월</span><p>제2개원식</p></li>
-								<li><span>10월</span><p>연구중심병원 육성 R&D지원사업 수행기관 선정</p></li>
-								<li><span>9월</span><p>2014인천아시안게임 선수촌병원 운영</p></li>
-								<li><span>8월</span><p>광역치매센터 개소식</p></li>
-								<li><span>7월</span><p>국가지정 권역외상센터 개소식</p></li>
-							</ul>
-						</dd>
-						<dt>2013</dt>
-						<dd>
-							<ul>
-								<li><span>11월</span><p>가천바람개비 재능기부단 발대</p></li>
-								<li><span>9월</span><p>몽골 올란바토르시 현지 사무소 개소</p></li>
-								<li><span>2월</span><p>가천뇌융합과학원 설립</p></li>
-							</ul>
-						</dd>
-						<dt>2012</dt>
-						<dd>
-							<ul>
-								<li><span>11월</span><p>국내 최초의 권역외상센터로 선정</p></li>
-								<li><span>9월</span><p>제2도약을 위한 큰길 캠페인 개최</p></li>
-								<li><span>5월</span><p>희귀 난치병 환자 위한 유전상담클리닉 개설</p></li>
-								<li><span>3월</span><p>BIGGIL 운동 및 스마트 혁신 선포</p></li>
-								<li><span>2월</span><p>이명철 병원장 취임</p></li>
-								<li><span>2월</span><p>모바일 CT & 뉴로네비게이션 도입</p></li>
-								<li><span>1월</span><p>가천대학교 통합에 따라 '가천대 길병원'으로 명칭 변경</p></li>
-							</ul>
-						</dd>
-						<dt>2011</dt>
-						<dd>
-							<ul>
-								<li><span>9월</span><p>응급의료 전용헬기 '닥터헬기' 운항개시</p></li>
-								<li><span>7월</span><p>가천대학교 출범(경원대학교, 가천의과학대학교 통합)</p></li>
-								<li><span>5월</span><p>소아전용 응급실 개소</p></li>
-								<li><span>3월</span><p>가천의대길병원 암센터 개원</p></li>
-							</ul>
-						</dd>
-						<dt>2010</dt>
-						<dd>
-							<ul>
-								<li><span>2월</span><p>가천뇌건강센터 JCI 인증</p></li>
-							</ul>
-						</dd>
-						<dt>2009</dt>
-						<dd>
-							<ul>
-								<li><span>7월</span><p>"The BEST 21" 비전선포식</p></li>
-								<li><span>6월</span><p>가천뇌건강센터 개소</p></li>
-							</ul>
-						</dd>
-						<dt>2008</dt>
-						<dd>
-							<ul>
-								<li><span>11월</span><p>국제의료센터 개소</p></li>
-								<li><span>10월</span><p>가천임상시험센터 개소</p></li>
-								<li><span>9월</span><p>암센터 착공</p></li>
-								<li><span>8월</span><p>전국 최대 인공신장센터 개소</p></li>
-								<li><span>5월</span><p>이길여 암·당뇨연구원 개원</p></li>
-							</ul>
-						</dd>
-						<dt>2007</dt>
-						<dd>
-							<ul>
-								<li><span>8월</span><p>전국 최초 '이동응급의료체험관' 운영</p></li>
-								<li><span>3월</span><p>이길여 암·당뇨연구소 기공식</p></li>
-								<li><span>1월</span><p>전자진료카드시스템(Smart card system) 가동</p></li>
-							</ul>
-						</dd>
-						<dt>2006</dt>
-						<dd>
-							<ul>
-								<li><span>11월</span><p>가천박물관 신축 개관</p></li>
-								<li><span>4월</span><p>가천의과학대학교 뇌과학연구소 개원</p></li>
-							</ul>
-						</dd>
-						<dt>2005</dt>
-						<dd>
-							<ul>
-								<li><span>10월</span><p>가천의과학대학교 출범(가천의과대학, 가천길대학 통합 승인)</p></li>
-								<li><span>3월</span><p>ERP(전사적 자원관리)시스템 구축</p></li>
-							</ul>
-						</dd>
-						<dt>2004</dt>
-						<dd>
-							<ul>
-								<li><span>4월</span><p>인천유나이티드FC 공식 지정 병원</p></li>
-								<li><span>1월</span><p>치과센터 개원</p></li>
-							</ul>
-						</dd>
-						<dt>2003</dt>
-						<dd>
-							<ul>
-								<li><span>11월</span><p>대한의사협회 ‘학대아동보호의료기관’ 지정</p></li>
-								<li><span>4월</span><p>장례식장 준공</p></li>
-								<li><span>3월</span><p>여행자클리닉 개설</p></li>
-								<li><span>2월</span><p>SMS, 인터넷 진료예약 서비스 실시</p></li>
-							</ul>
-						</dd>
-						<dt>2002</dt>
-						<dd>
-							<ul>
-								<li><span>10월</span><p>통합의학클리닉 개설</p></li>
-								<li><span>4월</span><p>가천의대 대학원 고위정책연수과정 신설</p></li>
-							</ul>
-						</dd>
-						<dt>2001</dt>
-						<dd>
-							<ul>
-								<li><span>12월</span><p>여성부, 여성폭력 긴급지원센터 위촉</p></li>
-								<li><span>9월</span><p>한국여성재단 '제1호 희망의 병원' 지정</p></li>
-								<li><span>5월</span><p>2002년 한일 월드컵 지정병원 선정</p></li>
-							</ul>
-						</dd>
-						<dt>2000</dt>
-						<dd>
-							<ul>
-								<li><span>1월</span><p>의료보호 3차 진료기관 지정</p></li>
-								<li><span>1월</span><p>병원 명칭 변경 '가천의과대학교 길병원'</p></li>
-							</ul>
-						</dd>
-						<dt>1999</dt>
-						<dd>
-							<ul>
-								<li><span>12월</span><p>인천서해권역 응급의료센터 개원</p></li>
-								<li><span>2월</span><p>경원인천한방병원 개원 (동인천길병원 내)</p></li>
-							</ul>
-						</dd>
-						<dt>1998</dt>
-						<dd>
-							<ul>
-								<li><span>7월</span><p>안이비인후센터 개원</p></li>
-							</ul>
-						</dd>
-						<dt>1997</dt>
-						<dd>
-							<ul>
-								<li><span>12월</span><p>가천의과대학교 설립 인가</p></li>
-							</ul>
-						</dd>
-						<dt>1996</dt>
-						<dd>
-							<ul>
-								<li><span>3월</span><p>생명공학연구소 개설</p></li>
-							</ul>
-						</dd>
-						<dt>1995</dt>
-						<dd>
-							<ul>
-								<li><span>6월</span><p>백령길병원 개원 (접적지역 적자 병원 인수)</p></li>
-								<li><span>4월</span><p>심장센터 개원</p></li>
-							</ul>
-						</dd>
-						<dt>1994</dt>
-						<dd>
-							<ul>
-								<li><span>7월</span><p>동국인천한방병원 개원 (동인천길병원 내)</p></li>
-								<li><span>4월</span><p>여성클리닉 개원</p></li>
-							</ul>
-						</dd>
-						<dt>1993</dt>
-						<dd>
-							<ul>
-								<li><span>3월</span><p>남동길병원 개설 허가, 산업의학연구원 개원</p></li>
-							</ul>
-						</dd>
-						<dt>1992</dt>
-						<dd>
-							<ul>
-								<li><span>7월</span><p>가천인력개발원 개원</p></li>
-							</ul>
-						</dd>
-						<dt>1991</dt>
-						<dd>
-							<ul>
-								<li><span>12월</span><p>제1별관 가천관 준공</p></li>
-								<li><span>12월</span><p>병원업무 국내 최초 전산화(Dr's Ordering System)의사처치명령 전산화 실시</p></li>
-							</ul>
-						</dd>
-						<dt>1988</dt>
-						<dd>
-							<ul>
-								<li><span>9월</span><p>철원길병원 개원 (접적지역 병원)</p></li>
-							</ul>
-						</dd>
-						<dt>1987</dt>
-						<dd>
-							<ul>
-								<li><span>3월</span><p>인천길병원을 동인천길병원으로 명칭 변경 (10개 진료과목 100병상)</p></li>
-								<li><span>3월</span><p>중앙길병원 개원</p></li>
-							</ul>
-						</dd>
-						<dt>1982</dt>
-						<dd>
-							<ul>
-								<li><span>7월</span><p>재단명칭 변경 (의료법인 길병원)</p></li>
-								<li><span>6월</span><p>양평길병원 개원 (의료취약지 병원)</p></li>
-							</ul>
-						</dd>
-						<dt>1979</dt>
-						<dd>
-							<ul>
-								<li><span>10월</span><p>조산사수습병원 지정</p></li>
-								<li><span>04월</span><p>수련병원 지정</p></li>
-								<li><span>03월</span><p>인천길병원 개원 (현 동인천길병원)</p></li>
-							</ul>
-						</dd>
-						<dt>1978</dt>
-						<dd>
-							<ul>
-								<li><span>8월</span><p>의료법인 인천길병원 법인설립 허가</p></li>
-							</ul>
-						</dd>
-						<dt class="phs"><span>1958<br>~<br>1978</span></dt>
-						<dd>
-							<ul>
-								<li class="phs"><span></span><p>이길여 산부인과의원</p></li>
-							</ul>
-						</dd>
-					</dl>
-				</div>
+				<ul class="achieve-img">
+					<li><img src="../../img/etc/history/01.png" alt=""><div><span>국내최초<br>왓슨 인공지능<br>암치료 도입</span></div></li>
+					<li><img src="../../img/etc/history/02.png" alt=""><div><span>2014인천아시안게임<br>선수촌병원</span></div></li>
+					<li><img src="../../img/etc/history/03.png" alt=""><div><span>국내최초<br>권역외상센터</span></div></li>
+					<li><img src="../../img/etc/history/04.png" alt=""><div><span>국내최초<br>연구중심병원</span></div></li>
+					<li><img src="../../img/etc/history/05.png" alt=""><div><span>국내최초<br>닥터헬기</span></div></li>
+					<li><img src="../../img/etc/history/06.png" alt=""><div><span>국내최고규모<br>건강증진센터</span></div></li>
+					<li><img src="../../img/etc/history/07.png" alt=""><div><span>뇌과학연구소</span></div></li>
+					<li><img src="../../img/etc/history/08.png" alt=""><div><span>아시아최초<br>노발리스티엑스<br>방사선암치료기</span></div></li>
+					<li><img src="../../img/etc/history/09.png" alt=""><div><span>해외심장병어린이<br>무료수술</span></div></li>
+					<li><img src="../../img/etc/history/10.png" alt=""><div><span>94년<br>심장센터개원</span></div></li>
+					<li><img src="../../img/etc/history/11.png" alt=""><div><span>인이비인후센터</span></div></li>
+					<li><img src="../../img/etc/history/12.png" alt=""><div><span>여성전문센터</span></div></li>
+					<li><img src="../../img/etc/history/13.png" alt=""><div><span>응급의료센터</span></div></li>
+					<li><img src="../../img/etc/history/14.png" alt=""><div><span>구월동<br>중앙길병원<br>(현)가천대 길병원</span></div></li>
+					<li><img src="../../img/etc/history/15.png" alt=""><div><span>병원최초<br>전산화시스템<br>구축</span></div></li>
+					<li><img src="../../img/etc/history/16.png" alt=""><div><span>철원길병원</span></div></li>
+					<li><img src="../../img/etc/history/17.png" alt=""><div><span>양평길병원</span></div></li>
+				</ul>
             </div>
         </div>
-    </div>
+            
+		<div class="timeline-for" data-start="position:relative;" data-_navibar-start="position:fixed;" style="position: relative; top: 0px;">
+			<ul>
+				<li><a href="#y2019">2019</a></li>
+				<li><a href="#y2018">2018</a></li>
+				<li><a href="#y2017">2017</a></li>
+				<li><a href="#y2016">2016</a></li>
+				<li><a href="#y2015">2015</a></li>
+				<li><a href="#y2014">2014</a></li>
+				<li><a href="#y2013">2013</a></li>
+				<li><a href="#y2012">2012</a></li>
+				<li><a href="#y2011">2011</a></li>
+				<li><a href="#y2009">2009</a></li>
+				<li><a href="#y2008">2008</a></li>
+				<li><a href="#y2005">2005</a></li>
+				<li><a href="#y2004">2004</a></li>
+				<li><a href="#y2003">2003</a></li>
+				<li><a href="#y2002">2002</a></li>
+				<li><a href="#y2001">2001</a></li>
+				<li><a href="#y2000">2000</a></li>
+				<li><a href="#y1999">1999</a></li>
+				<li><a href="#y1998">1998</a></li>
+				<li><a href="#y1997">1997</a></li>
+				<li><a href="#y1996">1996</a></li>
+				<li><a href="#y1995">1995</a></li>
+				<li><a href="#y1994">1994</a></li>
+				<li><a href="#y1993">1993</a></li>
+				<li><a href="#y1992">1992</a></li>
+				<li><a href="#y1991">1991</a></li>
+				<li><a href="#y1990">1990</a></li>
+				<li><a href="#y1988">1988</a></li>
+			</ul>
+		</div>
 
+		<div class="context">
+			<div class="timeline">
+				<dl>
+					<dt>2019</dt>
+					<dd>
+						<ul>
+							<li><span>9월</span><p>가천의대 6년제 의학교육 시스템 우즈베키스탄에 전수 <br>(아크파메드라인병원 부속 의대 개교)</p></li>
+							<li><span>6월</span><p>왓슨 포 지노믹스(Watson For Genomics) 도입 </p></li>
+							<li><span>3월</span><p>전국 지자체 최초 인천시 ‘닥터-카’ 도입</p></li>
+							<li><span>1월</span><p>권역 난임·우울 상담센터 개소</p></li>
+						</ul>
+					</dd>
+					<dt>2018</dt>
+					<dd>
+						<ul>
+							<li><span>12월</span><p>11.74T MRI 마그넷 제작완료</p></li>
+							<li><span>9월</span><p>고위험산모·신생아 통합치료센터 개소</p></li>
+							<li><span>4월</span><p>길병원 뇌질환센터 준공</p></li>
+							<li><span>2월</span><p>응급의료기관 평가 최우수 기관 선정</p></li>
+						</ul>
+					</dd>
+					<dt>2017</dt>
+					<dd>
+						<ul>
+							<li><span>12월</span><p>정보보호관리체계(ISMS) 인증 획득</p></li>
+							<li><span>11월</span><p>가상현실치료센터 설립</p></li>
+							<li><span>8월</span><p>국내 첫 외국인환자 유치 우수의료기관 지정 <br>복막전이·재발암 클리닉 개소</p></li>
+							<li><span>7월</span><p>의료기기 트레이닝센터 개소</p></li>
+							<li><span>3월</span><p>고위험 산모·신생아 통합치료센터 선정</p></li>
+						</ul>
+					</dd>
+					<dt>2016</dt>
+					<dd>
+						<ul>
+							<li><span>12월</span><p>음압병동 개소</p></li>
+							<li><span>12월</span><p>인공지능 암센터 개소</p></li>
+							<li><span>11월</span><p>가천 브레인밸리 기공식</p></li>
+							<li><span>8월</span><p>11.74T MRI 마그넷 발주 및 PET-MRI 제품화 계약 체결</p></li>
+							<li><span>1월</span><p>가천뇌건강센터 개소</p></li>
+						</ul>
+					</dd>
+					<dt>2015</dt>
+					<dd>
+						<ul>
+							<li><span>8월</span><p>안티에이징센터 개소</p></li>
+							<li><span>1월</span><p>여성암센터 개소식</p></li>
+						</ul>
+					</dd>
+					<dt>2014</dt>
+					<dd>
+						<ul>
+							<li><span>12월</span><p>아시아올림픽평의회(OCA) 공식지정병원 선정</p></li>
+							<li><span>11월</span><p>제2개원식</p></li>
+							<li><span>10월</span><p>연구중심병원 육성 R&D지원사업 수행기관 선정</p></li>
+							<li><span>9월</span><p>2014인천아시안게임 선수촌병원 운영</p></li>
+							<li><span>8월</span><p>광역치매센터 개소식</p></li>
+							<li><span>7월</span><p>국가지정 권역외상센터 개소식</p></li>
+						</ul>
+					</dd>
+					<dt>2013</dt>
+					<dd>
+						<ul>
+							<li><span>11월</span><p>가천바람개비 재능기부단 발대</p></li>
+							<li><span>9월</span><p>몽골 올란바토르시 현지 사무소 개소</p></li>
+							<li><span>2월</span><p>가천뇌융합과학원 설립</p></li>
+						</ul>
+					</dd>
+					<dt>2012</dt>
+					<dd>
+						<ul>
+							<li><span>11월</span><p>국내 최초의 권역외상센터로 선정</p></li>
+							<li><span>9월</span><p>제2도약을 위한 큰길 캠페인 개최</p></li>
+							<li><span>5월</span><p>희귀 난치병 환자 위한 유전상담클리닉 개설</p></li>
+							<li><span>3월</span><p>BIGGIL 운동 및 스마트 혁신 선포</p></li>
+							<li><span>2월</span><p>이명철 병원장 취임</p></li>
+							<li><span>2월</span><p>모바일 CT & 뉴로네비게이션 도입</p></li>
+							<li><span>1월</span><p>가천대학교 통합에 따라 '가천대 길병원'으로 명칭 변경</p></li>
+						</ul>
+					</dd>
+					<dt>2011</dt>
+					<dd>
+						<ul>
+							<li><span>9월</span><p>응급의료 전용헬기 '닥터헬기' 운항개시</p></li>
+							<li><span>7월</span><p>가천대학교 출범(경원대학교, 가천의과학대학교 통합)</p></li>
+							<li><span>5월</span><p>소아전용 응급실 개소</p></li>
+							<li><span>3월</span><p>가천의대길병원 암센터 개원</p></li>
+						</ul>
+					</dd>
+					<dt>2010</dt>
+					<dd>
+						<ul>
+							<li><span>2월</span><p>가천뇌건강센터 JCI 인증</p></li>
+						</ul>
+					</dd>
+					<dt>2009</dt>
+					<dd>
+						<ul>
+							<li><span>7월</span><p>"The BEST 21" 비전선포식</p></li>
+							<li><span>6월</span><p>가천뇌건강센터 개소</p></li>
+						</ul>
+					</dd>
+					<dt>2008</dt>
+					<dd>
+						<ul>
+							<li><span>11월</span><p>국제의료센터 개소</p></li>
+							<li><span>10월</span><p>가천임상시험센터 개소</p></li>
+							<li><span>9월</span><p>암센터 착공</p></li>
+							<li><span>8월</span><p>전국 최대 인공신장센터 개소</p></li>
+							<li><span>5월</span><p>이길여 암·당뇨연구원 개원</p></li>
+						</ul>
+					</dd>
+					<dt>2007</dt>
+					<dd>
+						<ul>
+							<li><span>8월</span><p>전국 최초 '이동응급의료체험관' 운영</p></li>
+							<li><span>3월</span><p>이길여 암·당뇨연구소 기공식</p></li>
+							<li><span>1월</span><p>전자진료카드시스템(Smart card system) 가동</p></li>
+						</ul>
+					</dd>
+					<dt>2006</dt>
+					<dd>
+						<ul>
+							<li><span>11월</span><p>가천박물관 신축 개관</p></li>
+							<li><span>4월</span><p>가천의과학대학교 뇌과학연구소 개원</p></li>
+						</ul>
+					</dd>
+					<dt>2005</dt>
+					<dd>
+						<ul>
+							<li><span>10월</span><p>가천의과학대학교 출범(가천의과대학, 가천길대학 통합 승인)</p></li>
+							<li><span>3월</span><p>ERP(전사적 자원관리)시스템 구축</p></li>
+						</ul>
+					</dd>
+					<dt>2004</dt>
+					<dd>
+						<ul>
+							<li><span>4월</span><p>인천유나이티드FC 공식 지정 병원</p></li>
+							<li><span>1월</span><p>치과센터 개원</p></li>
+						</ul>
+					</dd>
+					<dt>2003</dt>
+					<dd>
+						<ul>
+							<li><span>11월</span><p>대한의사협회 ‘학대아동보호의료기관’ 지정</p></li>
+							<li><span>4월</span><p>장례식장 준공</p></li>
+							<li><span>3월</span><p>여행자클리닉 개설</p></li>
+							<li><span>2월</span><p>SMS, 인터넷 진료예약 서비스 실시</p></li>
+						</ul>
+					</dd>
+					<dt>2002</dt>
+					<dd>
+						<ul>
+							<li><span>10월</span><p>통합의학클리닉 개설</p></li>
+							<li><span>4월</span><p>가천의대 대학원 고위정책연수과정 신설</p></li>
+						</ul>
+					</dd>
+					<dt>2001</dt>
+					<dd>
+						<ul>
+							<li><span>12월</span><p>여성부, 여성폭력 긴급지원센터 위촉</p></li>
+							<li><span>9월</span><p>한국여성재단 '제1호 희망의 병원' 지정</p></li>
+							<li><span>5월</span><p>2002년 한일 월드컵 지정병원 선정</p></li>
+						</ul>
+					</dd>
+					<dt>2000</dt>
+					<dd>
+						<ul>
+							<li><span>1월</span><p>의료보호 3차 진료기관 지정</p></li>
+							<li><span>1월</span><p>병원 명칭 변경 '가천의과대학교 길병원'</p></li>
+						</ul>
+					</dd>
+					<dt>1999</dt>
+					<dd>
+						<ul>
+							<li><span>12월</span><p>인천서해권역 응급의료센터 개원</p></li>
+							<li><span>2월</span><p>경원인천한방병원 개원 (동인천길병원 내)</p></li>
+						</ul>
+					</dd>
+					<dt>1998</dt>
+					<dd>
+						<ul>
+							<li><span>7월</span><p>안이비인후센터 개원</p></li>
+						</ul>
+					</dd>
+					<dt>1997</dt>
+					<dd>
+						<ul>
+							<li><span>12월</span><p>가천의과대학교 설립 인가</p></li>
+						</ul>
+					</dd>
+					<dt>1996</dt>
+					<dd>
+						<ul>
+							<li><span>3월</span><p>생명공학연구소 개설</p></li>
+						</ul>
+					</dd>
+					<dt>1995</dt>
+					<dd>
+						<ul>
+							<li><span>6월</span><p>백령길병원 개원 (접적지역 적자 병원 인수)</p></li>
+							<li><span>4월</span><p>심장센터 개원</p></li>
+						</ul>
+					</dd>
+					<dt>1994</dt>
+					<dd>
+						<ul>
+							<li><span>7월</span><p>동국인천한방병원 개원 (동인천길병원 내)</p></li>
+							<li><span>4월</span><p>여성클리닉 개원</p></li>
+						</ul>
+					</dd>
+					<dt>1993</dt>
+					<dd>
+						<ul>
+							<li><span>3월</span><p>남동길병원 개설 허가, 산업의학연구원 개원</p></li>
+						</ul>
+					</dd>
+					<dt>1992</dt>
+					<dd>
+						<ul>
+							<li><span>7월</span><p>가천인력개발원 개원</p></li>
+						</ul>
+					</dd>
+					<dt>1991</dt>
+					<dd>
+						<ul>
+							<li><span>12월</span><p>제1별관 가천관 준공</p></li>
+							<li><span>12월</span><p>병원업무 국내 최초 전산화(Dr's Ordering System)의사처치명령 전산화 실시</p></li>
+						</ul>
+					</dd>
+					<dt>1988</dt>
+					<dd>
+						<ul>
+							<li><span>9월</span><p>철원길병원 개원 (접적지역 병원)</p></li>
+						</ul>
+					</dd>
+					<dt>1987</dt>
+					<dd>
+						<ul>
+							<li><span>3월</span><p>인천길병원을 동인천길병원으로 명칭 변경 (10개 진료과목 100병상)</p></li>
+							<li><span>3월</span><p>중앙길병원 개원</p></li>
+						</ul>
+					</dd>
+					<dt>1982</dt>
+					<dd>
+						<ul>
+							<li><span>7월</span><p>재단명칭 변경 (의료법인 길병원)</p></li>
+							<li><span>6월</span><p>양평길병원 개원 (의료취약지 병원)</p></li>
+						</ul>
+					</dd>
+					<dt>1979</dt>
+					<dd>
+						<ul>
+							<li><span>10월</span><p>조산사수습병원 지정</p></li>
+							<li><span>04월</span><p>수련병원 지정</p></li>
+							<li><span>03월</span><p>인천길병원 개원 (현 동인천길병원)</p></li>
+						</ul>
+					</dd>
+					<dt>1978</dt>
+					<dd>
+						<ul>
+							<li><span>8월</span><p>의료법인 인천길병원 법인설립 허가</p></li>
+						</ul>
+					</dd>
+					<dt class="phs"><span>1958<br>~<br>1978</span></dt>
+					<dd>
+						<ul>
+							<li class="phs"><span></span><p>이길여 산부인과의원</p></li>
+						</ul>
+					</dd>
+				</dl>
+			</div>
+		</div>
+	</div>
 </div>
 <script src="../../js/ui.js"></script>
+<script>
+achieve();
+</script>
 </body>
 </html>

@@ -20,22 +20,21 @@ $(function() {
 		verticalCentered: true,
 		scrollBar: false,
 		easing: 'easeInOutCubic',
-
 		onLeave: function(origin, destination, direction){
 			var leavingSection = this;
 
-			if(origin.index == 1 && direction =='down'){
-				console.log("Going to section 2!");
+			if(destination.index == 1 ){
+			alert("Going to section 3!");
 			}
 
-			else if(origin.index == 2 && direction == 'up'){
-				console.log("Going to section 1!");
+			else if(origin.index == 1 ){
+				alert("Going to section 1!");
 			}
+
 		},
-
 		afterLoad: function(anchorLink, index){
 			if (index == 2){
-				$('#menu, header, .sticky').addClass("bk", 500);
+				$('#menu, header').addClass("bk", 500);
 				$(".gnb_wp").hover(function(){
 				}, function(){
 					$('header').addClass("bk", 500);

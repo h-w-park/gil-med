@@ -58,5 +58,7 @@
 
 /* 480px 이상 */
 @media screen and (min-width: 481px) {
+	.roll__focus li.slick-slide,
+	.roll__focus figure,
 	.roll__doctor li.slick-slide a {width: 400px;}
 }
