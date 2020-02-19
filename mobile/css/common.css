@@ -160,7 +160,7 @@ height: auto;border: 1px solid transparent; float: none;} .slick-arrow.slick-hid
 .btnL {height: 2.5rem; line-height: 2.5rem; font-size:1rem; width: 100%; font-weight: 500;}
 .btnXL {height: 2.813rem; line-height: 2.813rem; font-size:1rem;  width: 100%; font-weight: 400;}
 
-.btn.grey {color: #222; background: #f1f1f1;}
+.btn.grey {color: #222; background: #f1f1f1;border:1px solid #ddd;}
 .btn.blue {color: #fff; background: #004e96;}
 .btn.blue-o {color:#004e96; border:1px solid #004e96;}
 .btn.black-o {color:#000; border:1px solid #000;}
@@ -283,7 +283,11 @@ height: auto;border: 1px solid transparent; float: none;} .slick-arrow.slick-hid
 	.ui-datepicker-header .ui-datepicker-title {width:8.125rem; margin: 0 auto;}
 	.ui-datepicker-header .ui-datepicker-title select {background: #fff; font-size: 1rem; height: 1.875rem; line-height: 1.875rem;  border:none; margin-right: 1rem;}
 	.ui-datepicker-header .ui-datepicker-title select:last-child {margin-right: 0;}
-	.ui-datepicker-header .ui-datepicker-title select:first-child option:after {content:"년"; display: inline-block;}
+	.ui-datepicker-header .ui-datepicker-title select:first-child option:after {content:"년"; display: inline-block; }
+	
+	.ui-datepicker-header .ui-datepicker-title > .ui-select {display: inline-block; min-width:3.75rem; height: 1.875rem; line-height: 1.875rem; margin-right: 1rem; border-bottom: 0px; }
+	.ui-datepicker-header .ui-datepicker-title > .ui-select:last-child {margin-right: 0; min-width:3rem;}
+	.ui-datepicker-header .ui-datepicker-title > .ui-select .ui-icon-carat-d {background: none; }
 
 
 /* Accordion */
@@ -308,15 +312,21 @@ height: auto;border: 1px solid transparent; float: none;} .slick-arrow.slick-hid
 .ui-popup-container {background: #fff; height:100vh;}
 .ui-popup-container .ui-popup.ui-content {box-sizing: border-box; height: 100vh; position: relative;}
 .ui-popup-container .ui-popup.ui-content .btn-wrap.col-2 {position: absolute; bottom: 0;width: 100%;}
+.ui-popup .popupTitle {height: 2.75rem; border-bottom: 1px solid #ddd;}
+.ui-popup .popupTitle h3 {height:  2.75rem; line-height:  2.75rem; font-size:0.9375rem; text-align: center; color: #222;}
+.ui-popup .popupTitle a {position: absolute; right:1rem; top:0.9rem; width: 1rem; height: 1rem; overflow: hidden; text-indent: -9999px; background: url(../img/icon/i_pop_close.png) no-repeat; background-size: cover;}
 
 /* Notice */
-
-
+.box__notice {border:1px solid #ddd; margin-top: 2.25rem;}
+.box__notice h3 {font-size:0.8125rem; line-height: 2.5rem; border-bottom: 1px solid #ddd; padding-left: 2.25rem; position: relative;}
+.box__notice h3:before {content: ''; width:1rem ; height: 1rem; background: url('../img/icon/i_notice.png'); display: inline-block; position: absolute; lefT:0.8rem; top:0.8rem; background-size:cover;}
+.box__notice h3:after {content: ''; width:1rem ; height: 0.6rem; background: url('../img/icon/i_sel_arr_down.png') no-repeat; display: inline-block; position: absolute; right:0.8rem; top:1rem; background-size:cover; -ms-transform: rotate(-180deg);  transform: rotate(-180deg); transition:all 0.3s;}
+.box__notice .ui-collapsible-content {font-size:0.75rem; padding: 1rem 0.625rem;}
+.box__notice .ui-collapsible-collapsed h3:after { -ms-transform: rotate(-0deg);  transform: rotate(-0deg);}
 
 /* table */
 table tbody td strong {font-weight: 500; color: #000;}
 .table-must-area{text-align:right;font-size:0.875rem;margin-bottom:1rem;}
-
 .table-row > table{border-top:0.125rem solid #000;color:#333;width:100%}
 .table-row > table th,
 .table-row > table td {color:#333; border-left: 1px solid #ddd;border-bottom:1px solid #ddd;line-height: 1.6; font-size:0.75rem; font-weight: 500; text-align: center; vertical-align: middle;padding:0.5rem;}
@@ -324,7 +334,6 @@ table tbody td strong {font-weight: 500; color: #000;}
 .table-row > table td {}
 .table-row > table th:first-child,
 .table-row > table td:first-child {border-left: none;}
-
 .table-col > table{width:100%;}
 .table-col > table thead th{background:#f9f9f9;font-weight:500; color:#333; padding:.75rem 0; text-align: center;vertical-align:middle; font-size:0.75rem;}
 .table-col > table tbody td{text-align:center;padding:.75rem 0;vertical-align:middle;border-bottom:1px solid #ddd;font-size:0.6875rem;}
@@ -332,9 +341,11 @@ table tbody td strong {font-weight: 500; color: #000;}
 .table-col > table tbody tr td:last-child{border-right:none;}
 .table-col > table tbody td strong{font-weight:400;}
 
-.dot-list {margin-top: 1rem;}
-.dot-list li {position: relative; padding-left: 0.5rem; font-size:0.75rem; margin-bottom: 0.5rem;}
-.dot-list li:before {content: '·';position: absolute; left:0;}
+/* 기본리스트 */
+ul.dot-list {margin-top: 1rem;}
+ul.dot-list li {position: relative; padding-left: 0.5rem; font-size:0.75rem; margin-bottom: 0.5rem;}
+ul.dot-list li:last-child {margin-bottom: 0;}
+ul.dot-list li:before {content: '·';position: absolute; left:0;}
 
 /* wrap */
 .mobile {width: 100%; max-width:480px; min-height: 100vh;  margin: 0 auto; background: #fff; overflow: hidden; position: relative;}
