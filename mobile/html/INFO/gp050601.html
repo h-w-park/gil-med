@@ -1,53 +1,50 @@
+
 <!DOCTYPE html>
-<html lang="ko">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="Content-Script-Type" content="text/javascript">
-    <meta http-equiv="Content-Style-Type" content="text/css">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title></title>
-    
-    <link rel="stylesheet" href="../../css/common.css">
-    <link rel="stylesheet" href="../../css/style.css">
-    <!-- Scripts -->
-    <script src="../../js/jquery-2.2.3.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>가천대길병원</title>
+	<link rel="stylesheet" href="../../css/common.css">
+	<link rel="stylesheet" href="../../css/ui.css">  
+	<script src="../../js/jquery.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.mobile-1.4.5.js"></script>
+	<script src="../../js/ui.js"></script>
 </head>
 <body>
-<div class="wrap">
 
-    <div class="content">
-        <div class="section">
-            <div class="title">
-                <h3 class="page-tit">심층진찰</h3>
-                <p class="page-tit__desc">환자들에게 심도 깊은 진료를 제공하기 위해 심층진찰 서비스를 진행하고 있습니다.</p>
-            </div>
- 
-            
-            <div class="context bt">
-				
-                <div class="content-section">
-                    <h5 class="content-tit">심층진찰<br>시범사업</h5>
-                    <div class="text-wrap">
-						<p class="text">심층진찰은 상급종합병원 본연의 기능인 중증질환 입원환자중심의 진료시스템 정립을 위해 1차 협력병원과의 의료전달체계를 마련하고 환자들에게 심도 깊은 진료를 제공하기 위해 진행됩니다.</p>
-						<ul>
-							<li>안내 : 1차 의료기관에서 소견서를 지참한 환자가 해당 진료과로 진료가 의뢰 된 경우 본인의 동의하에 심층진찰을 받을 수 있습니다.</li>
-							<li>안내 번호 : 진료협력센터 상담창구 032-460-8215</li>
-						</ul>
-					</div>
-				</div>
-                <div class="content-section">
-                    <h5 class="content-tit">가천대 길병원<br>심층진찰 시범<br>사업 프로세스</h5>
-                    <div class="text-wrap">
-						<figure><img src="../../img/common/process.jpg" alt=""></figure>
-					</div>
-				</div>
-                <div class="content-section">
-                    <h5 class="content-tit">심층 진찰 진료<br>안내</h5>
-                    <div class="text-wrap">
-						
-						<div class="table-col mt_0">
-							<table>
+<div data-role="page" id="mobile" class="mobile">
+    <div data-role="header">
+        <h1><a href="#">가천대길병원</a></h1>
+        <a href="#nav" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false"  class="right menu">메뉴</a>
+        <a href="#" class="left prev">이전</a>
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content">
+		
+		<section>
+			<div class="title">
+				<h2>예약안내</h2>
+				<p>다양한 방식으로 진료 예약을 하실 수 있습니다.</p>
+			</div>
+			<div class="contents">
+				<div class="">
+					<div class="inner">
+						<div class="tab__depth2 expand"> 
+							<ul> 
+								<li><a href="gp050301.html" rel="external"><img src="../../img/icon/i_1x1.png" alt="">전화예약</a></li> 
+								<li class="on"><a href="gp050302.html" rel="external"><img src="../../img/icon/i_1x1.png" alt="">인터넷예약</a></li> 
+								<li><a href="gp050303.html" rel="external"><img src="../../img/icon/i_1x1.png" alt="">FAX예약</a></li> 
+								<li><a href="gp050304.html" rel="external"><img src="../../img/icon/i_1x1.png" alt="">방문예약</a></li> 
+								<li><a href="gp050305.html" rel="external"><img src="../../img/icon/i_1x1.png" alt="">진료협력센터예약</a></li> 
+							</ul> 
+						</div>
+
+
+						<h3 class="contents__title">타이틀</h3>
+						<div class="table-row expand">
+							<table style="width:500px;">
 								<thead>
 									<tr>
 										<th>진료과</th>
@@ -73,7 +70,7 @@
 									<tr>
 										<td rowspan="2">류마티스내과</td>
 										<td>백한주</td>
-										<td rowspan="2"> 류마티스관절염<br>강직성척추염<br>전신성 류마티스 질환<br>(전신성홍반성루푸스, 전신경과증, 전신혈관염, 베체트,<br>기타 희귀류마티스 질환 및 자가면역질환 등)</td>
+										<td rowspan="2"> 류마티스관절염<br>강직성척추염<br>전신성 류마티스 질환<br>(전신성홍반성루푸스, 전신경과증, <br>전신혈관염, 베체트, 기타 희귀류마티스 질환<br> 및 자가면역질환 등)</td>
 										<td>월 - 오후</td>
 										<td>13:00 ~ 13:30</td>
 									</tr>
@@ -145,14 +142,49 @@
 								</tbody>
 							</table>
 						</div>
+
+						<hr>
+
+						<div class="box__notice"><div data-role="collapsible" data-collapsed="false"> 
+							<h3>안내사항</h3> 
+							<ul class="dot-list mt_0">
+								<li>뭐</li>
+							</ul>
+							</div>
+						</div>
+
 					</div>
 				</div>
-					
-            </div>
-        </div>
-    </div>
+			</div>
+		</section>
 
-</div>
-<script src="../../js/ui.js"></script>
+		<footer>
+			<div class="util">
+				<ul>
+					<li><a href="">개인정보취급방침</a></li>
+					<li><a href="">병원윤리강령</a></li>
+					<li><a href="">환자의권리보호존중</a></li>
+				</ul>
+			</div>
+			<div class="util">
+				<div class="rules">
+					<ul>
+						<li><a href="">이용약관</a></li>
+						<li><a href="">이메일 무단수집거부  </a></li>
+						<li><a href="">사이트맵</a></li>
+					</ul>
+				</div>
+				<address>
+					21565 (신) 인천광역시 남동구 남동대로 774번길 21(구월동)<br>
+					<small>Copyright(c) 2019 Gachon University Gil Medical Center. <br> All rights reserved </small>
+				</address>
+			</div>
+			<div class="call">
+				예약문의 대표전화
+				<strong>1577-2299</strong>
+			</div>
+		</footer>
+    </div><!-- /content -->
+</div><!-- /page -->
 </body>
 </html>

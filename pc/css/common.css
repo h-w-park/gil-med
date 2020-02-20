@@ -118,20 +118,25 @@ header ul.info_h li:before {content:""; position: absolute; left:0; top:4px; wid
 header ul.info_h li:first-child:before { width:0px; height: 0px; background:none;}
 header ul.info_h li:last-child {padding:0 0 0 10px;}
 
-header .member {margin-top: 8px; height: 28px;}
+header .member {margin-top: 8px; height: 28px; position: relative;}
 header .member ul.user {float: left;}
-header .member ul.user li {float: left; height: 28px; line-height: 28px; padding: 0 10px; position: relative;}
-header .member ul.user li a {}
-header .member ul.user li:first-child {padding: 0; margin-right: 6px;}
-header .member ul.user li:first-child a {display:block; width: 78px;  color:#fff; border-radius:14px; text-align: center; background:#67a62e ;}
-header .member ul.user li:before {content:""; position: absolute; left:0; top:10px; width:1px; height: 9px; background:#ddd;}
-header .member ul.user li:first-child:before,
-header .member ul.user li:nth-child(2):before {content:""; position: absolute; left:0; top:5px; width:0px; height: 0px; background:none;}
+header .member ul.user > li {float: left; height: 28px; line-height: 28px; padding: 0 10px; position: relative;}
+header .member ul.user > li a {}
+header .member ul.user > li:first-child {padding: 0; margin-right: 6px;}
+header .member ul.user > li:first-child a {display:block; width: 78px;  color:#fff; border-radius:14px; text-align: center; background:#67a62e ;}
+header .member ul.user > li:before {content:""; position: absolute; left:0; top:10px; width:1px; height: 9px; background:#ddd;}
+header .member ul.user > li:first-child:before,
+header .member ul.user > li:nth-child(2):before {content:""; position: absolute; left:0; top:5px; width:0px; height: 0px; background:none;}
 
-header .member ul.user li.lang a {padding:0 20px 0 0; position: relative;}
-header .member ul.user li.lang a:after {content:""; width: 10px; height: 18px;position: absolute; background: url('../img/icon/set_white.png'); background-position:-40px -20px; margin: 5px 0 0 8px;}
+header .member ul.user > li.lang > a {padding:0 20px 0 0; position: relative;}
+header .member ul.user > li.lang > a:after {content:""; width: 10px; height: 18px;position: absolute; background: url('../img/icon/set_white.png'); background-position:-40px -20px; margin: 5px 0 0 8px; transition:all 0.3s;}
+header .member ul.user > li.lang > ul {height: 0px; overflow: hidden; transition:all 0.3s;}
+header .member ul.user > li.lang:hover > a:after {transform: rotate(180deg);}
+header .member ul.user > li.lang:hover ul {height: 115px; background: #fff; border-radius:3px; padding: 0 8px; border:1px solid #ddd; position: relative; z-index:4;}
+header .member ul.user > li.lang:hover ul li a {color: #333; font-size:12px; letter-spacing: 0.2;}
+header .member ul.user > li.lang:hover ul li a:hover {font-weight: 600;}
 
-header .member .search {width: 18px; height: 18px; background: url('../img/icon/set_white.png'); background-position:-22px -20px; margin-top: 5px; margin-left: 17px;}
+header .member .search {width: 18px; height: 18px; background: url('../img/icon/set_white.png'); background-position:-22px -20px; margin-top: 5px; margin-left: 17px; position: absolute; right:0;}
 /*header .member .navAll {width: 22px; height: 18px; background: url('../img/icon/set_white.png'); background-position:0px -20px; margin-top: 5px; margin-left: 31px;}*/
  
 header.bk {background: #fff;border-bottom:1px solid #eee;}

@@ -347,6 +347,7 @@ html.modal-open {overflow-y: hidden;  }
 /* table */
 table tbody td strong {font-weight: 500; color: #000;}
 .table-must-area{text-align:right;font-size:0.875rem;margin-bottom:1rem;}
+.table-row.expand {overflow-x: auto;}
 .table-row > table{border-top:0.125rem solid #000;color:#333;width:100%}
 .table-row > table th,
 .table-row > table td {color:#333; border-left: 1px solid #ddd;border-bottom:1px solid #ddd;line-height: 1.6; font-size:0.75rem; font-weight: 500; text-align: center; vertical-align: middle;padding:0.5rem;}
@@ -365,7 +366,7 @@ table tbody td strong {font-weight: 500; color: #000;}
 ul.dot-list {margin-top: 1rem;}
 ul.dot-list li {position: relative; padding-left: 0.5rem; font-size:0.75rem; margin-bottom: 0.5rem;}
 ul.dot-list li:last-child {margin-bottom: 0;}
-ul.dot-list li:before {content: '·';position: absolute; left:0;}
+ul.dot-list li:before {content: '·';position: absolute; left:0; top:-1px;}
 
 /* wrap */
 .mobile {width: 100%; max-width:480px; min-height: 100vh;  margin: 0 auto; background: #fff; overflow: hidden; position: relative;}

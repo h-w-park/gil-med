@@ -35,33 +35,62 @@
 					<div class="tab__depth2"> 
 						<ul> 
 							<li><a href="gp030201.html" rel="external">개인정보수정</a></li> 
-							<li class="on"><a href="gp030202.html" rel="external">비밀번호 변경</a></li> 
-							<li><a href="gp030203.html" rel="external">회원탈퇴</a></li> 
+							<li><a href="gp030202.html" rel="external">비밀번호 변경</a></li> 
+							<li class="on"><a href="gp030203.html" rel="external">회원탈퇴</a></li> 
 						</ul> 
 					</div>
 
 					<p class="ta_r mt_30"><small>필수입력 항목 <i class="required"></i></small></p>
+
+					<h4 class="contents__title">탈퇴 계정 정보</h4>
+					<div class="table-row">
+						<table>
+							<colgroup>
+								<col width="30%">
+								<col width="70%">
+							</colgroup>
+							<tr>
+								<th>가입유형</th>
+								<td>일반</td>
+							</tr>
+							<tr>
+								<th>아이디</th>
+								<td>dlkjfiwe</td>
+							</tr>
+							<tr>
+								<th>가입자명</th>
+								<td>김환222</td>
+							</tr>
+							<tr>
+								<th>가입일</th>
+								<td>2018-09-08</td>
+							</tr>
+						</table>
+					</div>
+
 					<div class="form">
 						<form action="">
 							<dl>
-								<dt>현재 비밀번호 <i class="required"></i></dt>
-								<dd><input type="password" placeholder="비밀번호 입력(특수문자,영/숫자 조합 8자 이상)" class="normal"></dd>
-								<dt>새 비밀번호 <i class="required"></i></dt>
-								<dd><input type="password" placeholder="비밀번호 입력(특수문자,영/숫자 조합 8자 이상)" class="normal"></dd>
-								<dt>새 비밀번호 확인 <i class="required"></i></dt>
-								<dd><input type="password" placeholder="비밀번호 입력(특수문자,영/숫자 조합 8자 이상)" class="normal"></dd>
-								<dd><input type="password" placeholder="비밀번호 입력(특수문자,영/숫자 조합 8자 이상)" class="normal error"><span class="error">비밀번호가 일치하지 않습니다.</span> </dd>
+								<dt>탈퇴사유 <i class="required"></i></dt>
+								<dd>
+									<select name="select" id="" data-mini="false">
+								        <option value="1">사유</option>
+								    </select>
+								</dd>
+								<dt>의견작성 <i class="required"></i></dt>
+								<dd>
+									<textarea name="name">탈퇴하시는 사유를 작성해 주시기 바랍니다.</textarea>
+									<ul class="dot-list">
+										<li>탈퇴 후에는 아이디 <span class="c_red"> x3799552</span>  로 다시 가입할 수 없으며 아이디와 데이터는 복구할 수 없습니다. 게시판형 서비스에 남아 있는 게시글은 탈퇴 후 삭제할 수 없습니다.</li>
+									</ul>
+								</dd>
 							</dl>
 						</form>
-						<ul class="dot-list">
-							<li>비밀번호는 특수문자, 영문, 숫자 조합의 8~12자 이내로 설정 가능합니다.</li>
-						</ul>
 					</div>
 					<div class="btn-wrap mt_48">
 						<a href="#" class="btn btnM grey-o">취소</a>
 						<a href="#" class="btn btnM blue">수정</a>
 					</div>
-
 				</div>
 			</div>
 		</section>
