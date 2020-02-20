@@ -31,5 +31,9 @@ $(document).ready(function() {
 		}, 200);
 	}
 
+	if($(".ui-panel").hasClass("ui-panel-open")){
+		$("html, body").addClass("modal-open");
+	}
+
 
 });

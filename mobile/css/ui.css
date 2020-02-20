@@ -140,3 +140,26 @@ span.occupy {width: 0.75rem; height: 0.75rem; background: #fdc75b;display: inlin
 .link__cs  ul li figure {padding-bottom: 0.5rem;}
 .link__cs  ul li figure img {width: 50%; margin: 0 auto;}
 .link__cs  ul li:nth-child(even) {float: right;}
+
+/* 건강매거진 */
+.box__news h3 {font-size:0.9375rem; font-weight: 500; color: #000; margin: 2.125rem 0 0.75rem; position: relative;}
+.box__news h3 a {position: absolute; right:0 ; padding-right:0.7rem; top:0.3rem; font-size:0.75rem;}
+.box__news h3 a:after {position: absolute; content: '>'; right:0; font-family: dotum; font-weight: 600; font-size:0.75rem;}
+.box__news  ul li dl dd {font-size: 0.875rem; font-weight: 600; color: #000; padding: 0.5rem 0 0.5rem 3.2rem;  min-height:2.25rem; line-height: 1.5; background-image:url(../img/icon/i_gil.png); background-repeat:no-repeat; background-size:2rem; background-position:0.7rem 50%;}
+.box__news  ul li dl dt img {width: 100%; height: ;} 
+.box__news  ul li dl {border:1px solid #ddd;}
+
+/*회원가입*/
+.box__join {margin-top:1.875rem;}
+.box__join ul:after {content:""; clear: both;display: block; float: none;}
+.box__join ul {border-left: 1px solid #ddd; border-top: 1px solid #ddd;}
+.box__join ul li {border-right: 1px solid #ddd; width: 50%; float: left; box-sizing:border-box; border-bottom: 1px solid #ddd;}
+.box__join ul li a {display: block; height:10rem;}
+.box__join ul li a h3 {text-align: center; margin-top: 1.25rem; font-size:1rem; color: #000;}
+.box__join ul li a i {width: 3.75rem; height: 3.75rem; display: block; margin: 0.625rem auto; background-image: url('../img/icon/i_join.png'); background-repeat:no-repeat; background-size:600%;}
+.box__join ul li:nth-child(2) a i {background-position:-3.75rem 0;}
+.box__join ul li:nth-child(3) a i {background-position:-7.5rem 0;}
+.box__join ul li:nth-child(4) a i {background-position:-11.25rem 0;}
+.box__join ul li:nth-child(5) a i {background-position:-15rem 0;}
+.box__join ul li:nth-child(6) a i {background-position:-18.75rem 0;}
+.box__join ul li a span {display: block; text-align: center; font-size:0.75rem;}
