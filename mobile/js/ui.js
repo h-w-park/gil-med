@@ -1,5 +1,13 @@
 $(document).ready(function() {
 
+	$('a[data-rel=popup], a[data-icon=bars]').click(function (){
+		$("html, body").addClass("modal-open");
+	});
+
+	$('a[data-rel=back], a[data-rel=close], .ui-panel-dismiss-open').click(function (){
+		$("html, body").removeClass("modal-open");
+	});
+
 	$("#datepicker").datepicker({
 		changeYear: true,
 		changeMonth: true,
@@ -29,10 +37,6 @@ $(document).ready(function() {
 				scrollLeft: left
 			}, 500 );
 		}, 200);
-	}
-
-	if($(".ui-panel").hasClass("ui-panel-open")){
-		$("html, body").addClass("modal-open");
 	}
 
 

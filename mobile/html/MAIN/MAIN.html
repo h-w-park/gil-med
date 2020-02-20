@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,6 +10,7 @@
 	<script src="../../js/jquery-ui.js"></script>
 	<script src="../../js/jquery.mobile-1.4.5.js"></script>
 	<script src="../../js/main.js"></script>
+	<script src="../../js/ui.js"></script>
 </head>
 <body>
 
@@ -19,15 +19,12 @@
 
     <div data-role="header" class="wh">
         <h1><a href="#">가천대길병원</a></h1>
-        <a href="#nav" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false"  class="right menu">메뉴</a>
+        <a href="#nav" data-icon="bars" class="right menu">메뉴</a>
         <a href="#" class="left login">로그인</a>
     </div><!-- /header -->
 
 
-
     <div role="main" class="ui-content main">
-		
-		
 		<section>
 			<div class="main">
 				
@@ -39,10 +36,10 @@
 						<li><img src="../../img/main/gil.png" alt=""></li>
 					</ul>
 				</figure>
+
 				<div class="banner__rsv">
 					<a href="">이름, 전화번호만으로 <strong>빠르게 <br>진료 예약</strong>을 해보세요</a>
 				</div>
-
 				<!-- <div class="banner__rsv login">
 					<a href="">안녕하세요! <strong>홍길동</strong>님, <br>간편하게 <strong>모바일로 예약</strong> 해보세요</a>
 				</div> -->
@@ -137,17 +134,17 @@
 		<footer>
 			<div class="util">
 				<ul>
-					<li><a href="">개인정보취급방침</a></li>
-					<li><a href="">병원윤리강령</a></li>
-					<li><a href="">환자의권리보호존중</a></li>
+					<li><a href="#getPrivacy" data-rel="popup">개인정보취급방침</a></li>
+					<li><a href="#getEthic" data-rel="popup">병원윤리강령</a></li>
+					<li><a href="#getRight" data-rel="popup">환자의권리보호존중</a></li>
 				</ul>
 			</div>
 			<div class="util">
 				<div class="rules">
 					<ul>
-						<li><a href="">이용약관</a></li>
-						<li><a href="">이메일 무단수집거부  </a></li>
-						<li><a href="">사이트맵</a></li>
+						<li><a href="#getPolicy" data-rel="popup">이용약관</a></li>
+						<li><a href="#getEmailRefuse" data-rel="popup">이메일 무단수집거부  </a></li>
+						<li><a href="" rel="external">사이트맵</a></li>
 					</ul>
 				</div>
 				<address>
@@ -156,19 +153,113 @@
 				</address>
 			</div>
 			<div class="call">
-				예약문의 대표전화
-				<strong>1577-2299</strong>
+				<a href="tel:1577-2299">
+					<span>예약문의 대표전화</span>
+					<strong>1577-2299</strong>
+				</a>
 			</div>
 		</footer>
 
-
     </div><!-- /content -->
 
-	<div data-role="panel" id="nav" data-position="left" data-display="overlay">
+
+
+	<div data-role="popup" id="getPrivacy" class="ui-content">
+		<section>
+			<div class="popupTitle">
+				<h3>개인정보취급방침</h3>
+			    <a href="#" data-rel="back">Close</a>
+			</div>
+			<div class="inner">
+				<div class="popupContents">
+
+				</div>
+			</div>
+		</section>
+		<div class="btn-wrap col-2">
+			<a href="" class="btn btnXL grey" data-rel="back">취소</a>
+			<a href="" class="btn btnXL blue">확인</a>
+		</div>
+	</div>
+
+	<div data-role="popup" id="getEthic" class="ui-content">
+		<section>
+			<div class="popupTitle">
+				<h3>병원윤리강령</h3>
+			    <a href="#" data-rel="back">Close</a>
+			</div>
+			<div class="inner">
+				<div class="popupContents">
+
+				</div>
+			</div>
+		</section>
+		<div class="btn-wrap col-2">
+			<a href="" class="btn btnXL grey" data-rel="back">취소</a>
+			<a href="" class="btn btnXL blue">확인</a>
+		</div>
+	</div>
+
+	<div data-role="popup" id="getRight" class="ui-content">
+		<section>
+			<div class="popupTitle">
+				<h3>환자의권리보호존중</h3>
+			    <a href="#" data-rel="back">Close</a>
+			</div>
+			<div class="inner">
+				<div class="popupContents">
+
+				</div>
+			</div>
+		</section>
+		<div class="btn-wrap col-2">
+			<a href="" class="btn btnXL grey" data-rel="back">취소</a>
+			<a href="" class="btn btnXL blue">확인</a>
+		</div>
+	</div>
+
+	<div data-role="popup" id="getPolicy" class="ui-content">
+		<section>
+			<div class="popupTitle">
+				<h3>이용약관</h3>
+			    <a href="#" data-rel="back">Close</a>
+			</div>
+			<div class="inner">
+				<div class="popupContents">
+
+				</div>
+			</div>
+		</section>
+		<div class="btn-wrap col-2">
+			<a href="" class="btn btnXL grey" data-rel="back">취소</a>
+			<a href="" class="btn btnXL blue">확인</a>
+		</div>
+	</div>
+
+	<div data-role="popup" id="getEmailRefuse" class="ui-content">
+		<section>
+			<div class="popupTitle">
+				<h3>이메일 무단수집거부</h3>
+			    <a href="#" data-rel="back">Close</a>
+			</div>
+			<div class="inner">
+				<div class="popupContents">
+
+				</div>
+			</div>
+		</section>
+		<div class="btn-wrap col-2">
+			<a href="" class="btn btnXL grey" data-rel="back">취소</a>
+			<a href="" class="btn btnXL blue">확인</a>
+		</div>
+	</div>
+
+
+	<div data-role="panel" id="nav" data-position="left" data-display="overlay" data-dismissible="false">
 		<div class="box__mypage">
 			<div class="util">
 				<ul>
-					<li><a href="#">로그아웃</a></li>
+					<li><a href="#" rel="external">로그아웃</a></li>
 					<li><a href="#" data-rel="close">닫기</a></li>
 				</ul>
 				<dl>
@@ -178,9 +269,9 @@
 			</div>
 			<div class="link">
 				<ul>
-					<li><a href="">건강매거진</a></li>
-					<li><a href="">진료예약</a></li>
-					<li><a href="">예약조회</a></li>
+					<li><a href="" rel="external">건강매거진</a></li>
+					<li><a href="" rel="external">진료예약</a></li>
+					<li><a href="" rel="external">예약조회</a></li>
 				</ul>
 			</div>
 		</div>
@@ -195,43 +286,45 @@
 				<li data-role="collapsible" data-inset="false">
 					<h3>진료과/의료진</h3>
 					<ul data-role="listview">
-						<li><a href="#">진료과 소개</a></li>
-						<li><a href="#">센터 소개</a></li>
-						<li><a href="#">클리닉 소개</a></li>
+						<li><a href="#" rel="external">진료과 소개</a></li>
+						<li><a href="#" rel="external">센터 소개</a></li>
+						<li><a href="#" rel="external">클리닉 소개</a></li>
 					</ul>
 				</li>
 				<li data-role="collapsible" data-inset="false">
 					<h3>병원안내</h3>
 					<ul data-role="listview">
-						<li><a href="#">외래안내</a></li>
-						<li><a href="#">예약안내</a></li>
-						<li><a href="#">외국인 예약안내</a></li>
-						<li><a href="#">주차안내</a></li>
-						<li><a href="#">심층진찰안내</a></li>
-						<li><a href="#">입/퇴원안내</a></li>
-						<li><a href="#">층별안내</a></li>
-						<li><a href="#">찾아오시는 길</a></li>
-						<li><a href="">원내 전화번호</a></li>
-						<li><a href="">편의시설</a></li>
-						<li><a href="">공지사항</a></li>
+						<li><a href="#" rel="external">외래안내</a></li>
+						<li><a href="#" rel="external">예약안내</a></li>
+						<li><a href="#" rel="external">외국인 예약안내</a></li>
+						<li><a href="#" rel="external">주차안내</a></li>
+						<li><a href="#" rel="external">심층진찰안내</a></li>
+						<li><a href="#" rel="external">입/퇴원안내</a></li>
+						<li><a href="#" rel="external">층별안내</a></li>
+						<li><a href="#" rel="external">찾아오시는 길</a></li>
+						<li><a href="" rel="external">원내 전화번호</a></li>
+						<li><a href="" rel="external">편의시설</a></li>
+						<li><a href="" rel="external">공지사항</a></li>
 					</ul>
 				</li>
 				<li data-role="collapsible" data-inset="false">
 					<h3>병원소개</h3>
 					<ul data-role="listview">
-						<li><a href="#">병원장 인사말</a></li>
-						<li><a href="#">Mission & Vision</a></li>
-						<li><a href="#">병원 정보</a></li>
-						<li><a href="#">병원 연혁</a></li>
-						<li><a href="#">의료 성과</a></li>
+						<li><a href="#" rel="external">병원장 인사말</a></li>
+						<li><a href="#" rel="external">Mission & Vision</a></li>
+						<li><a href="#" rel="external">병원 정보</a></li>
+						<li><a href="#" rel="external">병원 연혁</a></li>
+						<li><a href="#" rel="external">의료 성과</a></li>
 					</ul>
 				</li>
 			</ul>
 		</div>
 		<div class="call">
-			<span>예약문의 대표전화</span>
-			<i></i>
-			<strong>1577-2299</strong>
+			<a href="tel:1577-2299">
+				<span>예약문의 대표전화</span>
+				<i></i>
+				<strong>1577-2299</strong>
+			</a>
 		</div>
 	</div><!-- /panel -->
 
