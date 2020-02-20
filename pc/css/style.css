@@ -491,7 +491,7 @@ select::-ms-expand{display:none;}
 .step.step04{background:url(../img/bg/bg_step.jpg) no-repeat 0 -216px;}
 .reserve-context{background:#fff;height:796px;margin-top:25px;box-sizing:border-box;border:1px solid #ddd;position:relative;overflow:hidden;}
 .reserve-context.scroll{overflow-y:auto;}
-.reserve-context > .scroll-content{overflow-y:none;height:100%;margin:60px 60px 60px 95px;}
+.reserve-context .scroll-content{overflow-y:none;height:100%;margin:60px 60px 60px 95px;}
 .reserve-context.scroll > .scroll-content{overflow-y:unset;}
 .reserve__btn-wrap{margin-top:60px;text-align:center;}
 .reserve-context .table-row table{width:100%;}
