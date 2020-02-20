@@ -4,33 +4,21 @@
 
 $(function() {
 
-
-
-
-	$(document).on("scrollstart",function(){
-		var $header = $(".ui-header");
-		var wTop = $(this).scrollTop();
-		$header.removeClass("wh");
-
-		if (wTop < 50){
-		$header.addClass("wh");
-		}
-	});
-
-/*
-
-	$(window).bind('mousewheel', function(event) {
-		if (event.originalEvent.wheelDelta >= 0) {
-			if (wTop  <  50) {
-			$header.addClass("wh");
-			}
-		}
-		else {
+	/* HEADER */
+	var last_pos= 0;
+	var $header = $(".ui-header");
+	$(window).scroll(function () {
+		var current_pos= $(this).scrollTop();
+		if (current_pos > last_pos) {
 			$header.removeClass("wh");
+		} else if (current_pos < 50){
+			$header.addClass("wh");
+		} else {
+			console.log('up');
 		}
+		last_pos = current_pos;
 	});
 
-*/
 	/*메인 : 비주얼*/
 	$('.visual ul').slick({
 		dots: true,
