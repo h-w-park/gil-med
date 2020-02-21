@@ -349,6 +349,20 @@ span.occupy {width: 0.75rem; height: 0.75rem; background: #fdc75b;display: inlin
 .join_complete strong{color:#333;margin-top:7.813rem;display:block;}
 .join_complete p{line-height:1.5rem;color:#333;margin:0.625rem 0 2.063rem;}
 
+/* 인사말 */
+.greeting_title{line-height:1.5rem;margin:1.563rem 0 1.25rem;}
+.greeting_title p{margin-top:0.3125rem;}
 
+.greeting .text_default{line-height:1.375rem;}
+.greeting .text_default strong{display:block;font-size:0.9375rem;margin:0.9375rem 0;text-align:center;}
 
+.sign{font-size:0.875rem;margin-top:0.9375rem;}
+.sign strong{display:inline-block;font-size:1.188rem;margin-left:.6875rem;}
 
+/* 찾아오시는 길 */
+#map{margin-top:1.875rem;padding:0 1rem;}
+#map .root_daum_roughmap{width:100% !important;border:none;padding:0;border-radius:0;}
+#map .root_daum_roughmap .wrap_controllers{display:none;}
+.btn_map_link{margin-top:1rem;}
+.btn_map_link .btn{background:#258fff;color:#fff;width:100%;font-size:0.8125rem;font-weight:400;}
+.btn_map_link .btn.naver{background:#00c73c;}
