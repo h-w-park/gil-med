@@ -1,0 +1,1767 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text./html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>작업페이지 목록</title>
+	<style type="text/css">
+	body{background:none;padding:0;margin:20px;min-width:900px;}
+	* {font-family:"나눔고딕","NanumGothic",sans-serif !important;font-size:12px;}
+	h1{font-size:180% !important;margin-bottom:10px;}
+	table{width:100%;table-layout:fixed;border-left:1px solid #ccc;border-top:1px solid #ccc;}
+	table thead th, table tfoot th{text-align:center;background:#e9e9e9;}
+	table thead th, table tfoot th,table tbody td{border-right:1px solid #ccc;border-bottom:1px solid #ccc;padding:7px;}
+	table tbody td{padding:8px 5px;white-space:break-all;}
+	table tbody td.align_center{text-align:center;}
+	table tbody tr:hover td{background:#f7f7f7;}
+	tr.done td, tr.done td a, span.done{background:#6396EC !important;color:#fff !important;}
+	tr.delete td, tr.delete:hover td, span.delete{background:orange; text-decoration:line-through;}
+	tr.board td, tr.board:hover td{background:#fbfbad;}
+	td.colspan{background:#f7f7f7;}
+	span.done,
+	span.delete{display:inline-block;padding:3px 10px;}
+	.work-status{padding:20px 0;}
+	.work-status ul{overflow:hidden;}
+	.work-status .tit {display: block; font-weight: bold;margin-bottom:4px;}
+	.work-status .status1 {float:left;}
+	.work-status .status2 {float:left; margin:0 10px 0 50px}
+	.work-status .status2 > span{margin-right:5px;}
+	.work-status .num{position:absolute;top:50px;right:30px;font-size:14px;}
+	p.modify{text-decoration:underline;}
+	div.common_modify{border:1px solid #e2e2e2;background:#fff;padding:10px;margin-bottom:10px;font-size:14px;background:#6396EC !important;color:#fff !important;}
+	/* tab nav */
+	.tab_nav{margin:0 0 0;border-bottom:1px solid #ddd;position:relative;}
+	.tab_nav ul{display:inline-block;margin:0;padding:0;}
+	.tab_nav ul li{display: inline-block;}
+	.ie7 .tab_nav ul, .lte7 .tab_nav ul li{display:inline;zoom:1;}
+	.tab_nav ul li a{display: inline-block;margin-bottom: -1px; padding: 8px 12px; border: 1px solid transparent; border-bottom: 0; font-size: 14px; color: #666; text-decoration: none;}
+	.tab_nav ul li.current a{border-color: #ddd;border-radius: 3px 3px 0 0; background-color: white; color: #333; font-weight: bold;}
+	.tab_nav .tab_nav_last{position:absolute;top:0;right:0;}
+	.tab_nav .count{position: relative; top: -1px; margin: 0 0 0 5px; padding: 1px 5px 2px 5px; font-size: 10px; font-weight: bold; color: #666; background: #e5e5e5; border-radius: 10px; font:11px verdana, sans-serif; line-height:1.25;}
+	.ie6 .tab_nav ul{}
+	.ie6 .tab_nav ul li{float:left;}
+	.ie6 .tab_nav .tab_nav_last ul{float:right;}
+	.tab_contents_wrap{background:#fff;padding:10px;}
+	.hide{display:none;}
+	.source_download{margin:10px 0;list-style-type:disc;margin-left:10px;padding-left:10px;}
+	table tr td:nth-child(1),table tr td:nth-child(8),table tr td:nth-child(9),table tr td:nth-child(10){text-align:center;}
+	.site-wrap{position: relative;}
+	.site-work-list{}
+	.site-work-list ul{overflow:hidden;}
+	.site-work-list ul li{padding:5 10px;}
+	.site-work-list ul li a{font-size:14px;color:#000;}
+
+	select.workerList { 
+		width: 100%;
+    	height: 26px;
+	}
+
+	/* 작업 현황 icon */
+	.status {display:inline-block;padding:4px 6px;border-radius: 3px;background: #6396EC;color:#fff;text-align: center;font-size: 12px;}
+	.complate {background: #1a4da0}
+	.modify {background: #ce1818}
+	.ing {background: #429642}
+
+	/* modal */
+	.modal{display:none;position:fixed;top: 0;left: 0;right:0;bottom:0;width:100%;height:100%;z-index:10000;background:rgba(0,0,0,0.75);}
+	.modal.on{display:block;top:0;left:0;}
+	.modal .modal-layer{display:none;position:relative;width:450px;padding:0 20px;border:1px solid #55565a;background:#fff;position:absolute;left:50%;top:50%;z-index:10000;-webkit-transform: translate(-50%,-50%);-ms-transform: translate(-50%,-50%);transform: translate(-50%,-50%);}
+	.modal .modal-layer.m-width{width:688px;}
+	.modal .modal-layer .modal-header{padding:15px 22px 16px 0;border-bottom:1px solid #333333;}
+	.modal .modal-layer .modal-header .tit{font-size:18px;color:#000000;margin:0}
+	.modal .modal-layer .modal-close{position:absolute;width:20px;height:20px;top:20px;right:20px;z-index:10;}
+	.modal .modal-layer .modal-close:before {display: block;content: '';width:20px;height: 1px;background: #000;transform: rotate(43deg);position: absolute;top: 7px;left: 0;}
+	.modal .modal-layer .modal-close:after {display: block;content: '';width:20px;height: 1px;background: #000;transform: rotate(132deg);position: absolute;top: 7px;left: 0;}
+	.modal .modal-layer .modal-close{cursor:pointer;}
+	.modal .modal-layer .modal-close a{display:block;width:20px;height:20px;background:url("../images/common/btn-modal-close.png") 0 0 no-repeat;text-indent:-9999px;}
+	.modal .modal-layer .modal-body{position:relative;padding:20px 0;}
+	.modal .modal-layer .modal-footer{text-align:center;padding-bottom:40px;}
+	.modal .modal-layer .modal-footer a{margin:0;}
+	</style>
+	
+    <script src="js/jquery-2.2.3.min.js"></script>
+	<script>
+	$(document).ready(function(){
+		var lnk = "";
+		$("thead tr th:first-child, tfoot tr th:first-child").before("<th>번호</th>");
+
+		$(".tab_contents_wrap").each(function(){
+			
+			$("tbody tr", $(this)).each(function(index){
+				$("td:first-child", $(this)).before("<td>"+ (index+1) +"</td>");
+				var href = $("td:nth-child(7) a", $(this)).prop("text") || ''
+				if(href != ""){
+					$("td:nth-child(7) a", $(this)).prop({
+						"href" : href + "?v="+$.now(),
+						"target" : "_blank"
+					});
+				}			
+				
+				var target = $(this).find($("#tab_1_contents td:last-child"));
+				target.each(function(){
+					if($(this).text() == "완료"){
+						$(this).html("<span class='status complate'>완료</span>")
+					}else if($(this).text() == "수정"){
+						$(this).html("<span class='status modify'>수정</span>")
+					}else if($(this).text() == "진행"){
+						$(this).html("<span class='status ing'>진행</span>")
+					}else if($(this).text() == "삭제"){
+						$(this).parents('tr').addClass('delete')
+					}else {
+						$(this).html("대기");
+					}
+				});
+				
+			});
+
+
+			$(".work-list").each(function(){
+				var person;
+				$(this).find("select").change(function() {
+					person = $(this).find("option:selected").text();
+					var worker = $(this).closest(".work-list").find(".worker");
+					worker.each(function(){
+						var workerName = $(this).text();
+						if(workerName == person) {
+							$(this).parent().show();
+						} else{
+							$(this).parent().hide();
+						}
+					});
+					if(person == "담당자") worker.parent().show();
+				});
+			});
+		});
+
+		// $(".tab_contents_wrap").addClass("hide");
+		// $(".tab_contents_wrap").eq(0).removeClass("hide");
+
+		$(".tab_nav li").click(function(e){
+			e.preventDefault();
+			var idx = $(this).index(".tab_nav li");
+			$(".tab_nav li").removeClass("current").eq(idx).addClass("current");
+			$(".tab_contents_wrap").addClass("hide");
+			$(".tab_contents_wrap").eq(idx).removeClass("hide");
+		});
+
+		$("#done_count").html($("#tab_1_contents table tr td .complate").length + '/' + $("#tab_1_contents table tbody tr:not(.delete)").length);
+		$("#done_count2").html($("#tab_2_contents table tr td .complate").length + '/' + $("#tab_2_contents table tbody tr:not(.delete)").length);
+
+		var totalHits = $('#tab_1_contents tbody tr').length;
+		$('.work-status .num .total_hits').html(totalHits);
+		var complateHits = $('#tab_1_contents tbody .complate').length;
+		$('.work-status .num .complate_hits').html(complateHits);
+
+	});
+	</script>
+</head>
+<body>
+	
+	<h1>길병원 작업페이지 목록</h1>
+
+	<div class="site-wrap">
+	
+		<div class="work-status">
+			<ul>
+				<li class="status1">
+					<span class="tit">현황 1</span>
+					<span class="done">완료</span>
+					<span class="delete">삭제</span>
+				</li>
+				<li class="status2">
+					<span class="tit">현황 2</span>
+					작업완료 : <span class="status complate">완료</span>
+					/ 작업 중 : <span class="status ing">진행</span>
+					/ 완료 후 수정 : <span class="status modify">수정</span>
+					/&nbsp;&nbsp; 대기 : 작업 대기&nbsp;
+				</li>
+			</ul>
+			<div class="num">완료 : <span class="complate_hits"></span> / 총 : <span class="total_hits"></span>
+		</div>
+	</div>
+	<div class="tab_contents_wrap work-list">
+		<table cellspacing="0" cellpadding="0">
+			<colgroup>
+				<col width="60px">
+				<col width="100px">
+				<col width="150px">
+				<col width="150px">
+				<col width="150px">
+				<col width="*">
+				<col width="250px">
+				<col width="90px">
+				<col width="150px"> 
+			</colgroup>
+			<thead>
+				<tr>
+					<th>1Depth</th>
+					<th>2Depth</th>
+					<th>3Depth</th>
+					<th>4Depth</th>
+					<th>경로</th>
+					<th>참고</th>
+					<th>등록일</th>
+					<th>수정일</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>layout</td>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+					<td><a href="html/layout/layout.html" target="_blank">html/layout/layout.html</a></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>guide</td>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+					<td><a href="html/layout/guide.html" target="_blank">html/layout/guide.html</a></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+		
+	<div id="tab_1_contents" class="tab_contents_wrap work-list">
+		<table cellspacing="0" cellpadding="0">
+			<colgroup>
+				<col width="60px">
+				<col width="100px">
+				<col width="150px">
+				<col width="150px">
+				<col width="150px">
+				<col width="*">
+				<col width="250px">
+				<col width="110px">
+				<col width="150px">
+				<col width="90px"> 
+			</colgroup>
+			<thead>
+				<tr>
+					<th>1Depth</th>
+					<th>2Depth</th>
+					<th>3Depth</th>
+					<th>4Depth</th>
+					<th>경로</th>
+					<th>참고</th>
+					<th>등록일</th>
+					<th>수정일</th>
+					<th>상태</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>MAIN</td>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+					<td><a href="html/MAIN/MAIN.html" target="_blank">html/MAIN/MAIN.html</a></td>
+					<td></td>
+					<td>01/13</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td>진료과/의료진</td>
+					<td>진료과</td>
+					<td>HOME</td>
+					<td>-</td>
+					<td><a href="html/MDC/gp010100.html" target="_blank">html/MDC/gp010100.html</a></td>
+					<td>-</td>
+					<td>01/13</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>의료진소개/진료시간_tab</td>
+					<td>-</td>
+					<td><a href="html/MDC/gp010101.html" target="_blank">html/MDC/gp010101.html</a></td>
+					<td>-</td>
+					<td>01/13</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>진료과 소개_tab</td>
+					<td>-</td>
+					<td><a href="html/MDC/gp010102.html" target="_blank">html/MDC/gp010102.html</a></td>
+					<td>-</td>
+					<td>01/13</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>진료과 위치_tab</td>
+					<td>-</td>
+					<td><a href="html/MDC/gp010103.html" target="_blank">html/MDC/gp010103.html</a></td>
+					<td>-</td>
+					<td>01/13</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>센터</td>
+					<td>HOME</td>
+					<td>-</td>
+					<td><a href="html/MDC/gp010200.html" target="_blank">html/MDC/gp010200.html</a></td>
+					<td>-</td>
+					<td>01/13</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>-</td>
+					<td>학생검진신청</td>
+					<td><a href="html/MDC/gp010201.html" target="_blank">html/MDC/gp010201.html</a></td>
+					<td>popup</td>
+					<td>01/13</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>-</td>
+					<td>학생검진조회</td>
+					<td><a href="html/MDC/gp010202.html" target="_blank">html/MDC/gp010202.html</a></td>
+					<td>popup</td>
+					<td>01/16</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>-</td>
+					<td>학생검진수정</td>
+					<td><a href="html/MDC/gp010203.html" target="_blank">html/MDC/gp010203.html</a></td>
+					<td>popup</td>
+					<td>01/16</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>-</td>
+					<td>일반알림</td>
+					<td><a href="html/MDC/gp010204.html" target="_blank">html/MDC/gp010204.html</a></td>
+					<td>popup</td>
+					<td>01/13</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td> 의료진소개/진료시간_tab</td>
+					<td>-</td>
+					<td><a href="html/MDC/gp010205.html" target="_blank">html/MDC/gp010205.html</a></td>
+					<td>-</td>
+					<td>01/13</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>센터 소개_tab</td>
+					<td>-</td>
+					<td><a href="html/MDC/gp010206.html" target="_blank">html/MDC/gp010206.html</a></td>
+					<td>-</td>
+					<td>01/13</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>센터 위치_tab</td>
+					<td>-</td>
+					<td><a href="html/MDC/gp010207.html" target="_blank">html/MDC/gp010207.html</a></td>
+					<td>-</td>
+					<td>01/13</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>클리닉</td>
+					<td>HOME</td>
+					<td>-</td>
+					<td><a href="html/MDC/gp010300.html" target="_blank">html/MDC/gp010300.html</a></td>
+					<td>-</td>
+					<td>01/13</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>의료진소개/진료시간_tab</td>
+					<td>-</td>
+					<td><a href="html/MDC/gp010301.html" target="_blank">html/MDC/gp010301.html</a></td>
+					<td>-</td>
+					<td>01/13</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>클리닉소개_tab</td>
+					<td>-</td>
+					<td><a href="html/MDC/gp010302.html" target="_blank">html/MDC/gp010302.html</a></td>
+					<td>-</td>
+					<td>01/13</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>자문교수단_tab</td>
+					<td>-</td>
+					<td><a href="html/MDC/gp010303.html" target="_blank">html/MDC/gp010303.html</a></td>
+					<td>-</td>
+					<td>01/13</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>의료진</td>
+					<td>검색</td>
+					<td>-</td>
+					<td><a href="html/MDC/gp010401.html" target="_blank">html/MDC/gp010401.html</a></td>
+					<td>-</td>
+					<td>01/13</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>의료진 프로필</td>
+					<td>-</td>
+					<td><a href="html/MDC/gp010402.html" target="_blank">html/MDC/gp010402.html</a></td>
+					<td>-</td>
+					<td>01/13</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>진료시간표</td>
+					<td>-</td>
+					<td>-</td>
+					<td><a href="html/MDC/gp010501.html" target="_blank">html/MDC/gp010501.html</a></td>
+					<td>-</td>
+					<td>01/16</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>지원부서</td>
+					<td>목록</td>
+					<td>-</td>
+					<td><a href="html/MDC/gp010600.html" target="_blank">html/MDC/gp010600.html</a></td>
+					<td>-</td>
+					<td>01/16</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>소개_tab</td>
+					<td><a href="html/MDC/gp010601.html" target="_blank">html/MDC/gp010601.html</a></td>
+					<td>-</td>
+					<td>01/16</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+
+
+
+
+
+				<tr>
+					<td>진료예약</td>
+					<td>메인</td>
+					<td>-</td>
+					<td>-</td>
+					<td><a href="html/RSV/gp020101.html" target="_blank">html/RSV/gp020101.html</a></td>
+					<td>-</td>
+					<td>01/13</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>회원대리예약</td>
+					<td>STEP01</td>
+					<td>-</td>
+					<td><a href="html/RSV/gp020201.html" target="_blank">html/RSV/gp020201.html</a></td>
+					<td>-</td>
+					<td>01/13</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>STEP02</td>
+					<td>-</td>
+					<td><a href="html/RSV/gp020202.html" target="_blank">html/RSV/gp020202.html</a></td>
+					<td>-</td>
+					<td>01/13</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>STEP03</td>
+					<td>-</td>
+					<td><a href="html/RSV/gp020203.html" target="_blank">html/RSV/gp020203.html</a></td>
+					<td>-</td>
+					<td>01/13</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>STEP04</td>
+					<td>-</td>
+					<td><a href="html/RSV/gp020204.html" target="_blank">html/RSV/gp020204.html</a></td>
+					<td>-</td>
+					<td>01/13</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>STEP05</td>
+					<td>-</td>
+					<td><a href="html/RSV/gp020205.html" target="_blank">html/RSV/gp020205.html</a></td>
+					<td>-</td>
+					<td>01/13</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>빠른예약</td>
+					<td></td>
+					<td>-</td>
+					<td><a href="html/RSV/gp020301.html" target="_blank">html/RSV/gp020301.html</a></td>
+					<td>-</td>
+					<td>02.17</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td>고객서비스</td>
+					<td>서브메인</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/CS/gp030101.html" target="_blank">html/CS/gp030101.html</a></td>
+					<td>-</td>
+					<td>01.23</td>
+					<td></td>
+					<td>완료</td>
+				</tr> 
+				<tr>
+					<td></td>
+					<td>회원정보수정</td>
+					<td>비밀번호입력</td>
+					<td></td>
+					<td><a href="html/CS/gp030201.html" target="_blank">html/CS/gp030201.html</a></td>
+					<td>-</td>
+					<td>01.31</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>개인정보수정_tab</td>
+					<td></td>
+					<td><a href="html/CS/gp030202.html" target="_blank">html/CS/gp030202.html</a></td>
+					<td>-</td>
+					<td>01.31</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>비밀번호 변경_tab</td>
+					<td></td>
+					<td><a href="html/CS/gp030203.html" target="_blank">html/CS/gp030203.html</a></td>
+					<td>-</td>
+					<td>01.14</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>회원탈퇴_tab</td>
+					<td></td>
+					<td><a href="html/CS/gp030204.html" target="_blank">html/CS/gp030204.html</a></td>
+					<td>-</td>
+					<td>01.14</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>예약현황</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/CS/gp030301.html" target="_blank">html/CS/gp030301.html</a></td>
+					<td>-</td>
+					<td>01.23</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>진료 및 검사내역</td>
+					<td>진료내역_tab</td>
+					<td></td>
+					<td><a href="html/CS/gp030401.html" target="_blank">html/CS/gp030401.html</a></td>
+					<td>-</td>
+					<td>01.23</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>검사내역_tab</td>
+					<td></td>
+					<td><a href="html/CS/gp030402.html" target="_blank">html/CS/gp030402.html</a></td>
+					<td>-</td>
+					<td>01.23</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>처방내역_tab</td>
+					<td></td>
+					<td><a href="html/CS/gp030403.html" target="_blank">html/CS/gp030403.html</a></td>
+					<td>-</td>
+					<td>01.23</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>고객의 소리</td>
+					<td>안내</td>
+					<td></td>
+					<td><a href="html/CS/gp030501.html" target="_blank">html/CS/gp030501.html</a></td>
+					<td>-</td>
+					<td>01.23</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>고객의소리 작성</td>
+					<td></td>
+					<td><a href="html/CS/gp030502.html" target="_blank">html/CS/gp030502.html</a></td>
+					<td>-</td>
+					<td>01.30</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>칭찬하기 작성</td>
+					<td></td>
+					<td><a href="html/CS/gp030503.html" target="_blank">html/CS/gp030503.html</a></td>
+					<td>-</td>
+					<td>01.31</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>진료과 문의하기</td>
+					<td>쓰기</td>
+					<td></td>
+					<td><a href="html/CS/gp030601.html" target="_blank">html/CS/gp030601.html</a></td>
+					<td>-</td>
+					<td>01.31</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>문의내역</td>
+					<td>리스트</td>
+					<td></td>
+					<td><a href="html/CS/gp030701.html" target="_blank">html/CS/gp030701.html</a></td>
+					<td>-</td>
+					<td>01.14</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>보기</td>
+					<td></td>
+					<td><a href="html/CS/gp030701_view.html" target="_blank">html/CS/gp030701_view.html</a></td>
+					<td>-</td>
+					<td>01.23</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>관심의료진</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/CS/gp030801.html" target="_blank">html/CS/gp030801.html</a></td>
+					<td>-</td>
+					<td>01.23</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>증명서발급안내</td>
+					<td>증명서발급안내</td>
+					<td>-</td>
+					<td><a href="html/CS/gp030901.html" target="_blank">html/CS/gp030901.html</a></td>
+					<td>-</td>
+					<td>01.14</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>환자가미성년자일경우</td>
+					<td><a href="html/CS/gp030902.html" target="_blank">html/CS/gp030902.html</a></td>
+					<td>-</td>
+					<td>01.23</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>환자동의를받을수없는경우</td>
+					<td><a href="html/CS/gp030903.html" target="_blank">html/CS/gp030903.html</a></td>
+					<td>-</td>
+					<td>01.23</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>인터넷 사본 발급</td>
+					<td>-</td>
+					<td><a href="html/CS/gp030904.html" target="_blank">html/CS/gp030904.html</a></td>
+					<td>-</td>
+					<td>01.23</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>의무기록/영상 사본 발급안내</td>
+					<td>-</td>
+					<td><a href="html/CS/gp030905.html" target="_blank">html/CS/gp030905.html</a></td>
+					<td>-</td>
+					<td>01.23</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>연말정산(소득공제서류)</td>
+					<td>-</td>
+					<td><a href="html/CS/gp030906.html" target="_blank">html/CS/gp030906.html</a></td>
+					<td>-</td>
+					<td>01.23</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>비급여진료비</td>
+					<td>행위료</td>
+					<td>-</td>
+					<td><a href="html/CS/gp031001.html" target="_blank">html/CS/gp031001.html</a></td>
+					<td>-</td>
+					<td>01.14</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>치료재료대</td>
+					<td>-</td>
+					<td><a href="html/CS/gp031002.html" target="_blank">html/CS/gp031002.html</a></td>
+					<td>-</td>
+					<td>01.23</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>약제비</td>
+					<td>-</td>
+					<td><a href="html/CS/gp031003.html" target="_blank">html/CS/gp031003.html</a></td>
+					<td>-</td>
+					<td>01.23</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>제증명 수수료</td>
+					<td>-</td>
+					<td><a href="html/CS/gp031004.html" target="_blank">html/CS/gp031004.html</a></td>
+					<td>-</td>
+					<td>01.23</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td>건강매거진</td>
+					<td>메인</td>
+					<td></td>
+					<td>-</td>
+					<td><a href="html/HTH/gp040101.html" target="_blank">html/HTH/gp040101.html</a></td>
+					<td>-</td>
+					<td>01.20</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>언론보도</td>
+					<td>리스트</td>
+					<td>-</td>
+					<td><a href="html/HTH/gp040201.html" target="_blank">html/HTH/gp040201.html</a></td>
+					<td>-</td>
+					<td>01.17</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>보기</td>
+					<td>-</td>
+					<td><a href="html/HTH/gp040202.html" target="_blank">html/HTH/gp040202.html</a></td>
+					<td>-</td>
+					<td>01.15</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>쓰기</td>
+					<td>-</td>
+					<td><a href="html/HTH/gp040203.html" target="_blank">html/HTH/gp040203.html</a></td>
+					<td>-</td>
+					<td>01.15</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>길병원소식지</td>
+					<td></td>
+					<td>-</td>
+					<td><a href="html/HTH/gp040301.html" target="_blank">html/HTH/gp040301.html</a></td>
+					<td>-</td>
+					<td>01.20</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>가천갤러리</td>
+					<td></td>
+					<td>-</td>
+					<td><a href="html/HTH/gp040401.html" target="_blank">html/HTH/gp040401.html</a></td>
+					<td>-</td>
+					<td>01.20</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>정기건강교실</td>
+					<td>당뇨의 원인 및 증상_TAB</td>
+					<td>-</td>
+					<td><a href="html/HTH/gp040501.html" target="_blank">html/HTH/gp040501.html</a></td>
+					<td>-</td>
+					<td>02.11</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>당뇨의 합병증_TAB</td>
+					<td>-</td>
+					<td><a href="html/HTH/gp040502.html" target="_blank">html/HTH/gp040502.html</a></td>
+					<td>-</td>
+					<td>02.11</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>당뇨검사_TAB</td>
+					<td>-</td>
+					<td><a href="html/HTH/gp040503.html" target="_blank">html/HTH/gp040503.html</a></td>
+					<td>-</td>
+					<td>01.20</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>당뇨건강관리방법_TAB</td>
+					<td>-</td>
+					<td><a href="html/HTH/gp040504.html" target="_blank">html/HTH/gp040504.html</a></td>
+					<td>-</td>
+					<td>02.11</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>당뇨치료요법_TAB</td>
+					<td>-</td>
+					<td><a href="html/HTH/gp040505.html" target="_blank">html/HTH/gp040505.html</a></td>
+					<td>-</td>
+					<td>02.11</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>강좌안내</td>
+					<td>리스트</td>
+					<td></td>
+					<td><a href="html/HTH/gp040601.html" target="_blank">html/HTH/gp040601.html</a></td>
+					<td>-</td>
+					<td>02.03</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>보기</td>
+					<td></td>
+					<td><a href="html/HTH/gp040602.html" target="_blank">html/HTH/gp040602.html</a></td>
+					<td>-</td>
+					<td>01.31</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>사전등록</td>
+					<td></td>
+					<td><a href="html/HTH/gp040603.html" target="_blank">html/HTH/gp040603.html</a></td>
+					<td>-</td>
+					<td>01.31</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>사전등록 조회</td>
+					<td></td>
+					<td><a href="html/HTH/gp040604.html" target="_blank">html/HTH/gp040604.html</a></td>
+					<td>-</td>
+					<td>01.31</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>수정</td>
+					<td></td>
+					<td><a href="html/HTH/gp040605.html" target="_blank">html/HTH/gp040605.html</a></td>
+					<td>-</td>
+					<td>01.31</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>친절 직원 사례</td>
+					<td></td>
+					<td>-</td>
+					<td><a href="html/HTH/gp040701.html" target="_blank">html/HTH/gp040701.html</a></td>
+					<td>-</td>
+					<td>01.20</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>상세</td>
+					<td>-</td>
+					<td><a href="html/HTH/gp040702.html" target="_blank">html/HTH/gp040702.html</a></td>
+					<td>팝업</td>
+					<td>01.20</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+
+				<tr>
+					<td>병원안내</td>
+					<td>서브메인</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/INFO/gp050101.html" target="_blank">html/INFO/gp050101.html</a></td>
+					<td>-</td>
+					<td>01.22</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>외래안내</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/INFO/gp050201.html" target="_blank">html/INFO/gp050201.html</a></td>
+					<td>-</td>
+					<td>01.23</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>예약안내</td>
+					<td>전화예약_tab</td>
+					<td></td>
+					<td><a href="html/INFO/gp050301.html" target="_blank">html/INFO/gp050301.html</a></td>
+					<td>-</td>
+					<td>01.22</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>인터넷예약_tab</td>
+					<td></td>
+					<td><a href="html/INFO/gp050302.html" target="_blank">html/INFO/gp050302.html</a></td>
+					<td>-</td>
+					<td>0122.</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>FAX예약_tab</td>
+					<td></td>
+					<td><a href="html/INFO/gp050303.html" target="_blank">html/INFO/gp050303.html</a></td>
+					<td>-</td>
+					<td>01.22</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>방문예약_tab</td>
+					<td></td>
+					<td><a href="html/INFO/gp050304.html" target="_blank">html/INFO/gp050304.html</a></td>
+					<td>-</td>
+					<td>01.22</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>진료협력센터예약_tab</td>
+					<td></td>
+					<td><a href="html/INFO/gp050305.html" target="_blank">html/INFO/gp050305.html</a></td>
+					<td>-</td>
+					<td>01.22</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>외국인 예약안내</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/INFO/gp050401.html" target="_blank">html/INFO/gp050401.html</a></td>
+					<td>-</td>
+					<td>01.30</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>주차안내</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/INFO/gp050501.html" target="_blank">html/INFO/gp050501.html</a></td>
+					<td>-</td>
+					<td>01.30</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>심층진찰안내</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/INFO/gp050601.html" target="_blank">html/INFO/gp050601.html</a></td>
+					<td>-</td>
+					<td>01.22</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>입/퇴원안내</td>
+					<td>입원준비</td>
+					<td></td>
+					<td><a href="html/INFO/gp050701.html" target="_blank">html/INFO/gp050701.html</a></td>
+					<td>-</td>
+					<td>01.22</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>간호간병통합서비스</td>
+					<td></td>
+					<td><a href="html/INFO/gp050702.html" target="_blank">html/INFO/gp050702.html</a></td>
+					<td>-</td>
+					<td>01.22</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>입원안내</td>
+					<td></td>
+					<td><a href="html/INFO/gp050703.html" target="_blank">html/INFO/gp050703.html</a></td>
+					<td>-</td>
+					<td>01.22</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>병실안내</td>
+					<td></td>
+					<td><a href="html/INFO/gp050704.html" target="_blank">html/INFO/gp050704.html</a></td>
+					<td>-</td>
+					<td>01.22</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>퇴원안내</td>
+					<td></td>
+					<td><a href="html/INFO/gp050705.html" target="_blank">html/INFO/gp050705.html</a></td>
+					<td>-</td>
+					<td>01.30</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>병문안 안내</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/INFO/gp050801.html" target="_blank">html/INFO/gp050801.html</a></td>
+					<td>-</td>
+					<td>01.30</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>가정간호서비스</td>
+					<td>가정간호 소개_tab</td>
+					<td></td>
+					<td><a href="html/INFO/gp050901.html" target="_blank">html/INFO/gp050901.html</a></td>
+					<td>-</td>
+					<td>01.22</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>가정간호대상 및 지역_tab</td>
+					<td></td>
+					<td><a href="html/INFO/gp050902.html" target="_blank">html/INFO/gp050902.html</a></td>
+					<td>-</td>
+					<td>01.22</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>신청절차 및 비용_tab</td>
+					<td></td>
+					<td><a href="html/INFO/gp050903.html" target="_blank">html/INFO/gp050903.html</a></td>
+					<td>-</td>
+					<td>01.22</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>Q&A_tab</td>
+					<td></td>
+					<td><a href="html/INFO/gp050904.html" target="_blank">html/INFO/gp050904.html</a></td>
+					<td>-</td>
+					<td>01.22</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>자원봉사</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/INFO/gp051001.html" target="_blank">html/INFO/gp051001.html</a></td>
+					<td>-</td>
+					<td>01.22</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>사회공헌</td>
+					<td>가천지역상생봉사단</td>
+					<td></td>
+					<td><a href="html/INFO/gp051101.html" target="_blank">html/INFO/gp051101.html</a></td>
+					<td>-</td>
+					<td>01.22</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>사회공헌활동</td>
+					<td></td>
+					<td><a href="html/INFO/gp051102.html" target="_blank">html/INFO/gp051102.html</a></td>
+					<td>-</td>
+					<td>01.22</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>사회공헌 뉴스</td>
+					<td></td>
+					<td><a href="html/INFO/gp051103.html" target="_blank">html/INFO/gp051103.html</a></td>
+					<td>-</td>
+					<td>01.22</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>층별안내</td>
+					<td>전체 조경</td>
+					<td></td>
+					<td><a href="html/INFO/gp051201.html" target="_blank">html/INFO/gp051201.html</a></td>
+					<td>-</td>
+					<td>01.</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>지하연결통로</td>
+					<td></td>
+					<td><a href="html/INFO/gp051202.html" target="_blank">html/INFO/gp051202.html</a></td>
+					<td>-</td>
+					<td>01.</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>층별안내</td>
+					<td></td>
+					<td><a href="html/INFO/gp051203.html" target="_blank">html/INFO/gp051203.html</a></td>
+					<td>-</td>
+					<td>01.</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>찾아오시는 길</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/INFO/gp051301.html" target="_blank">html/INFO/gp051301.html</a></td>
+					<td>-</td>
+					<td>01.23</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>원내 전화번호</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/INFO/gp051401.html" target="_blank">html/INFO/gp051401.html</a></td>
+					<td>-</td>
+					<td>01.23</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>편의시설</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/INFO/gp051501.html" target="_blank">html/INFO/gp051501.html</a></td>
+					<td>-</td>
+					<td>01.23</td>
+					<td></td>
+					<td>완료</td>
+				</tr> 
+				<tr>
+					<td></td>
+					<td>공지사항</td>
+					<td>리스트</td>
+					<td></td>
+					<td><a href="html/INFO/gp051601.html" target="_blank">html/INFO/gp051601.html</a></td>
+					<td>-</td>
+					<td>01.23</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>상세</td>
+					<td></td>
+					<td><a href="html/INFO/gp051602.html" target="_blank">html/INFO/gp051602.html</a></td>
+					<td>-</td>
+					<td>01.23</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>쓰기</td>
+					<td></td>
+					<td><a href="html/INFO/gp051603.html" target="_blank">html/INFO/gp051603.html</a></td>
+					<td>-</td>
+					<td>01.15</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>채용정보</td>
+					<td></td>
+					<td></td>
+					<td>채용페이지로 이동됨 https://gilhospital.recruiter.co.kr/appsite/company/index</td>
+					<td>-</td>
+					<td></td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>입찰공고</td>
+					<td>리스트</td>
+					<td></td>
+					<td><a href="html/INFO/gp051801.html" target="_blank">html/INFO/gp051801.html</a></td>
+					<td>-</td>
+					<td>01.30</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>상세</td>
+					<td></td>
+					<td><a href="html/INFO/gp051802.html" target="_blank">html/INFO/gp051802.html</a></td>
+					<td>-</td>
+					<td>01.30</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td>기타</td>
+					<td>사이트맵</td>
+					<td>-</td>
+					<td>-</td>
+					<td><a href="html/ETC/gp060101.html" target="_blank">html/ETC/gp060101.html</a></td>
+					<td></td>
+					<td>02.03</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>이메일 무단수집 거부</td>
+					<td>-</td>
+					<td>-</td>
+					<td>팝업</td>
+					<td></td>
+					<td>02.03</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>환자권리보호존중</td>
+					<td>-</td>
+					<td>-</td>
+					<td>팝업</td>
+					<td></td>
+					<td>02.03</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>병원윤리강령</td>
+					<td>-</td>
+					<td>-</td>
+					<td>팝업</td>
+					<td></td>
+					<td>02.03</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>윤리강령 실전지침</td>
+					<td>-</td>
+					<td>-</td>
+					<td><a href="html/ETC/gp060501.html" target="_blank">html/ETC/gp060501.html</a></td>
+					<td></td>
+					<td>02.03</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>개인정보처리방침</td>
+					<td>-</td>
+					<td>-</td>
+					<td><a href="html/ETC/gp060601.html" target="_blank">html/ETC/gp060601.html</a></td>
+					<td></td>
+					<td>02.03</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>로그인</td>
+					<td>로그인</td>
+					<td>-</td>
+					<td><a href="html/ETC/gp060701.html" target="_blank">html/ETC/gp060701.html</a></td>
+					<td></td>
+					<td>02.03</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>아이디찾기</td>
+					<td>-</td>
+					<td><a href="html/ETC/gp060703.html" target="_blank">html/ETC/gp060703.html</a></td>
+					<td></td>
+					<td>02.03</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>아이디확인</td>
+					<td>-</td>
+					<td><a href="html/ETC/gp060704.html" target="_blank">html/ETC/gp060704.html</a></td>
+					<td></td>
+					<td>02.03</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>비밀번호찾기</td>
+					<td>-</td>
+					<td><a href="html/ETC/gp060705.html" target="_blank">html/ETC/gp060705.html</a></td>
+					<td></td>
+					<td>02.03</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>비밀번호재설정</td>
+					<td>-</td>
+					<td><a href="html/ETC/gp060706.html" target="_blank">html/ETC/gp060706.html</a></td>
+					<td></td>
+					<td>02.03</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>회원가입</td>
+					<td>step_1 회원가입 선택</td>
+					<td>-</td>
+					<td><a href="html/ETC/gp060801.html" target="_blank">html/ETC/gp060801.html</a></td>
+					<td></td>
+					<td>01.28</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>step_2 약관동의 </td>
+					<td>-</td>
+					<td><a href="html/ETC/gp060802.html" target="_blank">html/ETC/gp060802.html</a></td>
+					<td></td>
+					<td>01.28</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>step_3 실명인증</td>
+					<td>-</td>
+					<td><a href="html/ETC/gp060803.html" target="_blank">html/ETC/gp060803.html</a></td>
+					<td></td>
+					<td>01.28</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>step_3 실명인증_부모님동의</td>
+					<td>-</td>
+					<td><a href="html/ETC/gp060804.html" target="_blank">html/ETC/gp060804.html</a></td>
+					<td></td>
+					<td>01.28</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>step_4 회원정보 입력</td>
+					<td>-</td>
+					<td><a href="html/ETC/gp060805.html" target="_blank">html/ETC/gp060805.html</a></td>
+					<td></td>
+					<td>01.28</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>step_5 회원가입 완료</td>
+					<td>-</td>
+					<td><a href="html/ETC/gp060806.html" target="_blank">html/ETC/gp060806.html</a></td>
+					<td></td>
+					<td>01.28</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>병원소개</td>
+					<td>병원장 인사말_tab</td>
+					<td>-</td>
+					<td><a href="html/ETC/gp060901.html" target="_blank">html/ETC/gp060901.html</a></td>
+					<td></td>
+					<td>02.10</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>Mission & Vision_tab</td>
+					<td>Mission_tab</td>
+					<td><a href="html/ETC/gp060902.html" target="_blank">html/ETC/gp060902.html</a></td>
+					<td></td>
+					<td>02.10</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>Vision_tab</td>
+					<td></td>
+					<td></td>
+					<td>02.10</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>병원 정보_tab</td>
+					<td>-</td>
+					<td><a href="html/ETC/gp060903.html" target="_blank">html/ETC/gp060903.html</a></td>
+					<td></td>
+					<td>02.07</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>병원 연혁_tab</td>
+					<td>-</td>
+					<td><a href="html/ETC/gp060904.html" target="_blank">html/ETC/gp060904.html</a></td>
+					<td></td>
+					<td>02.19</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>의료 성과_tab</td>
+					<td>-</td>
+					<td><a href="html/ETC/gp060905.html" target="_blank">html/ETC/gp060905.html</a></td>
+					<td></td>
+					<td>02.12</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>이용약관</td>
+					<td></td>
+					<td>-</td>
+					<td><a href="html/ETC/gp061001.html" target="_blank">html/ETC/gp061001.html</a></td>
+					<td></td>
+					<td>02.05</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td>공통</td>
+					<td>실명인증</td>
+					<td></td>
+					<td>-</td>
+					<td><a href="html/ETC/gp070101.html" target="_blank">html/ETC/gp070101.html</a></td>
+					<td></td>
+					<td>01.31</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>검색</td>
+					<td>검색결과없음</td>
+					<td>-</td>
+					<td><a href="html/ETC/gp070301.html" target="_blank">html/ETC/gp070301.html</a></td>
+					<td></td>
+					<td>02.07</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>검색</td>
+					<td>검색결과</td>
+					<td>-</td>
+					<td><a href="html/ETC/gp070302.html" target="_blank">html/ETC/gp070302.html</a></td>
+					<td></td>
+					<td>02.07</td>
+					<td></td>
+					<td>완료</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+</body>
+</html>

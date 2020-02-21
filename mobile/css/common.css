@@ -204,14 +204,14 @@ html.modal-open {overflow-y: hidden;  }
 	.ui-input-text input.box {height:2.5rem ; line-height: 2.25rem; width: 100%; font-size:.875rem; padding-left: 0.5rem; border:1px solid #ddd;}
 
 	/* tabs */
-	.tab__depth2 ul {display: table; table-layout: fixed; width: 100%;}
-	.tab__depth2 ul li { display: table-cell; width: 100%; vertical-align: middle; height: 3.375rem; border:1px solid #ddd; border-right: none;}
-	.tab__depth2 ul li:last-child {border-right: 1px solid #ddd;}
-	.tab__depth2 ul li a {display: block;text-align: center; line-height: 1.4; font-size:0.875rem;}
+	.tab__depth2 {width: calc( 100% + 2rem); position: relative; margin-left: -1rem;  border-bottom: 1px solid #ddd;}
+	.tab__depth2 ul {display: table; table-layout: fixed; width: calc( 100% - 2rem); margin: 0 1rem;}
+	.tab__depth2 ul li { display: table-cell; width: 100%; vertical-align: middle; height: 3.375rem; } 
+	.tab__depth2 ul li a {display: block;text-align: center; line-height: 1.4; font-size:0.875rem; font-weight: 500;}
 	.tab__depth2 ul li.on,
-	.tab__depth2 ul li.ui-state-active { background: #004e96; color: #fff;}
+	.tab__depth2 ul li.ui-state-active { border-bottom: 1px solid #004e96; color: #004e96;}
 	.tab__depth2 ul li.on a ,
-	.tab__depth2 ul li.ui-state-active a{color: #fff;}
+	.tab__depth2 ul li.ui-state-active a{color: #004e96; font-weight: 600;}
 
 	.tab__depth2.expand {overflow-x:auto;-webkit-overflow-scrolling: touch; overflow-y:hidden;}
 	.tab__depth2.expand ul {-webkit-flex-wrap: nowrap; -moz-flex-wrap: nowrap; -ms-flex-wrap: none; flex-wrap: nowrap;display: -webkit-box; display: -webkit-flex; display: -moz-flex; display: -ms-flexbox; display: flex;}
@@ -318,6 +318,8 @@ html.modal-open {overflow-y: hidden;  }
 	.ui-datepicker-header .ui-datepicker-title > .ui-select:last-child {margin-right: 0; min-width:3rem;}
 	.ui-datepicker-header .ui-datepicker-title > .ui-select .ui-icon-carat-d {background: none; }
 
+	figure.expand {overflow: auto;}
+
 
 /* Accordion */
 .ui-collapsible-content.ui-collapsible-content-collapsed { display: none !important; }
@@ -376,9 +378,27 @@ table tbody td strong {font-weight: 500; color: #000;}
 
 /* 기본리스트 */
 ul.dot-list {margin-top: 1rem;}
-ul.dot-list li {position: relative; padding-left: 0.5rem; font-size:0.75rem; /*margin-bottom: 0.5rem;*/line-height:1.125rem;}
+ul.dot-list li {position: relative; padding-left: 0.5rem; font-size:0.8125rem; /*margin-bottom: 0.5rem;*/line-height:1.125rem; }
 ul.dot-list li:last-child {margin-bottom: 0;}
 ul.dot-list li:before {content: '·';position: absolute; left:0; top:-1px;}
+ul.dot-list + small {font-size:0.75rem; color: #666;}
+
+
+/* sub STEP */
+.list__step > ul > li {border-left: 1px solid #ddd; padding-left: 1rem; padding-top: 0.6rem; margin-left: 0.1875rem; position: relative; padding-bottom: 1rem;}
+.list__step > ul > li:last-child {border-left: none;}
+.list__step > ul > li span {font-size:0.75rem;color: #666; position: absolute; top:0;}
+.list__step > ul > li h4 {font-size:0.875rem; color: #000; line-height: 1.6; margin-top: 0.5rem;}
+.list__step > ul > li h4:nth-child(1) {margin-top: 2rem;}
+.list__step > ul > li small {color: #888; font-weight: 400; font-size:0.75rem;}
+.list__step > ul > li h4 small {position: relative; padding-left: 0.25rem;}
+.list__step > ul > li p {font-size:0.75rem;}
+.list__step > ul > li span:before {content: ''; width:  0.4375rem; height:  0.4375rem; background: #fcaf15; display: block; position: absolute; left:-1.25rem; border-radius:50%;}
+
+.list__content {margin-top: 1rem;}
+.list__content > ul {border-bottom: 1px solid #ddd;}
+.list__content > ul > li {border: 1px solid #ddd; border-bottom: none;padding: 1rem;}
+.list__content > ul > li h4 {color: #333; line-height: 1.4; margin-bottom: 0.5rem;}
 
 /* wrap */
 .mobile {width: 100%; max-width:480px; min-height: 100vh;  margin: 0 auto; background: #fff; overflow: hidden; position: relative;}
@@ -410,9 +430,9 @@ ul.dot-list li:before {content: '·';position: absolute; left:0; top:-1px;}
 #mobile.ui-page-theme-a, #mobile .ui-panel-wrapper { background-color: #fff; }
 
 
-section > .title {margin-top: 2.5rem; height:6.5rem;}
-section > .title h2 {text-align: center; font-size:.1.5rem; color: #000;}
-section > .title p {text-align: center; font-size:.875rem; color: #333; font-weight: 400;line-height: 1.5; min-height:1.5rem; margin-top: 0.75rem;}
+section > .title {padding-top: 2.5rem; height:6.5rem; background: #567b9d;}
+section > .title h2 {text-align: left; font-size:.1.5rem; color: #fff; margin-left: 1rem;}
+section > .title p {text-align: left; font-size:.875rem; color: #fff; font-weight: 400;line-height: 1.5; min-height:1.5rem; margin-top: 0.75rem;  margin-left: 1rem;}
 
 section > .title.blue{margin:0;text-align:left;padding:1.75rem 0 1.188rem;background:#004687;height:auto;border-bottom:1px solid #1a5993;}
 section > .title.blue h2{display:inline-block;color:#fff;font-size:1.25rem;}
