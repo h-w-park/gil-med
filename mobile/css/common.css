@@ -197,7 +197,6 @@ html.modal-open {overflow-y: hidden;  }
 	.ui-input-text input.normal.error {border-bottom: 1px solid #ff0000; }
     span.error {color: #ff0000; font-size: .875rem; margin-left: 0.5rem; margin-top: 0.2rem}
 
-
 	/* 박스형 */
 	.ui-input-text input[type="text"].box,
 	.ui-input-text input[type="password"].box,
@@ -219,34 +218,19 @@ html.modal-open {overflow-y: hidden;  }
 	.tab__depth2.expand ul li a {display:table-cell; vertical-align: middle;}
 	.tab__depth2.expand ul li img {width:6.25rem; height: 0px;}
 
-	/*
-	.ui-navbar ul.ui-tabs-nav {display: table; table-layout: fixed; width: 100%;}
-	.ui-navbar ul.ui-tabs-nav li { display: table-cell; width: 100%; vertical-align: middle; height: 3.375rem; border:1px solid #ddd; border-right: none;}
-	.ui-navbar ul.ui-tabs-nav li:last-child {border-right: 1px solid #ddd;}
-	.ui-navbar ul.ui-tabs-nav li a {display: block;text-align: center; line-height: 1.4; font-size:0.875rem;}
-	.ui-navbar ul.ui-tabs-nav li.ui-state-active {background: #004e96; color: #fff;}
-	.ui-navbar ul.ui-tabs-nav li.ui-state-active a {color: #fff;}
-
-	.ui-navbar.expand {overflow-x:auto;-webkit-overflow-scrolling: touch; overflow-y:hidden;}
-	.ui-navbar.expand ul.ui-tabs-nav {     -webkit-flex-wrap: nowrap; -moz-flex-wrap: nowrap; -ms-flex-wrap: none; flex-wrap: nowrap;display: -webkit-box; display: -webkit-flex; display: -moz-flex; display: -ms-flexbox; display: flex;}
-	.ui-navbar.expand ul.ui-tabs-nav li {float: none;  display: table;}
-	.ui-navbar.expand ul.ui-tabs-nav li a {display:table-cell; vertical-align: middle;}
-	.ui-navbar.expand ul.ui-tabs-nav li img {width:6.25rem; height: 0px;}
-	*/
-
 	/*checkBox*/
 	.ui-checkbox {display: inline-block; height: 1.5rem; line-height: 1.5rem; position: relative; width: auto;}
 	.ui-checkbox input {width: 0; height: 0; visibility: hidden; position: absolute; left:0; top:0;}
 	.ui-checkbox label {padding-left: 2rem; position: relative; font-size:0.8125rem;display: inline-block;font-weight: 400;}
-	.ui-checkbox label:before {content:"";position: absolute; width: 1.5rem; height: 1.5rem; display: block; left:0;top:0; box-sizing:border-box; border:1px solid #aaa; background-image:url('../img/icon/i_check.png'); background-repeat:no-repeat; background-position:50% 50%; background-size:0.625rem;}
-	.ui-checkbox label.ui-checkbox-on:before {background-color: #004e96; border:1px solid #004e96;}
+	.ui-checkbox label:before {content:"";position: absolute; border-radius:0.25rem; width: 1.5rem; height: 1.5rem; display: block; left:0;top:0; box-sizing:border-box; border:1px solid #aaa; background-image:url('../img/icon/i_check.png'); background-repeat:no-repeat; background-position:50% 50%; background-size:0.625rem;}
+	.ui-checkbox label.ui-checkbox-on:before {background-color: #fcaf15; border:1px solid #fcaf15;}
 	.ui-checkbox.ui-state-disabled label:before {background-color: #ddd; border:1px solid #ddd; }
 
 	/* radio */
 	.ui-radio {display: inline-block; height: 1.5rem; line-height: 1.5rem; position: relative;}
 	.ui-radio input {width: 0; height: 0; visibility: hidden; position: absolute; left:0; top:0;}
 	.ui-radio label:before {content:"";position: absolute; width: 1.5rem; height: 1.5rem; display: block; left:0;top:0; border-radius:50%; box-sizing:border-box; border:1px solid #aaa;}
-	.ui-radio label.ui-radio-on:before {border:0.5rem solid #004e96;}
+	.ui-radio label.ui-radio-on:before {border:0.5rem solid #fca418;}
 	.ui-radio label {padding-left: 2rem; position: relative; font-size:0.8125rem;display: inline-block;}
 	.ui-radio.ui-state-disabled  label:before {border:0.5rem solid #ddd;}
 
