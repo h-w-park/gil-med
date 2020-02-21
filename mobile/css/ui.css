@@ -2,14 +2,8 @@
 
 
 
-h3.contents__title {font-size: 1.125rem; color: #000; padding:1.75rem 0 1rem ;}
-h4.contents__title {font-size:0.875rem; color: #000; padding:1.75rem 0 0.5rem ;}
-hr + h3.contents__title {padding: 0 0 1rem;}
-.contents__text p {font-size:0.8125rem; margin-bottom: 0.75rem; line-height: 1.6;}
-.contents__text p:last-child {margin-bottom: 0;}
-
-
 /* 로그인 */
+.login {margin-top: 1.5rem;}
 .login .snsLogin {margin-top: 1.875rem; padding-top: 1.875rem; border-top: 1px solid #ddd;}
 .login .snsLogin ul li {height: 2.813rem; line-height: 2.813rem; margin-bottom: 0.75rem ; position: relative;}
 .login .snsLogin ul li:last-child {margin-bottom: 0;}
@@ -137,6 +131,7 @@ span.occupy {width: 0.75rem; height: 0.75rem; background: #fdc75b;display: inlin
 
 /* CS */
 .contents > .cs {border-top: 1px solid #ddd;}
+.link__cs {margin-top:1.875rem;}
 .link__cs  ul:after {content:""; clear: both;display: block; float: none;}
 .link__cs  ul li {float: left; width: calc(50% - 0.5rem); box-sizing:border-box; border:1px solid #ddd; margin-bottom: 1rem; text-align: center; padding: 1rem 0;}
 .link__cs  ul li figure {padding-bottom: 0.5rem;}
@@ -166,8 +161,37 @@ span.occupy {width: 0.75rem; height: 0.75rem; background: #fdc75b;display: inlin
 .box__join ul li:nth-child(6) a i {background-position:-18.75rem 0;}
 .box__join ul li a span {display: block; text-align: center; font-size:0.75rem;}
 
+.box__findID ul li {border:1px solid #ddd; margin-bottom: 1rem;padding: 1.625rem  1.5rem;} 
+.box__findID ul li h4 {text-align: center; font-weight: 400;}
+.box__findID ul li p {text-align: center; font-size:0.8125rem; margin-top: 1rem;}
+.box__findID ul li a i {display: block; width: 2.5rem; height: 2.5rem; background-image:url('../img/icon/i_id_ph.png') ; background-repeat:no-repeat; background-size:cover; margin: 0 auto;}
+.box__findID ul li:nth-child(2) a i {background-image: url('../img/icon/i_id_lock.png');}
 
+.box__foundID {padding: 0 1.5rem;}
+.box__foundID h4 {text-align: center; font-weight: 400;}
+.box__foundID .wp {border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; padding: 0.5rem 0; margin: 1rem 0  0.8rem;}
+.box__foundID .wp table {width: 100%;}
+.box__foundID .wp table th,
+.box__foundID .wp table td {text-align: left; font-size:0.8125rem; padding: 0.5rem;}
 
+/* 공지사항 */
+.box__noitce ul li {border-bottom: 1px solid #ddd; padding: 1.5rem 0;}
+.box__noitce ul li i.new { background:#fcaf15; width: 0.8125rem ; height: 0.8125rem ; display: inline-block; position: relative; margin-left: 0.5rem;}
+.box__noitce ul li i.new:after {content: 'N'; color: #fff; font-size:0.5rem; position: absolute; top:-0rem; left:0.1rem; text-decoration: none;}
+.box__noitce ul li a strong {color: #000;}
+.box__noitce ul li a {color: #333;}
+.box__noitce ul li small {display: block; margin-top: 0.5rem ; color: #666; font-size:0.75rem;}
+
+/* 예약버튼 */
+.box__call {background: #59616d; color: #fff; height: 2.75rem; border-radius:0.25rem; margin-top: 2.25rem; padding: 0 0.75rem;}
+.box__call a {color: #fff;}
+.box__call dl:after {content:""; clear: both;display: block; float: none;}
+.box__call dl dt {float: left; height: 2.75rem; line-height: 2.75rem; font-size:0.875rem; padding-left: 1.5rem; background-size:1rem; background-repeat:no-repeat; background-position:0 50%;}
+.box__call dl dt.ph {background-image:url('../img/icon/i_ph.png'); }
+.box__call dl dt.fax {background-image:url('../img/icon/i_fax.png'); }
+.box__call dl dt.com {background-image:url('../img/icon/i_com.png'); }
+.box__call dl dd {float: right; height: 2.75rem; line-height: 2.75rem; font-size:1.25rem; font-weight: 600;  background-size:0.4rem; background-repeat:no-repeat; background-position:right 0 top 50%;}
+.box__call dl dd.more {background-image:url('../img/icon/i_arr_wh.png'); font-size:0.75rem; padding-right: 0.8rem;}
 
 /* 공통 */
 .dot_text{font-size:0.75rem;color:#333;position:relative;padding-left:0.5rem;margin-top:13px;}
