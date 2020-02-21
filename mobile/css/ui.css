@@ -247,6 +247,11 @@ span.occupy {width: 0.75rem; height: 0.75rem; background: #fdc75b;display: inlin
 
 .none_date{border:1px solid #ddd;background:#fbfcfd url(../img/common/bg_doctor.png) no-repeat 50% 2.375rem;background-size:79px auto;height:13.75rem;text-align:center;box-sizing:border-box;padding-top:8.313rem;}
 
+.border_box{border:1px solid #ddd;padding:1rem;margin-top: 0.625rem;}
+.border_box img{display:block;width:100%;}
+.border_box p{font-size:0.75rem;color:#666;line-height:1.125rem;margin-top:0.5rem;}
+
+
 /***** 진료예약 *****/
 /* 메인 */
 .login_list{margin-top:15px;}
@@ -292,4 +297,58 @@ span.occupy {width: 0.75rem; height: 0.75rem; background: #fdc75b;display: inlin
 .time_choice a.off span{background:#f5f5f5;color:#888;}
 
 .form + .btn_area{margin-top:0.9375rem;}
+
+.search_box{font-size:0;}
+.search_box .ui-select{display:inline-block;width:25%;font-weight:500;height:3.375rem;line-height:3.375rem;}
+.search_box .ui-select .ui-icon-carat-d{background-position:right 0.5625rem top 1.5rem}
+.search_box .ui-input-text{display:inline-block;width:75%;}
+.search_box .ui-input-text .inp_search{border-bottom:1px solid #eee;height:3.375rem;line-height:3.375rem;box-sizing:border-box;width:100%;padding-left:1.875rem;background:url(../img/icon/i_search.jpg) no-repeat 100% 100%;background-size:39px auto;}
+
+/* 병실안내 */
+.contents__title + .text_default,
+.contents__title + .dot-list{margin-top:0;}
+
+.info_rules_type_list li{border:1px solid #ddd;text-align:center;height:3.875rem;width:100%;color:#333;margin-top:0.8125rem;font-size:0.8125rem;}
+.info_rules_type_list li > span{display:inline-block;padding:1.625rem 0 1.625rem 3.125rem;width:11.25rem;text-align:left;background:url(../img/icon/i_info.jpg) no-repeat 0 0;background-size:32px auto;height:62px;box-sizing:border-box;}
+.info_rules_type_list li:nth-child(2) > span{background-position:0 -62px;padding:1.125rem 0 1.125rem 3.125rem;}
+.info_rules_type_list li:nth-child(3) > span{background-position:0 -124px;}
+.info_rules_type_box{margin-top:1rem;}
+.info_rules_type_box .info_rules_item{border:1px solid #ddd;margin-top:-1px;padding:0 1rem 1rem;}
+.info_rules_type_box .info_rules_item strong{display:block;text-align:center;padding-top:4.063rem;position:relative;}
+.info_rules_type_box .info_rules_item strong:after{background:url(../img/icon/i_info02.jpg) no-repeat 50% 0;content:"";position:absolute;top:1.25rem;left:50%;width:1.938rem;height:2.563rem;background-size:31px auto;transform:translate(-50%);}
+.info_rules_type_box .info_rules_item:nth-child(2) strong:after{background-position:0 -41px;}
+.info_rules_type_box .info_rules_item:nth-child(3) strong:after{background-position:0 -82px;}
+.info_rules_type_box .info_rules_item:nth-child(4) strong:after{background-position:0 -123px;}
+.info_rules_type_box .info_rules_item:nth-child(5) strong:after{background-position:0 -164px;}
+
+.tab__med.tell_group .ui-tabs-panel{border:0;}
+
+.call{padding:1.875rem 0;text-align:center;}
+.call span{display:inline-block;background:url(../img/icon/i_call03.jpg) no-repeat 0 50%;background-size:13px auto;padding-left:1.5rem;font-size:0.9375rem;color:#000;}
+.call a{display:inline-block;font-size:1.25rem;font-weight:600;vertical-align:middle;color:#000;margin-left:1.875rem;}
+.call + .devider{margin-top:0;}
+.call_info li{display:inline-block;font-size:0.8125rem;color:#666;position:relative;padding-left:1.563rem;line-height:1.063rem;}
+.call_info li ~ li{margin-left:1.125rem;}
+.call_info li:after{content:"1";width:1.063rem;height:1.063rem;line-height:1.063rem;background:#4171a8;font-weight:600;color:#fff;font-size:0.9375rem;border-radius:0.5625rem;position:absolute;top:0;left:0;text-align:center;vertical-align:middle;}
+.call_info li:nth-child(2):after{content:"2";}
+.call_info li:nth-child(3):after{content:"3";}
+.call_info li:nth-child(4):after{content:"4";}
+
+.store_list{margin-top:1.875rem;}
+.store_list .store_item ~ .store_item{margin-top:1.563rem;}
+.store_img{border:1px solid #ddd;}
+.store_img img{display:block;width:100%;}
+.store_item strong{display:block;margin:0.6875rem 0 0.4375rem;color:#333;}
+.store_item p{font-size:0.875rem;color:#333;line-height:1.125rem;}
+
+/* 회원가입 */
+.join_wrap .step{background:#567b9d;}
+.join_wrap .contents > .cs{border-top:1px solid #6788a7;}
+.join_complete{text-align:center;padding:1.75rem 0 0;background:url(../img/sub/bg_join_complete.jpg) no-repeat 50% 4.75rem;background-size:142px auto;}
+.join_complete b{display:block;font-size:1.25rem;color:#000;}
+.join_complete strong{color:#333;margin-top:7.813rem;display:block;}
+.join_complete p{line-height:1.5rem;color:#333;margin:0.625rem 0 2.063rem;}
+
+
+
 

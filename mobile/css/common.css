@@ -109,6 +109,7 @@ height: auto;border: 1px solid transparent; float: none;} .slick-arrow.slick-hid
 
 .c_blue {color:#004e96 !important;}
 .c_grey {color:#888 !important;}
+.c_darkgrey {color:#666 !important;}
 .c_bk {color: #000 !important;}
 .c_red {color: #df0000 !important;}
 
@@ -166,6 +167,7 @@ height: auto;border: 1px solid transparent; float: none;} .slick-arrow.slick-hid
 .btnM {height: 36px; line-height: 34px; min-width:110px; font-size:0.875rem; font-weight: 600;}
 .btnL {height: 2.5rem; line-height: 2.5rem; font-size:1rem; width: 100%; font-weight: 500;}
 .btnXL {height: 3.4rem; line-height: 3.4rem; font-size:1.125rem;  width: 100%; font-weight: 400;}
+.btnXXL{height:3.438rem;line-height:3.438rem;font-size:1.125rem;width:100%;font-weight:500;}
 
 .btn.grey {color: #222; background: #f1f1f1;border:1px solid #ddd;}
 .btn.blue {color: #fff; background: #004e96;}
@@ -388,7 +390,7 @@ ul.dot-list + small {font-size:0.75rem; color: #666; padding-left: 0.5rem; margi
 .list__step > ul > li span:before {content: ''; width:  0.4375rem; height:  0.4375rem; background: #fcaf15; display: block; position: absolute; left:-1.25rem; border-radius:50%; top:0.2rem;}
 .list__step > ul > li h4 {font-size:0.875rem; color: #000; line-height: 1.6; margin-top: 0.5rem;}
 .list__step > ul > li h4:nth-child(1) {margin-top: 2rem;}
-.list__step > ul > li small {color: #888; font-weight: 400; font-size:0.75rem;}
+.list__step > ul > li small {color: #888; font-weight: 400; font-size:0.75rem;}.ui-select .ui-btn select
 .list__step > ul > li h4 small {position: relative; padding-left: 0.25rem;}
 .list__step > ul > li p {font-size:0.75rem;}
 
