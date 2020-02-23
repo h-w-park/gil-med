@@ -209,7 +209,7 @@ html.modal-open {overflow-y: hidden;  }
 	/* tabs */
 	.tab__depth2 {width: calc( 100% + 2rem); position: relative; margin-left: -1rem;  border-bottom: 1px solid #ddd;}
 	.tab__depth2 ul {display: table; table-layout: fixed; width: calc( 100% - 2rem); margin: 0 1rem;}
-	.tab__depth2 ul li { display: table-cell; width: 100%; vertical-align: middle; height: 3.375rem; } 
+	.tab__depth2 ul li { display: table-cell; width: 100%; vertical-align: middle; height: 3.375rem; }
 	.tab__depth2 ul li a {display: block;text-align: center; line-height: 1.4; font-size:0.875rem; font-weight: 500;}
 	.tab__depth2 ul li.on,
 	.tab__depth2 ul li.ui-state-active { border-bottom: 1px solid #004e96; color: #004e96;}
@@ -306,7 +306,7 @@ html.modal-open {overflow-y: hidden;  }
 	.ui-datepicker-header .ui-datepicker-title select {background: #fff; font-size: 1rem; height: 1.875rem; line-height: 1.875rem;  border:none; margin-right: 1rem;}
 	.ui-datepicker-header .ui-datepicker-title select:last-child {margin-right: 0;}
 	.ui-datepicker-header .ui-datepicker-title select:first-child option:after {content:"년"; display: inline-block; }
-	
+
 	.ui-datepicker-header .ui-datepicker-title > .ui-select {display: inline-block; min-width:3.75rem; height: 1.875rem; line-height: 1.875rem; margin-right: 1rem; border-bottom: 0px; }
 	.ui-datepicker-header .ui-datepicker-title > .ui-select:last-child {margin-right: 0; min-width:3rem;}
 	.ui-datepicker-header .ui-datepicker-title > .ui-select .ui-icon-carat-d {background: none; }
@@ -399,6 +399,11 @@ ul.dot-list + small {font-size:0.75rem; color: #666; padding-left: 0.5rem; margi
 .list__content > ul {border-bottom: 1px solid #ddd;}
 .list__content > ul > li {border: 1px solid #ddd; border-bottom: none;padding: 1rem;}
 .list__content > ul > li h4 {color: #333; line-height: 1.4; padding-bottom: 0.5rem;}
+.list__content > ul > li strong {display: block; font-size:0.75rem; }
+.list__content > ul > li strong + .dot-list {margin-top: 0.25rem}
+
+.list__content > ul > li .contents__text + strong,
+.list__content > ul > li .dot-list + strong {margin-top: 0.5rem}
 .list__content > ul > li h4 small {color: #888; font-size:0.75rem; font-weight: 400; display: inline-block; margin-left: 0.25rem;}
 
 h3.contents__title {font-size: 1.125rem; color: #000; padding:1.75rem 0 1rem ;}
@@ -476,7 +481,7 @@ footer .util ul li:last-child:after {display: none;}
 footer .util ul li a {color: rgba(255,255,255,.6); font-size: 0.6875rem; }
 
 footer .util address {font-size:0.8125rem; display: block; margin-bottom: 0.8rem;}
-footer .call {background: #282b2e; text-align: center; font-size:0.8125rem;  height: 3.125rem; line-height:  3.125rem;} 
+footer .call {background: #282b2e; text-align: center; font-size:0.8125rem;  height: 3.125rem; line-height:  3.125rem;}
 footer .call a {display: block;color:rgba(255,255,255,.4);}
 footer .call strong {font-size:1rem; display: inline-block; margin-left: 0.5rem; color: #ddd;}
 
