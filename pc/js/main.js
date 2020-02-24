@@ -20,6 +20,7 @@ window.requestAnimFrame = function(){
 $(function() {
 	headerOn();
 
+
 	$('#gil').fullpage({
 		anchors: ['intro', 'doctors', 'focus', 'info', 'footer' ],
 		menu: '#menu',
@@ -27,17 +28,17 @@ $(function() {
 		verticalCentered: true,
 		scrollBar: false,
 		easing: 'easeInOutCubic',
+
 		onLeave: function(index, nextIndex, direction) {
 			var leavingSection = $(this);
 			requestAnimFrame(function(){
+				
 				if (nextIndex > 1 ) { 
 					$('#menu, header').addClass("bk", 500);
-
 					$(".gnb_wp").hover(function(){
 					}, function(){
 						$('header').addClass("bk", 500);
 					});
-					
 				}else if(nextIndex >= 1){
 					$('#menu, header').removeClass("bk", 500);
 					
@@ -52,7 +53,6 @@ $(function() {
 					// Animation complete. 
 					});
 				}
-				
 				if (nextIndex > 1 && nextIndex < 5) { 
 					$('.sticky').addClass("bk", 500);
 				}else{

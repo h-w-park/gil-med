@@ -8,7 +8,7 @@ $(document).ready(function() {
 		$("html, body").removeClass("modal-open");
 	});
 
-	$("#datepicker").datepicker({
+	$("#datepicker, #datepicker2").datepicker({
 		changeYear: true,
 		changeMonth: true,
 		minDate: 0, maxDate: "+1M +10D", // 클릭할 수 있는 최소값, 최대값을 정함

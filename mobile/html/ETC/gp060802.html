@@ -33,7 +33,7 @@
 					<div class="step cl">
 						<h3>STEP.2 약관동의 및 실명인증</h3>
 						<ul>
-							<li>1</li>
+							<li class="complete">1</li>
 							<li class="on">2</li>
 							<li>3</li>
 							<li>4</li>
@@ -45,7 +45,34 @@
 						<div class="form mt_30">
 							<form action="">
 								<dl>
-									<dt class="policy mt_0">
+									<dt class="chkParent">
+										<h4>부모님 동의</h4>
+										<p>만 14세 미만 회원가입은 부모님 (법적대리인)의 본인확인 절차가 필요합니다.</p>
+										<a href="" class="btn btnL black-o mt_12">인증하기</a>
+									</dt>
+									<dt class="chkParent">
+										<div class="chk"> <input type="checkbox" name="v1" id="v1b" value="on" > <label for="v1b">보호자(법정대리인)로써 만 14세 미만 통합회원가입에 동의 합니다.</label> </div>
+									</dt>
+								</dl>
+							</form>
+						</div>
+						
+						<div class="btn-wrap mt_30">
+							<a href="" rel="external" class="btn btnL blue">확인</a>
+						</div>
+
+
+						<div class="form mt_30">
+							<form action="">
+								<dl>
+									<dt class="policy2 mt_0">
+										<div class="chk">
+											<input type="checkbox" name="v5" id="v1a" value="on" >
+									        <label for="v1a">전체 약관에 동의 합니다.</label>
+										</div>
+										<small>※ 회원 가입을 위하여 아래의 개인정보 수집이용 (및 제공)에 대한 내용을 자세히 읽어 보신 후 동의 여부를 결정하여 주시기 바랍니다.</small>
+									</dt>
+									<dt class="policy ">
 										<div class="title">
 											<h2>이용약관 <i class="required"></i></h2>
 											<a href="#policy-privacy" data-rel="popup"  data-position-to="window">전문보기</a>
@@ -69,6 +96,70 @@
 							</form>
 						</div>
 
+						
+						<div class="box__auth mt_16">
+							<ul>
+								<li>
+									<a href="">
+										<h4>휴대폰 인증</h4>
+										<i></i>
+										<p>본인 명의 휴대폰 사용으로<br> 인증 해 주세요.</p>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<h4>아이핀 인증</h4>
+										<i></i>
+										<p>본인 명의 아이핀 계정으로<br> 인증 해 주세요.</p>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="box__auth type2 mt_16">
+							<ul>
+								<li>
+									<h4>휴대폰 인증</h4>
+									<div class="form mt_12">
+										<form action="">
+											<dl>
+												<dd>
+													<div class="phNum">
+														 <select name="select" id="" data-mini="false">
+													        <option value="1">010</option>
+													        <option value="2">010</option>
+													        <option value="3">026</option>
+													        <option value="4">031</option>
+													    </select>
+														<input type="number" placeholder="나머지 번호입력" class="normal">
+													</div>
+												</dd>
+												<dd>
+													<div class="getNumber">
+														<input type="text" placeholder="" class="normal">
+														<button>인증번호 요청</button>
+													</div>
+												</dd>
+											</dl>
+										</form>
+									</div>
+								</li>
+								<li>
+									<a href="">
+										<h4>아이핀 인증</h4>
+										<i></i>
+										<p>본인 명의 아이핀 계정으로<br> 인증 해 주세요.</p>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<ul class="dot-list ">
+							<li>본인인증 방법을 선택해 주세요.</li>
+							<li>본인인증 방법 선택 후 팝업창이 나타나지 않으면 브라우저의 팝업차단을 해제해 주시기 바랍니다.</li>
+							<li>사용자의 개인정보보호를 위해 사용자 여러분이 홈페이지 및 온라인 서비스를 이용함에 있어 온라인상에서 제공한 개인정보가 보호 받을 수 있도록 최선을 다하고 있습니다.</li>
+							<li>귀하의 정보는 동의 없이 공개되지 않으며, 개인정보보호정책에 의해 보호받고 있습니다.</li>
+						</ul>
 
 						<div class="box__notice"><div data-role="collapsible" data-collapsed="false">
 							<h3>이용 안내사항</h3>
@@ -81,6 +172,9 @@
 							</ul>
 							</div>
 						</div>
+
+
+
 
 					</div>
 				</div>

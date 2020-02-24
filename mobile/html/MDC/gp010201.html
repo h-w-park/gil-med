@@ -1,0 +1,364 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>가천대길병원</title>
+	<link rel="stylesheet" href="../../css/common.css">
+	<link rel="stylesheet" href="../../css/ui.css">  
+	<script src="../../js/jquery.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.mobile-1.4.5.js"></script>
+	<script src="../../js/ui.js"></script>
+</head>
+<body>
+
+<div data-role="page" id="mobile" class="mobile">
+    <div data-role="header">
+        <h1><a href="#">가천대길병원</a></h1>
+        <a href="#nav" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="right menu">메뉴</a>
+        <a href="#" class="left prev">이전</a>
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content">
+		
+		<section>
+			<div class="contents">
+				<div class="mdc">
+					<div class="inner">
+					
+						 <br><br><br>하단 링크를 클릭하세요 <br><br><br>
+						<ul>
+							<li><a href="#getStudent" data-rel="popup"><u>학생검진예약</u></a></li>
+							<li><a href="#getStudentFind" data-rel="popup"><u>학생검진조회</u></a></li>
+							<li><a href="#getStudentModify" data-rel="popup"><u>학생검진수정</u></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div data-role="popup" id="getStudent" class="ui-content">
+			<section>
+				<div class="popupTitle">
+					<h3>학생검진예약</h3>
+				    <a href="#" data-rel="back">Close</a>
+				</div>
+				<div class="inner">
+					<div class="popupContents">
+						<div class="title">
+							<h2>예약자 정보 입력</h2>
+						</div>
+						<p class="ta_r mt_30"><small>필수입력 항목 <i class="required"></i></small></p>
+						<div class="form">
+							<form action="">
+								<dl>
+									<dt>이름 <i class="required"></i></dt>
+									<dd><input type="text" placeholder="이름 입력" class="normal"></dd>
+									<dt>비밀번호 <i class="required"></i></dt>
+									<dd><input type="password" placeholder="비밀번호 입력" class="normal"></dd>
+									<dt>비밀번호 확인 <i class="required"></i></dt>
+									<dd><input type="password" placeholder="비밀번호 다시 입력" class="normal"></dd>
+									<dt>휴대폰 <i class="required"></i></dt>
+									<dd>
+										<div class="phNum">
+											 <select name="select" id="" data-mini="false">
+										        <option value="1">010</option>
+										        <option value="2">010</option>
+										        <option value="3">026</option>
+										        <option value="4">031</option>
+										    </select>
+											<input type="number" placeholder="나머지 번호입력" class="normal">
+										</div>
+									</dd>
+									<dt>생년월일</dt>
+									<dd>
+										<div class="birth">
+											
+											<select name="select" id="" data-mini="false">
+										        <option value="1">2020</option>
+										        <option value="2">2019</option>
+										        <option value="3">2018</option>
+										        <option value="4">2017</option>
+										    </select>
+
+											<span class="space">년</span>
+											
+											<select name="select" id="" data-mini="false">
+										        <option value="1">01</option>
+										        <option value="2">02</option>
+										        <option value="3">03</option>
+										        <option value="4">04</option>
+										        <option value="2">05</option>
+										        <option value="3">06</option>
+										        <option value="4">07</option>
+										        <option value="2">08</option>
+										        <option value="3">09</option>
+										        <option value="4">10</option>
+										        <option value="4">11</option>
+										        <option value="4">12</option>
+										    </select>
+											<span class="space">월</span>
+											
+											<select name="select" id="" data-mini="false">
+										        <option value="1">01</option>
+										        <option value="2">02</option>
+										        <option value="3">03</option>
+										        <option value="4">04</option>
+										    </select>
+											<span class="space">일</span>
+
+										</div>
+									</dd>
+									<dt>성별 <i class="required"></i></dt>
+									<dd>
+										<input type="radio" name="v2" id="v2a" value="on" checked="checked">
+								        <label for="v2a">남자</label>
+								        <input type="radio" name="v2" id="v2b" value="off">
+								        <label for="v2b">여자</label>
+									</dd>
+								</dl>
+								<hr>
+
+								
+								<dl>
+									<dt>학교 명 <i class="required"></i></dt>
+									<dd>
+										<div class="scName">
+											<input type="text" placeholder="학교 이름" class="normal">
+											<select name="select" id="" data-mini="false">
+										        <option value="1">초등학교</option>
+										        <option value="2">중학교</option>
+										        <option value="3">고등학교</option>
+										    </select>
+										</div>
+									</dd>
+									<dd>
+										<div class="scNum">
+											<input type="Number" placeholder="숫자" class="normal" id="scNum1">
+											<label for="scNum1">학년</label>
+											<input type="Number" placeholder="숫자" class="normal" id="scNum2">
+											<label for="scNum2">반</label>
+										</div>
+									</dd>
+								</dl>
+
+								<hr>
+								
+								<dl>
+									<dt>예약일 선택 <i class="required"></i></dt>
+									<dd>
+										<div class="rsv_yn">
+											<span class="y"></span>예약가능
+											<span class="n"></span>예약불가
+										</div>
+										<div id="datepicker"></div>
+									</dd>
+								</dl>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="btn-wrap col-2">
+				<a href="" class="btn btnXL grey" data-rel="back">취소</a>
+				<a href="" class="btn btnXL blue">예약</a>
+			</div>
+		</div>
+
+
+		<div data-role="popup" id="getStudentFind" class="ui-content">
+			<section>
+				<div class="popupTitle">
+					<h3>학생검진조회</h3>
+				    <a href="#" data-rel="back">Close</a>
+				</div>
+				<div class="inner">
+					<div class="popupContents">
+						<div class="title">
+							<h2>예약자 정보 입력</h2>
+						</div>
+						<p class="ta_r mt_30"><small>필수입력 항목 <i class="required"></i></small></p>
+						<div class="form">
+							<form action="">
+								<dl>
+									<dt>이름 <i class="required"></i></dt>
+									<dd><input type="text" placeholder="이름 입력" class="normal"></dd>
+									<dt>비밀번호 <i class="required"></i></dt>
+									<dd><input type="password" placeholder="특수기호+영문+숫자 조합" class="normal"></dd>
+								</dl>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="btn-wrap col-2">
+				<a href="" class="btn btnXL grey" data-rel="back">취소</a>
+				<a href="" class="btn btnXL blue">조회</a>
+			</div>
+		</div>
+
+
+		<div data-role="popup" id="getStudentModify" class="ui-content">
+			<section>
+				<div class="popupTitle">
+					<h3>학생검진수정</h3>
+				    <a href="#" data-rel="back">Close</a>
+				</div>
+				<div class="inner">
+					<div class="popupContents">
+						<div class="title">
+							<h2>예약자 정보 입력</h2>
+						</div>
+						<p class="ta_r mt_30"><small>필수입력 항목 <i class="required"></i></small></p>
+						<div class="form">
+							<form action="">
+								<dl>
+									<dt>이름 <i class="required"></i></dt>
+									<dd><input type="text" placeholder="이름 입력" class="normal"></dd>
+									<dt>비밀번호 <i class="required"></i></dt>
+									<dd><input type="password" placeholder="비밀번호 입력" class="normal"></dd>
+									<dt>비밀번호 확인 <i class="required"></i></dt>
+									<dd><input type="password" placeholder="비밀번호 다시 입력" class="normal"></dd>
+									<dt>휴대폰 <i class="required"></i></dt>
+									<dd>
+										<div class="phNum">
+											 <select name="select" id="" data-mini="false">
+										        <option value="1">010</option>
+										        <option value="2">010</option>
+										        <option value="3">026</option>
+										        <option value="4">031</option>
+										    </select>
+											<input type="number" placeholder="나머지 번호입력" class="normal">
+										</div>
+									</dd>
+									<dt>생년월일</dt>
+									<dd>
+										<div class="birth">
+											
+											<select name="select" id="" data-mini="false">
+										        <option value="1">2020</option>
+										        <option value="2">2019</option>
+										        <option value="3">2018</option>
+										        <option value="4">2017</option>
+										    </select>
+
+											<span class="space">년</span>
+											
+											<select name="select" id="" data-mini="false">
+										        <option value="1">01</option>
+										        <option value="2">02</option>
+										        <option value="3">03</option>
+										        <option value="4">04</option>
+										        <option value="2">05</option>
+										        <option value="3">06</option>
+										        <option value="4">07</option>
+										        <option value="2">08</option>
+										        <option value="3">09</option>
+										        <option value="4">10</option>
+										        <option value="4">11</option>
+										        <option value="4">12</option>
+										    </select>
+											<span class="space">월</span>
+											
+											<select name="select" id="" data-mini="false">
+										        <option value="1">01</option>
+										        <option value="2">02</option>
+										        <option value="3">03</option>
+										        <option value="4">04</option>
+										    </select>
+											<span class="space">일</span>
+
+										</div>
+									</dd>
+									<dt>성별 <i class="required"></i></dt>
+									<dd>
+										<input type="radio" name="v3" id="v3a" value="on" checked="checked">
+								        <label for="v3a">남자</label>
+								        <input type="radio" name="v3" id="v3b" value="off">
+								        <label for="v3b">여자</label>
+									</dd>
+								</dl>
+								<hr>
+
+								
+								<dl>
+									<dt>학교 명 <i class="required"></i></dt>
+									<dd>
+										<div class="scName">
+											<input type="text" placeholder="학교 이름" class="normal">
+											<select name="select" id="" data-mini="false">
+										        <option value="1">초등학교</option>
+										        <option value="2">중학교</option>
+										        <option value="3">고등학교</option>
+										    </select>
+										</div>
+									</dd>
+									<dd>
+										<div class="scNum">
+											<input type="Number" placeholder="숫자" class="normal" id="scNum1">
+											<label for="scNum1">학년</label>
+											<input type="Number" placeholder="숫자" class="normal" id="scNum2">
+											<label for="scNum2">반</label>
+										</div>
+									</dd>
+								</dl>
+
+								<hr>
+								
+								<dl>
+									<dt>예약일 선택 <i class="required"></i></dt>
+									<dd>
+										<div class="rsv_yn">
+											<span class="y"></span>예약가능
+											<span class="n"></span>예약불가
+										</div>
+										<div id="datepicker2"></div>
+									</dd>
+								</dl>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="btn-wrap col-2">
+				<a href="" class="btn btnXL grey" data-rel="back">신청취소</a>
+				<a href="" class="btn btnXL blue">수정</a>
+			</div>
+		</div>
+
+
+
+		<footer>
+			<div class="util">
+				<ul>
+					<li><a href="">개인정보취급방침</a></li>
+					<li><a href="">병원윤리강령</a></li>
+					<li><a href="">환자의권리보호존중</a></li>
+				</ul>
+			</div>
+			<div class="util">
+				<div class="rules">
+					<ul>
+						<li><a href="">이용약관</a></li>
+						<li><a href="">이메일 무단수집거부  </a></li>
+						<li><a href="">사이트맵</a></li>
+					</ul>
+				</div>
+				<address>
+					21565 (신) 인천광역시 남동구 남동대로 774번길 21(구월동)<br>
+					<small>Copyright(c) 2019 Gachon University Gil Medical Center. <br> All rights reserved </small>
+				</address>
+			</div>
+			<div class="call">
+				예약문의 대표전화
+				<strong>1577-2299</strong>
+			</div>
+		</footer>
+    </div><!-- /content -->
+
+</div><!-- /page -->
+
+</body>
+</html>
