@@ -214,7 +214,7 @@ html.modal-open {overflow-y: hidden;  }
 	.tab__depth2 ul li { display: table-cell; width: 100%; vertical-align: middle; height: 3.375rem; }
 	.tab__depth2 ul li a {display: block;text-align: center; line-height: 1.4; font-size:0.875rem; font-weight: 500;}
 	.tab__depth2 ul li.on,
-	.tab__depth2 ul li.ui-state-active { border-bottom: 1px solid #004e96; color: #004e96;}
+	.tab__depth2 ul li.ui-state-active { border-bottom: 2px solid #004e96; color: #004e96;}
 	.tab__depth2 ul li.on a ,
 	.tab__depth2 ul li.ui-state-active a{color: #004e96; font-weight: 600;}
 
