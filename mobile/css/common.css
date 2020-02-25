@@ -176,7 +176,7 @@ height: auto;border: 1px solid transparent; float: none;} .slick-arrow.slick-hid
 .btn.blue {color: #fff; background: #004e96;}
 .btn.blue-o {color:#004e96; border:1px solid #004e96;}
 .btn.black-o {color:#000; border:1px solid #000; background: #fff;}
-.btn.grey-o {color:#999; border:1px solid #888; }
+.btn.grey-o {color:#333; border:1px solid #ddd; }
 /*.btn.btnXL.blue {border:1px solid #003363;}*/
 
 .btn-table.btn-blue{background:#004e96;color:#fff;padding:0 1.875rem;display:inline-block;height:50px;line-height:50px;}
@@ -348,15 +348,20 @@ html.modal-open {overflow-y: hidden;  }
 .accordion .ui-collapsible:not(.ui-collapsible-collapsed) > .ui-collapsible-content {padding: 0 0.5rem 1rem;}
 
 /* 전체 popup */
-.ui-popup-screen {background: #fff; }
-.ui-popup-container {background: #fff; height:100vh;width:100% !important;max-width:480px !important;}
-.ui-popup-container .ui-popup.ui-content {box-sizing: border-box; height: 100vh; position: relative;}
-.ui-popup-container .ui-popup.ui-content .btn-wrap.col-2 {position: absolute; bottom: 0;width: 100%;}
-.ui-popup .popupTitle {height: 2.75rem; border-bottom: 1px solid #ddd;}
-.ui-popup .popupTitle h3 {height:  2.75rem; line-height:  2.75rem; font-size:0.9375rem; text-align: center; color: #222;}
-.ui-popup .popupTitle a {position: absolute; right:1rem; top:0.9rem; width: 1rem; height: 1rem; overflow: hidden; text-indent: -9999px; background: url(../img/icon/i_pop_close.png) no-repeat; background-size: cover;}
-.ui-popup .inner {overflow-y: auto; height: calc(100vh - 6rem);}
-.ui-popup .inner .popupContents {height:auto; min-height:calc(100vh - 9.725rem); padding-bottom: 2.5rem;}
+.ui-popup-screen {background: #000; }
+.ui-popup-container {width:100% !important; max-width:480px !important;}
+.ui-popup-container .ui-popup {box-sizing: border-box; background: #fff;  height:100vh; position: relative;}
+.ui-popup-container .ui-popup .btn-wrap.col-2 {position: absolute; bottom: 0;width: 100%;}
+.ui-popup-container .ui-popup .popupTitle {height: 2.75rem; border-bottom: 1px solid #ddd;}
+.ui-popup-container .ui-popup .popupTitle h3 {height:  2.75rem; line-height:  2.75rem; font-size:0.9375rem; text-align: center; color: #222;}
+.ui-popup-container .ui-popup .popupTitle a {position: absolute; right:1rem; top:0.9rem; width: 1rem; height: 1rem; overflow: hidden; text-indent: -9999px; background: url(../img/icon/i_pop_close.png) no-repeat; background-size: cover;}
+.ui-popup-container .ui-popup .inner {overflow-y: auto; height: calc(100vh - 6rem);}
+.ui-popup-container .ui-popup .inner .popupContents {height:auto; min-height:calc(100vh - 9.725rem); padding-bottom: 2.5rem;}
+
+.ui-popup-container .ui-popup.small {height: 50vh; width: calc(100% - 2rem); margin: 0 auto;}
+.ui-popup-container .ui-popup.small .inner {height: auto; padding: 1rem;}
+.ui-popup-container .ui-popup.small .inner .popupContents {height:auto; min-height:calc(50vh - 5rem); padding-bottom: 0;}
+.ui-popup-container .ui-popup.small section > a {position: absolute; right:0; top: -1.5rem; width:1rem; height: 1rem; background: url('../img/icon/i_popClose_small.png') no-repeat; background-size:90%; text-indent: -999px; overflow: hidden;}
 
 
 /* Notice */
@@ -439,7 +444,7 @@ h3.contents__title  + h4.contents__title {padding: 0 0 0.5rem;}
 
 /* wrap */
 .mobile {width: 100%; max-width:480px; min-height: 100vh;  margin: 0 auto; background: #fff; overflow: hidden; position: relative;}
-.footer {margin-top: 6.25rem;}
+.footer {margin-top: 4.063rem;}
 
 .ui-header {position: fixed; padding: 0 1rem; border-bottom: 1px solid #ddd; height: 2.625rem;  box-sizing: border-box;  background: #fff; z-index:5; width: 100vw; max-width:480px;}
 .ui-header h1 {padding-top:0.75rem ;position: absolute; lefT:50%; margin-left: -3.1rem; background: url(../img/common/logo.png); background-size:100%; background-repeat:no-repeat; background-position:left 0 bottom 0;}
@@ -468,7 +473,7 @@ h3.contents__title  + h4.contents__title {padding: 0 0 0.5rem;}
 
 
 .inner > .popupContents > .title {margin-left: -1rem; width: calc(100% + 2rem); background: #567b9d; padding: 1.5rem 0;}
-section > .title {padding-top: 2.5rem; height:6.5rem; background: #567b9d;}
+section > .title {padding: 2.5rem 0 2rem; height:auto; background: #567b9d;}
 section > .title h2,
 .popupContents > .title h2 {text-align: left; font-size:.1.5rem; color: #fff; margin-left: 1rem; font-weight: 500;}
 section > .title p {text-align: left; font-size:.875rem; color: #fff; font-weight: 400;line-height: 1.5; min-height:1.5rem; margin-top: 0.75rem;  margin-left: 1rem;}

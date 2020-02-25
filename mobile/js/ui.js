@@ -40,4 +40,15 @@ $(document).ready(function() {
 	}
 
 
+	$('select.sel_floor').each(function(index){
+		$(this).attr('data-index',index+1);
+		var ind = index + 1;
+		$(this).on('change',function(){
+			let selector = $(this).val();
+			$(".sel_div" + ind + " > option").hide();
+			$(".sel_div" + ind + " > option").filter(function(){return $(this).data('floor') == selector}).show();
+		});
+	});
+
+
 });
