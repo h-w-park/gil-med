@@ -22,95 +22,6 @@ function history(){
 	});  
 }
 
-function achieve(){
-	$(".achieve-img").slick({
-		slidesToShow: 4,
-	});
-
-	$(".timeline-for ul").slick({
-		slidesToShow: 9,
-		slidesToScroll: 9,
-		infinite: false
-	});
-
-	$(function(){
-		// parallax
-		skrollr.init({
-			forceHeight: false,
-			constants: {
-				navibar: $('.timeline').offset().top
-			}
-		});
-
-		$(window).on('load scroll',function(){
-			setTimeout(function(){
-				var $list = $('.list-navi.history');
-				if ($list.css('position') == 'fixed') {
-					if ($('#header').hasClass('scroll-up')) {
-						$list.addClass('transition');
-						$list.css('top','-52px');
-					}else{
-						$list.css('top','0');
-					};
-				}else{
-					$list.removeClass('transition');
-					$list.css('top','0');
-				};
-			},250);
-		});
-
-		$(window).bind('mousewheel', function(event) {
-			var wTop = $(this).scrollTop() + 100; //상단여백값
-			//해당영역 왔을때
-			$('.timeline dt').each(function(index){
-				$(this).attr('data-index',index);
-				var listTop = $(this).offset().top;
-				var listHeight = $(this).outerHeight(true);
-				var listHeight2 = $(this).next("dd").outerHeight(true);
-				var dd = listTop + listHeight + listHeight2;
-
-				if (listTop <= wTop  &&  wTop < dd) {
-					$('.timeline-for ul li').eq(index).addClass('on');
-					$('.timeline dt').eq(index).addClass('on');
-					if (event.originalEvent.wheelDelta >= 0) {
-						//Scroll up
-						if( $(this).attr('data-index') == 8  ){
-							$('.timeline-for ul').slick('slickGoTo', 1);
-						}
-						if( $(this).attr('data-index') == 17  ){
-							$('.timeline-for ul').slick('slickGoTo', 10);
-						}
-					}
-					else {
-						//Scroll down
-						if( $(this).attr('data-index') == 9  ){
-							$('.timeline-for ul').slick('slickGoTo', 10);
-						}
-						if( $(this).attr('data-index') == 18  ){
-							$('.timeline-for ul').slick('slickGoTo', 18);
-						}
-					}
-				}else{
-					$('.timeline-for ul li').eq(index).removeClass('on');
-					$('.timeline dt').eq(index).removeClass('on');
-				}
-			});
-
-		});
-
-		$('.timeline-for ul li a').each(function(index){
-			$(this).attr('data-index',index);
-			$(this).on('click',function(){
-				var bTop = $('.timeline dl dt').eq(index).offset().top,
-					bTop2 = bTop - 100; //상단여백값
-				$('html, body').stop().animate({scrollTop:bTop2},600)
-			});
-		});
-
-		$('html, body').stop().animate({ scrollTop : 0 });
-	});
-}
-
 
 function popup(){
     $('.popup-close, .pop-close').on('click',function(e){
@@ -281,13 +192,19 @@ $(document).ready(function() {
     $('.doctor-like').on('click',function(){
         $(this).toggleClass('on');
     })
-/*
-    var $winHei = $('body').height();
-    $('.dimm').css('height',$winHei+'px');
 
-	$(window).on('scroll',function(){
-        var scrX = $(window).scrollLeft()
-        $('header').css('left','-'+scrX+'px')
-    });  */
+
+
+
+	 $('#banner').slick({
+	  slidesToShow: 1,
+	  slidesToScroll: 1,
+	  arrows: true,
+		dots: false, 
+	  centerMode: false,
+	  draggable: false
+
+	  //fade: true,
+	});
 
   });

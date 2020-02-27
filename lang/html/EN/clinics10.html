@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>가천대 길병원</title>
+    
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- Scripts -->
+    <script src="../../js/jquery-2.2.3.min.js"></script>
+    <script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/ui.js"></script>
+</head>
+<body>
+
+<div class="wrap">
+    <div class="front">
+        <h3 class="page-tit">Specialized Clinics</h3>
+    </div>
+    <div class="content">
+        <div class="section">
+			<h2>medical health check up</h2>
+			<div class="clinics">
+					<div id="banner">
+						<img src="../../img/temp/checkup_bn_02.jpg" alt="madical robi">
+						<img src="../../img/temp/checkup_bn_03.jpg" alt="madical robi" >
+						<img src="../../img/temp/checkup_bn_04.jpg" alt="madical robi">
+						<img src="../../img/temp/checkup_bn_05.jpg" alt="madical robi">
+						<img src="../../img/temp/checkup_bn_06.jpg" alt="madical robi">
+						<img src="../../img/temp/checkup_bn_07.jpg" alt="madical robi">
+						<img src="../../img/temp/checkup_bn_08.jpg" alt="madical robi">
+					</div>
+
+					<div class="tab_sub_dep2">
+						<ul>
+							<li><a href="#tab1">01. Essential (ES)</a></li>
+							<li><a href="#tab2">02. Basic1 (BA1)</a></li>
+							<li><a href="#tab3">03. Basic2 (BA2)</a></li>
+							<li><a href="#tab4">04. Standard (SD)</a></li>
+							<li><a href="#tab5">05. Cancer (CCU)</a></li>
+							<li><a href="#tab6">06. Cardiocerebral vascular (CCV)</a></li>
+							<li><a href="#tab7">07. PREMIUM (1 Night 2 Days)</a></li>
+						</ul>
+						<div id="tab1"> 
+						<dl class="on">
+							<h3>01. Essential (ES)</h3>
+							<dd class="mb_or">*All price is in Korean Won currency.</dd>
+							<dd>
+								<div class="table-row">
+								<table cellpadding="0" cellspacing="0" summary="Essential (ES)">
+									<colgroup>
+										<col width="25%"><col width=""><col width="20%">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th>1 - Consultation</th>
+											<td colspan="2">Questionnaire &amp; Consultation, CD copy and reports</td>
+										</tr>
+										<tr>
+											<th>2 - Basic tests</th>
+											<td colspan="2">Body composition, blood pressure measurement, urinalysis</td>
+										</tr>
+										<tr>
+											<th>3 - Ophthalmology</th>
+											<td colspan="2">Vision, intraocular pressure, fundus test</td>
+										</tr>
+										<tr>
+											<th>4 - Auditory</th>
+											<td colspan="2">Standard hearing test</td>
+										</tr>
+										<tr>
+											<th>5 - Oral</th>
+											<td colspan="2">Dental check</td>
+										</tr>
+										<tr>
+											<th>6 - Pulmonary</th>
+											<td colspan="2">EKG, pulmonary function test, chest x-ray (front, side)</td>
+										</tr>
+										<tr>
+											<th>7 - Blood laboratory</th>
+											<td colspan="2">
+												Complete blood composition, Anemia, Diabetes, Hyperlipidemia, Hyper-/Hypothyroidism, Kidney/Liver function, Viral hepatitis (A,B,C), Tumor marker (liver, G.I., prostate gland, ovaries), Syphilis, AIDS, Rheumatism, Gout
+											</td>
+										</tr>
+										<tr>
+											<th>8 - Gastroenterology</th>
+											<td colspan="2">*Stomach endoscopy (non-sedation), abdominal ultrasound</td>
+										</tr>
+										<tr>
+											<th class="sum_man">Man</th>
+											<td class="sum_man_td"></td>
+											<td class="sum_count_top">550,000</td>
+										</tr>
+										<tr>
+											<th class="sum_woman">Woman</th>
+											<td class="sum_woman_td">PAP smear , Mammography</td>
+											<td class="sum_count_bottom">590,000</td>
+										</tr>
+									</tbody>
+								</table>
+								</div>
+							</dd>
+                            <dd class="point_color">
+								*For sedation, extra 100,000 won charged
+							</dd>
+						</dl>
+						</div>
+						<div id="tab2"> 
+						<dl>
+							<h3>02. Basic1 (BA1)</h3>
+							<dd class="mb_or">*All price is in Korean Won currency.</dd>
+							<dd>
+								<div class="table-row">
+								<table cellpadding="0" cellspacing="0" summary="Basic1 (BA1)">
+									<colgroup>
+										<col width="25%"><col width=""><col width="20%">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th>1 - Consultation</th>
+											<td colspan="2">Questionnaire &amp; Consultation, CD copy and reports</td>
+											
+										</tr>
+										<tr>
+											<th>2 - Basic tests</th>
+											<td colspan="2">
+												Body composition, blood pressure measurement, urinalysis
+											</td>
+										</tr>
+										<tr>
+											<th>3 - Ophthalmology</th>
+											<td colspan="2">Vision, intraocular pressure, fundus test</td>
+										</tr>
+										<tr>
+											<th>4 - Auditory</th>
+											<td colspan="2">Standard hearing test</td>
+										</tr>
+										<tr>
+											<th>5 - Oral</th>
+											<td colspan="2">Dental check</td>
+										</tr>
+										<tr>
+											<th>6 - Pulmonary</th>
+											<td colspan="2">EKG, pulmonary function test, chest x-ray (front, side)</td>
+										</tr>
+										<tr>
+											<th>7 - Blood laboratory</th>
+											<td colspan="2">
+												Complete blood composition, Anemia, Diabetes, Hyperlipidemia, Hyper-/Hypothyroidism, Kidney/Liver function, Viral hepatitis (A,B,C), Tumor marker (liver, G.I., prostate gland, ovaries), Syphilis, AIDS, Rheumatism, Gout
+											</td>
+										</tr>
+										<tr>
+											<th>8 - Gastroenterology</th>
+											<td colspan="2">Stomach endoscopy (sedation), abdominal ultrasound</td>
+										</tr>
+										<tr>
+											<th class="sum_man">Man</th>
+											<td class="sum_man_td">
+												Lung CT scan
+											</td>
+											<td class="sum_count_top">750,000</td>
+										</tr>
+										<tr>
+											<th class="sum_woman">Woman</th>
+											<td class="sum_woman_td">
+												Lung CT scan, PAP smear , Mammography
+											</td>
+											<td class="sum_count_bottom">790,000</td>
+										</tr>
+									</tbody>
+								</table>
+								</div>
+							</dd>
+						</dl>
+						</div>
+						<div id="tab3"> 
+						<dl>
+							<h3>03. Basic2 (BA2)</h3>
+							<dd class="mb_or">*All price is in Korean Won currency.</dd>
+							<dd>
+								<div class="table-row">
+								<table cellpadding="0" cellspacing="0"summary="Basic1 (BA2)">
+									<colgroup>
+										<col width="25%"><col width=""><col width="20%">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th>1 - Consultation</th>
+											<td colspan="2">Questionnaire &amp; Consultation, CD copy and reports</td>
+											
+										</tr>
+										<tr>
+											<th>2 - Basic tests</th>
+											<td colspan="2">
+												Body composition, blood pressure measurement, urinalysis
+											</td>
+										</tr>
+										<tr>
+											<th>3 - Ophthalmology</th>
+											<td colspan="2">Vision, intraocular pressure, fundus test</td>
+										</tr>
+										<tr>
+											<th>4 - Auditory</th>
+											<td colspan="2">Standard hearing test</td>
+										</tr>
+										<tr>
+											<th>5 - Oral</th>
+											<td colspan="2">Dental check</td>
+										</tr>
+										<tr>
+											<th>6 - Pulmonary</th>
+											<td colspan="2">EKG, pulmonary function test, chest x-ray (front, side)</td>
+										</tr>
+										<tr>
+											<th>7 - Blood laboratory</th>
+											<td colspan="2">
+												Complete blood composition, Anemia, Diabetes, Hyperlipidemia, Hyper-/Hypothyroidism, Kidney/Liver function, Viral hepatitis (A,B,C), Tumor marker (liver, G.I., prostate gland, ovaries), Syphilis, AIDS, Rheumatism, Gout
+											</td>
+										</tr>
+										<tr>
+											<th>8 - Gastroenterology</th>
+											<td colspan="2">Stomach endoscopy + colonoscopy (sedation),  abdominal ultrasound</td>
+										</tr>
+										<tr>
+											<th class="sum_man">Man</th>
+											<td class="sum_man_td">
+												
+											</td>
+											<td class="sum_count_top">750,000</td>
+										</tr>
+										<tr>
+											<th class="sum_woman">Woman</th>
+											<td class="sum_woman_td">
+												PAP smear , Mammography
+											</td>
+											<td class="sum_count_bottom">790,000</td>
+										</tr>
+									</tbody>
+								</table>
+								</div>
+							</dd>
+						</dl>
+						</div>
+						<div id="tab4"> 
+						<dl>
+							<h3>04. Standard (SD)</h3>
+							<dd class="mb_or">*All price is in Korean Won currency.</dd>
+							<dd class="mb_or">
+								<div class="table-row">
+								<table cellpadding="0" cellspacing="0" summary="Standard (SD)">
+									<colgroup>
+										<col width="25%"><col width=""><col width="20%">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th>1 - Consultation</th>
+											<td colspan="2">Questionnaire &amp; Consultation</td>
+											
+										</tr>
+										<tr>
+											<th>2 - Basic tests</th>
+											<td colspan="2">
+												Body composition, blood pressure measurement, urinalysis, bone density test
+											</td>
+										</tr>
+										<tr>
+											<th>3 - Ophthalmology</th>
+											<td colspan="2">Vision, intraocular pressure, fundus test</td>
+										</tr>
+										<tr>
+											<th>4 - Auditory</th>
+											<td colspan="2">Standard hearing test</td>
+										</tr>
+										<tr>
+											<th>5 - Oral</th>
+											<td colspan="2">Dental check</td>
+										</tr>
+										<tr>
+											<th>6 - Pulmonary</th>
+											<td colspan="2">EKG, pulmonary funtion test, chest x-ray (front, side)</td>
+										</tr>
+										<tr>
+											<th>7 - Blood laboratory</th>
+											<td colspan="2">
+												Complete blood composition, Anemia, Diabetes, Hyperlipidmia, Hyper-/Hypothyroidism, Kidney/Liver function, Viral hepatitis (A,B,C), Tumor marker (liver, G.I., prostate gland, ovaries), Syphilis, AIDS, Rheumatism, Gout
+											</td>
+										</tr>
+										<tr>
+											<th>8 - Gastroenterology</th>
+											<td colspan="2">Stomach endoscopy + colonoscopy (sedation), abdominal ultrasound</td>
+										</tr>
+										<tr>
+											<th class="sum_man">Man</th>
+											<td class="sum_man_td">
+												Lung CT scan, Ultrasonography (Carotid artery, thyroid gland, ##prostate gland), male hormone
+											</td>
+											<td class="sum_count_top">1,600,000</td>
+										</tr>
+										<tr>
+											<th class="sum_woman">Woman</th>
+											<td class="sum_woman_td">
+												PAP smear, Mammography, Lung CT scan,  Ultrasonography (Carotid artery, thyroid gland, uterus, breast), HPV, female hormone
+											</td>
+											<td class="sum_count_bottom">1,850,000</td>
+										</tr>
+									</tbody>
+								</table>
+								</div>
+							</dd>
+							<dd class="point_color">
+								## prostate gland ultrasonography : available on Tuesdays &amp; Thursdays ONLY
+							</dd>
+						</dl>
+						</div>
+						<div id="tab5"> 
+						<dl>
+							<h3>05. Cancer (CCU)</h3>
+							<dd class="mb_or">*All price is in Korean Won currency.</dd>
+							<dd class="mb_or">
+								<div class="table-row">
+								<table cellpadding="0" cellspacing="0" summary="Cancer (CCU)">
+									<colgroup>
+										<col width="25%"><col width=""><col width="20%">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th>1 - Consultation</th>
+											<td colspan="2">Questionnaire &amp; Consultation, CD copy and reports</td>
+										</tr>
+										<tr>
+											<th>2 - Basic tests</th>
+											<td colspan="2">Body composition, blood pressure measurement, urinalysis, bone density test, stress measurement, bio-age measurement</td>
+										</tr>
+										<tr>
+											<th>3 - Ophthalmology</th>
+											<td colspan="2">Vision, intraocular pressure, fundus test</td>
+										</tr>
+										<tr>
+											<th>4 - Auditory</th>
+											<td colspan="2">Standard hearing test</td>
+										</tr>
+										<tr>
+											<th>5 - Oral</th>
+											<td colspan="2">Dental check</td>
+										</tr>
+                                        <tr>
+											<th>6 - Vascular</th>
+											<td colspan="2">Arteriosclerosis test</td>
+										</tr>
+										<tr>
+											<th>7 - Pulmonary</th>
+											<td colspan="2">EKG, pulmonary funtion test, chest x-ray (front, side)</td>
+										</tr>
+										<tr>
+											<th>8 - Blood laboratory</th>
+											<td colspan="2">
+												Complete blood composition, Anemia, Diabetes, Hyperlipidmia, Hyper-/Hypothyroidism, Kidney/Liver function, Viral hepatitis (A,B,C), Tumor marker (liver, G.I., prostate gland, ovaries), Syphilis, AIDS, Rheumatism, Gout
+											</td>
+										</tr>
+										<tr>
+											<th>9 - Gastroenterology</th>
+											<td colspan="2">Stomach endoscopy + colonoscopy (sedation), abdominal ultrasound, abdominal CT</td>
+										</tr>
+										<tr>
+											<th class="sum_man">Man</th>
+											<td class="sum_man_td">
+												Lung CT scan, Ultrasonography (Carotid artery, thyroid gland, ##prostate gland), male hormone
+											</td>
+											<td class="sum_count_top">2,150,000</td>
+										</tr>
+										<tr>
+											<th class="sum_woman">Woman</th>
+											<td class="sum_woman_td">
+												PAP smear, Mammography, Lung CT scan,  Ultrasonography (Carotid artery, thyroid gland, uterus, breast), HPV, female hormone
+											</td>
+											<td class="sum_count_bottom">2,400,000</td>
+										</tr>
+									</tbody>
+								</table>
+								</div>
+							</dd>
+							<dd class="point_color">
+								## prostate gland ultrasonography : available on Tuesdays &amp; Thursdays ONLY
+							</dd><dd>
+						</dd></dl>
+						</div>
+						<div id="tab6"> 
+						<dl>
+							<h3>06. Cardiocerebral vascular (CCV)</h3>
+							<dd class="mb_or">*All price is in Korean Won currency.</dd>
+							<dd class="mb_or">
+								<div class="table-row">
+								<table cellpadding="0" cellspacing="0" summary="Cardiocerebral vascular (CCV)">
+									<colgroup>
+										<col width="25%"><col width=""><col width="20%">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th>1 - Consultation</th>
+											<td colspan="2">Questionnaire &amp; Consultation, CD copy and reports</td>
+										</tr>
+										<tr>
+											<th>2 - Basic tests</th>
+											<td colspan="2">Body composition, blood pressure measurement, urinalysis, bone density test, stress measurement, bio-age measurement</td>
+										</tr>
+										<tr>
+											<th>3 - Ophthalmology</th>
+											<td colspan="2">Vision, intraocular pressure, fundus test</td>
+										</tr>
+										<tr>
+											<th>4 - Auditory</th>
+											<td colspan="2">Standard hearing test</td>
+										</tr>
+										<tr>
+											<th>5 - Oral</th>
+											<td colspan="2">Dental check</td>
+										</tr>
+                                        <tr>
+											<th>6 - Cardiocerebrovascular</th>
+											<td colspan="2">Brain MRI+MRA, dementia gene test (Apo E genotype), echocardiography, coronary artery CT, treadmill test</td>
+										</tr>
+                                        <tr>
+											<th>7 - Vascular</th>
+											<td colspan="2">Arteriosclerosis test</td>
+										</tr>
+										<tr>
+											<th>8 - Pulmonary</th>
+											<td colspan="2">EKG, pulmonary funtion test, chest x-ray (front, side)</td>
+										</tr>
+                                        <tr>
+											<th>9 - Gene analysis</th>
+											<td colspan="2">Hellogene (platinum) 48 analysis</td>
+										</tr>
+										<tr>
+											<th>10 - Blood laboratory</th>
+											<td colspan="2">
+												Complete blood composition, Anemia, Diabetes, Hyperlipidmia, Hyper-/Hypothyroidism, Kidney/Liver function, Viral hepatitis (A,B,C), Tumor marker (liver, G.I., prostate gland, ovaries), Syphilis, AIDS, Rheumatism, Gout
+											</td>
+										</tr>
+										<tr>
+											<th>11 - Gastroenterology</th>
+											<td colspan="2">Stomach endoscopy + colonoscopy (sedation), abdominal ultrasound</td>
+										</tr>
+										<tr>
+											<th class="sum_man">Man</th>
+											<td class="sum_man_td">
+												Lung CT scan, Ultrasonography (Carotid artery, thyroid gland, ##prostate gland), male hormone
+											</td>
+											<td class="sum_count_top">4,750,000</td>
+										</tr>
+										<tr>
+											<th class="sum_woman">Woman</th>
+											<td class="sum_woman_td">
+												PAP smear, Mammography, Lung CT scan,  Ultrasonography (Carotid artery, thyroid gland, uterus, breast), HPV, female hormone
+											</td>
+											<td class="sum_count_bottom">5,000,000</td>
+										</tr>
+										
+									</tbody>
+								</table>
+								</div>
+							</dd>
+							<dd class="point_color">## prostate gland ultrasonography : available on Tuesdays &amp; Thursdays ONLY</dd>
+						</dl>
+						</div>
+						<div id="tab7"> 
+                        <dl>
+							<h3>07. PREMIUM (1 Night 2 Days)</h3>
+							<dd class="mb_or">*All price is in Korean Won currency.</dd>
+							<dd class="mb_or">
+								<div class="table-row">
+								<table cellpadding="0" cellspacing="0" summary="PREMIUM (1 Night 2 Days)">
+									<colgroup>
+										<col width="25%"><col width=""><col width="20%">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th>1 - Consultation</th>
+											<td colspan="2">Questionnaire &amp; Consultation, CD copy and reports</td>
+										</tr>
+										<tr>
+											<th>2 - Basic tests</th>
+											<td colspan="2">Body composition, blood pressure measurement, urinalysis, bone density test, stress measurement, bio-age measurement</td>
+										</tr>
+										<tr>
+											<th>3 - Ophthalmology</th>
+											<td colspan="2">Vision, intraocular pressure, fundus test</td>
+										</tr>
+										<tr>
+											<th>4 - Auditory</th>
+											<td colspan="2">Standard hearing test</td>
+										</tr>
+										<tr>
+											<th>5 - Oral</th>
+											<td colspan="2">Dental check</td>
+										</tr>
+                                        <tr>
+											<th>6 - Torso</th>
+											<td colspan="2">PET-CT of torso</td>
+										</tr>
+                                        <tr>
+											<th>7 - Spine</th>
+											<td colspan="2">Lumbar spine and Cervical spine MRI</td>
+										</tr>
+										<tr>
+											<th>8 - Pulmonary</th>
+											<td colspan="2">Pulmonary function test, chest x-ray (front, side), Lung CT</td>
+										</tr>
+                                        <tr>
+											<th>9 - Cardio</th>
+											<td colspan="2">EKG, echocardiography, treadmill test</td>
+										</tr>
+                                        <tr>
+											<th>10 - Vascular</th>
+											<td colspan="2">Carotid artery ultrasonography, arteriosclerosis test</td>
+										</tr>
+                                        <tr>
+											<th>11 - Brain</th>
+											<td colspan="2">Brain MRI+MRA, Dementia gene-specific test (Apo E genotype)</td>
+										</tr>
+                                        <tr>
+											<th>12 - Thyroid gland</th>
+											<td colspan="2">Thyroid gland ultrasonography</td>
+										</tr>
+										<tr>
+											<th>13 - Blood laboratory</th>
+											<td colspan="2">
+												Complete blood composition, Anemia, Diabetes, Hyperlipidmia, Hyper-/Hypothyroidism, Kidney/Liver function, Viral hepatitis (A,B,C), Tumor marker (liver, G.I., prostate gland, ovaries), Syphilis, AIDS, Rheumatism, Gout
+											</td>
+										</tr>
+                                        <tr>
+											<th>14 - Genetic</th>
+											<td colspan="2">Hellogene (platinum) 48 analysis</td>
+										</tr>
+										<tr>
+											<th>15 - Gastroenterology</th>
+											<td colspan="2">stomach endoscopy + colonoscopy (sedation), abdominal ultrasonography</td>
+										</tr>
+										<tr>
+											<th>16 - Additional service</th>
+											<td colspan="2">
+												Hotel 1 night stay or hospital VIP room, transport for airport&lt;-&gt;hospital, hotel, coordinator, 1 to 1 escort service
+											</td>
+										</tr>
+										<tr>
+											<th class="sum_man">Man</th>
+											<td class="sum_man_td">
+												Prostate gland ultrasonography, male hormone
+											</td>
+											<td class="sum_count_top">8,800,000</td>
+										</tr>
+										<tr>
+											<th class="sum_woman">Woman</th>
+											<td class="sum_woman_td">
+												Ultrasonography (uterus), PAP smear &amp; HPV test, mammography, breast ultrasonography, female hormone
+											</td>
+											<td class="sum_count_bottom">9,000,000</td>
+										</tr>
+									</tbody>
+								</table>
+								</div>
+							</dd>
+						</dl>
+						</div>
+
+					</div>
+
+				</div>
+        </div>
+    </div>
+</div>
+<script>
+$(function() {
+	$(".tab_sub_dep2").tabs();
+});
+</script>
+</body>
+</html>

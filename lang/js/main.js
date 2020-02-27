@@ -21,16 +21,18 @@ $(function() {
 	headerOn();
 
 	$('#gil').fullpage({
-		anchors: ['intro', 'doctors', 'focus', 'info', 'footer' ],
+		anchors: ['intro', 'doctors', 'checkUp', 'community', 'footer' ],
 		menu: '#menu',
-		slidesNavigation: true,				
+		slidesNavigation: true,
 		verticalCentered: true,
 		scrollBar: false,
+		showActiveTooltip: true,
+        slidesNavigation: true,
 		easing: 'easeInOutCubic',
 		onLeave: function(index, nextIndex, direction) {
 			var leavingSection = $(this);
 			requestAnimFrame(function(){
-				if (nextIndex > 1 ) { 
+				/*if (nextIndex > 1 ) { 
 					$('#menu, header').addClass("bk", 500);
 
 					$(".gnb_wp").hover(function(){
@@ -51,12 +53,13 @@ $(function() {
 					} , function() {
 					// Animation complete. 
 					});
-				}
+				}*/
 				
 				if (nextIndex > 1 && nextIndex < 5) { 
-					$('.sticky').addClass("bk", 500);
+					console.log("asdasd");
+					$('header, #menu').addClass("bk", 500);
 				}else{
-					$('.sticky').removeClass("bk", 500);
+
 				}
 			});
 		}
@@ -89,6 +92,20 @@ $(function() {
 			}
 		}*/
 	});
+
+
+	/*메인 비주얼*/
+	$('.mainV ul').slick({
+        dots: true,
+        centerMode: true,
+		centerPadding: '-320px',
+        slidesToScroll: 5,
+		autoplay: true,
+		autoplaySpeed: 2000,
+        infinite: true,
+        variableWidth: true
+	});
+
 
 	/*메인 : 길병원 의료진*/
 	$('.doctor').slick({
@@ -133,28 +150,15 @@ $(function() {
 		slidesToScroll: 5
 	});
 
-	 $('.rsv__wrap').slick({
-	  asNavFor: '.rsv__wrap_nav',
-	  slidesToShow: 1,
+	 $('.checkUp ul').slick({
+	  slidesToShow: 4,
 	  slidesToScroll: 1,
-	  arrows: false,
-	  centerMode: true,
+	  arrows: true,
+		dots: true, 
+	  centerMode: false,
 	  draggable: false
 
 	  //fade: true,
-	});
-
-	$('.rsv__wrap_nav').slick({
-		asNavFor: '.rsv__wrap',
-		infinite: true,
-		slidesToShow: 4,
-		slidesToScroll: 1,
-		dots: false, 
-		arrows: false,
-		focusOnSelect: true,
-		draggable: false,
-		swipe: false,
-		variableWidth: true
 	});
 
 	/*메인 : 길병원포커스*/
