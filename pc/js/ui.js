@@ -231,7 +231,9 @@ function doc(){
 	}, 100);
 
 	$(window).scroll(function () {
-		
+		var here = $(".doctor-profile"),
+			hereP = here.offset().top;
+
 		var doc = $(".doctor-img"),
 			docH = doc.height(),
 			docP = doc.offset().top;
@@ -243,26 +245,27 @@ function doc(){
 		var whole = $(".section").height();
 			bottom = $(".content-section").last().height();
 			wb = whole - bottom;
-		//console.log("whole : " + whole + ", bottom : " + bottom + " wb :" + wb );
+
+		var $this = $(this),
+			$st = $this.scrollTop();
+
+			console.log(hereP );
+			console.log($st );
 
 		var body = $("html, body");
 		var val = stopH + stopP,
 			val2 = val - 1100;
 
-		var $this = $(this);
 		body.css({'overflow-x' : 'hidden'});
-		if ($this.scrollTop() > val2) {
-			$(doc).addClass("here").css({'bottom' : bottom,'top' : '','right' : '-555px'});
+
+		if ($this.scrollTop() < 856) {
+		   $(doc).removeClass('here');
 		} else {
-		   $(doc).removeClass('here').css({'bottom' : bottom,'top' : '-90px','left' : '50%','margin-left' : '15px'});
+			$(doc).addClass('here');
 		}
+
 	});
 }
-
-
-
-
-
 
 
 
@@ -272,7 +275,7 @@ $(document).ready(function() {
 
 	headerOn();
 	popup();
-
+ 
 	$(".mScr").mCustomScrollbar({
 		scrollButtons:{enable:false},
 		theme:"minimal-dark"

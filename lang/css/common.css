@@ -93,7 +93,7 @@ header:after {display: block; clear: both;content:"";}
 header > .inner {width:1272px; margin: 0 auto;  position: relative;}
 header h1 {float: left; margin-top: 25px;}
 header h1 a {display: block;width:136px; height: 52px; background:url('../img/main/logo_w.png'); text-indent:-9999px; overflow:hidden;}
-header .nav { overflow:hidden; float: left; width: 1047px; margin-left: 79px; margin-top: 36px;}
+header .nav { overflow:hidden; float: right; width: 1020px; margin-top: 36px;}
 header .nav ul li {float: left; line-height: 20px; }
 header .nav ul li a {display: block; font-size:19px; width:190px; text-align: center; height: 54px; line-height: 54px;   color:#fff; transition: all .3s; border-bottom:4px solid rgba(0,0,0,0); font-weight: 500;}
 header .nav ul li:last-child a {width: 260px;}
@@ -108,13 +108,13 @@ header .util ul.sns li:nth-child(1) a{margin-left: 0px;}
 header .util ul.sns li:nth-child(2) a{background-position: -21px 0;}
 header .util ul.sns li:nth-child(3) a{background-position: -42px 0;}
 header .util ul.sns li:nth-child(4) a{background-position: -63px 0;}
-header .util .lang {display: inline-block; margin-left: 17px;}
-header .util .lang > a {padding:0 20px 0 0; position: relative;}
+header .util .lang {display: inline-block; margin-left: 8px; position: absolute; z-index:999990;}
+header .util .lang > a {padding:0 20px 0 0; position: relative; font-size:14px;}
 header .util .lang > a:after {content:""; width: 10px; height: 18px;position: absolute; background: url('../img/icon/set_white.png'); background-position:-40px -20px; margin: -1px 0 0 8px; transition:all 0.3s;}
 header .util .lang > ul {height: 0px; overflow: hidden; transition:all 0.3s;}
 header .util .lang:hover > a:after {transform: rotate(180deg);}
-header .util .lang:hover ul {height: 115px; background: #fff; border-radius:3px; padding: 0 8px; border:1px solid #ddd; position: relative; z-index:4;}
-header .util .lang:hover ul li a {color: #333; font-size:12px; letter-spacing: 0.2;}
+header .util .lang:hover ul {height: 90px; background: #fff; border-radius:3px; padding: 8px; border:1px solid #ddd; position: relative; z-index:4; width: 87px;}
+header .util .lang:hover ul li a {color: #333; font-size:12px; letter-spacing: 0.2; display: block; height: 22px; line-height: 22px;}
 header .util .lang:hover ul li a:hover {font-weight: 600;}
 
 
@@ -128,6 +128,7 @@ header.bk .member .search,
 header.bk .member .navAll {background-image:url('../img/icon/set_black.png');}
 header.bk .nav ul li a,
 header.bk .util a {color:#333;}
+header.bk .util .lang > a:after {background-image:url('../img/icon/set_black.png');}
 
 header.bk .nav ul li a.active {color:#004e96; border-bottom:4px solid #004e96;}
 header.bk .nav ul li a:hover {border-bottom:4px solid #004e96;}
@@ -136,17 +137,18 @@ header .gnb_wp {width: 100%; height: 0px; background: #fff; overflow:hidden;-web
 header .gnb_wp:after,
 header .gnb_wp .gnb:after, 
 header .gnb_wp .gnb .nav_wp:after {float:none; display:block; clear:both; content:"";}
-header .gnb_wp .gnb {width: 1920px; height: 445px; margin: 0 auto; overflow:hidden;}
-header .gnb_wp .gnb .nav_wp {position: relative; left:50%; margin-left: -421px; border-left: 1px solid #eee; width:1070px;}
+header .gnb_wp .gnb {width:100%; max-width: 1272px; height: 445px; margin: 0 auto; overflow:hidden; position: relative;}
+header .gnb_wp .gnb .nav_wp {position: relative; float: left; position: absolute; right:0px;  border-left: 1px solid #eee;}
 header .gnb_wp .gnb .nav_wp > ul {float: left; width: 190px; height: 445px; padding-top: 24px;border-right:1px solid #eee; box-sizing:border-box;}
-header .gnb_wp .gnb .nav_wp > ul:last-child {width: 300px;}
+header .gnb_wp .gnb .nav_wp > ul:last-child {width:260px;}
 header .gnb_wp .gnb .nav_wp > ul li {line-height: 1.4; margin-bottom: 12px;margin-left: 15px;}
-header .gnb_wp .gnb .nav_wp > ul li a {font-size:16px; font-weight: 400; transition:all 0.3s; border-bottom:2px solid #fff; display: block;}
-header .gnb_wp .gnb .nav_wp > ul li a:hover span {color:#004e96; font-weight: 600; border-bottom:2px solid #004e96;}
+header .gnb_wp .gnb .nav_wp > ul li a {font-size:16px; font-weight: 400; transition:all 0.3s; border-bottom:2px solid #fff; display: block;font-size:14px;}
+header .gnb_wp .gnb .nav_wp > ul li:hover span {color:#004e96; font-weight: 500; border-bottom:2px solid #004e96; }
 
 
 .footer {background: #32363a; padding: 30px 0;}
 .footer .info {width: calc(100% - 100px); float: left;}
+.footer .info address {font-size:15px;}
 .footer .info h3 {color: rgba(255,255,255,.6); font-size:18px; margin-bottom: 8px; font-weight: 500;}
 .footer .info p {color: rgba(255,255,255,.6); font-size:14px;}
 .footer .logo {width: 100px; float: right;}
@@ -291,12 +293,6 @@ figure {margin: 0; padding: 0;}
 
 .wrap {position: relative; min-height:100vh;}
 
-.section h2 {font-size:36px; color: #222; margin-bottom: 1rem;}
-.section h3 {font-size:28px; color: #222; margin: 36px 0 15px;}
-.section h4 {font-size:20px; color: #222; margin: 30px 0 10px;}
-.section h3 + h4 {margin-top: 15px;}
-.section p {font-size:18px; line-height: 1.4;}
-.section figure img {width: 100%;}
 
 .imgSplit:after {content:""; clear: both;display: block; float: none;}
 .imgSplit img {float: left; width:380px !important; position: relative; margin-top: 5px;}
@@ -309,3 +305,7 @@ figure {margin: 0; padding: 0;}
 .box__wrap li {display: table-cell; box-sizing:border-box; padding: 24px; border-right: 1px solid #ddd;}
 .box__wrap li:last-child {border-right: 0;}
 .box__wrap.col-3 li {width: 33.333%;}
+
+.spec_1:after {content:""; clear: both;display: block; float: none;}
+.spec_1 img {width:450px; float: left; margin-right: 20px;}
+.spec_1 {margin-bottom: 15px;}

@@ -20,6 +20,14 @@ window.requestAnimFrame = function(){
 $(function() {
 	headerOn();
 
+
+					$("header").hover(function(e){
+						e.preventDefault(); 
+						$(this).addClass("bk", 500);
+					} , function() {
+						$(this).removeClass("bk", 500);
+					});
+
 	$('#gil').fullpage({
 		anchors: ['intro', 'doctors', 'checkUp', 'community', 'footer' ],
 		menu: '#menu',
@@ -32,14 +40,13 @@ $(function() {
 		onLeave: function(index, nextIndex, direction) {
 			var leavingSection = $(this);
 			requestAnimFrame(function(){
-				/*if (nextIndex > 1 ) { 
+				
+				if (nextIndex > 1 ) { 
 					$('#menu, header').addClass("bk", 500);
-
 					$(".gnb_wp").hover(function(){
 					}, function(){
 						$('header').addClass("bk", 500);
 					});
-					
 				}else if(nextIndex >= 1){
 					$('#menu, header').removeClass("bk", 500);
 					
@@ -53,44 +60,11 @@ $(function() {
 					} , function() {
 					// Animation complete. 
 					});
-				}*/
-				
-				if (nextIndex > 1 && nextIndex < 5) { 
-					console.log("asdasd");
-					$('header, #menu').addClass("bk", 500);
-				}else{
-
 				}
 			});
+		},
+		afterLoad: function(anchorLink, index){
 		}
-		/*afterLoad: function(anchorLink, index){
-			if (index == 2){
-				$('#menu, header').addClass("bk", 500);
-
-				$(".gnb_wp").hover(function(){
-				}, function(){
-					$('header').addClass("bk", 500);
-				});
-
-			}else if(index == 1){
-				
-				$('#menu, header, .sticky').removeClass("bk", 500);
-				
-				$(".gnb_wp").hover(function(){
-				}, function(){
-					$('header').removeClass("bk", 500);
-				});
-				$(".nav li a").hover(function(e){
-					e.preventDefault(); 
-					$('header').addClass("bk", 500);
-				} , function() {
-				// Animation complete. 
-				});
-
-			}else if(index > 1){
-				$('#menu, header').addClass("bk", 500);
-			}
-		}*/
 	});
 
 

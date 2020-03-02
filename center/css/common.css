@@ -95,7 +95,7 @@ height: auto;border: 1px solid transparent; float: none;} .slick-arrow.slick-hid
 .header h1 a {display: block; width: 274px; height: 28px; text-indent: -9999px; overflow:hidden; background: url('../img/common/logo.png');}
 .header .nav {float: left; width: 800px; margin-left: 60px; position: relative; height: 93px;}
 .header .nav > ul:after {float:none; display:block; clear:both; content:"";}
-.header .nav > ul li {float: left; width: 200px; text-align: center; height: 90px; line-height: 90px; border-bottom: 4px solid #fff; transition:all 0.3s;}
+.header .nav > ul li {float: left; width: 200px; text-align: center; height: 89px; line-height: 90px; border-bottom: 4px solid #fff; transition:all 0.3s;}
 .header .nav > ul li:last-child {margin-right: 0px;}
 .header .nav > ul li a {color:#333; font-size:20px; font-weight: 600; transition:all 0.3s;}
 .header .nav > ul li.active {border-bottom: 4px solid #004e96;}

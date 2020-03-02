@@ -173,24 +173,39 @@ span.occupy {width: 0.75rem; height: 0.75rem; background: #fdc75b;display: inlin
 .doctor ul li dl dt .title a:after {content: '>'; font-size:0.75rem;display: inline-block; padding-left: 0.25rem; font-family: dotum; font-weight: 600;} 
 
 /* 의료진 상세 팝업 */
-.profile {background: #567b9d;}
-.profile .popupTitle {border-bottom: 0px;}
-.profile .popupTitle a {background: url(../img/icon/i_pop_close_wh.png) no-repeat; background-size:cover;}
-.profile .docName {position: relative; height:  16.88rem; overflow: hidden;}
+.profile {background: #567b9d; overflow: hidden;}
+.ui-popup-container .profile.ui-popup .inner {height: calc(100vh - 3.4rem);}
+.profile .docName {position: relative; height: calc(100vh - 3.4rem);}
+
+.profile .docClose {position: absolute; right:0; width:2rem; height: 2rem; top:0; z-index: 56; font-size:1.2rem; font-family: Lato; display: inline-block; text-align: center; line-height: 2rem;}
+
 .profile .docName h4 {color: #fff; font-size:1.375rem; font-weight: 500; line-height: 1.4; margin-top: 2.5rem;}
 .profile .docName h4 small {display: block; font-size:1rem;}
 .profile .docName h4 strong {font-size:1.625rem;}
-.profile .docName a {display: inline-block; width: 5.375rem; padding-left: 1.5rem; height: 1.875rem; line-height: 1.875rem; border-radius:0.95rem; border:1px solid #fff; font-size: 0.8125rem; color: rgba(255,255,255,.7); text-align: center; position: relative; z-index: 1;}
-.profile .docName a:before {content: ''; width: 1.125rem; height: 1rem; background-image:url('../img/icon/i_heart.png'); background-size:cover; display: inline-block; position: absolute; margin-left: -1.5rem; margin-top:0.45rem ;}
-.profile .docName a.on {background: #fcaf15; color: #fff; border:1px solid #fcaf15;}
-.profile .docName figure {position: absolute; height: 100%; bottom: 0; right:0.5rem; z-index: 0;width: 100%;}
-.profile .docName figure img { height:96%; right:0; position: absolute; bottom: 0;}
-.profile .docProf {background: #fff; margin-left: -1rem; padding: 0 1rem 3rem; box-sizing: border-box; width: calc(100% + 2rem);}
+.profile .docName figure {width: calc(100% + 2rem); margin-left: -1rem; height: calc(100vh - 3.4rem);}
+.profile .docName figure img {width: 100%; height: 100%;}
+
+.profile .docName .box__name {width:12.5rem; height: 10rem; position: absolute; bottom:1rem; left:1rem; z-index: 4; background: rgba(0,0,0,.7); box-sizing:border-box; padding-left: 1.5rem;}
+
+.profile .docName .box__name h4 {color: #fff; font-size:1.375rem; font-weight: 500; line-height: 1.4; margin-top: 2rem;}
+.profile .docName .box__name h4 small {display: block; font-size:1rem;}
+.profile .docName .box__name h4 strong {font-size:1.625rem;}
+.profile .docName .box__name a {display: inline-block; width: calc(100% - 3rem); padding-left: 1.5rem; height: 1.875rem; line-height: 1.875rem; border-radius:0.95rem; font-size: 0.8125rem; color: rgba(255,255,255,.7); text-align: center; position: relative; z-index: 1; background: #004e96;}
+.profile .docName .box__name a:before {content: ''; width: 1.125rem; height: 1rem; background-image:url('../img/icon/i_heart.png'); background-size:cover; display: inline-block; position: absolute; margin-left: -1.5rem; margin-top:0.45rem ;}
+.profile .docName .box__name a.on {background: #fcaf15; color: #fff; }
+
+.profile .docProf {padding-bottom: 3rem;}
 .profile .docProf h4 {padding-top:  1.25rem; font-size:1.125rem;}
 .profile .docProf table + h4 {margin-top: 1.25rem;border-top: 1px solid #ddd;}
 .profile .docProf table tr th {text-align: left; color: #333; font-size:0.8125rem;}
 .profile .docProf .table-col table tr th {text-align: center;}
 .profile .docProf table tr td {color: #000; font-size:0.8125rem; vertical-align: middle;}
+
+.profile .docPro {margin-left: -1rem; width: 100%; background: #567b9d; padding:  3rem 1rem 4rem; color: #fff; overflow: hidden; position: relative;}
+.profile .docPro h4 {color: #fff; margin-top: 25px;}
+.profile .docPro .contents__text {width: 54%; font-size:0.85rem;}
+.profile .docPro figure {position: absolute; right:2rem; width:38%; bottom:0;}
+.profile .docPro figure img {width: 100%;}
 
 /* CS */
 .contents > .cs {border-top: 1px solid #ddd;}
