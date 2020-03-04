@@ -629,8 +629,10 @@ select::-ms-expand{display:none;}
 .reserve-context .left-group .doctor-info .medical-area .text-tit{display:table-cell;width:66px;}
 .reserve-context .left-group .doctor-info .medical-area .text{display:table-cell;}
 
-.reserve-context.reserve-state{height:676px;}
+.reserve-context.reserve-state{height:656px; overflow-y: hidden;}
+.reserve-context.reserve-state .left-group.schedule {width: 960px;}
 .reserve-context.reserve-state .left-group .choice-day{margin-top:0;}
+.reserve-context.reserve-state .left-group .choice-day .calendar-draw {width: 100%; border-right: 0; padding-top: 56px;}
 .reserve-context.reserve-state .left-group .choice-day .calendar{border-bottom:none;} 
 .reserve-context .left-group .choice-day td.active span{width:50px;height:50px;border-radius:25px;background:#004e96;display:inline-block;line-height:50px;}
 .reserve-context .left-group .choice-day td.on span{width:50px;height:50px;border-radius:25px;display:inline-block;border:1px solid #004e96;line-height:50px;}
@@ -777,8 +779,8 @@ background:linear-gradient(0deg, rgba(0,0,0,0.5746673669467788) 0%, rgba(0,212,2
 
 
 .tab_sub{margin:48px auto;}
-.tab_sub > ul{display:table;margin:0 auto;}
-.tab_sub > ul li{ float:left;vertical-align:middle;margin:0 10px;} 
+.tab_sub > ul{margin:0 auto; text-align: center;}
+.tab_sub > ul li{display: inline-block;vertical-align:middle;margin:0 10px;} 
 .tab_sub > ul li a{display:table-cell;vertical-align:middle;width:130px;height:130px;text-align:center;border-radius:50%;border:1px solid #ddd;font-size:18px;color:#333;}
 .tab_sub > ul li.ui-tabs-active{} 
 .tab_sub > ul li.ui-tabs-active a{border:1px solid #004e96;color:#004e96;font-weight:600;}
@@ -819,8 +821,7 @@ a.news_more span {font-size:10px; position: relative; display: inline-block; top
 .HTH_news .recap dl dd {float: right; width: calc(100% - 250px) ;}
 .HTH_news .recap dl dd h5 {font-size:22px; margin-bottom: 20px; color:#333;}
 .HTH_news .recap dl dd p {font-size:18px; line-height: 32px; text-align: justify;}
-
-.HTH_news .recap.only1  dl {width: 50%; margin: 0 auto; float: none;}
+.HTH_news .recap.only1 dl {width: 50%; margin: 0 auto; float: none;}
 
 /* 강좌안내 리스트 */
 .HTH_news.lecture ul li a{padding: 0; position: relative;}
@@ -1438,7 +1439,7 @@ table.fold-table > tbody > tr td .fold-content table td:last-child {border-right
 .tab_sub_dep2 > ul {text-align: center; margin-top: 48px;}
 .tab_sub_dep2 > ul li {display: inline-block; padding:  0 30px; font-size:18px; position: relative;}
 .tab_sub_dep2 > ul li a {display: inline-block; padding: 4px 0;}
-.tab_sub_dep2 > ul li:after {content:"";  width: 1px ; height: 10px ; background: #888; display: block; position: absolute; right:0; top:5px;}
+.tab_sub_dep2 > ul li:after {content:"";  width: 1px ; height: 10px ; background: #888; display: block; position: absolute; right:0; top:50%; margin-top: -8px;}
 .tab_sub_dep2 > ul li:last-child:after {display: none;}
 .tab_sub_dep2 > ul li.ui-tabs-active a {border-bottom:1px solid #333; font-weight: 600; color:#000;}
 

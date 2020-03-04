@@ -1,0 +1,128 @@
+@charset "utf-8";
+
+@import url("font.css");
+@import url("base.css");
+@import url("customScroll.css");
+
+
+.aui .inner {width: 1272px;margin: 0 auto;}
+.aui header {width: 100%; height: 94px;}
+.aui header h1 {width: 249px ;height: 94px; float: left;}
+.aui header nav {float: left; width: 741px; margin-left: 46px; margin-top: 14px;}
+.aui header nav ul {display: table; table-layout: fixed; width: 100%;}
+.aui header nav ul li {display: table-cell; vertical-align: middle; height: 80px;line-height: 80px; font-weight: 500;}
+.aui header nav ul li a {display: block;border-bottom: 4px solid #fff;height: 76px; text-align: center;color: #000; font-size:20px;}
+.aui header nav ul li a:hover,
+.aui header nav ul li a.on {border-bottom: 4px solid #004e96; color: #004e96;}
+.aui header .util {width: 194px; float: right; margin-top:42px ;}
+.aui header .util ul {float: right;}
+.aui header .util ul li {float: left; width: auto; position: relative; box-sizing:border-box;}
+.aui header .util ul li:after {content: ''; width: 1px; height: 10px; background: #ddd; display: block; position: absolute; right:0; top:50%; margin-top: -2px;}
+.aui header .util ul li a {color: #999; font-size:14px;}
+.aui header .util ul li:first-child {padding-right: 15px;}
+.aui header .util ul li:last-child {padding-left: 15px;}
+.aui header .util ul li:last-child:after {display: none;}
+
+/*슬라이더 전체 default*/
+.aui .slider {position: relative;}
+.aui .slider .bx-controls {position: absolute; bottom: 86px;z-index: 90; width: 212px;left:50%; margin-left: -105px;}
+.aui .slider .bx-controls .bx-controls-direction a {width: 50px; height: 50px; background-image: url('../img/icon/i_arr_slide.png'); background-repeat:no-repeat; background-position:0 0; text-indent: 9999px; overflow: hidden; display: block; float: right;}
+.aui .slider .bx-controls .bx-controls-direction a.bx-prev {transform: rotate(180deg); float: left;}
+.aui .slider .bx-controls .bx-pager {text-align: center;  height: 50px ;line-height: 50px;}
+
+
+.aui .slider.wh .bx-controls .bx-controls-direction a {background-image: url('../img/icon/i_arr_slide_wh.png');}
+.aui .slider.wh .bx-controls .bx-pager {color: #fff;  }
+
+.aui .visual {position: relative;}
+.aui .visual div > img {width: 1920px;  position: relative; lefT:50%; margin-left: -960px;}
+.aui .visual div .slogan {position: absolute; z-index: 80; top:50%; margin-top: -100px; font-size:50px; width: 1272px; left:50%; margin-left: -636px; font-weight: 600;}
+.aui .visual div .slogan small {font-size:24px; display: block;font-weight: 400;}
+.aui .slider.wh .slogan {color: #fff;}
+
+.aui .visual .banner {width: 384px;position: absolute;left:50%;z-index: 80;margin-left: 252px; top:50%; margin-top: -170px;}
+.aui .visual .banner ul li {background: rgba(69,102,135,.7); margin-bottom: 20px; border:1px solid rgba(255,255,255,.5);}
+.aui .visual .banner ul li:nth-child(2) {background: rgba(64,118,167,.7); }
+.aui .visual .banner ul li:last-child {background: rgba(58,99,145,.7); margin-bottom: 0;}
+.aui .visual .banner ul li a { color: #fff; font-weight: 500; font-size:22px; display: block; height: 100px; line-height: 100px; position: relative;}
+.aui .visual .banner ul li a:after {content: '';width: 48px; height: 13px; background: url('../img/icon/i_more_wh.png') no-repeat right 0 top 50%; position: absolute; right:30px; top:50%; margin-top: -6px;}
+.aui .visual .banner ul li a img {float: left; position: absolute; top:50%; margin-top: -17px; margin-left: 29px;}
+.aui .visual .banner ul li a span {float: left; position: relative; margin-left: 68px;}
+
+
+.aui footer {background: #32363a;padding: 30px 0; margin-top: 120px;}
+.aui footer:after {content:""; clear: both;display: block; float: none;}
+.aui footer .info_more {float: left; width: calc(100% - 420px);}
+.aui footer .info_more ul li {float: left; padding: 0 18px; position: relative;}
+.aui footer .info_more ul:after {clear: both; display: block; content:"";}
+.aui footer .info_more ul li:first-child {padding: 0 18px 0 0 ;}
+.aui footer .info_more ul li:before {content:""; position: absolute; left:0; top:6px; width:1px; height: 9px; background:rgba(255,255,255,.2);}
+.aui footer .info_more ul li a {color:rgba(255,255,255,.6); font-size:13px;}
+.aui footer .info_more address  {margin-top: 28px; color:#fff;}
+.aui footer .info_more small {margin-top: 14px; color:rgba(255,255,255,.6); display: block; letter-spacing: 0.1em;} 
+.aui footer .info_site{float:right;width:416px;text-align:right;}
+.aui footer .info_site select{border:1px solid #707375;width:188px;height:34px; line-height: 32px;box-sizing:border-box;padding-left:21px;color:#bfc0c0;-webkit-appearance:none;-moz-appearance:none;-o-appearance:none;appearance:none;background:#32363a url(../img/icon/ico_select.png) no-repeat 100% 0;}
+.aui footer .info_site select + select{margin-left:18px;}
+
+
+
+
+
+
+.aui .col-wrap > div.round {overflow: hidden; border-radius:24px;}
+
+.aui .col-wrap h2 { font-size:40px; color: #333; font-weight: 600; margin: 54px 0 30px; float: none; width: 100%; text-align: center;}
+.aui .col-wrap h3 { font-size:20px; color: #333; font-weight: 600; margin: 16px 0; height:29px ;}
+.aui .col-wrap h3 a {color: #333;}
+.aui .col-wrap .box {border:1px solid #eee; box-sizing:border-box; overflow:hidden; position: relative;}
+.aui .col-wrap .box:after {float:none; display:block; clear:both; content:"";}
+
+.aui .col-wrap .tv {width: 100%;}
+.aui .col-wrap .tv p {position: absolute; width: 80%; color: #222; font-size:26px; height: 32px; bottom:72px; font-weight: 600; padding: 0 40px;  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.aui .col-wrap .tv small {position: absolute; bottom:42px;color: #222; font-size:16px; margin-left: 40px;}
+
+.aui .col-wrap .hth2 {border:0;}
+.aui .col-wrap .hth2 ul li {margin-bottom:20px ; position: relative;}
+.aui .col-wrap .hth2 ul li p.title {font-weight: 600; color: #333; font-size:26px; margin-top: 34px;position: absolute; top:0; text-align: center; width: 100%; vertical-align: middle;}
+.aui .col-wrap .hth2 ul li p.title small {display: block; font-size:22px;}
+
+.aui .col-wrap .notice { padding: 0 24px;}
+.aui .col-wrap .notice ul li {height: 79px; line-height: 79px; border-bottom: 1px solid #eee;position: relative;}
+.aui .col-wrap .notice ul li:last-child {border-bottom: 0;}
+.aui .col-wrap .notice ul li a {font-size:18px; font-weight: 600; color: #333;}
+.aui .col-wrap .notice ul li a:after {content:""; width: 10px; height: 16px; position: absolute; right:0px;top:32px; background: url('../img/icon/i_arr.png') no-repeat;}
+
+.aui .col-wrap .paper ul {display: table; width: 100%;}
+.aui .col-wrap .paper ul li {display: table-cell; width: 50%; text-align: center; height: 140px;}
+.aui .col-wrap .paper ul li a figure {margin: 32px auto 8px;}
+.aui .col-wrap .paper ul li a figure img {margin: 0 auto;}
+.aui .col-wrap .paper ul li a span {font-size:18px; font-weight: 600; color: #333;}
+.aui .col-wrap .paper ul li:last-child {border-left: 1px solid #eee;}
+ 
+
+.aui .col-wrap .info {background: #fbfcfd; padding: 24px; height: 154px;}
+.aui .col-wrap .info h1 {font-size:30px; font-weight: 800px; color: #333;}
+.aui .col-wrap .info h1 small{font-size:16px; display: block;}
+.aui .col-wrap .info hr {border :0.5px solid #eee; display: block; margin: 12px 0;}
+.aui .col-wrap .info table {width: 100%;}
+.aui .col-wrap .info table tr th , 
+.aui .col-wrap .info table tr td {color: #888; font-weight: 500; text-align: left; padding: 4px 0; line-height: 1.5;}
+
+.aui .col-wrap .news {border:0;}
+.aui .col-wrap .news table tr th {vertical-align: top;}
+.aui .col-wrap .news table tr td {padding-left: 12px; vertical-align: top; position: relative;}
+.aui .col-wrap .news table tr td a p {font-size:18px; font-weight: 500; color: #333; line-height: 1.4; position: relative; margin-top: -3px;}
+.aui .col-wrap .news table tr td a small {font-size:14px; color: #555; position: absolute; bottom:24px;}
+.aui .col-wrap .news table tr th {padding-bottom: 28px;}
+
+.aui .col-wrap .med {border:0;}
+.aui .col-wrap .med ul li {height: auto; padding: 12px 0; border-bottom: 1px solid #eee;}
+.aui .col-wrap .med ul li a {display: block; color: #333; font-size:18px; font-weight: 500; background: url('../img/icon/i_arr.png') no-repeat; background-position:right 0 top 50%;}
+.aui .col-wrap .med ul li a p {width: calc(100% - 70px);}
+.aui .col-wrap .med ul li a small {font-weight: 300;}
+
+.aui .col-wrap .tip {height: 316px;}
+.aui .col-wrap .tip ul {margin: 0 24px ;}
+.aui .col-wrap .tip ul li {border-bottom: 1px solid #ddd;}
+.aui .col-wrap .tip ul li a {display: block;color: #333; font-size:18px; font-weight: 500; background: url('../img/icon/i_arr.png') no-repeat; background-position:right 0 top 50%; height: 78px; line-height: 78px;} 
+.aui .col-wrap .tip ul li a  p {width: calc(100% - 70px); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}

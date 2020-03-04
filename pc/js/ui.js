@@ -111,7 +111,6 @@ function achieve(){
 	});
 }
 
-
 function popup(){
     $('.popup-close, .pop-close').on('click',function(e){
 		e.preventDefault();
@@ -268,14 +267,17 @@ function doc(){
 }
 
 
-
-
-
 $(document).ready(function() {
 
 	headerOn();
 	popup();
- 
+
+	career();
+
+	fold();
+	doc();
+
+
 	$(".mScr").mCustomScrollbar({
 		scrollButtons:{enable:false},
 		theme:"minimal-dark"
@@ -284,6 +286,10 @@ $(document).ready(function() {
     $('.doctor-like').on('click',function(){
         $(this).toggleClass('on');
     })
+
+		
+	$(".tab_sub, .tab_sub_dep2").tabs();
+
 /*
     var $winHei = $('body').height();
     $('.dimm').css('height',$winHei+'px');

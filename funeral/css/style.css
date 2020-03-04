@@ -99,7 +99,7 @@
 .main-container .main-content .customer-list td{font-size:17px;color:#000;line-height:70px;height:70px;border-right:1px solid #ddd;border-bottom:1px solid #ddd;text-align:center;}
 .main-container .main-content .customer-list td strong{font-weight:400;}
 .main-container .main-content .customer-list td .text-ellipsis{display:block;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;max-width:210px;margin:0 auto;}
-
+/*
 .footer .util{background:#3c4044;height:40px;padding-top:20px;}
 .footer .util > .inner{width:660px;margin:0 auto;}
 .footer .util .title{float:left;font-size:16px;color:#fff;font-weight:600;}
@@ -107,7 +107,10 @@
 .footer .util ul li{float:left;position:relative;padding:0 18px;}
 .footer .util ul li:before{content:"";position:absolute;left:0;top:5px;width:1px;height:9px;background:#e0e0e0;}
 .footer .util ul li a{color:#fff;font-size:16px;}
+*/
 
+.footer .inner {width: 1272px; margin: 0 auto; }
+.footer .info:after {content:""; clear: both;display: block; float: none;}
 .footer .info {background: #32363a; padding: 30px 0;}
 .footer .info .info_more {float: left; width: calc(100% - 420px);}
 .footer .info .info_more ul li {float: left; padding: 0 18px; position: relative;}

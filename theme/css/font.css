@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+/* font */
+@font-face {
+    font-family:'NotoSansKR';
+    font-weight:300;
+    src: local(※),
+        url('../font/NotoSansKR-Light.woff2') format('woff2'),
+        url('../font/NotoSansKR-Light.woff') format('woff');
+}
+@font-face {
+    font-family:'NotoSansKR';
+    font-weight:400;
+    src: local(※),
+        url('../font/NotoSansKR-Regular.woff2') format('woff2'),
+        url('../font/NotoSansKR-Regular.woff') format('woff');
+}
+@font-face {
+    font-family:'NotoSansKR';
+    font-weight:500;
+    src: local(※),
+        url('../font/NotoSansKR-Medium.woff2') format('woff2'),
+        url('../font/NotoSansKR-Medium.woff') format('woff');
+}
+@font-face {
+    font-family:'NotoSansKR';
+    font-weight:700;
+    src: local(※),
+        url('../font/NotoSansKR-Bold.woff2') format('woff2'),
+        url('../font/NotoSansKR-Bold.woff') format('woff');
+}
+
+
+html, body { font-family: 'NotoSansKR', '맑은고딕', Malgun Gothic, Dotum, "돋움", verdana, sans-serif; font-size:13px; font-weight: 300;}
