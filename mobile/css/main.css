@@ -18,7 +18,7 @@
 .banner__rsv:after {content: ''; width: 0.5625rem; height:  1.063rem; background-image:url('../img/main/i_arrow.png'); background-repeat:no-repeat; background-size:contain; display: block; position: absolute; right:1rem; top:50%; margin-top: -0.5rem;}
 .banner__rsv a  {color: #fff; display: block; position: relative; line-height: 1.5; font-size:1rem; padding: 1rem 0 0 1rem;}
 .banner__rsv.login {background-color: #fcaf15;}
-
+.banner__rsv.cancer {background-color: #01baf2; margin-top: 1rem;}
 
 .link__quick {position: relative; margin-top:1.125rem ;}
 .link__quick:after {content:""; clear: both;display: block; float: none;}

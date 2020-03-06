@@ -6,11 +6,11 @@
 
 
 
-img {display: block;}
+.aui img {display: block;}
 
-address {font-style: normal;}
+.aui address {font-style: normal;}
 .aui table, .aui tr, .aui th, .aui td, .aui figure, .aui p,
-.aui, .aui body, .aui h1, .aui h2, .aui h3, .aui h4, .aui h5, .aui h6, .aui ul, .aui li {margin: 0; padding: 0; border-collapse: collapse;}
+.aui, .aui body, .aui h1, .aui h2, .aui h3, .aui h4, .aui h5, .aui h6, .aui ol, .aui ul, .aui li {margin: 0; padding: 0; border-collapse: collapse;}
 .aui a {text-decoration: none;}
 .aui ul, .aui li {list-style:none;}
 

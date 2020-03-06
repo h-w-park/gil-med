@@ -82,8 +82,6 @@ img{display:block;}
 .slick-slide { display: none; float: left;height: 100%; min-height: 1px; } [dir='rtl'] .slick-slide { float: right; } .slick-slide img { display: block; } .slick-slide.slick-loading img { display: none; } .slick-slide.dragging img { pointer-events: none; } .slick-initialized .slick-slide { display: block; } .slick-loading .slick-slide { visibility: hidden; } .slick-vertical .slick-slide { display: block;
 height: auto;border: 1px solid transparent; float: none;} .slick-arrow.slick-hidden { display: none; }
 
-
-.wrap {overflow-x:hidden;}
 .inner {width: 1400px; margin: 0 auto;}
 .inner:after {clear: both; display: block; content:"";}
 

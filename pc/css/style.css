@@ -363,6 +363,20 @@ select::-ms-expand{display:none;}
 .medical03 li.list10{background-position:-576px -192px;}
 .medical03 li.list11{background-position:-768px -192px;}
 
+
+.medical04 li{background:url(../img/icon/medical_list04.png) no-repeat;}
+.medical04 li.list02{background-position:-192px 0;}
+.medical04 li.list03{background-position:-384px 0;}
+.medical04 li.list04{background-position:-576px 0;}
+.medical04 li.list05{background-position:-768px 0;}
+.medical04 li.list06{background-position:-960px 0;}
+.medical04 li.list07{background-position:0 -192px;}
+.medical04 li.list08{background-position:-192px -192px;}
+.medical04 li.list09{background-position:-384px -192px;}
+.medical04 li.list10{background-position:-576px -192px;}
+.medical04 li.list11{background-position:-768px -192px;}
+
+
 /* 의료진소개 */
 .doctor-list{overflow:hidden;margin-top:48px;}
 .doctor-list li{float:left;width:624px;height:272px;box-sizing:border-box;border:1px solid #ddd;margin-bottom:24px;font-size:0;position:relative;}
@@ -533,7 +547,7 @@ select::-ms-expand{display:none;}
 .reserve-context .medical-reserve-tit{font-size:24px;color:#000;font-weight:400;padding-bottom:24px;border-bottom:2px solid #666;display:block;}
 .reserve-context .medical-reserve-info table{width:100%;}
 .reserve-context .medical-reserve-info th{height:48px;line-height:48px;text-align:left;font-size:16px;color:#333;font-weight:normal;border-bottom:1px solid #ddd;}
-.reserve-context .medical-reserve-info td{height:48px;line-height:48px;color:#333;font-size:16px;font-weight:400;border-bottom:1px solid #ddd;}
+.reserve-context .medical-reserve-info td{height:48px;line-height:48px;color:#333;font-size:16px;font-weight:500;border-bottom:1px solid #ddd;}
 .reserve-context .s-tit{font-size:24px;color:#333;text-align:center;display:block;}
 .reserve-context .choice-wrap{height:510px;border:1px solid #ddd;box-sizing:border-box;margin-top:24px;position:relative;}
 .reserve-context .sort-list{width:68px;border-right:1px solid #ddd;box-sizing:border-box;padding:20px 14px 0 13px;height:508px;position:absolute;background:#f6f8fa;}
@@ -598,8 +612,8 @@ select::-ms-expand{display:none;}
 .reserve-context .left-group .choice-day .select-year:after{content:"년";font-size:22px;color:#333;position:absolute;top:13px;right:30px;}
 .reserve-context .left-group .choice-day .select-month select{height:50px;-webkit-appearance:none;-moz-appearance:none;-o-appearance:none;appearance:none;background:#fff url(../img/icon/calendar_arr2.jpg) no-repeat 100% 50%;border:none;box-sizing:border-box;font-size:18px;padding-right:60px;width:100%;border-radius:0;font-size:32px;color:#333;font-weight:500;margin-left:45px;width:100px;box-sizing:border-box;}
 .reserve-context .left-group .choice-day .select-month:after{content:"월";font-size:22px;color:#333;position:absolute;top:13px;right:30px;}
-.reserve-context .left-group .choice-time{float: right;width:250px;}
-.reserve-context .left-group .choice-time-group{margin-bottom:15px;overflow:hidden;}
+.reserve-context .left-group .choice-time{float: right;width:250px; height: 492px;}
+.reserve-context .left-group .choice-time-group{margin-bottom:15px;}
 .reserve-context .left-group .time-tit{width:60px;font-size:16px;color:#111; line-height:38px; padding: 0 24px; font-size:18px; font-weight: 500;}
 .reserve-context .left-group .time-tit .ico-am{display:inline-block;width:10px;height:10px;border-radius:5px;background:#fcaf15;margin-right:12px;}
 .reserve-context .left-group .time-tit .ico-pm{display:inline-block;width:10px;height:10px;border-radius:5px;background:#7fc241;margin-right:12px;}

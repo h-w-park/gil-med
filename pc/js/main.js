@@ -192,7 +192,7 @@ $(function() {
 	$('.rsv__wrap_nav').slick({
 		asNavFor: '.rsv__wrap',
 		infinite: true,
-		slidesToShow: 4,
+		slidesToShow: 5,
 		slidesToScroll: 1,
 		dots: false, 
 		arrows: false,

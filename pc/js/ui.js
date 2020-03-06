@@ -290,6 +290,48 @@ $(document).ready(function() {
 		
 	$(".tab_sub, .tab_sub_dep2").tabs();
 
+   
+    var dateFormat = "yy-mm-dd",
+      from = $( "#datepicker_from" )
+        .datepicker({
+          defaultDate: "+1w",
+			dateFormat: "yy-mm-dd",
+          changeMonth: true,
+			changeYear: true,
+			showMonthAfterYear: true,
+			//yearSuffix: "년",
+			monthNamesShort: [ "1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월" ],
+			dayNamesMin: [ "일", "월", "화", "수", "목", "금", "토" ],
+          numberOfMonths: 1
+        })
+        .on( "change", function() {
+          to.datepicker( "option", "minDate", getDate( this ) );
+        }),
+      to = $( "#datepicker_to" ).datepicker({
+        defaultDate: "+1w",
+		dateFormat: "yy-mm-dd",
+        changeMonth: true,
+			changeYear: true,
+			showMonthAfterYear: true,
+			//yearSuffix: "년",
+			monthNamesShort: [ "1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월" ],
+			dayNamesMin: [ "일", "월", "화", "수", "목", "금", "토" ],
+        numberOfMonths: 1
+      })
+      .on( "change", function() {
+        from.datepicker( "option", "maxDate", getDate( this ) );
+      });
+ 
+    function getDate( element ) {
+      var date;
+      try {
+        date = $.datepicker.parseDate( dateFormat, element.value );
+      } catch( error ) {
+        date = null;
+      }
+ 
+      return date;
+    }
 /*
     var $winHei = $('body').height();
     $('.dimm').css('height',$winHei+'px');

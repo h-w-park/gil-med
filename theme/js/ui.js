@@ -33,4 +33,31 @@ $(document).ready(function() {
 		stopAutoOnClick: true,
 		pager: true 
 	});
+
+
+	$( "#dialog" ).dialog({
+		autoOpen: false,
+		show: {
+			effect: "fade",
+			duration: 200
+		},
+		hide: {
+			effect: "fade",
+			duration: 200
+		}
+	});
+
+	$( "#opener" ).on( "click", function() {
+		$( "#dialog" ).dialog( "open" );
+	});
+
+ $( ".progress" ).progressbar({
+      value: 37,
+      change: function() {
+        progressLabel.text( progressbar.progressbar( "value" ) + "%" );
+      }
+    });
+
+
+
 });
