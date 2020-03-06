@@ -25,53 +25,13 @@
 
 		<section>
 			<div class="title">
-				<h2>공지사항</h2>
-				<p>병원 주요 소식을  안내하는 공간입니다.</p>
+				<h2>비밀번호 팝업</h2>
+				<p>비밀번호 팝업.</p>
 			</div>
 			<div class="contents">
 				<div class="">
 					<div class="inner">
-						<div class="box__noitce">
-							<ul>
-								<li>
-									<a href="#getDetail" data-rel="popup"> <strong>[공지] 암환자를 위한 1월 해피니스 프로그램 안내</strong>  <i class="new"></i></a>
-									<small>2010.01.02</small>
-								</li>
-								<li>
-									<a href="">2019년 12월 응급실 당직 전문의 일정안내</a>
-									<small>2010.01.02</small>
-								</li>
-								<li>
-									<a href="">2019년 제 4회 가천대 길병원 소아청소년과 개원의 연수강좌 안내</a>
-									<small>2010.01.02</small>
-								</li>
-								<li>
-									<a href="">2019년 12월 응급실 당직 전문의 일정안내</a>
-									<small>2010.01.02</small>
-								</li>
-								<li>
-									<a href="">2019년 제 4회 가천대 길병원 소아청소년과 개원의 연수강좌 안내</a>
-									<small>2010.01.02</small>
-								</li>
-								<li>
-									<a href="">2019년 12월 응급실 당직 전문의 일정안내</a>
-									<small>2010.01.02</small>
-								</li>
-								<li>
-									<a href="">2019년 제 4회 가천대 길병원 소아청소년과 개원의 연수강좌 안내</a>
-									<small>2010.01.02</small>
-								</li>
-								<li>
-									<a href="">2019년 12월 응급실 당직 전문의 일정안내</a>
-									<small>2010.01.02</small>
-								</li>
-								<li>
-									<a href="">2019년 제 4회 가천대 길병원 소아청소년과 개원의 연수강좌 안내</a>
-									<small>2010.01.02</small>
-								</li>
-							</ul>
-							<a href="#" class="btn__more"><span>더보기</span></a>
-						</div>
+						<a href="#getDetail" data-rel="popup">비밀번호 팝업 클릭</a>
 					</div>
 				</div>
 			</div>
@@ -80,17 +40,37 @@
         <div data-role="popup" id="getDetail" class="ui-content">
             <section>
                 <div class="popupTitle">
-                    <h3>공지사항</h3>
+                    <h3>비밀번호 팝업</h3>
                     <a href="#" data-rel="back">Close</a>
                 </div>
                 <div class="inner">
                     <div class="popupContents">
-                        내용이들어갑니다.
+						<div class="box__grey">
+							최근 외부에서 개인정보 유출로 의심되는 피해가 발생하여 여러 사이트에서 유사한 아이디/ 비밀번호를 사용 하시는 경우, 개인정보 유출로 인한 피해가 연쇄적으로 발생할 수 있습니다. 가천대 길병원에서는 회원님들의 피해 확산을 방지하기 위해 비밀번호 변경 캠페인을 진행 하고 있습니다. 고객님의 소중한 정보 보호를 위해 협조 부탁드립니다.
+						</div>
+						<p class="ta_r mt_30"><small>필수입력 항목 <i class="required"></i></small></p>
+						<div class="form">
+							<form action="">
+								<dl>
+									<dt>현재 비밀번호 <i class="required"></i></dt>
+									<dd><input type="password" placeholder="비밀번호 입력(특수문자,영/숫자 조합 8자 이상)" class="normal"></dd>
+									<dt>새 비밀번호 <i class="required"></i></dt>
+									<dd><input type="password" placeholder="비밀번호 입력(특수문자,영/숫자 조합 8자 이상)" class="normal"></dd>
+									<dt>새 비밀번호 확인 <i class="required"></i></dt>
+									<dd><input type="password" placeholder="비밀번호 입력(특수문자,영/숫자 조합 8자 이상)" class="normal"></dd>
+									<dd><input type="password" placeholder="비밀번호 입력(특수문자,영/숫자 조합 8자 이상)" class="normal error"><span class="error">비밀번호가 일치하지 않습니다.</span> </dd>
+								</dl>
+							</form>
+							<ul class="dot-list">
+								<li>비밀번호는 특수문자, 영문, 숫자 조합의 8~12자 이내로 설정 가능합니다.</li>
+							</ul>
+						</div>
                     </div>
                 </div>
             </section>
-			<div class="btn-wrap col-1">
-				<a href="" class="btn btnXL blue" data-rel="back">목록</a>
+			<div class="btn-wrap col-2">
+						<a href="#" class="btn btnXL grey-o">다음에 변경하기</a>
+						<a href="#" class="btn btnXL blue">변경하기</a>
 			</div>
         </div>
 

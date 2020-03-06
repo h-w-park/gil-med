@@ -140,6 +140,8 @@ header .member ul.user > li.lang:hover ul li a {color: #333; font-size:12px; let
 header .member ul.user > li.lang:hover ul li a:hover {font-weight: 600;}
 
 header .member .search {width: 18px; height: 18px; background: url('../img/icon/set_white.png'); background-position:-22px -20px; margin-top: 5px; margin-left: 17px; position: absolute; right:0;}
+header .member .search.close {background-position:-50px -20px;}
+
 /*header .member .navAll {width: 22px; height: 18px; background: url('../img/icon/set_white.png'); background-position:0px -20px; margin-top: 5px; margin-left: 31px;}*/
  
 header.bk {background: #fff;border-bottom:1px solid #eee;}
@@ -271,6 +273,8 @@ figure {margin: 0; padding: 0;}
 .mt_45 {margin-top: 45px !important;}
 .mt_48 {margin-top: 48px !important;}
 .mt_70 {margin-top: 70px !important;}
+.mt_90 {margin-top: 90px !important;}
+.mt_110 {margin-top: 110px !important;}
 
 .mb_0 {margin-bottom: 0px !important;}
 .mb_20 {margin-bottom: 20px !important;}
@@ -327,6 +331,7 @@ figure {margin: 0; padding: 0;}
 .btn-sm{min-width:100px;padding:0 30px;text-align:center;height:48px;line-height:48px;box-sizing:border-box;display:inline-block;font-size:18px;margin:0 6px;}
 .btn-mid{min-width:132px;padding:0 30px;text-align:center;height:56px;line-height:56px;box-sizing:border-box;font-size:20px;display:inline-block;margin:0 6px}
 .btn-lg{min-width:200px;padding:0 30px;text-align:center;height:76px;line-height:76px;box-sizing:border-box;display:inline-block;font-size:26px;margin:0 11px;}
+.btn-black{color:#fff;background:#333;border:1px solid #333;}
 .btn-blue{color:#fff;background:#004e96;border:1px solid #003363;}
 .btn-gray{color:#000;background:#f1f1f1;border:1px solid #ddd;}
 .btn-white{color:#000;background:#fff;border:1px solid #333;}
@@ -361,11 +366,12 @@ figure {margin: 0; padding: 0;}
 .popup .dot-gray{display:inline-block;width:12px;height:12px;border-radius:6px;background:#aaa;margin:0 8px 0 15px;}
 .popup .info-text{font-size:16px;line-height:50px;display:inline-block;height:50px;}
 .popup .btn-area{margin-top:45px;text-align:center;}
-.popup .context{padding-top:32px;}
+.popup .context{padding-top:32px;position: relative;}
 .popup .context > p{text-align:center;font-size:18px;color:#000;line-height:30px;}
 .popup .context .text-size-mid{text-align:left;}
-.popup .popup-content td,
-.popup .popup-content li{font-size:18px  ;line-height:26px;}
+.popup .popup-content h4 {margin : 24px 0 6px; font-size:16px; color: #333; font-weight: 500;}
+.popup .popup-content td{font-size:18px  ;line-height:26px;}
+.popup .popup-content li{font-size:16px  ;line-height:26px;}
 .popup .popup-content .ol-list{margin-top:15px;}
 .popup .popup-content .ol-list li{font-size:16px !important;}
 .popup .popup-content .ol-list li p{margin:5px 0 10px;}
@@ -431,9 +437,11 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.06);}
 .ui-datepicker .ui-state-disabled,
 .ui-datepicker .ui-state-disabled a {color: #ddd;}
 
-.form__search {padding: 5px 20px; background: #fff; position: absolute; margin-top: 38px; border-radius:8px; right:-3px; display: none;}
-.form__search input[type="text"] {border-bottom: 1px solid #ddd; height: 28px ;height: 28px; width: 120px;}
+
+.form__search {padding: 5px 10px; background: #fff; position: absolute; margin-top: 38px; border-radius:8px; right:-3px; display: none; z-index: ; border:1px solid #eee;}
+.form__search input[type="text"] {border-bottom: 1px solid #ddd; height: 28px ;height: 28px; width: 100px;padding-right: 24px;}
 .form__search label {position: absolute; width:0px; height: 0px; text-indent: -999px; overflow: hidden;}
+.form__search .btn_search {width: 18px; height: 18px; background: url('../img/icon/set_black.png'); background-position:-22px -20px; top:8px;  position: absolute; right:10px;}
 
 
 /* style.css로 이동 ============================*/

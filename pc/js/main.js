@@ -205,4 +205,10 @@ $(function() {
 	/*메인 : 길병원포커스*/
 	$(".news .contents").dotdotdot();
 
+	$('.search').click(function(){
+		$(this).toggleClass("close");
+		$('.form__search').toggle();
+	});
+
+
 });

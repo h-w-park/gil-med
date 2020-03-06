@@ -140,6 +140,9 @@
 .inp-text + .inp-text{margin-left:25px;}
 .inp-text:read-only,.inp-text:disabled, .select-box select:disabled,
 .inp-text.inp-readonly{background-color:#f9f9f9;color:#666;}
+
+.inp-text.error {border:1px solid #ff4949;}
+.inp-text + span.inp-error {color: #ff4949; font-size:14px; display: block;}
 /* .select-box{display:inline-block;min-width:100px;position:relative;}
 .select-box select{height:50px;-webkit-appearance:none;-moz-appearance:none;-o-appearance:none;appearance:none;background:#fff url(../img/common/ico_select_table.png) no-repeat} */
 .select-box{display:inline-block;min-width:100px;position:relative;}
@@ -620,7 +623,7 @@ select::-ms-expand{display:none;}
 .reserve-context .left-group .time-list { font-size:0;text-align: left;margin-left: 25px;}
 .reserve-context .left-group .time-list a{width:89px;border:1px solid #ddd; font-size:18px;color:#111;height:36px;line-height:36px;display:inline-block;text-align:center; margin-bottom: 10px; margin-right: 10px;}
 .reserve-context .left-group .time-list a:nth-child(even) {margin-right: 0px; } 
-.reserve-context .left-group .time-list .active{background:#004e96;color:#fff;}
+.reserve-context .left-group .time-list .active{background:#4171a8;color:#fff; border:1px solid #4171a8;}
 .reserve-context .left-group .time-list .disable{color:#888;background:#f5f5f5;}
 .reserve-wrap .step-complate{width:100%;height:72px;text-align:center;line-height:72px;color:#fff;font-size:24px;background:#004e96; font-weight: 500;}
 
@@ -888,8 +891,8 @@ a.news_more span {font-size:10px; position: relative; display: inline-block; top
 .join-step02-context{padding:36px 95px;}
 
 .join-context .sns-join{background:#f9f9f9;padding:45px 65px 45px 430px;position:relative;height:60px;}
-.join-context .btn__sns-join{width:320px;height:60px;line-height:60px;font-size:20px;color:#004e96;background:#004e96;text-align:center;display:inline-block;color:#fff;position:absolute;top:45px;left:65px;}
-.join-context .btn__sns-join span{display:inline-block;background:url(../img/icon/ico_person.jpg)no-repeat 0 18px;padding-left:35px;}
+.join-context .btn__sns-join{width:320px;height:60px;line-height:60px;font-size:20px;border:1px solid #888;background:none;text-align:center;display:inline-block;color:#333;position:absolute;top:45px;left:65px;}
+.join-context .btn__sns-join span{display:inline-block;background:url(../img/icon/ico_person.png)no-repeat 0 18px;padding-left:35px;}
 .join-context .sns-login a{display:inline-block;color:#666;font-size:18px;margin-right:20px;line-height:24px;}
 .join-context .sns-login a span{display:inline-block;position:relative;padding-left:35px;}
 .join-context .sns-login a span:after{position:absolute;top:0;left:0;content:"";background:url(../img/icon/sns_login.jpg) no-repeat;width:24px;height:24px;}
@@ -907,8 +910,8 @@ a.news_more span {font-size:10px; position: relative; display: inline-block; top
 .join-list .join-list__item .tit-desc{font-size:16px;color:#666;display:block;margin:16px 0 150px;}
 .join-list .join-list__item .btn-join{min-width:183px;text-align:center;display:inline-block;height:43px;line-height:43px;font-size:18px;}
 .join-list .join-list__item:hover{position:relative;border:1px solid #004e96;z-index:10;}
-.join-list .join-list__item:hover .tit{color:#004e96;}
-.join-list .join-list__item:hover .btn-join{background:#004e96;border:1px solid #004e96;color:#fff;}
+.join-list .join-list__item:hover .tit{color:#333;font-weight: 600;}
+.join-list .join-list__item:hover .btn-join{background :#4171a8;border:1px solid #4171a8;color:#fff;}
 
 .confirm-list{width: 100%; margin-bottom:35px;}
 .confirm-list:after {content:""; clear: both;display: block; float: none;}
@@ -919,11 +922,11 @@ a.news_more span {font-size:10px; position: relative; display: inline-block; top
 .confirm-list .confirm-list__item .tit-desc{font-size:16px;color:#666;display:block;line-height:22px;margin-bottom: 40px;}
 .confirm-list .confirm-list__item .btn-join{min-width:183px;text-align:center;display:inline-block;height:43px;line-height:43px;font-size:18px;}
 
-.confirm-list .confirm-list__item:hover {border:1px solid #004e96;}
+.confirm-list .confirm-list__item:hover {border:1px solid #4171a8;}
 .confirm-list .confirm-list__item:hover .tit{color:#004e96;}
-.confirm-list .confirm-list__item:hover .btn-join{background:#004e96;border:1px solid #004e96;color:#fff;}
+.confirm-list .confirm-list__item:hover .btn-join{background:#4171a8;border:1px solid #4171a8;color:#fff;}
 .confirm-list.active{margin-bottom: 24px;} 
-.confirm-list.active .inp-tell{margin-top:75px;margin-bottom:55px;}
+.confirm-list.active .inp-tell{margin-top:20px;margin-bottom:16px;}
 .confirm-list.active .inp-tell select,
 .confirm-list.active .inp-tell input{height:40px;line-height:40px;}
 .confirm-list.active .inp-tell .select-box select{background-position:110% -5px;}
@@ -1029,12 +1032,12 @@ a.news_more span {font-size:10px; position: relative; display: inline-block; top
 .recap_sel span {height: 50px; line-height: 50px; font-size:18px; display: inline-block; margin-right: 12px;}
 
 /* 병원소개 */
-.greeting-box{margin-top:450px;padding:96px 110px 0 110px;}
+.greeting-box{margin-top:450px;padding:48px 110px 0 110px;}
 .greeting-box h5{font-size:36px;line-height:50px;color:#000;font-weight:300;margin-bottom:50px;}
 .greeting-box h5 .txt-co-blue{font-size:28px;}
 .greeting-box h5 strong{font-weight:400;}
 .greeting-box .text-mid + .text-mid{margin-top:10px;}
-.greeting-box .text-big{margin-top:12px;}
+.greeting-box .text-big{margin-top:40px;}
 .greeting-box .text-big + .text-mid{margin-top:35px;}
 .greeting-box .sign{text-align:right;font-size:22px;color:#333;margin:50px 95px 0 0;}
 .greeting-box .sign strong{font-size:32px;display:inline-block;margin-left:5px;}
@@ -1545,7 +1548,7 @@ table.fold-table > tbody > tr td .fold-content table td:last-child {border-right
 .timeline {padding: 50px 0 120px; width: 100%; overflow:hidden;}
 .timeline .inner { position: relative;}
 .timeline dl {}
-.timeline dl dt {width: 104px; line-height: 104px; height: 104px; background: #004e96; border-radius:50%; color:#fff; font-size:22px; text-align: center; display: block; position: relative; left:50%; margin-left: -52px;}
+.timeline dl dt {width: 104px; line-height: 104px; height: 104px; background: #4171a8; border-radius:50%; color:#fff; font-size:22px; text-align: center; display: block; position: relative; left:50%; margin-left: -52px;}
 .timeline dl dt.phs {line-height: .95;}
 .timeline dl dt.phs span {position: absolute; margin-top: 23px; left: 50%; margin-left: -23px;}
 .timeline dl dd { position: relative; left:50%; }
@@ -1556,9 +1559,9 @@ table.fold-table > tbody > tr td .fold-content table td:last-child {border-right
 .timeline dl ul li:last-child {margin-bottom: 0px;}
 .timeline dl ul li span,
 .timeline dl ul li p  {font-size:20px; line-height: 28px; display: block; position: relative;}
-.timeline dl ul li span {float: left;color: #004e96; width: 95px; text-align: right;}
+.timeline dl ul li span {float: left;color: #222; width: 95px; text-align: right; font-weight: 500;}
 .timeline dl ul li span:before {content:""; width:30px; height: 1px; background: #ddd; display: block; position: absolute; left:8px; top:14px;}
-.timeline dl ul li span:after {content:""; width:11px; height: 11px; background: #004e96; display: block; position: absolute; left:39px; top:9px;  border-radius:50%;}
+.timeline dl ul li span:after {content:""; width:11px; height: 11px; background: #4171a8; display: block; position: absolute; left:39px; top:9px;  border-radius:50%;}
 .timeline dl ul li p {float: right; color:#222; width: calc(100% - 125px);}
 .timeline dl ul li.phs > span {width: 55px;}
 .timeline dl ul li.phs > p {width: calc(100% - 65px);}
@@ -1628,3 +1631,6 @@ table.fold-table > tbody > tr td .fold-content table td:last-child {border-right
 
 .profile-top a.doctor-like:after{width:18px;height:18px; line-height: 18px;content:"♥";position:absolute;top:50%; margin-top: -9px;left:55px; font-size:18px;}
 .profile-top a.doctor-like.on {background: #fcaf15;}
+
+.box__grey {    width: 720px; background: #f9f9f9; position: absolute; 
+margin-left: -80px; padding: 20px 40px; top: -30px; font-size:18px; line-height: 1.4;}

@@ -332,6 +332,7 @@ $(document).ready(function() {
  
       return date;
     }
+
 /*
     var $winHei = $('body').height();
     $('.dimm').css('height',$winHei+'px');
