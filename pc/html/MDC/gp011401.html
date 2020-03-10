@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- Scripts -->
+    <script src="../../js/jquery-2.2.3.min.js"></script>
+    <script src="../../js/jquery-ui.js"></script>
+</head>
+<body>
+<div class="wrap">
+
+    <div class="content">
+        <div class="section">
+            <div class="title">
+                <h3 class="page-tit">VIP 건강증진센터</h3>
+                <p class="page-tit__desc">"호스피스 / 완화의료 전문가들과 함께 환자와 가족의 삶의 질을 향상시켜드립니다."</p>
+            </div>
+
+            <ul class="tab">
+                <li><a href="gp011201.html" class="on">센터 소개</a></li>
+                <li><a href="gp011202.html">프로그램 소개</a></li>
+                <li><a href="gp011203.html">검진이용안내</a></li>
+                <li><a href="gp011204.html">Q&A</a></li>
+            </ul>
+
+            <div class="context">
+                <div class="content-section">
+					<div class="table-col">
+						<table>
+							<thead>
+								<tr>
+									<th colspan="8">기본검진 (남59만원, 여63만원)</th>
+								</tr>
+								<tr>
+									<th colspan="4">임상검사</th>
+									<th colspan="4">장비검사</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td colspan="4">혈액검사(70종) <br>빈혈, 대사, 전해질, 지질, 간, <br>신장, 갑상선, 에이즈, 매독, 류마티스, A/B/C형 간염<br> 종양표지자 (간, 췌장, 전랍선(남), 난소(여))<br> 소변검사, 대변검사<br> 영양상담, 구강검사<br> </td>
+									<td colspan="4">신체계측, 혈압, 시력, 청력, 체성분검사<br> 흉부 X-RAY, 골밀도, 심전도<br> 안압측정, 안저촬영, 폐기능 검사<br> 복부초음파, 위내시경검사(수면비 별도)<br> 여성(자궁세포진검사, 유방촬영) </td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="table-col type3">
+						<table>
+							<colgroup>
+								<col width="14.28%">
+								<col width="14.28%">
+								<col width="14.28%">
+								<col width="14.28%">
+								<col width="14.28%">
+								<col width="14.28%">
+								<col width="14.28%">
+							</colgroup>
+							<thead>
+								<tr>
+									<th colspan="7">특화 패키지 (기본검진 + 특화선택) <small>*특화 패키지는 단독 검진 불가</small></th>
+								</tr>
+								<tr>
+									<th>호흡기</th>
+									<th>심장</th>
+									<th>소화기</th>
+									<th>여성</th>
+									<th>남성</th>
+									<th>항노화&기능의학</th>
+									<th>만성피로</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>13만원</td>
+									<td>71만원</td>
+									<td>48만원</td>
+									<td>43만원</td>
+									<td>21만원</td>
+									<td>55만원</td>
+									<td>32만원</td>
+								</tr>
+								<tr>
+									<td>저선량 폐 CT<br> 객담 </td>
+									<td>경동맥초음파<br> 심장포음파<br> 심장관상동맥<br> 조영CT<br> 동맥경화 </td>
+									<td>복부조영CT<br> 수면위 대장 내시경 </td>
+									<td>부인과 초음파<br> 인유두종바이러스<br> 액상세포진검사<br> 유방초음파<br> 여성호르몬(혈액) </td>
+									<td>전립선 초음파<br> 남성호르몬(혈액) </td>
+									<td>모발미네랄<br> 장내세균<br> 유기산검사<br> </td>
+									<td>유기산검사 <br> 혈액 (Cortisol 측정, IGF-1, DHEA-S</td>
+								</tr>
+							</tbody>
+							<thead>
+								<tr>
+									<th colspan="7">프리미엄 패키지 (남 219만원, 여 245만원)</th>
+								</tr>
+								<tr>
+									<th colspan="7">호흡기 + 심장 + 소화기 + 정밀 + 남성 + 여성</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>기본검진<br> +<br> 특화 </td>
+									<td>저선량 폐 CT<br> 객담 </td>
+									<td>경동맥초음파<br> 심장포음파<br> 심장관상동맥<br> 조영CT<br> 동맥경화 </td>
+									<td>복부조영CT<br> 수면위 대장 내시경 </td>
+									<td>당뇨정밀(혈액)<br> 갑상선초음파<br> 스트레스검사 </td>
+									<td>전립선 초음파<br> 남성호르몬(혈액) </td>
+									<td>부인과 초음파<br> 인유두종바이러스<br> 액상세포진검사<br> 유방초음파<br> 여성호르몬(혈액) </td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="table-col">
+						<table>
+							<colgroup>
+								<col width="25%">
+								<col width="25%">
+								<col width="25%">
+								<col width="25%">
+							</colgroup>
+							<thead>
+								<tr>
+									<th colspan="4">뇌건강 패키지</th>
+								</tr>
+								<tr>
+									<th>뇌졸중 정밀</th>
+									<th>뇌졸중 특화</th>
+									<th>치매정밀</th>
+									<th>치매특화</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>뇌MRI+MRA <br> 뇌 SPECT<br> 심장초음파, 심전도<br> 동맥경화도 검사<br> 혈액(종양표지자 포함)<br> 소변검사<br>치매선별검사 </td>
+									<td>뇌 MRI+MRA<br> 심장초음파, 심전도<br> 동맥경화도 검사<br> 치매선별검사 </td>
+									<td>뇌 MRI+MRA <br> 심장초음파, 심전도<br> 동맥경화도 검사<br> 혈액(종양표지자 포함)<br> 소변검사, 치매유전자 검사<br> 신경심리검사 </td>
+									<td>뇌MRI+MRA<br> 신경심리검사 </td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="table-col type3">
+						<table>
+							<colgroup>
+								<col width="20%">
+								<col width="20%">
+								<col width="20%">
+								<col width="20%">
+								<col width="20%">
+							</colgroup>
+							<thead>
+								<tr>
+									<th>파킨슨정밀</th>
+									<th>파킨슨특화</th>
+									<th>뇌줄중정밀+치매특화</th>
+									<th>뇌졸중정밀+파킨슨특화</th>
+									<th>뇌졸중특화+치매특화</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>275만원</td>
+									<td>165만원</td>
+									<td>220만원</td>
+									<td>270만원</td>
+									<td>185만원</td>
+								</tr>
+								<tr>
+									<td>뇌 MRI+MRA<br> 파킨슨 PET<br> 신경심리검사<br> 심전도<br> 혈액(종양표지자)<br> 소변검사 </td>
+									<td>뇌 MRI+MRA<br> 파킨슨 PET </td>
+									<td>뇌 MRI+MRA<br> 심장초음파, 심전도<br> 동맥경화도 검사<br> 혈액(종양표지자 포함)<br> 소변검사<br> 신경심리검사 </td>
+									<td>뇌 MRI+MRA<br> 심장초음파, 심전도<br> 동맥경화도 검사<br> 혈액(종양표지자 포함)<br> 소변검사<br> 치매선별검사<br> 파킨슨 PET </td>
+									<td>뇌 MRI+MRA <br> 심장초음파, 심전도<br> 동맥경화도 검사<br> 신경심리검사 </td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<span class="info-txt dis_b mt_20">*뇌건강 패키지는 단독 검진 <strong class="c_bk pl_15">상담 및 문의 : 1577-2299 → 2번  →  1번 </strong></span>
+					<div class="table-col">
+						<table>
+							<thead>
+								<tr>
+									<th colspan="6">선택검사</th>
+								</tr>
+								<tr>
+									<th>부위</th>
+									<th>검사종류</th>
+									<th>비용</th>
+									<th>부위</th>
+									<th>검사종류</th>
+									<th>비용</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>전신</td>
+									<td>PET-CT</td>
+									<td>130만원</td>
+									<td rowspan="2">자궁경부</td>
+									<td>액상 자궁세포검사</td>
+									<td>6만원</td>
+								</tr>
+								<tr>
+									<td>몸통</td>
+									<td>PET-CT</td>
+									<td>110만원</td>
+									<td>인유두종바이러스</td>
+									<td>10만원</td>
+								</tr>
+								<tr>
+									<td rowspan="5">뇌</td>
+									<td>PET-CT</td>
+									<td>55만원</td>
+									<td>골밀도</td>
+									<td>골밀도 촬영</td>
+									<td>5만원</td>
+								</tr>
+								<tr>
+									<td>뇌 MRI</td>
+									<td>74만원</td>
+									<td rowspan="2">요추</td>
+									<td>요추 MRI</td>
+									<td>74만원</td>
+								</tr>
+								<tr>
+									<td>뇌 MRI+MRA</td>
+									<td>110만원</td>
+									<td>요추 CT</td>
+									<td>13만원</td>
+								</tr>
+								<tr>
+									<td>뇌 CT</td>
+									<td>10만원</td>
+									<td rowspan="2">경추</td>
+									<td>경추 MRI</td>
+									<td>74만원</td>
+								</tr>
+								<tr>
+									<td>치매유전자검사</td>
+									<td>15만원</td>
+									<td>경추 CT</td>
+									<td>13만원</td>
+								</tr>
+								<tr>
+									<td>소화기계</td>
+									<td>수면대장내시경</td>
+									<td>20만원</td>
+									<td>동맥</td>
+									<td>동맥경화도 검사</td>
+									<td>6만원</td>
+								</tr>
+								<tr>
+									<td>폐</td>
+									<td>폐 CT</td>
+									<td>13만원</td>
+									<td rowspan="10">항노화 & 기능의학</td>
+									<td>활성 산소 · 항산화</td>
+									<td>7만원</td>
+								</tr>
+								<tr>
+									<td rowspan="3">심장, 관상동맥</td>
+									<td>심장 CT</td>
+									<td>13만원</td>
+									<td>90종 음식 알레르기</td>
+									<td>25만원</td>
+								</tr>
+								<tr>
+									<td>심장관상동맥조영 CT</td>
+									<td>25만원</td>
+									<td>모발 미네랄</td>
+									<td>14만원</td>
+								</tr>
+								<tr>
+									<td>심장 초음파</td>
+									<td>22만원</td>
+									<td>노화검사(텔로미어)</td>
+									<td>30만원</td>
+								</tr>
+								<tr>
+									<td>췌장</td>
+									<td>췌장 CT</td>
+									<td>25만원</td>
+									<td>장내세균</td>
+									<td>18만원</td>
+								</tr>
+								<tr>
+									<td>복부</td>
+									<td>복부 CT</td>
+									<td>25만원</td>
+									<td>유기산 검사</td>
+									<td>25만원</td>
+								</tr>
+								<tr>
+									<td>전립선</td>
+									<td>전립선 초음파</td>
+									<td>15만원</td>
+									<td rowspan="2">암 유전자 검사</td>
+									<td>14만원 (5종)</td>
+								</tr>
+								<tr>
+									<td>갑상선</td>
+									<td>갑상선 초음파</td>
+									<td>만원</td>
+									<td>30만원 (11종)</td>
+								</tr>
+								<tr>
+									<td>유방</td>
+									<td>유방 초음파</td>
+									<td>17만원</td>
+									<td>면역세포 검사</td>
+									<td>개별상담</td>
+								</tr>
+								<tr>
+									<td>골반</td>
+									<td>부인과 초음파</td>
+									<td>8만원</td>
+									<td>스트레스 검사</td>
+									<td>3만원</td>
+								</tr>
+								<tr>
+									<td rowspan="2">경동맥</td>
+									<td rowspan="2">경동맥 초음파</td>
+									<td rowspan="2">19만원</td>
+									<td rowspan="2">호르몬 (갱년기)</td>
+									<td>여성 호르몬</td>
+									<td>3만원</td>
+								</tr>
+								<tr>
+									<td>남성 호르몬</td>
+									<td>8만원</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+                </div>
+            </div>
+
+
+
+
+            <div class="context">
+				<div class="content-section">
+					<h5 class="content-tit">검진절차</h5>
+					<div class="text-wrap">
+						
+						
+						<div class="table-row type2">
+							<table>
+								<tbody>
+									<tr>
+										<th class="row s">STEP<strong>01</strong></th>
+										<td class="lh_18">
+											<h6>예약</h6>
+											<ul class="mt_0 p_0">
+												<li class="fl" style="width:320px;">방문예약 : 암센터 13층 건강증진센터</li>
+												<li class="fl" style="width:380px;">전화예약 : 1577-2299 종합검진 : 2번 연결 → 1번</li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<th class="row s">STEP<strong>02</strong></th>
+										<td>
+											<h6>접수</h6>
+											<p>검진당일 미리 예약된 검사 항목을 확인하고 접수를 진행합니다.</p>
+										</td>
+									</tr>
+									<tr>
+										<th class="row s">STEP<strong>03</strong></th>
+										<td>
+											<h6>탈의</h6>
+											<p>접수후 탈의실로 이동하셔서 준비된 가운으로 갈아입습니다.<br> 목걸이, 장신구는 착용하지 마시고, 귀중품은 접수창구에 보관하시기 바랍니다.</p>
+										</td>
+									</tr>
+									<tr>
+										<th class="row s">STEP<strong>04</strong></th>
+										<td>
+											<h6>검진진행</h6>
+											<p>탈의 후 검사 진행순서에 의해 검사를 진행합니다.</p>
+										</td>
+									</tr>
+									<tr>
+										<th class="row s">STEP<strong>05</strong></th>
+										<td>
+											<h6>수납/귀가</h6>
+											<p>건진비용은 현금 또는 신용카드로수납이 가능합니다. <br> 검사를 마친 후, 식사 및 간단한 간식을 제공합니다. </p>
+										</td>
+									</tr>
+									<tr>
+										<th class="row s">STEP<strong>06</strong></th>
+										<td>
+											<h6>결과상담</h6>
+											<p>본 검진센터는 해당과 전문의가 직접 검사하며 검사후 1차 설명 합니다. <br> 검진 결과는 방문상담, 전화상담, E-Mail, 우편발송 등 원하시는 방법으로 제공합니다. <br> 검진 결과는 1주일 정도 소요됩니다. (우편 발송시엔 2주일 정도) <br> 진단결과 질환을 발견할 경우 해당 진료과 전문의와 연계하여 드립니다. </p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="content-section">
+					<h5 class="content-tit">건강검진 <br>시간  및 <br>예약안내</h5>
+					<div class="text-wrap">
+						
+						<ul class="mt_0">
+							<li>평일 : 08:00 ~ 17:00</li>
+							<li>토요일 : 08:00 ~ 12:00</li>
+							<li>전화예약 : 1577 - 2299  종합건진 : 2번 연결</li>
+						</ul>
+					</div>
+				</div>
+				<div class="content-section">
+					<h5 class="content-tit">검진 전 <br> 유의사항</h5>
+					<div class="text-wrap">
+						
+						<div class="info__grey">
+							<p class="fs_18" >검진 하루 전 준비</p>
+							<ol class="dot-list fs_16 mt_10">
+								<li>검진 1주일 전부터는 과음, 과로, 과격한 운동은 자제합니다.
+								<li>검사 전일 저녁식사는 오후 7시 이전에 가볍게 하시고
+								<li>저녁 9시 이후에는 아무것도 먹지 않고 충분한 수면을 취합니다. <br>
+								- 물, 껌, 담배, 일반적인 약 모두 섭취를 금지합니다.							
+								<li>아스피린 등의 항 혈액응고 제제를 드시는 경우 예약시 미리 상담합니다.
+								<br>- 예방 목적으로 복용중이시라면 1주일 전부터 약물 복용을 금하시고 질환이 있어 치료 목적(예 : 심근경색, 협심증, 뇌졸중 등)으로 복용 중이시라면 약물중단에 대해 치료중인 주치의와 상의 합니다.</li>
+							</ol>
+						</div>
+						<span class="info-txt">※특화검진이 예약된분은 상담자의 안내에 따라 준비합니다.</span>
+					</div>
+				</div>
+				<div class="content-section">
+					<h5 class="content-tit">검진당일  <br>준비</h5>
+					<div class="text-wrap">
+						<div class="table-row type2">
+							<table>
+								<colgroup>
+									<col width="200px">
+									<col>
+								</colgroup>
+								<tbody>
+									<tr>
+										<th class="row">
+											<figure><img src="../../img/icon/i_vip_prepare_1.png" alt=""></figure>
+											<p>금식</p>
+										</th>
+										<td>
+											<ul>
+												<li>아침식사, 물, 약, 껌, 담배 등을 금합니다. (양치질은 무방합니다.)</li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<th class="row">
+											<figure><img src="../../img/icon/i_vip_prepare_2.png" alt=""></figure>
+											<p>혈압약</p>
+										</th>
+										<td>
+											<ul>
+												<li>아침 일찍 최소량의 물로 복용합니다.</li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<th class="row">
+											<figure><img src="../../img/icon/i_vip_prepare_3.png" alt=""></figure>
+											<p>가져오실 물품</p>
+										</th>
+										<td>
+											<ul>
+												<li>수진신청서, 문진표, 대변통, 객담통 (해당자)</li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<th class="row">
+											<figure><img src="../../img/icon/i_vip_prepare_4.png" alt=""></figure>
+											<p>수면내시경 <br>주의사항</p>
+										</th>
+										<td>
+											<ul>
+												<li>당일 자가운전이 불가능하오니 대중교통을 이용해 주십시오.</li>
+												<li>수면 대장 내시경은 보호자 동반이 꼭 필요합니다.</li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<th class="row">
+											<figure><img src="../../img/icon/i_vip_prepare_5.png" alt=""></figure>
+											<p>기타</p>
+										</th>
+										<td>
+											<ul>
+												<li>병원 주차장은 암센터 및 인공지능센터 주차장을 이용 합니다.</li>
+												<li>주차확인은 VIP 검진센터에서 차량등록을 해드리며 주차비용은 검진 당일 무료입니다.</li>
+												<li>건강진단 검사 일정 변경시 예정일 3일전까지 연락해 주십시오.</li>
+												<li>기타 궁금한 사항은 아래 번호로 연락 주십시오 (오전 8시 ~ 오후 5시)</li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="content-section">
+					<h5 class="content-tit">여성수진자 <br>유의사항</h5>
+					<div class="text-wrap">
+						
+						<div class="table-row type2">
+							<table>
+								<colgroup>
+									<col width="200px">
+									<col>
+								</colgroup>
+								<tbody>
+									<tr>
+										<th class="row">
+											<figure><img src="../../img/icon/i_vip_prepare_6.png" alt=""></figure>
+											<p>생리중일 경우</p>
+										</th>
+										<td>
+											<p class="lh_16">자궁경부암 검사 및 소변검사는 생리중일 경우 시행하지 않습니다. (생리 마지막일 5일후부터 가능)방사선은 태아에게 매우 위험합니다. 임신이 가능한 모든 여성고객께서는 건강진단 중 방사선 노출에 의한 태아의 위험을 피하기 위해, 자신의 생리주기를 점검하여 임신여부를 확인하시기 바랍니다.</p>
+										</td>
+									</tr>
+									<tr>
+										<th class="row">
+											<figure><img src="../../img/icon/i_vip_prepare_7.png" alt=""></figure>
+											<p>임신시  <br>유의해야 하는 <br>검사</p>
+										</th>
+										<td>
+											<p class="lh_16">유방촬영, 흉부촬영, 골밀도, CT, MRI, 자궁경부암, 내시경 검사</p>
+										</td>
+									</tr>
+									<tr>
+										<th class="row">
+											<figure><img src="../../img/icon/i_vip_prepare_8.png" alt=""></figure>
+											<p>자궁세포진 검사 <br>(자궁경부암 검사) <br>전 주의사항</p>
+										</th>
+										<td>
+											<ul>
+												<li>자궁세포진 검사는 여성에게 가장 많은 자궁경부암을 조기 진단하는 검사로서, 질 내에 질경을 넣어 세포채취용 솔로 자궁경부의 세포를 채취하여 실시합니다.</li>
+												<li>검사 전 24시간 내에 부부관계, 질정, 크림 사용을 금하십시오.</li>
+												<li>질세척은 피하십시오</li>
+												<li>미혼인 여성은 검진전 상담하시기 바랍니다.</li>
+
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<th class="row">
+											<figure><img src="../../img/icon/i_vip_prepare_9.png" alt=""></figure>
+											<p>기타 유의사항</p>
+										</th>
+										<td>
+											<ul>
+												<li>검사당일 짙은 화장은 피해주시고 머리가 긴 분은 X-Ray 촬영시 흉부에 음영이 나타날 수 있으므로 금속이 붙어있지 않은 머리끈으로 묶어 주시기 바랍니다.</li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+            </div>
+
+
+
+
+            <div class="context">
+                <div class="tab_sub">
+                    <ul>
+                        <li><a href="#tab11">예약</a></li>
+                        <li><a href="#tab12">결과</a></li>
+                        <li><a href="#tab13">기타</a></li>
+                    </ul>
+					<div id="tab11">
+						<div id="rules" class="accordion-rules">
+							<h6><span class="num">Q</span>건강검진을 받고 싶은데 예약은 어떻게 해야 하나요?</h6>
+							<div>
+								<p>검진 예약은 방문, 전화 (☎1577-2299 종합검진 : 2번 연결), 인터넷으로 예약 가능하며 받으실 분의 성함, 주민등록번호, 주소, 전화번호를 알려주시면 됩니다. </p>
+							</div>
+							<h6><span class="num">Q</span>건강검진을 예약했는데 준비물은 어떻게 수령하나요?</h6>
+							<div>
+								<p>예약 시 알려주신 주소로 준비물을 보내드립니다. 내원하시어 준비물 수령을 원하시면 가천대 길병원 암센터 13층 건강증진센터로 내원하시면 됩니다.</p>
+							</div>
+							<h6><span class="num">Q</span>건강검진 금액이 할인되는 경우는 무엇이 있나요?</h6>
+							<div>
+								<p>2년차부터 연차 할인이 적용되며, 부부가 같은 날 검진 비용을 결제하시면 기본검진 금액의 10%를 할인하여 드립니다.( 단, 중복할인은 적용되지 않습니다.)</p>
+							</div>
+							<h6><span class="num">Q</span>검진 전에 복용하면 안 되는 약은 무엇인가요?</h6>
+							<div>
+								<p>당뇨병으로 인슐린 주사 또는 약을 복용하고 계신 분은 검진 전 금식하는 동안 중단하셔야 됩니다. 금식으로 인해 저혈당 증상이 나타날 수 있습니다. 고혈압, 고지혈증 약물 중 아스피린과 같은 항응고제나 혈전용해제등의 약을 복용하시는 분은 의료진과 상담 후 가능 유무에 따라 1주전부터 약을 중단하셔야하며, 고혈압 약은 검진당일 오전 6시에 소량의 물과 함께 복용하여 주십시오. 기타 약을 복용 중이신 분은 가급적 검진 하루 전부터 복용을 중단하시면 됩니다. </p>
+							</div>
+							<h6><span class="num">Q</span>위 검사 중에 위장조영검사와 위내시경 검서, 어떤 차이가 있나요?</h6>
+							<div>
+								<p>위장조영검사는 조영제를 복용한 후 X선으로 촬영을 하는 검사로 관의 삽입 없이 위장관을 검사할 수 있습니다. 위내시경검사는 내시경 관을 구강으로 삽입하여 식도, 위, 십이지장을 육안으로 직접 확인할 수 있으며 병변이 확인되면 바로 조직검사나 정밀검사를 시행할 수 있습니다. </p>
+							</div>
+							<h6><span class="num">Q</span>임신 중인데 건강검진 받을 수 있나요?</h6>
+							<div>
+								<p>검진은 가능하지만, 검진 중 방사선 노출은 태아에게 영향을 줄 수 있으므로 유방촬영, 흉부촬영, 골밀도검사, 위장조영검사, CT 촬영 등의 방사선검사와 부인과검사는 피하셔야 합니다</p>
+							</div>
+							<h6><span class="num">Q</span>수면내시경과 일반내시경 검사 어떤 차이가 있나요?</h6>
+							<div>
+								<p>검사 시행방법은 같으나 수면 내시경은 수면유도제를 투여하여 수면 상태에서 내시경 검사를 진행함으로서 일반내시경보다 편안하게 검사를 받으실 수 있습니다. </p>
+							</div>
+							<h6><span class="num">Q</span>건강검진을 한 가지 항목이나 두 가지 항목 정도만 받아 볼 수 있나요?</h6>
+							<div>
+								<p>건강검진은 기본검진부터 시행이 가능합니다. 개인의 증상, 가족력, 과거력에 맞춰 기본검진 외에 더 정밀한 검사를 원하시면 추가검진으로 필요한 검사를 시행 하실 수 있습니다. 부분적인 검사만 원하신다면 외래진료 후에 검사 하실 수 있습니다. </p>
+							</div>
+							<h6><span class="num">Q</span>미혼 여성입니다. 유방검사를 받고 싶은데 가능한가요?</h6>
+							<div>
+								<p>유방 검사는 유방 초음파검사와 유방 X-선 촬영검사가 있습니다. 35세 미만,임신가능성 있는 여성의 경우 방사능의 노출을 고려하여 유방초음파 검사를 권유합니다. </p>
+							</div>
+							<h6><span class="num">Q</span>미혼 여성입니다. 자궁과 질 검사를 받고 싶은데 어떤 검사를 받아야할까요?</h6>
+							<div>
+								<p>성 경험이 없는 미혼 여성의 경우 자궁세포진 검사는 불가능하며, 자궁초음파는 복부나 항문을 통해 검사가 가능합니다. 성경험이 있다면 자궁 세포진검사를 시행할 수 있으며 자궁초음파도 질을 통해서 시행할 수 있습니다. 상담간호사와의 상담을 통해 진행여부를 상의하시면 됩니다. </p>
+							</div>
+							<h6><span class="num">Q</span>혈액 검사로 모든 암 검사가 가능한가요?</h6>
+							<div>
+								<p>☞ 혈액검사를 통하여 종양의 선별, 진단, 경과예측을 위한 ‘종양표지자’ 검사를 시행하고 있습니다. 모든 암의 유무를 나타내는 것은 아니며 암의 정확한 진단을 위해서는 종양표지자 뿐만 아니라 영상검사(CT, MRI, PET등)과 조직검사를 조합하여 해석해야 합니다.</p>
+								<ul>
+									<li>-AFP : 간암 및 생식 세포 종양의 선별 검사 및 치료 판정을 위한 종양표지자 검사</li>
+									<li>-CEA : 대장암과 췌장암 및 위암 판정을 위한 종양표지자 검사</li>
+									<li>-CA 19-9 : 췌장암과 담낭 담관암 및 기타 예후 판정을 위한 종양표지자 검사</li>
+									<li>-PSA : 전립선암의 선별검사 및 치료판정을 위한 종양표지자 검사</li>
+									<li>-CA 125 : 난소암과 자궁내막 암 및 양성율이 가장 큰 종양표지자 검사</li>
+									<li>-CA 15-3 : 유방암 종양표지자 검사</li>
+									<li>-SCC : 자궁 편평 상피암 종양표지자 검사 </li>
+
+								</ul>
+							</div>
+							<h6><span class="num">Q</span>대장내시경 시 용종이 발견되면 어떻게 하나요?</h6>
+							<div>
+								<p>용종이 발견되면 용종제거시술이 바로 가능하며 수면대장내시경 시 보호자 동의하에 시술이 진행됩니다. </p>
+							</div>
+						</div>
+					</div>
+					<div id="tab12">
+					
+						<div id="rules2" class="accordion-rules">
+							<h6><span class="num">Q</span>건강검진 후에 결과는 어떻게 알 수 있나요?</h6>
+							<div>
+								<p>건강검진 결과는 약 7일에서 검사항목에 따라 10일 정도 소요됩니다. 방문상담으로 검진결과를 확인하실 수 있으며 방문이 어려우실 경우 전화상담이나 우편발송도 가능합니다. (단, 우편발송은 도착까지 5~7일정도 소요됩니다.) </p>
+							</div>
+							<h6><span class="num">Q</span>결과지는 우편으로 받고 나서 추후에 전화 또는 방문상담이 가능한가요?</h6>
+							<div>
+								<p>가능합니다. 결과지를 받으신 후 전화 또는 방문상담을 원하시면 ☎1577-2299로 연락하시어 상담날짜를 예약하실 수 있습니다. </p>
+							</div>
+							<h6><span class="num">Q</span>결과지를 받았는데 이상소견으로 진료를 보고 싶습니다. 어떻게 해야하나요?</h6>
+							<div>
+								<p>☎1577-2299 로 연락주시면 검진결과의 이상소견에 따라 진료과로 연결해 드립니다.</p>
+							</div>
+							<h6><span class="num">Q</span>결과지를 영문으로 받을 수 있나요?</h6>
+							<div>
+								<p>결과상담을 예약 하실 때에 미리 말씀해주시면 가능합니다. </p>
+							</div>
+
+						</div>
+					</div>
+					<div id="tab13">
+					
+						<div id="rules3" class="accordion-rules">
+							<h6><span class="num">Q</span>검사당일에 대변을 제출하지 못했습니다. 어떻게 해야 하나요?</h6>
+							<div>
+								<p>1~2개월 내로 건강증진센터로 직접 가져다주시면 됩니다. 검사 결과는 전화 또는 우편으로 알려드립니다. </p>
+							</div>
+							<h6><span class="num">Q</span>검사당일에 생리중이라 소변검사와 부인과검사를 못했습니다. 어떻게 해야 하나요?</h6>
+							<div>
+								<p>생리 종료 5일 후부터 가능합니다. ☎1577-2299로 추가 검사일을 예약하시고 재방문하시면 됩니다. </p>
+							</div>
+							<h6><span class="num">Q</span>검사당일 주차는 무료인가요?</h6>
+							<div>
+								<p>주차권은 건강증진센터에서 발급해 드리며 검사당일 무료입니다. 병원주차장은 암센터 지하 주차장을 이용하시면 됩니다. </p>
+							</div>
+							<h6><span class="num">Q</span>건강검진 비용을 미리 수납하고 싶습니다. 어떻게 해야 하나요?</h6>
+							<div>
+								<p>일반적으로 비용수납은 검진 당일 이루어지나 미리 수납을 원하실 경우 카드결제는 직접 방문, 현금결제는 직접방문 또는 무통장 입금으로 해주시면 됩니다. <br> 자세한 문의는 ☎1577-2299 로 연락주시기 바랍니다. </p>
+							</div>
+						</div>
+					</div>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+
+</div>
+<script src="../../js/ui.js"></script>
+<script >
+
+$(function() {
+    $( "#rules, #rules2, #rules3" ).accordion({
+      heightStyle: "content"
+    });
+});
+</script>
+</body>
+</html>

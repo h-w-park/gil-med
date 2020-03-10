@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- Scripts -->
+    <script src="../../js/jquery-2.2.3.min.js"></script>
+    <script src="../../js/jquery-ui.js"></script>
+</head>
+<body>
+<div class="wrap">
+
+    <div class="content">
+        <div class="section">
+            <div class="title">
+                <h3 class="page-tit">	교육수련부</h3>
+               <p class="page-tit__desc">호스피스 / 완화의료 전문가들과 함께 환자와 가족의 삶의 질을 향상시켜드립니다 .</p>
+            </div>
+
+            <ul class="tab">
+                <li><a href="gp011001.html">소개</a></li>
+                <li><a href="gp011002.html">인사말</a></li>
+                <li><a href="gp011003.html">조직도</a></li>
+                <li><a href="gp011004.html" class="on">의료진 현황</a></li>
+            </ul>
+
+           
+            
+            <div class="context introduce-box">
+                <div class="tab_sub">
+                    <ul>
+                        <li><a href="#doc1">과별 전문의</a></li>
+                        <li><a href="#doc2">출신 학교별<br>전문의</a></li>
+                    </ul>
+                    <div id="doc1">     
+					
+						<div class="content-section">
+							<h5 class="content-tit">과별 전문의 및<br>전공의 현황</h5>
+							<div class="text-wrap">
+								 <div class="table-col mt_0">
+								<table>
+									<thead>
+										<tr>
+											<th rowspan="2">과별</th>
+											<th rowspan="2">전문의</th>
+											<th colspan="5">전공의 </th>
+											<th rowspan="2">인턴</th>
+											<th rowspan="2">총계</th>
+										</tr>
+										<tr>
+											<th>1년차 </th>
+											<th>2년차 </th>
+											<th>3년차 </th>
+											<th>4년차</th>
+											<th>계</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>내과</td> 
+											<td>76</td>
+											<td>11</td>
+											<td>8</td>
+											<td>8</td>
+											<td>8</td>
+											<td>35</td>
+											<td></td>
+											<td></td>
+											
+										</tr>
+										<tr>
+											<td>소아청소년과</td> 
+											<td>15</td>
+											<td>4</td>
+											<td>2</td>
+											<td>3</td>
+											<td>4</td>
+											<td>13</td>
+											<td></td>
+											<td></td>
+											
+										</tr>
+										<tr>
+											<td>신경과</td> 
+											<td>11</td>
+											<td>2</td>
+											<td>2</td>
+											<td>1</td>
+											<td>1</td>
+											<td>6</td>
+											<td></td>
+											<td></td>
+											
+										</tr>
+										<tr>
+											<td> 정신건강의학과</td> 
+											
+											<td>8</td>
+											<td>1</td>
+											<td>1</td>
+											<td>1</td>
+											<td>1</td>
+											<td>4</td>
+											<td></td>
+											<td></td>
+										</tr>
+										<tr>
+											<td>외과</td> 
+											
+											<td>4</td>
+											<td>0</td>
+											<td>1</td>
+											<td>1</td>
+											<td>1</td>
+											<td>3</td>
+											<td></td>
+											<td></td>
+											
+										</tr>
+										<tr>
+											<td> 흉부외과</td> 
+											
+											<td>9</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td></td>
+											<td></td>
+											
+										</tr>
+										<tr>
+											<td> 정형외과</td> 
+											
+											<td>15</td>
+											<td>4</td>
+											<td>4</td>
+											<td>4</td>
+											<td>4</td>
+											<td>15</td>
+											<td></td>
+											<td></td>
+											
+										</tr>
+										<tr>
+											<td> 신경외과</td> 
+											
+											<td>16</td>
+											<td>2</td>
+											<td>2</td>
+											<td>2</td>
+											<td>0</td>
+											<td>6</td>
+											<td></td>
+											<td></td>
+											
+										</tr>
+										<tr>
+											<td> 성형외과</td> 
+											
+											<td>4</td>
+											<td>1</td>
+											<td>1</td>
+											<td>0</td>
+											<td>1</td>
+											<td>6</td>
+											<td></td>
+											<td></td>
+											
+										</tr>
+										<tr>
+											<td> 산부인과</td> 
+											
+											<td>10</td>
+											<td>2</td>
+											<td>0</td>
+											<td>4</td>
+											<td>4</td>
+											<td>3</td>
+											<td></td>
+											<td></td>
+											
+										</tr>
+										<tr>
+											<td>안과</td> 
+											
+											<td>9</td>
+											<td>2</td>
+											<td>1</td>
+											<td>2</td>
+											<td>1</td>
+											<td>10</td>
+											<td></td>
+											<td></td>
+											
+										</tr>
+										<tr>
+											<td> 이비인후과</td> 
+											
+											<td>9</td>
+											<td>2</td>
+											<td>2</td>
+											<td>2</td>
+											<td>6</td>
+											<td></td>
+											<td></td>
+											<td></td>
+											
+										</tr>
+										<tr>
+											<td> 비뇨기과</td> 
+											
+											<td>9</td>
+											<td>1</td>
+											<td>1</td>
+											<td>0</td>
+											<td>0</td>
+											<td>3</td>
+											<td></td>
+											<td></td>
+											
+										</tr>
+										<tr>
+											<td> 재활의학과</td> 
+											
+											<td>3</td>
+											<td>1</td>
+											<td>1</td>
+											<td>1</td>
+											<td>1</td>
+											<td>10</td>
+											<td></td>
+											<td></td>
+											
+										</tr>
+										<tr>
+											<td> 마취통증의학과</td> 
+											
+											<td>13</td>
+											<td>2</td>
+											<td>2</td>
+											<td>2</td>
+											<td>2</td>
+											<td>6</td>
+											<td></td>
+											<td></td>
+											
+										</tr>
+										<tr>
+											<td>영상의학과</td> 
+											
+											<td>24</td>
+											<td>2</td>
+											<td>2</td>
+											<td>2</td>
+											<td>2</td>
+											<td>8</td>
+											<td></td>
+											<td></td>
+											
+										</tr>
+										<tr>
+											<td> 방사선종양학과</td> 
+											
+											<td>4</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td></td>
+											<td></td>
+											
+										</tr>
+										<tr>
+											<td> 진단검사의학과</td> 
+											
+											<td>5</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>1</td>
+											<td>1</td>
+											<td></td>
+											<td></td>
+											
+										</tr>
+										<tr>
+											<td>병리과</td> 
+											
+											<td>10</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td></td>
+											<td></td>
+											
+										</tr>
+										<tr>
+											<td> 가정의학과</td> 
+											
+											<td>5</td>
+											<td>1</td>
+											<td>4</td>
+											<td>4</td>
+											<td>0</td>
+											<td>9</td>
+											<td></td>
+											<td></td>
+											
+										</tr>
+										<tr>
+											<td>핵의학과 </td> 
+											<td>3</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td></td>
+											<td></td>
+											
+										</tr>
+										<tr>
+											<td>건강증진센터 </td> 
+											<td>7</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td></td>
+											<td></td>
+											
+										</tr>
+										<tr>
+											<td> 응급의학과 </td> 
+											<td>14</td>
+											<td>5</td>
+											<td>4</td>
+											<td>5</td>
+											<td>5</td>
+											<td>19</td>
+											<td></td>
+											<td></td>
+											
+										</tr>
+										<tr>
+											<td>직업환경의학과 </td> 
+											<td>3</td>
+											<td>1</td>
+											<td>1</td>
+											<td>1</td>
+											<td>1</td>
+											<td>4</td>
+											<td></td>
+											<td></td>
+											
+										</tr>
+										<tr>
+											<td>치과  </td> 
+											<td>0</td>
+											<td>2</td>
+											<td>2</td>
+											<td>3</td>
+											<td>0</td>
+											<td>7</td>
+											<td>4</td>
+											<td></td>
+											
+										</tr>
+										<tr>
+											<td>인턴 </td> 
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td>50</td>
+											<td></td>
+											
+										</tr>
+										<tr>
+											<td><strong>합계 </strong></td> 
+											<td><strong>320</strong></td>
+											<td><strong>51</strong></td>
+											<td><strong>42</strong></td>
+											<td><strong>50</strong></td>
+											<td><strong>42</strong></td>
+											<td><strong>185</strong></td>
+											<td><strong>54</strong></td>
+											<td><strong>586</strong></td>
+											
+										</tr>
+									</tbody>
+								</table>
+							  </div>
+							</div>
+						</div>
+                     
+                    </div>
+                    <div id="doc2">    
+					
+						<div class="content-section">
+							<h5 class="content-tit">과별 전문의 및<br>전공의 현황</h5>
+							<div class="text-wrap">
+								<div class="table-col mt_0">
+								<p class="ta_r">2019. 9. 1 현재</p>
+								<table>
+									<thead>
+										<tr>
+											<th>학교명</th>
+											<th>전문의</th>
+											<th>레지던트</th>
+											<th>인턴</th>
+										</tr>
+									</thead>
+									<tbody>
+										
+										<tr>
+											<td>가천의대</td>
+											<td>54</td>
+											<td>96</td>
+											<td>29</td>
+										</tr>
+										
+										<tr>
+											<td>가톨릭의대</td>
+											<td>1</td>
+											<td>1</td>
+											<td></td>
+										</tr>
+										
+										<tr>
+											<td>가톨릭관동</td>
+											<td>3</td>
+											<td>8</td>
+											<td>3</td>
+										</tr>
+										<tr>
+											<td>강원의대</td>
+											<td>2</td>
+											<td></td>
+											<td></td>
+										</tr>
+										
+										<tr>
+											<td>건국의대</td>
+											<td>4</td>
+											<td></td>
+											<td></td>
+										</tr>
+										
+										<tr>
+											<td>건양의대</td>
+											<td>2</td>
+											<td></td>
+											<td></td>
+										</tr>
+										
+										<tr>
+											<td>경북의대</td>
+											<td>4</td>
+											<td>5</td>
+											<td>1</td>
+										</tr>
+										
+										<tr>
+											<td>경상의대</td>
+											<td>3</td>
+											<td>12</td>
+											<td>6</td>
+										</tr>
+										
+										<tr>
+											<td>경희의대</td>
+											<td>13</td>
+											<td>1</td>
+											<td></td>
+										</tr>
+										
+										<tr>
+											<td>계명의대</td>
+											<td>3</td>
+											<td>2</td>
+											<td></td>
+										</tr>
+										
+										<tr>
+											<td>고려의대</td>
+											<td>32</td>
+											<td>1</td>
+											<td></td>
+										</tr>
+										
+										<tr>
+											<td>고신의대</td>
+											<td>1</td>
+											<td>2</td>
+											<td></td>
+										</tr>
+										
+										<tr>
+											<td>단국의대</td>
+											<td>1</td>
+											<td></td>
+											<td></td>
+										</tr>
+										
+										<tr>
+											<td>동국의대</td>
+											<td>3</td>
+											<td>1</td>
+											<td></td>
+										</tr>
+										
+										<tr>
+											<td>동아의대</td>
+											<td></td>
+											<td>3</td>
+											<td>1</td>
+										</tr>
+										
+										<tr>
+											<td>부산의대</td>
+											<td>8</td>
+											<td>8</td>
+											<td>1</td>
+										</tr>
+										
+										<tr>
+											<td>서남의대</td>
+											<td>1</td>
+											<td>4</td>
+											<td></td>
+										</tr>
+										
+										<tr>
+											<td>서울의대</td>
+											<td>49</td>
+											<td></td>
+											<td></td>
+										</tr>
+										
+										<tr>
+											<td>성균관의대</td>
+											<td>1</td>
+											<td>1</td>
+											<td></td>
+										</tr>
+										
+										<tr>
+											<td>순천향의대</td>
+											<td>6</td>
+											<td>1</td>
+											<td></td>
+										</tr>
+										
+										<tr>
+											<td>아주의대</td>
+											<td>1</td>
+											<td></td>
+											<td></td>
+										</tr>
+										
+										<tr>
+											<td>연세원주의대</td>
+											<td>6</td>
+											<td>1</td>
+											<td>1</td>
+										</tr>
+										
+										<tr>
+											<td>연세의대</td>
+											<td>26</td>
+											<td></td>
+											<td></td>
+										</tr>
+										
+										<tr>
+											<td>영남의대</td>
+											<td>4</td>
+											<td>1</td>
+											<td></td>
+										</tr>
+										
+										<tr>
+											<td>울산의대</td>
+											<td>1</td>
+											<td></td>
+											<td></td>
+										</tr>
+										
+										<tr>
+											<td>원광의대</td>
+											<td>2</td>
+											<td>5</td>
+											<td>3</td>
+										</tr>
+										
+										<tr>
+											<td>이화의대</td>
+											<td>10</td>
+											<td></td>
+											<td></td>
+										</tr>
+										
+										<tr>
+											<td>인제의대</td>
+											<td>2</td>
+											<td></td>
+											<td></td>
+										</tr>
+										
+										<tr>
+											<td>인하의대</td>
+											<td>7</td>
+											<td>3</td>
+											<td></td>
+										</tr>
+										
+										<tr>
+											<td>전남의대</td>
+											<td>5</td>
+											<td>1</td>
+											<td></td>
+										</tr>
+										
+										<tr>
+											<td>전북의대</td>
+											<td>9</td>
+											<td>6</td>
+											<td>1</td>
+										</tr>
+										
+										<tr>
+											<td>제주의대</td>
+											<td>2</td>
+											<td></td>
+											<td></td>
+										</tr>
+										
+										<tr>
+											<td>조선의대</td>
+											<td>12</td>
+											<td>9</td>
+											<td>2</td>
+										</tr>
+										
+										<tr>
+											<td>중앙의대</td>
+											<td>4</td>
+											<td>2</td>
+											<td></td>
+										</tr>
+										
+										<tr>
+											<td>충남의대</td>
+											<td>5</td>
+											<td>3</td>
+											<td>1</td>
+										</tr>
+										
+										<tr>
+											<td>충북의대</td>
+											<td>3</td>
+											<td>1</td>
+											<td></td>
+										</tr>
+										
+										<tr>
+											<td>한림의대</td>
+											<td>4</td>
+											<td></td>
+											<td></td>
+										</tr>
+										
+										<tr>
+											<td>한양의대</td>
+											<td>20</td>
+											<td></td>
+											<td></td>
+										</tr>
+
+									</tbody>
+								</table>
+							  </div>
+							</div>
+						</div> 
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script>
+$(function() {
+	$(".tab_sub_dep2").tabs();
+});
+</script>
+<script src="../../js/ui.js"></script>
+</body>
+</html>

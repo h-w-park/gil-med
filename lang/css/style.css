@@ -19,7 +19,7 @@
 .blick-txt + .blick-txt{margin-top:10px;}
 
 .dot-list > li{line-height:24px;font-size:18px;color:#333;padding-left:13px;position:relative; margin-bottom: 8px;}
-.dot-list > li:after{width:3px;height:3px;background:#999;position:absolute;top:11px;left:0;content:"";}
+.dot-list > li:before{width:3px;height:3px;background:#999;position:absolute;top:11px;left:0;content:"";}
 .dot-list.fs_16 > li {font-size:16px;}
 
 .dot-list + .info-txt{margin-top:15px;}
@@ -362,9 +362,10 @@ select::-ms-expand{display:none;}
 .doctor-list > li .thumb{width:202px;height:272px;overflow:hidden;display:inline-block;}
 .doctor-list > li .infomation {height:272px;display:inline-block;margin-left:40px;font-size:16px;box-sizing:border-box;padding-top:45px;}
 .doctor-list > li .infomation ul {margin-top: 24px;}
-.doctor-list > li .infomation ul li {font-size:16px;}
-.doctor-list > li .infomation ul li span {width:130px; float: left;}
-.doctor-list > li .infomation ul li p {font-size:16px;width: calc(100% - 160px); float: right;}
+.doctor-list > li .infomation ul li:after {content:""; clear: both;display: block; float: none;}
+.doctor-list > li .infomation ul li {font-size:13px;}
+.doctor-list > li .infomation ul li strong {width:140px; float: left;}
+.doctor-list > li .infomation ul li p {font-size:14px;width: calc(100% - 160px); float: right;}
 .doctor-list > li .infomation .name{font-size:28px;color:#333;line-height:1;font-weight:700;}
 
 .tab_checkup:after {content:""; clear: both;display: block; float: none;}

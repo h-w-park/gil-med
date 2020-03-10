@@ -269,13 +269,30 @@ function doc(){
 
 $(document).ready(function() {
 
+
+	$('#banner').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: true,
+		dots: true, 
+		customPaging : function(slider, i) {
+		var thumb = $(slider.$slides[i]).data();
+		i = i + 1;
+		return  i + ' / ' + slider.slideCount;
+        },
+		//centerMode: false,
+		draggable: false
+	});
+
 	headerOn();
 	popup();
 
 	career();
 
 	fold();
-	doc();
+	//doc();
+
+
 
 
 	$(".mScr").mCustomScrollbar({
