@@ -35,6 +35,14 @@ ol + .info-txt,
 
 .border-box{border:1px solid #ddd;}
 
+
+.etiq_info dd{float:left; width:calc(33.333% - 16px);  margin-right:24px; background: #f9f9f9; height: 128px; position: relative;}
+.etiq_info dd:last-child {margin-right:0px;}
+.etiq_info dd figure {width: 72px; height: 72px; position: absolute;top:50%; margin-top: -36px; left:34px;}
+.etiq_info dd > div {display: table; height:72px; position: absolute;top:50%; margin-top: -36px;left:120px;}
+.etiq_info dd > div span {display: table-cell; vertical-align: middle;  font-size:18px; font-weight: 400; line-height: 1.6;}
+
+
 /* color */
 .txt-co-red{color:#ff4949;}
 .txt-co-blue{color:#004e96;}
@@ -1674,3 +1682,6 @@ ul.light-list  li {font-size:17px; color: #888;}
 #banner .slick-dots li.slick-active {display: block; color: #fff;}  
 .dot-title {font-size:18px; line-height: 26px; color: #333; font-weight: 400; margin-bottom: 10px; padding-left: 14px; position: relative;}
 .dot-title:after  {width:3px;height:3px;background:#999;position:absolute;top:50%;margin-top: -1px;left:0;content:"";}
+
+
+
