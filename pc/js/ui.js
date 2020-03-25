@@ -19,7 +19,7 @@ function history(){
 		$(content).animate({
 			top: -position3
 		}, 500 );
-	});  
+	});
 }
 
 function achieve(){
@@ -136,7 +136,7 @@ function headerOn(){
 		});
 	});
 
-	$(".gnb_wp").hover(function(){ 
+	$(".gnb_wp").hover(function(){
 	}, function(){
 		$( this ).animate({
 			height: "0"
@@ -148,26 +148,26 @@ function headerOn(){
 	$(".nav_wp > ul").hover(function(){
 		var num = $(this).index();
 		//console.log(num + "번째");
-		switch (num) { 
-			case 0: 
+		switch (num) {
+			case 0:
 				$(".nav ul li:nth-child(1) a").addClass("active");
 				break;
-			case 1: 
+			case 1:
 				$(".nav ul li:nth-child(2) a").addClass("active");
 				break;
-			case 2: 
+			case 2:
 				$(".nav ul li:nth-child(3) a").addClass("active");
-				break;		
-			case 3: 
+				break;
+			case 3:
 				$(".nav ul li:nth-child(4) a").addClass("active");
 				break;
-			case 4: 
+			case 4:
 				$(".nav ul li:nth-child(5) a").addClass("active");
 				break;
 			default:
 				//alert('Nobody Wins!');
 		}
-	}, function(){ 
+	}, function(){
 		$(".nav ul li a").removeClass("active");
 			//$(".gnb_wp").animate({height: "0"});
 	});
@@ -183,7 +183,7 @@ function scr(){
 	var position1 = $(".reserve-context").offset().top;
 	var position2 = position1 - 25;
 	var content = $("html, body");
-	setTimeout(function(){ 
+	setTimeout(function(){
 
 		$(content).animate({
 			scrollTop: position2
@@ -221,13 +221,13 @@ function career(){
 }
 
 function doc(){
-	
+
 	var content = $("html, body");
-	setTimeout(function(){ 
-		$(content).animate({
-			scrollTop: 0
-		}, 500 );
-	}, 100);
+	// setTimeout(function(){
+	// 	$(content).animate({
+	// 		scrollTop: 0
+	// 	}, 500 );
+	// }, 100);
 
 	$(window).scroll(function () {
 		var here = $(".doctor-profile"),
@@ -258,9 +258,14 @@ function doc(){
 		body.css({'overflow-x' : 'hidden'});
 
 		if ($this.scrollTop() < 856) {
-		   $(doc).removeClass('here');
+		   doc.removeClass('here');
+		}else if($this.scrollTop() > 2236){
+			doc.stop().fadeOut(50);
+		}else if($this.scrollTop() < 2237 || $this.scrollTop() > 857){
+			doc.stop().fadeIn("fast");
+			doc.addClass('here');
 		} else {
-			$(doc).addClass('here');
+			//$(doc).addClass('here');
 		}
 
 	});
@@ -275,7 +280,7 @@ $(document).ready(function() {
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		arrows: true,
-		dots: true, 
+		dots: true,
 		customPaging : function(slider, i) {
 		var thumb = $(slider.$slides[i]).data();
 		i = i + 1;
@@ -290,7 +295,7 @@ $(document).ready(function() {
 
 	career();
 
-	//doc();
+	doc();
 
 
 
@@ -304,10 +309,10 @@ $(document).ready(function() {
         $(this).toggleClass('on');
     })
 
-		
+
 	$(".tab_sub, .tab_sub_dep2").tabs();
 
-   
+
     var dateFormat = "yy-mm-dd",
       from = $( "#datepicker_from" )
         .datepicker({
@@ -338,7 +343,7 @@ $(document).ready(function() {
       .on( "change", function() {
         from.datepicker( "option", "maxDate", getDate( this ) );
       });
- 
+
     function getDate( element ) {
       var date;
       try {
@@ -346,7 +351,7 @@ $(document).ready(function() {
       } catch( error ) {
         date = null;
       }
- 
+
       return date;
     }
 
