@@ -1,0 +1,159 @@
+<div class="inner">
+<div class="tab__cln center">
+<ul>
+	<li>
+	<h3>가천뇌건강센터</h3>
+
+	<figure class="cln1">&nbsp;</figure>
+
+	<div class="info"><a href="-70" rel="external"><span>의료진</span></a> <a href="" rel="external"><span>예약</span></a> <a href="-264" rel="external"><span>위치</span></a></div>
+	</li>
+	<li>
+	<h3>장애인구강진료센터</h3>
+
+	<figure class="cln2">&nbsp;</figure>
+
+	<div class="info"><a href="-71" rel="external"><span>의료진</span></a> <a href="" rel="external"><span>예약</span></a> <a href="-268" rel="external"><span>위치</span></a></div>
+	</li>
+	<li>
+	<h3>척추센터</h3>
+
+	<figure class="cln3">&nbsp;</figure>
+
+	<div class="info"><a href="-72" rel="external"><span>의료진</span></a> <a href="" rel="external"><span>예약</span></a> <a href="-271" rel="external"><span>위치</span></a></div>
+	</li>
+	<li>
+	<h3>통증센터</h3>
+
+	<figure class="cln4">&nbsp;</figure>
+
+	<div class="info"><a href="-73" rel="external"><span>의료진</span></a> <a href="" rel="external"><span>예약</span></a> <a href="-274" rel="external"><span>위치</span></a></div>
+	</li>
+	<li>
+	<h3>폐센터</h3>
+
+	<figure class="cln5">&nbsp;</figure>
+
+	<div class="info"><a href="-74" rel="external"><span>의료진</span></a> <a href="" rel="external"><span>예약</span></a> <a href="-277" rel="external"><span>위치</span></a></div>
+	</li>
+	<li>
+	<h3>VIP 건강증진센터</h3>
+
+	<figure class="cln6">&nbsp;</figure>
+
+	<div class="info"><a href="-75" rel="external"><span>자세히</span></a></div>
+	</li>
+	<li>
+	<h3>국민검진센터</h3>
+
+	<figure class="cln7">&nbsp;</figure>
+
+	<div class="info"><a href="-76" rel="external"><span>자세히</span></a></div>
+	</li>
+	<li>
+	<h3>국제의료센터</h3>
+
+	<figure class="cln8">&nbsp;</figure>
+
+	<div class="info"><a href="-77" rel="external" target="_blank"><span>자세히</span></a></div>
+	</li>
+	<li>
+	<h3>권역외상센터</h3>
+
+	<figure class="cln9">&nbsp;</figure>
+
+	<div class="info"><a href="-78" rel="external" target="_blank"><span>자세히</span></a></div>
+	</li>
+	<li>
+	<h3>뇌종양센터</h3>
+
+	<figure class="cln10">&nbsp;</figure>
+
+	<div class="info"><a href="-79" rel="external"><span>자세히</span></a></div>
+	</li>
+	<li>
+	<h3>소화기센터</h3>
+
+	<figure class="cln11">&nbsp;</figure>
+
+	<div class="info"><a href="-80" rel="external"><span>자세히</span></a></div>
+	</li>
+	<li>
+	<h3>심장혈관센터</h3>
+
+	<figure class="cln12">&nbsp;</figure>
+
+	<div class="info"><a href="-81" rel="external"><span>자세히</span></a></div>
+	</li>
+	<li>
+	<h3>인천지역암센터</h3>
+
+	<figure class="cln13">&nbsp;</figure>
+
+	<div class="info"><a href="-82" rel="external" target="_blank"><span>자세히</span></a></div>
+	</li>
+	<li>
+	<h3>여성암센터</h3>
+
+	<figure class="cln14">&nbsp;</figure>
+
+	<div class="info"><a href="-83" rel="external"><span>자세히</span></a></div>
+	</li>
+	<li>
+	<h3>여성전문센터</h3>
+
+	<figure class="cln15">&nbsp;</figure>
+
+	<div class="info"><a href="-84" rel="external"><span>자세히</span></a></div>
+	</li>
+	<li>
+	<h3>완화의료센터</h3>
+
+	<figure class="cln16">&nbsp;</figure>
+
+	<div class="info"><a href="-85"  rel="external"><span>자세히</span></a></div>
+	</li>
+	<li>
+	<h3>응급의료센터</h3>
+
+	<figure class="cln17">&nbsp;</figure>
+
+	<div class="info"><a href="-86"  rel="external"><span>자세히</span></a></div>
+	</li>
+	<li>
+	<h3>인공지능암센터</h3>
+
+	<figure class="cln18">&nbsp;</figure>
+
+	<div class="info"><a href="-86" rel="external"><span>자세히</span></a></div>
+	</li>
+	<li>
+	<h3>장기이식센터</h3>
+
+	<figure class="cln19">&nbsp;</figure>
+
+	<div class="info"><a href="-87" rel="external"><span>자세히</span></a></div>
+	</li>
+	<li>
+	<h3>학습정보센터</h3>
+
+	<figure class="cln20">&nbsp;</figure>
+	<div class="info"><a href="-89"  target="_blank" rel="external"><span>자세히</span></a></div>
+	</li>
+	<li>
+	<h3>헬스 IT연구센터</h3>
+
+	<figure class="cln21">&nbsp;</figure>
+
+	<div class="info"><a href="-it-"  target="_blank" rel="external"><span>자세히</span></a></div>
+	</li>
+	<li>
+	<h3>난임·우울증상담센터</h3>
+
+	<figure class="cln22">&nbsp;</figure>
+
+	<div class="info"><a href="-413" rel="external"><span>자세히</span></a></div>
+	</li>
+</ul>
+</div>
+</div>

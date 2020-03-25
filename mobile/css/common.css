@@ -50,7 +50,6 @@
 }
 
 
-
 /* reset */
 body{font-family:Lato, "NotoSansKR", '맑은고딕', Malgun Gothic, Dotum, "돋움", verdana, sans-serif;font-size:16px; color:#666; width:100%; height:100%;letter-spacing:-1px;line-height:1.2;font-weight:300; background: #eee; overflow-x:hidden;}
 body, ul, ol, li, dt, dl, dd, div, h1, h2, h3, h4, h5, h6, p, form, fieldset, blockquote, iframe, input, object, table, tr, th, td, img{margin:0;padding:0; vertical-align:top; border:none;}
@@ -93,7 +92,7 @@ height: auto;border: 1px solid transparent; float: none;} .slick-arrow.slick-hid
 .ml_12 {margin-left: 12px  !important;}
 
 .mt_0 {margin-top: 0px !important;}
-.mt_10 {margin-top: 10px !important;}
+.mt_6 {margin-top: 0.4rem !important;}
 .mt_12 {margin-top: 0.75rem !important;}
 .mt_16 {margin-top: 1rem !important;}
 .mt_20 {margin-top:  1.25rem !important;}
@@ -139,6 +138,7 @@ height: auto;border: 1px solid transparent; float: none;} .slick-arrow.slick-hid
 
 .fs_12 {font-size:0.75rem !important;}
 .fs_13 {font-size:0.8125rem !important;}
+.fs_14 {font-size:0.875rem !important;}
 .fs_16 {font-size:1rem !important;}
 .fs_18 {font-size:1.125rem !important;}
 .fs_20 {font-size:1.25rem !important;}
@@ -167,7 +167,7 @@ height: auto;border: 1px solid transparent; float: none;} .slick-arrow.slick-hid
 .btn {display: inline-block; box-sizing:border-box; text-align: center;}
 .btnXS {height: 1.875rem; line-height: 1.875rem; min-width:50px; font-size:14px; font-weight: 600;}
 .btnS {height: 2.25rem;font-size: .75rem; line-height: 2.25rem; min-width:110px;  font-weight: 600;}
-.btnM {height: 36px; line-height: 34px; min-width:110px; font-size:0.875rem; font-weight: 600;}
+.btnM {height: 36px; line-height: 34px; min-width:110px; font-size:0.875rem; font-weight: 600; padding:0 1rem;}
 .btnL {height: 2.5rem; line-height: 2.5rem; font-size:1rem; width: 100%; font-weight: 500;}
 .btnXL {height: 3.4rem; line-height: 3.4rem; font-size:1.125rem;  width: 100%; font-weight: 400;}
 .btnXXL{height:3.438rem;line-height:3.438rem;font-size:1.125rem;width:100%;font-weight:500;}
@@ -309,8 +309,8 @@ html.modal-open {overflow-y: hidden;  }
 	.ui-datepicker-header > a.ui-datepicker-prev { -ms-transform: rotate(180deg);   transform: rotate(180deg);}
 	.ui-datepicker-header > a.ui-datepicker-next {float: right;}
 	.ui-datepicker-header > a.ui-state-disabled {background-color: #eee;}
-	.ui-datepicker-header .ui-datepicker-title {width:8.125rem; margin: 0 auto;}
-	.ui-datepicker-header .ui-datepicker-title select {background: #fff; font-size: 1rem; height: 1.875rem; line-height: 1.875rem;  border:none; margin-right: 1rem;}
+	.ui-datepicker-header .ui-datepicker-title {width:9.5rem; margin: 0 auto;}
+	.ui-datepicker-header .ui-datepicker-title select {background: #fff; font-size: 1rem; height: 1.875rem; margin-bottom: 0px;line-height: 1.875rem; width:4.75rem; border:none; margin-right: 1rem;}
 	.ui-datepicker-header .ui-datepicker-title select:last-child {margin-right: 0;}
 	.ui-datepicker-header .ui-datepicker-title select:first-child option:after {content:"년"; display: inline-block; }
 
@@ -375,14 +375,17 @@ html.modal-open {overflow-y: hidden;  }
 /* table */
 table tbody td strong {font-weight: 500; color: #000;}
 .table-must-area{text-align:right;font-size:0.875rem;margin-bottom:1rem;}
-.table-row.expand {overflow-x: auto;}
+.table-row.expand,
+.table-col.expand {overflow-x: auto;}
 .table-row > table{border-top:0.125rem solid #000;color:#333;width:100%}
 .table-row > table th,
 .table-row > table td {color:#333; border-left: 1px solid #ddd;border-bottom:1px solid #ddd;line-height: 1.6; font-size:0.75rem; font-weight: 500; text-align: center; vertical-align: middle;padding:0.5rem;}
 .table-row > table th {background:#f9f9f9;}
+.table-row > table th figure img {margin: 0 auto; width:75%;}
 .table-row > table td {}
 .table-row > table th:first-child,
 .table-row > table td:first-child {border-left: none;}
+
 .table-col > table{width:100%;}
 .table-col > table thead th{background:#f9f9f9;font-weight:500; color:#333; padding:.75rem 0; text-align: center;vertical-align:middle; font-size:0.75rem;}
 .table-col > table tbody td{text-align:center;padding:.75rem 0;vertical-align:middle;border-bottom:1px solid #ddd;font-size:0.6875rem;}
@@ -397,7 +400,8 @@ table tbody td strong {font-weight: 500; color: #000;}
 
 /* 기본리스트 */
 ul.dot-list {margin-top: 1rem;}
-ul.dot-list li {position: relative; padding-left: 0.5rem; font-size:0.8125rem; margin-bottom: 0.25rem;line-height:1.125rem; }
+ul.dot-list li {position: relative; padding-left: 0.5rem; font-size:0.8125rem; margin-bottom: 0.25rem;line-height:1.125rem; text-align: left; font-weight:400;}
+ul.dot-list li  small {font-size:0.75rem;}
 ul.dot-list li:last-child {margin-bottom: 0;}
 ul.dot-list li:before {content: '·';position: absolute; left:0; top:-1px;}
 ul.dot-list + small {font-size:0.75rem; color: #666; padding-left: 0.5rem; margin-top: 0.25rem;display: block;}
@@ -425,6 +429,11 @@ ul.dot-list + small {font-size:0.75rem; color: #666; padding-left: 0.5rem; margi
 .list__content > ul > li h4 small {color: #888; font-size:0.75rem; font-weight: 400; display: inline-block; margin-left: 0.25rem;}
 
 h3.contents__title {font-size: 1.125rem; color: #000; padding:1.75rem 0 1rem ;}
+h3.contents__title.location ul {float:none; display:block; clear:both; content:"";}
+h3.contents__title.location ul li {float: left; padding-right:; font-weight: 400;}
+h3.contents__title.location ul li:after {content: '>'; width:1.5rem; font-weight: 400;text-align: center; display: inline-block;}
+h3.contents__title.location ul li:last-child {font-weight: 600;}
+h3.contents__title.location ul li:last-child:after {display: none;padding-right: 0;}
 h4 {color: #000; padding-bottom: 0.5rem;}
 h4.contents__title {font-size:0.875rem; color: #000; padding:1.75rem 0 0.5rem ;}
 hr + h3.contents__title {padding: 0 0 1rem;}
@@ -478,10 +487,10 @@ h3.contents__title  + h4.contents__title {padding: 0 0 0.5rem;}
 
 
 .inner > .popupContents > .title {margin-left: -1rem; width: calc(100% + 2rem); background: #567b9d; padding: 1.5rem 0;}
-section > .title {padding: 2.5rem 0 2rem; height:auto; background: #567b9d;}
+section > .title {padding: 1.5rem 0 1.2rem; height:auto; background: #567b9d;}
 section > .title h2,
 .popupContents > .title h2 {text-align: left; font-size:.1.5rem; color: #fff; margin-left: 1rem; font-weight: 500;}
-section > .title p {text-align: left; font-size:.875rem; color: #fff; font-weight: 400;line-height: 1.5; min-height:1.5rem; margin-top: 0.75rem;  margin-left: 1rem;}
+section > .title p {text-align: left; font-size:.875rem; color: rgba(255,255,255,.7); font-weight: 400;line-height: 1.5; min-height:1.5rem; margin-top: 0.75rem;  margin-left: 1rem;}
 
 
 section > .title.blue{margin:0;text-align:left;padding:1.75rem 0 1.188rem;background:#004687;height:auto;border-bottom:1px solid #1a5993;}

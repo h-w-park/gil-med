@@ -1,0 +1,77 @@
+<div class="context">
+<ul class="medical-list medical02">
+	<li class="list01"><span class="tit">가천뇌건강센터</span>
+	<div class="active-menu"><a href="-70"><img alt="의료진" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span class="txt">의료진</span></a> 
+<a href=""><img alt="예약" src="/html-repositories/pc/img/icon/mdc_over_icon03.png" /><span class="txt">예약</span></a> 
+<a href="-264"><img alt="위치" src="/html-repositories/pc/img/icon/mdc_over_icon02.png" /><span class="txt">위치</span></a></div>
+	</li>
+	<li class="list02"><span class="tit">장애인구강진료센터</span>
+	<div class="active-menu"><a href="-71"><img alt="의료진" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span class="txt">의료진</span></a> 
+<a href=""><img alt="예약" src="/html-repositories/pc/img/icon/mdc_over_icon03.png" /><span class="txt">예약</span></a> 
+<a href="-268"><img alt="위치" src="/html-repositories/pc/img/icon/mdc_over_icon02.png" /><span class="txt">위치</span></a></div>
+	</li>
+	<li class="list03"><span class="tit">척추센터</span>
+	<div class="active-menu"><a href="-72"><img alt="의료진" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span class="txt">의료진</span></a> 
+<a href=""><img alt="예약" src="/html-repositories/pc/img/icon/mdc_over_icon03.png" /><span class="txt">예약</span></a> 
+<a href="-271"><img alt="위치" src="/html-repositories/pc/img/icon/mdc_over_icon02.png" /><span class="txt">위치</span></a></div>
+	</li>
+	<li class="list04"><span class="tit">통증센터</span>
+	<div class="active-menu"><a href="-73"><img alt="의료진" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span class="txt">의료진</span></a> 
+<a href=""><img alt="예약" src="/html-repositories/pc/img/icon/mdc_over_icon03.png" /><span class="txt">예약</span></a> 
+<a href="-274"><img alt="위치" src="/html-repositories/pc/img/icon/mdc_over_icon02.png" /><span class="txt">위치</span></a></div>
+	</li>
+	<li class="list05"><span class="tit">폐센터</span>
+	<div class="active-menu"><a href="-74"><img alt="의료진" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span class="txt">의료진</span></a> 
+<a href=""><img alt="예약" src="/html-repositories/pc/img/icon/mdc_over_icon03.png" /><span class="txt">예약</span></a> 
+<a href="-277"><img alt="위치" src="/html-repositories/pc/img/icon/mdc_over_icon02.png" /><span class="txt">위치</span></a></div>
+	</li>
+	<li class="list06"><span class="tit">VIP건강증진센터</span>
+	<div class="active-menu"><a href="-75"><img alt="자세히 보기" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span class="txt">자세히 보기</span></a></div>
+	</li>
+	<li class="list07"><span class="tit">국민검진센터</span>
+	<div class="active-menu"><a href="-76"><img alt="자세히 보기" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span class="txt">자세히 보기</span></a></div>
+	</li>
+	<li class="list08"><span class="tit">국제의료센터</span>
+	<div class="active-menu"><a href="-77" target="_blank"><img alt="자세히 보기" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span class="txt">자세히 보기</span></a></div>
+	</li>
+	<li class="list09"><span class="tit">권역외상센터</span>
+	<div class="active-menu"><a href="-78" target="_blank"><img alt="자세히 보기" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span class="txt">자세히 보기</span></a></div>
+	</li>
+	<li class="list10"><span class="tit">뇌종양센터</span>
+	<div class="active-menu"><a href="-79"><img alt="자세히 보기" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span class="txt">자세히 보기</span></a></div>
+	</li>
+	<li class="list11"><span class="tit">소화기센터</span>
+	<div class="active-menu"><a href="-80"><img alt="자세히 보기" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span class="txt">자세히 보기</span></a></div>
+	</li>
+	<li class="list12"><span class="tit">심장혈관센터</span>
+	<div class="active-menu"><a href="-81"><img alt="자세히 보기" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span class="txt">자세히 보기</span></a></div>
+	</li>
+	<li class="list13"><span class="tit">인천지역암센터</span>
+	<div class="active-menu"><a _blank="-82" href="-290 target="><img alt="자세히 보기" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span class="txt">자세히 보기</span></a></div>
+	</li>
+	<li class="list14"><span class="tit">여성암센터</span>
+	<div class="active-menu"><a href="-83"><img alt="자세히 보기" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span class="txt">자세히 보기</span></a></div>
+	</li>
+	<li class="list15"><span class="tit">여성전문센터</span>
+	<div class="active-menu"><a href="-84"><img alt="자세히 보기" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span class="txt">자세히 보기</span></a></div>
+	</li>
+	<li class="list16"><span class="tit">완화의료센터</span>
+	<div class="active-menu"><a href="-297"><img alt="자세히 보기" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span class="txt">자세히 보기</span></a></div>
+	</li>
+	<li class="list17"><span class="tit">응급의료센터</span>
+	<div class="active-menu"><a href="-86"><img alt="자세히 보기" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span class="txt">자세히 보기</span></a></div>
+	</li>
+	<li class="list18"><span class="tit">인공지능암센터</span>
+	<div class="active-menu"><a href="-87"><img alt="자세히 보기" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span class="txt">자세히 보기</span></a></div>
+	</li>
+	<li class="list19"><span class="tit">장기이식센터</span>
+	<div class="active-menu"><a href="-88"><img alt="자세히 보기" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span class="txt">자세히 보기</span></a></div>
+	</li>
+	<li class="list20"><span class="tit">학습정보센터</span>
+	<div class="active-menu"><a href="-89" target="_blank"><img alt="자세히 보기" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span class="txt">자세히 보기</span></a></div>
+	</li>
+	<li class="list21"><span class="tit">헬스 IT연구센터</span>
+	<div class="active-menu"><a href="-it-"><img alt="자세히 보기" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span class="txt">자세히 보기</span></a></div>
+	</li>
+</ul>
+</div>

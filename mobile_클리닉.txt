@@ -1,0 +1,84 @@
+<div class="inner">
+<div class="tab__cln">
+<ul>
+	<li>
+	<h3>갑상선클리닉</h3>
+
+	<figure class="cln1">&nbsp;</figure>
+
+	<div class="info"><a href="-90" rel="external"><span>의료진</span></a> <a href="javascript:;" rel="external"><span>예약</span></a> <a href="-313" rel="external"><span>위치</span></a></div>
+	</li>
+	<li>
+	<h3>대장항문클리닉</h3>
+
+	<figure class="cln2">&nbsp;</figure>
+
+	<div class="info"><a href="-91" rel="external"><span>의료진</span></a> <a href="javascript:;" rel="external"><span>예약</span></a> <a href="-316" rel="external"><span>위치</span></a></div>
+	</li>
+	<li>
+	<h3>부인종양클리닉</h3>
+
+	<figure class="cln3">&nbsp;</figure>
+
+	<div class="info"><a href="-92" rel="external"><span>의료진</span></a> <a href="javascript:;" rel="external"><span>예약</span></a> <a href="-319" rel="external"><span>위치</span></a></div>
+	</li>
+	<li>
+	<h3>심신클리닉</h3>
+
+	<figure class="cln3">&nbsp;</figure>
+
+	<div class="info"><a href="-93" rel="external"><span>의료진</span></a> <a href="javascript:;" rel="external"><span>예약</span></a> <a href="-322" rel="external"><span>위치</span></a></div>
+	</li>
+	<li>
+	<h3>웰니스클리닉</h3>
+
+	<figure class="cln4">&nbsp;</figure>
+
+	<div class="info"><a href="-94" rel="external"><span>의료진</span></a> <a href="javascript:;" rel="external"><span>예약</span></a> <a href="-325" rel="external"><span>위치</span></a></div>
+	</li>
+	<li>
+	<h3>유방암클리닉</h3>
+
+	<figure class="cln5">&nbsp;</figure>
+
+	<div class="info"><a href="-95" rel="external"><span>의료진</span></a> <a href="javascript:;" rel="external"><span>예약</span></a> <a href="-310" rel="external"><span>위치</span></a></div>
+	</li>
+	<li>
+	<h3>희귀/유전질환클리닉</h3>
+
+	<figure class="cln6">&nbsp;</figure>
+
+	<div class="info"><a href="106" rel="external"><span>자세히</span></a></div>
+	</li>
+	<li>
+	<h3>복막전이재발암 클리닉</h3>
+
+	<figure class="cln7">&nbsp;</figure>
+
+	<div class="info"><a href="-96" rel="external"><span>자세히</span></a></div>
+	</li>
+	<li>
+	<h3>아이바람클리닉</h3>
+
+	<figure class="cln8">&nbsp;</figure>
+
+	<div class="info"><a href="-97" rel="external"><span>자세히</span></a></div>
+	</li>
+	<li>
+	<h3>여행자클리닉</h3>
+
+	<figure class="cln9">&nbsp;</figure>
+
+	<div class="info"><a href="-98" rel="external"><span>자세히</span></a></div>
+	</li>
+	<li>
+	<h3>류마티스 면역질환 클리닉</h3>
+
+	<figure class="cln10">&nbsp;</figure>
+
+	<div class="info"><a href="-99" rel="external"><span>자세히</span></a></div>
+	</li>
+	<li>&nbsp;</li>
+</ul>
+</div>
+</div>

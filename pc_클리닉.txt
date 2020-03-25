@@ -1,0 +1,50 @@
+<div class="context">
+<ul class="medical-list medical03">
+	<li class="list01"><span class="tit">갑상선클리닉</span>
+	<div class="active-menu"><a href="-90"><img alt="의료진" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span>의료진</span></a>
+<a href="javascript:;"><img alt="예약" src="/html-repositories/pc/img/icon/mdc_over_icon03.png" /><span>예약</span></a>
+<a href="-313"><img alt="위치" src="/html-repositories/pc/img/icon/mdc_over_icon02.png" /><span>위치</span></a></div>
+	</li>
+	<li class="list02"><span class="tit">대장항문클리닉</span>
+	<div class="active-menu"><a href="-91"><img alt="의료진" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span>의료진</span></a>
+<a href="javascript:;"><img alt="예약" src="/html-repositories/pc/img/icon/mdc_over_icon03.png" /><span>예약</span></a>
+<a href="-316"><img alt="위치" src="/html-repositories/pc/img/icon/mdc_over_icon02.png" /><span>위치</span></a></div>
+	</li>
+	<li class="list03"><span class="tit">부인종양클리닉</span>
+	<div class="active-menu"><a href="-92"><img alt="의료진" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span>의료진</span></a>
+<a href="javascript:;"><img alt="예약" src="/html-repositories/pc/img/icon/mdc_over_icon03.png" /><span>예약</span></a>
+<a href="-319"><img alt="위치" src="/html-repositories/pc/img/icon/mdc_over_icon02.png" /><span>위치</span></a></div>
+	</li>
+	<li class="list04"><span class="tit">심신클리닉</span>
+	<div class="active-menu"><a href="-93"><img alt="의료진" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span>의료진</span></a>
+<a href="javascript:;"><img alt="예약" src="/html-repositories/pc/img/icon/mdc_over_icon03.png" /><span>예약</span></a>
+<a href="-322"><img alt="위치" src="/html-repositories/pc/img/icon/mdc_over_icon02.png" /><span>위치</span></a></div>
+	</li>
+	<li class="list05"><span class="tit">웰니스클리닉</span>
+	<div class="active-menu"><a href="-94"><img alt="의료진" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span>의료진</span></a>
+<a href="javascript:;"><img alt="예약" src="/html-repositories/pc/img/icon/mdc_over_icon03.png" /><span>예약</span></a>
+<a href="-325"><img alt="위치" src="/html-repositories/pc/img/icon/mdc_over_icon02.png" /><span>위치</span></a></div>
+	</li>
+	<li class="list06"><span class="tit">유방암클리닉</span>
+	<div class="active-menu"><a href="-95"><img alt="의료진" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span>의료진</span></a>
+<a href="javascript:;"><img alt="예약" src="/html-repositories/pc/img/icon/mdc_over_icon03.png" /><span>예약</span></a>
+<a href="-310"><img alt="위치" src="/html-repositories/pc/img/icon/mdc_over_icon02.png" /><span>위치</span></a></div>
+	</li>
+	<li class="list07"><span class="tit tit-line2">희귀/유전질환<br />클리닉</span>
+	<div class="active-menu"><a href="106"><img alt="의료진" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span>자세히 보기</span></a></div>
+	</li>
+	<li class="list08"><span class="tit  tit-line2">복막전이재발암<br />
+	클리닉</span>
+	<div class="active-menu"><a href="-96"><img alt="의료진" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span>자세히 보기</span></a></div>
+	</li>
+	<li class="list09"><span class="tit">아이바람클리닉</span>
+	<div class="active-menu"><a href="-97"><img alt="의료진" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span>자세히 보기</span></a></div>
+	</li>
+	<li class="list10"><span class="tit">여행자클리닉</span>
+	<div class="active-menu"><a href="-98"><img alt="의료진" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span>자세히 보기</span></a></div>
+	</li>
+	<li class="list11"><span class="tit  tit-line2">류마티스 면역질환<br />클리닉</span>
+	<div class="active-menu"><a href="-99"><img alt="의료진" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span>자세히 보기</span></a></div>
+	</li>
+</ul>
+</div>

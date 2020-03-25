@@ -1,0 +1,209 @@
+<ul class="medical-list medical01">
+	<li class="list01"><span class="tit">가정의학과</span>
+	<div class="active-menu">
+<a href="-34"><img alt="의료진" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span class="txt">의료진</span></a> 
+<a href="javascript:;"><img alt="예약" src="/html-repositories/pc/img/icon/mdc_over_icon03.png" /><span class="txt">예약</span></a> 
+<a href="-154"><img alt="위치" src="/html-repositories/pc/img/icon/mdc_over_icon02.png" /><span class="txt">위치</span></a></div>
+	</li>
+	<li class="list02"><span class="tit">감염내과</span>
+	<div class="active-menu">
+<a href="-35"><img alt="의료진" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span class="txt">의료진</span></a> 
+<a href="javascript:;"><img alt="예약" src="/html-repositories/pc/img/icon/mdc_over_icon03.png" /><span class="txt">예약</span></a> 
+<a href="-158"><img alt="위치" src="/html-repositories/pc/img/icon/mdc_over_icon02.png" /><span class="txt">위치</span></a></div>
+	</li>
+	<li class="list03"><span class="tit">내분비대사내과</span>
+	<div class="active-menu">
+<a href="-36"><img alt="의료진" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span class="txt">의료진</span></a> 
+<a href="javascript:;"><img alt="예약" src="/html-repositories/pc/img/icon/mdc_over_icon03.png" /><span class="txt">예약</span></a> 
+<a href="-161"><img alt="위치" src="/html-repositories/pc/img/icon/mdc_over_icon02.png" /><span class="txt">위치</span></a></div>
+	</li>
+	<li class="list04"><span class="tit">관절류마티스내과</span>
+	<div class="active-menu">
+<a href="-37"><img alt="의료진" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span class="txt">의료진</span></a> 
+<a href="javascript:;"><img alt="예약" src="/html-repositories/pc/img/icon/mdc_over_icon03.png" /><span class="txt">예약</span></a> 
+<a href="-164"><img alt="위치" src="/html-repositories/pc/img/icon/mdc_over_icon02.png" /><span class="txt">위치</span></a></div>
+	</li>
+	<li class="list05"><span class="tit">방사선종양학과</span>
+	<div class="active-menu">
+<a href="-38"><img alt="의료진" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span class="txt">의료진</span></a> 
+<a href="javascript:;"><img alt="예약" src="/html-repositories/pc/img/icon/mdc_over_icon03.png" /><span class="txt">예약</span></a> 
+<a href="-170"><img alt="위치" src="/html-repositories/pc/img/icon/mdc_over_icon02.png" /><span class="txt">위치</span></a></div>
+	</li>
+	<li class="list06"><span class="tit">비뇨의학과</span>
+	<div class="active-menu">
+<a href="-39"><img alt="의료진" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span class="txt">의료진</span></a> 
+<a href="javascript:;"><img alt="예약" src="/html-repositories/pc/img/icon/mdc_over_icon03.png" /><span class="txt">예약</span></a> 
+<a href="-176"><img alt="위치" src="/html-repositories/pc/img/icon/mdc_over_icon02.png" /><span class="txt">위치</span></a></div>
+	</li>
+	<li class="list07"><span class="tit">산부인과</span>
+	<div class="active-menu">
+<a href="-40"><img alt="의료진" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span class="txt">의료진</span></a> 
+<a href="javascript:;"><img alt="예약" src="/html-repositories/pc/img/icon/mdc_over_icon03.png" /><span class="txt">예약</span></a> 
+<a href="-179"><img alt="위치" src="/html-repositories/pc/img/icon/mdc_over_icon02.png" /><span class="txt">위치</span></a></div>
+	</li>
+	<li class="list08"><span class="tit">성형외과</span>
+	<div class="active-menu">
+<a href="-41"><img alt="의료진" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span class="txt">의료진</span></a> 
+<a href="javascript:;"><img alt="예약" src="/html-repositories/pc/img/icon/mdc_over_icon03.png" /><span class="txt">예약</span></a> 
+<a href="-182"><img alt="위치" src="/html-repositories/pc/img/icon/mdc_over_icon02.png" /><span class="txt">위치</span></a></div>
+	</li>
+	<li class="list09"><span class="tit">소아심장과</span>
+	<div class="active-menu">
+<a href="-42"><img alt="의료진" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span class="txt">의료진</span></a> 
+<a href="javascript:;"><img alt="예약" src="/html-repositories/pc/img/icon/mdc_over_icon03.png" /><span class="txt">예약</span></a> 
+<a href="-185"><img alt="위치" src="/html-repositories/pc/img/icon/mdc_over_icon02.png" /><span class="txt">위치</span></a></div>
+	</li>
+	<li class="list10"><span class="tit">소아청소년과</span>
+	<div class="active-menu">
+<a href="-43"><img alt="의료진" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span class="txt">의료진</span></a> 
+<a href="javascript:;"><img alt="예약" src="/html-repositories/pc/img/icon/mdc_over_icon03.png" /><span class="txt">예약</span></a> 
+<a href="-188"><img alt="위치" src="/html-repositories/pc/img/icon/mdc_over_icon02.png" /><span class="txt">위치</span></a></div>
+	</li>
+	<li class="list11"><span class="tit">소화기내과</span>
+	<div class="active-menu">
+<a href="-44"><img alt="의료진" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span class="txt">의료진</span></a> 
+<a href="javascript:;"><img alt="예약" src="/html-repositories/pc/img/icon/mdc_over_icon03.png" /><span class="txt">예약</span></a> 
+<a href="-191"><img alt="위치" src="/html-repositories/pc/img/icon/mdc_over_icon02.png" /><span class="txt">위치</span></a></div>
+	</li>
+	<li class="list12"><span class="tit">신경과</span>
+	<div class="active-menu">
+<a href="-45"><img alt="의료진" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span class="txt">의료진</span></a> 
+<a href="javascript:;"><img alt="예약" src="/html-repositories/pc/img/icon/mdc_over_icon03.png" /><span class="txt">예약</span></a> 
+<a href="-194"><img alt="위치" src="/html-repositories/pc/img/icon/mdc_over_icon02.png" /><span class="txt">위치</span></a></div>
+	</li>
+	<li class="list13"><span class="tit">신경외과</span>
+	<div class="active-menu">
+<a href="-46"><img alt="의료진" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span class="txt">의료진</span></a> 
+<a href="javascript:;"><img alt="예약" src="/html-repositories/pc/img/icon/mdc_over_icon03.png" /><span class="txt">예약</span></a> 
+<a href="-197"><img alt="위치" src="/html-repositories/pc/img/icon/mdc_over_icon02.png" /><span class="txt">위치</span></a></div>
+	</li>
+	<li class="list14"><span class="tit">신장내과</span>
+	<div class="active-menu">
+<a href="-47"><img alt="의료진" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span class="txt">의료진</span></a> 
+<a href="javascript:;"><img alt="예약" src="/html-repositories/pc/img/icon/mdc_over_icon03.png" /><span class="txt">예약</span></a> 
+<a href="-200"><img alt="위치" src="/html-repositories/pc/img/icon/mdc_over_icon02.png" /><span class="txt">위치</span></a></div>
+	</li>
+	<li class="list15"><span class="tit">심장내과</span>
+	<div class="active-menu">
+<a href="-48"><img alt="의료진" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span class="txt">의료진</span></a> 
+<a href="javascript:;"><img alt="예약" src="/html-repositories/pc/img/icon/mdc_over_icon03.png" /><span class="txt">예약</span></a> 
+<a href="-203"><img alt="위치" src="/html-repositories/pc/img/icon/mdc_over_icon02.png" /><span class="txt">위치</span></a></div>
+	</li>
+	<li class="list16"><span class="tit">안과</span>
+	<div class="active-menu">
+<a href="-49"><img alt="의료진" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span class="txt">의료진</span></a> 
+<a href="javascript:;"><img alt="예약" src="/html-repositories/pc/img/icon/mdc_over_icon03.png" /><span class="txt">예약</span></a> 
+<a href="-206"><img alt="위치" src="/html-repositories/pc/img/icon/mdc_over_icon02.png" /><span class="txt">위치</span></a></div>
+	</li>
+	<li class="list17"><span class="tit">외과</span>
+	<div class="active-menu">
+<a href="-50"><img alt="의료진" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span class="txt">의료진</span></a> 
+<a href="javascript:;"><img alt="예약" src="/html-repositories/pc/img/icon/mdc_over_icon03.png" /><span class="txt">예약</span></a> 
+<a href="-209"><img alt="위치" src="/html-repositories/pc/img/icon/mdc_over_icon02.png" /><span class="txt">위치</span></a></div>
+	</li>
+	<li class="list18"><span class="tit">외상외과</span>
+	<div class="active-menu">
+<a href="-51"><img alt="의료진" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span class="txt">의료진</span></a> 
+<a href="javascript:;"><img alt="예약" src="/html-repositories/pc/img/icon/mdc_over_icon03.png" /><span class="txt">예약</span></a> 
+<a href="-215"><img alt="위치" src="/html-repositories/pc/img/icon/mdc_over_icon02.png" /><span class="txt">위치</span></a></div>
+	</li>
+	<li class="list19"><span class="tit">이비인후과</span>
+	<div class="active-menu">
+<a href="-52"><img alt="의료진" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span class="txt">의료진</span></a> 
+<a href="javascript:;"><img alt="예약" src="/html-repositories/pc/img/icon/mdc_over_icon03.png" /><span class="txt">예약</span></a> 
+<a href="-218"><img alt="위치" src="/html-repositories/pc/img/icon/mdc_over_icon02.png" /><span class="txt">위치</span></a></div>
+	</li>
+	<li class="list20"><span class="tit">재활의학과</span>
+	<div class="active-menu">
+<a href="-53"><img alt="의료진" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span class="txt">의료진</span></a> 
+<a href="javascript:;"><img alt="예약" src="/html-repositories/pc/img/icon/mdc_over_icon03.png" /><span class="txt">예약</span></a> 
+<a href="-224"><img alt="위치" src="/html-repositories/pc/img/icon/mdc_over_icon02.png" /><span class="txt">위치</span></a></div>
+	</li>
+	<li class="list21"><span class="tit">정신의학과</span>
+	<div class="active-menu">
+<a href="-54"><img alt="의료진" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span class="txt">의료진</span></a> 
+<a href="javascript:;"><img alt="예약" src="/html-repositories/pc/img/icon/mdc_over_icon03.png" /><span class="txt">예약</span></a> 
+<a href="-227"><img alt="위치" src="/html-repositories/pc/img/icon/mdc_over_icon02.png" /><span class="txt">위치</span></a></div>
+	</li>
+	<li class="list22"><span class="tit">정형외과</span>
+	<div class="active-menu">
+<a href="-55"><img alt="의료진" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span class="txt">의료진</span></a> 
+<a href="javascript:;"><img alt="예약" src="/html-repositories/pc/img/icon/mdc_over_icon03.png" /><span class="txt">예약</span></a> 
+<a href="-230"><img alt="위치" src="/html-repositories/pc/img/icon/mdc_over_icon02.png" /><span class="txt">위치</span></a></div>
+	</li>
+	<li class="list23"><span class="tit">종양내과</span>
+	<div class="active-menu">
+<a href="-56"><img alt="의료진" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span class="txt">의료진</span></a> 
+<a href="javascript:;"><img alt="예약" src="/html-repositories/pc/img/icon/mdc_over_icon03.png" /><span class="txt">예약</span></a> 
+<a href="-233"><img alt="위치" src="/html-repositories/pc/img/icon/mdc_over_icon02.png" /><span class="txt">위치</span></a></div>
+	</li>
+	<li class="list24"><span class="tit">치과</span>
+	<div class="active-menu">
+<a href="-57"><img alt="의료진" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span class="txt">의료진</span></a> 
+<a href="javascript:;"><img alt="예약" src="/html-repositories/pc/img/icon/mdc_over_icon03.png" /><span class="txt">예약</span></a> 
+<a href="-236"><img alt="위치" src="/html-repositories/pc/img/icon/mdc_over_icon02.png" /><span class="txt">위치</span></a></div>
+	</li>
+	<li class="list25"><span class="tit">피부과</span>
+	<div class="active-menu">
+<a href="-58"><img alt="의료진" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span class="txt">의료진</span></a> 
+<a href="javascript:;"><img alt="예약" src="/html-repositories/pc/img/icon/mdc_over_icon03.png" /><span class="txt">예약</span></a> 
+<a href="-239"><img alt="위치" src="/html-repositories/pc/img/icon/mdc_over_icon02.png" /><span class="txt">위치</span></a></div>
+	</li>
+	<li class="list26"><span class="tit">혈액내과</span>
+	<div class="active-menu">
+<a href="-59"><img alt="의료진" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span class="txt">의료진</span></a> 
+<a href="javascript:;"><img alt="예약" src="/html-repositories/pc/img/icon/mdc_over_icon03.png" /><span class="txt">예약</span></a> 
+<a href="-242"><img alt="위치" src="/html-repositories/pc/img/icon/mdc_over_icon02.png" /><span class="txt">위치</span></a></div>
+	</li>
+	<li class="list27"><span class="tit">호흡기알레르기내과</span>
+	<div class="active-menu">
+<a href="-60"><img alt="의료진" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span class="txt">의료진</span></a> 
+<a href="javascript:;"><img alt="예약" src="/html-repositories/pc/img/icon/mdc_over_icon03.png" /><span class="txt">예약</span></a> 
+<a href="-245"><img alt="위치" src="/html-repositories/pc/img/icon/mdc_over_icon02.png" /><span class="txt">위치</span></a></div>
+	</li>
+	<li class="list28"><span class="tit">혈관외과</span>
+	<div class="active-menu">
+<a href="-61"><img alt="의료진" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span class="txt">의료진</span></a> 
+<a href="javascript:;"><img alt="예약" src="/html-repositories/pc/img/icon/mdc_over_icon03.png" /><span class="txt">예약</span></a> 
+<a href="-248"><img alt="위치" src="/html-repositories/pc/img/icon/mdc_over_icon02.png" /><span class="txt">위치</span></a></div>
+	</li>
+	<li class="list29"><span class="tit">흉부외과</span>
+	<div class="active-menu">
+<a href="-62"><img alt="의료진" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span class="txt">의료진</span></a> 
+<a href="javascript:;"><img alt="예약" src="/html-repositories/pc/img/icon/mdc_over_icon03.png" /><span class="txt">예약</span></a> 
+<a href="-251"><img alt="위치" src="/html-repositories/pc/img/icon/mdc_over_icon02.png" /><span class="txt">위치</span></a></div>
+	</li>
+	<li class="list30"><span class="tit">마취통증의학과</span>
+	<div class="active-menu">
+<a href="-63"><img alt="의료진" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span class="txt">의료진</span></a></div>
+	</li>
+	<li class="list31"><span class="tit">병리과</span>
+	<div class="active-menu">
+<a href="-64"><img alt="의료진" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span class="txt">의료진</span></a></div>
+	</li>
+	<li class="list32"><span class="tit">영상의학과</span>
+	<div class="active-menu">
+<a href="-65"><img alt="의료진" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span class="txt">의료진</span></a> 
+<a href="-212"><img alt="위치" src="/html-repositories/pc/img/icon/mdc_over_icon02.png" /><span class="txt">위치</span></a></div>
+	</li>
+	<li class="list33"><span class="tit">응급의학과</span>
+	<div class="active-menu">
+<a href="-66"><img alt="의료진" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span class="txt">의료진</span></a> 
+<a href="-221"><img alt="위치" src="/html-repositories/pc/img/icon/mdc_over_icon02.png" /><span class="txt">위치</span></a></div>
+	</li>
+	<li class="list34"><span class="tit">진단검사의학과</span>
+	<div class="active-menu">
+<a href="-67"><img alt="의료진" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span class="txt">의료진</span></a> 
+<a href="-254"><img alt="위치" src="/html-repositories/pc/img/icon/mdc_over_icon02.png" /><span class="txt">위치</span></a></div>
+	</li>
+	<li class="list35"><span class="tit">직업환경의학과</span>
+	<div class="active-menu">
+<a href="-68"><img alt="의료진" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span class="txt">의료진</span></a> 
+<a href="-257"><img alt="위치" src="/html-repositories/pc/img/icon/mdc_over_icon02.png" /><span class="txt">위치</span></a></div>
+	</li>
+	<li class="list36"><span class="tit">핵의학과</span>
+	<div class="active-menu">
+<a href="-69"><img alt="의료진" src="/html-repositories/pc/img/icon/mdc_over_icon01.png" /><span class="txt">의료진</span></a> 
+<a href="-260"><img alt="위치" src="/html-repositories/pc/img/icon/mdc_over_icon02.png" /><span class="txt">위치</span></a></div>
+	</li>
+</ul>

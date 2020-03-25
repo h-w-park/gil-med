@@ -221,9 +221,12 @@ a.btn_more {padding-right:20px; text-decoration:underline; color:#fff; font-weig
 /*길병원 베스트 의료진*/
 .doctor { height:440px; margin-top: 48px;}
 .doctor .slick-list {width: 110%; position: relative; margin-left: -5%;  height:440px; overflow:hidden;}
-.doctor .slick-arrow {position: absolute; bottom:-84px; left:50%; text-indent:9999px; width: 50px; height: 50px; background: url('../img/main/slide_arr.png');}
-.doctor .slick-arrow.slick-prev {margin-left: -110px; transform:rotate(180deg);}
-.doctor .slick-arrow.slick-next {margin-left: 50px;}
+
+.doctor .owl-nav button {position: absolute; bottom:-84px; left:50%; text-indent:9999px; width: 50px; height: 50px; background: url('../img/main/slide_arr.png') !important;}
+.doctor .owl-nav button.owl-next {margin-left: -110px; transform:rotate(180deg);}
+.doctor .owl-nav button.owl-prev {margin-left: 50px;}
+#counter {position: absolute; left:50%; text-align: center; width:100px; font-size:16px; margin-left: -50px;     top: 50%; margin-top: 308px;}
+
 .doctor ul.slick-dots {width: 40px; margin: 50px auto 0; ;}
 .doctor ul.slick-dots:after {content:" / 10"; font-size:16px; color:#888; font-family:'Lato'; font-weight: 600; display: inline-block; margin-left: 4px;}
 .doctor ul.slick-dots li {display: none; }

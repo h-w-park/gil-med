@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
-.ui-content.main > footer {margin-top: 3rem;}
-.ui-content.main > section {padding-top:0;}
+.ui-content > footer {margin-top: 3rem;}
+.ui-content > section {padding-top:0;}
 .ui-header.wh {background: none; border-bottom: none; }
 .ui-header.wh h1 {background-image: url(../img/common/logo_wh.png);}
 .ui-header.wh > a {color: #fff;}

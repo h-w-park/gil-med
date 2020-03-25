@@ -269,6 +269,7 @@ function doc(){
 
 $(document).ready(function() {
 
+	$("html").addClass("aui");
 
 	$('#banner').slick({
 		slidesToShow: 1,
@@ -289,7 +290,6 @@ $(document).ready(function() {
 
 	career();
 
-	fold();
 	//doc();
 
 
@@ -349,6 +349,7 @@ $(document).ready(function() {
  
       return date;
     }
+
 
 /*
     var $winHei = $('body').height();

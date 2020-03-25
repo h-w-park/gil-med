@@ -1,0 +1,27 @@
+/* reset */
+.aui body{font-family:Lato, "NotoSansKR", '맑은고딕', Malgun Gothic, Dotum, "돋움", verdana, sans-serif;font-size:13px; color:#666; width:100%; height:100%;letter-spacing:-1px;line-height:1.2;font-weight:300;}
+.aui body, .aui ul, .aui ol, .aui li, .aui dt,.aui  dl, .aui dd, .aui div, 
+.aui h1, .aui h2, .aui h3, .aui h4, .aui h5, .aui h6, .aui p, .aui form, .aui fieldset, .aui blockquote, .aui iframe, .aui input, .aui object, 
+.aui table, .aui tr, .aui th, .aui td, .aui img{margin:0;padding:0; vertical-align:top; border:none;line-height:auto !important;}
+.aui ul, .aui ol, .aui li{list-style:none}
+.aui hr{display:none}
+.aui em{font-style:normal}
+.aui fieldset, .aui img{border:none;}
+.aui legend, .aui caption{display:none}
+.aui table { border-collapse: collapse;}
+.aui .blind{overflow:hidden;position:absolute;left:-1000%;top:0;width:0;height:0;font-size:0;line-height:0;}
+.aui select, .aui input, .aui textarea, .aui button {font-family: Lato, "NotoSansKR";}
+/* Link Css */
+.aui a{cursor:pointer; overflow:hidden;color:#666;text-decoration:none}
+.aui a:link,  a:visited,  a:active {text-decoration:none}
+.aui a:hover{text-decoration:none;}
+.aui address {font-style:normal;}
+.aui button{cursor:pointer; border:none; background:none; padding:0; margin:0 auto;}
+
+/* Blind */
+.aui .blind{position:absolute;width:0;height:0;font-size:1px;text-indent:-9999px;overflow:hidden;}
+
+/* block */
+.aui img{display:block;}
+.aui :focus { outline: none; }
+.aui .nav>li>a {display: inline-block;}

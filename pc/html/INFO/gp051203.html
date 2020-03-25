@@ -13,7 +13,7 @@
     <!-- Scripts -->
     <script src="../../js/jquery-2.2.3.min.js"></script>
     <script src="../../js/jquery-ui.js"></script>
-    <script src="../../js/dotdotdot.js"></script>
+    <script src="../../js/ui.js"></script>
 </head>
 <body>
 <div class="wrap">
@@ -25,8 +25,12 @@
                 <p class="page-tit__desc">길병원 층별 안내도입니다.</p>
             </div>
  
+            <ul class="tab">
+                <li><a href="gp050901.html">건물별 검색</a></li>
+                <li><a href="gp050902.html"class="on">진료과별 검색</a></li>
+            </ul>
             
-            <div class="search-area">
+            <!-- <div class="search-area">
                 <div class="search-sort">
                     <select>
                         <option>검색</option>
@@ -36,100 +40,957 @@
                     <input type="text" placeholder="검색어 입력">
                     <button class="btn-search">검색</button>
                 </div>
-            </div>
+            </div>-->
             
             
+            <div class="search-area">
+                <div class="search-sort">
+                    <select>
+                        <option>진료과</option>
+                    </select>
+                </div>
+                <div class="search-sort">
+                    <select>
+                        <option>과</option>
+                    </select>
+                </div>
+                <div class="search-sort">
+                    <select>
+                        <option>건물</option>
+                    </select>
+                </div>
+            </div> 
+            
+
+
+
+
             <div class="context">
 				
+                <div class="content-section">
+                    <h5 class="content-tit">위치안내</h5>
+                    <div class="text-wrap">
+                        <div class="floor-tit">
+							<ul>
+								<li>본관</li>
+								<li>2F</li>
+								<li>가정의학과</li>
+							</ul>
+						</div>
+                        <div class="img-wrap">
+                           <img src="https://via.placeholder.com/1028x270.png" alt="">
+                        </div>
+                    </div>
+                </div>
+			</div>
+
+
+
+
+            <div class="context">
 				<div class="floor-wrap">
 					<ul>
-						<li><a href="#bd_1"><figure><i></i></figure><span>본관</span></a></li>
-						<li><a href="#bd_2"><figure><i></i></figure><span>암센터</span></a></li>
-						<li><a href="#bd_3"><figure><i></i></figure><span>인공지능병원</span></a></li>
-						<li><a href="#bd_4"><figure><i></i></figure><span>국민검진센터</span></a></li>
-						<li><a href="#bd_5"><figure><i></i></figure><span>여성전문센터</span></a></li>
-						<li><a href="#bd_6"><figure><i></i></figure><span>뇌과학연구원</span></a></li>
-						<li><a href="#bd_7"><figure><i></i></figure><span>치과병원</span></a></li>
-						<li><a href="#bd_8"><figure><i></i></figure><span>응급의료센터</span></a></li>
-						<li><a href="#bd_9"><figure><i></i></figure><span>신장센터</span></a></li>
-						<li><a href="#bd_10"><figure><i></i></figure><span>지하통로안내</span></a></li>
+						<li><a href="#bon"><figure></figure><span>본관</span></a></li> 
+						<li><a href="#am"><figure></figure><span>암·응급의료센터</span></a></li> 
+						<li><a href="#ai"><figure></figure><span>인공지능병원</span></a></li>
+						<li><a href="#gug"><figure></figure><span>국민검진센터</span></a></li>
+						<li><a href="#wo"><figure></figure><span>여성전문센터</span></a></li>
+						<li><a href="#noe"><figure></figure><span>뇌과학연구원</span></a></li>
+						<li><a href="#dent"><figure></figure><span>치과병원</span></a></li>
+						<li><a href="#sin"><figure></figure><span>신장센터</span></a></li>
+						<li><a href="#base"><figure></figure><span>지하통로안내</span></a></li>
 					</ul>
-					<div id="bd_1" class="bd-wrap">
+
+					<div class="bd-wrap" id="bon">
 						<div class="floor-detail-wrap">
 							<ul>
-								<li><a href="#center_f_11"><span>11F</span></a></li>
-								<li><a href="#center_f_10"><span>10F</span></a></li>
-								<li><a href="#center_f_9"><span>9F</span></a></li>
-								<li><a href="#center_f_8"><span>8F</span></a></li>
-								<li><a href="#center_f_7"><span>7F</span></a></li>
-								<li><a href="#center_f_6"><span>6F</span></a></li>
-								<li><a href="#center_f_5"><span>5F</span></a></li>
-								<li><a href="#center_f_4"><span>4F</span></a></li>
-								<li><a href="#center_f_3"><span>3F</span></a></li>
-								<li><a href="#center_f_2"><span>2F</span></a></li>
-								<li><a href="#center_f_1"><span>1F</span></a></li>
+								<li><a href="#bon_b2"><span>B2</span></a></li>
+								<li><a href="#bon_b1"><span>B1</span></a></li>
+								<li><a href="#bon_1"><span>1F</span></a></li>
+								<li><a href="#bon_2"><span>2F</span></a></li>
+								<li><a href="#bon_3"><span>3F</span></a></li>
+								<li><a href="#bon_5"><span>5F</span></a></li>
+								<li><a href="#bon_6"><span>6F</span></a></li>
+								<li><a href="#bon_7"><span>7F</span></a></li>
+								<li><a href="#bon_8"><span>8F</span></a></li>
+								<li><a href="#bon_9"><span>9F</span></a></li>
+								<li><a href="#bon_10"><span>10F</span></a></li>
+								<li><a href="#bon_11"><span>11F</span></a></li>
+								<li><a href="#bon_12"><span>12F</span></a></li>
 							</ul>
-							<div id="center_f_11" class="in_floor">
+
+							<div class="in_floor" id="bon_12">
 								<ul>
-									<li class="active"><a href=""><span>이비인후과3</span></a></li>
-									<li><a href=""><span>가정의학과</span></a></li>
-									<li><a href=""><span>정형외과</span></a></li>
-									<li><a href=""><span>정형외과</span></a></li>
-									<li><a href=""><span>MRI</span></a></li>
-									<li><a href=""><span>CT</span></a></li>
-									<li><a href=""><span>산부인과</span></a></li>
-									<li><a href=""><span>내과</span></a></li>
-									<li><a href=""><span>외과</span></a></li>
+									<li><a href="#bon_12_1"><span>간호본부</span></a></li>
+									<li><a href="#bon_12_2"><span>강당</span></a></li>
+									<li><a href="#bon_12_3"><span>원목실</span></a></li>
 								</ul>
+
+								<div class="map" id="bon_12_1"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_12F_gan.jpg" /></figure> </div>
+								<div class="map" id="bon_12_2"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_12F_gang.jpg" /></figure> </div>
+								<div class="map" id="bon_12_3"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_12F_won.jpg" /></figure> </div>
 							</div>
-							<div id="center_f_10" class="in_floor">
+
+							<div class="in_floor" id="bon_11">
 								<ul>
-									<li class="active"><a href=""><span>이비인후과1</span></a></li>
-									<li><a href=""><span>가정의학과</span></a></li>
-									<li><a href=""><span>정형외과</span></a></li>
-									<li><a href=""><span>정형외과</span></a></li>
-									<li><a href=""><span>MRI</span></a></li>
-									<li><a href=""><span>CT</span></a></li>
-									<li><a href=""><span>산부인과</span></a></li>
-									<li><a href=""><span>내과</span></a></li>
-									<li><a href=""><span>외과</span></a></li>
+									<li><a href="#bon_11_1"><span>감염병센터</span></a></li>
 								</ul>
+
+								<div class="map" id="bon_11_1"><figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_11F_byeong.jpg" /></figure> </div>
 							</div>
-							<div id="center_f_9" class="in_floor">
+
+							<div class="in_floor" id="bon_10">
 								<ul>
-									<li class="active"><a href=""><span>이비인후과2</span></a></li>
-									<li><a href=""><span>가정의학과</span></a></li>
-									<li><a href=""><span>정형외과</span></a></li>
-									<li><a href=""><span>정형외과</span></a></li>
-									<li><a href=""><span>MRI</span></a></li>
-									<li><a href=""><span>CT</span></a></li>
-									<li><a href=""><span>산부인과</span></a></li>
-									<li><a href=""><span>내과</span></a></li>
-									<li><a href=""><span>외과</span></a></li>
+									<li><a href="#bon_10_1"><span>10A병동</span></a></li>
+									<li><a href="#bon_10_2"><span>10B병동</span></a></li>
 								</ul>
+
+								<div class="map" id="bon_10_1"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_10F_a.jpg" /></figure> </div>
+								<div class="map" id="bon_10_2"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_10F_b.jpg" /></figure> </div>
 							</div>
-							<div id="center_f_8" class="in_floor">12</div>
-							<div id="center_f_7" class="in_floor">12</div>
-							<div id="center_f_6" class="in_floor">12</div>
-							<div id="center_f_5" class="in_floor">12</div>
-							<div id="center_f_4" class="in_floor">12</div>
-							<div id="center_f_3" class="in_floor">12</div>
-							<div id="center_f_2" class="in_floor">12</div>
-							<div id="center_f_1" class="in_floor">12</div>
+
+							<div class="in_floor" id="bon_9">
+								<ul>
+									<li><a href="#bon_9_1"><span>9A병동</span></a></li>
+									<li><a href="#bon_9_2"><span>9B병동</span></a></li>
+								</ul>
+
+								<div class="map" id="bon_9_1"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_9F_a.jpg" /></figure> </div>
+								<div class="map" id="bon_9_2"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_9F_b.jpg" /></figure> </div>
+							</div>
+
+							<div class="in_floor" id="bon_8">
+								<ul>
+									<li><a href="#bon_8_1"><span>8A병동</span></a></li>
+									<li><a href="#bon_8_2"><span>8B병동</span></a></li>
+								</ul>
+
+								<div class="map" id="bon_8_1"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_8F_a.jpg" /></figure> </div>
+								<div class="map" id="bon_8_2"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_8F_b.jpg" /></figure> </div>
+							</div>
+
+							<div class="in_floor" id="bon_7">
+								<ul>
+									<li><a href="#bon_7_1"><span>7A병동</span></a></li>
+									<li><a href="#bon_7_2"><span>7B병동</span></a></li>
+								</ul>
+
+								<div class="map" id="bon_7_1"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_7F_a.jpg" /></figure> </div>
+								<div class="map" id="bon_7_2"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_7F_b.jpg" /></figure> </div>
+							</div>
+
+							<div class="in_floor" id="bon_6">
+								<ul>
+									<li><a href="#bon_6_1"><span>6A병동</span></a></li>
+									<li><a href="#bon_6_2"><span>내과집중치료실</span></a></li>
+								</ul>
+
+								<div class="map" id="bon_6_1"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_6F_byeong.jpg" /></figure> </div>
+								<div class="map" id="bon_6_2"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_6F_nae.jpg" /></figure> </div>
+							</div>
+
+							<div class="in_floor" id="bon_5">
+								<ul>
+									<li><a href="#bon_5_1"><span>5A병동</span></a></li>
+									<li><a href="#bon_5_2"><span>5B병동</span></a></li>
+									<li><a href="#bon_5_3"><span>기관지내시경센터</span></a></li>
+									<li><a href="#bon_5_4"><span>내과중환자실</span></a></li>
+								</ul>
+
+								<div class="map" id="bon_5_1"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_5F_5a.jpg" /></figure> </div>
+								<div class="map" id="bon_5_2"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_5F_5b.jpg" /></figure> </div>
+								<div class="map" id="bon_5_3"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_5F_gi.jpg" /></figure> </div>
+								<div class="map" id="bon_5_4"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_5F_nae.jpg" /></figure> </div>
+							</div>
+
+							<div class="in_floor" id="bon_3">
+								<ul>
+									<li><a href="#bon_3_1"><span>감염내과</span></a></li>
+									<li><a href="#bon_3_2"><span>관절류마티스내과</span></a></li>
+									<li><a href="#bon_3_3"><span>당뇨내분비센터</span></a></li>
+									<li><a href="#bon_3_4"><span>복막투석실</span></a></li>
+									<li><a href="#bon_3_5"><span>신장내과</span></a></li>
+									<li><a href="#bon_3_6"><span>안과</span></a></li>
+									<li><a href="#bon_3_7"><span>이비인후과</span></a></li>
+									<li><a href="#bon_3_8"><span>접수/수납</span></a></li>
+									<li><a href="#bon_3_9"><span>정신건강의학과</span></a></li>
+								</ul>
+
+								<div class="map" id="bon_3_1"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_3F_gam.jpg" /></figure> </div>
+								<div class="map" id="bon_3_2"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_3F_gwan.jpg" /></figure> </div>
+								<div class="map" id="bon_3_3"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_3F_dang.jpg" /></figure> </div>
+								<div class="map" id="bon_3_4"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_3F_bok.jpg" /></figure> </div>
+								<div class="map" id="bon_3_5"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_3F_sin.jpg" /></figure> </div>
+								<div class="map" id="bon_3_6"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_3F_an.jpg" /></figure> </div>
+								<div class="map" id="bon_3_7"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_3F_ibi.jpg" /></figure> </div>
+								<div class="map" id="bon_3_8"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_3F_jeop.jpg" /></figure> </div>
+								<div class="map" id="bon_3_9"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_3F_jung.jpg" /></figure> </div>
+							</div>
+
+							<div class="in_floor" id="bon_2">
+								<ul>
+									<li><a href="#bon_2_1"><span>가천뇌건강센터</span></a></li>
+									<li><a href="#bon_2_2"><span>교육실(아카데미실)</span></a></li>
+									<li><a href="#bon_2_3"><span>성형외과</span></a></li>
+									<li><a href="#bon_2_4"><span>소화기내과</span></a></li>
+									<li><a href="#bon_2_5"><span>소화기내시경센터</span></a></li>
+									<li><a href="#bon_2_6"><span>심전도실</span></a></li>
+									<li><a href="#bon_2_7"><span>외과</span></a></li>
+									<li><a href="#bon_2_8"><span>장기이식센터</span></a></li>
+									<li><a href="#bon_2_9"><span>접수/수납</span></a></li>
+									<li><a href="#bon_2_10"><span>진료협력센터</span></a></li>
+									<li><a href="#bon_2_11"><span>폐기능검사실</span></a></li>
+									<li><a href="#bon_2_12"><span>폐센터</span></a></li>
+									<li><a href="#bon_2_13"><span>피부과</span></a></li>
+								</ul>
+
+								<div class="map" id="bon_2_1"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_2F_ga.jpg" /></figure> </div>
+								<div class="map" id="bon_2_2"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_2F_gyo.jpg" /></figure> </div>
+								<div class="map" id="bon_2_3"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_2F_sung.jpg" /></figure> </div>
+								<div class="map" id="bon_2_4"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_2F_so.jpg" /></figure> </div>
+								<div class="map" id="bon_2_5"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_2F_so_nae.jpg" /></figure> </div>
+								<div class="map" id="bon_2_6"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_2F_sim.jpg" /></figure> </div>
+								<div class="map" id="bon_2_7"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_2F_oe.jpg" /></figure> </div>
+								<div class="map" id="bon_2_8"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_2F_jang.jpg" /></figure> </div>
+								<div class="map" id="bon_2_9"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_2F_jeop.jpg" /></figure> </div>
+								<div class="map" id="bon_2_10"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_2F_jin.jpg" /></figure> </div>
+								<div class="map" id="bon_2_11"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_2F_pye.jpg" /></figure> </div>
+								<div class="map" id="bon_2_12"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_2F_pye_ho.jpg" /></figure> </div>
+								<div class="map" id="bon_2_13"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_2F_pi.jpg" /></figure> </div>
+							</div>
+
+							<div class="in_floor" id="bon_1">
+								<ul>
+									<li><a href="#bon_1_1"><span>CT/MRI실</span></a></li>
+									<li><a href="#bon_1_2"><span>CT주사실</span></a></li>
+									<li><a href="#bon_1_3"><span>고객상담실</span></a></li>
+									<li><a href="#bon_1_4"><span>신경계검사실</span></a></li>
+									<li><a href="#bon_1_5"><span>신경과</span></a></li>
+									<li><a href="#bon_1_6"><span>신경외과</span></a></li>
+									<li><a href="#bon_1_7"><span>안내데스크</span></a></li>
+									<li><a href="#bon_1_8"><span>영상의학센터</span></a></li>
+									<li><a href="#bon_1_9"><span>원무팀</span></a></li>
+									<li><a href="#bon_1_10"><span>인공지능암센터</span></a></li>
+									<li><a href="#bon_1_11"><span>재활의학과</span></a></li>
+									<li><a href="#bon_1_12"><span>접수/수납</span></a></li>
+									<li><a href="#bon_1_13"><span>정형외과</span></a></li>
+									<li><a href="#bon_1_14"><span>제증명발급</span></a></li>
+									<li><a href="#bon_1_15"><span>주사실</span></a></li>
+									<li><a href="#bon_1_16"><span>척추관절센터</span></a></li>
+									<li><a href="#bon_1_17"><span>체혈실</span></a></li>
+									<li><a href="#bon_1_18"><span>초음파실</span></a></li>
+									<li><a href="#bon_1_19"><span>통증센터</span></a></li>
+									<li><a href="#bon_1_20"><span>투썸플레이스</span></a></li>
+									<li><a href="#bon_1_21"><span>혈관조영술실(ANGIO)</span></a></li>
+									<li><a href="#bon_1_22"><span>협진/VIP신환상담팀</span></a></li>
+								</ul>
+
+								<div class="map" id="bon_1_1"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_1F_ct_mri.jpg" /></figure> </div>
+								<div class="map" id="bon_1_2"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_1F_ct_ju.jpg" /></figure> </div>
+								<div class="map" id="bon_1_3"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_1F_go.jpg" /></figure> </div>
+								<div class="map" id="bon_1_4"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_1F_sin_geom.jpg" /></figure> </div>
+								<div class="map" id="bon_1_5"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_1F_sin.jpg" /></figure> </div>
+								<div class="map" id="bon_1_6"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_1F_sin_oe.jpg" /></figure> </div>
+								<div class="map" id="bon_1_7"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_1F_an.jpg" /></figure> </div>
+								<div class="map" id="bon_1_8"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_1F_yeong.jpg" /></figure> </div>
+								<div class="map" id="bon_1_9"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_1F_won.jpg" /></figure> </div>
+								<div class="map" id="bon_1_10"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_1F_in.jpg" /></figure> </div>
+								<div class="map" id="bon_1_11"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_1F_jae.jpg" /></figure> </div>
+								<div class="map" id="bon_1_12"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_1F_jeop.jpg" /></figure> </div>
+								<div class="map" id="bon_1_13"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_1F_jung.jpg" /></figure> </div>
+								<div class="map" id="bon_1_14"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_1F_je.jpg" /></figure> </div>
+								<div class="map" id="bon_1_15"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_1F_bon.jpg" /></figure> </div>
+								<div class="map" id="bon_1_16"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_1F_cheok.jpg" /></figure> </div>
+								<div class="map" id="bon_1_17"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_1F_chae.jpg" /></figure> </div>
+								<div class="map" id="bon_1_18"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_1F_cho.jpg" /></figure> </div>
+								<div class="map" id="bon_1_19"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_1F_tong.jpg" /></figure> </div>
+								<div class="map" id="bon_1_20"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_1F_two.jpg" /></figure> </div>
+								<div class="map" id="bon_1_21"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_1F_hyeol.jpg" /></figure> </div>
+								<div class="map" id="bon_1_22"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_1F_hyeop.jpg" /></figure> </div>
+							</div>
+
+							<div class="in_floor" id="bon_b1">
+								<ul>
+									<li><a href="#bon_b1_1"><span>CT실</span></a></li>
+									<li><a href="#bon_b1_2"><span>약제부(원내약국)</span></a></li>
+									<li><a href="#bon_b1_3"><span>진단검사의학과</span></a></li>
+									<li><a href="#bon_b1_4"><span>편의시설</span></a></li>
+									<li><a href="#bon_b1_5"><span>푸드코트</span></a></li>
+								</ul>
+								<div class="map" id="bon_b1_1"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_B1_ct.jpg" /></figure> </div>
+								<div class="map" id="bon_b1_2"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_B1_yak.jpg" /></figure> </div>
+								<div class="map" id="bon_b1_3"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_B1_jin.jpg" /></figure> </div>
+								<div class="map" id="bon_b1_4"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_B1_il.jpg" /></figure> </div>
+								<div class="map" id="bon_b1_5"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_B1_fu.jpg" /></figure> </div>
+							</div>
+
+							<div class="in_floor" id="bon_b2">
+								<ul>
+									<li><a href="#bon_b2_1"><span>근전도검사실</span></a></li>
+									<li><a href="#bon_b2_2"><span>물리치료실</span></a></li>
+									<li><a href="#bon_b2_3"><span>소아치료실</span></a></li>
+									<li><a href="#bon_b2_4"><span>열전기치료실</span></a></li>
+								</ul>
+								<div class="map" id="bon_b2_1"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_B2_geun.jpg" /></figure> </div>
+								<div class="map" id="bon_b2_2"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_B2_mul.jpg" /></figure> </div>
+								<div class="map" id="bon_b2_3"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_B2_so.jpg" /></figure> </div>
+								<div class="map" id="bon_b2_4"> <figure><img alt="" src="/html-repositories/pc/img/map/bon/bon_B2_yeol.jpg" /></figure> </div>
+							</div>
 						</div>
 					</div>
-					<div id="bd_2" class="bd-wrap"> 12</div>
-					<div id="bd_3" class="bd-wrap"> 13</div>
-					<div id="bd_4" class="bd-wrap"> 14</div>
-					<div id="bd_5" class="bd-wrap"> 15</div>
-					<div id="bd_6" class="bd-wrap"> 16</div>
-					<div id="bd_7" class="bd-wrap"> 17</div>
-					<div id="bd_8" class="bd-wrap"> 18</div>
-					<div id="bd_9" class="bd-wrap"> 19</div>
-					<div id="bd_10" class="bd-wrap"> 1g</div>
+					<div id="am" class="bd-wrap">
+						<div class="floor-detail-wrap">
+							<ul>
+								<li><a href="#am_b1"><span>B1</span></a></li>
+								<li><a href="#am_1"><span>1F</span></a></li>
+								<li><a href="#am_2"><span>2F</span></a></li>
+								<li><a href="#am_3"><span>3F</span></a></li>
+								<li><a href="#am_5"><span>5F</span></a></li>
+								<li><a href="#am_6"><span>6F</span></a></li>
+								<li><a href="#am_7"><span>7F</span></a></li>
+								<li><a href="#am_8"><span>8F</span></a></li>
+								<li><a href="#am_9"><span>9F</span></a></li>
+								<li><a href="#am_10"><span>10F</span></a></li>
+								<li><a href="#am_11"><span>11F</span></a></li>
+								<li><a href="#am_12"><span>12F</span></a></li>
+								<li><a href="#am_13"><span>13F</span></a></li>
+								<li><a href="#am_14"><span>14F</span></a></li>
+								<li><a href="#am_15"><span>15F</span></a></li>
+								<li><a href="#am_16"><span>16F</span></a></li>
+								<li><a href="#am_17"><span>17F</span></a></li>
+							</ul> 
+							<div id="am_17" class="in_floor">
+								<ul>
+									<li><a href="#am_17_1"><span>암센터 VIP병동</span></a></li>
+								</ul>
+								<div id="am_17_1" class="map"><figure><img src="/html-repositories/pc/img/map/am/am_17F_am.jpg" alt=""></figure></div>
+							</div>
+							<div id="am_16" class="in_floor">
+								<ul>
+									<li><a href="#am_16_1"><span>암 168병동</span></a></li>
+								</ul>
+								<div id="am_16_1" class="map"><figure><img src="/html-repositories/pc/img/map/am/am_16F_am.jpg" alt=""></figure></div>
+							</div>
+							<div id="am_15" class="in_floor">
+								<ul>
+									<li><a href="#am_15_1"><span>암 158병동</span></a></li>
+								</ul>
+								<div id="am_15_1" class="map"><figure><img src="/html-repositories/pc/img/map/am/am_15F_am.jpg" alt=""></figure></div>
+							</div>
+							<div id="am_14" class="in_floor">
+								<ul>
+									<li><a href="#am_14_1"><span>암 148병동</span></a></li>
+								</ul>
+								<div id="am_14_1" class="map"><figure><img src="/html-repositories/pc/img/map/am/am_14F_am.jpg" alt=""></figure></div>
+							</div>
+							<div id="am_13" class="in_floor">
+								<ul>
+									<li><a href="#am_13_1"><span>VIP건강증진센터</span></a></li>
+									<li><a href="#am_13_2"><span>가정의학과</span></a></li>
+									<!-- <li><a href="#am_13_3"><span>대사비만센터</span></a></li> -->
+									<li><a href="#am_13_4"><span>소아외과</span></a></li>
+									<li><a href="#am_13_5"><span>웰니스클리닉</span></a></li>
+									<li><a href="#am_13_6"><span>안내데스크</span></a></li>
+									<li><a href="#am_13_7"><span>외래안내</span></a></li>
+								</ul>
+								<div id="am_13_1" class="map"><figure><img src="/html-repositories/pc/img/map/am/am_13F_vip.jpg" alt=""></figure></div>
+								<div id="am_13_2" class="map"><figure><img src="/html-repositories/pc/img/map/am/am_13F_tong.jpg" alt=""></figure></div>
+								<!-- <div id="am_13_3" class="map"><figure><img src="/html-repositories/pc/img/map/am/am_.jpg" alt=""></figure></div> -->
+								<div id="am_13_4" class="map"><figure><img src="/html-repositories/pc/img/map/am/am_13F_tong.jpg" alt=""></figure></div>
+								<div id="am_13_5" class="map"><figure><img src="/html-repositories/pc/img/map/am/am_13F_wel.jpg" alt=""></figure></div>
+								<div id="am_13_6" class="map"><figure><img src="/html-repositories/pc/img/map/am/am_13F_an.jpg" alt=""></figure></div>
+								<div id="am_13_7" class="map"><figure><img src="/html-repositories/pc/img/map/am/am_13F_eo.jpg" alt=""></figure></div>
+							</div>
+							<div id="am_12" class="in_floor">
+								<ul>
+									<li><a href="#am_12_1"><span>암 128병동</span></a></li>
+								</ul>
+								<div id="am_12_1" class="map"><figure><img src="/html-repositories/pc/img/map/am/am_12F_am.jpg" alt=""></figure></div>
+							</div>
+							<div id="am_11" class="in_floor">
+								<ul>
+									<li><a href="#am_11_1"><span>통원치료센터</span></a></li>
+									<li><a href="#am_11_2"><span>원무팀</span></a></li>
+									<li><a href="#am_11_3"><span>암관리사업부</span></a></li>
+									<li><a href="#am_11_4"><span>암환자 교육센터</span></a></li>
+									<li><a href="#am_11_5"><span>가천홀</span></a></li>
+								</ul>
+								<div id="am_11_1" class="map"><figure><img src="/html-repositories/pc/img/map/am/am_11F_tong.jpg" alt=""></figure></div>
+								<div id="am_11_2" class="map"><figure><img src="/html-repositories/pc/img/map/am/am_11F_won.jpg" alt=""></figure></div>
+								<div id="am_11_3" class="map"><figure><img src="/html-repositories/pc/img/map/am/am_11F_am.jpg" alt=""></figure></div>
+								<div id="am_11_4" class="map"><figure><img src="/html-repositories/pc/img/map/am/am_11F_am_ct.jpg" alt=""></figure></div>
+								<div id="am_11_5" class="map"><figure><img src="/html-repositories/pc/img/map/am/am_11F_ga.jpg" alt=""></figure></div>
+							</div>
+							<div id="am_10" class="in_floor">
+								<ul>
+									<li><a href="#am_10_1"><span>암 108병동</span></a></li>
+									<li><a href="#am_10_2"><span>응급 10층병동(외상)</span></a></li>
+								</ul>
+								<div id="am_10_1" class="map"><figure><img src="/html-repositories/pc/img/map/am/am_10F_am.jpg" alt=""></figure></div>
+								<div id="am_10_2" class="map"><figure><img src="/html-repositories/pc/img/map/am/am_10F_eung.jpg" alt=""></figure></div>
+							</div>
+							<div id="am_9" class="in_floor">
+								<ul>
+									<li><a href="#am_9_1"><span>암 98병동</span></a></li>
+									<li><a href="#am_9_2"><span>응급 9층병동</span></a></li>
+									<li><a href="#am_9_2"><span>심혈관낮병동</span></a></li> 
+								</ul>
+								<div id="am_9_1" class="map"><figure><img src="/html-repositories/pc/img/map/am/am_9F_am.jpg" alt=""></figure></div>
+								<div id="am_9_2" class="map"><figure><img src="/html-repositories/pc/img/map/am/am_9F_eung.jpg" alt=""></figure></div>
+								<div id="am_9_3" class="map"><figure><img src="/html-repositories/pc/img/map/am/am_9F_sim.jpg" alt=""></figure></div> 
+							</div>
+							<div id="am_8" class="in_floor">
+								<ul>
+									<li><a href="#am_8_1"><span>암 88병동</span></a></li>
+									<li><a href="#am_8_2"><span>응급 8층병동</span></a></li>
+								</ul>
+								<div id="am_8_1" class="map"><figure><img src="/html-repositories/pc/img/map/am/am_8F_am.jpg" alt=""></figure></div>
+								<div id="am_8_2" class="map"><figure><img src="/html-repositories/pc/img/map/am/am_8F_eung.jpg" alt=""></figure></div>
+							</div>
+							<div id="am_7" class="in_floor">
+								<ul>
+									<li><a href="#am_7_1"><span>암 78병동</span></a></li>
+									<li><a href="#am_7_2"><span>응급 7층병동</span></a></li>
+									<li><a href="#am_7_3"><span>원무팀</span></a></li>
+								</ul>
+								<div id="am_7_1" class="map"><figure><img src="/html-repositories/pc/img/map/am/am_7F_am.jpg" alt=""></figure></div>
+								<div id="am_7_2" class="map"><figure><img src="/html-repositories/pc/img/map/am/am_7F_eung.jpg" alt=""></figure></div>
+								<div id="am_7_3" class="map"><figure><img src="/html-repositories/pc/img/map/am/am_7F_won.jpg" alt=""></figure></div>
+							</div>
+							<div id="am_6" class="in_floor">1
+								<ul>
+									<li><a href="#am_6_1"><span>신경외과중환자실</span></a></li>
+									<li><a href="#am_6_2"><span>심혈관계중환자실</span></a></li>
+									<li><a href="#am_6_3"><span>외과중환자실</span></a></li>
+									<li><a href="#am_6_4"><span>응급중환자실</span></a></li>
+								</ul>
+								<div id="am_6_1" class="map"><figure><img src="/html-repositories/pc/img/map/am/am_6F_sin.jpg" alt=""></figure></div>
+								<div id="am_6_2" class="map"><figure><img src="/html-repositories/pc/img/map/am/am_6F_sim.jpg" alt=""></figure></div>
+								<div id="am_6_3" class="map"><figure><img src="/html-repositories/pc/img/map/am/am_6F_oe.jpg" alt=""></figure></div>
+								<div id="am_6_4" class="map"><figure><img src="/html-repositories/pc/img/map/am/am_6F_eung.jpg" alt=""></figure></div>
+							</div>
+							<div id="am_5" class="in_floor">
+								<ul>
+									<li><a href="#am_5_1"><span>ANGIO 센터</span></a></li>
+									<li><a href="#am_5_2"><span>외상중환자실</span></a></li>
+								</ul>
+								<div id="am_5_1" class="map"><figure><img src="/html-repositories/pc/img/map/am/am_5F_angio.jpg" alt=""></figure></div>
+								<div id="am_5_2" class="map"><figure><img src="/html-repositories/pc/img/map/am/am_5F_oe.jpg" alt=""></figure></div>
+							</div>
+							<div id="am_3" class="in_floor">
+								<ul>
+									<li><a href="#am_3_1"><span>외상중환자실</span></a></li>
+								</ul>
+								<div id="am_3_1" class="map"><figure><img src="/html-repositories/pc/img/map/am/am_3F_oe.jpg" alt=""></figure></div>
+							</div>
+							<div id="am_2" class="in_floor">
+								<ul>
+									<li><a href="#am_2_1"><span>CT/MRI실</span></a></li>
+									<li><a href="#am_2_2"><span>비뇨의학센터</span></a></li>
+									<li><a href="#am_2_3"><span>심장혈관센터</span></a></li>
+									<li><a href="#am_2_4"><span>심전도실</span></a></li>
+									<li><a href="#am_2_5"><span>유방암클리닉</span></a></li>
+									<li><a href="#am_2_6"><span>접수/수납</span></a></li>
+									<li><a href="#am_2_7"><span>핵의학과</span></a></li>
+									<li><a href="#am_2_8"><span>혈액종양내과</span></a></li>
+								</ul>
+								<div id="am_2_1" class="map"><figure><img src="/html-repositories/pc/img/map/am/am_2F_ct.jpg" alt=""></figure></div>
+								<div id="am_2_2" class="map"><figure><img src="/html-repositories/pc/img/map/am/am_2F_bi.jpg" alt=""></figure></div>
+								<div id="am_2_3" class="map"><figure><img src="/html-repositories/pc/img/map/am/am_2F_sim2.jpg" alt=""></figure></div>
+								<div id="am_2_4" class="map"><figure><img src="/html-repositories/pc/img/map/am/am_2F_sim.jpg" alt=""></figure></div>
+								<div id="am_2_5" class="map"><figure><img src="/html-repositories/pc/img/map/am/am_2F_yu.jpg" alt=""></figure></div>
+								<div id="am_2_6" class="map"><figure><img src="/html-repositories/pc/img/map/am/am_2F_jeop.jpg" alt=""></figure></div>
+								<div id="am_2_7" class="map"><figure><img src="/html-repositories/pc/img/map/am/am_2F_haek.jpg" alt=""></figure></div>
+								<div id="am_2_8" class="map"><figure><img src="/html-repositories/pc/img/map/am/am_2F_hyeol.jpg" alt=""></figure></div>
+							</div>
+							<div id="am_1" class="in_floor">
+								<ul>
+									<li><a href="#am_1_1"><span>권역외상센터</span></a></li>
+									<li><a href="#am_1_2"><span>소아응급실</span></a></li>
+									<li><a href="#am_1_3"><span>안내데스트</span></a></li>
+									<li><a href="#am_1_4"><span>운항통제실</span></a></li>
+									<li><a href="#am_1_5"><span>원무팀</span></a></li>
+									<li><a href="#am_1_6"><span>응급의료센터</span></a></li>
+									<li><a href="#am_1_7"><span>접수/수납(응급)</span></a></li>
+									<li><a href="#am_1_8"><span>제증명발급</span></a></li>
+									<li><a href="#am_1_9"><span>투썸플레이스</span></a></li>
+									<li><a href="#am_1_10"><span>편의점</span></a></li>
+								</ul>
+								<div id="am_1_1" class="map"><figure><img src="/html-repositories/pc/img/map/am/am_1F_gwon.jpg" alt=""></figure></div>
+								<div id="am_1_2" class="map"><figure><img src="/html-repositories/pc/img/map/am/am_1F_so.jpg" alt=""></figure></div>
+								<div id="am_1_3" class="map"><figure><img src="/html-repositories/pc/img/map/am/am_1F_an.jpg" alt=""></figure></div>
+								<div id="am_1_4" class="map"><figure><img src="/html-repositories/pc/img/map/am/am_1F_un.jpg" alt=""></figure></div>
+								<div id="am_1_5" class="map"><figure><img src="/html-repositories/pc/img/map/am/am_1F_won.jpg" alt=""></figure></div>
+								<div id="am_1_6" class="map"><figure><img src="/html-repositories/pc/img/map/am/am_1F_eung.jpg" alt=""></figure></div>
+								<div id="am_1_7" class="map"><figure><img src="/html-repositories/pc/img/map/am/am_1F_jeop.jpg" alt=""></figure></div>
+								<div id="am_1_8" class="map"><figure><img src="/html-repositories/pc/img/map/am/am_1F_je.jpg" alt=""></figure></div>
+								<div id="am_1_9" class="map"><figure><img src="/html-repositories/pc/img/map/am/am_1F_two.jpg" alt=""></figure></div>
+								<div id="am_1_10" class="map"><figure><img src="/html-repositories/pc/img/map/am/am_1F_pyeon.jpg" alt=""></figure></div>
+							</div>
+							<div id="am_b1" class="in_floor">
+								<ul>
+									<li><a href="#am_b1_1"><span>방사선종양학과</span></a></li>
+									<li><a href="#am_b1_2"><span>심초음파실</span></a></li>
+									<li><a href="#am_b1_3"><span>중환자 대기실</span></a></li>
+								</ul>
+								<div id="am_b1_1" class="map"><figure><img src="/html-repositories/pc/img/map/am/am_B1_bang.jpg" alt=""></figure></div>
+								<div id="am_b1_2" class="map"><figure><img src="/html-repositories/pc/img/map/am/am_B1_sim.jpg" alt=""></figure></div>
+								<div id="am_b1_3" class="map"><figure><img src="/html-repositories/pc/img/map/am/am_B1_jung.jpg" alt=""></figure></div>
+							</div>
+						</div>
+					</div>
+					<div id="ai" class="bd-wrap">
+						<div class="floor-detail-wrap">
+							<ul>
+								<li><a href="#ai_1"><span>1F</span></a></li>
+								<li><a href="#ai_9"><span>9F</span></a></li>
+								<li><a href="#ai_10"><span>10F</span></a></li>
+								<li><a href="#ai_11"><span>11F</span></a></li>
+								<li><a href="#ai_12"><span>12F</span></a></li>
+								<li><a href="#ai_13"><span>13F</span></a></li>
+							</ul>
+							<div id="ai_13" class="in_floor">
+								<ul>
+									<li><a href="#ai_13_1"><span>인공지능병동</span></a></li>
+									<li><a href="#ai_13_2"><span>암환자교육/상담실</span></a></li>
+									<li><a href="#ai_13_3"><span>휴게실</span></a></li>
+								</ul>
+								<div id="ai_13_1" class="map"><img src="/html-repositories/pc/img/map/ai/ai_13F_136.jpg" alt=""></figure></div>
+								<div id="ai_13_2" class="map"><img src="/html-repositories/pc/img/map/ai/ai_13F_cencer.jpg" alt=""></figure></div>
+								<div id="ai_13_3" class="map"><img src="/html-repositories/pc/img/map/ai/ai_13F_rest.jpg" alt=""></figure></div>
+							</div>
+							<div id="ai_12" class="in_floor">
+								<ul>
+									<li><a href="#ai_12_1"><span>인공지능병동</span></a></li>
+									<li><a href="#ai_12_2"><span>병동원무팀</span></a></li>
+									<li><a href="#ai_12_3"><span>암환자교육/상담실</span></a></li>
+								</ul>
+								<div id="ai_12_1" class="map"><figure><img src="/html-repositories/pc/img/map/ai/ai_12F_126.jpg" alt=""></figure></div>
+								<div id="ai_12_2" class="map"><figure><img src="/html-repositories/pc/img/map/ai/ai_12F_office.jpg" alt=""></figure></div>
+								<div id="ai_12_3" class="map"><figure><img src="/html-repositories/pc/img/map/ai/ai_12F_cencer.jpg" alt=""></figure></div>
+							</div>
+							<div id="ai_11" class="in_floor">
+								<ul>
+									<li><a href="#ai_11_1"><span>인공지능병동</span></a></li>
+									<li><a href="#ai_11_2"><span>암환자교육/상담실</span></a></li>
+									<li><a href="#ai_11_3"><span>휴게실</span></a></li>
+								<div id="ai_11_1" class="map"><figure><img src="/html-repositories/pc/img/map/ai/ai_11F_116.jpg" alt=""></figure></div>
+								<div id="ai_11_2" class="map"><figure><img src="/html-repositories/pc/img/map/ai/ai_11F_cencer.jpg" alt=""></figure></div>
+								<div id="ai_11_3" class="map"><figure><img src="/html-repositories/pc/img/map/ai/ai_11F_rest.jpg" alt=""></figure></div>
+							</div>
+							<div id="ai_10" class="in_floor">
+								<ul>
+									<li><a href="#ai_10_1"><span>인공지능병동</span></a></li>
+									<li><a href="#ai_9_2"><span>암환자교육/상담실</span></a></li>
+									<li><a href="#ai_9_3"><span>휴게실</span></a></li>
+								</ul>
+								<div id="ai_10_1" class="map"><figure><img src="/html-repositories/pc/img/map/ai/ai_10F_106.jpg" alt=""></figure></div>
+								<div id="ai_10_2" class="map"><figure><img src="/html-repositories/pc/img/map/ai/ai_10F_cencer.jpg" alt=""></figure></div>
+								<div id="ai_10_3" class="map"><figure><img src="/html-repositories/pc/img/map/ai/ai_10F_rest.jpg" alt=""></figure></div>
+							</div>
+							<div id="ai_9" class="in_floor">
+								<ul>
+									<li><a href="#ai_9_1"><span>인공지능병동</span></a></li>
+									<li><a href="#ai_9_2"><span>암환자교육/상담실</span></a></li>
+									<li><a href="#ai_9_3"><span>휴게실</span></a></li>
+								</ul>
+								<div id="ai_9_1" class="map"><figure><img src="/html-repositories/pc/img/map/ai/ai_9F_96.jpg" alt=""></figure></div>
+								<div id="ai_9_2" class="map"><figure><img src="/html-repositories/pc/img/map/ai/ai_9F_cencer.jpg" alt=""></figure></div>
+								<div id="ai_9_3" class="map"><figure><img src="/html-repositories/pc/img/map/ai/ai_9F_rest.jpg" alt=""></figure></div>
+							</div>
+							<div id="ai_1" class="in_floor">
+								<ul>
+									<li><a href="#ai_1_0"><span>스타벅스</span></a></li>
+									<li><a href="#ai_1_1"><span>안내데스크</span></a></li>
+									<li><a href="#ai_1_2"><span>알파문구</span></a></li>
+									<li><a href="#ai_1_3"><span>편의점</span></a></li>
+								</ul>
+								<div id="ai_1_0" class="map"><figure><img src="/html-repositories/pc/img/map/ai/ai_1F_starbucks.jpg" alt=""></figure></div>
+								<div id="ai_1_1" class="map"><figure><img src="/html-repositories/pc/img/map/ai/ai_1F_office.jpg" alt=""></figure></div>
+								<div id="ai_1_2" class="map"><figure><img src="/html-repositories/pc/img/map/ai/ai_1F_alpha.jpg" alt=""></figure></div>
+								<div id="ai_1_3" class="map"><figure><img src="/html-repositories/pc/img/map/ai/ai_1F_conv.jpg" alt=""></figure></div>
+							</div>
+						</div>
+					</div>
+					<div id="gug" class="bd-wrap">
+						<div class="floor-detail-wrap">
+							<ul>
+								<li><a href="#gug_b2"><span>B2</span></a></li>
+								<li><a href="#gug_1"><span>1F</span></a></li>
+								<li><a href="#gug_2"><span>2F</span></a></li>
+								<li><a href="#gug_3"><span>3F</span></a></li>
+								<li><a href="#gug_5"><span>5F</span></a></li>
+								<li><a href="#gug_6"><span>6F</span></a></li>
+							</ul>
+							<div id="gug_6" class="in_floor">
+								<ul>
+									<li><a href="#gug_6_1"><span>진료실/검사실</span></a></li>
+									<li><a href="#gug_6_2"><span>초음파실</span></a></li>
+									<li><a href="#gug_6_3"><span>콜센터</span></a></li>
+									<li><a href="#gug_6_4"><span>항암제 조제실</span></a></li>
+								</ul>
+								<div id="gug_6_1" class="map"><figure><img src="/html-repositories/pc/img/map/gug/gug_6F_jin.jpg" alt=""></figure></div>
+								<div id="gug_6_2" class="map"><figure><img src="/html-repositories/pc/img/map/gug/gug_6F_cho.jpg" alt=""></figure></div>
+								<div id="gug_6_3" class="map"><figure><img src="/html-repositories/pc/img/map/gug/gug_6F_call.jpg" alt=""></figure></div>
+								<div id="gug_6_4" class="map"><figure><img src="/html-repositories/pc/img/map/gug/gug_6F_hang.jpg" alt=""></figure></div>
+							</div>
+							<div id="gug_5" class="in_floor">
+								<ul>
+									<li><a href="#gug_5_0"><span>대기실</span></a></li>
+									<li><a href="#gug_5_1"><span>내시경</span></a></li>
+									<li><a href="#gug_5_2"><span>접수</span></a></li>
+									<li><a href="#gug_5_3"><span>주사실</span></a></li>
+									<li><a href="#gug_5_4"><span>진료실</span></a></li>
+									<li><a href="#gug_5_5"><span>초음파실</span></a></li>
+									<li><a href="#gug_5_6"><span>회복실</span></a></li>
+								</ul>
+								<div id="gug_5_0" class="map"><figure><img src="/html-repositories/pc/img/map/gug/gug_5F_dae.jpg" alt=""></figure></div>
+								<div id="gug_5_1" class="map"><figure><img src="/html-repositories/pc/img/map/gug/gug_5F_nae.jpg" alt=""></figure></div>
+								<div id="gug_5_2" class="map"><figure><img src="/html-repositories/pc/img/map/gug/gug_5F_jeop.jpg" alt=""></figure></div>
+								<div id="gug_5_3" class="map"><figure><img src="/html-repositories/pc/img/map/gug/gug_5F_ju.jpg" alt=""></figure></div>
+								<div id="gug_5_4" class="map"><figure><img src="/html-repositories/pc/img/map/gug/gug_5F_jin.jpg" alt=""></figure></div>
+								<div id="gug_5_5" class="map"><figure><img src="/html-repositories/pc/img/map/gug/gug_5F_cho.jpg" alt=""></figure></div>
+								<div id="gug_5_6" class="map"><figure><img src="/html-repositories/pc/img/map/gug/gug_5F_hoe.jpg" alt=""></figure></div>
+							</div>
+							<div id="gug_3" class="in_floor">
+								<ul>
+									<li><a href="#gug_3_1"><span>신체계측</span></a></li>
+									<li><a href="#gug_3_2"><span>영유아검진</span></a></li>
+									<li><a href="#gug_3_3"><span>진료실</span></a></li>
+									<li><a href="#gug_3_4"><span>청력검사실</span></a></li>
+									<li><a href="#gug_3_5"><span>체혈실</span></a></li>
+									<li><a href="#gug_3_6"><span>치과진료실</span></a></li>
+									<li><a href="#gug_3_7"><span>탈의실(여)</span></a></li>
+									<li><a href="#gug_3_8"><span>탈의실(남)</span></a></li>
+									<li><a href="#gug_3_9"><span>행정실</span></a></li>
+									<li><a href="#gug_3_10"><span>흉부촬영</span></a></li>
+								</ul>
+								<div id="gug_3_1" class="map"><figure><img src="/html-repositories/pc/img/map/gug/gug_3F_sin.jpg" alt=""></figure></div>
+								<div id="gug_3_2" class="map"><figure><img src="/html-repositories/pc/img/map/gug/gug_3F_yeong.jpg" alt=""></figure></div>
+								<div id="gug_3_3" class="map"><figure><img src="/html-repositories/pc/img/map/gug/gug_3F_jin.jpg" alt=""></figure></div>
+								<div id="gug_3_4" class="map"><figure><img src="/html-repositories/pc/img/map/gug/gug_3F_cheong.jpg" alt=""></figure></div>
+								<div id="gug_3_5" class="map"><figure><img src="/html-repositories/pc/img/map/gug/gug_3F_chae.jpg" alt=""></figure></div>
+								<div id="gug_3_6" class="map"><figure><img src="/html-repositories/pc/img/map/gug/gug_3F_chi.jpg" alt=""></figure></div>
+								<div id="gug_3_7" class="map"><figure><img src="/html-repositories/pc/img/map/gug/gug_3F_tal_f.jpg" alt=""></figure></div>
+								<div id="gug_3_8" class="map"><figure><img src="/html-repositories/pc/img/map/gug/gug_3F_tal_m.jpg" alt=""></figure></div>
+								<div id="gug_3_9" class="map"><figure><img src="/html-repositories/pc/img/map/gug/gug_3F_haeng.jpg" alt=""></figure></div>
+								<div id="gug_3_10" class="map"><figure><img src="/html-repositories/pc/img/map/gug/gug_3F_hyung.jpg" alt=""></figure></div>
+							</div>
+							<div id="gug_2" class="in_floor">
+								<ul>
+									<li><a href="#gug_2_1"><span>구강검진</span></a></li>
+									<li><a href="#gug_2_2"><span>신체계측</span></a></li>
+									<li><a href="#gug_2_3"><span>전자현미경실</span></a></li>
+									<li><a href="#gug_2_4"><span>접수</span></a></li>
+									<li><a href="#gug_2_5"><span>조정실</span></a></li>
+									<li><a href="#gug_2_6"><span>진료실</span></a></li>
+									<li><a href="#gug_2_7"><span>청력검사실</span></a></li>
+									<li><a href="#gug_2_8"><span>체혈실</span></a></li>
+									<li><a href="#gug_2_9"><span>촬영실</span></a></li>
+									<li><a href="#gug_2_10"><span>탈의실</span></a></li>
+									<li><a href="#gug_2_11"><span>폐활량측정실</span></a></li>
+									<li><a href="#gug_2_12"><span>회의실</span></a></li>
+								</ul>
+								<div id="gug_2_1" class="map"><figure><img src="/html-repositories/pc/img/map/gug/gug_2F_gu.jpg" alt=""></figure></div>
+								<div id="gug_2_2" class="map"><figure><img src="/html-repositories/pc/img/map/gug/gug_2F_sin.jpg" alt=""></figure></div>
+								<div id="gug_2_3" class="map"><figure><img src="/html-repositories/pc/img/map/gug/gug_2F_jeon.jpg" alt=""></figure></div>
+								<div id="gug_2_4" class="map"><figure><img src="/html-repositories/pc/img/map/gug/gug_2F_jeop.jpg" alt=""></figure></div>
+								<div id="gug_2_5" class="map"><figure><img src="/html-repositories/pc/img/map/gug/gug_2F_jo.jpg" alt=""></figure></div>
+								<div id="gug_2_6" class="map"><figure><img src="/html-repositories/pc/img/map/gug/gug_2F_jin.jpg" alt=""></figure></div>
+								<div id="gug_2_7" class="map"><figure><img src="/html-repositories/pc/img/map/gug/gug_2F_cheong.jpg" alt=""></figure></div>
+								<div id="gug_2_8" class="map"><figure><img src="/html-repositories/pc/img/map/gug/gug_2F_chae.jpg" alt=""></figure></div>
+								<div id="gug_2_9" class="map"><figure><img src="/html-repositories/pc/img/map/gug/gug_2F_chwal.jpg" alt=""></figure></div>
+								<div id="gug_2_10" class="map"><figure><img src="/html-repositories/pc/img/map/gug/gug_2F_tal.jpg" alt=""></figure></div>
+								<div id="gug_2_11" class="map"><figure><img src="/html-repositories/pc/img/map/gug/gug_2F_pye.jpg" alt=""></figure></div>
+								<div id="gug_2_12" class="map"><figure><img src="/html-repositories/pc/img/map/gug/gug_2F_hoe.jpg" alt=""></figure></div>
+							</div>
+							<div id="gug_1" class="in_floor">
+								<ul>
+									<li><a href="#gug_1_1"><span>기업검진팀/행정팀</span></a></li>
+									<li><a href="#gug_1_2"><span>상담실</span></a></li>
+									<li><a href="#gug_1_3"><span>예약/상담</span></a></li>
+									<li><a href="#gug_1_4"><span>접수</span></a></li>
+								</ul>
+								<div id="gug_1_1" class="map"><figure><img src="/html-repositories/pc/img/map/gug/gug_1F_gi.jpg" alt=""></figure></div>
+								<div id="gug_1_2" class="map"><figure><img src="/html-repositories/pc/img/map/gug/gug_1F_sang.jpg" alt=""></figure></div>
+								<div id="gug_1_3" class="map"><figure><img src="/html-repositories/pc/img/map/gug/gug_1F_ye.jpg" alt=""></figure></div>
+								<div id="gug_1_4" class="map"><figure><img src="/html-repositories/pc/img/map/gug/gug_1F_jeop.jpg" alt=""></figure></div>
+							</div>
+							<div id="gug_b2" class="in_floor">
+								<ul>
+									<li><a href="#gug_b2_1"><span>병동 약국</span></a></li>
+									<li><a href="#gug_b2_2"><span>작업치료실</span></a></li>
+									<li><a href="#gug_b2_3"><span>소아 작업치료실</span></a></li>
+									<li><a href="#gug_b2_4"><span>보호자 대기실</span></a></li>
+								</ul>
+								<div id="gug_b2_1" class="map"><figure><img src="/html-repositories/pc/img/map/gug/gug_B2_byeong.jpg" alt=""></figure></div>
+								<div id="gug_b2_2" class="map"><figure><img src="/html-repositories/pc/img/map/gug/gug_B2_jak.jpg" alt=""></figure></div>
+								<div id="gug_b2_3" class="map"><figure><img src="/html-repositories/pc/img/map/gug/gug_B2_so.jpg" alt=""></figure></div>
+								<div id="gug_b2_4" class="map"><figure><img src="/html-repositories/pc/img/map/gug/gug_B2_bo.jpg" alt=""></figure></div>
+							</div>
+						</div>
+					</div>
+					<div id="wo" class="bd-wrap">
+						<div class="floor-detail-wrap">
+							<ul>
+								<li><a href="#wo_1"><span>1F</span></a></li>
+								<li><a href="#wo_2"><span>2F</span></a></li>
+								<li><a href="#wo_3"><span>3F</span></a></li>
+								<li><a href="#wo_5"><span>5F</span></a></li>
+								<li><a href="#wo_6"><span>6F</span></a></li>
+								<li><a href="#wo_7"><span>7F</span></a></li>
+								<li><a href="#wo_8"><span>8F</span></a></li>
+								<li><a href="#wo_9"><span>9F</span></a></li>
+							</ul>
+							<div id="wo_9" class="in_floor">
+								<ul>
+									<li><a href="#wo_9_1"><span>임상시험센터</span></a></li>
+								</ul>
+								<div id="wo_9_1" class="map"><figure><img src="/html-repositories/pc/img/map/wo/wo_9F_center.jpg" alt=""></figure></div>
+							</div>
+							<div id="wo_8" class="in_floor">
+								<ul>
+									<li><a href="#wo_8_1"><span>임상시험센터 병동</span></a></li>
+									<li><a href="#wo_8_2"><span>HRPC/IRB</span></a></li>
+								</ul>
+								<div id="wo_8_1" class="map"><figure><img src="/html-repositories/pc/img/map/wo/wo_8F_ward.jpg" alt=""></figure></div>
+								<div id="wo_8_2" class="map"><figure><img src="/html-repositories/pc/img/map/wo/wo_8F_hrpc.jpg" alt=""></figure></div>
+							</div>
+							<div id="wo_7" class="in_floor">
+								<ul>
+									<li><a href="#wo_7_1"><span>7병동(7031~7039)</span></a></li>
+									<li><a href="#wo_7_2"><span>면회실</span></a></li>
+									<!-- <li><a href="#wo_7_3"><span>상담실</span></a></li>
+									<li><a href="#wo_7_4"><span>교육실</span></a></li>
+									<li><a href="#wo_7_5"><span>휴게실</span></a></li> -->
+									<li><a href="#wo_7_6"><span>아름인도서관</span></a></li>
+								</ul>
+								<div id="wo_7_1" class="map"><figure><img src="/html-repositories/pc/img/map/wo/wo_7F_ward.jpg" alt=""></figure></div>
+								<div id="wo_7_2" class="map"><figure><img src="/html-repositories/pc/img/map/wo/wo_7F_meet.jpg" alt=""></figure></div>
+								<!-- <div id="wo_7_3" class="map"><figure><img src="/html-repositories/pc/img/map/wo/wo_.jpg" alt=""></figure></div>
+								<div id="wo_7_4" class="map"><figure><img src="/html-repositories/pc/img/map/wo/wo_.jpg" alt=""></figure></div>
+								<div id="wo_7_5" class="map"><figure><img src="/html-repositories/pc/img/map/wo/wo_.jpg" alt=""></figure></div> -->
+								<div id="wo_7_6" class="map"><figure><img src="/html-repositories/pc/img/map/wo/wo_7F_lib.jpg" alt=""></figure></div>
+							</div>
+							<div id="wo_6" class="in_floor">
+								<ul>
+									<li><a href="#wo_6_1"><span>6병동(6031~6037)</span></a></li>
+									<li><a href="#wo_6_2"><span>면회실</span></a></li>
+									<!-- <li><a href="#wo_6_4"><span>상담실</span></a></li>
+									<li><a href="#wo_6_4"><span>소아중환자실</span></a></li>
+									<li><a href="#wo_6_5"><span>처치실</span></a></li> -->
+								</ul>
+								<div id="wo_6_1" class="map"><figure><img src="/html-repositories/pc/img/map/wo/wo_6F_ward.jpg" alt=""></figure></div>
+								<div id="wo_6_2" class="map"><figure><img src="/html-repositories/pc/img/map/wo/wo_6F_meet.jpg" alt=""></figure></div>
+								<!-- <div id="wo_6_3" class="map"><figure><img src="/html-repositories/pc/img/map/wo/wo_.jpg" alt=""></figure></div>
+								<div id="wo_6_4" class="map"><figure><img src="/html-repositories/pc/img/map/wo/wo_.jpg" alt=""></figure></div>
+								<div id="wo_6_5" class="map"><figure><img src="/html-repositories/pc/img/map/wo/wo_.jpg" alt=""></figure></div> -->
+							</div>
+							<div id="wo_5" class="in_floor">
+								<ul>
+									<!-- <li><a href="#wo_5_1"><span>교육상담실</span></a></li>
+									<li><a href="#wo_5_2"><span>수유실</span></a></li> -->
+									<li><a href="#wo_5_3"><span>신생아실</span></a></li>
+									<li><a href="#wo_5_4"><span>신생아중환자실</span></a></li>
+									<li><a href="#wo_5_5"><span>탈의실</span></a></li>
+								</ul>
+								<!-- <div id="wo_5_1" class="map"><figure><img src="/html-repositories/pc/img/map/wo/wo_.jpg" alt=""></figure></div>
+								<div id="wo_5_2" class="map"><figure><img src="/html-repositories/pc/img/map/wo/wo_.jpg" alt=""></figure></div> -->
+								<div id="wo_5_3" class="map"><figure><img src="/html-repositories/pc/img/map/wo/wo_5F_center.jpg" alt=""></figure></div>
+								<div id="wo_5_4" class="map"><figure><img src="/html-repositories/pc/img/map/wo/wo_5F_center.jpg" alt=""></figure></div>
+								<div id="wo_5_5" class="map"><figure><img src="/html-repositories/pc/img/map/wo/wo_5F_change.jpg" alt=""></figure></div>
+							</div>
+							<div id="wo_3" class="in_floor">
+								<ul>
+									<li><a href="#wo_3_1"><span>고위험산모·신생아 통합치료센터</span></a></li>
+									<li><a href="#wo_3_2"><span>보호자 대기실</span></a></li>
+									<li><a href="#wo_3_3"><span>분만실</span></a></li>
+									<li><a href="#wo_3_4"><span>상담실</span></a></li>
+								</ul>
+								<div id="wo_3_1" class="map"><figure><img src="/html-repositories/pc/img/map/wo/wo_3F_center.jpg" alt=""></figure></div>
+								<div id="wo_3_2" class="map"><figure><img src="/html-repositories/pc/img/map/wo/wo_3F_waiting.jpg" alt=""></figure></div>
+								<div id="wo_3_3" class="map"><figure><img src="/html-repositories/pc/img/map/wo/wo_3F_center.jpg" alt=""></figure></div>
+								<div id="wo_3_4" class="map"><figure><img src="/html-repositories/pc/img/map/wo/wo_3F_office.jpg" alt=""></figure></div>
+							</div>
+							<div id="wo_2" class="in_floor">
+								<ul>
+									<li><a href="#wo_2_1"><span>X-ray실</span></a></li>
+									<li><a href="#wo_2_2"><span>소아청소년과</span></a></li>
+									<li><a href="#wo_2_3"><span>수유실</span></a></li>
+									<li><a href="#wo_2_4"><span>초음파실</span></a></li>
+								</ul>
+								<div id="wo_2_1" class="map"><figure><img src="/html-repositories/pc/img/map/wo/wo_2F_xray.jpg" alt=""></figure></div>
+								<div id="wo_2_2" class="map"><figure><img src="/html-repositories/pc/img/map/wo/wo_2F_kids.jpg" alt=""></figure></div>
+								<div id="wo_2_3" class="map"><figure><img src="/html-repositories/pc/img/map/wo/wo_2F_lactation.jpg" alt=""></figure></div>
+								<div id="wo_2_4" class="map"><figure><img src="/html-repositories/pc/img/map/wo/wo_2F_wave.jpg" alt=""></figure></div>
+							</div>
+							<div id="wo_1" class="in_floor">
+								<ul>
+									<li><a href="#wo_1_1"><span>산부인과</span></a></li>
+									<li><a href="#wo_1_2"><span>아이바람클리닉</span></a></li>
+									<li><a href="#wo_1_3"><span>원무데스크</span></a></li>
+									<li><a href="#wo_1_4"><span>초음파실</span></a></li>
+								</ul>
+								<div id="wo_1_1" class="map"><figure><img src="/html-repositories/pc/img/map/wo/wo_1F_maternity.jpg" alt=""></figure></div>
+								<div id="wo_1_2" class="map"><figure><img src="/html-repositories/pc/img/map/wo/wo_1F_lab.jpg" alt=""></figure></div>
+								<div id="wo_1_3" class="map"><figure><img src="/html-repositories/pc/img/map/wo/wo_1F_office.jpg" alt=""></figure></div>
+								<div id="wo_1_4" class="map"><figure><img src="/html-repositories/pc/img/map/wo/wo_1F_wave.jpg" alt=""></figure></div>
+							</div>
+						</div>
+					</div>
+					<div id="noe" class="bd-wrap">
+						<div class="floor-detail-wrap">
+							<ul>
+								<li><a href="#noe_b1"><span>B1</span></a></li>
+								<li><a href="#noe_1"><span>1F</span></a></li>
+							</ul>
+							<div id="noe_1" class="in_floor">
+								<ul>
+									<li><a href="#noe_1_1"><span>가상현실센터(VR센터)</span></a></li>
+									<li><a href="#noe_1_2"><span>회의실</span></a></li>
+								</ul>
+								<div id="noe_1_1" class="map"><figure><img src="/html-repositories/pc/img/map/noe/noe_1F_ga.jpg" alt=""></figure></div>
+								<div id="noe_1_2" class="map"><figure><img src="/html-repositories/pc/img/map/noe/noe_1F_hoe.jpg" alt=""></figure></div>
+							</div>
+							<div id="noe_b1" class="in_floor">
+								<ul>
+									<li><a href="#noe_b1_1"><span>MRI실</span></a></li>
+									<li><a href="#noe_b1_2"><span>PET-CT실</span></a></li>
+									<li><a href="#noe_b1_3"><span>국제의료센터</span></a></li>
+									<li><a href="#noe_b1_4"><span>신경심리 검사실</span></a></li>
+									<li><a href="#noe_b1_5"><span>안내데스크(국제)</span></a></li>
+									<li><a href="#noe_b1_6"><span>주사실</span></a></li>
+									<li><a href="#noe_b1_7"><span>탈의실</span></a></li>
+									<li><a href="#noe_b1_8"><span>홍보실</span></a></li>
+								</ul>
+								<div id="noe_b1_1" class="map"><figure><img src="/html-repositories/pc/img/map/noe/noe_B1_mri.jpg" alt=""></figure></div>
+								<div id="noe_b1_2" class="map"><figure><img src="/html-repositories/pc/img/map/noe/noe_B1_pet.jpg" alt=""></figure></div>
+								<div id="noe_b1_3" class="map"><figure><img src="/html-repositories/pc/img/map/noe/noe_B1_gug.jpg" alt=""></figure></div>
+								<div id="noe_b1_4" class="map"><figure><img src="/html-repositories/pc/img/map/noe/noe_B1_sin.jpg" alt=""></figure></div>
+								<div id="noe_b1_5" class="map"><figure><img src="/html-repositories/pc/img/map/noe/noe_B1_gug.jpg" alt=""></figure></div>
+								<div id="noe_b1_6" class="map"><figure><img src="/html-repositories/pc/img/map/noe/noe_B1_ju.jpg" alt=""></figure></div>
+								<div id="noe_b1_7" class="map"><figure><img src="/html-repositories/pc/img/map/noe/noe_B1_tal.jpg" alt=""></figure></div>
+								<div id="noe_b1_8" class="map"><figure><img src="/html-repositories/pc/img/map/noe/noe_B1_hong.jpg" alt=""></figure></div>
+							</div>
+						</div>
+					</div>
+					<div id="dent" class="bd-wrap">
+						<div class="floor-detail-wrap">
+							<ul>
+								<li><a href="#dent_1"><span>1F</span></a></li>
+								<li><a href="#dent_2"><span>2F</span></a></li>
+								<li><a href="#dent_3"><span>3F</span></a></li>
+								<li><a href="#dent_5"><span>5F</span></a></li>
+							</ul>
+							<div id="dent_5" class="in_floor">
+								<ul>
+									<li><a href="#dent_5_1"><span>교정과</span></a></li>
+									<li><a href="#dent_5_2"><span>상담실</span></a></li>
+									<li><a href="#dent_5_3"><span>외래안내</span></a></li>
+									<li><a href="#dent_5_4"><span>임플란트실 / VIP실</span></a></li>
+									<li><a href="#dent_5_5"><span>치주과</span></a></li>
+								</ul>
+								<div id="dent_5_1" class="map"><figure><img src="/html-repositories/pc/img/map/dent/dent_5F_braces.jpg" alt=""></figure></div>
+								<div id="dent_5_2" class="map"><figure><img src="/html-repositories/pc/img/map/dent/dent_5F_cs.jpg" alt=""></figure></div>
+								<div id="dent_5_3" class="map"><figure><img src="/html-repositories/pc/img/map/dent/dent_5F_office.jpg" alt=""></figure></div>
+								<div id="dent_5_4" class="map"><figure><img src="/html-repositories/pc/img/map/dent/dent_5F_vip.jpg" alt=""></figure></div>
+								<div id="dent_5_5" class="map"><figure><img src="/html-repositories/pc/img/map/dent/dent_5F_perio.jpg" alt=""></figure></div>
+							</div>
+							<div id="dent_3" class="in_floor">
+								<ul>
+									<li><a href="#dent_3_1"><span>보존과</span></a></li>
+									<li><a href="#dent_3_2"><span>보철과</span></a></li>
+									<li><a href="#dent_3_3"><span>외래안내</span></a></li>
+								</ul>
+								<div id="dent_3_1" class="map"><figure><img src="/html-repositories/pc/img/map/dent/dent_3F_bo2.jpg" alt=""></figure></div>
+								<div id="dent_3_2" class="map"><figure><img src="/html-repositories/pc/img/map/dent/dent_3F_bo.jpg" alt=""></figure></div>
+								<div id="dent_3_3" class="map"><figure><img src="/html-repositories/pc/img/map/dent/dent_3F_office.jpg" alt=""></figure></div>
+							</div>
+							<div id="dent_2" class="in_floor">
+								<ul>
+									<li><a href="#dent_2_1"><span>구강악안면외과</span></a></li>
+									<li><a href="#dent_2_2"><span>외래안내</span></a></li>
+								</ul>
+								<div id="dent_2_1" class="map"><figure><img src="/html-repositories/pc/img/map/dent/dent_1F_oral.jpg" alt=""></figure></div>
+								<div id="dent_2_2" class="map"><figure><img src="/html-repositories/pc/img/map/dent/dent_2F_office.jpg" alt=""></figure></div>
+							</div>
+							<div id="dent_1" class="in_floor">
+								<ul>
+									<li><a href="#dent_1_1"><span>장애인구강진료센터</span></a></li>
+									<li><a href="#dent_1_2"><span>안내데스크</span></a></li>
+								</ul>
+								<div id="dent_1_1" class="map"><figure><img src="/html-repositories/pc/img/map/dent/dent_1F_disbled.jpg" alt=""></figure></div>
+								<div id="dent_1_2" class="map"><figure><img src="/html-repositories/pc/img/map/dent/dent_1F_office.jpg" alt=""></figure></div>
+							</div>
+						</div>
+					</div>
+					<div id="sin" class="bd-wrap">
+						<div class="floor-detail-wrap">
+							<ul>
+								<li><a href="#sin_b1"><span>B1</span></a></li>
+								<li><a href="#sin_1"><span>1F</span></a></li>
+								<li><a href="#sin_2"><span>2F</span></a></li>
+							</ul>
+							<div id="sin_2" class="in_floor">
+								<ul>
+									<li><a href="#sin_2_1"><span>인공신장센터</span></a></li>
+								</ul>
+								<div id="sin_2_1" class="map"><figure><img src="/html-repositories/pc/img/map/sin/sin_2F_in.jpg" alt=""></figure></div>
+							</div>
+							<div id="sin_1" class="in_floor">
+								<ul>
+									<li><a href="#sin_1_1"><span>인공신장센터</span></a></li>
+								</ul>
+								<div id="sin_1_1" class="map"><figure><img src="/html-repositories/pc/img/map/sin/sin_1F_in.jpg" alt="인공신장센터"></figure></div>
+							</div>
+							<div id="sin_b1" class="in_floor">
+								<ul>
+									<li><a href="#sin_b1_1"><span>사회사업실</span></a></li>
+									<li><a href="#sin_b1_2"><span>의료기기ICT 센터</span></a></li>
+								</ul>
+								<div id="sin_b1_1" class="map"><figure><img src="/html-repositories/pc/img/map/sin/sin_B1_sa.jpg" alt="사회사업실"></figure></div>
+								<div id="sin_b1_2" class="map"><figure><img src="/html-repositories/pc/img/map/sin/sin_B1_ui.jpg" alt="의료기기ICT 센터"></figure></div>
+							</div>
+						</div>
+					</div>
+					<div id="base" class="bd-wrap">
+						<div class="floor-detail-wrap">
+							<ul>
+								<li><a href="#base_1"><span>B1</span></a></li>
+								<li><a href="#base_2"><span>B2</span></a></li>
+								<li><span>본관</span></li>
+							</ul>
+							<div id="base_2" class="in_floor">
+								<ul>
+									<li><a href="#base_2_1"><span>암/응급센터</span></a></li>
+									<li><a href="#base_2_2"><span>여성전문센터</span></a></li>
+									<li><a href="#base_2_3"><span>뇌과학연구원</span></a></li>
+									<li><a href="#base_2_4"><span>국민검진센터</span></a></li>
+									<!-- <li><a href="#base_2_5"><span>인공지능병원</span></a></li> -->
+								</ul>
+								<div id="base_2_1" class="map"><figure><img src="/html-repositories/pc/img/map/base/base_am.jpg" alt=""></figure></div>
+								<div id="base_2_2" class="map"><figure><img src="/html-repositories/pc/img/map/base/base_wo.jpg" alt=""></figure></div>
+								<div id="base_2_3" class="map"><figure><img src="/html-repositories/pc/img/map/base/base_noe.jpg" alt=""></figure></div>
+								<div id="base_2_4" class="map"><figure><img src="/html-repositories/pc/img/map/base/base_gug.jpg" alt=""> <img src="/html-repositories/pc/img/map/base/line_gug.gif" alt="" class="line"></figure></div>
+								<!-- <div id="base_2_5" class="map"><figure><img src="/html-repositories/pc/img/map/base/base_am.jpg" alt=""><img src="/html-repositories/pc/img/map/base/pc_sin.gif" class="line" alt="라인"></figure></div> -->
+							</div>
+							<div id="base_1" class="in_floor">
+								<ul>
+									<li><a href="#base_1_1"><span>장례식장</span></a></li>
+									<li><a href="#base_1_2"><span>신장센터</span></a></li>
+								</ul>
+								<div id="base_1_1" class="map"><figure><img src="/html-repositories/pc/img/map/base/base_jang.jpg" alt=""></figure></div>
+								<div id="base_1_2" class="map"><figure><img src="/html-repositories/pc/img/map/base/base_sin.jpg" alt=""></figure></div>
+							</div>
+						</div>
+					</div>
 				</div>
-
 			</div>
+
+
+
+
+
         </div>
     </div>
 
@@ -137,7 +998,15 @@
 
 <script>
 	$(function() {
-		$(".floor-wrap, .floor-detail-wrap").tabs();
+		$(".floor-wrap, .floor-detail-wrap, .in_floor").tabs({
+        activate: function(event, ui) {
+            window.location.hash = ui.newPanel.attr('id') + "_link";
+        }
+
+    });
+	setTimeout(function(){ $( "html" ).scrollTop( 0 ); }, 1);
+
+		
 	});
 </script>
 </body>

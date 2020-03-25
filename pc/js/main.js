@@ -20,7 +20,7 @@ window.requestAnimFrame = function(){
 }();
 
 function headerOn(){
-	$(".nav li a").hover(function(e){
+	/* $(".nav li a").hover(function(e){
 		e.preventDefault();
 		$( ".gnb_wp" ).animate({
 			height: "445px"
@@ -36,7 +36,7 @@ function headerOn(){
 		}, 150, function() {
 		// Animation complete.
 		});
-	});
+	});*/
 
 	$(".nav_wp > ul").hover(function(){
 		var num = $(this).index();
@@ -138,16 +138,31 @@ $(function() {
 		}*/
 	});
 
+	
+	$( "#section1" ).append( "<div id='counter'></div>" );
 	/*메인 : 길병원 의료진*/
 	$('.doctor').owlCarousel({
-		dotsEach:true,
+		dots:false,
 		loop:true, 
 		nav:true,
 		autoWidth:true,
 		center: true,
-		items:6
+		items:6,
+		onInitialized  : counter, //When the plugin has initialized.
+		onTranslated : counter //When the translation of the stage has finished.
 	});
 
+	function counter(event) {
+	   var element   = event.target;         // DOM element, in this example .owl-carousel
+		var items     = event.item.count;     // Number of items
+		var item      = event.item.index + 1;     // Position of the current item
+	  
+	  // it loop is true then reset counter from 1
+	  if(item > items) {
+		item = item - items
+	  }
+	  $('#counter').html(item+" / "+ items)
+	}
 	/*메인 : 하단 로고*/
 	$('.slide-logo ul').slick({
 		//centerMode: true,
@@ -178,8 +193,9 @@ $(function() {
 		slidesToScroll: 5
 	});
 
+	
 	 $('.rsv__wrap').slick({
-	  asNavFor: '.rsv__wrap_nav',
+	  asNavFor: '.rsv__wrap_nav ul ',
 	  slidesToShow: 1,
 	  slidesToScroll: 1,
 	  arrows: false,
@@ -189,7 +205,7 @@ $(function() {
 	  //fade: true,
 	});
 
-	$('.rsv__wrap_nav').slick({
+	$('.rsv__wrap_nav ul ').slick({
 		asNavFor: '.rsv__wrap',
 		infinite: true,
 		slidesToShow: 5,
@@ -201,6 +217,7 @@ $(function() {
 		swipe: false,
 		variableWidth: true
 	});
+
 
 	/*메인 : 길병원포커스*/
 	$(".news .contents").dotdotdot();

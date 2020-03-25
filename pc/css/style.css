@@ -36,13 +36,6 @@ ol + .info-txt,
 .border-box{border:1px solid #ddd;}
 
 
-.etiq_info dd{float:left; width:calc(33.333% - 16px);  margin-right:24px; background: #f9f9f9; height: 128px; position: relative;}
-.etiq_info dd:last-child {margin-right:0px;}
-.etiq_info dd figure {width: 72px; height: 72px; position: absolute;top:50%; margin-top: -36px; left:34px;}
-.etiq_info dd > div {display: table; height:72px; position: absolute;top:50%; margin-top: -36px;left:120px;}
-.etiq_info dd > div span {display: table-cell; vertical-align: middle;  font-size:18px; font-weight: 400; line-height: 1.6;}
-
-
 /* color */
 .txt-co-red{color:#ff4949;}
 .txt-co-blue{color:#004e96;}
@@ -367,6 +360,7 @@ select::-ms-expand{display:none;}
 .medical02 li.list19{background-position:0 -576px;}
 .medical02 li.list20{background-position:-192px -576px;}
 .medical02 li.list21{background-position:-384px -576px;}
+.medical02 li.list22{background-position:-576px -576px;}
 
 .medical03 li{background:url(../img/icon/medical_list03.png) no-repeat;}
 .medical03 li.list02{background-position:-192px 0;}
@@ -1130,7 +1124,6 @@ table.fold-table > tbody > tr.view td:first-child,
 table.fold-table > tbody > tr.view th:first-child {  position: relative; }
 table.fold-table > tbody > tr.view td:last-child {padding: 0 10px;}
 table.fold-table > tbody > tr.view td:last-child span.arr {display: inline-block; position: relative; top: 50%; left: 5px; width: 9px; height: 14px; background: url('../img/icon/blick_arr2.jpg');  transition: all 0.3s ease;transform: rotate(90deg); } 
-table.fold-table > tbody > tr.view:nth-child(4n-1) { background: #eee; } 
 table.fold-table > tbody > tr.view:hover { background: #fafcfe; } 
 table.fold-table > tbody > tr.view.open { background: #fafcfe; } 
 
@@ -1184,7 +1177,7 @@ table.fold-table > tbody > tr td .fold-content table td:last-child {border-right
 .floor-info-all .location ul li > .info {display: table-cell; width: 258px; height: 79px;   text-align: center; padding-top: 28px; box-sizing:border-box;}
 .floor-info-all .location ul li > .info a { display: inline-block;margin-right:20px;width: 26px; height: 26px; position: relative; } 
 .floor-info-all .location ul li > .info a:last-child {margin-right: 0;}
-.floor-info-all .location ul li > .info a i {position: absolute; top:0; left:0;}
+.floor-info-all .location ul li > .info a i {position: absolute; top:0; left:0; }
 
 .floor-wrap > ul li figure {text-align: center;}
 .floor-wrap > ul li i {width: 80px; height: 72px; background: url('../img/icon/i_bd.png') no-repeat; display: inline-block;}
@@ -1495,7 +1488,7 @@ table.fold-table > tbody > tr td .fold-content table td:last-child {border-right
 
 .floor-wrap {margin-top: 48px;}
 .floor-wrap > ul:after {float:none; display:block; clear:both; content:"";}
-.floor-wrap > ul li {float: left; width: 10%; }
+.floor-wrap > ul li {float: left; width: 11%; }
 .floor-wrap > ul li a figure img {margin:  0 auto;}
 .floor-wrap > ul li a span {display: block; text-align: center; font-size:18px; margin-top: 12px;}
 
@@ -1506,8 +1499,8 @@ table.fold-table > tbody > tr td .fold-content table td:last-child {border-right
 .floor-detail-wrap  > ul li a {font-size:18px;}
 .floor-detail-wrap  > ul li.ui-tabs-active {background:#004e96 ; }
 .floor-detail-wrap  > ul li.ui-tabs-active a {color:#fff; font-weight: 600;}
-.floor-detail-wrap .in_floor {float: left; background: #004e96; height: 595px; width: 268px;}
-.floor-detail-wrap .in_floor > ul {margin-top: 24px;}
+.floor-detail-wrap .in_floor {float: left; height: 595px; width:1182px;}
+.floor-detail-wrap .in_floor > ul {padding-top: 24px; background: #004e96;  height:571px; width: 268px; overflow-x: auto;}
 .floor-detail-wrap .in_floor > ul li a {color:rgba(255,255,255,0.7); text-align: center; display: block; height: 52px; line-height: 52px; font-size:16px;}
 .floor-detail-wrap .in_floor > ul li.active a {color:#fff; font-size:20px; font-weight: 600;}
 
@@ -1623,7 +1616,7 @@ table.fold-table > tbody > tr td .fold-content table td:last-child {border-right
 .timeline-for ul li.slick-slide a {font-size:19px;height: 34px; line-height: 34px;font-weight: 600; color: #666; border-bottom: 4px solid #fff; display: inline-block;padding: 0 3px;}
 .timeline-for ul li.on a {color: #004e96;  border-bottom: 4px solid #004e96;}
 
-.timeline-for .slick-arrow {position: absolute; top:0; display: block; width: 20px; height: 32px ;background-repeat: no逭  e   r w d# ;* x1 n8 t? 9F xM -T e[ ;b ci op :w l~ . g o r m¡ l¨ n¯  ¶ r½ aÄ 0Ë 0Ò }
+.timeline-for .slick-arrow {position: absolute; top:0; display: block; width: 32px; height: 32px ; text-indent: -999px; overflow: hidden;background-repeat: no-repeat; background-image:url('../img/icon/grey_arr.png'); background-position:50% 50%;}
 .timeline-for .slick-prev { -ms-transform: rotate(180deg); transform: rotate(180deg);}
 .timeline-for .slick-next {right:0px;}
 
